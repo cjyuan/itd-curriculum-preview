@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Workshops on ITD</title>
+    <link>/workshops/</link>
+    <description>Recent content in Workshops on ITD</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="/workshops/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Prep</title>
+      <link>/workshops/prep/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/workshops/prep/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Agenda</title>
+      <link>/workshops/workshop-plan/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/workshops/workshop-plan/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

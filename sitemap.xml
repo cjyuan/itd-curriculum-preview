@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>/workshops/</loc>
+  </url><url>
+    <loc>/steps/zero/</loc>
+  </url><url>
+    <loc>/steps/one/</loc>
+  </url><url>
+    <loc>/workshops/prep/</loc>
+  </url><url>
+    <loc>/workshops/workshop-plan/</loc>
+  </url><url>
+    <loc>/steps/two/</loc>
+  </url><url>
+    <loc>/steps/three/</loc>
+  </url><url>
+    <loc>/steps/four/</loc>
+  </url><url>
+    <loc>/steps/five/</loc>
+  </url><url>
+    <loc>/steps/six/</loc>
+  </url><url>
+    <loc>/categories/</loc>
+  </url><url>
+    <loc>/</loc>
+  </url><url>
+    <loc>/how-itd-works/</loc>
+  </url><url>
+    <loc>/tags/</loc>
+  </url>
+</urlset>

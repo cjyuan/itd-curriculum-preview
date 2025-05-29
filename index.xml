@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Intro to Digital on ITD</title>
+    <link>/</link>
+    <description>Recent content in Intro to Digital on ITD</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Zero</title>
+      <link>/steps/zero/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/steps/zero/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>One</title>
+      <link>/steps/one/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/steps/one/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Prep</title>
+      <link>/workshops/prep/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/workshops/prep/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Agenda</title>
+      <link>/workshops/workshop-plan/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/workshops/workshop-plan/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Two</title>
+      <link>/steps/two/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/steps/two/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Three</title>
+      <link>/steps/three/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/steps/three/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Four</title>
+      <link>/steps/four/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/steps/four/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Five</title>
+      <link>/steps/five/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/steps/five/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Six</title>
+      <link>/steps/six/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/steps/six/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Manual</title>
+      <link>/how-itd-works/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/how-itd-works/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

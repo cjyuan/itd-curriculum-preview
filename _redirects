@@ -1,0 +1,42 @@
+# https://docs.netlify.com/routing/redirects/
+
+/contributing.md /guides/contributing 302
+/guides/create-a-pull-request /guides/contributing/create-a-pull-request 302
+/guides/asking-questions /guides/getting-help/asking-questions 302
+/guides/asking-question /guides/getting-help/asking-questions 302
+/guides/code-review /guides/reviewing/checklist 302
+/guides/code-style-guide /guides/reviewing/style-guide 302
+/guides/paradigm /guides/reviewing/paradigm 302
+
+/guides/intro-to-tests /guides/testing/intro 302
+
+/guides/deployment-netlify /guides/deploying/netlify 302
+/guides/deployment-render /guides/deploying/render 302
+
+# setup new decoupled courses
+
+/induction/ / 302
+/fundamentals/ / 302
+
+# roughly map to ITP
+
+/html-css/ https://programming.codeyourfuture.io/ 301
+/js1/ https://programming.codeyourfuture.io/ 301
+/js2/ https://programming.codeyourfuture.io/ 301
+/js3/ https://programming.codeyourfuture.io/ 301
+
+# roughly map to SDC tracks - might repurpose some as tracks
+
+/react/ https://tracks.codeyourfuture.io/ 302
+/servers/ https://tracks.codeyourfuture.io/ 302
+/node/ https://tracks.codeyourfuture.io/ 302
+/databases/ https://tracks.codeyourfuture.io/ 302
+/cloud/ https://tracks.codeyourfuture.io/ 302
+
+# the launch is 1:1
+
+/the-launch/ https://launch.codeyourfuture.io/ 301
+
+# portfolio is a track I guess
+
+/portfolio/ https://tracks.codeyourfuture.io/ 302
