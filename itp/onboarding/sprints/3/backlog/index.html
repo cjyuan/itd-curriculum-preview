@@ -1,0 +1,3472 @@
+<!DOCTYPE html>
+
+
+
+
+<html lang="en" class="p-backlog"><head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  <title data-pagefind-meta="title">
+    
+      Intro to Programming 
+    
+      Onboarding 
+    
+      Sprint 3 
+    
+    Backlog
+  </title>
+  
+    <meta name="description" content="A free and open source software development programme." />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+  <style>
+    body,
+    html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      animation: fade-in 300ms;
+    }
+    @keyframes fade-in {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  </style>
+  
+  
+  <link
+    rel="stylesheet"
+    href="/bundled.min.b6a4520237559385268d63a9daa81d96.css"
+    media="print"
+    onload="this.media='all'" />
+
+  
+  
+    
+    
+    <link
+      rel="stylesheet"
+      href="/custom.min.8ded6a1a88bc7cc98bdef8dc33d15f3a.css"
+      media="print"
+      onload="this.media='all'" />
+  
+
+
+  <noscript>
+    <link rel="stylesheet" href="/bundled.min.b6a4520237559385268d63a9daa81d96.css" />
+  </noscript>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&amp;display=swap"
+    rel="stylesheet"
+    media="print"
+    onload="this.media='all'" />
+
+  <link rel="shortcut icon" href="https://curriculum.codeyourfuture.io/favicon.ico" />
+  <meta name="theme-color" content="#e3ddeef2" />
+  <link rel="manifest" href="https://curriculum.codeyourfuture.io/manifest.json" />
+</head>
+<body>
+    <a class="c-skip-link e-button" id="skip-link" href="#main">Skip to main</a>
+    <div class="l-layout">
+      <header class="l-layout__header l-header">
+  <div class="l-header__container">
+    <h1 class="l-header__heading e-heading__6" data-pagefind-ignore>
+      <a class="l-header__home" href="/"
+        ><span class="is-invisible"
+          >itp backlog CYF Courses</span
+        >
+        <span class="is-none--lt-container">
+          <svg
+          xmlns="http://www.w3.org/2000/svg"
+          title="Code Your Future."
+          viewBox="0 0 621.64 155.81"
+          width="140px"
+          focusable="false"
+          role="img">
+          <path
+            fill="var(--theme-color--brand)"
+            d="M103.37 56.51C96.91 63.64 87.03 69.9 74.6 69.9c-20.14 0-33.52-12.91-33.52-34.09C41.08 13.97 57.5.87 69.94.87c9.5 0 13.77 5.32 14.63 6.46l2.18-5.27h14.91v27h-17c-.28-6.18-3.32-12-10.06-12s-11.3 8.45-11.3 18.8c0 9.4 4.84 17.86 13.86 17.86 8 0 14.24-8.36 15.1-9.31Zm2.88-21.85C106.25 14.15 119.92 0 139.58 0c23.26 0 34.09 14 34.09 35.32s-12 34.57-33.43 34.57c-19.88 0-33.99-11.49-33.99-35.23Zm43.68.66c0-11.49-3.13-20.7-10.45-20.7-5.79-.09-9.78 8.26-9.78 20 0 12.44 4.47 20.32 10.54 20.32s9.65-7.88 9.65-19.62Zm27.49 20.23h5.89V14.34h-5.89V1.8h29c23 0 36.09 14.15 36.09 32.29 0 21.65-13.11 34.09-36.47 34.09h-28.62Zm29 0c10.03-.19 14.21-9.59 14.21-21.49 0-10.16-4.18-19.75-14.25-19.75h-3.61v41.24ZM303.04 1.8v21h-16.43v-8.46h-15.19v13.1h18v12.62h-18v15.49h15.19v-8.83h16.43v21.46h-57.26V55.55h6V14.34h-6V1.8Z" />
+          <path
+            fill="var(--theme-color--ink)"
+            d="M274.42 87.82v21h-16.8v-8.45h-14.37v16.52h18v12.63h-18v12.04h9.68v12.63h-35.29v-12.63h5.89v-41.21h-5.89V87.82Zm33.04 0v12.24h-5.12v20.51c0 15.28 3.41 18.51 9.49 18.51 5.79 0 9.59-2.28 9.59-18.61v-20.12h-5.17V87.82h28.11v12.24h-5.11v23.07c0 22.51-9.4 32.67-27.25 32.67-19.18-.57-29.43-10.64-29.43-32.19v-23.45h-5.32V87.82Zm103.5 24.69h-14v-12.16h-8v41.21h7.88v12.63h-35.26v-12.63h7.79v-41.21h-8.12v12.16h-14V87.82h63.71ZM444 87.82v12.24h-5.13v20.51c0 15.28 3.42 18.51 9.5 18.51 5.79 0 9.59-2.28 9.59-18.61v-20.12h-5.13V87.82h28.11v12.24h-5.13v23.07c0 22.51-9.4 32.67-27.25 32.67-19.18-.57-29.44-10.64-29.44-32.19v-23.45h-5.32V87.82Zm71.59 0c22 0 26.3 8.73 26.3 19.56 0 7.4-5.88 12.63-13.76 13.77 6.55.95 12.44 6.64 12.44 13.48 0 4.08.57 6.46 2.27 6.46 1.43 0 2.19-1.14 2.19-3v-3.13h6.36v5.22c0 7.88-3.32 15.19-13.86 15.19-12.44 0-18.42-6.55-18.42-17.66 0-8.64-1.05-10.73-9.5-10.73v14.68h5.79v12.53h-30.67v-12.53h5.32v-41.4h-5.32V87.82Zm-6 28.48h4.27c5.51 0 9.12-2.65 9.12-7.69 0-5.6-3.13-8.45-8.64-8.45h-4.75Zm102.38-28.48v21h-16.43v-8.45h-15.19v13.09h18v12.6h-18v15.5h15.19v-8.83h16.43v21.46h-57.26v-12.63h6v-41.21h-6V87.82Zm-227.72-56.1c.38-1.9 2.47-5.89 3.51-8.17l5.22-9.59h-5.22V1.8h25.54v12.16h-5.05l-17.62 30.86v11h5.32v12.36h-30.39V55.83h5.41v-11.2l-18.42-30.67h-4.65V1.8h32.47v12.16h-4.93l5.5 10.1c.57 1.81 2.57 6.08 2.95 7.7Zm29.54 2.94C413.79 14.15 427.47 0 447.12 0c23.27 0 34.09 14 34.09 35.32s-12 34.57-33.42 34.57c-19.85 0-34-11.49-34-35.23Zm43.68.66c0-11.49-3.13-20.7-10.44-20.7-5.79-.09-9.78 8.26-9.78 20 0 12.44 4.46 20.32 10.54 20.32s9.68-7.88 9.68-19.62ZM514.25 1.8v12.26h-5.13v20.5c0 15.29 3.42 18.52 9.5 18.52 5.79 0 9.59-2.28 9.59-18.61V14.34h-5.13V1.8h28.11v12.26h-5.13v23.07c0 22.5-9.4 32.66-27.25 32.66-19.18-.57-29.44-10.63-29.44-32.19V14.15h-5.32V1.8Zm71.59 0c22 0 26.31 8.74 26.31 19.57 0 7.4-5.89 12.62-13.77 13.76 6.55 1 12.44 6.65 12.44 13.49 0 4.08.57 6.46 2.27 6.46 1.43 0 2.19-1.14 2.19-3V48.9h6.36v5.23c0 7.88-3.32 15.19-13.86 15.19-12.44 0-18.42-6.55-18.42-17.66 0-8.64-1.05-10.73-9.5-10.73v14.71h5.79v12.54h-30.67V55.64h5.32v-41.4h-5.32V1.8Zm-6 28.49h4.27c5.51 0 9.12-2.66 9.12-7.69 0-5.6-3.13-8.45-8.64-8.45h-4.75ZM28.39 14.7l5.8 10.64-23.46 10.72 23.46 10.55-3.61 9.87L0 42.24v-13.3Zm318.7 14.24v13.3l-30.58 14.24-3.61-9.87 23.46-10.55-23.46-10.72 5.8-10.64Z" />
+        </svg>
+        </span>
+        <span class="is-none--gt-container">
+          <svg
+          xmlns="http://www.w3.org/2000/svg"
+          version="1.0"
+          viewBox="0 0 512 512"
+          width="48px">
+          <path
+            fill="currentcolor"
+            stroke="currentcolor"
+            d="M225.5 1c-1.1.5-3.5.9-5.3.9-4.1.1-22.9 4.5-30.7 7.2-63.1 22-114.7 72.3-142.7 139.4-6.4 15.2-11.8 33.8-16.7 57-4.1 19.7-5.4 64.5-2.6 90.8C33 346.2 49.8 390.1 76.8 425c6.2 7.9 23.9 26.4 30.7 32 8.1 6.7 26.1 18.7 35.1 23.6 28.1 15.1 58 24.3 91.9 28.3 5.5.7 13.6 1.7 18 2.2 8.8 1.2 33.9.7 48-.9 11-1.3 31.7-4.8 36.5-6.2 1.9-.5 8-2.3 13.5-3.9 21.3-6.1 47.2-17.8 67.5-30.5 8.8-5.4 23.7-15.8 28.5-19.7 10.2-8.4 24.5-21.3 31.4-28.2l8.4-8.5-2.2-2.9c-1.3-1.5-4.6-5.3-7.4-8.3-6.2-6.7-14.5-15.7-21.2-23.1-2.7-3-7.5-8.2-10.5-11.4-3-3.3-9.8-10.8-15.1-16.5-21.5-23.6-24.2-26.5-24.9-26.8-.3-.1-2 1.2-3.6 3-1.6 1.9-6.3 7.1-10.4 11.7-8.6 9.7-25.6 24.6-35.9 31.4-21.4 14.4-42.5 21.7-62.6 21.7-15.3-.1-29.3-3.3-42.5-10-22.8-11.5-41.9-35.5-51.5-64.7-4.2-12.8-4.3-13.4-5.9-22.8-3.8-22.9-4.6-39.2-2.6-55.6 2.7-22.7 3.3-26.5 5-33.2 7.9-30.9 16.7-48.6 32.4-65.6 16.8-17.9 41.1-24.9 65.1-18.6 30 7.8 50.7 36.3 55.5 76.3.5 4.6 1.2 8.7 1.5 9.3.4.5 25.1.9 62.6.9H474V9H364.2L357 26.7c-4 9.8-7.9 18.5-8.7 19.3-1.3 1.3-2.1.8-6.6-4.3-6-6.9-18.3-16.7-28.2-22.5-7.4-4.3-22.6-10.9-28.5-12.4-9.2-2.2-18.1-4.1-24-5-9-1.3-33.1-1.9-35.5-.8z" />
+        </svg>
+        </span>
+      </a>
+    </h1>
+    <link
+  href="/pagefind/pagefind-ui.css"
+  rel="stylesheet"
+  media="print"
+  onload="this.media='all'" />
+<style>
+  :root {
+    --pagefind-ui-primary: var(--theme-color--ink);
+    --pagefind-ui-text: var(--theme-color--ink);
+    --pagefind-ui-background: var(--theme-color--paper);
+    --pagefind-ui-border: var(--theme-color--outline);
+    --pagefind-ui-tag: var(--theme-color--block);
+    --pagefind-ui-border-radius: 2em;
+    --pagefind-ui-image-border-radius: var(--theme-border-radius);
+    --pagefind-ui-font: var(--theme-font--copy);
+  }
+  .pagefind-ui--reset {
+    position: absolute;
+  }
+  #search .pagefind-ui__search-input {
+    box-shadow: var(--theme-box-shadow--inset);
+    margin-bottom: var(--theme-spacing--1);
+  }
+  #search .pagefind-ui__search-clear {
+    background-color: transparent;
+  }
+  #search .pagefind-ui__drawer {
+    background-color: var(--theme-color--paper);
+    box-shadow: var(--theme-box-shadow--slim);
+    transform: translateY(-1.5px);
+    padding: 0 var(--theme-spacing--2);
+    max-height: calc(100vh - 4rem);
+    overflow-y: auto;
+  }
+  #search .pagefind-ui__result {
+    padding: var(--theme-spacing--1) 0 var(--theme-spacing--2) 0;
+  }
+  #search .pagefind-ui__result:focus-within,
+  #search .pagefind-ui__button:focus {
+    background-color: var(--theme-color--block);
+  }
+  #search .pagefind-ui__button {
+    border: none;
+  }
+</style>
+<script src="/pagefind/pagefind-ui.js" type="text/javascript" defer></script>
+<div id="search" class="l-header__search"></div>
+<script>
+  window.addEventListener("DOMContentLoaded", (event) => {
+    new PagefindUI({
+      element: "#search",
+      showSubResults: true,
+      pageSize: 3,
+      showImages: false,
+      showTags: true,
+    });
+  });
+</script>
+
+    <button
+      class="l-header__action e-button e-button--icon js-menu-toggle e-heading__3">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+        <path
+          stroke="var(--theme-color--ink)"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M13 5a1 1 0 1 0-2 0 1 1 0 0 0 2 0Zm0 7a1 1 0 1 0-2 0 1 1 0 0 0 2 0Zm0 7a1 1 0 1 0-2 0 1 1 0 0 0 2 0Z" />
+      </svg>
+      <span class="is-invisible">Open Menu.</span>
+    </button>
+  </div>
+</header>
+
+      <nav
+  class="l-layout__menu l-menu"
+  aria-label="Main Site Links."
+  id="site-menu"
+  hidden
+  tabindex="0">
+  <div class="l-menu__container">
+    <h2 class="l-menu__heading e-heading__2">
+      <a href="/" class="l-menu__home is-invisible">Menu</a>
+    </h2>
+    <button
+      class="l-menu__action e-button e-button--icon js-menu-toggle e-heading__2"
+      id="close-menu">
+      ❎
+      <span class="is-invisible">Close Menu.</span>
+    </button>
+    <ul class="l-menu__primary">
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/guides/">
+            Guides
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/sdc/tools/">
+            Tools
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/sdc/logic/">
+            Logic
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/sdc/decomposition/">
+            Decomposition
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/sdc/legacy/">
+            Legacy code
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/sdc/complexity/">
+            Complexity
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/tracks/servers/">
+            Servers
+          </a>
+        </li>
+    </ul>
+    <ul class="l-menu__secondary">
+        <li class="l-menu__item">
+          <a class="e-heading__3 l-menu__link" href="https://codeyourfuture.io">
+            CYF 👈🏾
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__3 l-menu__link" href="https://codeyourfuture.io/volunteers/">
+            Join Us 👋🏿
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__3 l-menu__link" href="https://codeyourfuture.io/donate/">
+            Support 🫶🏼
+          </a>
+        </li>
+    </ul>
+  </div>
+</nav>
+
+      <main
+        id="main"
+        class="l-layout__main l-main"
+        tabindex="0"
+        data-pagefind-body>
+        
+  
+  
+  
+  
+  
+    
+  
+  <article>
+    
+
+
+
+
+
+
+
+
+
+<header
+  class="c-page-header  ">
+  
+  <div class="c-page-header__container">
+    <div class="c-page-header__breadcrumbs">
+      
+  <nav class="c-breadcrumbs">
+    <ol class="c-breadcrumbs__list">
+      
+        
+        
+          <li class="c-breadcrumbs__item">
+            <a
+              class="c-breadcrumbs__link"
+              href="/itp/"data-pagefind-filter="module"><span class="c-breadcrumbs__text">Intro to Programming</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                width="24px"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="c-breadcrumbs__icon">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+              </svg>
+            </a>
+          </li>
+        
+        
+          <li class="c-breadcrumbs__item">
+            <a
+              class="c-breadcrumbs__link"
+              href="/itp/onboarding/"><span class="c-breadcrumbs__text">Onboarding</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                width="24px"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="c-breadcrumbs__icon">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+              </svg>
+            </a>
+          </li>
+      
+        <li class="c-breadcrumbs__item">
+          <a
+            class="c-breadcrumbs__link"
+            href="/itp/onboarding/sprints/3/"data-pagefind-filter="sprint">Sprint 3</a
+          >
+        </li>
+      
+    </ol>
+  </nav>
+  
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Our Courses",
+      "item":"https://curriculum.codeyourfuture.io/"},
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Intro to Programming",
+      "item":"https://curriculum.codeyourfuture.io/itp/"},
+    {
+      "@type": "ListItem",
+      "position":  3 ,
+      "name": "Onboarding",
+      "item":"https://curriculum.codeyourfuture.io/itp/onboarding/"},{
+      "@type": "ListItem",
+      "position":  5 ,
+      "name": "Sprint 3",
+      "item":"https://curriculum.codeyourfuture.io/itp/onboarding/sprints/3/"},
+    {
+      "@type": "ListItem",
+      "position":  6 ,
+      "name": "backlog",
+      "item":"https://curriculum.codeyourfuture.io/itp/onboarding/sprints/3/"}
+  ]
+}
+</script>
+
+
+    </div>
+    <h1 class="c-page-header__title e-heading__1"data-pagefind-filter="view"
+        
+      data-pagefind-weight="10">
+      <span class="c-emoji">
+        
+        
+           
+         
+        </span>
+        <span class="c-page-header__title-text">backlog</span>
+               
+    </h1>
+    
+      <h2
+        class="c-page-header__subtitle c-page-header__backlog e-heading__3"
+        data-pagefind-weight="0.5">
+        
+        
+          
+        
+        
+        <a
+          class="c-page-header__link"
+          href="https://github.com/CodeYourFuture/Module-Onboarding/issues"
+          > Module-Onboarding
+          🔗 </a
+        >&nbsp; 
+        
+      </h2>
+    
+    
+    
+    
+
+  </div>
+</header>
+
+    
+
+    <a class="e-button" id="expand-all-button">Expand all</a>
+    <script type="text/javascript">
+    const button = document.querySelector("#expand-all-button");
+    button.addEventListener("click", () => {
+      const expand = button.textContent === "Expand all";
+      button.textContent = expand ? "Collapse all" : "Expand all";
+      document.querySelectorAll("details").forEach((details) => {
+        details.open = expand;
+      })
+    })
+    </script>
+
+    
+    
+    
+    
+
+    
+    
+      
+      
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            
+          
+        
+          
+        
+      
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            
+          
+        
+          
+        
+      
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            
+          
+        
+      
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            
+          
+        
+      
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            
+          
+        
+          
+        
+      
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            
+          
+        
+          
+        
+      
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            
+          
+        
+          
+        
+      
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            
+          
+        
+          
+        
+      
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            
+          
+        
+      
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            
+          
+        
+          
+        
+      
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            
+          
+        
+      
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            
+          
+        
+      
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            
+          
+        
+      
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            
+          
+        
+      
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            
+          
+        
+      
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            
+          
+        
+      
+    
+    
+    
+      <h2>Start Here</h2>
+      <p>These tasks should be completed before attempting anything else.</p>
+      
+        <details class="c-issue">
+    <summary class="c-issue__title e-heading__3">
+        Enrolment Part 1: Join Codewars
+        <a class="c-issue__link" href="https://github.com/CodeYourFuture/Module-Onboarding/issues/39">🔗</a>
+        <a href="https://curriculum.codeyourfuture.io/api/clone?state=%7b%22issue%22%3a39%2c%22module%22%3a%22Module-Onboarding%22%2c%22prevURL%22%3a%22https%3a%2f%2fcurriculum.codeyourfuture.io%2fitp%2fonboarding%2fsprints%2f3%2fbacklog%2f%22%2c%22sprint%22%3a%22%f0%9f%93%85%20Sprint%203%22%7d" class="e-button"
+            data-props="/itp/onboarding/sprints/3/backlog/">
+            Clone
+        </a>
+    </summary>
+    <div class="c-issue__body">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+    
+    
+
+    
+      
+    
+
+    
+    
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  <section class="c-block c-block--issue">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="enrolment-part-1-join-codewars">
+        <a href="https://github.com/CodeYourFuture/Module-Onboarding/issues/39">Enrolment Part 1: Join Codewars 🔗</a>
+      </h2>
+      
+      
+        
+          
+        
+          
+            <time class="c-block__time" datetime="P60M">🐇 Size Small</time>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+
+      
+      
+      
+      
+
+      
+    </header>
+
+    <div class="c-block__content c-copy">
+      <h3 id="link-to-the-coursework">Link to the coursework</h3>
+<p><a
+  href="https://www.codewars.com/join">https://www.codewars.com/join</a></p>
+<h3 id="why-are-we-doing-this">Why are we doing this?</h3>
+<p>When you begin programming you will also begin Codewars, if you have not done so already. Prepare now by signing up to <a
+  href="https://www.codewars.com/">Codewars</a>. You will have to solve your first kata to sign up! 🥋</p>
+<p>You will complete all mandatory katas per sprint for the rest of the course. A kata is a short coding workout and you should aim to spend around twenty minutes doing each kata.</p>
+<p>Solving lots of kata gives you lots of practice in:</p>
+<ul>
+<li>writing JavaScript 💻</li>
+<li>breaking down problems 🧩</li>
+<li>recognising common questions 🕵️‍♀️</li>
+<li>building up your JavaScript muscles 💪</li>
+</ul>
+<ol>
+<li>Link your account with GitHub, and join the CodeYourFuture clan, so we can find you on the clan board here: <a
+  href="https://www.codewars.com/users/CodeYourFuture/following">https://www.codewars.com/users/CodeYourFuture/following</a></li>
+<li>Join the #cyf-codewars channel</li>
+</ol>
+<p>By the end of the next module, you need to have completed all mandatory katas. Codewars is not just to practice JavaScript, it&rsquo;s to practice time management and study skills. Don&rsquo;t just do random kata - there are over 10,000 problems on this website! Mentors have collected kata that will help you with your coursework in collections per sprint per module. The kata in these collections are suitable for your level.</p>
+<p><a
+  href="https://www.codewars.com/users/CodeYourFuture/authored_collections">https://www.codewars.com/users/CodeYourFuture/authored_collections</a></p>
+<p>All the <a
+  href="https://www.codewars.com/users/CodeYourFuture/authored_collections">CYF collections</a> are on the CYF account. Here&rsquo;s a beginner collection of kata to practice on for now: <a
+  href="https://www.codewars.com/collections/cyf-onboarding">https://www.codewars.com/collections/cyf-onboarding</a></p>
+<p>You must sign up to Codewars this module, and from the next module you will need to complete a certain number of exercises each module.</p>
+<h3 id="maximum-time-in-hours">Maximum time in hours</h3>
+<p>0.5</p>
+<h3 id="how-to-submit">How to submit</h3>
+<p>Add your Codewars username to your Slack profile</p>
+
+    </div>
+  </section>
+
+
+
+
+    </div>
+</details>
+      
+        <details class="c-issue">
+    <summary class="c-issue__title e-heading__3">
+        Enrolment Part 2: Complete Step1 - Onboarding
+        <a class="c-issue__link" href="https://github.com/CodeYourFuture/Module-Onboarding/issues/570">🔗</a>
+        <a href="https://curriculum.codeyourfuture.io/api/clone?state=%7b%22issue%22%3a570%2c%22module%22%3a%22Module-Onboarding%22%2c%22prevURL%22%3a%22https%3a%2f%2fcurriculum.codeyourfuture.io%2fitp%2fonboarding%2fsprints%2f3%2fbacklog%2f%22%2c%22sprint%22%3a%22%f0%9f%93%85%20Sprint%203%22%7d" class="e-button"
+            data-props="/itp/onboarding/sprints/3/backlog/">
+            Clone
+        </a>
+    </summary>
+    <div class="c-issue__body">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+    
+    
+
+    
+      
+    
+
+    
+    
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  <section class="c-block c-block--issue">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="enrolment-part-2-complete-step1-onboarding">
+        <a href="https://github.com/CodeYourFuture/Module-Onboarding/issues/570">Enrolment Part 2: Complete Step1 - Onboarding 🔗</a>
+      </h2>
+      
+      
+        
+          
+        
+          
+        
+          
+            <time class="c-block__time" datetime="P60M">🦔 Size Tiny</time>
+          
+        
+          
+        
+          
+        
+          
+        
+      
+
+      
+      
+      
+      
+
+      
+    </header>
+
+    <div class="c-block__content c-copy">
+      <h3 id="how-to-complete-module-onboarding">How to complete module Onboarding?</h3>
+<p>To complete module Onboarding, you must:</p>
+<ol>
+<li>Make a new issue on your own <strong>Coursework Planner</strong> repo.</li>
+<li>Set the issue title to  <code>&lt;COHORT_NAME&gt; | Onboarding | &lt;YOUR_NAME&gt;</code>
+<ul>
+<li>e.g. <code>26-ITP-Jan | Onboarding | John Doe</code></li>
+</ul>
+</li>
+<li>In the issue, include all the evidence listed on the <a
+  href="https://programming.codeyourfuture.io/onboarding/success/">module Success page</a>.</li>
+<li>Submit the issue link to step 1 of ITP on <a
+  href="https://application-process.codeyourfuture.io/">CYF Course Portal</a>.</li>
+<li><a
+  href="https://forms.gle/vRuofa7aeL5DsbhGA">Apply to enroll as a Trainee</a>.</li>
+</ol>
+<h3 id="1-how-to-create-a-new-issue-on-your-coursework-planner">1. How to Create a New Issue on Your Coursework Planner</h3>
+<p>
+
+  <div
+      title="broken image link fromhttps://raw.githubusercontent.com/user-attachments/assets/cec30254-506b-4786-8295-3c145c69472a"
+      style="font-size: 48px; text-align: center;">
+      🖼️
+    </div></p>
+<ol>
+<li>Go to your forked <strong>My-Coursework-Planner</strong> repository.</li>
+<li>Click the <strong>Issues</strong> tab.</li>
+<li>Click the green <strong>New issue</strong> button.</li>
+<li>Select <strong>Blank issue</strong> from the list
+<ul>
+<li>If you do not see <strong>Blank issue</strong> in the list, chances are your repo is not  up to date.</li>
+</ul>
+</li>
+</ol>
+<h3 id="2-how-to-link-your-prs-to-your-issue">2. How to Link Your PRs to Your Issue</h3>
+<ol>
+<li>Set the issue title to <code>&lt;COHORT_NAME&gt; | Onboarding | &lt;YOUR_NAME&gt;</code></li>
+<li>Include the links to your PRs in the issue description. For example:</li>
+</ol>
+<pre tabindex="0"><code>1. Wireframe PR
+https://github.com/CodeYourFuture/Module-Onboarding/pull/PR_NUMBER
+
+2. Form-Controls PR
+https://github.com/CodeYourFuture/Module-Onboarding/pull/PR_NUMBER</code></pre><ol start="3">
+<li>
+<p>Include screenshots and other evidence listed on the module Success page.</p>
+</li>
+<li>
+<p>Preview the issue to ensure the content is formatted properly.</p>
+</li>
+</ol>
+<h3 id="3-submit-the-issue-link-to-step-1-on-cyf-course-portal">3. Submit the Issue Link to Step 1 on CYF Course Portal</h3>
+<p>You can copy the link to your issue from the browser&rsquo;s address bar. The link should look like this:
+<code>https://github.com/USER_NAME/REPO_NAME/issues/ISSUE_NUMBER</code>.</p>
+<p>Submit the issue link to step 1 on <a
+  href="https://application-process.codeyourfuture.io/">CYF Course Portal</a>.</p>
+<h3 id="4-apply-to-enroll-as-a-trainee">4. Apply to enroll as a Trainee</h3>
+<p>Complete the <a
+  href="https://forms.gle/vRuofa7aeL5DsbhGA">Trainee Application Form</a>.</p>
+<h3 id="maximum-time-in-hours">Maximum time in hours</h3>
+<p>0.1 hours</p>
+
+    </div>
+  </section>
+
+
+
+
+    </div>
+</details>
+      
+        <details class="c-issue">
+    <summary class="c-issue__title e-heading__3">
+        Enrolment Part 3: Enroll as a Trainee
+        <a class="c-issue__link" href="https://github.com/CodeYourFuture/Module-Onboarding/issues/72">🔗</a>
+        <a href="https://curriculum.codeyourfuture.io/api/clone?state=%7b%22issue%22%3a72%2c%22module%22%3a%22Module-Onboarding%22%2c%22prevURL%22%3a%22https%3a%2f%2fcurriculum.codeyourfuture.io%2fitp%2fonboarding%2fsprints%2f3%2fbacklog%2f%22%2c%22sprint%22%3a%22%f0%9f%93%85%20Sprint%203%22%7d" class="e-button"
+            data-props="/itp/onboarding/sprints/3/backlog/">
+            Clone
+        </a>
+    </summary>
+    <div class="c-issue__body">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+    
+    
+
+    
+      
+    
+
+    
+    
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  <section class="c-block c-block--issue">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="enrolment-part-3-enroll-as-a-trainee">
+        <a href="https://github.com/CodeYourFuture/Module-Onboarding/issues/72">Enrolment Part 3: Enroll as a Trainee 🔗</a>
+      </h2>
+      
+      
+        
+          
+        
+          
+            <time class="c-block__time" datetime="P60M">🐇 Size Small</time>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+
+      
+      
+      
+      
+
+      
+        <details open class="c-block__objectives">
+          <summary>
+            <h3 class="e-heading__4">Learning Objectives</h3>
+          </summary>
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Enroll as a Trainee</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        </details>
+      
+    </header>
+
+    <div class="c-block__content c-copy">
+      <h3 id="link-to-the-coursework">Link to the coursework</h3>
+<p><a
+  href="https://application-process.codeyourfuture.io/">https://application-process.codeyourfuture.io/</a></p>
+<!--
+
+
+
+  
+  
+    
+    
+      
+    
+  
+    
+    
+      
+    
+  
+    
+    
+      
+    
+  
+  
+    <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />&ndash;&gt;</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Enroll as a Trainee</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" /><!--</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+  
+
+-->
+<h3 id="why-are-we-doing-this">Why are we doing this?</h3>
+<h4 id="enrol-as-a-trainee-to">Enrol as a trainee to:</h4>
+<ul>
+<li>claim course expenses to support your studies</li>
+<li>access unlimited Udemy for Business courses</li>
+<li>access GitHub Student Developer Pack</li>
+<li>access any further CYF courses</li>
+</ul>
+<h4 id="1-complete-your-step-submission">1. Complete your step submission</h4>
+<p>This is the same as in ITD. Everyone should do this, even if you are not eligible to enrol as a Trainee. You will do this every module:</p>
+<ol>
+<li>Go to  <a
+  href="https://programming.codeyourfuture.io/onboarding/success/">https://programming.codeyourfuture.io/onboarding/success/</a></li>
+<li>Check off the learning objectives</li>
+<li>Make a new issue on your Coursework Planner: <a
+  href="https://github.com/YOURGITHUB/My-Coursework-Planner/issues/new">https://github.com/YOURGITHUB/My-Coursework-Planner/issues/new</a></li>
+<li>On this issue, add links to all the evidence asked for on the module success page</li>
+<li>Submit a link to this issue on the CYF Course Platform (sometimes called &ldquo;the dashboard&rdquo; by volunteers)</li>
+</ol>
+<h4 id="2-take-the-duolingo-testhttpsgithubcomcodeyourfuturemodule-onboardingissues2-and-get-your-certificate">2. <a
+  href="https://github.com/CodeYourFuture/Module-Onboarding/issues/2">Take the Duolingo test</a> and get your certificate</h4>
+<p>If you already have a Duolingo certificate from less than two years ago, you can use that - you don&rsquo;t need to do the test again.</p>
+<h4 id="3-for-this-onboarding-module-only">3. For this onboarding module only:</h4>
+<ol>
+<li><a
+  href="https://docs.google.com/forms/d/1qj7o2fAY3FX1EZa6hW0JvvDU8ZCytZsPBp1LbBI1ImE">Complete this enrollment form</a>.</li>
+<li>If you hit a blocker write to <a
+  href="mailto:pastoral@codeyourfuture.io">pastoral@codeyourfuture.io</a> if it&rsquo;s private, or post on Slack if it&rsquo;s not private</li>
+</ol>
+<h3 id="maximum-time-in-hours">Maximum time in hours</h3>
+<p>.5</p>
+<h3 id="how-to-get-help">How to get help</h3>
+<p>If you hit a blocker and it&rsquo;s something private, write to <a
+  href="mailto:pastoral@codeyourfuture.io">pastoral@codeyourfuture.io</a>
+Otherwise, post on Slack. Encourage and support each other to complete onboarding!</p>
+<h3 id="how-to-review">How to review</h3>
+<p>You will receive your enrolment by email.</p>
+
+    </div>
+  </section>
+
+
+
+
+    </div>
+</details>
+      
+    
+    
+      <h2>Recurring Tasks</h2>
+      <p>These tasks need to be completed in every sprint.</p>
+      
+        <details class="c-issue">
+    <summary class="c-issue__title e-heading__3">
+        Attend a demo session
+        <a class="c-issue__link" href="https://github.com/CodeYourFuture/Module-Onboarding/issues/918">🔗</a>
+        <a href="https://curriculum.codeyourfuture.io/api/clone?state=%7b%22issue%22%3a918%2c%22module%22%3a%22Module-Onboarding%22%2c%22prevURL%22%3a%22https%3a%2f%2fcurriculum.codeyourfuture.io%2fitp%2fonboarding%2fsprints%2f3%2fbacklog%2f%22%2c%22sprint%22%3a%22%f0%9f%93%85%20Sprint%203%22%7d" class="e-button"
+            data-props="/itp/onboarding/sprints/3/backlog/">
+            Clone
+        </a>
+    </summary>
+    <div class="c-issue__body">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+    
+    
+
+    
+      
+    
+
+    
+    
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  <section class="c-block c-block--issue">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="attend-a-demo-session">
+        <a href="https://github.com/CodeYourFuture/Module-Onboarding/issues/918">Attend a demo session 🔗</a>
+      </h2>
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+
+      
+      
+      
+      
+
+      
+    </header>
+
+    <div class="c-block__content c-copy">
+      <p>Presenting information is really important. You need to start practicing giving demos.</p>
+<p>During this module, you must attend at least one demo session. We <strong>highly recommend</strong> you give at least one demo in a demo session, as well. We recommend you come to more, and give more. Your demo can be on anything you want. You can attend this demo session in any sprint. After this module, you will be required to give at least one demo per module.</p>
+<p>There are demo sessions every Tuesday evening and Friday morning. They are advertised on Slack.</p>
+<p>Aim for a 5 minute demo. But your demo must be at least 1 minute and at most 10 minutes long. Check out our <a
+  href="https://curriculum.codeyourfuture.io/guides/presenting/">guide about presenting.</a></p>
+<p>You will need to attach a screenshot when submitting your Step for this Module. Make sure to take a screenshot of you on the call, showing that one of the following members of the CYF team was on your call:</p>
+<ul>
+<li>Daniel Wagner-Hall</li>
+<li>Karen Klein</li>
+<li>Colin Farquhar</li>
+<li>Poonam Rajput</li>
+<li>Léon McGregor</li>
+<li>Peter Mudra</li>
+<li>Liam Greenfield</li>
+</ul>
+<p>If you are not available during any of the demo times, please message on Slack to arrange an alternate time.</p>
+
+    </div>
+  </section>
+
+
+
+
+    </div>
+</details>
+      
+        <details class="c-issue">
+    <summary class="c-issue__title e-heading__3">
+        Do the Prep
+        <a class="c-issue__link" href="https://github.com/CodeYourFuture/Module-Onboarding/issues/34">🔗</a>
+        <a href="https://curriculum.codeyourfuture.io/api/clone?state=%7b%22issue%22%3a34%2c%22module%22%3a%22Module-Onboarding%22%2c%22prevURL%22%3a%22https%3a%2f%2fcurriculum.codeyourfuture.io%2fitp%2fonboarding%2fsprints%2f3%2fbacklog%2f%22%2c%22sprint%22%3a%22%f0%9f%93%85%20Sprint%203%22%7d" class="e-button"
+            data-props="/itp/onboarding/sprints/3/backlog/">
+            Clone
+        </a>
+    </summary>
+    <div class="c-issue__body">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+    
+    
+
+    
+      
+    
+
+    
+    
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  <section class="c-block c-block--issue">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="do-the-prep">
+        <a href="https://github.com/CodeYourFuture/Module-Onboarding/issues/34">Do the Prep 🔗</a>
+      </h2>
+      
+      
+        
+          
+        
+          
+            <time class="c-block__time" datetime="P60M">🐂 Size Medium</time>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+
+      
+      
+      
+      
+
+      
+    </header>
+
+    <div class="c-block__content c-copy">
+      <h3 id="link-to-the-coursework">Link to the coursework</h3>
+<p><a
+  href="https://curriculum.codeyourfuture.io/itp/onboarding/sprints/1/prep">https://curriculum.codeyourfuture.io/itp/onboarding/sprints/1/prep</a></p>
+<h3 id="why-are-we-doing-this">Why are we doing this?</h3>
+<p><a
+  href="https://curriculum.codeyourfuture.io/how-this-works/sprints/self-educate/prep/#importance-of-prep">https://curriculum.codeyourfuture.io/how-this-works/sprints/self-educate/prep/#importance-of-prep</a></p>
+<p>The first thing you should do every week is the prep. The prep will help you do everything else. The prep teaches you the main concepts of the week and then the coursework provides projects and exercises to help you consolidate and practice that learning.</p>
+<p>If you have gone straight to the coursework or straight to class and you haven&rsquo;t done the prep first, then go back and do the prep.</p>
+<h3 id="maximum-time-in-hours">Maximum time in hours</h3>
+<p>5</p>
+<h3 id="how-to-get-help">How to get help</h3>
+<ol>
+<li>Share your blockers in <a
+  href="https://codeyourfutur-yov6609.slack.com/archives/C07PVEVQG9X">#cyf-questions-support</a>. Take the opportunity to practice asking your question like a developer: <a
+  href="https://curriculum.codeyourfuture.io/guides/asking-questions">https://curriculum.codeyourfuture.io/guides/asking-questions</a></li>
+<li>Book a pair programming session with a mentor in the <a
+  href="https://codeyourfutur-yov6609.slack.com/archives/C07PA66MQMC">#cyf-pair-programming</a> channel</li>
+<li>Attend a mid-week study session online</li>
+<li>Write down your questions and bring them to class</li>
+</ol>
+<p><strong>You should do the prep every week.</strong></p>
+
+    </div>
+  </section>
+
+
+
+
+    </div>
+</details>
+      
+        <details class="c-issue">
+    <summary class="c-issue__title e-heading__3">
+        Get Code Review and Iterate
+        <a class="c-issue__link" href="https://github.com/CodeYourFuture/Module-Onboarding/issues/734">🔗</a>
+        <a href="https://curriculum.codeyourfuture.io/api/clone?state=%7b%22issue%22%3a734%2c%22module%22%3a%22Module-Onboarding%22%2c%22prevURL%22%3a%22https%3a%2f%2fcurriculum.codeyourfuture.io%2fitp%2fonboarding%2fsprints%2f3%2fbacklog%2f%22%2c%22sprint%22%3a%22%f0%9f%93%85%20Sprint%203%22%7d" class="e-button"
+            data-props="/itp/onboarding/sprints/3/backlog/">
+            Clone
+        </a>
+    </summary>
+    <div class="c-issue__body">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+    
+    
+
+    
+      
+    
+
+    
+    
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  <section class="c-block c-block--issue">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="get-code-review-and-iterate">
+        <a href="https://github.com/CodeYourFuture/Module-Onboarding/issues/734">Get Code Review and Iterate 🔗</a>
+      </h2>
+      
+      
+        
+          
+        
+          
+            <time class="c-block__time" datetime="P60M">🐂 Size Medium</time>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+
+      
+      
+      
+      
+
+      
+    </header>
+
+    <div class="c-block__content c-copy">
+      <p>As you progress through the backlog you will create a Pull Request (PR) for each exercise you complete.</p>
+<p>Make sure you ask for review by adding the &ldquo;Needs Review&rdquo; label to the PR.</p>
+<p>A volunteer will review it - you don&rsquo;t need to ask, just adding the label is enough.</p>
+<p>When the volunteer has reviewed it, they will either give you more suggestions (and add the &ldquo;Reviewed&rdquo; label), or tell you it&rsquo;s perfect (and add the &ldquo;Complete&rdquo; label).</p>
+<p>The <strong>github-actions</strong> bot may give you some automated feedback. If you get any you should address it, then add the &ldquo;Needs Review&rdquo; label again. Reviewers won&rsquo;t give feedback until the basic automated checks are complete.</p>
+<p>Until the volunteer says it is complete, you should keep making improvements - whenever you&rsquo;re ready for more review, add the &ldquo;Needs Review&rdquo; label back.</p>
+<p>If you&rsquo;ve been waiting for review (whether initially, or after responding to comments) for more than a week, please ask for help on Slack in #cyf-code-review-team. <strong>Do not ask for review in #cyf-code-review-team until you&rsquo;ve been waiting a week.</strong></p>
+<p>You will follow this same process for every PR you make at CodeYourFuture.</p>
+<p>You can always remind yourself of what to do by visiting <a
+  href="https://programming.codeyourfuture.io/guides/reviewing/trainee-pr-guide/">this guide</a></p>
+
+    </div>
+  </section>
+
+
+
+
+    </div>
+</details>
+      
+    
+    
+      <h2>Mandatory Tasks</h2>
+      <p>These tasks will help consolidate your learning for this sprint. You should complete as many of these as possible before class on Saturday.</p>
+      
+        <details class="c-issue">
+    <summary class="c-issue__title e-heading__3">
+        Communicate at work using Google Doc and Slides
+        <a class="c-issue__link" href="https://github.com/CodeYourFuture/Module-Onboarding/issues/38">🔗</a>
+        <a href="https://curriculum.codeyourfuture.io/api/clone?state=%7b%22issue%22%3a38%2c%22module%22%3a%22Module-Onboarding%22%2c%22prevURL%22%3a%22https%3a%2f%2fcurriculum.codeyourfuture.io%2fitp%2fonboarding%2fsprints%2f3%2fbacklog%2f%22%2c%22sprint%22%3a%22%f0%9f%93%85%20Sprint%203%22%7d" class="e-button"
+            data-props="/itp/onboarding/sprints/3/backlog/">
+            Clone
+        </a>
+    </summary>
+    <div class="c-issue__body">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+    
+    
+
+    
+      
+    
+
+    
+    
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  <section class="c-block c-block--issue">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="communicate-at-work-using-google-doc-and-slides">
+        <a href="https://github.com/CodeYourFuture/Module-Onboarding/issues/38">Communicate at work using Google Doc and Slides 🔗</a>
+      </h2>
+      
+      
+        
+          
+        
+          
+            <time class="c-block__time" datetime="P60M">🐇 Size Small</time>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+
+      
+      
+      
+      
+
+      
+    </header>
+
+    <div class="c-block__content c-copy">
+      <h3 id="coursework-content">Coursework content</h3>
+<p><strike><code>https://applieddigitalskills.withgoogle.com/c/college-and-continuing-education/en/effective-communications-at-work/overview.html</code></strike></p>
+<p><strong>Note</strong>: The course &ldquo;Effective Communications at Work&rdquo; had been retired. The videos from the course are still available on <a
+  href="https://www.youtube.com/playlist?list=PLk4OiJAs3NjEEp1hQkbJhgeCwgIcr18wa">YouTube</a>.</p>
+<h3 id="estimated-time-in-hours">Estimated time in hours</h3>
+<p>1</p>
+<h3 id="what-is-the-purpose-of-this-assignment">What is the purpose of this assignment?</h3>
+<p>As a professional, you must be able to communicate effectively to succeed at work. You must be comfortable with standard office software and to be able to use this to present your ideas and explain your work.</p>
+<p>Do lessons 4 and 5</p>
+<ul>
+<li>4 Communicate Ideas in a Proposal</li>
+<li>5 Present Information About Your Job</li>
+</ul>
+<h3 id="how-to-submit">How to submit</h3>
+<p>You can do as much of the rest of this course as you like, but you must do 4 and 5. Share the results to the exercises of both lessons on your coursework board.</p>
+
+    </div>
+  </section>
+
+
+
+
+    </div>
+</details>
+      
+        <details class="c-issue">
+    <summary class="c-issue__title e-heading__3">
+        Developing a growth mindset 
+        <a class="c-issue__link" href="https://github.com/CodeYourFuture/Module-Onboarding/issues/40">🔗</a>
+        <a href="https://curriculum.codeyourfuture.io/api/clone?state=%7b%22issue%22%3a40%2c%22module%22%3a%22Module-Onboarding%22%2c%22prevURL%22%3a%22https%3a%2f%2fcurriculum.codeyourfuture.io%2fitp%2fonboarding%2fsprints%2f3%2fbacklog%2f%22%2c%22sprint%22%3a%22%f0%9f%93%85%20Sprint%203%22%7d" class="e-button"
+            data-props="/itp/onboarding/sprints/3/backlog/">
+            Clone
+        </a>
+    </summary>
+    <div class="c-issue__body">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+    
+    
+
+    
+      
+    
+
+    
+    
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  <section class="c-block c-block--issue">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="developing-a-growth-mindset">
+        <a href="https://github.com/CodeYourFuture/Module-Onboarding/issues/40">Developing a growth mindset  🔗</a>
+      </h2>
+      
+      
+        
+          
+        
+          
+            <time class="c-block__time" datetime="P60M">🐇 Size Small</time>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+
+      
+      
+      
+      
+
+      
+    </header>
+
+    <div class="c-block__content c-copy">
+      <h3 id="coursework-content">Coursework content</h3>
+<p>Watch <a
+  href="https://www.youtube.com/watch?v=_X0mgOOSpLU">The power of believing that you can improve | Carol Dweck | TED</a> and <a
+  href="https://youtu.be/ELpfYCZa87g">Neuroplasticity</a>.</p>
+<p>Write your reflections on why it is important to have a growth mindset as a developer and how a growth mindset will positively impact you in your career in the long term. Try to answer the following questions:</p>
+<ul>
+<li>When did I have a closed mindset this week, and why?</li>
+<li>When did I have an open mindset this week, and why?</li>
+<li>What have I learnt about myself, as a result?</li>
+<li>What will I do differently next time?</li>
+</ul>
+<h3 id="estimated-time-in-hours">Estimated time in hours</h3>
+<p>1</p>
+<h3 id="what-is-the-purpose-of-this-assignment">What is the purpose of this assignment?</h3>
+<p>This assignment supports developing a growth mindset while learning new skills and facing barriers.</p>
+<h3 id="how-to-submit">How to submit</h3>
+<p>Write in your cohort&rsquo;s Slack channel what actions you will take in order to overcome your barriers to participating in coding and write a supportive message to one of your peers who has shared their barriers in the channel.
+Add the link to your Slack post as a comment on this ticket.</p>
+
+    </div>
+  </section>
+
+
+
+
+    </div>
+</details>
+      
+        <details class="c-issue">
+    <summary class="c-issue__title e-heading__3">
+        Evaluate, and interpret data with Google Sheets
+        <a class="c-issue__link" href="https://github.com/CodeYourFuture/Module-Onboarding/issues/5">🔗</a>
+        <a href="https://curriculum.codeyourfuture.io/api/clone?state=%7b%22issue%22%3a5%2c%22module%22%3a%22Module-Onboarding%22%2c%22prevURL%22%3a%22https%3a%2f%2fcurriculum.codeyourfuture.io%2fitp%2fonboarding%2fsprints%2f3%2fbacklog%2f%22%2c%22sprint%22%3a%22%f0%9f%93%85%20Sprint%203%22%7d" class="e-button"
+            data-props="/itp/onboarding/sprints/3/backlog/">
+            Clone
+        </a>
+    </summary>
+    <div class="c-issue__body">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+    
+    
+
+    
+      
+    
+
+    
+    
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  <section class="c-block c-block--issue">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="evaluate-and-interpret-data-with-google-sheets">
+        <a href="https://github.com/CodeYourFuture/Module-Onboarding/issues/5">Evaluate, and interpret data with Google Sheets 🔗</a>
+      </h2>
+      
+      
+        
+          
+        
+          
+            <time class="c-block__time" datetime="P60M">🐂 Size Medium</time>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+
+      
+      
+      
+      
+
+      
+    </header>
+
+    <div class="c-block__content c-copy">
+      <h3 id="link-to-the-coursework">Link to the coursework</h3>
+<ul>
+<li><a
+  href="https://edu.exceedlms.com/student/path/1606820-google-workspace-sheets-part-1">Google Sheets basics</a>
+<ul>
+<li><a
+  href="https://www.youtube.com/watch?v=2jlgKEx9j_k">Corresponding YouTube video and Starter Project</a></li>
+</ul>
+</li>
+<li><a
+  href="https://edu.exceedlms.com/student/path/1606732-google-workspace-sheets-part-2">Evaluate and interpret data with different spreadsheet functions, filters, and charts using Google Sheets.</a>
+<ul>
+<li><a
+  href="https://www.youtube.com/watch?v=rRPEDMHdOWY">Corresponding YouTube video and Starter Project</a></li>
+</ul>
+</li>
+<li><a
+  href="https://edu.exceedlms.com/student/path/1606656-google-workspace-sheets-part-3">Use advanced functions and conditional formatting in Google Sheets.</a>
+<ul>
+<li><a
+  href="https://www.youtube.com/watch?v=0e9eqSwm-Lg">Corresponding YouTube video and Starter Projects</a></li>
+<li>Note: Where this video talks about a &ldquo;CSV&rdquo; file, the YouTube video now has an &ldquo;XLS&rdquo; file - these work the same.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Note</strong>: The links to the Starter Projects mentioned in the videos are only available in the video descriptions on YouTube.</p>
+<!-- 
+(https://applieddigitalskills.withgoogle.com/c/college-and-continuing-education-uk/en-uk/g-suite-certification-sheets-part-2/overview.html)
+
+(https://applieddigitalskills.withgoogle.com/c/college-and-continuing-education-uk/en-uk/g-suite-certification-sheets-part-3/overview.html) 
+-->
+<h3 id="why-are-we-doing-this">Why are we doing this?</h3>
+<p>Being confident and fluent with spreadsheets is necessary knowledge for all workers. Work through these 2 courses, which follow on from the prep work you&rsquo;ve already done.</p>
+<h3 id="maximum-time-in-hours">Maximum time in hours</h3>
+<p>3</p>
+<h3 id="how-to-get-help">How to get help</h3>
+<p>Share your blockers in Slack. We are here to help each other.</p>
+<h3 id="how-to-submit">How to submit</h3>
+<ol>
+<li>Make your spreadsheet public</li>
+<li>Attach a link to your copy of this ticket on your own board</li>
+</ol>
+
+    </div>
+  </section>
+
+
+
+
+    </div>
+</details>
+      
+        <details class="c-issue">
+    <summary class="c-issue__title e-heading__3">
+        Mandatory Onboarding Codewars Katas
+        <a class="c-issue__link" href="https://github.com/CodeYourFuture/Module-Onboarding/issues/935">🔗</a>
+        <a href="https://curriculum.codeyourfuture.io/api/clone?state=%7b%22issue%22%3a935%2c%22module%22%3a%22Module-Onboarding%22%2c%22prevURL%22%3a%22https%3a%2f%2fcurriculum.codeyourfuture.io%2fitp%2fonboarding%2fsprints%2f3%2fbacklog%2f%22%2c%22sprint%22%3a%22%f0%9f%93%85%20Sprint%203%22%7d" class="e-button"
+            data-props="/itp/onboarding/sprints/3/backlog/">
+            Clone
+        </a>
+    </summary>
+    <div class="c-issue__body">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+    
+    
+
+    
+      
+    
+
+    
+    
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  <section class="c-block c-block--issue">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="mandatory-onboarding-codewars-katas">
+        <a href="https://github.com/CodeYourFuture/Module-Onboarding/issues/935">Mandatory Onboarding Codewars Katas 🔗</a>
+      </h2>
+      
+      
+        
+          
+        
+          
+            <time class="c-block__time" datetime="P60M">🐂 Size Medium</time>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+
+      
+      
+      
+      
+
+      
+        <details open class="c-block__objectives">
+          <summary>
+            <h3 class="e-heading__4">Learning Objectives</h3>
+          </summary>
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Practice applying concepts related to the sprint&rsquo;s prep material in a kata.</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Problem solve a new coding challenge.</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        </details>
+      
+    </header>
+
+    <div class="c-block__content c-copy">
+      <h3 id="link-to-the-coursework">Link to the coursework</h3>
+<p><a
+  href="https://www.codewars.com/collections/cyf-onboarding">https://www.codewars.com/collections/cyf-onboarding</a></p>
+<!--
+
+
+
+  
+  
+    
+    
+      
+    
+  
+    
+    
+      
+    
+  
+    
+    
+      
+    
+  
+    
+    
+      
+    
+  
+  
+    <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />&ndash;&gt;</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Practice applying concepts related to the sprint&rsquo;s prep material in a kata.</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Problem solve a new coding challenge.</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" /><!--</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+  
+
+-->
+<h3 id="why-are-we-doing-this">Why are we doing this?</h3>
+<p>Spend at least 20 minutes per kata, find time at least three times a week to complete this.</p>
+<p>Find the Collection called &ldquo;CYF Onboarding&rdquo; on <a
+  href="https://www.codewars.com/users/CodeYourFuture/authored_collections">the CodeYourFuture account</a>. You are not required to know all the answers here. Use this exercise as an opportunity to practice our &ldquo;question-asking&rdquo; habit. Some of these katas might use syntax you haven&rsquo;t encountered yet and that is totally fine. Don&rsquo;t go over 2 hours of time spent on this.</p>
+<p><strong>Checking your progress:</strong>
+Check your Codewars completion status via the <a
+  href="https://codeyourfuture.github.io/Codewars-Progress-Checker/">Codewars Progress Checker</a>.</p>
+<ol>
+<li>Follow the link: <a
+  href="https://codeyourfuture.github.io/Codewars-Progress-Checker">https://codeyourfuture.github.io/Codewars-Progress-Checker</a></li>
+<li>Put your codewars username into the input bar at the top of the page.</li>
+<li>Use this page to track completion and share progress at the end of each module.</li>
+</ol>
+<h3 id="maximum-time-in-hours">Maximum time in hours</h3>
+<p>2</p>
+<h3 id="how-to-get-help">How to get help</h3>
+<p>Join the #cyf-codewars Slack channel</p>
+<p>Read the <a
+  href="https://docs.codeyourfuture.io/leaders/running-the-course/codewars">CYF Codewars docs</a></p>
+<p>Read <a
+  href="https://docs.codeyourfuture.io/leaders/running-the-course/codewars/codewars-advice-from-cyfers">Codewars advice from CYFers</a></p>
+<p>Read <a
+  href="https://docs.codeyourfuture.io/leaders/running-the-course/codewars/codewars-advice-from-mentors">Codewars advice from mentors</a></p>
+<p>Book a pair programming slot from the available pairing appointments in the <a
+  href="https://codeyourfutur-yov6609.slack.com/docs/T07MCNDRDHV/F07PAGC9022">CYF Pair Programming Slack Canvas</a></p>
+<h3 id="how-to-submit">How to submit</h3>
+<p>Share a link in the form <a
+  href="https://codeyourfuture.github.io/Codewars-Progress-Checker/#YOUR_CODEWARS_USERNAME">https://codeyourfuture.github.io/Codewars-Progress-Checker/#YOUR_CODEWARS_USERNAME</a>.</p>
+<p>You can obtain the link from the browser location bar after submitting your Codewars username on the <a
+  href="https://codeyourfuture.github.io/Codewars-Progress-Checker/">Codewars Progress Checker</a> page.</p>
+<h3 id="how-to-review">How to review</h3>
+<p>Once you have completed your kata, look at the other solutions in the solutions view. Consider how many different approaches there are.</p>
+
+    </div>
+  </section>
+
+
+
+
+    </div>
+</details>
+      
+        <details class="c-issue">
+    <summary class="c-issue__title e-heading__3">
+        Prepare for the Devtools workshop
+        <a class="c-issue__link" href="https://github.com/CodeYourFuture/Module-Onboarding/issues/53">🔗</a>
+        <a href="https://curriculum.codeyourfuture.io/api/clone?state=%7b%22issue%22%3a53%2c%22module%22%3a%22Module-Onboarding%22%2c%22prevURL%22%3a%22https%3a%2f%2fcurriculum.codeyourfuture.io%2fitp%2fonboarding%2fsprints%2f3%2fbacklog%2f%22%2c%22sprint%22%3a%22%f0%9f%93%85%20Sprint%203%22%7d" class="e-button"
+            data-props="/itp/onboarding/sprints/3/backlog/">
+            Clone
+        </a>
+    </summary>
+    <div class="c-issue__body">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+    
+    
+
+    
+      
+    
+
+    
+    
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  <section class="c-block c-block--issue">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="prepare-for-the-devtools-workshop">
+        <a href="https://github.com/CodeYourFuture/Module-Onboarding/issues/53">Prepare for the Devtools workshop 🔗</a>
+      </h2>
+      
+      
+        
+          
+        
+          
+            <time class="c-block__time" datetime="P60M">🐇 Size Small</time>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+
+      
+      
+      
+      
+
+      
+    </header>
+
+    <div class="c-block__content c-copy">
+      <h3 id="link-to-the-coursework">Link to the coursework</h3>
+<p><a
+  href="https://github.com/CodeYourFuture/CYF-Workshops/tree/main/devtools">https://github.com/CodeYourFuture/CYF-Workshops/tree/main/devtools</a></p>
+<h3 id="why-are-we-doing-this">Why are we doing this?</h3>
+<p>Before you come to class, you need to make sure you are ready to participate in the workshop.</p>
+<p>For this workshop you will need:</p>
+<ul>
+<li><input disabled="" type="checkbox"> <a
+  href="https://www.google.com/intl/en_uk/chrome/">Chrome</a> with Devtools</li>
+<li><input disabled="" type="checkbox"> A <a
+  href="https://chat.openai.com/auth/login">ChatGPT account</a></li>
+<li><input disabled="" type="checkbox"> This <a
+  href="http://cyf-workshop.netlify.app/devtools/">Devtools Workshop page</a></li>
+</ul>
+<p>Make sure you come to class with Chrome installed, a ChatGPT account, and having looked over what you will be doing.</p>
+<h3 id="maximum-time-in-hours">Maximum time in hours</h3>
+<p>0.15</p>
+<h3 id="how-to-get-help">How to get help</h3>
+<p>Share your blockers in your class channel. Practice asking good questions, with links and context.</p>
+
+    </div>
+  </section>
+
+
+
+
+    </div>
+</details>
+      
+        <details class="c-issue">
+    <summary class="c-issue__title e-heading__3">
+        Query Data in Google Sheets with SQL
+        <a class="c-issue__link" href="https://github.com/CodeYourFuture/Module-Onboarding/issues/6">🔗</a>
+        <a href="https://curriculum.codeyourfuture.io/api/clone?state=%7b%22issue%22%3a6%2c%22module%22%3a%22Module-Onboarding%22%2c%22prevURL%22%3a%22https%3a%2f%2fcurriculum.codeyourfuture.io%2fitp%2fonboarding%2fsprints%2f3%2fbacklog%2f%22%2c%22sprint%22%3a%22%f0%9f%93%85%20Sprint%203%22%7d" class="e-button"
+            data-props="/itp/onboarding/sprints/3/backlog/">
+            Clone
+        </a>
+    </summary>
+    <div class="c-issue__body">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+    
+    
+
+    
+      
+    
+
+    
+    
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  <section class="c-block c-block--issue">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="query-data-in-google-sheets-with-sql">
+        <a href="https://github.com/CodeYourFuture/Module-Onboarding/issues/6">Query Data in Google Sheets with SQL 🔗</a>
+      </h2>
+      
+      
+        
+          
+        
+          
+            <time class="c-block__time" datetime="P60M">🐂 Size Medium</time>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+
+      
+      
+      
+      
+
+      
+    </header>
+
+    <div class="c-block__content c-copy">
+      <h3 id="link-to-the-coursework">Link to the coursework</h3>
+<p><a
+  href="https://www.youtube.com/watch?v=dTNamL30sDg">https://www.youtube.com/watch?v=dTNamL30sDg</a></p>
+<h3 id="why-are-we-doing-this">Why are we doing this?</h3>
+<p>To learn how to use Google Sheets to store and query data is very useful. SQL is a powerful tool you will regularly come across when working with databases, either as a programmer or in many other data roles.</p>
+<p>Watch the video <a
+  href="https://www.youtube.com/watch?v=dTNamL30sDg">SQL in Google Sheets</a>. Copy the dataset provided in the video and code along with the queries as you go.</p>
+<ul>
+<li><a
+  href="https://www.youtube.com/watch?v=dTNamL30sDg">SQL in Google Sheets</a></li>
+<li><a
+  href="https://docs.google.com/spreadsheets/d/1zPeHxhKkYmdiqXNhMwhfC1A0o1wI0zNiD5Gsks2SYoc/template/preview">Here is a link to the data</a></li>
+</ul>
+<p>Do up to the step <code>GROUP BY </code> clause and aggregation.</p>
+<p>We can skip PIVOT, LIMIT and OFFSET for now. You won&rsquo;t need these for the next piece of coursework, but look at them if you&rsquo;re not short on time.</p>
+<h2 id="acceptance-criteria">Acceptance criteria</h2>
+<ul>
+<li><input disabled="" type="checkbox"> I have watched the SQL in Google Sheets video and followed along with the instructions in my own Google Sheet.</li>
+</ul>
+<h3 id="maximum-time-in-hours">Maximum time in hours</h3>
+<p>2</p>
+<h3 id="how-to-get-help">How to get help</h3>
+<p>Share your blockers in ITP Slack.</p>
+<h3 id="how-to-submit">How to submit</h3>
+<ol>
+<li>Combine both of these sheets into one. You can create a new sheet for each piece of work.</li>
+<li>Share a link to your Google Sheet on your own copy of this ticket. Make sure to give read access to your sheet, you can do this by clicking the &ldquo;Share&rdquo; button, then change &ldquo;Restricted&rdquo; to &ldquo;Anyone with the link&rdquo;.</li>
+</ol>
+
+    </div>
+  </section>
+
+
+
+
+    </div>
+</details>
+      
+        <details class="c-issue">
+    <summary class="c-issue__title e-heading__3">
+        Record a Goose
+        <a class="c-issue__link" href="https://github.com/CodeYourFuture/Module-Onboarding/issues/26">🔗</a>
+        <a href="https://curriculum.codeyourfuture.io/api/clone?state=%7b%22issue%22%3a26%2c%22module%22%3a%22Module-Onboarding%22%2c%22prevURL%22%3a%22https%3a%2f%2fcurriculum.codeyourfuture.io%2fitp%2fonboarding%2fsprints%2f3%2fbacklog%2f%22%2c%22sprint%22%3a%22%f0%9f%93%85%20Sprint%203%22%7d" class="e-button"
+            data-props="/itp/onboarding/sprints/3/backlog/">
+            Clone
+        </a>
+    </summary>
+    <div class="c-issue__body">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+    
+    
+
+    
+      
+    
+
+    
+    
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  <section class="c-block c-block--issue">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="record-a-goose">
+        <a href="https://github.com/CodeYourFuture/Module-Onboarding/issues/26">Record a Goose 🔗</a>
+      </h2>
+      
+      
+        
+          
+        
+          
+            <time class="c-block__time" datetime="P60M">🐂 Size Medium</time>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+
+      
+      
+      
+      
+
+      
+    </header>
+
+    <div class="c-block__content c-copy">
+      <h3 id="link-to-the-coursework">Link to the coursework</h3>
+<p><a
+  href="https://github.com/CodeYourFuture/Project-Record-A-Goose">https://github.com/CodeYourFuture/Project-Record-A-Goose</a></p>
+<h3 id="why-are-we-doing-this">Why are we doing this?</h3>
+<p>A mission of discovery for you.</p>
+<ol>
+<li>Go to <a
+  href="https://github.com/CodeYourFuture/CYF-Record-A-Goose-Project">https://github.com/CodeYourFuture/CYF-Record-A-Goose-Project</a></li>
+<li>Using Devtools, Lighthouse, and the WAVE accessibility plugin, find all the ways this app is broken</li>
+<li>How would you fix the problems? Discuss in <strong>a thread</strong> in your channel.</li>
+</ol>
+<p>This is also a fun in-person workshop, so you could choose to do it in a class or coworking space together.</p>
+<p><a
+  href="https://record-a-goose.onrender.com/">https://record-a-goose.onrender.com/</a></p>
+<h3 id="maximum-time-in-hours">Maximum time in hours</h3>
+<p>2</p>
+<h3 id="how-to-get-help">How to get help</h3>
+<p>You could choose to do this in class together during independent study time.</p>
+<h3 id="how-to-submit">How to submit</h3>
+<p>Write up your findings in a thread in your class channel.</p>
+<p>Don&rsquo;t make a new post each. Discuss in a thread.</p>
+<h3 id="how-to-review">How to review</h3>
+<p>It is a review! ;)</p>
+<h3 id="anything-else">Anything else?</h3>
+<ul>
+<li><a
+  href="https://developer.chrome.com/docs/lighthouse/overview/">https://developer.chrome.com/docs/lighthouse/overview/</a></li>
+<li><a
+  href="https://wave.webaim.org/extension/">https://wave.webaim.org/extension/</a></li>
+<li><a
+  href="https://accessibilityinsights.io/docs/web/overview/">https://accessibilityinsights.io/docs/web/overview/</a></li>
+<li><a
+  href="https://design-system.service.gov.uk/">https://design-system.service.gov.uk/</a></li>
+</ul>
+
+    </div>
+  </section>
+
+
+
+
+    </div>
+</details>
+      
+        <details class="c-issue">
+    <summary class="c-issue__title e-heading__3">
+        Reflect on your plan to live as a tech professional
+        <a class="c-issue__link" href="https://github.com/CodeYourFuture/Module-Onboarding/issues/54">🔗</a>
+        <a href="https://curriculum.codeyourfuture.io/api/clone?state=%7b%22issue%22%3a54%2c%22module%22%3a%22Module-Onboarding%22%2c%22prevURL%22%3a%22https%3a%2f%2fcurriculum.codeyourfuture.io%2fitp%2fonboarding%2fsprints%2f3%2fbacklog%2f%22%2c%22sprint%22%3a%22%f0%9f%93%85%20Sprint%203%22%7d" class="e-button"
+            data-props="/itp/onboarding/sprints/3/backlog/">
+            Clone
+        </a>
+    </summary>
+    <div class="c-issue__body">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+    
+    
+
+    
+      
+    
+
+    
+    
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  <section class="c-block c-block--issue">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="reflect-on-your-plan-to-live-as-a-tech-professional">
+        <a href="https://github.com/CodeYourFuture/Module-Onboarding/issues/54">Reflect on your plan to live as a tech professional 🔗</a>
+      </h2>
+      
+      
+        
+          
+        
+          
+            <time class="c-block__time" datetime="P60M">🐇 Size Small</time>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+
+      
+      
+      
+      
+
+      
+    </header>
+
+    <div class="c-block__content c-copy">
+      <h3 id="coursework-content">Coursework content</h3>
+<p>Depends on #46</p>
+<p>Now that you have your spreadsheet, you reviewed it, and you are confident it is a good picture of your availability and commitments on a typical week, we can reflect on it.</p>
+<p>An important goal of this exercise is to observe your life from an external perspective.</p>
+<ul>
+<li>Write a statement about your reflection. It should be at least 50 words long.</li>
+<li>Don&rsquo;t forget to check your text with a grammar tool, such as Grammarly</li>
+</ul>
+<p><strong>Read it a few times aloud</strong> and ensure you haven&rsquo;t missed anything. Ask yourself if this is what you had planned or a realistic description of what happens. <strong>Make any changes and iterations</strong> to it.</p>
+<p>Now look at the number of hours you dedicate to each activity per week.</p>
+<p>Ensure you include your <strong>energy and concentration levels</strong> when studying or CYF training.</p>
+<p>Read the updated sample and iterate again on it, ensuring it has the expected level of detail.</p>
+<p><strong>Share your reflection with your pair.</strong>
+Ask them to ask you questions about the <strong>accuracy</strong> of it.
+Get them to help you to <strong>refine it</strong>.</p>
+<h3 id="estimated-time-in-hours">Estimated time in hours</h3>
+<p>1</p>
+<h3 id="what-is-the-purpose-of-this-assignment">What is the purpose of this assignment?</h3>
+<p>Observing your week and reflecting on your real availability will be key to ensure you have a clear plan to achieve your ultimate goal, which is a job in tech.</p>
+<p>Be transparent in all what you are writing and thinking about, to ensure you have a reliable plan. Remember: the plan doesn&rsquo;t end when the CYF course ends.</p>
+<h3 id="how-to-submit">How to submit</h3>
+<p>Add the following as a comment on this issue:</p>
+<ul>
+<li>If you feel comfortable doing so, link to the updated Google Docs with your statement.  You are not required to publish anything private on the internet.</li>
+<li>Add a comment about your discussion with your pair (up to 100 words). Remember to check the grammar and spelling before posting it.</li>
+</ul>
+
+    </div>
+  </section>
+
+
+
+
+    </div>
+</details>
+      
+        <details class="c-issue">
+    <summary class="c-issue__title e-heading__3">
+        SQL Problems using Google Sheets
+        <a class="c-issue__link" href="https://github.com/CodeYourFuture/Module-Onboarding/issues/7">🔗</a>
+        <a href="https://curriculum.codeyourfuture.io/api/clone?state=%7b%22issue%22%3a7%2c%22module%22%3a%22Module-Onboarding%22%2c%22prevURL%22%3a%22https%3a%2f%2fcurriculum.codeyourfuture.io%2fitp%2fonboarding%2fsprints%2f3%2fbacklog%2f%22%2c%22sprint%22%3a%22%f0%9f%93%85%20Sprint%203%22%7d" class="e-button"
+            data-props="/itp/onboarding/sprints/3/backlog/">
+            Clone
+        </a>
+    </summary>
+    <div class="c-issue__body">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+    
+    
+
+    
+      
+    
+
+    
+    
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  <section class="c-block c-block--issue">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="sql-problems-using-google-sheets">
+        <a href="https://github.com/CodeYourFuture/Module-Onboarding/issues/7">SQL Problems using Google Sheets 🔗</a>
+      </h2>
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+
+      
+      
+      
+      
+
+      
+    </header>
+
+    <div class="c-block__content c-copy">
+      <h3 id="link-to-the-coursework">Link to the coursework</h3>
+<p><a
+  href="https://docs.google.com/spreadsheets/d/1zPeHxhKkYmdiqXNhMwhfC1A0o1wI0zNiD5Gsks2SYoc/template/preview">https://docs.google.com/spreadsheets/d/1zPeHxhKkYmdiqXNhMwhfC1A0o1wI0zNiD5Gsks2SYoc/template/preview</a></p>
+<h3 id="why-are-we-doing-this">Why are we doing this?</h3>
+<p>To practice how to use Google Sheets to store and query data. This should make sure we understand the basics of SQL and how to use it to query data.</p>
+<p>We&rsquo;re going to practice extracting data from a database, using SQL. We will use the same data set we used in the <a
+  href="https://docs.google.com/spreadsheets/d/1zPeHxhKkYmdiqXNhMwhfC1A0o1wI0zNiD5Gsks2SYoc/template/preview">Learn about Google Sheets coursework</a>.</p>
+<p>Please complete the following tasks:</p>
+<ol>
+<li>Emily Smith would like to be able to quickly see how many deals she&rsquo;s made. She only cares about <code>Deal Value</code> and <code>Expected Close date</code> to see when she&rsquo;ll be paid. Create a query that will give only this information.</li>
+<li>As the accountant for this business, I need to find out how much we’ve sold in each country to pay our taxes. Deals are only complete when they have the status <code>&quot;Closed Won&quot;</code>, so we should only include those deals. To make the data easier to work with, we can sort them by country. Can you write a query to get this information?</li>
+</ol>
+<h2 id="acceptance-criteria">Acceptance criteria</h2>
+<ul>
+<li><input disabled="" type="checkbox"> I have completed both tasks.</li>
+<li><input disabled="" type="checkbox"> I have added them to a new sheet in my Google sheet I created in the &ldquo;Learn about Google Sheets&rdquo; coursework.</li>
+</ul>
+<h3 id="maximum-time-in-hours">Maximum time in hours</h3>
+<p>1</p>
+<h3 id="how-to-get-help">How to get help</h3>
+<p>Share your blockers in the ITP Slack.</p>
+<h3 id="how-to-submit">How to submit</h3>
+<ol>
+<li>The work should be in the same Google Sheet as the &ldquo;Learn about Google Sheets&rdquo; coursework.</li>
+<li>Share a link to your Google Sheet. Make sure to give read access to your sheet, you can do this by clicking the &ldquo;Share&rdquo; button, then change &ldquo;Restricted&rdquo; to &ldquo;Anyone with the link&rdquo;.</li>
+</ol>
+
+    </div>
+  </section>
+
+
+
+
+    </div>
+</details>
+      
+    
+    
+      <h2>Optional Tasks</h2>
+      <p>These are optional "stretch goals" to attempt when you have finished the mandatory tasks. They may be more challenging or require some additional research.</p>
+      
+        <details class="c-issue">
+    <summary class="c-issue__title e-heading__3">
+        Collect your self study courses
+        <a class="c-issue__link" href="https://github.com/CodeYourFuture/Module-Onboarding/issues/221">🔗</a>
+        <a href="https://curriculum.codeyourfuture.io/api/clone?state=%7b%22issue%22%3a221%2c%22module%22%3a%22Module-Onboarding%22%2c%22prevURL%22%3a%22https%3a%2f%2fcurriculum.codeyourfuture.io%2fitp%2fonboarding%2fsprints%2f3%2fbacklog%2f%22%2c%22sprint%22%3a%22%f0%9f%93%85%20Sprint%203%22%7d" class="e-button"
+            data-props="/itp/onboarding/sprints/3/backlog/">
+            Clone
+        </a>
+    </summary>
+    <div class="c-issue__body">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+    
+    
+
+    
+      
+    
+
+    
+    
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  <section class="c-block c-block--issue">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="collect-your-self-study-courses">
+        <a href="https://github.com/CodeYourFuture/Module-Onboarding/issues/221">Collect your self study courses 🔗</a>
+      </h2>
+      
+      
+        
+          
+        
+          
+            <time class="c-block__time" datetime="P60M">🐇 Size Small</time>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+
+      
+      
+      
+      
+
+      
+        <details open class="c-block__objectives">
+          <summary>
+            <h3 class="e-heading__4">Learning Objectives</h3>
+          </summary>
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Research self study resources</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Evaluate authority of resources</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        </details>
+      
+    </header>
+
+    <div class="c-block__content c-copy">
+      <h3 id="link-to-the-coursework">Link to the coursework</h3>
+<p><a
+  href="https://developer.mozilla.org/en-US/curriculum/">https://developer.mozilla.org/en-US/curriculum/</a></p>
+<!--
+
+
+
+  
+  
+    
+    
+      
+    
+  
+    
+    
+      
+    
+  
+    
+    
+      
+    
+  
+    
+    
+      
+    
+  
+  
+    <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />&ndash;&gt;</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Research self study resources</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Evaluate authority of resources</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" /><!--</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+  
+
+-->
+<h3 id="why-are-we-doing-this">Why are we doing this?</h3>
+<p>As you learn with us, you will often use other curricula as well. We encourage you to explore and use quality free resources that are available online. Mentors will most often refer you to <a
+  href="https://developer.mozilla.org/en-US/">MDN</a> and this site also has a free curriculum you can use: <a
+  href="https://developer.mozilla.org/en-US/curriculum/">MDN Curriculum</a> to work on anything you want to explore more or feel you need more work on. MDN is a high quality resource.</p>
+<p>We also make a lot of use of:</p>
+<ul>
+<li><a
+  href="https://www.khanacademy.org/computing">https://www.khanacademy.org/computing</a></li>
+<li><a
+  href="https://scrimba.com/">https://scrimba.com/</a></li>
+<li><a
+  href="https://www.theodinproject.com/">https://www.theodinproject.com/</a></li>
+<li><a
+  href="https://www.opsschool.org/">https://www.opsschool.org/</a></li>
+</ul>
+<p>Bookmark all these resources now. However, the best way to quickly find help with your programming topic is to search with a specific language and resource as keywords: topic language resource. For example</p>
+<p><code>for loop js mdn</code></p>
+<p>This will quickly take you to a well targeted resource.</p>
+<p>You will use many other resources as you progress. Not all resources are equal. Spend fifteen to thirty minutes googling other programming resources now. Pick one you think is <em>valuable</em> and one you think is probably not very useful. Share the links in Slack, explaining how you made your decision. Look at what other people are posting. Do you agree with their evaluations? Why or why not? Comment with your thoughts.</p>
+<h3 id="maximum-time-in-hours">Maximum time in hours</h3>
+<p>1</p>
+
+    </div>
+  </section>
+
+
+
+
+    </div>
+</details>
+      
+    
+</article>
+
+
+        
+
+  <footer class="c-page-footer">
+    <nav class="c-page-footer__nav">
+      
+      
+        <a
+          class="c-page-footer__prev c-page-footer__link e-link"
+          href="/itp/onboarding/sprints/3/prep/"
+          >prep</a
+        >←
+      
+      <span class="c-page-footer__this">backlog</span>
+      
+        →<a
+          class="c-page-footer__next c-page-footer__link e-link"
+          href="/itp/onboarding/sprints/3/day-plan/"
+          >day-plan</a
+        >
+      
+    </nav>
+  </footer>
+
+
+      </main><footer class="l-layout__footer l-footer">
+  <a
+    class="l-footer__github e-button e-button--icon"
+    href="https://github.com/CodeYourFuture/curriculum/">
+    <svg
+  focusable="false"
+  class="e-button__icon"
+  role="presentation"
+  width="96"
+  viewbox="0 0 98 96"
+  xmlns="http://www.w3.org/2000/svg">
+  <path
+    fill-rule="evenodd"
+    clip-rule="evenodd"
+    d="M48.854 0C21.839 0 0 22 0 49.217c0 21.756 13.993 40.172 33.405 46.69 2.427.49 3.316-1.059 3.316-2.362 0-1.141-.08-5.052-.08-9.127-13.59 2.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015 4.934.326 7.523 5.052 7.523 5.052 4.367 7.496 11.404 5.378 14.235 4.074.404-3.178 1.699-5.378 3.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283 0-5.378 1.94-9.778 5.014-13.2-.485-1.222-2.184-6.275.486-13.038 0 0 4.125-1.304 13.426 5.052a46.97 46.97 0 0 1 12.214-1.63c4.125 0 8.33.571 12.213 1.63 9.302-6.356 13.427-5.052 13.427-5.052 2.67 6.763.97 11.816.485 13.038 3.155 3.422 5.015 7.822 5.015 13.2 0 18.905-11.404 23.06-22.324 24.283 1.78 1.548 3.316 4.481 3.316 9.126 0 6.6-.08 11.897-.08 13.526 0 1.304.89 2.853 3.316 2.364 19.412-6.52 33.405-24.935 33.405-46.691C97.707 22 75.788 0 48.854 0z"
+    fill="currentColor" />
+</svg>
+
+    <span class="is-invisible">Find us on GitHub</span>
+  </a>
+  <p class="l-footer__impressum e-heading__6">
+    This
+    <a href="https://github.com/CodeYourFuture/curriculum/">free and open source programme</a>
+    is a project of
+    <a href="https://codeyourfuture.io/">Code Your Future</a>
+    <br />
+    Creative Commons Attribution-ShareAlike 4.0
+  </p>
+  <dark-mode class="l-footer__mode"
+    ><button
+      slot="button"
+      id="mode-toggle"
+      type="button"
+      class="e-button e__button--toggle e-button--icon">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="e-icon e__button__icon e-icon--moon">
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
+      </svg>
+      <span class="is-invisible">Toggle between light and dark mode</span>
+    </button></dark-mode
+  >
+</footer>
+
+
+
+<script src="/scripts/app.min.js" defer></script>
+
+<script src="/scripts/youtube-player.min.js" defer></script>
+
+<script src="/scripts/tab-panels.min.js" type="module" defer></script>
+
+<script src="/scripts/dark-mode.min.js"></script>
+
+<script src="/scripts/alert-message.min.js" defer></script>
+
+
+
+
+
+
+
+</div>
+  </body>
+</html>

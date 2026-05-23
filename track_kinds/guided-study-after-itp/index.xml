@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Guided-Study-After-Itp on CYF Courses</title>
+    <link>https://curriculum.codeyourfuture.io/track_kinds/guided-study-after-itp/</link>
+    <description>Recent content in Guided-Study-After-Itp on CYF Courses</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="https://curriculum.codeyourfuture.io/track_kinds/guided-study-after-itp/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI Essentials</title>
+      <link>https://curriculum.codeyourfuture.io/tracks/ai-essentials/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://curriculum.codeyourfuture.io/tracks/ai-essentials/</guid>
+      <description>&lt;section class=&#34;c-note c-note--warning&#34;&gt;&#xD;&#xA;    &lt;h4 class=&#34;c-note__title&#34;&gt;⚠️Warning&lt;/h4&gt;&#xD;&#xA;    &lt;div class=&#34;c-note__text&#34;&gt;&lt;p&gt;This track is currently hosted and run on a different platform. This probably isn&amp;rsquo;t the content you&amp;rsquo;re looking for.&lt;/p&gt;&lt;/div&gt;&#xD;&#xA;  &lt;/section&gt;</description>
+    </item>
+    <item>
+      <title>React</title>
+      <link>https://curriculum.codeyourfuture.io/tracks/react/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://curriculum.codeyourfuture.io/tracks/react/</guid>
+      <description>&lt;p&gt;This track is a collection of past teaching material relating to React. It is not structured to be taken as a standalone track, and has mixed in with it past non-React-related workshops and exercises.&lt;/p&gt;&#xA;&lt;p&gt;You may find it useful as a basis and set of projects to self-teach React, but it&amp;rsquo;s not currently offered as a track. We would want to clean up the structure if we wanted to offer it in the future.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

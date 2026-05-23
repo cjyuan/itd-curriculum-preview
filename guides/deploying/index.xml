@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Deploying on CYF Courses</title>
+    <link>https://curriculum.codeyourfuture.io/guides/deploying/</link>
+    <description>Recent content in Deploying on CYF Courses</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="https://curriculum.codeyourfuture.io/guides/deploying/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Other free deployment offerings</title>
+      <link>https://curriculum.codeyourfuture.io/guides/deploying/free_deployments/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://curriculum.codeyourfuture.io/guides/deploying/free_deployments/</guid>
+      <description>&lt;h1 id=&#34;free-deployment-offerings&#34;&gt;Free deployment offerings&lt;/h1&gt;&#xA;&lt;p&gt;In this section, we will showcase some free options that allow you to deploy your application stack. We will also take note of any limitations each of the providers have.&lt;/p&gt;&#xA;&lt;section class=&#34;c-note c-note--note&#34;&gt;&#xD;&#xA;  &lt;h4 class=&#34;c-note__title e-heading__4&#34;&gt;📝TL;DR&lt;/span&gt;&#xD;&#xA;  &lt;/h4&gt;&#xD;&#xA;  &lt;div class=&#34;c-note__text &#34;&gt;&lt;p&gt;If you&amp;rsquo;re a current CYF trainee or recent graduate, you should use the &lt;a&#xA;  href=&#34;../cyf&#34;&gt;CYF Hosted Environment&lt;/a&gt;. Otherwise, see below.&lt;/p&gt;&#xA;&lt;p&gt;If you are not eligible for the CYF hosted environment, the CYF Curriculum team suggests &lt;a&#xA;  href=&#34;../netlify&#34;&gt;Netlify&lt;/a&gt; as a free provider to use for both your frontend and backend applications, with Supabase as a free database layer for persistence. This is because among the free tier offerings they have the least amount of limitations. You will need to check these however to make sure they are still suitable for your use case.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

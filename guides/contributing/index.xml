@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Contributing on CYF Courses</title>
+    <link>https://curriculum.codeyourfuture.io/guides/contributing/</link>
+    <description>Recent content in Contributing on CYF Courses</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="https://curriculum.codeyourfuture.io/guides/contributing/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Building the Curriculum Locally</title>
+      <link>https://curriculum.codeyourfuture.io/guides/contributing/running-locally/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://curriculum.codeyourfuture.io/guides/contributing/running-locally/</guid>
+      <description>&lt;h2 id=&#34;required-packages&#34;&gt;Required Packages&lt;/h2&gt;&#xA;&lt;p&gt;Our curriculum is built on top of &lt;a&#xA;  href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; and requires some packages to be installed:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;code&gt;go&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;hugo&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;npm&lt;/code&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;section class=&#34;c-note c-note--warning&#34;&gt;&#xD;&#xA;    &lt;h4 class=&#34;c-note__title&#34;&gt;⚠️Warning&lt;/h4&gt;&#xD;&#xA;    &lt;div class=&#34;c-note__text&#34;&gt;&lt;p&gt;We require &lt;code&gt;v0.136.5-extended&lt;/code&gt; of &lt;code&gt;hugo&lt;/code&gt; which can be downloaded from &lt;a&#xA;  href=&#34;https://github.com/gohugoio/hugo/releases/tag/v0.136.5&#34;&gt;GitHub&lt;/a&gt; and manually added to your &lt;code&gt;$PATH&lt;/code&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Later versions will induce an error and building will fail.&lt;/p&gt;&#xA;&lt;p&gt;Updating this is an &lt;a&#xA;  href=&#34;https://github.com/CodeYourFuture/curriculum/issues/1505&#34;&gt;open issue&lt;/a&gt; - help welcome!&lt;/p&gt;&lt;/div&gt;&#xD;&#xA;  &lt;/section&gt;&lt;h2 id=&#34;github-token&#34;&gt;GitHub Token&lt;/h2&gt;&#xA;&lt;p&gt;When building the curriculum content is pulled from a number of different CYF repos via the GitHub API. To build locally you will need to create a fine-grained GitHub API token which can be generated from the &lt;a&#xA;  href=&#34;https://github.com/settings/personal-access-tokens&#34;&gt;developer settings page&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Adding &amp; Updating Content</title>
+      <link>https://curriculum.codeyourfuture.io/guides/contributing/adding-updating/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://curriculum.codeyourfuture.io/guides/contributing/adding-updating/</guid>
+      <description>&lt;h2 id=&#34;finding-the-right-directory&#34;&gt;Finding the Right Directory&lt;/h2&gt;&#xA;&lt;p&gt;CYF&amp;rsquo;s curriculum is designed to be modular. Each part of the course has its own sub-directory within the &lt;code&gt;curriculum&lt;/code&gt; repo, and each module within those courses has its own GitHub repo with relevant code examples and exercises. We define the structure of the curriculum by specifying where each piece of content can be found, either as a path within &lt;code&gt;curriculum&lt;/code&gt; or as a GitHub url.&lt;/p&gt;&#xA;&lt;section class=&#34;c-note c-note--note&#34;&gt;&#xD;&#xA;    &lt;h4 class=&#34;c-note__title&#34;&gt;📝Note&lt;/h4&gt;&#xD;&#xA;    &lt;div class=&#34;c-note__text&#34;&gt;&lt;p&gt;We will use the Data Groups module of the Intro to Programming course as an example here but others follow a similar pattern.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Minutes of the Global Syllabus Team</title>
+      <link>https://curriculum.codeyourfuture.io/guides/contributing/minutes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://curriculum.codeyourfuture.io/guides/contributing/minutes/</guid>
+      <description>&lt;h2 id=&#34;date_here&#34;&gt;{DATE_HERE}&lt;/h2&gt;&#xA;&lt;p&gt;Attendees:&lt;/p&gt;&#xA;&lt;h3 id=&#34;actions-from-last-time&#34;&gt;❗Actions from last time&lt;/h3&gt;&#xA;&lt;h3 id=&#34;-agenda-points&#34;&gt;📝 Agenda points&lt;/h3&gt;&#xA;&lt;h3 id=&#34;actions&#34;&gt;❗Actions&lt;/h3&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;2026-05-05&#34;&gt;2026-05-05&lt;/h2&gt;&#xA;&lt;p&gt;Attendees: Anna Aitchison, CJ Yuan, Colin Farquhar, Daniel Wagner-Hall, Ali Smith, Karen Klein&lt;/p&gt;&#xA;&lt;h3 id=&#34;actions-from-last-time-1&#34;&gt;❗Actions from last time&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Daniel: (Carry Over) Swap order of Wireframe and Form-Controls exercises.&lt;/li&gt;&#xA;&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Colin: (Carry Over) Decided that we will make a list of alternative activities to replace/supplement study group&lt;/li&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Daniel: (Carry Over) Split up the SDC legacy code module&lt;/li&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; CJ: (Carry Over) Recording a &amp;ldquo;How to orient yourself to a PR video&amp;rdquo;&lt;/li&gt;&#xA;&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Anna: Move all of the CYF-Workshops into the curriculum&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;DWH working on splitting up SDC, should be done before the current cohort get there.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

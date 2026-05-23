@@ -1,0 +1,1434 @@
+<!DOCTYPE html>
+
+
+
+
+<html lang="en" class="p-prep"><head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  <title data-pagefind-meta="title">
+    
+      Software Development Course 
+    
+      Complexity 
+    
+      Sprint 2 
+    
+    Prep
+  </title>
+  
+    <meta
+      name="description"
+      content=" CYF Courses: Saving work, avoiding work, optimising work" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+  <style>
+    body,
+    html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      animation: fade-in 300ms;
+    }
+    @keyframes fade-in {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  </style>
+  
+  
+  <link
+    rel="stylesheet"
+    href="/bundled.min.b6a4520237559385268d63a9daa81d96.css"
+    media="print"
+    onload="this.media='all'" />
+
+  
+  
+    
+    
+    <link
+      rel="stylesheet"
+      href="/custom.min.8ded6a1a88bc7cc98bdef8dc33d15f3a.css"
+      media="print"
+      onload="this.media='all'" />
+  
+
+
+  <noscript>
+    <link rel="stylesheet" href="/bundled.min.b6a4520237559385268d63a9daa81d96.css" />
+  </noscript>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&amp;display=swap"
+    rel="stylesheet"
+    media="print"
+    onload="this.media='all'" />
+
+  <link rel="shortcut icon" href="https://curriculum.codeyourfuture.io/favicon.ico" />
+  <meta name="theme-color" content="#e3ddeef2" />
+  <link rel="manifest" href="https://curriculum.codeyourfuture.io/manifest.json" />
+</head>
+<body>
+    <a class="c-skip-link e-button" id="skip-link" href="#main">Skip to main</a>
+    <div class="l-layout">
+      <header class="l-layout__header l-header">
+  <div class="l-header__container">
+    <h1 class="l-header__heading e-heading__6" data-pagefind-ignore>
+      <a class="l-header__home" href="/"
+        ><span class="is-invisible"
+          >sdc Prep CYF Courses</span
+        >
+        <span class="is-none--lt-container">
+          <svg
+          xmlns="http://www.w3.org/2000/svg"
+          title="Code Your Future."
+          viewBox="0 0 621.64 155.81"
+          width="140px"
+          focusable="false"
+          role="img">
+          <path
+            fill="var(--theme-color--brand)"
+            d="M103.37 56.51C96.91 63.64 87.03 69.9 74.6 69.9c-20.14 0-33.52-12.91-33.52-34.09C41.08 13.97 57.5.87 69.94.87c9.5 0 13.77 5.32 14.63 6.46l2.18-5.27h14.91v27h-17c-.28-6.18-3.32-12-10.06-12s-11.3 8.45-11.3 18.8c0 9.4 4.84 17.86 13.86 17.86 8 0 14.24-8.36 15.1-9.31Zm2.88-21.85C106.25 14.15 119.92 0 139.58 0c23.26 0 34.09 14 34.09 35.32s-12 34.57-33.43 34.57c-19.88 0-33.99-11.49-33.99-35.23Zm43.68.66c0-11.49-3.13-20.7-10.45-20.7-5.79-.09-9.78 8.26-9.78 20 0 12.44 4.47 20.32 10.54 20.32s9.65-7.88 9.65-19.62Zm27.49 20.23h5.89V14.34h-5.89V1.8h29c23 0 36.09 14.15 36.09 32.29 0 21.65-13.11 34.09-36.47 34.09h-28.62Zm29 0c10.03-.19 14.21-9.59 14.21-21.49 0-10.16-4.18-19.75-14.25-19.75h-3.61v41.24ZM303.04 1.8v21h-16.43v-8.46h-15.19v13.1h18v12.62h-18v15.49h15.19v-8.83h16.43v21.46h-57.26V55.55h6V14.34h-6V1.8Z" />
+          <path
+            fill="var(--theme-color--ink)"
+            d="M274.42 87.82v21h-16.8v-8.45h-14.37v16.52h18v12.63h-18v12.04h9.68v12.63h-35.29v-12.63h5.89v-41.21h-5.89V87.82Zm33.04 0v12.24h-5.12v20.51c0 15.28 3.41 18.51 9.49 18.51 5.79 0 9.59-2.28 9.59-18.61v-20.12h-5.17V87.82h28.11v12.24h-5.11v23.07c0 22.51-9.4 32.67-27.25 32.67-19.18-.57-29.43-10.64-29.43-32.19v-23.45h-5.32V87.82Zm103.5 24.69h-14v-12.16h-8v41.21h7.88v12.63h-35.26v-12.63h7.79v-41.21h-8.12v12.16h-14V87.82h63.71ZM444 87.82v12.24h-5.13v20.51c0 15.28 3.42 18.51 9.5 18.51 5.79 0 9.59-2.28 9.59-18.61v-20.12h-5.13V87.82h28.11v12.24h-5.13v23.07c0 22.51-9.4 32.67-27.25 32.67-19.18-.57-29.44-10.64-29.44-32.19v-23.45h-5.32V87.82Zm71.59 0c22 0 26.3 8.73 26.3 19.56 0 7.4-5.88 12.63-13.76 13.77 6.55.95 12.44 6.64 12.44 13.48 0 4.08.57 6.46 2.27 6.46 1.43 0 2.19-1.14 2.19-3v-3.13h6.36v5.22c0 7.88-3.32 15.19-13.86 15.19-12.44 0-18.42-6.55-18.42-17.66 0-8.64-1.05-10.73-9.5-10.73v14.68h5.79v12.53h-30.67v-12.53h5.32v-41.4h-5.32V87.82Zm-6 28.48h4.27c5.51 0 9.12-2.65 9.12-7.69 0-5.6-3.13-8.45-8.64-8.45h-4.75Zm102.38-28.48v21h-16.43v-8.45h-15.19v13.09h18v12.6h-18v15.5h15.19v-8.83h16.43v21.46h-57.26v-12.63h6v-41.21h-6V87.82Zm-227.72-56.1c.38-1.9 2.47-5.89 3.51-8.17l5.22-9.59h-5.22V1.8h25.54v12.16h-5.05l-17.62 30.86v11h5.32v12.36h-30.39V55.83h5.41v-11.2l-18.42-30.67h-4.65V1.8h32.47v12.16h-4.93l5.5 10.1c.57 1.81 2.57 6.08 2.95 7.7Zm29.54 2.94C413.79 14.15 427.47 0 447.12 0c23.27 0 34.09 14 34.09 35.32s-12 34.57-33.42 34.57c-19.85 0-34-11.49-34-35.23Zm43.68.66c0-11.49-3.13-20.7-10.44-20.7-5.79-.09-9.78 8.26-9.78 20 0 12.44 4.46 20.32 10.54 20.32s9.68-7.88 9.68-19.62ZM514.25 1.8v12.26h-5.13v20.5c0 15.29 3.42 18.52 9.5 18.52 5.79 0 9.59-2.28 9.59-18.61V14.34h-5.13V1.8h28.11v12.26h-5.13v23.07c0 22.5-9.4 32.66-27.25 32.66-19.18-.57-29.44-10.63-29.44-32.19V14.15h-5.32V1.8Zm71.59 0c22 0 26.31 8.74 26.31 19.57 0 7.4-5.89 12.62-13.77 13.76 6.55 1 12.44 6.65 12.44 13.49 0 4.08.57 6.46 2.27 6.46 1.43 0 2.19-1.14 2.19-3V48.9h6.36v5.23c0 7.88-3.32 15.19-13.86 15.19-12.44 0-18.42-6.55-18.42-17.66 0-8.64-1.05-10.73-9.5-10.73v14.71h5.79v12.54h-30.67V55.64h5.32v-41.4h-5.32V1.8Zm-6 28.49h4.27c5.51 0 9.12-2.66 9.12-7.69 0-5.6-3.13-8.45-8.64-8.45h-4.75ZM28.39 14.7l5.8 10.64-23.46 10.72 23.46 10.55-3.61 9.87L0 42.24v-13.3Zm318.7 14.24v13.3l-30.58 14.24-3.61-9.87 23.46-10.55-23.46-10.72 5.8-10.64Z" />
+        </svg>
+        </span>
+        <span class="is-none--gt-container">
+          <svg
+          xmlns="http://www.w3.org/2000/svg"
+          version="1.0"
+          viewBox="0 0 512 512"
+          width="48px">
+          <path
+            fill="currentcolor"
+            stroke="currentcolor"
+            d="M225.5 1c-1.1.5-3.5.9-5.3.9-4.1.1-22.9 4.5-30.7 7.2-63.1 22-114.7 72.3-142.7 139.4-6.4 15.2-11.8 33.8-16.7 57-4.1 19.7-5.4 64.5-2.6 90.8C33 346.2 49.8 390.1 76.8 425c6.2 7.9 23.9 26.4 30.7 32 8.1 6.7 26.1 18.7 35.1 23.6 28.1 15.1 58 24.3 91.9 28.3 5.5.7 13.6 1.7 18 2.2 8.8 1.2 33.9.7 48-.9 11-1.3 31.7-4.8 36.5-6.2 1.9-.5 8-2.3 13.5-3.9 21.3-6.1 47.2-17.8 67.5-30.5 8.8-5.4 23.7-15.8 28.5-19.7 10.2-8.4 24.5-21.3 31.4-28.2l8.4-8.5-2.2-2.9c-1.3-1.5-4.6-5.3-7.4-8.3-6.2-6.7-14.5-15.7-21.2-23.1-2.7-3-7.5-8.2-10.5-11.4-3-3.3-9.8-10.8-15.1-16.5-21.5-23.6-24.2-26.5-24.9-26.8-.3-.1-2 1.2-3.6 3-1.6 1.9-6.3 7.1-10.4 11.7-8.6 9.7-25.6 24.6-35.9 31.4-21.4 14.4-42.5 21.7-62.6 21.7-15.3-.1-29.3-3.3-42.5-10-22.8-11.5-41.9-35.5-51.5-64.7-4.2-12.8-4.3-13.4-5.9-22.8-3.8-22.9-4.6-39.2-2.6-55.6 2.7-22.7 3.3-26.5 5-33.2 7.9-30.9 16.7-48.6 32.4-65.6 16.8-17.9 41.1-24.9 65.1-18.6 30 7.8 50.7 36.3 55.5 76.3.5 4.6 1.2 8.7 1.5 9.3.4.5 25.1.9 62.6.9H474V9H364.2L357 26.7c-4 9.8-7.9 18.5-8.7 19.3-1.3 1.3-2.1.8-6.6-4.3-6-6.9-18.3-16.7-28.2-22.5-7.4-4.3-22.6-10.9-28.5-12.4-9.2-2.2-18.1-4.1-24-5-9-1.3-33.1-1.9-35.5-.8z" />
+        </svg>
+        </span>
+      </a>
+    </h1>
+    <link
+  href="/pagefind/pagefind-ui.css"
+  rel="stylesheet"
+  media="print"
+  onload="this.media='all'" />
+<style>
+  :root {
+    --pagefind-ui-primary: var(--theme-color--ink);
+    --pagefind-ui-text: var(--theme-color--ink);
+    --pagefind-ui-background: var(--theme-color--paper);
+    --pagefind-ui-border: var(--theme-color--outline);
+    --pagefind-ui-tag: var(--theme-color--block);
+    --pagefind-ui-border-radius: 2em;
+    --pagefind-ui-image-border-radius: var(--theme-border-radius);
+    --pagefind-ui-font: var(--theme-font--copy);
+  }
+  .pagefind-ui--reset {
+    position: absolute;
+  }
+  #search .pagefind-ui__search-input {
+    box-shadow: var(--theme-box-shadow--inset);
+    margin-bottom: var(--theme-spacing--1);
+  }
+  #search .pagefind-ui__search-clear {
+    background-color: transparent;
+  }
+  #search .pagefind-ui__drawer {
+    background-color: var(--theme-color--paper);
+    box-shadow: var(--theme-box-shadow--slim);
+    transform: translateY(-1.5px);
+    padding: 0 var(--theme-spacing--2);
+    max-height: calc(100vh - 4rem);
+    overflow-y: auto;
+  }
+  #search .pagefind-ui__result {
+    padding: var(--theme-spacing--1) 0 var(--theme-spacing--2) 0;
+  }
+  #search .pagefind-ui__result:focus-within,
+  #search .pagefind-ui__button:focus {
+    background-color: var(--theme-color--block);
+  }
+  #search .pagefind-ui__button {
+    border: none;
+  }
+</style>
+<script src="/pagefind/pagefind-ui.js" type="text/javascript" defer></script>
+<div id="search" class="l-header__search"></div>
+<script>
+  window.addEventListener("DOMContentLoaded", (event) => {
+    new PagefindUI({
+      element: "#search",
+      showSubResults: true,
+      pageSize: 3,
+      showImages: false,
+      showTags: true,
+    });
+  });
+</script>
+
+    <button
+      class="l-header__action e-button e-button--icon js-menu-toggle e-heading__3">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+        <path
+          stroke="var(--theme-color--ink)"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M13 5a1 1 0 1 0-2 0 1 1 0 0 0 2 0Zm0 7a1 1 0 1 0-2 0 1 1 0 0 0 2 0Zm0 7a1 1 0 1 0-2 0 1 1 0 0 0 2 0Z" />
+      </svg>
+      <span class="is-invisible">Open Menu.</span>
+    </button>
+  </div>
+</header>
+
+      <nav
+  class="l-layout__menu l-menu"
+  aria-label="Main Site Links."
+  id="site-menu"
+  hidden
+  tabindex="0">
+  <div class="l-menu__container">
+    <h2 class="l-menu__heading e-heading__2">
+      <a href="/" class="l-menu__home is-invisible">Menu</a>
+    </h2>
+    <button
+      class="l-menu__action e-button e-button--icon js-menu-toggle e-heading__2"
+      id="close-menu">
+      ❎
+      <span class="is-invisible">Close Menu.</span>
+    </button>
+    <ul class="l-menu__primary">
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/guides/">
+            Guides
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/sdc/tools/">
+            Tools
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/sdc/logic/">
+            Logic
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/sdc/decomposition/">
+            Decomposition
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/sdc/legacy/">
+            Legacy code
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/sdc/complexity/">
+            Complexity
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/tracks/servers/">
+            Servers
+          </a>
+        </li>
+    </ul>
+    <ul class="l-menu__secondary">
+        <li class="l-menu__item">
+          <a class="e-heading__3 l-menu__link" href="https://codeyourfuture.io">
+            CYF 👈🏾
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__3 l-menu__link" href="https://codeyourfuture.io/volunteers/">
+            Join Us 👋🏿
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__3 l-menu__link" href="https://codeyourfuture.io/donate/">
+            Support 🫶🏼
+          </a>
+        </li>
+    </ul>
+  </div>
+</nav>
+
+      <main
+        id="main"
+        class="l-layout__main l-main"
+        tabindex="0"
+        data-pagefind-body>
+        
+  
+    <solo-view tabindex="0">
+      
+
+
+      <div slot="header">
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+<header
+  class="c-page-header 
+    c-page-header--solo
+   c-page-header--toc">
+  
+  <div class="c-page-header__container">
+    <div class="c-page-header__breadcrumbs">
+      
+  <nav class="c-breadcrumbs">
+    <ol class="c-breadcrumbs__list">
+      
+        
+        
+          <li class="c-breadcrumbs__item">
+            <a
+              class="c-breadcrumbs__link"
+              href="/sdc/"data-pagefind-filter="module"><span class="c-breadcrumbs__text">Software Development Course</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                width="24px"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="c-breadcrumbs__icon">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+              </svg>
+            </a>
+          </li>
+        
+        
+          <li class="c-breadcrumbs__item">
+            <a
+              class="c-breadcrumbs__link"
+              href="/sdc/complexity/"><span class="c-breadcrumbs__text">Complexity</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                width="24px"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="c-breadcrumbs__icon">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+              </svg>
+            </a>
+          </li>
+      
+        <li class="c-breadcrumbs__item">
+          <a
+            class="c-breadcrumbs__link"
+            href="/sdc/complexity/sprints/2/"data-pagefind-filter="sprint">Sprint 2</a
+          >
+        </li>
+      
+    </ol>
+  </nav>
+  
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Our Courses",
+      "item":"https://curriculum.codeyourfuture.io/"},
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Software Development Course",
+      "item":"https://curriculum.codeyourfuture.io/sdc/"},
+    {
+      "@type": "ListItem",
+      "position":  3 ,
+      "name": "Complexity",
+      "item":"https://curriculum.codeyourfuture.io/sdc/complexity/"},{
+      "@type": "ListItem",
+      "position":  5 ,
+      "name": "Sprint 2",
+      "item":"https://curriculum.codeyourfuture.io/sdc/complexity/sprints/2/"},
+    {
+      "@type": "ListItem",
+      "position":  6 ,
+      "name": "Prep",
+      "item":"https://curriculum.codeyourfuture.io/sdc/complexity/sprints/2/"}
+  ]
+}
+</script>
+
+
+    </div>
+    <h1 class="c-page-header__title e-heading__1"data-pagefind-filter="view"
+        
+      data-pagefind-weight="10">
+      <span class="c-emoji">
+        
+        
+           
+            <time-total class="c-page-header__time"></time-total>
+      
+         
+        </span>
+        <span class="c-page-header__title-text">Prep</span>
+               
+    </h1>
+    
+      
+        <h2 class="c-page-header__description e-heading__3">
+          Saving work, avoiding work, optimising work
+        </h2>
+      
+    
+    
+    
+    
+      <div class="c-page-header__toc " id="toc">
+        <section class="c-toc" aria-label="Table of contents.">
+          <a id="top" class="c-toc__top e-button e-button--icon" href="#toc"
+            >🔖 <span class="is-invisible">back to top</span></a
+          >
+          
+            <nav id="TableOfContents"></nav>
+          
+          
+            <ol>
+              
+                <li>
+                  <a href="#caching" data-pagefind-weight="5"
+                    >Caching</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#cache-invalidation" data-pagefind-weight="5"
+                    >Cache Invalidation</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#memoisation" data-pagefind-weight="5"
+                    >Memoisation</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#caching-too-much" data-pagefind-weight="5"
+                    >Caching too much</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#pre-computing" data-pagefind-weight="5"
+                    >Pre-computing</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#trade-offs" data-pagefind-weight="5"
+                    >Trade-offs</a
+                  >
+                  
+                </li>
+              
+            </ol>
+          
+          
+        </section>
+      </div>
+    
+
+  </div>
+</header>
+</div>
+      <div slot="blocks">
+        
+        
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="caching">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="caching">
+        Caching
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="15 minutes countdown" datetime="P15M">15&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Identify and explain how web browsers benefit from caching</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Demonstrate how caching can trade memory for CPU</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <blockquote><p>Caching means storing a copy of something in a temporary, faster-to-access location.</p>
+</blockquote><p>Instead of fetching or calculating the same thing over and over again, we use the stored copy. Caching saves the result of work we have already done, so we can reuse it.</p>
+<h3 id="-browser-caching">🔖 Browser Caching</h3>
+<p>All browsers cache very heavily. When you visit a page, your browser downloads resources like <a
+  href="https://developer.chrome.com/docs/devtools/sources">images, CSS, and so on</a>. The next time you visit any page that calls that resource, the browser checks its cache first. If it finds a valid local copy, it uses that instead of downloading from the internet.</p>
+<p>Accessing local files is much faster than downloading over the network, so your page loads more quickly. In fact your browser has <a
+  href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Caching#types_of_caches">many levels of caching</a>. In the Purple Forest application, the application state is cached in <a
+  href="https://developer.chrome.com/docs/devtools/application">Local storage</a>.</p>
+<h3 id="-the-memory-vs-cpunetwork-trade-off">🫱🏽‍🫲🏿 The Memory vs. CPU/Network Trade-off</h3>
+<p>Browser caching is a classic example of trading memory for CPU time or network time. We use extra memory <strong>space</strong> to hold the cached copies and we save network <strong>time</strong> by not re-downloading assets. We could have chosen to use less memory space, but it would have slowed down our application.</p>
+<section class="c-note c-note--Activity">
+  <h4 class="c-note__title e-heading__4">Activity</span>
+  </h4>
+  <div class="c-note__text "><p>Open <a
+  href="https://github.com/CodeYourFuture/Module-Legacy-Code">Purple Forest</a> in your browser and take a look at all the ways resources are cached in Devtools.</p>
+<p>You could try opening the <a
+  href="https://developer.chrome.com/docs/devtools/network">Network tab</a> and selecting a Network request like a CSS file. Ask <a
+  href="https://developer.chrome.com/docs/devtools/ai-assistance/network">AI Assistance</a> something like &ldquo;show me all the ways this resource is cached in this browser&rdquo;</p>
+</div>
+</section>
+
+
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="cache-invalidation">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="cache-invalidation">
+        Cache Invalidation
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="15 minutes countdown" datetime="P15M">15&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Identify and explain staleness risks with caching, and the difficulty of invalidation</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <blockquote><p>&ldquo;There are only two hard things in Computer Science: cache invalidation and naming things.&rdquo; ~ Phil Karlton</p>
+</blockquote><h3 id="-stalefresh">🍣 Stale/Fresh</h3>
+<p>What happens if the answer changes after we have cached it? The user might see an old version. This is called a stale cache or staleness. We need to tell the cache: &ldquo;This item is old, get a fresh copy&rdquo; . This is 
+<tool-tip-container tabindex="0"><strong class="tooltip__trigger" id="trigger__cache invalidation">cache invalidation</strong><span class="tooltip__emoji">🧶</span><tool-tip role="tooltip" aria-labelledby="cache invalidation"><span class="tooltip__title e-heading__2"><span class="tooltip__emoji">🧶</span> cache invalidation</span><span class="tooltip__content"><a
+  href="https://redis.io/glossary/cache-invalidation/">Cache invalidation</a> is the process of removing data that is no longer accurate or useful.</span></tool-tip></tool-tip-container>
+, and <a
+  href="https://shouldiblamecaching.com/">it&rsquo;s tricky.</a></p>
+<p>In the browser, common invalidation strategies include:</p>
+<ul>
+<li><strong><a
+  href="https://developer.mozilla.org/en-US/docs/Glossary/TTL">Time-To-Live</a></strong> (TTL): Items expire after a set time (e.g., &ldquo;cache this image for 1 hour&rdquo;).</li>
+<li><strong><a
+  href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Last-Modified">ETags/Last-Modified Headers</a></strong>: The browser asks the server &ldquo;I have version X, is it still current?&rdquo;. If yes, the server sends back a &ldquo;304 Not Modified&rdquo; response; if no, it sends the new version. A server can send a 304 response faster than it can send the whole content. But having to make a network request and wait for the answer is slower than not making a network request.</li>
+<li><strong>Cache-Busting</strong>: Change the name when the content changes. The browser sees a new URL and must download it. Inspect this web page and look at the CSS link in the header. The file is automatically <a
+  href="https://gohugo.io/hugo-pipes/fingerprint/">fingerprinted</a> to bust the cache when the fingerprint changes.</li>
+</ul>
+<h3 id="-why-is-this-hard">🤔 Why Is This Hard?</h3>
+<p>If there are so many solutions, why do we say cache invalidation is hard? It&rsquo;s because every cache is a tradeoff between running out of time, running out of resources, and giving the right answer. Your program can be fast and cheap, but probably not accurate. It can be fast and accurate, but that&rsquo;s not cheap. And it can be cheap and accurate, but that&rsquo;s not likely to be fast.</p>
+<p>
+
+  <figure>
+      <img
+        loading="lazy"
+        src="/module/complexity/invalidation/venn.svg"alt="Venn diagram showing three overlapping circles: fast, cheap, and accurate" data-pagefind-index-attrs="Venn diagram showing three overlapping circles: fast, cheap, and accurate"/></figure></p>
+<p>When we do not cache, our program is <em>slow</em>. If we do not invalidate our cache at the right moment, our program is <strong>wrong</strong>.</p>
+<p>In different applications, there are different priorities:</p>
+<ul>
+<li>In a social media application, it&rsquo;s probably more important to be fast than correct. If our goal is to serve the user the most interesting post to them, but we more quickly serve them the second most interesting post to them, the user will probably still be pretty happy (and maybe it gives us time to load the other post to show them next).</li>
+<li>In an application handling medical records, it&rsquo;s probably more important to be correct than fast. If a doctor is checking whether a patient is allergic to a medication they&rsquo;re about to give them, a fast but wrong answer could be fatal.</li>
+</ul>
+<p>Software has real effects in the world. It&rsquo;s important to think about the real-world context and implications of our software when we&rsquo;re writing it.</p>
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="memoisation">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="memoisation">
+        Memoisation
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="90 minutes countdown" datetime="P90M">90&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Define memoisation</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <p>Caching isn&rsquo;t limited to your browser.</p>
+<p>We can save time by caching the results of operations (answers) at every level in our system: in the database, at the endpoint, in the browser, and even inside our functions.</p>
+<h3 id="-caching-during-execution">📋 Caching During Execution</h3>
+<p>Imagine any computation that we do repeatedly on the way to a final result. We could do it once, cache the answer in memory, and reuse it. This is especially helpful in functions that use 
+<tool-tip-container tabindex="0"><strong class="tooltip__trigger" id="trigger__recursion">recursion</strong><span class="tooltip__emoji">🧶</span><tool-tip role="tooltip" aria-labelledby="recursion"><span class="tooltip__title e-heading__2"><span class="tooltip__emoji">🧶</span> recursion</span><span class="tooltip__content">A <a
+  href="https://developer.mozilla.org/en-US/docs/Glossary/Recursion">recursive function</a> calls itself, typically until some break condition is met.</span></tool-tip></tool-tip-container>
+</p>
+<h3 id="-problems-and-subproblems">🪆 Problems and subproblems</h3>
+<p>We have seen that software engineering is mostly breaking down large problems into smaller problems that are easier to solve. <a
+  href="https://www.wscubetech.com/resources/dsa/dynamic-programming">Dynamic programming</a> is a rigorous application of this idea.</p>
+<p>In Chapter 8 of How Computers Really Work, you wrote a program in Assembly to calculate the 
+<tool-tip-container tabindex="0"><strong class="tooltip__trigger" id="trigger__factorial">factorial</strong><span class="tooltip__emoji">🧶</span><tool-tip role="tooltip" aria-labelledby="factorial"><span class="tooltip__title e-heading__2"><span class="tooltip__emoji">🧶</span> factorial</span><span class="tooltip__content">A factorial is the product of all the whole numbers between 1 and n.</span></tool-tip></tool-tip-container>
+ of a number. Consider this way of calculating factorials.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">factorial</span>(n):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> n <span style="color:#f92672">*</span> factorial(n<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>) <span style="color:#66d9ef">if</span> n <span style="color:#66d9ef">else</span> <span style="color:#ae81ff">1</span></span></span></code></pre></div><p>We recursively execute the function until n reduces to 1. If you calculate <code>factorial(5)</code>, it calculates <code>factorial(4)</code>, which calculates <code>factorial(3)</code>, and so on. If you later calculate <code>factorial(6)</code>, it will re-calculate <code>factorial(5)</code> and all its subproblems again!</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#a6e22e">@cache</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">factorial</span>(n):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> n <span style="color:#f92672">*</span> factorial(n<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>) <span style="color:#66d9ef">if</span> n <span style="color:#66d9ef">else</span> <span style="color:#ae81ff">1</span></span></span></code></pre></div><p>In Python, <a
+  href="https://docs.python.org/3/library/functools.html">functools</a> provides a function cache. The <code>@cache</code> decorator automatically stores the result of <code>factorial(n)</code> for each value of n it computes. If the function is called again with the same value, <code>@cache</code> returns the stored result without rerunning the code.</p>
+<p>We don&rsquo;t <em>need</em> a decorator to apply this idea. We can create a temporary cache, index, or memo inside any function ourselves.  Memoisation is an implementation of the strategy of saving time by spending space.</p>
+<section class="c-note c-note--activity">
+  <h4 class="c-note__title e-heading__4">🕹️activity</span>
+  </h4>
+  <div class="c-note__text "><p>Complete at least three of the problems in the <a
+  href="https://www.codewars.com/collections/cyf-interview-prep-problems-and-sub-problems">Codewars collection: Problems and subproblems</a>.</p>
+<p>Use these references to help you:</p>
+<ol>
+<li><a
+  href="https://www.programiz.com/dsa/dynamic-programming">Progamiz Dynamic Programming</a></li>
+<li><a
+  href="https://www.wscubetech.com/resources/dsa/dynamic-programming">WSCube Tech Dynamic Programming</a></li>
+<li><a
+  href="https://www.youtube.com/watch?v=oBt53YbR9Kk">FreeCodeCamp Dynamic Programming</a></li>
+</ol>
+</div>
+</section>
+
+
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="caching-too-much">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="caching-too-much">
+        Caching too much
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="60 minutes countdown" datetime="P60M">60&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+    <div class="c-block__content c-copy">
+      <p>We&rsquo;ve seen that caching allows us to spend more memory to save time. We may want to limit how much memory we&rsquo;re spending to save time.</p>
+<p>Some examples of when storing a value in a cache doesn&rsquo;t make sense:</p>
+<h3 id="values-we-wont-use-again">Values we won&rsquo;t use again</h3>
+<p>Imagine a user signs up for Purple Forest, we compute a home timeline for them and cache it on the server. But they never visit the website again. We&rsquo;re spending some memory keeping that user&rsquo;s home timeline cached for no reason.</p>
+<p>In some cases, it makes sense to not cache some computation at all, if the results are unlikely to ever be used again.</p>
+<p>In other cases, it makes sense to only cache <em>some</em> values. Perhaps we can identify this up front, e.g.</p>
+<ul>
+<li>We could decide never to cache things on a user&rsquo;s first visit, but if they&rsquo;ve come to our site twice we&rsquo;ll cache things for them.</li>
+<li>We could decide to only cache values for our top 1000 users, and give everyone else a slower experience.</li>
+<li>We could decide to only cache values that took us more than 10ms to compute - anything faster than that we can just re-compute again.</li>
+</ul>
+<p>In other cases, we want to cache all values, but not remember them all forever. In caching, we call this 
+<tool-tip-container tabindex="0"><strong class="tooltip__trigger" id="trigger__eviction">eviction</strong><span class="tooltip__emoji">🧶</span><tool-tip role="tooltip" aria-labelledby="eviction"><span class="tooltip__title e-heading__2"><span class="tooltip__emoji">🧶</span> Cache Eviction</span><span class="tooltip__content">Eviction is deciding to remove something from a cache. Perhaps because it is stale, unlikely to be used again, or just because we want to limit how much memory we consume.</span></tool-tip></tool-tip-container>
+.</p>
+<section class="c-note c-note--Reading">
+  <h4 class="c-note__title e-heading__4">Reading</span>
+  </h4>
+  <div class="c-note__text "><p>There are different strategies to decide what values we should evict and when.</p>
+<p>Read about <a
+  href="https://www.geeksforgeeks.org/cache-eviction-policies-system-design/">different cache eviction policies</a>.</p>
+<p>Write down how you would decide which eviction policy to use when solving a problem. What&rsquo;s an example of a use-case where each eviction strategy makes the most sense?</p>
+</div>
+</section>
+
+
+<h3 id="another-cache-stores-equivalent-information">Another cache stores equivalent information</h3>
+<p>Consider this code:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> functools <span style="color:#f92672">import</span> cache
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@cache</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">calculate_fibonacci</span>(n: int):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> n <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">2</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> calculate_fibonacci(n <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>) <span style="color:#f92672">+</span> calculate_fibonacci(n <span style="color:#f92672">-</span> <span style="color:#ae81ff">2</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@cache</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">calculate_fibonacci_plus_one</span>(n: int):
+</span></span><span style="display:flex;"><span>     <span style="color:#66d9ef">return</span> calculate_fibonacci(n) <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> n <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">10</span>):
+</span></span><span style="display:flex;"><span>    print(calculate_fibonacci_plus_one(n))</span></span></code></pre></div>
+
+
+<tab-panels class="c-tabs">
+  <div class="c-tabs__list" id="tabset--14014259560027369609-14665623583-56582048" role="tablist"><button
+          data-toggle="tab"
+          id="tab-label-tabset--14014259560027369609-14665623583-56582048-0"
+          class="c-tabs__tab e-heading__5 space 
+            is-active"
+          role="tab"
+          aria-controls="tabset--14014259560027369609-14665623583-56582048-0"
+          aria-selected="true">
+          Exercise
+        </button><button
+          data-toggle="tab"
+          id="tab-label-tabset--14014259560027369609-14665623583-56582048-1"
+          class="c-tabs__tab e-heading__5 space "
+          role="tab"
+          aria-controls="tabset--14014259560027369609-14665623583-56582048-1"
+          aria-selected="false">
+          Answer
+        </button></div>
+  <div class="c-tabs__group" id="tabset--14014259560027369609-14665623583-56582048">
+        <div
+          id="tabset--14014259560027369609-14665623583-56582048-0"
+          class="c-tabs__panel is-active"
+          role="tabpanel"
+          data-heading="Exercise"
+          aria-labelledby="tab-label-tabset--14014259560027369609-14665623583-56582048-0">How many cache entries will this code store?</div>
+        <div
+          id="tabset--14014259560027369609-14665623583-56582048-1"
+          class="c-tabs__panel "
+          role="tabpanel"
+          data-heading="Answer"
+          aria-labelledby="tab-label-tabset--14014259560027369609-14665623583-56582048-1">Because both <code>calculate_fibonacci</code> and <code>calculate_fibonacci_plus_one</code> are cached, 20 cache entries will be stored. 10 for each function.</div></div>
+</tab-panels>
+
+<p>What would happen if we removed the <code>@cache</code> decorator on <code>calculate_fibonacci_plus_one</code>?</p>
+<p>Our program would work exactly the same, and would have the same performance. All of the <code>calculate_fibonacci</code> calls would still be cached. We wouldn&rsquo;t be caching the ten <code>+ 1</code> operations in our calls to <code>calculate_fibonacci_plus_one</code>. But these are cheap. (Also, we never call <code>calculate_fibonacci_plus_one</code> with the same argument, so we&rsquo;re never getting cache hits from its cache anyway).</p>
+<p>What would happen if instead we removed the <code>@cache</code> decorator on <code>calculate_fibnacci</code>?</p>
+<p>Our program would get a <em>lot</em> slower. If we called <code>calculate_fibonacci_plus_one</code> with the same argument several times, those calls would be faster, but the <code>fibonacci</code> bit would be slow for the first time. And every time we call <code>calculate_fibonacci_plus_one</code> with a different argument, it will re-do all of that <code>fibonacci</code> work again.</p>
+<p>Having two <code>@cache</code> annotations may <em>feel</em> useful, but in reality it&rsquo;s just spending twice as much memory for no real gain.</p>
+<p>It&rsquo;s useful to think about <em>where</em> a cache is useful, rather than just adding caches when things are slow.</p>
+<section class="c-note c-note--tip">
+    <h4 class="c-note__title">💡Tip</h4>
+    <div class="c-note__text"><p>Before adding a cache, think:</p>
+<ul>
+<li>Is this computation likely to be re-used?</li>
+<li>Is there a better place to be adding a cache?</li>
+<li>Are there any existing caches I should remove, if I add this one?</li>
+</ul></div>
+  </section>
+    </div>
+    
+    
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="pre-computing">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="pre-computing">
+        Pre-computing
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="60 minutes countdown" datetime="P60M">60&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Identify a pre-computation which will improve the complexity of an algorithm</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <blockquote><p>Pre-computation means doing some work upfront to make future work faster.</p>
+</blockquote><h3 id="-doing-work-ahead-of-time">💪🏾 Doing Work Ahead of Time</h3>
+<p>So far we have thought about saving the results of computations to access them again more quickly. But if we can predict what computations we will need, we can do them <em>before</em> we need them and access them instantly.</p>
+<p>We <em>invest</em> time now to <em>save</em> time later. This could be a complete answer, an index of answers, or some intermediate computation that makes finding our final result faster.</p>
+<h3 id="--example-sort-before-search">🗃️ 🔍 Example: Sort Before Search</h3>
+<p>Often, the work we pre-compute is sorting data to make searching operations faster.</p>
+<p>Searching for a username in an unsorted list of one million users requires checking each one. This has <code>O(n)</code> complexity, and will on average take half a million comparisons.</p>
+<p>But what if we sorted our list? Now, searching for a specific username in the sorted list can use <a
+  href="logic/sprints/1/prep/#bisection">binary search</a>. Binary search repeatedly halves the search space, which is <code>O(log n)</code> complexity - taking only about twenty comparisons for a million items.</p>
+<p>But sorting isn&rsquo;t free! Sorting typically takes <code>O(n * log n)</code>, which is slower than <code>O(n)</code>.</p>
+<p>If we need to search the list many times, the time spent sorting once is easily paid back by the much faster searches later. But if we&rsquo;re only searching one time, sorting before we search will be slower than just searching once. Pre-sorting is useful when we have data that is read frequently but updated less often.</p>
+<p>Pre-computing always involves <strong>trade-offs</strong>: you invest time and memory upfront to gain speed later.</p>
+<h4 id="draw-backs-of-pre-sorting">Draw-backs of pre-sorting</h4>
+<p>One of the trade-offs with pre-sorting is that it can make <em>updates</em> more expensive. This is fine if we aren&rsquo;t going to update our list, but may be a problem if we will perform updates.</p>
+<p>Imagine if you have an array which you have pre-sorted to make searching easier:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">numbers</span> <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">17</span>, <span style="color:#ae81ff">38</span>, <span style="color:#ae81ff">401</span>];</span></span></code></pre></div><p>Suppose we want to add the number <code>20</code> to the array.</p>
+<p>If we didn&rsquo;t care about keeping our array sorted, we could just add it to the end, an <code>O(1)</code> operation:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">numbers</span>.<span style="color:#a6e22e">push</span>(<span style="color:#ae81ff">20</span>);</span></span></code></pre></div><p>If we care about keeping our array sorted, inserting new values may become slower. We may need to first binary search to find where to insert it (an <code>O(log n)</code> operation), and then insert the new value in place. Inserting the new value in place is probably an <code>O(n)</code> operation, because we need to move all of the values that come after it:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">position</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">binarySearchPosition</span>(<span style="color:#a6e22e">numbers</span>, <span style="color:#ae81ff">20</span>); <span style="color:#75715e">// O(log n)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">numbers</span>.<span style="color:#a6e22e">splice</span>(<span style="color:#a6e22e">position</span>, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">20</span>); <span style="color:#75715e">// O(n)
+</span></span></span></code></pre></div><h3 id="skip-lists">Skip Lists</h3>
+<p>Different data structures have different performance characteristics for different operations.</p>
+<p>Part of the complexity of inserting sorted positions above is that we&rsquo;re using an array - arrays are expensive to insert values into anywhere other than the end, because that requires us to move all of the other elements.</p>
+<p><a
+  href="https://en.wikipedia.org/wiki/Linked_list">Linked lists</a> are a data structure with different performance characteristics. With linked lists, adding or removing elements at arbitrary positions is cheaper. Once you&rsquo;ve found the right place to insert, you just update a few pointers and the new element has been added. But this comes with a cost - linked lists don&rsquo;t have 
+<tool-tip-container tabindex="0"><strong class="tooltip__trigger" id="trigger__random access">random access</strong><span class="tooltip__emoji">🧶</span><tool-tip role="tooltip" aria-labelledby="random access"><span class="tooltip__title e-heading__2"><span class="tooltip__emoji">🧶</span> Random access</span><span class="tooltip__content">Random access is the ability to ask for any element (e.g. to write <code>numbers[2]</code>). Data structures without random access require you to start at a position and keep asking &ldquo;what is the next element&rdquo; until you get to the element you want. This is slower.<br /><br />Aside: RAM stands for Random Access Memory because it&rsquo;s a kind of memory you can access in this way.</span></tool-tip></tool-tip-container>
+. So binary search is slower - you can&rsquo;t just find the middle element in the list, you need to repeatedly ask for the next element until you get to the middle. Quicker splice came at the cost of slower binary search.</p>
+<p>This led to the development of a new kind of data structure called a <a
+  href="https://brilliant.org/wiki/skip-lists/">Skip list</a>. A skip list is a sorted linked list, but where we keep track of which elements are at different points in the list. This allows us to easily jump to, say, the middle of the list if we need to (or a bit before it). Skip lists are another example of precomputing - every time we insert or delete an element into the data structure, we do a bit of extra book-keeping to update which elements we keep track of. In exchange for this extra work on insertion/deletion, our look-ups get faster.</p>
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="trade-offs">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="trade-offs">
+        Trade-offs
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="30 minutes countdown" datetime="P30M">30&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Give examples of trading off memory for CPU</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Give examples of choosing where work is done in system design</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Optimise a system design to minimise the cost of operations</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <p>In software engineering, we constantly make trade-offs. We choose one approach over another, gaining some benefits while accepting some downsides. In this module we have examined many problems that involve balancing resources like memory, CPU time, network bandwidth, and even developer time.</p>
+<h3 id="-space-vs-time">🫱🏻‍🫲🏽 Space vs Time</h3>
+<p>We saw caching trades the limited resource of memory space for the limited resource of computation time. But caching introduces the problem of stale data, and it can make it harder to reason about our application. We saw that we can store much more data and query it much quicker on a database, but also that it&rsquo;s slower to access that data over a network.</p>
+<p>In each optimisation we have examined, there is a trade off.</p>
+<h3 id="-where-should-work-be-done">🗺️ Where Should Work Be Done?</h3>
+<p>Understanding these trade-offs allows us to optimise a system. This doesn&rsquo;t always mean &ldquo;make it the absolute fastest&rdquo;. It means making conscious choices to best meet the goals, which might include:</p>
+<ul>
+<li>Minimising user waiting time (latency)</li>
+<li>Reducing server hosting costs (CPU, memory, bandwidth usage)</li>
+<li>Improving developer comprehension (simpler code, patterns)</li>
+<li>Increasing reliability (avoiding database flooding like the N+1 problem)</li>
+</ul>
+<h3 id="choosing-between-trade-offs">Choosing between trade-offs</h3>
+<p>One of the tricky things with trade-offs is there often isn&rsquo;t a single clear best answer. Often reasonable people will have different thoughts.</p>
+<p>We&rsquo;ve come across many examples of trade-offs in this course. For example:</p>
+<ul>
+<li>In the Tools module we considered trade-offs between using existing command line tools vs writing our own.</li>
+<li>In the Tools module we considered the trade-offs of different programming languages (e.g. using compiled vs interpreted languages, using statically typed vs dynamic languages, etc).</li>
+<li>In the Logic module we considered the trade-offs between using lots of rats in parallel (perhaps getting an answer quickly) vs using fewer rats sequentially (perhaps using fewer rats).</li>
+<li>In the Decomposition module we considered the trade-offs between accepting the limitations of a simpler frontend-only system vs making a more complex system with more capabilities by including a backend.</li>
+<li>In the Decomposition module we considered the trade-offs between short-polling, long-polling, or using websockets.</li>
+<li>In the Decomposition module we considered the trade-offs between giving a new number of likes as a difference (&quot;+1 like&quot;) or an absolute value (&ldquo;now 10 likes&rdquo;).</li>
+<li>In the Decomposition module we considered the trade-offs between different continuation callback styles.</li>
+<li>And lots more!</li>
+</ul>
+<p>Some of these trade-offs have clear decision frameworks (do we want a fast answer, or to minimise how many rats we kill?). Others depend a lot more on context.</p>
+<section class="c-note c-note--exercise">
+  <h4 class="c-note__title e-heading__4">✍️exercise</span>
+  </h4>
+  <div class="c-note__text ">Think about the trade-offs mentioned above. When would you choose each option? How would you decide between them? What context would help?</div>
+</section>
+
+
+<p>It&rsquo;s important to consider context, and be open to different opinions. This is one of the strengths of working in diverse teams. Perhaps someone in your team has experienced a problem you haven&rsquo;t, and weighs the down-sides of some trade-off differently than you do. If you just work on your own, your system may be worse for not considering those down-sides. If you just work with people who have the same experience as you do, you may not notice risks that others know. By working together, we benefit from all of our shared experience.</p>
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+      </div>
+      <nav slot="nav">
+        <a href="#" class="e-button c-solo-view__back">&larr; Back</a>
+        <a href="#" class="e-button c-solo-view__next">Next &rarr;</a>
+      </nav>
+    </solo-view>
+    
+    <script src="/scripts/solo-view.min.js" defer></script>
+    
+    <script src="/scripts/time-total.min.js" defer></script>
+  
+
+
+        
+
+  <footer class="c-page-footer">
+    <nav class="c-page-footer__nav">
+      
+      
+      <span class="c-page-footer__this">Prep</span>
+      
+        →<a
+          class="c-page-footer__next c-page-footer__link e-link"
+          href="/sdc/complexity/sprints/2/backlog/"
+          >Backlog</a
+        >
+      
+    </nav>
+  </footer>
+
+
+      </main><footer class="l-layout__footer l-footer">
+  <a
+    class="l-footer__github e-button e-button--icon"
+    href="https://github.com/CodeYourFuture/curriculum/">
+    <svg
+  focusable="false"
+  class="e-button__icon"
+  role="presentation"
+  width="96"
+  viewbox="0 0 98 96"
+  xmlns="http://www.w3.org/2000/svg">
+  <path
+    fill-rule="evenodd"
+    clip-rule="evenodd"
+    d="M48.854 0C21.839 0 0 22 0 49.217c0 21.756 13.993 40.172 33.405 46.69 2.427.49 3.316-1.059 3.316-2.362 0-1.141-.08-5.052-.08-9.127-13.59 2.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015 4.934.326 7.523 5.052 7.523 5.052 4.367 7.496 11.404 5.378 14.235 4.074.404-3.178 1.699-5.378 3.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283 0-5.378 1.94-9.778 5.014-13.2-.485-1.222-2.184-6.275.486-13.038 0 0 4.125-1.304 13.426 5.052a46.97 46.97 0 0 1 12.214-1.63c4.125 0 8.33.571 12.213 1.63 9.302-6.356 13.427-5.052 13.427-5.052 2.67 6.763.97 11.816.485 13.038 3.155 3.422 5.015 7.822 5.015 13.2 0 18.905-11.404 23.06-22.324 24.283 1.78 1.548 3.316 4.481 3.316 9.126 0 6.6-.08 11.897-.08 13.526 0 1.304.89 2.853 3.316 2.364 19.412-6.52 33.405-24.935 33.405-46.691C97.707 22 75.788 0 48.854 0z"
+    fill="currentColor" />
+</svg>
+
+    <span class="is-invisible">Find us on GitHub</span>
+  </a>
+  <p class="l-footer__impressum e-heading__6">
+    This
+    <a href="https://github.com/CodeYourFuture/curriculum/">free and open source programme</a>
+    is a project of
+    <a href="https://codeyourfuture.io/">Code Your Future</a>
+    <br />
+    Creative Commons Attribution-ShareAlike 4.0
+  </p>
+  <dark-mode class="l-footer__mode"
+    ><button
+      slot="button"
+      id="mode-toggle"
+      type="button"
+      class="e-button e__button--toggle e-button--icon">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="e-icon e__button__icon e-icon--moon">
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
+      </svg>
+      <span class="is-invisible">Toggle between light and dark mode</span>
+    </button></dark-mode
+  >
+</footer>
+
+
+
+<script src="/scripts/app.min.js" defer></script>
+
+<script src="/scripts/youtube-player.min.js" defer></script>
+
+<script src="/scripts/tab-panels.min.js" type="module" defer></script>
+
+<script src="/scripts/dark-mode.min.js"></script>
+
+<script src="/scripts/alert-message.min.js" defer></script>
+
+
+
+
+
+
+
+</div>
+  </body>
+</html>

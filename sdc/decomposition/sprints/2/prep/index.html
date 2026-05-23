@@ -1,0 +1,1780 @@
+<!DOCTYPE html>
+
+
+
+
+<html lang="en" class="p-prep"><head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  <title data-pagefind-meta="title">
+    
+      Software Development Course 
+    
+      Decomposition 
+    
+      Sprint 2 
+    
+    Prep
+  </title>
+  
+    <meta
+      name="description"
+      content=" CYF Courses: Overview description of the prep work for the sprint" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+  <style>
+    body,
+    html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      animation: fade-in 300ms;
+    }
+    @keyframes fade-in {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  </style>
+  
+  
+  <link
+    rel="stylesheet"
+    href="/bundled.min.b6a4520237559385268d63a9daa81d96.css"
+    media="print"
+    onload="this.media='all'" />
+
+  
+  
+    
+    
+    <link
+      rel="stylesheet"
+      href="/custom.min.8ded6a1a88bc7cc98bdef8dc33d15f3a.css"
+      media="print"
+      onload="this.media='all'" />
+  
+
+
+  <noscript>
+    <link rel="stylesheet" href="/bundled.min.b6a4520237559385268d63a9daa81d96.css" />
+  </noscript>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&amp;display=swap"
+    rel="stylesheet"
+    media="print"
+    onload="this.media='all'" />
+
+  <link rel="shortcut icon" href="https://curriculum.codeyourfuture.io/favicon.ico" />
+  <meta name="theme-color" content="#e3ddeef2" />
+  <link rel="manifest" href="https://curriculum.codeyourfuture.io/manifest.json" />
+</head>
+<body>
+    <a class="c-skip-link e-button" id="skip-link" href="#main">Skip to main</a>
+    <div class="l-layout">
+      <header class="l-layout__header l-header">
+  <div class="l-header__container">
+    <h1 class="l-header__heading e-heading__6" data-pagefind-ignore>
+      <a class="l-header__home" href="/"
+        ><span class="is-invisible"
+          >sdc Prep CYF Courses</span
+        >
+        <span class="is-none--lt-container">
+          <svg
+          xmlns="http://www.w3.org/2000/svg"
+          title="Code Your Future."
+          viewBox="0 0 621.64 155.81"
+          width="140px"
+          focusable="false"
+          role="img">
+          <path
+            fill="var(--theme-color--brand)"
+            d="M103.37 56.51C96.91 63.64 87.03 69.9 74.6 69.9c-20.14 0-33.52-12.91-33.52-34.09C41.08 13.97 57.5.87 69.94.87c9.5 0 13.77 5.32 14.63 6.46l2.18-5.27h14.91v27h-17c-.28-6.18-3.32-12-10.06-12s-11.3 8.45-11.3 18.8c0 9.4 4.84 17.86 13.86 17.86 8 0 14.24-8.36 15.1-9.31Zm2.88-21.85C106.25 14.15 119.92 0 139.58 0c23.26 0 34.09 14 34.09 35.32s-12 34.57-33.43 34.57c-19.88 0-33.99-11.49-33.99-35.23Zm43.68.66c0-11.49-3.13-20.7-10.45-20.7-5.79-.09-9.78 8.26-9.78 20 0 12.44 4.47 20.32 10.54 20.32s9.65-7.88 9.65-19.62Zm27.49 20.23h5.89V14.34h-5.89V1.8h29c23 0 36.09 14.15 36.09 32.29 0 21.65-13.11 34.09-36.47 34.09h-28.62Zm29 0c10.03-.19 14.21-9.59 14.21-21.49 0-10.16-4.18-19.75-14.25-19.75h-3.61v41.24ZM303.04 1.8v21h-16.43v-8.46h-15.19v13.1h18v12.62h-18v15.49h15.19v-8.83h16.43v21.46h-57.26V55.55h6V14.34h-6V1.8Z" />
+          <path
+            fill="var(--theme-color--ink)"
+            d="M274.42 87.82v21h-16.8v-8.45h-14.37v16.52h18v12.63h-18v12.04h9.68v12.63h-35.29v-12.63h5.89v-41.21h-5.89V87.82Zm33.04 0v12.24h-5.12v20.51c0 15.28 3.41 18.51 9.49 18.51 5.79 0 9.59-2.28 9.59-18.61v-20.12h-5.17V87.82h28.11v12.24h-5.11v23.07c0 22.51-9.4 32.67-27.25 32.67-19.18-.57-29.43-10.64-29.43-32.19v-23.45h-5.32V87.82Zm103.5 24.69h-14v-12.16h-8v41.21h7.88v12.63h-35.26v-12.63h7.79v-41.21h-8.12v12.16h-14V87.82h63.71ZM444 87.82v12.24h-5.13v20.51c0 15.28 3.42 18.51 9.5 18.51 5.79 0 9.59-2.28 9.59-18.61v-20.12h-5.13V87.82h28.11v12.24h-5.13v23.07c0 22.51-9.4 32.67-27.25 32.67-19.18-.57-29.44-10.64-29.44-32.19v-23.45h-5.32V87.82Zm71.59 0c22 0 26.3 8.73 26.3 19.56 0 7.4-5.88 12.63-13.76 13.77 6.55.95 12.44 6.64 12.44 13.48 0 4.08.57 6.46 2.27 6.46 1.43 0 2.19-1.14 2.19-3v-3.13h6.36v5.22c0 7.88-3.32 15.19-13.86 15.19-12.44 0-18.42-6.55-18.42-17.66 0-8.64-1.05-10.73-9.5-10.73v14.68h5.79v12.53h-30.67v-12.53h5.32v-41.4h-5.32V87.82Zm-6 28.48h4.27c5.51 0 9.12-2.65 9.12-7.69 0-5.6-3.13-8.45-8.64-8.45h-4.75Zm102.38-28.48v21h-16.43v-8.45h-15.19v13.09h18v12.6h-18v15.5h15.19v-8.83h16.43v21.46h-57.26v-12.63h6v-41.21h-6V87.82Zm-227.72-56.1c.38-1.9 2.47-5.89 3.51-8.17l5.22-9.59h-5.22V1.8h25.54v12.16h-5.05l-17.62 30.86v11h5.32v12.36h-30.39V55.83h5.41v-11.2l-18.42-30.67h-4.65V1.8h32.47v12.16h-4.93l5.5 10.1c.57 1.81 2.57 6.08 2.95 7.7Zm29.54 2.94C413.79 14.15 427.47 0 447.12 0c23.27 0 34.09 14 34.09 35.32s-12 34.57-33.42 34.57c-19.85 0-34-11.49-34-35.23Zm43.68.66c0-11.49-3.13-20.7-10.44-20.7-5.79-.09-9.78 8.26-9.78 20 0 12.44 4.46 20.32 10.54 20.32s9.68-7.88 9.68-19.62ZM514.25 1.8v12.26h-5.13v20.5c0 15.29 3.42 18.52 9.5 18.52 5.79 0 9.59-2.28 9.59-18.61V14.34h-5.13V1.8h28.11v12.26h-5.13v23.07c0 22.5-9.4 32.66-27.25 32.66-19.18-.57-29.44-10.63-29.44-32.19V14.15h-5.32V1.8Zm71.59 0c22 0 26.31 8.74 26.31 19.57 0 7.4-5.89 12.62-13.77 13.76 6.55 1 12.44 6.65 12.44 13.49 0 4.08.57 6.46 2.27 6.46 1.43 0 2.19-1.14 2.19-3V48.9h6.36v5.23c0 7.88-3.32 15.19-13.86 15.19-12.44 0-18.42-6.55-18.42-17.66 0-8.64-1.05-10.73-9.5-10.73v14.71h5.79v12.54h-30.67V55.64h5.32v-41.4h-5.32V1.8Zm-6 28.49h4.27c5.51 0 9.12-2.66 9.12-7.69 0-5.6-3.13-8.45-8.64-8.45h-4.75ZM28.39 14.7l5.8 10.64-23.46 10.72 23.46 10.55-3.61 9.87L0 42.24v-13.3Zm318.7 14.24v13.3l-30.58 14.24-3.61-9.87 23.46-10.55-23.46-10.72 5.8-10.64Z" />
+        </svg>
+        </span>
+        <span class="is-none--gt-container">
+          <svg
+          xmlns="http://www.w3.org/2000/svg"
+          version="1.0"
+          viewBox="0 0 512 512"
+          width="48px">
+          <path
+            fill="currentcolor"
+            stroke="currentcolor"
+            d="M225.5 1c-1.1.5-3.5.9-5.3.9-4.1.1-22.9 4.5-30.7 7.2-63.1 22-114.7 72.3-142.7 139.4-6.4 15.2-11.8 33.8-16.7 57-4.1 19.7-5.4 64.5-2.6 90.8C33 346.2 49.8 390.1 76.8 425c6.2 7.9 23.9 26.4 30.7 32 8.1 6.7 26.1 18.7 35.1 23.6 28.1 15.1 58 24.3 91.9 28.3 5.5.7 13.6 1.7 18 2.2 8.8 1.2 33.9.7 48-.9 11-1.3 31.7-4.8 36.5-6.2 1.9-.5 8-2.3 13.5-3.9 21.3-6.1 47.2-17.8 67.5-30.5 8.8-5.4 23.7-15.8 28.5-19.7 10.2-8.4 24.5-21.3 31.4-28.2l8.4-8.5-2.2-2.9c-1.3-1.5-4.6-5.3-7.4-8.3-6.2-6.7-14.5-15.7-21.2-23.1-2.7-3-7.5-8.2-10.5-11.4-3-3.3-9.8-10.8-15.1-16.5-21.5-23.6-24.2-26.5-24.9-26.8-.3-.1-2 1.2-3.6 3-1.6 1.9-6.3 7.1-10.4 11.7-8.6 9.7-25.6 24.6-35.9 31.4-21.4 14.4-42.5 21.7-62.6 21.7-15.3-.1-29.3-3.3-42.5-10-22.8-11.5-41.9-35.5-51.5-64.7-4.2-12.8-4.3-13.4-5.9-22.8-3.8-22.9-4.6-39.2-2.6-55.6 2.7-22.7 3.3-26.5 5-33.2 7.9-30.9 16.7-48.6 32.4-65.6 16.8-17.9 41.1-24.9 65.1-18.6 30 7.8 50.7 36.3 55.5 76.3.5 4.6 1.2 8.7 1.5 9.3.4.5 25.1.9 62.6.9H474V9H364.2L357 26.7c-4 9.8-7.9 18.5-8.7 19.3-1.3 1.3-2.1.8-6.6-4.3-6-6.9-18.3-16.7-28.2-22.5-7.4-4.3-22.6-10.9-28.5-12.4-9.2-2.2-18.1-4.1-24-5-9-1.3-33.1-1.9-35.5-.8z" />
+        </svg>
+        </span>
+      </a>
+    </h1>
+    <link
+  href="/pagefind/pagefind-ui.css"
+  rel="stylesheet"
+  media="print"
+  onload="this.media='all'" />
+<style>
+  :root {
+    --pagefind-ui-primary: var(--theme-color--ink);
+    --pagefind-ui-text: var(--theme-color--ink);
+    --pagefind-ui-background: var(--theme-color--paper);
+    --pagefind-ui-border: var(--theme-color--outline);
+    --pagefind-ui-tag: var(--theme-color--block);
+    --pagefind-ui-border-radius: 2em;
+    --pagefind-ui-image-border-radius: var(--theme-border-radius);
+    --pagefind-ui-font: var(--theme-font--copy);
+  }
+  .pagefind-ui--reset {
+    position: absolute;
+  }
+  #search .pagefind-ui__search-input {
+    box-shadow: var(--theme-box-shadow--inset);
+    margin-bottom: var(--theme-spacing--1);
+  }
+  #search .pagefind-ui__search-clear {
+    background-color: transparent;
+  }
+  #search .pagefind-ui__drawer {
+    background-color: var(--theme-color--paper);
+    box-shadow: var(--theme-box-shadow--slim);
+    transform: translateY(-1.5px);
+    padding: 0 var(--theme-spacing--2);
+    max-height: calc(100vh - 4rem);
+    overflow-y: auto;
+  }
+  #search .pagefind-ui__result {
+    padding: var(--theme-spacing--1) 0 var(--theme-spacing--2) 0;
+  }
+  #search .pagefind-ui__result:focus-within,
+  #search .pagefind-ui__button:focus {
+    background-color: var(--theme-color--block);
+  }
+  #search .pagefind-ui__button {
+    border: none;
+  }
+</style>
+<script src="/pagefind/pagefind-ui.js" type="text/javascript" defer></script>
+<div id="search" class="l-header__search"></div>
+<script>
+  window.addEventListener("DOMContentLoaded", (event) => {
+    new PagefindUI({
+      element: "#search",
+      showSubResults: true,
+      pageSize: 3,
+      showImages: false,
+      showTags: true,
+    });
+  });
+</script>
+
+    <button
+      class="l-header__action e-button e-button--icon js-menu-toggle e-heading__3">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+        <path
+          stroke="var(--theme-color--ink)"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M13 5a1 1 0 1 0-2 0 1 1 0 0 0 2 0Zm0 7a1 1 0 1 0-2 0 1 1 0 0 0 2 0Zm0 7a1 1 0 1 0-2 0 1 1 0 0 0 2 0Z" />
+      </svg>
+      <span class="is-invisible">Open Menu.</span>
+    </button>
+  </div>
+</header>
+
+      <nav
+  class="l-layout__menu l-menu"
+  aria-label="Main Site Links."
+  id="site-menu"
+  hidden
+  tabindex="0">
+  <div class="l-menu__container">
+    <h2 class="l-menu__heading e-heading__2">
+      <a href="/" class="l-menu__home is-invisible">Menu</a>
+    </h2>
+    <button
+      class="l-menu__action e-button e-button--icon js-menu-toggle e-heading__2"
+      id="close-menu">
+      ❎
+      <span class="is-invisible">Close Menu.</span>
+    </button>
+    <ul class="l-menu__primary">
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/guides/">
+            Guides
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/sdc/tools/">
+            Tools
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/sdc/logic/">
+            Logic
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/sdc/decomposition/">
+            Decomposition
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/sdc/legacy/">
+            Legacy code
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/sdc/complexity/">
+            Complexity
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/tracks/servers/">
+            Servers
+          </a>
+        </li>
+    </ul>
+    <ul class="l-menu__secondary">
+        <li class="l-menu__item">
+          <a class="e-heading__3 l-menu__link" href="https://codeyourfuture.io">
+            CYF 👈🏾
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__3 l-menu__link" href="https://codeyourfuture.io/volunteers/">
+            Join Us 👋🏿
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__3 l-menu__link" href="https://codeyourfuture.io/donate/">
+            Support 🫶🏼
+          </a>
+        </li>
+    </ul>
+  </div>
+</nav>
+
+      <main
+        id="main"
+        class="l-layout__main l-main"
+        tabindex="0"
+        data-pagefind-body>
+        
+  
+    <solo-view tabindex="0">
+      
+
+
+      <div slot="header">
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+<header
+  class="c-page-header 
+    c-page-header--solo
+   c-page-header--toc">
+  
+  <div class="c-page-header__container">
+    <div class="c-page-header__breadcrumbs">
+      
+  <nav class="c-breadcrumbs">
+    <ol class="c-breadcrumbs__list">
+      
+        
+        
+          <li class="c-breadcrumbs__item">
+            <a
+              class="c-breadcrumbs__link"
+              href="/sdc/"data-pagefind-filter="module"><span class="c-breadcrumbs__text">Software Development Course</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                width="24px"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="c-breadcrumbs__icon">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+              </svg>
+            </a>
+          </li>
+        
+        
+          <li class="c-breadcrumbs__item">
+            <a
+              class="c-breadcrumbs__link"
+              href="/sdc/decomposition/"><span class="c-breadcrumbs__text">Decomposition</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                width="24px"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="c-breadcrumbs__icon">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+              </svg>
+            </a>
+          </li>
+      
+        <li class="c-breadcrumbs__item">
+          <a
+            class="c-breadcrumbs__link"
+            href="/sdc/decomposition/sprints/2/"data-pagefind-filter="sprint">Sprint 2</a
+          >
+        </li>
+      
+    </ol>
+  </nav>
+  
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Our Courses",
+      "item":"https://curriculum.codeyourfuture.io/"},
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Software Development Course",
+      "item":"https://curriculum.codeyourfuture.io/sdc/"},
+    {
+      "@type": "ListItem",
+      "position":  3 ,
+      "name": "Decomposition",
+      "item":"https://curriculum.codeyourfuture.io/sdc/decomposition/"},{
+      "@type": "ListItem",
+      "position":  5 ,
+      "name": "Sprint 2",
+      "item":"https://curriculum.codeyourfuture.io/sdc/decomposition/sprints/2/"},
+    {
+      "@type": "ListItem",
+      "position":  6 ,
+      "name": "Prep",
+      "item":"https://curriculum.codeyourfuture.io/sdc/decomposition/sprints/2/"}
+  ]
+}
+</script>
+
+
+    </div>
+    <h1 class="c-page-header__title e-heading__1"data-pagefind-filter="view"
+        
+      data-pagefind-weight="10">
+      <span class="c-emoji">
+        
+        
+           
+            <time-total class="c-page-header__time"></time-total>
+      
+         
+        </span>
+        <span class="c-page-header__title-text">Prep</span>
+               
+    </h1>
+    
+      
+        <h2 class="c-page-header__description e-heading__3">
+          Overview description of the prep work for the sprint
+        </h2>
+      
+    
+    
+    
+    
+      <div class="c-page-header__toc " id="toc">
+        <section class="c-toc" aria-label="Table of contents.">
+          <a id="top" class="c-toc__top e-button e-button--icon" href="#toc"
+            >🔖 <span class="is-invisible">back to top</span></a
+          >
+          
+            <nav id="TableOfContents"></nav>
+          
+          
+            <ol>
+              
+                <li>
+                  <a href="#adding-quotes" data-pagefind-weight="5"
+                    >Adding quotes</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#data-validation" data-pagefind-weight="5"
+                    >Data validation</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#chat-application-requirements" data-pagefind-weight="5"
+                    >Chat application requirements</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#making-a-non-live-chat-application" data-pagefind-weight="5"
+                    >Making a non-live chat application</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#deploying-the-chat-application" data-pagefind-weight="5"
+                    >Deploying the chat application</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#limitations-of-a-single-request%2fresponse" data-pagefind-weight="5"
+                    >Limitations of a single request/response</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#designing-a-streaming-api" data-pagefind-weight="5"
+                    >Designing a streaming API</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#repeated-client-requests-for-updates" data-pagefind-weight="5"
+                    >Repeated client requests for updates</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#long-polling" data-pagefind-weight="5"
+                    >Long-polling</a
+                  >
+                  
+                </li>
+              
+            </ol>
+          
+          
+        </section>
+      </div>
+    
+
+  </div>
+</header>
+</div>
+      <div slot="blocks">
+        
+        
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="adding-quotes">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="adding-quotes">
+        Adding quotes
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="60 minutes countdown" datetime="P60M">60&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />POST data from a frontend to a backend in JSON format.</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <section class="c-note c-note--Exercise">
+  <h4 class="c-note__title e-heading__4">Exercise</span>
+  </h4>
+  <div class="c-note__text "><p>Add a form to your frontend which allows users to add quotes to the backend&rsquo;s list of quotes.</p>
+<p>Note: Your backend expects the quotes to be submitted as JSON. This means you will need to use a <code>fetch</code> request from JavaScript to do the POSTing.</p>
+<p>You can&rsquo;t just use a <code>&lt;form method=&quot;POST&quot;&gt;</code> tag because that would post the information in a different format. (It would also redirect the user to a page which just says &ldquo;ok&rdquo; after submitting the quote, which isn&rsquo;t a great user experience!)</p>
+</div>
+</section>
+
+
+<p>After a user tries to add a quote, if they successfully added the quote we should give the user some feedback so they know it was successful.</p>
+<p>If a user tried to add a quote and the <code>fetch</code> failed (perhaps because the backend wasn&rsquo;t running), or the response said there was an error, we should give the user some feedback so they know something went wrong (and maybe what they should do about it).</p>
+<p>Now that our backend allows users to post quotes, we want to restrict what they can post.</p>
+<p>For instance, we don&rsquo;t want to let people post quotes which are empty.</p>
+<p>We need to validate the inputs our users give us.</p>
+<section class="c-note c-note--Think">
+  <h4 class="c-note__title e-heading__4">Think</span>
+  </h4>
+  <div class="c-note__text "><p>Where do you think we want to do this validation?</p>
+<p>On the frontend? On the backend? Or both?</p>
+</div>
+</section>
+
+
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="data-validation">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="data-validation">
+        Data validation
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="60 minutes countdown" datetime="P60M">60&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Explain the trade-offs of doing validation on the frontend or backend.</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <p>If we only do the validation on the backend, the user won&rsquo;t know anything is wrong until they submit the form.</p>
+<p>If we only do validation on the frontend, it would be possible for users to add invalid quotes by using <code>curl</code> themselves, or building their own frontend.</p>
+<p>So we normally do validation <em>twice</em> - once in the frontend to give fast feedback (e.g. by adding the <code>required</code> attribute to an <code>&lt;input&gt;</code> tag), and once in the backend (to make sure no one can sneak bad data to us).</p>
+<section class="c-note c-note--Exercise">
+  <h4 class="c-note__title e-heading__4">Exercise</span>
+  </h4>
+  <div class="c-note__text "><p>Add validation that authors and quotes are both non-empty, to both your frontend, and your backend.</p>
+<p>Make sure when someone tries to post an empty quote, make sure they quickly know what&rsquo;s wrong.</p>
+<p>Make sure if someone tries to use <code>curl</code> to post an empty quote, it doesn&rsquo;t get saved either.</p>
+<p>If the backend rejects a request from the frontend, we should show the user why.</p>
+</div>
+</section>
+
+
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="chat-application-requirements">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="chat-application-requirements">
+        Chat application requirements
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="30 minutes countdown" datetime="P30M">30&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Explain the requirements of our chat application.</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Explain what requirements are out of scope for our chat application.</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <p>You are going to make a chat application which lets multiple users exchange messages.</p>
+<p>You&rsquo;ve seen a similar application in the quote application. This time, you will be writing all of the code yourself.</p>
+<p>Let&rsquo;s think about some requirements for our application:</p>
+<ul>
+<li>As a user, I can send add a message to the chat.</li>
+<li>As a user, when I open the chat I see the messages that have been sent by any user.</li>
+<li>As a user, when someone sends a message, it gets added to what I see.</li>
+<li>As a user, I can &ldquo;like&rdquo; or &ldquo;dislike&rdquo; someone&rsquo;s message.</li>
+<li>When messages are liked or disliked, a count of the likes and dislikes is displayed next to the message.</li>
+<li>As a user, I can schedule a message to be sent at some time in the future.</li>
+<li>As a user, I can change the colour messages that I send.</li>
+<li>As a user, I can make some words in my messages bold, italic, or underlined.</li>
+<li>As a user, I can indicate that my message is a reply to another message.</li>
+</ul>
+<p>We can imagine other requirements too (e.g. reacting with emojis, being able to edit or delete messages, registering exclusive use of a username, &hellip;). We will stick just to the requirements we&rsquo;ve listed. In fact, the requirements we&rsquo;ve listed are probably more than we have time to implement, so we will need to prioritise them and choose which ones we have time to build. Think about which requirements are <em>absolutely</em> required - we will definitely need to build those!</p>
+<p>Because users want to see things, we know we&rsquo;ll need a frontend.</p>
+<p>Because multiple users want to be able to share information (messages), we know we&rsquo;ll need a backend for them to communicate via.</p>
+<h3 id="what-we-already-know-and-whats-new">What we already know and what&rsquo;s new</h3>
+<p>Some of these requirements are similar to the quote server we&rsquo;ve already implemented:</p>
+<ul>
+<li>Adding messages is like adding quotes.</li>
+<li>Seeing messages is like seeing quotes.</li>
+</ul>
+<p>Others are new:</p>
+<ul>
+<li>Live updates</li>
+<li>Interacting with a message</li>
+<li>Scheduling sending messages.</li>
+<li>Changing colour of messages.</li>
+<li>Formatting specific parts of a message.</li>
+<li>Replying to messages.</li>
+</ul>
+<p>First let&rsquo;s make a backend and a frontend to do what we already know. This shouldn&rsquo;t take us very long (we know how to do it, and have done it recently). It will give us a useful framework to experiment with the things that are new to us.</p>
+<p>If we thought it would take us a long time to do what we already know, we may approach this differently. We would probably try to work out the new things first. Because they may change how we want to do everything. But because it should be quick to do what we do know, we&rsquo;ll start there.</p>
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="making-a-non-live-chat-application">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="making-a-non-live-chat-application">
+        Making a non-live chat application
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="60 minutes countdown" datetime="P60M">60&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Write and run a frontend and backend</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Store data passed from a user into a backend</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Display data from a backend to a user</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <section class="c-note c-note--Exercise">
+  <h4 class="c-note__title e-heading__4">Exercise</span>
+  </h4>
+  <div class="c-note__text "><p>Write a frontend and backend for our chat application.</p>
+<p>Remember, the two requirements we have to start with are:</p>
+<ol>
+<li>As a user, I can send add a message to the chat.</li>
+<li>As a user, when I open the chat I see the messages that have been sent by any user.</li>
+</ol>
+<p>But soon we&rsquo;ll be adding:</p>
+<ol start="3">
+<li>As a user, when someone sends a message, it gets added to what I see.</li>
+</ol>
+<p>As well as some of the other requirements.</p>
+<p>It&rsquo;s useful to remember what we&rsquo;re going to do next - it may impact how we do things now.</p>
+<p>But for now, our <em>main</em> focus should be our two first requirements.</p>
+</div>
+</section>
+
+
+<section class="c-note c-note--Exercise">
+  <h4 class="c-note__title e-heading__4">Exercise</span>
+  </h4>
+  <div class="c-note__text "><p>Run your frontend and backend together locally.</p>
+<p>Test that it works as we expect. Send several messages. Refresh the page. Make sure you see all of the message (in the correct order).</p>
+</div>
+</section>
+
+
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="deploying-the-chat-application">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="deploying-the-chat-application">
+        Deploying the chat application
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="60 minutes countdown" datetime="P60M">60&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Deploy a frontend and backend so it can be used on the internet.</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <section class="c-note c-note--Exercise">
+  <h4 class="c-note__title e-heading__4">Exercise</span>
+  </h4>
+  <div class="c-note__text ">Deploy your chat application so that both the frontend and backend are on the Internet, can talk to each other, and can be used by people.</div>
+</section>
+
+
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="limitations-of-a-single-request/response">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="limitations-of-a-single-request/response">
+        Limitations of a single request/response
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="30 minutes countdown" datetime="P30M">30&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Identify the limitations of loading a website via a single request and response.</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Give examples of functionality that relies on subsequent data transfer from the server to the client.</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Identify and explain why clients typically initiate requests.</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <p>HTTP is a single-request/single-response protocol.</p>
+<p>A client makes a single request, and a server sends a single response.</p>
+<p>This leaves no room for updates. In our chat example, we made a request, and the server could tell us all of the messages it knew about when it responded.</p>
+<p>If a new message comes in, the server has no way of telling us about it. It already sent its response.</p>
+<p>We can imagine a few ways to overcome this limitation, for example:</p>
+<ol>
+<li>The client could ask the server again.</li>
+<li>We could use something <em>other</em> than an HTTP request which allows multiple responses, or bi-directional communication.</li>
+<li>The client could ask the server to make an HTTP request to it if there are new updates.</li>
+</ol>
+<h3 id="limitations-of-an-un-addressable-client">Limitations of an un-addressable client</h3>
+<p>The client probably can&rsquo;t ask the server to make an HTTP request to it if there are new updates.</p>
+<p>This would effectively ask the client to act as a server, and the server to act as a client.</p>
+<p>This is possible! One program can be both a client and a server.</p>
+<p>But it is difficult, because to make a connection to a server we need to know an address for it. And most computers running web browsers don&rsquo;t have a public address other computers can use to access them.</p>
+<p>If it did have a public address, the client would also need to reserve a port so that when an HTTP request came into the computer, the operating system would know how to give it to the right web-page.</p>
+<p>Most web browsers don&rsquo;t have an API for reserving a port and sending a publicly accessible address+port to a server, so we probably can&rsquo;t do this.</p>
+<h3 id="overcoming-these-limitations">Overcoming these limitations</h3>
+<p>We&rsquo;ve seen that asking the server to make an HTTP request to the client is hard. Let&rsquo;s explore the other two options we mentioned.</p>
+<h4 id="the-client-could-ask-the-server-again">The client could ask the server again</h4>
+<p>We&rsquo;ve seen that the server can&rsquo;t just send a response to the client without a request. But a frontend can do things after a page first loads. The frontend could ask the backend for any new messages.</p>
+<h4 id="the-client-and-server-could-set-up-bi-directional-communication-separate-from-http-requestresponse-pairs">The client and server could set up bi-directional communication separate from HTTP request/response pairs</h4>
+<p>Most Web browsers support <a
+  href="https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API">the WebSocket API</a>, which allows bi-directional communication.</p>
+<p>We will try out both of these solutions.</p>
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="designing-a-streaming-api">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="designing-a-streaming-api">
+        Designing a streaming API
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="30 minutes countdown" datetime="P30M">30&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Describe the trade-offs of different streaming APIs.</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <p>So far we have a frontend that asks a backend for all of its chat messages, and shows them.</p>
+<p>We want the frontend to find out about new messages.</p>
+<p>One way we could do this is for our frontend to frequently ask our backend for all of its messages. We could then either re-render the page with all of the messages, or we could work out which messages are new and add them to the UI.</p>
+<p>This approach can work, but it is 
+<tool-tip-container tabindex="0"><strong class="tooltip__trigger" id="trigger__expensive">expensive</strong><span class="tooltip__emoji">🧶</span><tool-tip role="tooltip" aria-labelledby="expensive"><span class="tooltip__title e-heading__2"><span class="tooltip__emoji">🧶</span> expensive</span><span class="tooltip__content">When we use the word expensive, we don&rsquo;t always mean in terms of money. Sometimes we mean something is slow, something will use a lot of memory, or will use a lot of some other resource</span></tool-tip></tool-tip-container>
+. In this case, the reason it&rsquo;s expensive is that it involves sending a lot of data over the network. Often the <em>same</em> data <em>repeatedly</em>.</p>
+<p>A cheaper approach would be for the client to be able to ask only for the new messages. But this is a more complicated question than it seems. What does &ldquo;new&rdquo; mean? New since when?</p>
+<p>We can divide approaches to identifying new messages based on whose job it is to answer the question &ldquo;since when?&rdquo;.</p>
+<h3 id="remembering-since-when-on-the-client">Remembering &ldquo;since when&rdquo; on the client</h3>
+<p>If the server tells the client, in its response, some identifier for its newest message (e.g. the timestamp, or some ID), the client could ask in its next request &ldquo;Please give me all messages since this timestamp&rdquo;.</p>
+<p>The client would need to remember the last timestamp/ID it has seen.</p>
+<p>The server will need to be able to answer that question: &ldquo;What messages have been sent since this time?&rdquo;.</p>
+<p>There are a few ways we can support this on the server:</p>
+<ol>
+<li>If we&rsquo;re storing messages in an array, in all our responses we could tell the client what the last index we returned to it was. Then the server could just <code>slice</code> the array to get the values to return.</li>
+<li>Or if we don&rsquo;t want to expose array indexes (e.g. because perhaps messages can be deleted), we could put a timestamp in every message object, and <code>filter</code> our array based on the timestamp we&rsquo;re searching from.</li>
+</ol>
+<h3 id="remembering-since-when-on-the-server">Remembering &ldquo;since when&rdquo; on the server</h3>
+<p>The server could remember, for each client, what the last message it sent to that client was.</p>
+<p>The client would no longer need to remember the last timestamp/ID it had been sent. It would just ask for new messages.</p>
+<p>The server would need a way of identifying which client is making a request, and would itself need to remember which messages it had already sent that client.</p>
+<p>This simplifies things for the client, but means that the server needs to remember information for each client it has. If there are a lot of clients, this may be a lot of work, and take up a lot of memory. One challenge with this approach is that the server needs to know when it can forget about a client - if it never forgets about clients, it will keep using more and more memory to track this information for every client it&rsquo;s ever had. And we probably can&rsquo;t rely on a client to tell our backend &ldquo;you can forget about me now&rdquo;.</p>
+<p>We will try out both of these approaches in two different frontends to the same backend.</p>
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="repeated-client-requests-for-updates">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="repeated-client-requests-for-updates">
+        Repeated client requests for updates
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="90 minutes countdown" datetime="P90M">90&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Stream live updates from a server by using repeated HTTP polling.</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <p>First let&rsquo;s explore how the client can remember &ldquo;since when&rdquo;.</p>
+<section class="c-note c-note--Exercise">
+  <h4 class="c-note__title e-heading__4">Exercise</span>
+  </h4>
+  <div class="c-note__text "><p>Teach your backend how to answer &ldquo;since when&rdquo; queries.</p>
+<p>You can choose whether you want to use array indexes, timestamps in objects, or some other &ldquo;since when&rdquo; tracker.</p>
+<p>You can also choose whether you want this to be the same endpoint as your &ldquo;get all messages&rdquo; endpoint (with some query parameter), or a separate endpoint.</p>
+</div>
+</section>
+
+
+<p>Now that our backend can answer the question &ldquo;show me messages since&rdquo;, we can update our frontend to repeatedly ask for new messages, and add them to the UI.</p>
+<p>Here is an example function we could write to do this:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">keepFetchingMessages</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">async</span> () =&gt; {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">lastMessageTime</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">state</span>.<span style="color:#a6e22e">messages</span>.<span style="color:#a6e22e">length</span> <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span> <span style="color:#f92672">?</span> <span style="color:#a6e22e">state</span>.<span style="color:#a6e22e">messages</span>[<span style="color:#a6e22e">state</span>.<span style="color:#a6e22e">messages</span>.<span style="color:#a6e22e">length</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>].<span style="color:#a6e22e">timestamp</span> <span style="color:#f92672">:</span> <span style="color:#66d9ef">null</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">queryString</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">lastMessageTime</span> <span style="color:#f92672">?</span> <span style="color:#e6db74">`?since=</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">lastMessageTime</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span> <span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;&#34;</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">url</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">`</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">server</span><span style="color:#e6db74">}</span><span style="color:#e6db74">/messages</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">queryString</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">rawResponse</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">fetch</span>(<span style="color:#a6e22e">url</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">response</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">rawResponse</span>.<span style="color:#a6e22e">json</span>();
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">state</span>.<span style="color:#a6e22e">messages</span>.<span style="color:#a6e22e">push</span>(...<span style="color:#a6e22e">response</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">render</span>();
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">setTimeout</span>(<span style="color:#a6e22e">keepFetchingMessages</span>, <span style="color:#ae81ff">100</span>);
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div><p>It asks for messages since the last seen message (or all messages, if we don&rsquo;t know about any), updates the known messages state, re-renders the page, and then calls itself in 100ms.</p>
+<p>This means that within about 100ms of a message being sent, we should know about it and display it.</p>
+<p>We only transfer new messages, we&rsquo;re not sending all messages over the network every 100ms. That would be a lot of data.</p>
+<p>But we <em>are</em> making a lot of requests. Probably most of those requests get an empty response. And this is in its own way expensive - making a new HTTP connection over and over again takes some compute and network resources. And each time we make a request, our server has to do some work to work out how it should answer.</p>
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="long-polling">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="long-polling">
+        Long-polling
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="90 minutes countdown" datetime="P90M">90&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Stream live updates from a server by using long-polling.</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Compare the trade-offs involved with frequent small requests vs long-polling.</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <p>We noticed when we were repeatedly polling for updates that we were making lots of requests, and a lot of their responses were empty.</p>
+<p>Another approach we could take is to make an HTTP request, but have the server not respond to it until there is a non-empty response.</p>
+<p>One request gets one response, but the server can take some time to make that response.</p>
+<p>This is <em>also</em> expensive, but in a different way.</p>
+<h3 id="different-kinds-of-expensive">Different kinds of expensive</h3>
+<p>Making lots of requests was expensive because establishing connections takes time, CPU, and network resource. And on the server calculating that there were no new messages to respond with took a bit of time.</p>
+<p>Keeping requests open for a long time is expensive because it means the server needs to keep all of the resources associated with a request open. The whole time the request is waiting, the server needs to keep the TCP connection open, needs to keep the memory associated with the request, needs to remember that it should respond to it (and how to). It also means that we need to be careful about restarting the server (e.g. if we change its code and want to run the new code) - stopping the server will break any connections that are waiting.</p>
+<p>When we were making lots of small quick connections, we could do things like start a new server, shift over all new traffic to it, and turn off the old server. This was easy for us to do because each request was quick, so we knew when we switched to the new server, any requests to the old server would be done quickly, and it wouldn&rsquo;t get any more.</p>
+<p>Now that we&rsquo;re using long connections, if we turn on a new server and switch new requests to it, it may still be a while before the old server&rsquo;s requests are finished.</p>
+<p>In different contexts, it may be worse to have lots of short requests, or fewer longer requests.</p>
+<h3 id="changing-our-code-to-support-long-polling">Changing our code to support long-polling</h3>
+<p>On the client side, we probably don&rsquo;t need to change anything about our code. Just the requests it makes may take longer to resolve.</p>
+<p>On the server side, we will need to change things around. Right now, our <code>GET</code> handler <em>always</em> responds based on what it currently knows.</p>
+<p>We want to change this.</p>
+<p>If we don&rsquo;t have any messages to respond with, we want to wait until we <em>do</em> have something to respond with.</p>
+<p>We know <code>res.send</code> is a callback function - it&rsquo;s a function we can call when we have a response to send.</p>
+<p>Now we don&rsquo;t always want to call <code>res.send</code> in our handler. Sometimes we want to say: &ldquo;When we next get a message, call <code>res.send</code> with that message&rdquo;.</p>
+<p>This means we need to share our callback between the <code>GET</code> handler for asking about new messages, and the <code>POST</code> handler for sending new messages.</p>
+<p>When the <code>POST</code> handler saves a new message, we want to check if there are any <code>GET</code> handlers waiting for a message, and call those <code>GET</code> handlers&rsquo; <code>res.send</code> callbacks with the new message.</p>
+<p>To achieve this, we probably want to make a new piece of state on our server where we can remember which callbacks still need to be called with responses:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">callbacksForNewMessages</span> <span style="color:#f92672">=</span> [];</span></span></code></pre></div><p>In our <code>GET</code> handler, we want to write some code to remember that someone of our callbacks aren&rsquo;t being instantly called, and will need calling in the future:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">messagesToSend</span>.<span style="color:#a6e22e">length</span> <span style="color:#f92672">===</span> <span style="color:#ae81ff">0</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Note: We need to use an arrow function here, rather than just pushing `res.send` directly.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">// This is because of handling of &#34;this&#34;.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">// You can read about &#34;this&#34; at https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#a6e22e">callbacksForNewMessages</span>.<span style="color:#a6e22e">push</span>((<span style="color:#a6e22e">value</span>) =&gt; <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">send</span>(<span style="color:#a6e22e">value</span>));
+</span></span><span style="display:flex;"><span>} <span style="color:#66d9ef">else</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">send</span>(<span style="color:#a6e22e">messagesToSend</span>);
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div><p>and in our <code>POST</code> handler, when we are saving a new message we want to run some code to call any callbacks which are still waiting for a response when we get a new message:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">while</span> (<span style="color:#a6e22e">callbacksForNewMessages</span>.<span style="color:#a6e22e">length</span> <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">callback</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">callbacksForNewMessages</span>.<span style="color:#a6e22e">pop</span>();
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">callback</span>([<span style="color:#a6e22e">newMessage</span>]);
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div><p>Note how we&rsquo;re wrapping <code>newMessage</code> in an array - we need to return the same type of information whether we&rsquo;re immediately calling our callback, or doing it later on.</p>
+<section class="c-note c-note--Exercise">
+  <h4 class="c-note__title e-heading__4">Exercise</span>
+  </h4>
+  <div class="c-note__text "><p>Update your backend to support long-polling.</p>
+<p>You may want to make this an optional behaviour (e.g. by adding a command line flag, or allowing a client to opt in to fast- or long-polling based on a query parameter) so that you can easily experiment with both.</p>
+</div>
+</section>
+
+
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+      </div>
+      <nav slot="nav">
+        <a href="#" class="e-button c-solo-view__back">&larr; Back</a>
+        <a href="#" class="e-button c-solo-view__next">Next &rarr;</a>
+      </nav>
+    </solo-view>
+    
+    <script src="/scripts/solo-view.min.js" defer></script>
+    
+    <script src="/scripts/time-total.min.js" defer></script>
+  
+
+
+        
+
+  <footer class="c-page-footer">
+    <nav class="c-page-footer__nav">
+      
+      
+      <span class="c-page-footer__this">Prep</span>
+      
+        →<a
+          class="c-page-footer__next c-page-footer__link e-link"
+          href="/sdc/decomposition/sprints/2/backlog/"
+          >Backlog</a
+        >
+      
+    </nav>
+  </footer>
+
+
+      </main><footer class="l-layout__footer l-footer">
+  <a
+    class="l-footer__github e-button e-button--icon"
+    href="https://github.com/CodeYourFuture/curriculum/">
+    <svg
+  focusable="false"
+  class="e-button__icon"
+  role="presentation"
+  width="96"
+  viewbox="0 0 98 96"
+  xmlns="http://www.w3.org/2000/svg">
+  <path
+    fill-rule="evenodd"
+    clip-rule="evenodd"
+    d="M48.854 0C21.839 0 0 22 0 49.217c0 21.756 13.993 40.172 33.405 46.69 2.427.49 3.316-1.059 3.316-2.362 0-1.141-.08-5.052-.08-9.127-13.59 2.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015 4.934.326 7.523 5.052 7.523 5.052 4.367 7.496 11.404 5.378 14.235 4.074.404-3.178 1.699-5.378 3.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283 0-5.378 1.94-9.778 5.014-13.2-.485-1.222-2.184-6.275.486-13.038 0 0 4.125-1.304 13.426 5.052a46.97 46.97 0 0 1 12.214-1.63c4.125 0 8.33.571 12.213 1.63 9.302-6.356 13.427-5.052 13.427-5.052 2.67 6.763.97 11.816.485 13.038 3.155 3.422 5.015 7.822 5.015 13.2 0 18.905-11.404 23.06-22.324 24.283 1.78 1.548 3.316 4.481 3.316 9.126 0 6.6-.08 11.897-.08 13.526 0 1.304.89 2.853 3.316 2.364 19.412-6.52 33.405-24.935 33.405-46.691C97.707 22 75.788 0 48.854 0z"
+    fill="currentColor" />
+</svg>
+
+    <span class="is-invisible">Find us on GitHub</span>
+  </a>
+  <p class="l-footer__impressum e-heading__6">
+    This
+    <a href="https://github.com/CodeYourFuture/curriculum/">free and open source programme</a>
+    is a project of
+    <a href="https://codeyourfuture.io/">Code Your Future</a>
+    <br />
+    Creative Commons Attribution-ShareAlike 4.0
+  </p>
+  <dark-mode class="l-footer__mode"
+    ><button
+      slot="button"
+      id="mode-toggle"
+      type="button"
+      class="e-button e__button--toggle e-button--icon">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="e-icon e__button__icon e-icon--moon">
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
+      </svg>
+      <span class="is-invisible">Toggle between light and dark mode</span>
+    </button></dark-mode
+  >
+</footer>
+
+
+
+<script src="/scripts/app.min.js" defer></script>
+
+<script src="/scripts/youtube-player.min.js" defer></script>
+
+<script src="/scripts/tab-panels.min.js" type="module" defer></script>
+
+<script src="/scripts/dark-mode.min.js"></script>
+
+<script src="/scripts/alert-message.min.js" defer></script>
+
+
+
+
+
+
+
+</div>
+  </body>
+</html>

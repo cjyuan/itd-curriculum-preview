@@ -1,0 +1,2413 @@
+<!DOCTYPE html>
+
+
+
+
+<html lang="en" class="p-prep"><head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  <title data-pagefind-meta="title">
+    
+      Intro to Programming 
+    
+      Data Groups 
+    
+      Sprint 2 
+    
+    Prep
+  </title>
+  
+    <meta name="description" content="A free and open source software development programme." />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+  <style>
+    body,
+    html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      animation: fade-in 300ms;
+    }
+    @keyframes fade-in {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  </style>
+  
+  
+  <link
+    rel="stylesheet"
+    href="/bundled.min.b6a4520237559385268d63a9daa81d96.css"
+    media="print"
+    onload="this.media='all'" />
+
+  
+  
+    
+    
+    <link
+      rel="stylesheet"
+      href="/custom.min.8ded6a1a88bc7cc98bdef8dc33d15f3a.css"
+      media="print"
+      onload="this.media='all'" />
+  
+
+
+  <noscript>
+    <link rel="stylesheet" href="/bundled.min.b6a4520237559385268d63a9daa81d96.css" />
+  </noscript>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&amp;display=swap"
+    rel="stylesheet"
+    media="print"
+    onload="this.media='all'" />
+
+  <link rel="shortcut icon" href="https://curriculum.codeyourfuture.io/favicon.ico" />
+  <meta name="theme-color" content="#e3ddeef2" />
+  <link rel="manifest" href="https://curriculum.codeyourfuture.io/manifest.json" />
+</head>
+<body>
+    <a class="c-skip-link e-button" id="skip-link" href="#main">Skip to main</a>
+    <div class="l-layout">
+      <header class="l-layout__header l-header">
+  <div class="l-header__container">
+    <h1 class="l-header__heading e-heading__6" data-pagefind-ignore>
+      <a class="l-header__home" href="/"
+        ><span class="is-invisible"
+          >itp prep CYF Courses</span
+        >
+        <span class="is-none--lt-container">
+          <svg
+          xmlns="http://www.w3.org/2000/svg"
+          title="Code Your Future."
+          viewBox="0 0 621.64 155.81"
+          width="140px"
+          focusable="false"
+          role="img">
+          <path
+            fill="var(--theme-color--brand)"
+            d="M103.37 56.51C96.91 63.64 87.03 69.9 74.6 69.9c-20.14 0-33.52-12.91-33.52-34.09C41.08 13.97 57.5.87 69.94.87c9.5 0 13.77 5.32 14.63 6.46l2.18-5.27h14.91v27h-17c-.28-6.18-3.32-12-10.06-12s-11.3 8.45-11.3 18.8c0 9.4 4.84 17.86 13.86 17.86 8 0 14.24-8.36 15.1-9.31Zm2.88-21.85C106.25 14.15 119.92 0 139.58 0c23.26 0 34.09 14 34.09 35.32s-12 34.57-33.43 34.57c-19.88 0-33.99-11.49-33.99-35.23Zm43.68.66c0-11.49-3.13-20.7-10.45-20.7-5.79-.09-9.78 8.26-9.78 20 0 12.44 4.47 20.32 10.54 20.32s9.65-7.88 9.65-19.62Zm27.49 20.23h5.89V14.34h-5.89V1.8h29c23 0 36.09 14.15 36.09 32.29 0 21.65-13.11 34.09-36.47 34.09h-28.62Zm29 0c10.03-.19 14.21-9.59 14.21-21.49 0-10.16-4.18-19.75-14.25-19.75h-3.61v41.24ZM303.04 1.8v21h-16.43v-8.46h-15.19v13.1h18v12.62h-18v15.49h15.19v-8.83h16.43v21.46h-57.26V55.55h6V14.34h-6V1.8Z" />
+          <path
+            fill="var(--theme-color--ink)"
+            d="M274.42 87.82v21h-16.8v-8.45h-14.37v16.52h18v12.63h-18v12.04h9.68v12.63h-35.29v-12.63h5.89v-41.21h-5.89V87.82Zm33.04 0v12.24h-5.12v20.51c0 15.28 3.41 18.51 9.49 18.51 5.79 0 9.59-2.28 9.59-18.61v-20.12h-5.17V87.82h28.11v12.24h-5.11v23.07c0 22.51-9.4 32.67-27.25 32.67-19.18-.57-29.43-10.64-29.43-32.19v-23.45h-5.32V87.82Zm103.5 24.69h-14v-12.16h-8v41.21h7.88v12.63h-35.26v-12.63h7.79v-41.21h-8.12v12.16h-14V87.82h63.71ZM444 87.82v12.24h-5.13v20.51c0 15.28 3.42 18.51 9.5 18.51 5.79 0 9.59-2.28 9.59-18.61v-20.12h-5.13V87.82h28.11v12.24h-5.13v23.07c0 22.51-9.4 32.67-27.25 32.67-19.18-.57-29.44-10.64-29.44-32.19v-23.45h-5.32V87.82Zm71.59 0c22 0 26.3 8.73 26.3 19.56 0 7.4-5.88 12.63-13.76 13.77 6.55.95 12.44 6.64 12.44 13.48 0 4.08.57 6.46 2.27 6.46 1.43 0 2.19-1.14 2.19-3v-3.13h6.36v5.22c0 7.88-3.32 15.19-13.86 15.19-12.44 0-18.42-6.55-18.42-17.66 0-8.64-1.05-10.73-9.5-10.73v14.68h5.79v12.53h-30.67v-12.53h5.32v-41.4h-5.32V87.82Zm-6 28.48h4.27c5.51 0 9.12-2.65 9.12-7.69 0-5.6-3.13-8.45-8.64-8.45h-4.75Zm102.38-28.48v21h-16.43v-8.45h-15.19v13.09h18v12.6h-18v15.5h15.19v-8.83h16.43v21.46h-57.26v-12.63h6v-41.21h-6V87.82Zm-227.72-56.1c.38-1.9 2.47-5.89 3.51-8.17l5.22-9.59h-5.22V1.8h25.54v12.16h-5.05l-17.62 30.86v11h5.32v12.36h-30.39V55.83h5.41v-11.2l-18.42-30.67h-4.65V1.8h32.47v12.16h-4.93l5.5 10.1c.57 1.81 2.57 6.08 2.95 7.7Zm29.54 2.94C413.79 14.15 427.47 0 447.12 0c23.27 0 34.09 14 34.09 35.32s-12 34.57-33.42 34.57c-19.85 0-34-11.49-34-35.23Zm43.68.66c0-11.49-3.13-20.7-10.44-20.7-5.79-.09-9.78 8.26-9.78 20 0 12.44 4.46 20.32 10.54 20.32s9.68-7.88 9.68-19.62ZM514.25 1.8v12.26h-5.13v20.5c0 15.29 3.42 18.52 9.5 18.52 5.79 0 9.59-2.28 9.59-18.61V14.34h-5.13V1.8h28.11v12.26h-5.13v23.07c0 22.5-9.4 32.66-27.25 32.66-19.18-.57-29.44-10.63-29.44-32.19V14.15h-5.32V1.8Zm71.59 0c22 0 26.31 8.74 26.31 19.57 0 7.4-5.89 12.62-13.77 13.76 6.55 1 12.44 6.65 12.44 13.49 0 4.08.57 6.46 2.27 6.46 1.43 0 2.19-1.14 2.19-3V48.9h6.36v5.23c0 7.88-3.32 15.19-13.86 15.19-12.44 0-18.42-6.55-18.42-17.66 0-8.64-1.05-10.73-9.5-10.73v14.71h5.79v12.54h-30.67V55.64h5.32v-41.4h-5.32V1.8Zm-6 28.49h4.27c5.51 0 9.12-2.66 9.12-7.69 0-5.6-3.13-8.45-8.64-8.45h-4.75ZM28.39 14.7l5.8 10.64-23.46 10.72 23.46 10.55-3.61 9.87L0 42.24v-13.3Zm318.7 14.24v13.3l-30.58 14.24-3.61-9.87 23.46-10.55-23.46-10.72 5.8-10.64Z" />
+        </svg>
+        </span>
+        <span class="is-none--gt-container">
+          <svg
+          xmlns="http://www.w3.org/2000/svg"
+          version="1.0"
+          viewBox="0 0 512 512"
+          width="48px">
+          <path
+            fill="currentcolor"
+            stroke="currentcolor"
+            d="M225.5 1c-1.1.5-3.5.9-5.3.9-4.1.1-22.9 4.5-30.7 7.2-63.1 22-114.7 72.3-142.7 139.4-6.4 15.2-11.8 33.8-16.7 57-4.1 19.7-5.4 64.5-2.6 90.8C33 346.2 49.8 390.1 76.8 425c6.2 7.9 23.9 26.4 30.7 32 8.1 6.7 26.1 18.7 35.1 23.6 28.1 15.1 58 24.3 91.9 28.3 5.5.7 13.6 1.7 18 2.2 8.8 1.2 33.9.7 48-.9 11-1.3 31.7-4.8 36.5-6.2 1.9-.5 8-2.3 13.5-3.9 21.3-6.1 47.2-17.8 67.5-30.5 8.8-5.4 23.7-15.8 28.5-19.7 10.2-8.4 24.5-21.3 31.4-28.2l8.4-8.5-2.2-2.9c-1.3-1.5-4.6-5.3-7.4-8.3-6.2-6.7-14.5-15.7-21.2-23.1-2.7-3-7.5-8.2-10.5-11.4-3-3.3-9.8-10.8-15.1-16.5-21.5-23.6-24.2-26.5-24.9-26.8-.3-.1-2 1.2-3.6 3-1.6 1.9-6.3 7.1-10.4 11.7-8.6 9.7-25.6 24.6-35.9 31.4-21.4 14.4-42.5 21.7-62.6 21.7-15.3-.1-29.3-3.3-42.5-10-22.8-11.5-41.9-35.5-51.5-64.7-4.2-12.8-4.3-13.4-5.9-22.8-3.8-22.9-4.6-39.2-2.6-55.6 2.7-22.7 3.3-26.5 5-33.2 7.9-30.9 16.7-48.6 32.4-65.6 16.8-17.9 41.1-24.9 65.1-18.6 30 7.8 50.7 36.3 55.5 76.3.5 4.6 1.2 8.7 1.5 9.3.4.5 25.1.9 62.6.9H474V9H364.2L357 26.7c-4 9.8-7.9 18.5-8.7 19.3-1.3 1.3-2.1.8-6.6-4.3-6-6.9-18.3-16.7-28.2-22.5-7.4-4.3-22.6-10.9-28.5-12.4-9.2-2.2-18.1-4.1-24-5-9-1.3-33.1-1.9-35.5-.8z" />
+        </svg>
+        </span>
+      </a>
+    </h1>
+    <link
+  href="/pagefind/pagefind-ui.css"
+  rel="stylesheet"
+  media="print"
+  onload="this.media='all'" />
+<style>
+  :root {
+    --pagefind-ui-primary: var(--theme-color--ink);
+    --pagefind-ui-text: var(--theme-color--ink);
+    --pagefind-ui-background: var(--theme-color--paper);
+    --pagefind-ui-border: var(--theme-color--outline);
+    --pagefind-ui-tag: var(--theme-color--block);
+    --pagefind-ui-border-radius: 2em;
+    --pagefind-ui-image-border-radius: var(--theme-border-radius);
+    --pagefind-ui-font: var(--theme-font--copy);
+  }
+  .pagefind-ui--reset {
+    position: absolute;
+  }
+  #search .pagefind-ui__search-input {
+    box-shadow: var(--theme-box-shadow--inset);
+    margin-bottom: var(--theme-spacing--1);
+  }
+  #search .pagefind-ui__search-clear {
+    background-color: transparent;
+  }
+  #search .pagefind-ui__drawer {
+    background-color: var(--theme-color--paper);
+    box-shadow: var(--theme-box-shadow--slim);
+    transform: translateY(-1.5px);
+    padding: 0 var(--theme-spacing--2);
+    max-height: calc(100vh - 4rem);
+    overflow-y: auto;
+  }
+  #search .pagefind-ui__result {
+    padding: var(--theme-spacing--1) 0 var(--theme-spacing--2) 0;
+  }
+  #search .pagefind-ui__result:focus-within,
+  #search .pagefind-ui__button:focus {
+    background-color: var(--theme-color--block);
+  }
+  #search .pagefind-ui__button {
+    border: none;
+  }
+</style>
+<script src="/pagefind/pagefind-ui.js" type="text/javascript" defer></script>
+<div id="search" class="l-header__search"></div>
+<script>
+  window.addEventListener("DOMContentLoaded", (event) => {
+    new PagefindUI({
+      element: "#search",
+      showSubResults: true,
+      pageSize: 3,
+      showImages: false,
+      showTags: true,
+    });
+  });
+</script>
+
+    <button
+      class="l-header__action e-button e-button--icon js-menu-toggle e-heading__3">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+        <path
+          stroke="var(--theme-color--ink)"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M13 5a1 1 0 1 0-2 0 1 1 0 0 0 2 0Zm0 7a1 1 0 1 0-2 0 1 1 0 0 0 2 0Zm0 7a1 1 0 1 0-2 0 1 1 0 0 0 2 0Z" />
+      </svg>
+      <span class="is-invisible">Open Menu.</span>
+    </button>
+  </div>
+</header>
+
+      <nav
+  class="l-layout__menu l-menu"
+  aria-label="Main Site Links."
+  id="site-menu"
+  hidden
+  tabindex="0">
+  <div class="l-menu__container">
+    <h2 class="l-menu__heading e-heading__2">
+      <a href="/" class="l-menu__home is-invisible">Menu</a>
+    </h2>
+    <button
+      class="l-menu__action e-button e-button--icon js-menu-toggle e-heading__2"
+      id="close-menu">
+      ❎
+      <span class="is-invisible">Close Menu.</span>
+    </button>
+    <ul class="l-menu__primary">
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/guides/">
+            Guides
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/sdc/tools/">
+            Tools
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/sdc/logic/">
+            Logic
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/sdc/decomposition/">
+            Decomposition
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/sdc/legacy/">
+            Legacy code
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/sdc/complexity/">
+            Complexity
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/tracks/servers/">
+            Servers
+          </a>
+        </li>
+    </ul>
+    <ul class="l-menu__secondary">
+        <li class="l-menu__item">
+          <a class="e-heading__3 l-menu__link" href="https://codeyourfuture.io">
+            CYF 👈🏾
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__3 l-menu__link" href="https://codeyourfuture.io/volunteers/">
+            Join Us 👋🏿
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__3 l-menu__link" href="https://codeyourfuture.io/donate/">
+            Support 🫶🏼
+          </a>
+        </li>
+    </ul>
+  </div>
+</nav>
+
+      <main
+        id="main"
+        class="l-layout__main l-main"
+        tabindex="0"
+        data-pagefind-body>
+        
+  
+    <solo-view tabindex="0">
+      
+
+
+      <div slot="header">
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+<header
+  class="c-page-header 
+    c-page-header--solo
+   c-page-header--toc">
+  
+  <div class="c-page-header__container">
+    <div class="c-page-header__breadcrumbs">
+      
+  <nav class="c-breadcrumbs">
+    <ol class="c-breadcrumbs__list">
+      
+        
+        
+          <li class="c-breadcrumbs__item">
+            <a
+              class="c-breadcrumbs__link"
+              href="/itp/"data-pagefind-filter="module"><span class="c-breadcrumbs__text">Intro to Programming</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                width="24px"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="c-breadcrumbs__icon">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+              </svg>
+            </a>
+          </li>
+        
+        
+          <li class="c-breadcrumbs__item">
+            <a
+              class="c-breadcrumbs__link"
+              href="/itp/data-groups/"><span class="c-breadcrumbs__text">Data groups</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                width="24px"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="c-breadcrumbs__icon">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+              </svg>
+            </a>
+          </li>
+      
+        <li class="c-breadcrumbs__item">
+          <a
+            class="c-breadcrumbs__link"
+            href="/itp/data-groups/sprints/2/"data-pagefind-filter="sprint">Sprint 2</a
+          >
+        </li>
+      
+    </ol>
+  </nav>
+  
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Our Courses",
+      "item":"https://curriculum.codeyourfuture.io/"},
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Intro to Programming",
+      "item":"https://curriculum.codeyourfuture.io/itp/"},
+    {
+      "@type": "ListItem",
+      "position":  3 ,
+      "name": "Data groups",
+      "item":"https://curriculum.codeyourfuture.io/itp/data-groups/"},{
+      "@type": "ListItem",
+      "position":  5 ,
+      "name": "Sprint 2",
+      "item":"https://curriculum.codeyourfuture.io/itp/data-groups/sprints/2/"},
+    {
+      "@type": "ListItem",
+      "position":  6 ,
+      "name": "prep",
+      "item":"https://curriculum.codeyourfuture.io/itp/data-groups/sprints/2/"}
+  ]
+}
+</script>
+
+
+    </div>
+    <h1 class="c-page-header__title e-heading__1"data-pagefind-filter="view"
+        
+      data-pagefind-weight="10">
+      <span class="c-emoji">
+        
+        
+           
+            <time-total class="c-page-header__time"></time-total>
+      
+         
+        </span>
+        <span class="c-page-header__title-text">prep</span>
+               
+    </h1>
+    
+      
+    
+    
+    
+    
+      <div class="c-page-header__toc " id="toc">
+        <section class="c-toc" aria-label="Table of contents.">
+          <a id="top" class="c-toc__top e-button e-button--icon" href="#toc"
+            >🔖 <span class="is-invisible">back to top</span></a
+          >
+          
+            <nav id="TableOfContents"></nav>
+          
+          
+            <ol>
+              
+                <li>
+                  <a href="#ordered-data" data-pagefind-weight="5"
+                    >Ordered data</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#key-value-pairs" data-pagefind-weight="5"
+                    >Key-value pairs</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#accessing-properties" data-pagefind-weight="5"
+                    >Accessing properties</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#query-strings" data-pagefind-weight="5"
+                    >Query strings</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#step-through-prep-workshop" data-pagefind-weight="5"
+                    >Step-through-prep workshop</a
+                  >
+                  📼
+                </li>
+              
+                <li>
+                  <a href="#no-parameters" data-pagefind-weight="5"
+                    >No parameters</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#parsing-a-single-key-value-pair" data-pagefind-weight="5"
+                    >Parsing a single key-value pair</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#access-with-variables" data-pagefind-weight="5"
+                    >[ ] access with variables</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#parsing-multiple-params" data-pagefind-weight="5"
+                    >Parsing multiple params</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#solving-problems-with-objects" data-pagefind-weight="5"
+                    >Solving problems with objects 📼</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#conflict-resolution" data-pagefind-weight="5"
+                    >Conflict Resolution</a
+                  >
+                  
+                </li>
+              
+            </ol>
+          
+          
+        </section>
+      </div>
+    
+
+  </div>
+</header>
+</div>
+      <div slot="blocks">
+        
+        
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="ordered-data">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="ordered-data">
+        Ordered data
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="15 minutes countdown" datetime="P15M">15&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Explain the limitations of arrays when storing data</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <p>Let&rsquo;s imagine we&rsquo;re writing a program that involves information about a user&rsquo;s profile.
+We could store some user&rsquo;s profile details in an <strong>array</strong>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">profileData</span> <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#34;Franceso&#34;</span>, <span style="color:#e6db74">&#34;Leoni&#34;</span>, <span style="color:#ae81ff">33</span>, <span style="color:#e6db74">&#34;Manchester&#34;</span>];</span></span></code></pre></div><p>At the moment, we could visualise <code>profileData</code> in a table like this:</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: center">index</th>
+          <th style="text-align: center">value</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">0</td>
+          <td style="text-align: center">&ldquo;Francesco&rdquo;</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">1</td>
+          <td style="text-align: center">&ldquo;Leoni&rdquo;</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">2</td>
+          <td style="text-align: center">33</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">3</td>
+          <td style="text-align: center">&ldquo;Manchester&rdquo;</td>
+      </tr>
+  </tbody>
+</table>
+<p>Inside <code>profileData</code> we access items using an <code>index</code>. However, with an ordered list of items <em>we can&rsquo;t tell what each item in the list represents</em>. We only know the position of data in the array. We could access the item at index 3 to get <code>&quot;Manchester&quot;</code>: however, we don&rsquo;t know what <code>&quot;Manchester&quot;</code> tells us about the user. <code>&quot;Manchester&quot;</code> could be the city they currently live in, it could be their city of birth, a place where they studied in the past etc. We need to know the values but also what these values represent about the user.</p>
+<p>We might think we can just remember (and maybe write in a comment) &ldquo;index 0 is the person&rsquo;s first name&rdquo;, but this has problems. What if we need to introduce a new piece of data? We may need to change every piece of code that uses the array. What if some of the data is optional (e.g. a middle name)? It&rsquo;s also really hard for someone new to come read our code.</p>
+<h3 id="keys-not-indexes">Keys not indexes</h3>
+<p>However, instead of <em>ordering</em> data with <em>indexes</em>, we can label data with <strong>keys</strong>.</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: center">key</th>
+          <th style="text-align: center">value</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">firstName</td>
+          <td style="text-align: center">&ldquo;Francesco&rdquo;</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">lastName</td>
+          <td style="text-align: center">&ldquo;Leoni&rdquo;</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">age</td>
+          <td style="text-align: center">33</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">cityOfResidence</td>
+          <td style="text-align: center">&ldquo;Manchester&rdquo;</td>
+      </tr>
+  </tbody>
+</table>
+<p>We can look up values in this table by the <strong>key</strong>. With data stored like this, we can see what values like <code> &quot;Manchester&quot;</code> actually mean - in this case, it refers to a city of residence for the user.</p>
+<p>In JavaScript, we can use an 
+<tool-tip-container tabindex="0"><strong class="tooltip__trigger" id="trigger__object">object</strong><span class="tooltip__emoji">🧶</span><tool-tip role="tooltip" aria-labelledby="object"><span class="tooltip__title e-heading__2"><span class="tooltip__emoji">🧶</span> object</span><span class="tooltip__content">An <strong>object</strong> is a collection of properties. Each property is a key-value pair</span></tool-tip></tool-tip-container>
+to store data in a table-like way, where we can look up data using a <strong>key</strong>.</p>
+<p>We can declare an object like this.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">profileData</span> <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">firstName</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Franceso&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">lastName</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Leoni&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">age</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">33</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">cityOfResidence</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Manchester&#34;</span>,
+</span></span><span style="display:flex;"><span>};</span></span></code></pre></div>
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="key-value-pairs">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="key-value-pairs">
+        Key-value pairs
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="10 minutes countdown" datetime="P10M">10&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Define an object property</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Identify key-value pairs in an object literal</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <p>The <code>profileData</code> object is made up of <strong>properties</strong>.
+Each <strong>property</strong> is an association between a key and a value.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">firstName</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Francesco&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">lastName</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Leoni&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">age</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">33</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">cityOfResidence</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Manchester&#34;</span>
+</span></span><span style="display:flex;"><span>};</span></span></code></pre></div><p>In the 
+<tool-tip-container tabindex="0"><strong class="tooltip__trigger" id="trigger__object literal">object literal</strong><span class="tooltip__emoji">🧶</span><tool-tip role="tooltip" aria-labelledby="object literal"><span class="tooltip__title e-heading__2"><span class="tooltip__emoji">🧶</span> object literal</span><span class="tooltip__content">An object literal is an object defined by writing a comma-separated list of key-value pairs inside of curly braces.</span></tool-tip></tool-tip-container>
+ above, there are 4 properties. The first property consists of <code>firstName</code> and <code>&quot;Francesco&quot;</code>. <code>firstName</code> is the <strong>key</strong>, <code>&quot;Francesco&quot;</code> is the <strong>value</strong> associated with the key <code>firstName</code>.</p>
+<p>In object literals, each <strong>key-value pair</strong> is separated by a comma.</p>
+<section class="c-note c-note--note">
+    <h4 class="c-note__title">📝Note</h4>
+    <div class="c-note__text"><p>Defining properties in JavaScript object literals looks a lot like defining properties in a CSS rule:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#f92672">p</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">color</span>: <span style="color:#66d9ef">red</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">background-color</span>: <span style="color:#66d9ef">blue</span>;
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div></div>
+  </section>
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="accessing-properties">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="accessing-properties">
+        Accessing properties
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="15 minutes countdown" datetime="P15M">15&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Access object property values with dot notation</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Define the term &ldquo;literal&rdquo;</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <p>We&rsquo;ve already accessed object property values. <code>console</code> is an object:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-console" data-lang="console"><span style="display:flex;"><span>Welcome to Node.js v16.19.1.
+</span></span><span style="display:flex;"><span>Type &#34;.help&#34; for more information.
+</span></span><span style="display:flex;"><span>&gt; console
+</span></span><span style="display:flex;"><span>Object [console] {
+</span></span><span style="display:flex;"><span>  log: [Function: log],
+</span></span><span style="display:flex;"><span>  warn: [Function: warn],
+</span></span><span style="display:flex;"><span>  dir: [Function: dir],
+</span></span><span style="display:flex;"><span>  time: [Function: time],
+</span></span><span style="display:flex;"><span>  timeEnd: [Function: timeEnd],
+</span></span><span style="display:flex;"><span>  .
+</span></span><span style="display:flex;"><span>  .
+</span></span><span style="display:flex;"><span>  .
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>We use dot notation to access the property value associated with a key.
+When we write <code>console.log</code> - think of this as saying:</p>
+<blockquote><p>&ldquo;access the <em>value</em> associated with <em>key</em> of <code>&quot;log&quot;</code>, inside the <code>console</code> object&rdquo;</p>
+</blockquote><p>Similarly we can use dot notation to access property values stored in objects we have defined:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">profileData</span> <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">firstName</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Francesco&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">lastName</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Leoni&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">age</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">33</span>,
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">profileData</span>.<span style="color:#a6e22e">firstName</span>); <span style="color:#75715e">// logs &#34;Francesco&#34;
+</span></span></span></code></pre></div><p>Objects also allow looking up property values using square brackets, similar to arrays. Instead of an index, we use a string of the key inside the square brackets:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">profileData</span> <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">firstName</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Francesco&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">lastName</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Leoni&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">age</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">33</span>,
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">profileData</span>[<span style="color:#e6db74">&#34;firstName&#34;</span>]); <span style="color:#75715e">// logs &#34;Francesco&#34;
+</span></span></span></code></pre></div><p>Using dot notation or square brackets both work the same way.</p>
+<h3 id="mutation">Mutation</h3>
+<p>Objects are <strong>mutable</strong> data structures. We can use the assignment operator <code>=</code> to update the value associated with a particular key.</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span></span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">profileData</span> <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">firstName</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Francesco&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">lastName</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Leoni&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">age</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">33</span>,
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex; background-color:#3c3d38"><span><span style="color:#a6e22e">profileData</span>.<span style="color:#a6e22e">firstName</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Fraz&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">profileData</span>.<span style="color:#a6e22e">firstName</span>); <span style="color:#75715e">// firstName is now &#34;Fraz&#34;
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="predict-and-explain--">Predict and explain 💬 🧠</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">profileData</span> <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">firstName</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Francesco&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">lastName</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Leoni&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">age</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">33</span>,
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">twinData</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">profileData</span>;
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">twinData</span>.<span style="color:#a6e22e">firstName</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Emilia&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">profileData</span> <span style="color:#f92672">===</span> <span style="color:#a6e22e">twinData</span>);
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">profileData</span>.<span style="color:#a6e22e">firstName</span>);</span></span></code></pre></div><p>Predict and explain what the console output be when we run the code above runs.</p>
+<h3 id="properties-are-optional">Properties are optional</h3>
+<p>It&rsquo;s possible to add properties to an object that already exists. Objects don&rsquo;t always have the same properties.</p>
+<section class="c-note c-note--exercise">
+  <h4 class="c-note__title e-heading__4">✍️exercise</span>
+  </h4>
+  <div class="c-note__text "><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">profileData</span> <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">firstName</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Francesco&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">lastName</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Leoni&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">age</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">33</span>,
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">profileData</span>.<span style="color:#a6e22e">cityOfResidence</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">profileData</span>.<span style="color:#a6e22e">cityOfResidence</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Manchester&#34;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">profileData</span>.<span style="color:#a6e22e">cityOfResidence</span>);</span></span></code></pre></div><p>Predict and explain what the console output will be when the code above runs.</p></div>
+</section>
+
+
+<h3 id="object-literals-vs-objects">Object literals vs objects</h3>
+<p>What&rsquo;s the difference between an object, and an object literal?</p>
+<p>An object is the thing we&rsquo;re making, which maps keys to values.</p>
+<p>An object literal is how we can write one out specifying all of its key-value pairs in one statement.</p>
+<p>These two blocks of code construct equivalent objects:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">object1</span> <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">firstName</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Francesco&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">lastName</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Leoni&#34;</span>,
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">object2</span> <span style="color:#f92672">=</span> {};
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">object2</span>.<span style="color:#a6e22e">firstName</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Francesco&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">object2</span>.<span style="color:#a6e22e">lastName</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Leoni&#34;</span>;</span></span></code></pre></div><p><code>object1</code> is all constructed in one object literal.
+<code>object2</code> starts off with an empty object literal, and then adds some properties to it.</p>
+<p>Note: This same terminology is used for other types:</p>
+<p><code>&quot;abc&quot;</code> is a string literal, <code>&quot;a&quot; + &quot;b&quot; + &quot;c&quot;</code> makes the same string, but by concatenating three string literals together.</p>
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="query-strings">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="query-strings">
+        Query strings
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="10 minutes countdown" datetime="P10M">10&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Identify the query string section of a URL</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Identify query parameters within a query string</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Explain why an object is a more useful structure for storing query parameters than a string</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <p>Let’s define a problem.</p>
+<p>Websites have addresses called <abbr title="Uniform Resource Locator"><a
+  href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/What_is_a_URL">URLs</a></abbr> like this: &ldquo;<a
+  href="https://example.com/widgets">https://example.com/widgets"</a>. URLs often have 
+<tool-tip-container tabindex="0"><strong class="tooltip__trigger" id="trigger__query strings">query strings</strong><span class="tooltip__emoji">🧶</span><tool-tip role="tooltip" aria-labelledby="query strings"><span class="tooltip__title e-heading__2"><span class="tooltip__emoji">🧶</span> query strings</span><span class="tooltip__content">Query strings go at the end of a URL and are used to specify more information about the content you get back from a request to a server</span></tool-tip></tool-tip-container>
+too. Here is an example of a URL with a query string on the end:</p>
+<p><a
+  href="https://example.com/widgets?colour=blue&amp;sort=newest">https://example.com/widgets?colour=blue&sort=newest</a></p>
+<p>For this URL, the <strong>query string</strong> is <code>&quot;colour=blue&amp;sort=newest&quot;</code>. Query strings consist of <strong>query parameters</strong>, separated by an ampersand character <code>&amp;</code>. <code>colour=blue</code> is a query parameter: we say that <code>colour</code> is the key and <code>blue</code> is the value.</p>
+<p>URLs must always be strings. However, a string isn&rsquo;t a useful data type for accessing query parameters. Given a key like <code>colour</code>, accessing the value from a query string stored as a string is not straightforward. However, objects are ideal for looking up values with keys.</p>
+<p>We&rsquo;re going to implement a function <code>parseQueryString</code> to extract the query parameters from a query string and store them in an object:</p>
+<p><em>Given</em> a query string and a function <code>parseQueryString</code>,<br>
+<em>When</em> we call <code>parseQueryString</code> with a query string,<br>
+<em>Then</em> it should return an object with the key-value pairs.</p>
+<p>E.g.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">parseQueryString</span>(<span style="color:#e6db74">&#34;colour=blue&amp;sort=newest&#34;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// should return { colour: &#34;blue&#34;, sort: &#34;newest&#34; }`
+</span></span></span></code></pre></div>
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+
+  
+
+  
+  
+
+  
+    
+    
+  
+
+
+
+
+
+
+
+
+  
+<section
+  class="c-block c-block--youtube"
+  aria-labelledby="step-through-prep-workshop">
+  
+    <h2
+      class="c-block__title e-heading__2 is-invisible"
+      id="step-through-prep-workshop">
+      Youtube:
+      <a href="https://www.youtube.com/watch?v=GeKL1Mer4x8">Step-through-prep workshop</a>
+    </h2>
+  
+  <div class="c-block__content">
+    <youtube-player data-src="https://www.youtube.com/watch?v=GeKL1Mer4x8"></youtube-player>
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="no-parameters">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="no-parameters">
+        No parameters
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="10 minutes countdown" datetime="P10M">10&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+    <div class="c-block__content c-copy">
+      <p>Let&rsquo;s look at the case where the query string is an empty string.</p>
+<p>In this case, we need to think of an output that makes sense.</p>
+<p>We saw before that we can try to look up a property on an object which the object doesn&rsquo;t actually have - this will evaluate to <code>undefined</code>.</p>
+<p>When we parse the empty query string, we want to return something where any time we ask it for the value of a key, we get back <code>undefined</code>.</p>
+<p>An empty object behaves this way, so it makes sense to return an empty object.</p>
+<p>Let&rsquo;s create a test to explore this idea. In your <code>prep</code> dir, <code>touch parse-query-string.js &amp;&amp; touch parse-query-string.test.js</code>. Write the following test in the <code>parse-query-string.test.js</code> file.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">test</span>(<span style="color:#e6db74">&#34;given a query string with no query parameters, returns an empty object&#34;</span>, <span style="color:#66d9ef">function</span> () {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">input</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">currentOutput</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">parseQueryString</span>(<span style="color:#a6e22e">input</span>);
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">targetOutput</span> <span style="color:#f92672">=</span> {};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">expect</span>(<span style="color:#a6e22e">currentOutput</span>).<span style="color:#a6e22e">toEqual</span>(<span style="color:#a6e22e">targetOutput</span>);
+</span></span><span style="display:flex;"><span>});</span></span></code></pre></div><p>We can pass this test just by returning an empty object for now. We can define a function <code>parseQueryString</code> as follows:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">parseQueryString</span>() {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> {};
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div><p>We run our tests and see them pass. Great news.</p>
+
+    </div>
+    
+    
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="parsing-a-single-key-value-pair">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="parsing-a-single-key-value-pair">
+        Parsing a single key-value pair
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="30 minutes countdown" datetime="P30M">30&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Suggest a way of splitting a string into an array</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Destructure an array of length 2</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <p>Let&rsquo;s consider another test case: when the query string contains a single key-value pair.</p>
+<p>Write a test in the <code>parse-query-string.test.js</code> file:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">test</span>(<span style="color:#e6db74">&#34;given a query string with one pair of query params, returns them in object form&#34;</span>, <span style="color:#66d9ef">function</span> () {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">input</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;fruit=banana&#34;</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">currentOutput</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">parseQueryString</span>(<span style="color:#a6e22e">input</span>);
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">targetOutput</span> <span style="color:#f92672">=</span> { <span style="color:#a6e22e">fruit</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;banana&#34;</span> };
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">expect</span>(<span style="color:#a6e22e">currentOutput</span>).<span style="color:#a6e22e">toEqual</span>(<span style="color:#a6e22e">targetOutput</span>);
+</span></span><span style="display:flex;"><span>});</span></span></code></pre></div><h3 id="-strategy">🧭 Strategy</h3>
+<p>We first need to separate out the <code>&quot;fruit=banana&quot;</code> string so we can access <code>&quot;fruit&quot;</code> and <code>&quot;banana&quot;</code> separately. We can do this by splitting up the string by the <code>=</code> character. We can split the string into an array consisting of <code>['fruit', 'banana']</code>. Then we can grab the array&rsquo;s contents and assign the elements meaningful names:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">parseQueryString</span>(<span style="color:#a6e22e">queryString</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">queryParams</span> <span style="color:#f92672">=</span> {};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">keyValuePair</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">queryString</span>.<span style="color:#a6e22e">split</span>(<span style="color:#e6db74">&#34;=&#34;</span>);
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">key</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">keyValuePair</span>[<span style="color:#ae81ff">0</span>]; <span style="color:#75715e">// key will hold &#39;fruit&#39;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">value</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">keyValuePair</span>[<span style="color:#ae81ff">1</span>]; <span style="color:#75715e">// value will hold &#39;banana&#39;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#a6e22e">queryParams</span>.<span style="color:#a6e22e">key</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">value</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">queryParams</span>;
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div><p>An equivalent, but more concise way to do this uses <a
+  href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment">array destructuring</a> to create new variables and assign them values, based on values in an array.</p>
+<p>This code does the same thing as the previous code:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">parseQueryString</span>(<span style="color:#a6e22e">queryString</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">queryParams</span> <span style="color:#f92672">=</span> {};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> [<span style="color:#a6e22e">key</span>, <span style="color:#a6e22e">value</span>] <span style="color:#f92672">=</span> <span style="color:#a6e22e">queryString</span>.<span style="color:#a6e22e">split</span>(<span style="color:#e6db74">&#34;=&#34;</span>); <span style="color:#75715e">// key will hold &#39;fruit&#39;, value will hold &#39;banana&#39;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#a6e22e">queryParams</span>.<span style="color:#a6e22e">key</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">value</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">queryParams</span>;
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div><h3 id="check-it">Check it</h3>
+<p>🎮 <strong>Play computer</strong> with the implementation of <code>parseQueryString</code> above to see why it isn&rsquo;t working properly.</p>
+<iframe title="dot-notation-parse-query-string-example" width="1000" height="500" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=function%20parseQueryString%28queryString%29%20%7B%0A%0A%20%20const%20queryParams%20%3D%20%7B%7D%3B%0A%0A%20%20const%20%5Bkey,%20value%5D%20%3D%20queryString.split%28%22%3D%22%29%3B%0A%20%20queryParams.key%20%3D%20value%3B%0A%0A%20%20return%20queryParams%3B%0A%7D%0A%0Aconst%20queryParams%20%3D%20parseQueryString%28%22fruit%3Dbanana%22%29%3B%0Aconsole.log%28queryParams%29%3B&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=nevernest&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="access-with-variables">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="access-with-variables">
+        Access with variables
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="30 minutes countdown" datetime="P30M">30&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Explain when square bracket notation may be necessary to access an object</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Explain why a previous test breaks once the implementation changes</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <p>We can mutate an object using <code>.</code> dot notation. However, if we look at the return value in the previous implementation we get <code>{key: &quot;banana&quot;}</code>.
+Let&rsquo;s take another look at our current implementation of <code>parseQueryString</code>:</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span></span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">parseQueryString</span>(<span style="color:#a6e22e">queryString</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">queryParams</span> <span style="color:#f92672">=</span> {};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> [<span style="color:#a6e22e">key</span>, <span style="color:#a6e22e">value</span>] <span style="color:#f92672">=</span> <span style="color:#a6e22e">queryString</span>.<span style="color:#a6e22e">split</span>(<span style="color:#e6db74">&#34;=&#34;</span>); <span style="color:#75715e">// will hold [&#39;fruit&#39;, &#39;banana&#39;]
+</span></span></span><span style="display:flex; background-color:#3c3d38"><span><span style="color:#75715e"></span>  <span style="color:#a6e22e">queryParams</span>.<span style="color:#a6e22e">key</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">value</span>; <span style="color:#75715e">// mutate the queryParams object
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">queryParams</span>;
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></td></tr></table>
+</div>
+</div><p>On line 4, we&rsquo;re declaring an <strong>identifier</strong> called <code>key</code>. When <code>parseQueryString</code> is called with <code>&quot;fruit=banana&quot;</code> then <code>key</code> will be assigned the value of <code>&quot;fruit&quot;</code>.</p>
+<blockquote><p>We want to add a property name to the object that is the value of the <code>key</code> variable and not the string <code>&quot;key&quot;</code>.
+We can do this with square bracket notation:</p>
+</blockquote><div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span></span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">parseQueryString</span>(<span style="color:#a6e22e">queryString</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">queryParams</span> <span style="color:#f92672">=</span> {};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> [<span style="color:#a6e22e">key</span>, <span style="color:#a6e22e">value</span>] <span style="color:#f92672">=</span> <span style="color:#a6e22e">queryString</span>.<span style="color:#a6e22e">split</span>(<span style="color:#e6db74">&#34;=&#34;</span>); <span style="color:#75715e">// will hold [&#39;fruit&#39;, &#39;banana&#39;]
+</span></span></span><span style="display:flex; background-color:#3c3d38"><span><span style="color:#75715e"></span>  <span style="color:#a6e22e">queryParams</span>[<span style="color:#a6e22e">key</span>] <span style="color:#f92672">=</span> <span style="color:#a6e22e">value</span>; <span style="color:#75715e">// will set the property name with the value of the key variable
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">queryParams</span>;
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></td></tr></table>
+</div>
+</div><p>We can&rsquo;t use dot syntax if we don&rsquo;t know what the name of the key is going to be. Square bracket notation is more powerful than dot notation, because it lets us use any expression as a key.</p>
+
+
+
+<tab-panels class="c-tabs">
+  <div class="c-tabs__list" id="tabset--14014259558511255829-13223251533-56582048" role="tablist"><button
+          data-toggle="tab"
+          id="tab-label-tabset--14014259558511255829-13223251533-56582048-0"
+          class="c-tabs__tab e-heading__5 space 
+            is-active"
+          role="tab"
+          aria-controls="tabset--14014259558511255829-13223251533-56582048-0"
+          aria-selected="true">
+          Tests
+        </button><button
+          data-toggle="tab"
+          id="tab-label-tabset--14014259558511255829-13223251533-56582048-1"
+          class="c-tabs__tab e-heading__5 space "
+          role="tab"
+          aria-controls="tabset--14014259558511255829-13223251533-56582048-1"
+          aria-selected="false">
+          Feedback
+        </button><button
+          data-toggle="tab"
+          id="tab-label-tabset--14014259558511255829-13223251533-56582048-2"
+          class="c-tabs__tab e-heading__5 space "
+          role="tab"
+          aria-controls="tabset--14014259558511255829-13223251533-56582048-2"
+          aria-selected="false">
+          🧠 Explain
+        </button></div>
+  <div class="c-tabs__group" id="tabset--14014259558511255829-13223251533-56582048">
+        <div
+          id="tabset--14014259558511255829-13223251533-56582048-0"
+          class="c-tabs__panel is-active"
+          role="tabpanel"
+          data-heading="Tests"
+          aria-labelledby="tab-label-tabset--14014259558511255829-13223251533-56582048-0"><p>We&rsquo;ve currently got the following test suite:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">describe</span>(<span style="color:#e6db74">&#34;parseQueryString()&#34;</span>, () =&gt; {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">test</span>(<span style="color:#e6db74">&#34;given a queryString with no query parameters, returns an empty object&#34;</span>, <span style="color:#66d9ef">function</span> () {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">input</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">currentOutput</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">parseQueryString</span>(<span style="color:#a6e22e">input</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">targetOutput</span> <span style="color:#f92672">=</span> {};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">expect</span>(<span style="color:#a6e22e">currentOutput</span>).<span style="color:#a6e22e">toEqual</span>(<span style="color:#a6e22e">targetOutput</span>);
+</span></span><span style="display:flex;"><span>  });
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">test</span>(<span style="color:#e6db74">&#34;given a queryString with one pair of query params, returns them in object form&#34;</span>, <span style="color:#66d9ef">function</span> () {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">input</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;fruit=banana&#34;</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">currentOutput</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">parseQueryString</span>(<span style="color:#a6e22e">input</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">targetOutput</span> <span style="color:#f92672">=</span> { <span style="color:#a6e22e">fruit</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;banana&#34;</span> };
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">expect</span>(<span style="color:#a6e22e">currentOutput</span>).<span style="color:#a6e22e">toEqual</span>(<span style="color:#a6e22e">targetOutput</span>);
+</span></span><span style="display:flex;"><span>  });
+</span></span><span style="display:flex;"><span>});</span></span></code></pre></div></div>
+        <div
+          id="tabset--14014259558511255829-13223251533-56582048-1"
+          class="c-tabs__panel "
+          role="tabpanel"
+          data-heading="Feedback"
+          aria-labelledby="tab-label-tabset--14014259558511255829-13223251533-56582048-1"><p>We&rsquo;ve currently got the following test suite:</p>
+<p>
+
+  <figure>
+      <img
+        loading="lazy"
+        src="/module/js2/variable-keys/parse-query-test-feedback.png"alt="parse-query-test-feedback" data-pagefind-index-attrs="parse-query-test-feedback"/></figure></p>
+</div>
+        <div
+          id="tabset--14014259558511255829-13223251533-56582048-2"
+          class="c-tabs__panel "
+          role="tabpanel"
+          data-heading="🧠 Explain"
+          aria-labelledby="tab-label-tabset--14014259558511255829-13223251533-56582048-2">We&rsquo;ve got a situation where the first test case (for an empty string) is no longer working.
+Explain why this test case is no longer passing for the first test case. <strong>Playing computer</strong> will help you to explain why!</div></div>
+</tab-panels>
+
+<p>Sometimes when we&rsquo;re solving a problem, it can be useful to work out different cases (like empty query strings, or non-empty query strings) and work out how to solve them separately, then come back when we think we understand the cases and work out how to put the solutions together into one function. This often is useful when there are really different cases to consider.</p>
+<p>Most of the time, though, it&rsquo;s useful to try to keep all of our existing tests passing as we cover more cases. If we wanted to do that here, we could make our function be something like:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">parseQueryString</span>(<span style="color:#a6e22e">queryString</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">queryParams</span> <span style="color:#f92672">=</span> {};
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">queryString</span>.<span style="color:#a6e22e">length</span> <span style="color:#f92672">===</span> <span style="color:#ae81ff">0</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">queryParams</span>;
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> [<span style="color:#a6e22e">key</span>, <span style="color:#a6e22e">value</span>] <span style="color:#f92672">=</span> <span style="color:#a6e22e">queryString</span>.<span style="color:#a6e22e">split</span>(<span style="color:#e6db74">&#34;=&#34;</span>); <span style="color:#75715e">// will hold [&#39;fruit&#39;, &#39;banana&#39;]
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#a6e22e">queryParams</span>[<span style="color:#a6e22e">key</span>] <span style="color:#f92672">=</span> <span style="color:#a6e22e">value</span>; <span style="color:#75715e">// will set the property name with the value of the key variable
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">queryParams</span>;
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div><p>Here, we only add a key to the object if there was actually something to add - we return early if there&rsquo;s no extra work to do.</p>
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="parsing-multiple-params">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="parsing-multiple-params">
+        Parsing multiple parameters
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="30 minutes countdown" datetime="P30M">30&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Describe how to extend a strategy for one item to multiple items</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <p>Let&rsquo;s consider the case when there are multiple query parameters in the query string.</p>
+<section class="c-note c-note--tip">
+  <h4 class="c-note__title e-heading__4">💡Recall</span>
+  </h4>
+  <div class="c-note__text ">In the case when the query string has multiple query parameters, then each key-value pair is separated by an ampersand character <code>&amp;</code>.</div>
+</section>
+
+
+<p>Write this test in the <code>parse-query-string.test.js</code> file.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">test</span>(<span style="color:#e6db74">&#34;given a query string with multiple key-value pairs, returns them in object form&#34;</span>, <span style="color:#66d9ef">function</span> () {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">input</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;sort=lowest&amp;colour=yellow&#34;</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">currentOutput</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">parseQueryString</span>(<span style="color:#a6e22e">input</span>);
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">targetOutput</span> <span style="color:#f92672">=</span> { <span style="color:#a6e22e">sort</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;lowest&#34;</span>, <span style="color:#a6e22e">colour</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;yellow&#34;</span> };
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">expect</span>(<span style="color:#a6e22e">currentOutput</span>).<span style="color:#a6e22e">toEqual</span>(<span style="color:#a6e22e">targetOutput</span>);
+</span></span><span style="display:flex;"><span>});</span></span></code></pre></div><h3 id="-strategy">🧭 Strategy</h3>
+<p>We&rsquo;ve already worked out how to update the query params object given a <strong>single key-value pair</strong> in the query string.</p>
+<p>To work out our strategy, let&rsquo;s consider what we already know how to do. We already know how to take a key-value pair as a string, and add it to our object.</p>
+<blockquote><p>💡 Key insight: If we can do it for <strong>one pair</strong>, we can try doing it for a <strong>list of pairs</strong> too.</p>
+</blockquote><p>So we&rsquo;re missing a step - breaking up the string of multiple key-value pairs into an array where each element is a single key-value pair. If we do this, then we can iterate over the array, and do what we already know how to do on each key-value pair.</p>
+<p>Our strategy will be to break the query string apart into an array of key-value pairs. Once we&rsquo;ve got an array we can try iterating through it and storing each key value pair inside the <code>queryParams</code> object.</p>
+<p>Let&rsquo;s start with the first sub-goal.</p>
+<h4 id="-sub-goal-1-split-the-query-string-into-an-array-of-key-value-pairs">🎯 Sub-goal 1: split the query string into an array of key-value pairs</h4>
+<p>Query strings with multiple key-value pairs use <code>&amp;</code> as a separator e.g. <code>sort=lowest&amp;colour=yellow</code>. We want to split <code>sort=lowest&amp;colour=yellow</code> into <code>[&quot;sort=lowest&quot;, &quot;colour=yellow&quot;]</code>. We can achieve this by calling <code>split</code> with the <code>&quot;&amp;&quot;</code> separator.</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span></span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">parseQueryString</span>(<span style="color:#a6e22e">queryString</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// suppose queryString has a value of &#34;sort=lowest&amp;colour=yellow&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">queryParams</span> <span style="color:#f92672">=</span> {};
+</span></span><span style="display:flex; background-color:#3c3d38"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">keyValuePairs</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">queryString</span>.<span style="color:#a6e22e">split</span>(<span style="color:#e6db74">&#34;&amp;&#34;</span>); <span style="color:#75715e">// keyValuePairs will point to [&#34;sort=lowest&#34;, &#34;colour=yellow&#34;]
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>}</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="-sub-goal-2-add-each-key-value-pair-in-the-array-to-the-query-params-object">🎯 Sub-goal 2: add each key-value pair in the array to the query params object</h4>
+<p>Once we&rsquo;ve got an array we can iterate through the key-value pairs and update the <code>queryParams</code> object each time (like we did when we just had one key-value pair).</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span></span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span></span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span></span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span></span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">parseQueryString</span>(<span style="color:#a6e22e">queryString</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// assume queryString has a value of &#34;sort=lowest&amp;colour=yellow&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">queryParams</span> <span style="color:#f92672">=</span> {};
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">keyValuePairs</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">queryString</span>.<span style="color:#a6e22e">split</span>(<span style="color:#e6db74">&#34;&amp;&#34;</span>); <span style="color:#75715e">// keyValuePairs will point to [&#34;sort=lowest&#34;, &#34;colour=yellow&#34;]
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex; background-color:#3c3d38"><span>  <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">pair</span> <span style="color:#66d9ef">of</span> <span style="color:#a6e22e">keyValuePairs</span>) {
+</span></span><span style="display:flex; background-color:#3c3d38"><span>    <span style="color:#66d9ef">const</span> [<span style="color:#a6e22e">key</span>, <span style="color:#a6e22e">value</span>] <span style="color:#f92672">=</span> <span style="color:#a6e22e">pair</span>.<span style="color:#a6e22e">split</span>(<span style="color:#e6db74">&#34;=&#34;</span>);
+</span></span><span style="display:flex; background-color:#3c3d38"><span>    <span style="color:#a6e22e">queryParams</span>[<span style="color:#a6e22e">key</span>] <span style="color:#f92672">=</span> <span style="color:#a6e22e">value</span>;
+</span></span><span style="display:flex; background-color:#3c3d38"><span>  }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">queryParams</span>;
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="-play-computer">🎮 Play computer</h3>
+<p><strong>Play computer</strong> with the implementation of <code>parseQueryString</code> above and pay attention to how the <code>queryParams</code> object is updated.</p>
+<iframe width="800" height="500" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=function%20parseQueryString%28queryString%29%20%7B%0A%0A%20%20const%20queryParams%20%3D%20%7B%7D%3B%20%0A%20%20const%20keyValuePairs%20%3D%20queryString.split%28%22%26%22%29%3B%20%0A%20%20for%20%28const%20pair%20of%20keyValuePairs%29%20%7B%0A%20%20%20%20const%20%5Bkey,%20value%5D%20%3D%20pair.split%28%22%3D%22%29%3B%0A%20%20%20%20queryParams%5Bkey%5D%20%3D%20value%3B%0A%20%20%7D%0A%0A%20%20return%20queryParams%3B%0A%7D%0A%0AparseQueryString%28%22sort%3Dlowest%26colour%3Dyellow%22%29%3B&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=nevernest&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
+<p>Now that we&rsquo;ve worked out how to solve this problem in the case of multiple query parameters, let&rsquo;s integrate that solution into our previous implementation, to make sure it works for all cases.</p>
+<p>We can keep our <code>if (queryString.length === 0) {</code> check from before. We still need it because <code>split</code> on an empty string still returns an empty string. If we don&rsquo;t have this special case, we&rsquo;ll try to parse the empty string, probably incorrectly.</p>
+<p>We don&rsquo;t need to do anything special for the one-value case, as an array containing one element gets iterated the same as an array of multiple elements:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">parseQueryString</span>(<span style="color:#a6e22e">queryString</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">queryParams</span> <span style="color:#f92672">=</span> {};
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">queryString</span>.<span style="color:#a6e22e">length</span> <span style="color:#f92672">===</span> <span style="color:#ae81ff">0</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">queryParams</span>;
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">keyValuePairs</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">queryString</span>.<span style="color:#a6e22e">split</span>(<span style="color:#e6db74">&#34;&amp;&#34;</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">pair</span> <span style="color:#66d9ef">of</span> <span style="color:#a6e22e">keyValuePairs</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> [<span style="color:#a6e22e">key</span>, <span style="color:#a6e22e">value</span>] <span style="color:#f92672">=</span> <span style="color:#a6e22e">pair</span>.<span style="color:#a6e22e">split</span>(<span style="color:#e6db74">&#34;=&#34;</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">queryParams</span>[<span style="color:#a6e22e">key</span>] <span style="color:#f92672">=</span> <span style="color:#a6e22e">value</span>;
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">queryParams</span>;
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div><p>When we&rsquo;re solving problems involving several values, often we need slightly differently handling for the cases when there are 0, 1, or more than 1 values. In our example here, we need to treat 0 values specially (if the query string is empty, we return early), but we can handle 1 and more than 1 the same way.</p>
+<p>When you&rsquo;re breaking down problems, think to yourself: What are special cases we may need to handle differently?</p>
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="solving-problems-with-objects">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="solving-problems-with-objects">
+        Objects Workshop
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="60 minutes countdown" datetime="P60M">60&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Practice solving problems with objects</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+
+  
+
+  
+  
+
+  
+    
+    
+  
+
+
+
+<section
+  class="c-block c-block--youtube"
+  aria-labelledby="warning-name-is-empty">
+  
+  <div class="c-block__content">
+    <youtube-player data-src="https://youtu.be/CHu7iEmuZV4"></youtube-player>
+  </div>
+</section>
+
+<p>To get the most out of this workshop - don&rsquo;t just watch, code along 💻
+You can use the code samples below as a starting point.</p>
+<h3 id="exercise-1">Exercise 1</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#75715e">// Write a function that returns true if I can eat the ice cream
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">//  The function has 1 parameter representing an ice cream object
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">//  I can eat the ice cream if it is lactose-free and contains less than 10 grams of sugar
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">canEat</span>(<span style="color:#a6e22e">iceCream</span>) {}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">iceCream1</span> <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">flavour</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Vanilla&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">lactoseFree</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">false</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">gramsOfSugarPerScoop</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">12</span>,
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">iceCream2</span> <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">flavour</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Mango Sorbet&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">lactoseFree</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">gramsOfSugarPerScoop</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">10</span>,
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">iceCream3</span> <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">flavour</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Coconut&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">lactoseFree</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">gramsOfSugarPerScoop</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">8</span>,
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">iceCream4</span> <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">flavour</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Strawberry&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">lactoseFree</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">false</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">gramsOfSugarPerScoop</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">8</span>,
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">iceCream5</span> <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">flavour</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Lemon Sorbet&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">lactoseFree</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">gramsOfSugarPerScoop</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">7</span>,
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">canEat</span>(<span style="color:#a6e22e">iceCream1</span>)); <span style="color:#75715e">// what should this output?
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">canEat</span>(<span style="color:#a6e22e">iceCream2</span>)); <span style="color:#75715e">// what should this output?
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">canEat</span>(<span style="color:#a6e22e">iceCream3</span>)); <span style="color:#75715e">// what should this output?
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">canEat</span>(<span style="color:#a6e22e">iceCream4</span>)); <span style="color:#75715e">// what should this output?
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">canEat</span>(<span style="color:#a6e22e">iceCream5</span>)); <span style="color:#75715e">// what should this output?
+</span></span></span></code></pre></div><h3 id="exercise-2">Exercise 2</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#75715e">// Write a function called `getCheapest` that will take 2 book objects as parameters
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">//  and return the name of the cheaper book
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">fictionBook</span> <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">title</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;1984&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">author</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;George Orwell&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">category</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Dystopian Fiction&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">subcategory</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Political&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">cost</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">9.99</span>,
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">productivityBook</span> <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">title</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Atomic Habits&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">author</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;James Clear&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">category</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Self-Help&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">subcategory</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Productivity&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">cost</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">16.2</span>,
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// this should output 1984
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">getCheapest</span>(<span style="color:#a6e22e">fictionBook</span>, <span style="color:#a6e22e">productivityBook</span>));</span></span></code></pre></div><h3 id="exercise-3">Exercise 3</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#75715e">// Write a function that takes an array of ice cream objects as a parameter
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">//	and returns an array of the names of ice creams I can eat
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">//  I can eat the ice cream if it is lactose-free and contains less than 10 grams of sugar
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">//  Use the solution from Exercise 1 to help you
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">whichIceCreamsCanIEat</span>(<span style="color:#a6e22e">iceCreams</span>) {}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">iceCream1</span> <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">flavour</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Vanilla&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">lactoseFree</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">false</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">gramsOfSugarPerScoop</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">12</span>,
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">iceCream2</span> <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">flavour</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Mango Sorbet&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">lactoseFree</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">gramsOfSugarPerScoop</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">10</span>,
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">iceCream3</span> <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">flavour</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Coconut&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">lactoseFree</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">gramsOfSugarPerScoop</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">8</span>,
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">iceCream4</span> <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">flavour</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Strawberry&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">lactoseFree</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">false</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">gramsOfSugarPerScoop</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">8</span>,
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">iceCream5</span> <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">flavour</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Lemon Sorbet&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">lactoseFree</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">gramsOfSugarPerScoop</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">7</span>,
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">allIceCreams</span> <span style="color:#f92672">=</span> [<span style="color:#a6e22e">iceCream1</span>, <span style="color:#a6e22e">iceCream2</span>, <span style="color:#a6e22e">iceCream3</span>, <span style="color:#a6e22e">iceCream4</span>, <span style="color:#a6e22e">iceCream5</span>];
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">iceCreamsICanEat</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">whichIceCreamsCanIEat</span>(<span style="color:#a6e22e">allIceCreams</span>);
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">iceCreamsICanEat</span>); <span style="color:#75715e">// what should this output?
+</span></span></span></code></pre></div>
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="conflict-resolution">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="conflict-resolution">
+        Prep Conflict Resolution
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="90 minutes countdown" datetime="P90M">90&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Understand the different theories and actions about conflict resolution</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <section class="c-note c-note--info">
+  <h4 class="c-note__title e-heading__4">Introduction</span>
+  </h4>
+  <div class="c-note__text "><p>People at work will inevitably disagree with each other at some time. Most people want to do what’s best for them and those around them. Often, conflicts arise from misunderstandings or different attitudes to general problem-solving.</p>
+<p>These exercises will ensure you understand the theory and have reflected on this theme, so you can do the in-class exercises more effectively.</p>
+</div>
+</section>
+
+
+<section class="c-note c-note--exercise">
+  <h4 class="c-note__title e-heading__4">✍️How to deal with workplace conflicts (10 minutes)</span>
+  </h4>
+  <div class="c-note__text "><p>🎯 <strong>Goal:</strong> Understand tips that will help you to handle conflicts on a day-to-day basis.</p>
+<p>Watch the video: <a
+  href="https://www.youtube.com/watch?v=qDfSYz0PX9g">How to deal with workplace conflicts - Develop your personality and business skills</a></p>
+</div>
+</section>
+
+
+<section class="c-note c-note--exercise">
+  <h4 class="c-note__title e-heading__4">✍️Conflict Resolution Curve (30 minutes)</span>
+  </h4>
+  <div class="c-note__text "><p>🎯 <strong>Goal:</strong>  Understand what is meant by conflict resolution.</p>
+<p>Read about the <a
+  href="https://en.wikipedia.org/wiki/Conflict_resolution">Conflict Resolution Curve</a> on Wikipedia.</p>
+<p>Reflect on how conflicts escalate and the strategies for resolution.</p>
+</div>
+</section>
+
+
+<section class="c-note c-note--exercise">
+  <h4 class="c-note__title e-heading__4">✍️Protective Factors (20 minutes)</span>
+  </h4>
+  <div class="c-note__text "><p>🎯 <strong>Goal:</strong> * Understand and reflect on your protective factors.</p>
+<ol>
+<li>Read this text: <a
+  href="https://www.therapistaid.com/worksheets/protective-factors">Protective Factors</a></li>
+<li>Answer the reflective questions.</li>
+</ol></div>
+</section>
+
+
+<section class="c-note c-note--exercise">
+  <h4 class="c-note__title e-heading__4">✍️Reflect on your own conflict experience (30 minutes)</span>
+  </h4>
+  <div class="c-note__text "><p>🎯 <strong>Goal:</strong> Reflect on your conflict experience.</p>
+<p>Think of a time you have had a conflict with a work colleague. Answer these questions in a Google Doc:</p>
+<ol>
+<li>Was there a misunderstanding of the facts?</li>
+<li>Have you learned different lessons from your experience which affected your views?</li>
+<li>Did either of you have a hidden agenda directly opposed to the other person?</li>
+<li>How did either of you try to resolve the conflict?</li>
+<li>What was the outcome?</li>
+</ol>
+</div>
+</section>
+
+
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+      </div>
+      <nav slot="nav">
+        <a href="#" class="e-button c-solo-view__back">&larr; Back</a>
+        <a href="#" class="e-button c-solo-view__next">Next &rarr;</a>
+      </nav>
+    </solo-view>
+    
+    <script src="/scripts/solo-view.min.js" defer></script>
+    
+    <script src="/scripts/time-total.min.js" defer></script>
+  
+
+
+        
+
+  <footer class="c-page-footer">
+    <nav class="c-page-footer__nav">
+      
+      
+      <span class="c-page-footer__this">prep</span>
+      
+        →<a
+          class="c-page-footer__next c-page-footer__link e-link"
+          href="/itp/data-groups/sprints/2/backlog/"
+          >backlog</a
+        >
+      
+    </nav>
+  </footer>
+
+
+      </main><footer class="l-layout__footer l-footer">
+  <a
+    class="l-footer__github e-button e-button--icon"
+    href="https://github.com/CodeYourFuture/curriculum/">
+    <svg
+  focusable="false"
+  class="e-button__icon"
+  role="presentation"
+  width="96"
+  viewbox="0 0 98 96"
+  xmlns="http://www.w3.org/2000/svg">
+  <path
+    fill-rule="evenodd"
+    clip-rule="evenodd"
+    d="M48.854 0C21.839 0 0 22 0 49.217c0 21.756 13.993 40.172 33.405 46.69 2.427.49 3.316-1.059 3.316-2.362 0-1.141-.08-5.052-.08-9.127-13.59 2.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015 4.934.326 7.523 5.052 7.523 5.052 4.367 7.496 11.404 5.378 14.235 4.074.404-3.178 1.699-5.378 3.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283 0-5.378 1.94-9.778 5.014-13.2-.485-1.222-2.184-6.275.486-13.038 0 0 4.125-1.304 13.426 5.052a46.97 46.97 0 0 1 12.214-1.63c4.125 0 8.33.571 12.213 1.63 9.302-6.356 13.427-5.052 13.427-5.052 2.67 6.763.97 11.816.485 13.038 3.155 3.422 5.015 7.822 5.015 13.2 0 18.905-11.404 23.06-22.324 24.283 1.78 1.548 3.316 4.481 3.316 9.126 0 6.6-.08 11.897-.08 13.526 0 1.304.89 2.853 3.316 2.364 19.412-6.52 33.405-24.935 33.405-46.691C97.707 22 75.788 0 48.854 0z"
+    fill="currentColor" />
+</svg>
+
+    <span class="is-invisible">Find us on GitHub</span>
+  </a>
+  <p class="l-footer__impressum e-heading__6">
+    This
+    <a href="https://github.com/CodeYourFuture/curriculum/">free and open source programme</a>
+    is a project of
+    <a href="https://codeyourfuture.io/">Code Your Future</a>
+    <br />
+    Creative Commons Attribution-ShareAlike 4.0
+  </p>
+  <dark-mode class="l-footer__mode"
+    ><button
+      slot="button"
+      id="mode-toggle"
+      type="button"
+      class="e-button e__button--toggle e-button--icon">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="e-icon e__button__icon e-icon--moon">
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
+      </svg>
+      <span class="is-invisible">Toggle between light and dark mode</span>
+    </button></dark-mode
+  >
+</footer>
+
+
+
+<script src="/scripts/app.min.js" defer></script>
+
+<script src="/scripts/youtube-player.min.js" defer></script>
+
+<script src="/scripts/tab-panels.min.js" type="module" defer></script>
+
+<script src="/scripts/dark-mode.min.js"></script>
+
+<script src="/scripts/alert-message.min.js" defer></script>
+
+
+
+
+
+
+
+</div>
+  </body>
+</html>

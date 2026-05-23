@@ -1,0 +1,1996 @@
+<!DOCTYPE html>
+
+
+
+
+<html lang="en" class="p-prep"><head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  <title data-pagefind-meta="title">
+    
+      Software Development Course 
+    
+      Tools 
+    
+      Sprint 4 
+    
+    Prep
+  </title>
+  
+    <meta
+      name="description"
+      content=" CYF Courses: Overview description of the prep work for the sprint" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+  <style>
+    body,
+    html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      animation: fade-in 300ms;
+    }
+    @keyframes fade-in {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  </style>
+  
+  
+  <link
+    rel="stylesheet"
+    href="/bundled.min.b6a4520237559385268d63a9daa81d96.css"
+    media="print"
+    onload="this.media='all'" />
+
+  
+  
+    
+    
+    <link
+      rel="stylesheet"
+      href="/custom.min.8ded6a1a88bc7cc98bdef8dc33d15f3a.css"
+      media="print"
+      onload="this.media='all'" />
+  
+
+
+  <noscript>
+    <link rel="stylesheet" href="/bundled.min.b6a4520237559385268d63a9daa81d96.css" />
+  </noscript>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&amp;display=swap"
+    rel="stylesheet"
+    media="print"
+    onload="this.media='all'" />
+
+  <link rel="shortcut icon" href="https://curriculum.codeyourfuture.io/favicon.ico" />
+  <meta name="theme-color" content="#e3ddeef2" />
+  <link rel="manifest" href="https://curriculum.codeyourfuture.io/manifest.json" />
+</head>
+<body>
+    <a class="c-skip-link e-button" id="skip-link" href="#main">Skip to main</a>
+    <div class="l-layout">
+      <header class="l-layout__header l-header">
+  <div class="l-header__container">
+    <h1 class="l-header__heading e-heading__6" data-pagefind-ignore>
+      <a class="l-header__home" href="/"
+        ><span class="is-invisible"
+          >sdc Prep CYF Courses</span
+        >
+        <span class="is-none--lt-container">
+          <svg
+          xmlns="http://www.w3.org/2000/svg"
+          title="Code Your Future."
+          viewBox="0 0 621.64 155.81"
+          width="140px"
+          focusable="false"
+          role="img">
+          <path
+            fill="var(--theme-color--brand)"
+            d="M103.37 56.51C96.91 63.64 87.03 69.9 74.6 69.9c-20.14 0-33.52-12.91-33.52-34.09C41.08 13.97 57.5.87 69.94.87c9.5 0 13.77 5.32 14.63 6.46l2.18-5.27h14.91v27h-17c-.28-6.18-3.32-12-10.06-12s-11.3 8.45-11.3 18.8c0 9.4 4.84 17.86 13.86 17.86 8 0 14.24-8.36 15.1-9.31Zm2.88-21.85C106.25 14.15 119.92 0 139.58 0c23.26 0 34.09 14 34.09 35.32s-12 34.57-33.43 34.57c-19.88 0-33.99-11.49-33.99-35.23Zm43.68.66c0-11.49-3.13-20.7-10.45-20.7-5.79-.09-9.78 8.26-9.78 20 0 12.44 4.47 20.32 10.54 20.32s9.65-7.88 9.65-19.62Zm27.49 20.23h5.89V14.34h-5.89V1.8h29c23 0 36.09 14.15 36.09 32.29 0 21.65-13.11 34.09-36.47 34.09h-28.62Zm29 0c10.03-.19 14.21-9.59 14.21-21.49 0-10.16-4.18-19.75-14.25-19.75h-3.61v41.24ZM303.04 1.8v21h-16.43v-8.46h-15.19v13.1h18v12.62h-18v15.49h15.19v-8.83h16.43v21.46h-57.26V55.55h6V14.34h-6V1.8Z" />
+          <path
+            fill="var(--theme-color--ink)"
+            d="M274.42 87.82v21h-16.8v-8.45h-14.37v16.52h18v12.63h-18v12.04h9.68v12.63h-35.29v-12.63h5.89v-41.21h-5.89V87.82Zm33.04 0v12.24h-5.12v20.51c0 15.28 3.41 18.51 9.49 18.51 5.79 0 9.59-2.28 9.59-18.61v-20.12h-5.17V87.82h28.11v12.24h-5.11v23.07c0 22.51-9.4 32.67-27.25 32.67-19.18-.57-29.43-10.64-29.43-32.19v-23.45h-5.32V87.82Zm103.5 24.69h-14v-12.16h-8v41.21h7.88v12.63h-35.26v-12.63h7.79v-41.21h-8.12v12.16h-14V87.82h63.71ZM444 87.82v12.24h-5.13v20.51c0 15.28 3.42 18.51 9.5 18.51 5.79 0 9.59-2.28 9.59-18.61v-20.12h-5.13V87.82h28.11v12.24h-5.13v23.07c0 22.51-9.4 32.67-27.25 32.67-19.18-.57-29.44-10.64-29.44-32.19v-23.45h-5.32V87.82Zm71.59 0c22 0 26.3 8.73 26.3 19.56 0 7.4-5.88 12.63-13.76 13.77 6.55.95 12.44 6.64 12.44 13.48 0 4.08.57 6.46 2.27 6.46 1.43 0 2.19-1.14 2.19-3v-3.13h6.36v5.22c0 7.88-3.32 15.19-13.86 15.19-12.44 0-18.42-6.55-18.42-17.66 0-8.64-1.05-10.73-9.5-10.73v14.68h5.79v12.53h-30.67v-12.53h5.32v-41.4h-5.32V87.82Zm-6 28.48h4.27c5.51 0 9.12-2.65 9.12-7.69 0-5.6-3.13-8.45-8.64-8.45h-4.75Zm102.38-28.48v21h-16.43v-8.45h-15.19v13.09h18v12.6h-18v15.5h15.19v-8.83h16.43v21.46h-57.26v-12.63h6v-41.21h-6V87.82Zm-227.72-56.1c.38-1.9 2.47-5.89 3.51-8.17l5.22-9.59h-5.22V1.8h25.54v12.16h-5.05l-17.62 30.86v11h5.32v12.36h-30.39V55.83h5.41v-11.2l-18.42-30.67h-4.65V1.8h32.47v12.16h-4.93l5.5 10.1c.57 1.81 2.57 6.08 2.95 7.7Zm29.54 2.94C413.79 14.15 427.47 0 447.12 0c23.27 0 34.09 14 34.09 35.32s-12 34.57-33.42 34.57c-19.85 0-34-11.49-34-35.23Zm43.68.66c0-11.49-3.13-20.7-10.44-20.7-5.79-.09-9.78 8.26-9.78 20 0 12.44 4.46 20.32 10.54 20.32s9.68-7.88 9.68-19.62ZM514.25 1.8v12.26h-5.13v20.5c0 15.29 3.42 18.52 9.5 18.52 5.79 0 9.59-2.28 9.59-18.61V14.34h-5.13V1.8h28.11v12.26h-5.13v23.07c0 22.5-9.4 32.66-27.25 32.66-19.18-.57-29.44-10.63-29.44-32.19V14.15h-5.32V1.8Zm71.59 0c22 0 26.31 8.74 26.31 19.57 0 7.4-5.89 12.62-13.77 13.76 6.55 1 12.44 6.65 12.44 13.49 0 4.08.57 6.46 2.27 6.46 1.43 0 2.19-1.14 2.19-3V48.9h6.36v5.23c0 7.88-3.32 15.19-13.86 15.19-12.44 0-18.42-6.55-18.42-17.66 0-8.64-1.05-10.73-9.5-10.73v14.71h5.79v12.54h-30.67V55.64h5.32v-41.4h-5.32V1.8Zm-6 28.49h4.27c5.51 0 9.12-2.66 9.12-7.69 0-5.6-3.13-8.45-8.64-8.45h-4.75ZM28.39 14.7l5.8 10.64-23.46 10.72 23.46 10.55-3.61 9.87L0 42.24v-13.3Zm318.7 14.24v13.3l-30.58 14.24-3.61-9.87 23.46-10.55-23.46-10.72 5.8-10.64Z" />
+        </svg>
+        </span>
+        <span class="is-none--gt-container">
+          <svg
+          xmlns="http://www.w3.org/2000/svg"
+          version="1.0"
+          viewBox="0 0 512 512"
+          width="48px">
+          <path
+            fill="currentcolor"
+            stroke="currentcolor"
+            d="M225.5 1c-1.1.5-3.5.9-5.3.9-4.1.1-22.9 4.5-30.7 7.2-63.1 22-114.7 72.3-142.7 139.4-6.4 15.2-11.8 33.8-16.7 57-4.1 19.7-5.4 64.5-2.6 90.8C33 346.2 49.8 390.1 76.8 425c6.2 7.9 23.9 26.4 30.7 32 8.1 6.7 26.1 18.7 35.1 23.6 28.1 15.1 58 24.3 91.9 28.3 5.5.7 13.6 1.7 18 2.2 8.8 1.2 33.9.7 48-.9 11-1.3 31.7-4.8 36.5-6.2 1.9-.5 8-2.3 13.5-3.9 21.3-6.1 47.2-17.8 67.5-30.5 8.8-5.4 23.7-15.8 28.5-19.7 10.2-8.4 24.5-21.3 31.4-28.2l8.4-8.5-2.2-2.9c-1.3-1.5-4.6-5.3-7.4-8.3-6.2-6.7-14.5-15.7-21.2-23.1-2.7-3-7.5-8.2-10.5-11.4-3-3.3-9.8-10.8-15.1-16.5-21.5-23.6-24.2-26.5-24.9-26.8-.3-.1-2 1.2-3.6 3-1.6 1.9-6.3 7.1-10.4 11.7-8.6 9.7-25.6 24.6-35.9 31.4-21.4 14.4-42.5 21.7-62.6 21.7-15.3-.1-29.3-3.3-42.5-10-22.8-11.5-41.9-35.5-51.5-64.7-4.2-12.8-4.3-13.4-5.9-22.8-3.8-22.9-4.6-39.2-2.6-55.6 2.7-22.7 3.3-26.5 5-33.2 7.9-30.9 16.7-48.6 32.4-65.6 16.8-17.9 41.1-24.9 65.1-18.6 30 7.8 50.7 36.3 55.5 76.3.5 4.6 1.2 8.7 1.5 9.3.4.5 25.1.9 62.6.9H474V9H364.2L357 26.7c-4 9.8-7.9 18.5-8.7 19.3-1.3 1.3-2.1.8-6.6-4.3-6-6.9-18.3-16.7-28.2-22.5-7.4-4.3-22.6-10.9-28.5-12.4-9.2-2.2-18.1-4.1-24-5-9-1.3-33.1-1.9-35.5-.8z" />
+        </svg>
+        </span>
+      </a>
+    </h1>
+    <link
+  href="/pagefind/pagefind-ui.css"
+  rel="stylesheet"
+  media="print"
+  onload="this.media='all'" />
+<style>
+  :root {
+    --pagefind-ui-primary: var(--theme-color--ink);
+    --pagefind-ui-text: var(--theme-color--ink);
+    --pagefind-ui-background: var(--theme-color--paper);
+    --pagefind-ui-border: var(--theme-color--outline);
+    --pagefind-ui-tag: var(--theme-color--block);
+    --pagefind-ui-border-radius: 2em;
+    --pagefind-ui-image-border-radius: var(--theme-border-radius);
+    --pagefind-ui-font: var(--theme-font--copy);
+  }
+  .pagefind-ui--reset {
+    position: absolute;
+  }
+  #search .pagefind-ui__search-input {
+    box-shadow: var(--theme-box-shadow--inset);
+    margin-bottom: var(--theme-spacing--1);
+  }
+  #search .pagefind-ui__search-clear {
+    background-color: transparent;
+  }
+  #search .pagefind-ui__drawer {
+    background-color: var(--theme-color--paper);
+    box-shadow: var(--theme-box-shadow--slim);
+    transform: translateY(-1.5px);
+    padding: 0 var(--theme-spacing--2);
+    max-height: calc(100vh - 4rem);
+    overflow-y: auto;
+  }
+  #search .pagefind-ui__result {
+    padding: var(--theme-spacing--1) 0 var(--theme-spacing--2) 0;
+  }
+  #search .pagefind-ui__result:focus-within,
+  #search .pagefind-ui__button:focus {
+    background-color: var(--theme-color--block);
+  }
+  #search .pagefind-ui__button {
+    border: none;
+  }
+</style>
+<script src="/pagefind/pagefind-ui.js" type="text/javascript" defer></script>
+<div id="search" class="l-header__search"></div>
+<script>
+  window.addEventListener("DOMContentLoaded", (event) => {
+    new PagefindUI({
+      element: "#search",
+      showSubResults: true,
+      pageSize: 3,
+      showImages: false,
+      showTags: true,
+    });
+  });
+</script>
+
+    <button
+      class="l-header__action e-button e-button--icon js-menu-toggle e-heading__3">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+        <path
+          stroke="var(--theme-color--ink)"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M13 5a1 1 0 1 0-2 0 1 1 0 0 0 2 0Zm0 7a1 1 0 1 0-2 0 1 1 0 0 0 2 0Zm0 7a1 1 0 1 0-2 0 1 1 0 0 0 2 0Z" />
+      </svg>
+      <span class="is-invisible">Open Menu.</span>
+    </button>
+  </div>
+</header>
+
+      <nav
+  class="l-layout__menu l-menu"
+  aria-label="Main Site Links."
+  id="site-menu"
+  hidden
+  tabindex="0">
+  <div class="l-menu__container">
+    <h2 class="l-menu__heading e-heading__2">
+      <a href="/" class="l-menu__home is-invisible">Menu</a>
+    </h2>
+    <button
+      class="l-menu__action e-button e-button--icon js-menu-toggle e-heading__2"
+      id="close-menu">
+      ❎
+      <span class="is-invisible">Close Menu.</span>
+    </button>
+    <ul class="l-menu__primary">
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/guides/">
+            Guides
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/sdc/tools/">
+            Tools
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/sdc/logic/">
+            Logic
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/sdc/decomposition/">
+            Decomposition
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/sdc/legacy/">
+            Legacy code
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/sdc/complexity/">
+            Complexity
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/tracks/servers/">
+            Servers
+          </a>
+        </li>
+    </ul>
+    <ul class="l-menu__secondary">
+        <li class="l-menu__item">
+          <a class="e-heading__3 l-menu__link" href="https://codeyourfuture.io">
+            CYF 👈🏾
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__3 l-menu__link" href="https://codeyourfuture.io/volunteers/">
+            Join Us 👋🏿
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__3 l-menu__link" href="https://codeyourfuture.io/donate/">
+            Support 🫶🏼
+          </a>
+        </li>
+    </ul>
+  </div>
+</nav>
+
+      <main
+        id="main"
+        class="l-layout__main l-main"
+        tabindex="0"
+        data-pagefind-body>
+        
+  
+    <solo-view tabindex="0">
+      
+
+
+      <div slot="header">
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+<header
+  class="c-page-header 
+    c-page-header--solo
+   c-page-header--toc">
+  
+  <div class="c-page-header__container">
+    <div class="c-page-header__breadcrumbs">
+      
+  <nav class="c-breadcrumbs">
+    <ol class="c-breadcrumbs__list">
+      
+        
+        
+          <li class="c-breadcrumbs__item">
+            <a
+              class="c-breadcrumbs__link"
+              href="/sdc/"data-pagefind-filter="module"><span class="c-breadcrumbs__text">Software Development Course</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                width="24px"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="c-breadcrumbs__icon">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+              </svg>
+            </a>
+          </li>
+        
+        
+          <li class="c-breadcrumbs__item">
+            <a
+              class="c-breadcrumbs__link"
+              href="/sdc/tools/"><span class="c-breadcrumbs__text">Tools</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                width="24px"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="c-breadcrumbs__icon">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+              </svg>
+            </a>
+          </li>
+      
+        <li class="c-breadcrumbs__item">
+          <a
+            class="c-breadcrumbs__link"
+            href="/sdc/tools/sprints/4/"data-pagefind-filter="sprint">Sprint 4</a
+          >
+        </li>
+      
+    </ol>
+  </nav>
+  
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Our Courses",
+      "item":"https://curriculum.codeyourfuture.io/"},
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Software Development Course",
+      "item":"https://curriculum.codeyourfuture.io/sdc/"},
+    {
+      "@type": "ListItem",
+      "position":  3 ,
+      "name": "Tools",
+      "item":"https://curriculum.codeyourfuture.io/sdc/tools/"},{
+      "@type": "ListItem",
+      "position":  5 ,
+      "name": "Sprint 4",
+      "item":"https://curriculum.codeyourfuture.io/sdc/tools/sprints/4/"},
+    {
+      "@type": "ListItem",
+      "position":  6 ,
+      "name": "Prep",
+      "item":"https://curriculum.codeyourfuture.io/sdc/tools/sprints/4/"}
+  ]
+}
+</script>
+
+
+    </div>
+    <h1 class="c-page-header__title e-heading__1"data-pagefind-filter="view"
+        
+      data-pagefind-weight="10">
+      <span class="c-emoji">
+        
+        
+           
+            <time-total class="c-page-header__time"></time-total>
+      
+         
+        </span>
+        <span class="c-page-header__title-text">Prep</span>
+               
+    </h1>
+    
+      
+        <h2 class="c-page-header__description e-heading__3">
+          Overview description of the prep work for the sprint
+        </h2>
+      
+    
+    
+    
+    
+      <div class="c-page-header__toc " id="toc">
+        <section class="c-toc" aria-label="Table of contents.">
+          <a id="top" class="c-toc__top e-button e-button--icon" href="#toc"
+            >🔖 <span class="is-invisible">back to top</span></a
+          >
+          
+            <nav id="TableOfContents"></nav>
+          
+          
+            <ol>
+              
+                <li>
+                  <a href="#single-use-data-analysis-programs" data-pagefind-weight="5"
+                    >Single-use data analysis programs</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#comparing-javascript-and-python" data-pagefind-weight="5"
+                    >Comparing JavaScript and Python</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#converting-a-script-from-javascript-to-python" data-pagefind-weight="5"
+                    >Converting a script from JavaScript to Python</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#reading-a-file" data-pagefind-weight="5"
+                    >Reading a file</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#splitting" data-pagefind-weight="5"
+                    >Splitting</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#counting-words" data-pagefind-weight="5"
+                    >Counting words</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#putting-it-all-together" data-pagefind-weight="5"
+                    >Putting it all together</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#virtual-environments" data-pagefind-weight="5"
+                    >Virtual environments</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#using-python-dependencies" data-pagefind-weight="5"
+                    >Using python dependencies</a
+                  >
+                  
+                </li>
+              
+            </ol>
+          
+          
+        </section>
+      </div>
+    
+
+  </div>
+</header>
+</div>
+      <div slot="blocks">
+        
+        
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="single-use-data-analysis-programs">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="single-use-data-analysis-programs">
+        Single-use data analysis programs
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="60 minutes countdown" datetime="P60M">60&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Write a program to extract information from a JSON file</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Identify the trade-offs between using existing shell tools and writing custom programs</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Choose whether to use existing tools or write a custom program to solve a particular problem</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <p>We&rsquo;ve seen two different ways of analysing some input to produce an output.</p>
+<p>Sometimes we can use, or combine, existing tools to get answers. For instance, we can count the words in a file with <code>wc</code>.</p>
+<p>Sometimes we can write custom tools when existing tools don&rsquo;t quite do what we want. For instance, we wrote a program to count specific words.</p>
+<p>When we want to answer some question, sometimes it&rsquo;s useful to write a program we may only use once. (Or we may re-use in the future.)</p>
+<p>It&rsquo;s not always obvious whether it&rsquo;s easier to try to use tools that already exist, or to write our own.</p>
+<section class="c-note c-note--tip">
+    <h4 class="c-note__title">💡Tip</h4>
+    <div class="c-note__text"><p>This is like in real life! Imagine if you had two differently sized bottles, and wanted to pour all of the liquid from one to the other without spilling any.</p>
+<p>You can imagine making the perfect tube that has exactly the right size connector at each end to connect to the bottles.</p>
+<p>Or maybe you already have a funnel that&rsquo;s about the right size - not perfect, but close enough, and you can probably use.</p>
+<p>But if you got a really wide or really narrow bottle, maybe that funnel wouldn&rsquo;t be good enough and you would need to make a custom solution.</p></div>
+  </section><p>Sometimes the format of our data makes it easier or harder to use existing tools.</p>
+<p>Let&rsquo;s look at some sample data:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>[
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Daniel&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;score&#34;</span>: <span style="color:#ae81ff">100</span>
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Kristina&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;score&#34;</span>: <span style="color:#ae81ff">120</span>
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Iulia&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;score&#34;</span>: <span style="color:#ae81ff">95</span>
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Aleks&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;score&#34;</span>: <span style="color:#ae81ff">190</span>
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Daniel&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;score&#34;</span>: <span style="color:#ae81ff">80</span>
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Fatima&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;score&#34;</span>: <span style="color:#ae81ff">110</span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>]</span></span></code></pre></div><p>Here are a few questions we may want to answer about this data:</p>
+<ol>
+<li>What was the name of the first person to play the game?</li>
+<li>What was the name of the last person to play the game?</li>
+<li>Who had the highest score?</li>
+<li>The names of everyone who played the game directly after Daniel?</li>
+</ol>
+<p>We can probably answer all of these questions with <code>jq</code>. We can also definitely write a program to answer all of these questions for us.</p>
+<p>The first three are similarly hard to solve in <code>jq</code> or with a programming language.</p>
+<p>The last one is quite hard to solve in <code>jq</code>.</p>
+<section class="c-note c-note--Exercise">
+  <h4 class="c-note__title e-heading__4">Exercise</span>
+  </h4>
+  <div class="c-note__text "><p>Solve all of the first three questions in both <code>jq</code> and your choice of JavaScript or Python.</p>
+<p>Which approach do you think is quicker to write? Which is easier to think about?</p>
+</div>
+</section>
+
+
+<section class="c-note c-note--Exercise">
+  <h4 class="c-note__title e-heading__4">Exercise</span>
+  </h4>
+  <div class="c-note__text "><p>Solve the fourth question in your choice of JavaScript or Python.</p>
+<p>Now spend no more than 20 minutes trying to solve it with <code>jq</code>.</p>
+<p>What do you think makes this harder to solve in <code>jq</code>?</p>
+<p>What
+<tool-tip-container tabindex="0"><strong class="tooltip__trigger" id="trigger__heuristics">heuristics</strong><span class="tooltip__emoji">🧶</span><tool-tip role="tooltip" aria-labelledby="heuristics"><span class="tooltip__title e-heading__2"><span class="tooltip__emoji">🧶</span> heuristics</span><span class="tooltip__content">A heuristic is a guideline. It’s not an exact rule, but a “good enough” idea to guess what approach you should use to answer a question.</span></tool-tip></tool-tip-container>
+can you think of about when to use existing tools vs writing your own?</p>
+</div>
+</section>
+
+
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="comparing-javascript-and-python">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="comparing-javascript-and-python">
+        Comparing JavaScript and Python
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="40 minutes countdown" datetime="P40M">40&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Identify and explain equivalences between JavaScript and Python</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Compare and contrast differences between JavaScript and Python</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Distinguish between essential and accidental complexity</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <p>JavaScript and Python have many things in common.</p>
+<p>Most differences are &ldquo;cosmetic&rdquo;. Here are some examples of cosmetic differences:</p>
+<ul>
+<li>Some functions and operators have different names. But often there are functions/operators which do exactly the same thing.</li>
+<li>JavaScript uses <code>{}</code> around blocks of code and we <em>choose</em> if we indent code. Python uses <code>:</code> and indentation is required.</li>
+<li>In JavaScript we choose to name variables in <code>camelCase</code>, whereas in Python we choose to name variables in <code>snake_case</code>. In both langues we <em>could</em> do either; this is called a 
+<tool-tip-container tabindex="0"><strong class="tooltip__trigger" id="trigger__convention">convention</strong><span class="tooltip__emoji">🧶</span><tool-tip role="tooltip" aria-labelledby="convention"><span class="tooltip__title e-heading__2"><span class="tooltip__emoji">🧶</span> convention</span><span class="tooltip__content">A convention is something a group (maybe a team, or a company, or most users of a programming language) agree to do. It&rsquo;s not quite a rule - things <em>could</em> work another way. But we agree one way we&rsquo;ll all do it anyway.<br /><br />e.g. in Python you could name one variable <code>firstName</code> and another <code>middle_name</code> and another <code>LASTname</code>, but if everyone agrees to use <code>first_name</code> and <code>middle_name</code> and <code>last_name</code> it makes it a bit easier for everyone to read because they know what to expect.</span></tool-tip></tool-tip-container>
+.</li>
+</ul>
+<p>Recall our &ldquo;count containing words&rdquo; JavaScript code. Now think about what it would look like in Python.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">program</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#34;commander&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">promises</span> <span style="color:#a6e22e">as</span> <span style="color:#a6e22e">fs</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#34;node:fs&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> <span style="color:#a6e22e">process</span> <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#34;node:process&#34;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">program</span>
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">name</span>(<span style="color:#e6db74">&#34;count-containing-words&#34;</span>)
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">description</span>(<span style="color:#e6db74">&#34;Counts words in a file that contain a particular character&#34;</span>)
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">option</span>(<span style="color:#e6db74">&#34;-c, --char &lt;char&gt;&#34;</span>, <span style="color:#e6db74">&#34;The character to search for&#34;</span>, <span style="color:#e6db74">&#34;e&#34;</span>)
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">argument</span>(<span style="color:#e6db74">&#34;&lt;path&gt;&#34;</span>, <span style="color:#e6db74">&#34;The file path to process&#34;</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">program</span>.<span style="color:#a6e22e">parse</span>();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">argv</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">program</span>.<span style="color:#a6e22e">args</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">argv</span>.<span style="color:#a6e22e">length</span> <span style="color:#f92672">!=</span> <span style="color:#ae81ff">1</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">error</span>(<span style="color:#e6db74">`Expected exactly 1 argument (a path) to be passed but got </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">argv</span>.<span style="color:#a6e22e">length</span><span style="color:#e6db74">}</span><span style="color:#e6db74">.`</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">process</span>.<span style="color:#a6e22e">exit</span>(<span style="color:#ae81ff">1</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">path</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">argv</span>[<span style="color:#ae81ff">0</span>];
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#66d9ef">char</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">program</span>.<span style="color:#a6e22e">opts</span>().<span style="color:#66d9ef">char</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">content</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">fs</span>.<span style="color:#a6e22e">readFile</span>(<span style="color:#a6e22e">path</span>, <span style="color:#e6db74">&#34;utf-8&#34;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">countOfWordsContainingChar</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">content</span>
+</span></span><span style="display:flex;"><span>  .<span style="color:#a6e22e">split</span>(<span style="color:#e6db74">&#34; &#34;</span>)
+</span></span><span style="display:flex;"><span>  .<span style="color:#a6e22e">filter</span>((<span style="color:#a6e22e">word</span>) =&gt; <span style="color:#a6e22e">word</span>.<span style="color:#a6e22e">includes</span>(<span style="color:#66d9ef">char</span>))
+</span></span><span style="display:flex;"><span>  .<span style="color:#a6e22e">length</span>;
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">countOfWordsContainingChar</span>);</span></span></code></pre></div>
+
+
+<tab-panels class="c-tabs">
+  <div class="c-tabs__list" id="exercise" role="tablist"><button
+          data-toggle="tab"
+          id="tab-label-exercise-0"
+          class="c-tabs__tab e-heading__5 space 
+            is-active"
+          role="tab"
+          aria-controls="exercise-0"
+          aria-selected="true">
+          Exercise
+        </button><button
+          data-toggle="tab"
+          id="tab-label-exercise-1"
+          class="c-tabs__tab e-heading__5 space "
+          role="tab"
+          aria-controls="exercise-1"
+          aria-selected="false">
+          Answer
+        </button></div>
+  <div class="c-tabs__group" id="exercise">
+        <div
+          id="exercise-0"
+          class="c-tabs__panel is-active"
+          role="tabpanel"
+          data-heading="Exercise"
+          aria-labelledby="tab-label-exercise-0"><p>Think about what we&rsquo;re doing in this code.</p>
+<p>Try to list the high-level ideas. This means describing in English what we&rsquo;re achieving, using sentences like like &ldquo;Reading a file&rdquo;.</p>
+<p>We&rsquo;re not trying to think about the programming concepts we&rsquo;re doing here (we aren&rsquo;t talking about things like &ldquo;Assigning a variable&rdquo; or &ldquo;An if statement&rdquo;). Think about what a non-programmer would want to understand about our program.</p>
+</div>
+        <div
+          id="exercise-1"
+          class="c-tabs__panel "
+          role="tabpanel"
+          data-heading="Answer"
+          aria-labelledby="tab-label-exercise-1"><p>You may have slightly different answers, but the programme is doing roughly the following things:</p>
+<ul>
+<li>Parsing command line flags - writing down what flags we expect to be passed, and reading values for them based on the actual command line.</li>
+<li>Validating the flags (i.e. checking that exactly one path was passed).</li>
+<li>Reading a file.</li>
+<li>Splitting the content of the file up into words.</li>
+<li>Counting how many of the words contained a particular character.</li>
+<li>Printing the count.</li>
+</ul></div></div>
+</tab-panels>
+
+<p>These are the meaningful things we needed to do. To solve the same problem with Python, we&rsquo;d still do all of these things.</p>
+<p>We did some other things in our code to make it work. For example, we imported some modules. To write this code in Python, we might need modules or we might not. Importing modules isn&rsquo;t one of our <em>goals</em>, it was just something we needed to do to help us.</p>
+<p>We split up things we need to do into two categories: essential and accidental.</p>
+<p><strong>Essential</strong> means it is a core part of the problem. e.g. in order to count how many words are in a file, it is <em>essential</em> that we read the file.</p>
+<p><strong>Accidental</strong> means it isn&rsquo;t what we <em>care</em> about doing, but we may need to do it anyway. e.g. importing the <code>process</code> module isn&rsquo;t <em>essential</em> to our problem, but we needed to do it anyway so we could report errors.</p>
+<section class="c-note c-note--Think about real life">
+  <h4 class="c-note__title e-heading__4">Think about real life</span>
+  </h4>
+  <div class="c-note__text "><p>Imagine we want to post a parcel, so we take the bus to the post office.</p>
+<p><em>Essential</em> to our goal is getting the parcel to someone who will deliver it.</p>
+<p><em>Accidental</em> to this, we took the bus. There may be ways we could achieve our essential goal without getting the bus. Maybe we could walk or cycle to the post office. Maybe we could arrange for someone from the post office to come to our home and collect the parcel.</p>
+<p>The accidental things we did were important - they helped us get our essential goal done. But we shouldn&rsquo;t get too attached to the accidental things - maybe we will replace them later.</p>
+</div>
+</section>
+
+
+<p>When we&rsquo;re thinking about how we use different languages, it&rsquo;s useful to think about what parts of our problem are <em>essential</em> (we&rsquo;ll need to do them in any language), and which parts are <em>accidental</em> (it&rsquo;s just something we had to do on the way to achieve our aim).</p>
+<p>Whether we write the JavaScript <code>someArray.length</code> or the Python <code>len(some_array)</code> isn&rsquo;t a big difference. Both lines do the same thing, they just express it differently.</p>
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="converting-a-script-from-javascript-to-python">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="converting-a-script-from-javascript-to-python">
+        Converting JavaScript to Python
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="90 minutes countdown" datetime="P90M">90&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Rewrite JavaScript code as Python</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <h3 id="parsing-command-line-flags">Parsing command line flags</h3>
+<p>In JavaScript, we wrote this code:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">program</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#34;commander&#34;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">program</span>
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">name</span>(<span style="color:#e6db74">&#34;count-containing-words&#34;</span>)
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">description</span>(<span style="color:#e6db74">&#34;Counts words in a file that contain a particular character&#34;</span>)
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">option</span>(<span style="color:#e6db74">&#34;-c, --char &lt;char&gt;&#34;</span>, <span style="color:#e6db74">&#34;The character to search for&#34;</span>, <span style="color:#e6db74">&#34;e&#34;</span>)
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">argument</span>(<span style="color:#e6db74">&#34;&lt;path&gt;&#34;</span>, <span style="color:#e6db74">&#34;The file path to process&#34;</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">program</span>.<span style="color:#a6e22e">parse</span>();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">argv</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">program</span>.<span style="color:#a6e22e">args</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">path</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">argv</span>[<span style="color:#ae81ff">0</span>];
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#66d9ef">char</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">program</span>.<span style="color:#a6e22e">opts</span>().<span style="color:#66d9ef">char</span>;</span></span></code></pre></div><p>Which of the following are <em>essential</em> goals in this code, and which are <em>accidental</em> goals?</p>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+    
+    
+
+    
+    
+      
+    
+  
+
+
+  
+    
+    
+
+    
+    
+      
+    
+  
+
+
+  
+    
+    
+
+    
+    
+      
+    
+  
+
+
+  
+    
+    
+
+    
+    
+      
+    
+  
+
+
+  
+    
+    
+
+    
+    
+      
+    
+  
+
+
+  
+    
+    
+
+    
+    
+      
+    
+  
+
+
+  
+    
+    
+
+    
+    
+      
+    
+  
+
+
+  
+    
+    
+
+    
+    
+      
+    
+  
+
+
+
+
+
+
+<div class="c-block">
+  <label-items>
+    <section slot="labels" class="c-labels" aria-label="Labels">
+      
+        <button class="c-label" data-label="essential">Essential</button>
+      
+        <button class="c-label" data-label="accidental">Accidental</button>
+      
+    </section>
+    <h3 slot="heading" class="e-heading__5">Drag essential/accidental from 👆🏾 onto each goal 👇🏽</h3>
+    <section slot="content" aria-label="Items to label">
+      
+        <div
+          data-item="1"
+          data-correct="essential">
+          Allow a user to pass a <code>-c</code> argument (defaulting to <code>e</code> if they don&rsquo;t).
+        </div>
+      
+        <div
+          data-item="2"
+          data-correct="accidental">
+          Made a <code>const</code> variable called <code>argv</code>.
+        </div>
+      
+        <div
+          data-item="3"
+          data-correct="accidental">
+          Import <code>program</code> from the <code>commander</code> library.
+        </div>
+      
+        <div
+          data-item="4"
+          data-correct="essential">
+          Allow a user to pass a path as a positional argument.
+        </div>
+      
+        <div
+          data-item="5"
+          data-correct="accidental">
+          Looked up element <code>0</code> in the <code>program.args</code> array.
+        </div>
+      
+        <div
+          data-item="6"
+          data-correct="essential">
+          Supply a nice <code>--help</code> implementation to help a user if they don&rsquo;t know how to use our tool.
+        </div>
+      
+        <div
+          data-item="7"
+          data-correct="accidental">
+          Use the commander library.
+        </div>
+      
+        <div
+          data-item="8"
+          data-correct="accidental">
+          Called the function <code>program.name()</code>.
+        </div>
+      
+    </section>
+    <section aria-label="Feedback" slot="feedback"></section>
+  </label-items>
+</div>
+
+<script src="/scripts/label-items.min.js" defer></script>
+
+<p>If we want to work out how to do this in Python, we should focus on the essential goals. We may want to search for things like &ldquo;Parse command line flags Python&rdquo; and &ldquo;Default argument values Python&rdquo; because they get to the essential problems we&rsquo;re trying to solve.</p>
+<p>Searching Google for &ldquo;Parse command line flags Python&rdquo; brought us to <a
+  href="https://docs.python.org/3/library/argparse.html">the Python argparse documentation</a>. The example code looks pretty similar to what we were doing in JavaScript. We can probably write something like:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> argparse
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>parser <span style="color:#f92672">=</span> argparse<span style="color:#f92672">.</span>ArgumentParser(
+</span></span><span style="display:flex;"><span>    prog<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;count-containing-words&#34;</span>,
+</span></span><span style="display:flex;"><span>    description<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Counts words in a file that contain a particular character&#34;</span>,
+</span></span><span style="display:flex;"><span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>parser<span style="color:#f92672">.</span>add_argument(<span style="color:#e6db74">&#34;-c&#34;</span>, <span style="color:#e6db74">&#34;--char&#34;</span>, help<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;The character to search for&#34;</span>, default<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;e&#34;</span>)
+</span></span><span style="display:flex;"><span>parser<span style="color:#f92672">.</span>add_argument(<span style="color:#e6db74">&#34;path&#34;</span>, help<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;The file to search&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>args <span style="color:#f92672">=</span> parser<span style="color:#f92672">.</span>parse_args()</span></span></code></pre></div><p>There are some differences here.</p>
+<ul>
+<li>With commander we were calling functions on a global <code>program</code>, whereas with argparse we construct a new <code>ArgumentParser</code> which we use.</li>
+<li><code>add_argument</code> takes separate parameters for the short (<code>-c</code>) and long (<code>--char</code>) forms of the option - <code>commander</code> expected them in one string.</li>
+<li>The Python version uses a lot of named arguments (e.g. <code>add_argument(...)</code> took <code>help=</code>, <code>default=</code>), whereas the JavaScript version (<code>option(...)</code>) used a lot of positional ones.</li>
+<li>The Python version handles positional arguments itself as arguments with names (<code>path</code>), whereas the JavaScript version defines them explicitly using <code>.argument(&quot;&lt;path&gt;&quot;, &quot;The file path to process&quot;)</code>, where <code>&lt;path&gt;</code> is a placeholder and the second argument is a description.</li>
+</ul>
+<h3 id="validating-command-line-flags">Validating command line flags</h3>
+<p>In our JavaScript code, we needed to check that there was exactly one positional argument.</p>
+<p>We don&rsquo;t need to do this in our Python code. Because <code>argparse</code> treats positional arguments as arguments, it actually already errors if we pass no positional arguments, or more than one.</p>
+<p>So we can tick this essential requirement off our list. Different languages or libraries do things differently, and that&rsquo;s ok!</p>
+<section class="c-note c-note--tip">
+    <h4 class="c-note__title">💡Tip</h4>
+    <div class="c-note__text"><p>We don&rsquo;t need to convert every line.</p>
+<p>We&rsquo;re trying to convert <em>essential requirements</em>.</p></div>
+  </section><section class="c-note c-note--Exercise">
+  <h4 class="c-note__title e-heading__4">Exercise</span>
+  </h4>
+  <div class="c-note__text ">Identify all of the essential requirements from our JavaScript program, and finish implementing the Python version.</div>
+</section>
+
+
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="reading-a-file">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="reading-a-file">
+        Reading a file
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="10 minutes countdown" datetime="P10M">10&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+    <div class="c-block__content c-copy">
+      <p>In JavaScript we wrote:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">promises</span> <span style="color:#a6e22e">as</span> <span style="color:#a6e22e">fs</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#34;node:fs&#34;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">content</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">fs</span>.<span style="color:#a6e22e">readFile</span>(<span style="color:#a6e22e">path</span>, <span style="color:#e6db74">&#34;utf-8&#34;</span>);</span></span></code></pre></div><p>If we search Google for &ldquo;Read file Python&rdquo;, we get an example which suggests we can write something like:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">with</span> open(args<span style="color:#f92672">.</span>path, <span style="color:#e6db74">&#34;r&#34;</span>) <span style="color:#66d9ef">as</span> f:
+</span></span><span style="display:flex;"><span>    content <span style="color:#f92672">=</span> f<span style="color:#f92672">.</span>read()</span></span></code></pre></div><p>Comparing these shows some interesting differences, particularly around 
+<tool-tip-container tabindex="0"><strong class="tooltip__trigger" id="trigger__scope">scope</strong><span class="tooltip__emoji">🧶</span><tool-tip role="tooltip" aria-labelledby="scope"><span class="tooltip__title e-heading__2"><span class="tooltip__emoji">🧶</span> Scope</span><span class="tooltip__content">Scope is where a variable can be accessed from.</span></tool-tip></tool-tip-container>
+.</p>
+<h3 id="scope">Scope</h3>
+<p>In Python, we made our <code>content</code> variable in an indented block.</p>
+<p>In JavaScript this wouldn&rsquo;t have worked - in JavaScript when we declare a variable with <code>const</code> it only exists in the scope where it was defined.</p>
+<p>In Python, the <code>content</code> variable can be used for the rest of the function it&rsquo;s declared in. We call this 
+<tool-tip-container tabindex="0"><strong class="tooltip__trigger" id="trigger__hoisting">hoisting</strong><span class="tooltip__emoji">🧶</span><tool-tip role="tooltip" aria-labelledby="hoisting"><span class="tooltip__title e-heading__2"><span class="tooltip__emoji">🧶</span> hoisting</span><span class="tooltip__content">Hoisting is where a variable is considered to exist at a broader scope than where it was declared.</span></tool-tip></tool-tip-container>
+.</p>
+<h3 id="with-blocks"><code>with</code> blocks</h3>
+<p>In Python, there&rsquo;s this <code>with</code> construct. Instead of writing <code>f = open(args.path, &quot;r&quot;)</code> we wrote <code>with open(args.path, &quot;r&quot;) as f:</code>.</p>
+<p>This has two interesting effects:</p>
+<p>One is that the variable we&rsquo;re declaring (<code>f</code>) doesn&rsquo;t get hoisted - it only exists within the <code>with</code> block.</p>
+<p>The other is that at the end of the <code>with</code> block, the file is closed. Not only does <code>f</code> stop existing at the end of the block, but some code also gets run to clean up the resources <code>f</code> was using.</p>
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="splitting">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="splitting">
+        Splitting the content of the file up into words
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="5 minutes countdown" datetime="P5M">5&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+    <div class="c-block__content c-copy">
+      <p>In JavaScript we wrote:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">content</span>.<span style="color:#a6e22e">split</span>(<span style="color:#e6db74">&#34; &#34;</span>)</span></span></code></pre></div><p>Googling for &ldquo;Python split string&rdquo; suggests we can write exactly the same code!</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>content<span style="color:#f92672">.</span>split(<span style="color:#e6db74">&#34; &#34;</span>)</span></span></code></pre></div>
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="counting-words">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="counting-words">
+        Counting words containing a character
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="45 minutes countdown" datetime="P45M">45&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+    <div class="c-block__content c-copy">
+      <p>In JavaScript we wrote:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">content</span>
+</span></span><span style="display:flex;"><span>  .<span style="color:#a6e22e">split</span>(<span style="color:#e6db74">&#34; &#34;</span>)
+</span></span><span style="display:flex;"><span>  .<span style="color:#a6e22e">filter</span>((<span style="color:#a6e22e">word</span>) =&gt; <span style="color:#a6e22e">word</span>.<span style="color:#a6e22e">includes</span>(<span style="color:#66d9ef">char</span>))
+</span></span><span style="display:flex;"><span>  .<span style="color:#a6e22e">length</span></span></span></code></pre></div><p>What JavaScript calls arrays, Python calls lists. Arrays and lists are basically the same.</p>
+<p>Googling for &ldquo;Python filter list&rdquo; suggests there are two things we can use - a <code>filter</code> function, or something called a &ldquo;list comprehension&rdquo;. Some people prefer one, other people prefer the other.</p>
+<p>Let&rsquo;s try out both approaches. We can do this in a standalone program, rather than in the whole word-counting program. This gives us a lot more control, and makes it easier for us to experiment.</p>
+<section class="c-note c-note--Exercise">
+  <h4 class="c-note__title e-heading__4">Exercise</span>
+  </h4>
+  <div class="c-note__text "><p>Create a new file, <code>filter.py</code>. Start it with:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>content <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;this is a list of words&#34;</span>
+</span></span><span style="display:flex;"><span>char <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;i&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>filtered <span style="color:#f92672">=</span> TODO
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(filtered)</span></span></code></pre></div><p>Now fill in the TODO. First, use a list comprehension. Run the file and make sure you get the expected output.</p>
+<p>Next, replace your list comprehension with some code that calls the global function <code>filter</code>. (<code>filter</code> takes a function, and it may be useful to know that <code>lambda</code> is a keyword for making an anonymous function in Python, similar to arrow functions in JavaScript). Run the file and make sure you get the expected output.</p>
+</div>
+</section>
+
+
+<p>Now that we&rsquo;ve learnt how to do the filtering, we can apply what we&rsquo;ve learnt to the program we&rsquo;re converting.</p>
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="putting-it-all-together">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="putting-it-all-together">
+        Putting it all together
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="30 minutes countdown" datetime="P30M">30&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+    <div class="c-block__content c-copy">
+      <p>Instead of calling <code>console.log</code>, in Python we call <code>print</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> argparse
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>parser <span style="color:#f92672">=</span> argparse<span style="color:#f92672">.</span>ArgumentParser(
+</span></span><span style="display:flex;"><span>    prog<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;count-containing-words&#34;</span>,
+</span></span><span style="display:flex;"><span>    description<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Counts words in a file that contain a particular character&#34;</span>,
+</span></span><span style="display:flex;"><span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>parser<span style="color:#f92672">.</span>add_argument(<span style="color:#e6db74">&#34;-c&#34;</span>, <span style="color:#e6db74">&#34;--char&#34;</span>, help<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;The character to search for&#34;</span>, default<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;e&#34;</span>)
+</span></span><span style="display:flex;"><span>parser<span style="color:#f92672">.</span>add_argument(<span style="color:#e6db74">&#34;path&#34;</span>, help<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;The file to search&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>args <span style="color:#f92672">=</span> parser<span style="color:#f92672">.</span>parse_args()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">with</span> open(args<span style="color:#f92672">.</span>path, <span style="color:#e6db74">&#34;r&#34;</span>) <span style="color:#66d9ef">as</span> f:
+</span></span><span style="display:flex;"><span>    content <span style="color:#f92672">=</span> f<span style="color:#f92672">.</span>read()
+</span></span><span style="display:flex;"><span>count_of_words_containing_char <span style="color:#f92672">=</span> len([word <span style="color:#66d9ef">for</span> word <span style="color:#f92672">in</span> content<span style="color:#f92672">.</span>split(<span style="color:#e6db74">&#34; &#34;</span>) <span style="color:#66d9ef">if</span> args<span style="color:#f92672">.</span>char <span style="color:#f92672">in</span> word])
+</span></span><span style="display:flex;"><span>print(count_of_words_containing_char)</span></span></code></pre></div><p>This looks similar to the JavaScript version. The shape is the same, but every line is a little bit different.</p>
+<p>Some programming languages are very different, as different as Mandarin and English. But JavaScript and Python are, essentially, quite similar, like Spanish and Portuguese.</p>
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="virtual-environments">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="virtual-environments">
+        Virtual environments
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="30 minutes countdown" datetime="P30M">30&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Create a virtual environment with some dependencies installed.</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <p>We often use libraries in Python.</p>
+<p>Python handles dependencies differently from JavaScript, but they have similarities.</p>
+<p>We&rsquo;ve seen that in JavaScript we write down what dependencies we need in a <code>package.json</code> file, and when we run <code>npm install</code> they will get fetched into a folder called <code>node_modules</code>.</p>
+<p>In Python, we write down what dependencies we need in a file called <code>requirements.txt</code>. It doesn&rsquo;t contain JSON, it just contains a list of dependencies, one per line.</p>
+<h3 id="virtual-environments">Virtual environments</h3>
+<p>To install the dependencies, we need to make something called a virtual environment, where they will get installed to.</p>
+<section class="c-note c-note--Comparing virtual environments and node_modules">
+  <h4 class="c-note__title e-heading__4">Comparing virtual environments and node_modules</span>
+  </h4>
+  <div class="c-note__text "><p>A virtual environment is like a <code>node_modules</code> folder - it contains all of the dependencies that are installed into it.</p>
+<p>When we run <code>node</code>, <code>node</code> <em>automatically</em> looks for a <code>node_modules</code> folder to find dependencies in.</p>
+<p>When we run <code>python3</code>, <code>python3</code> <em>doesn&rsquo;t</em> automatically look for a virtual environment. We need to <em>activate</em> it - tell <code>python3</code> which virtual environment we want to use.</p>
+<p>There are trade-offs here:</p>
+<ul>
+<li><code>node</code> uses a <em>convention</em> to locate installed dependencies - we don&rsquo;t need to <em>do</em> anything except put the folder in the right place, and it will automatically get used.</li>
+<li><code>python3</code> uses <em>configuration</em> to locate installed dependencies - we need to <em>configure</em> which virtual environment it should use by activating it.</li>
+</ul>
+<p>One of the benefits of using configuration is that we could have different virtual environments with different versions of the same dependencies (e.g. to test a version upgrade), and we can switch between them.</p>
+<p>One of the drawbacks of using configuration is that we need to do the configuration - we need to explicitly activate the virtual environment for it to be used.</p>
+</div>
+</section>
+
+
+<p>First we need to <em>create</em> the virtual environment. We do this by running <code>python3 -m venv .venv</code>. This will create a virtual environment in a directory named <code>.venv</code>. We could actually create it anywhere, e.g. we could run <code>python3 -m venv /tmp/python_modules</code> to create it in a directory named <code>/tmp/python_modules</code>. We tend to just use a directory called <code>.venv</code> at the root of our project.</p>
+<section class="c-note c-note--note">
+    <h4 class="c-note__title">📝Note</h4>
+    <div class="c-note__text"><p>This is another example of a convention - you could name your virtual environment anything, but if we all agree to call it <code>.venv</code> then we all know what this directory is when we see it.</p>
+<p>It also means we can write scripts, or <code>.gitignore</code> file entries assuming that&rsquo;s where the virtual environment will be.</p></div>
+  </section><p>Next we need to <em>activate</em> the virtual environment. We do this by running <code>. .venv/bin/activate</code> (yes, the command we&rsquo;re running is <code>.</code> with a path as an argument - the <code>.</code> is important). This will only activate the virtual environment for the terminal window we&rsquo;re in - if you&rsquo;re using more than one terminal window, you&rsquo;ll need to activate it in each of them.</p>
+<p>Finally we need to install our dependencies into the virtual environment. We do this by running <code>pip install -r requirements.txt</code>. This is saying &ldquo;Please install all of the dependencies listed in <code>requirements.txt</code> into the currently active virtual environment&rdquo;.</p>
+<p>After we&rsquo;ve done this, we should be able to <code>import</code> any installed dependencies into our Python code. This will work as long as we have activated the virtual environment in the terminal window where we&rsquo;re running our program.</p>
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="using-python-dependencies">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="using-python-dependencies">
+        Using Python dependencies
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="30 minutes countdown" datetime="P30M">30&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Write and run a Python program which uses third-party dependencies.</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <p>Let&rsquo;s create a small program which uses a dependency.</p>
+<p>We&rsquo;re going to use the <code>cowsay</code> library to make a program which outputs a picture of a cow saying something.</p>
+<p>First let&rsquo;s create a Python file which tries to use <code>cowsay</code>:</p>
+<section class="c-note c-note--note">
+  <h4 class="c-note__title e-heading__4">📝Note</span>
+  </h4>
+  <div class="c-note__text "><p>It&rsquo;s important that you don&rsquo;t name your Python file the same as the name of a library you&rsquo;re trying to import.</p>
+<p>We can&rsquo;t call our file <code>cowsay.py</code> because we&rsquo;re going to try to import <code>cowsay</code>.</p>
+<p>We can call it <code>main.py</code> or <code>hello.py</code> or <code>cow.py</code>. Just not <code>cowsay.py</code>.</p>
+<p>In this example, we&rsquo;ll call it <code>cow.py</code>.</p>
+</div>
+</section>
+
+
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> cowsay</span></span></code></pre></div><p>Run <code>python3 cow.py</code>. It will trigger this error:</p>
+<pre tabindex="0"><code>ModuleNotFoundError: No module named &#39;cowsay&#39;</code></pre><p>This is because we haven&rsquo;t installed cowsay yet.</p>
+<h3 id="installing-our-dependency">Installing our dependency</h3>
+<p>We will create a virtual environment, activate it, and install cowsay to it:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-console" data-lang="console"><span style="display:flex;"><span>% python3 -m venv .venv
+</span></span><span style="display:flex;"><span>% . .venv/bin/activate
+</span></span><span style="display:flex;"><span>(.venv) % echo cowsay &gt; requirements.txt
+</span></span><span style="display:flex;"><span>(.venv) % pip install -r requirements.txt
+</span></span></code></pre></div><p>When we activate a virtual environment, its name gets shown before our terminal prompt. This is a useful reminder that we&rsquo;re in a virtual environment!</p>
+<h3 id="running-our-program">Running our program</h3>
+<p>Run <code>python3 cow.py</code>. We don&rsquo;t get an error because we installed <code>cowsay</code> into our active virtual environment.</p>
+<p>Open a new terminal and run <code>python3 cow.py</code>. You will get an error again! This is because we haven&rsquo;t activated a virtual environment.</p>
+<p>Run <code>. .venv/bin/activate</code> and then <code>python3 cow.py</code>. It will start working again.</p>
+<p>Now we can finish our program - let&rsquo;s have the cow say the arguments back to the user (joining together the arguments with spaces). We need to use a slice to skip the first argument, which is our program name:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> cowsay
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> sys
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>cowsay<span style="color:#f92672">.</span>cow(<span style="color:#e6db74">&#34; &#34;</span><span style="color:#f92672">.</span>join(sys<span style="color:#f92672">.</span>argv[<span style="color:#ae81ff">1</span>:]))</span></span></code></pre></div><p>Notice how <code>import cowsay</code> and <code>import sys</code> look the same - as long as we&rsquo;ve installed dependencies, we can <code>import</code> them just like we can import things that are built into Python.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-console" data-lang="console"><span style="display:flex;"><span>(.venv) % python3 cow.py Hello friend
+</span></span><span style="display:flex;"><span>  ____________
+</span></span><span style="display:flex;"><span>| Hello friend |
+</span></span><span style="display:flex;"><span>  ============
+</span></span><span style="display:flex;"><span>            \
+</span></span><span style="display:flex;"><span>             \
+</span></span><span style="display:flex;"><span>               ^__^
+</span></span><span style="display:flex;"><span>               (oo)\_______
+</span></span><span style="display:flex;"><span>               (__)\       )\/\
+</span></span><span style="display:flex;"><span>                   ||----w |
+</span></span><span style="display:flex;"><span>                   ||     ||
+</span></span></code></pre></div>
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+      </div>
+      <nav slot="nav">
+        <a href="#" class="e-button c-solo-view__back">&larr; Back</a>
+        <a href="#" class="e-button c-solo-view__next">Next &rarr;</a>
+      </nav>
+    </solo-view>
+    
+    <script src="/scripts/solo-view.min.js" defer></script>
+    
+    <script src="/scripts/time-total.min.js" defer></script>
+  
+
+
+        
+
+  <footer class="c-page-footer">
+    <nav class="c-page-footer__nav">
+      
+      
+      <span class="c-page-footer__this">Prep</span>
+      
+        →<a
+          class="c-page-footer__next c-page-footer__link e-link"
+          href="/sdc/tools/sprints/4/backlog/"
+          >Backlog</a
+        >
+      
+    </nav>
+  </footer>
+
+
+      </main><footer class="l-layout__footer l-footer">
+  <a
+    class="l-footer__github e-button e-button--icon"
+    href="https://github.com/CodeYourFuture/curriculum/">
+    <svg
+  focusable="false"
+  class="e-button__icon"
+  role="presentation"
+  width="96"
+  viewbox="0 0 98 96"
+  xmlns="http://www.w3.org/2000/svg">
+  <path
+    fill-rule="evenodd"
+    clip-rule="evenodd"
+    d="M48.854 0C21.839 0 0 22 0 49.217c0 21.756 13.993 40.172 33.405 46.69 2.427.49 3.316-1.059 3.316-2.362 0-1.141-.08-5.052-.08-9.127-13.59 2.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015 4.934.326 7.523 5.052 7.523 5.052 4.367 7.496 11.404 5.378 14.235 4.074.404-3.178 1.699-5.378 3.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283 0-5.378 1.94-9.778 5.014-13.2-.485-1.222-2.184-6.275.486-13.038 0 0 4.125-1.304 13.426 5.052a46.97 46.97 0 0 1 12.214-1.63c4.125 0 8.33.571 12.213 1.63 9.302-6.356 13.427-5.052 13.427-5.052 2.67 6.763.97 11.816.485 13.038 3.155 3.422 5.015 7.822 5.015 13.2 0 18.905-11.404 23.06-22.324 24.283 1.78 1.548 3.316 4.481 3.316 9.126 0 6.6-.08 11.897-.08 13.526 0 1.304.89 2.853 3.316 2.364 19.412-6.52 33.405-24.935 33.405-46.691C97.707 22 75.788 0 48.854 0z"
+    fill="currentColor" />
+</svg>
+
+    <span class="is-invisible">Find us on GitHub</span>
+  </a>
+  <p class="l-footer__impressum e-heading__6">
+    This
+    <a href="https://github.com/CodeYourFuture/curriculum/">free and open source programme</a>
+    is a project of
+    <a href="https://codeyourfuture.io/">Code Your Future</a>
+    <br />
+    Creative Commons Attribution-ShareAlike 4.0
+  </p>
+  <dark-mode class="l-footer__mode"
+    ><button
+      slot="button"
+      id="mode-toggle"
+      type="button"
+      class="e-button e__button--toggle e-button--icon">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="e-icon e__button__icon e-icon--moon">
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
+      </svg>
+      <span class="is-invisible">Toggle between light and dark mode</span>
+    </button></dark-mode
+  >
+</footer>
+
+
+
+<script src="/scripts/app.min.js" defer></script>
+
+<script src="/scripts/youtube-player.min.js" defer></script>
+
+<script src="/scripts/tab-panels.min.js" type="module" defer></script>
+
+<script src="/scripts/dark-mode.min.js"></script>
+
+<script src="/scripts/alert-message.min.js" defer></script>
+
+
+
+
+
+
+
+</div>
+  </body>
+</html>

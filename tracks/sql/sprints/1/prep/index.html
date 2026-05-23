@@ -1,0 +1,1594 @@
+<!DOCTYPE html>
+
+
+
+
+<html lang="en" class="p-prep"><head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  <title data-pagefind-meta="title">
+    
+      Tracks 
+    
+      SQL 
+    
+      Sprint 1 
+    
+    Prep
+  </title>
+  
+    <meta
+      name="description"
+      content=" CYF Courses: Communicating with a database" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+  <style>
+    body,
+    html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      animation: fade-in 300ms;
+    }
+    @keyframes fade-in {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  </style>
+  
+  
+  <link
+    rel="stylesheet"
+    href="/bundled.min.b6a4520237559385268d63a9daa81d96.css"
+    media="print"
+    onload="this.media='all'" />
+
+  
+  
+    
+    
+    <link
+      rel="stylesheet"
+      href="/custom.min.8ded6a1a88bc7cc98bdef8dc33d15f3a.css"
+      media="print"
+      onload="this.media='all'" />
+  
+
+
+  <noscript>
+    <link rel="stylesheet" href="/bundled.min.b6a4520237559385268d63a9daa81d96.css" />
+  </noscript>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&amp;display=swap"
+    rel="stylesheet"
+    media="print"
+    onload="this.media='all'" />
+
+  <link rel="shortcut icon" href="https://curriculum.codeyourfuture.io/favicon.ico" />
+  <meta name="theme-color" content="#e3ddeef2" />
+  <link rel="manifest" href="https://curriculum.codeyourfuture.io/manifest.json" />
+</head>
+<body>
+    <a class="c-skip-link e-button" id="skip-link" href="#main">Skip to main</a>
+    <div class="l-layout">
+      <header class="l-layout__header l-header">
+  <div class="l-header__container">
+    <h1 class="l-header__heading e-heading__6" data-pagefind-ignore>
+      <a class="l-header__home" href="/"
+        ><span class="is-invisible"
+          >tracks prep CYF Courses</span
+        >
+        <span class="is-none--lt-container">
+          <svg
+          xmlns="http://www.w3.org/2000/svg"
+          title="Code Your Future."
+          viewBox="0 0 621.64 155.81"
+          width="140px"
+          focusable="false"
+          role="img">
+          <path
+            fill="var(--theme-color--brand)"
+            d="M103.37 56.51C96.91 63.64 87.03 69.9 74.6 69.9c-20.14 0-33.52-12.91-33.52-34.09C41.08 13.97 57.5.87 69.94.87c9.5 0 13.77 5.32 14.63 6.46l2.18-5.27h14.91v27h-17c-.28-6.18-3.32-12-10.06-12s-11.3 8.45-11.3 18.8c0 9.4 4.84 17.86 13.86 17.86 8 0 14.24-8.36 15.1-9.31Zm2.88-21.85C106.25 14.15 119.92 0 139.58 0c23.26 0 34.09 14 34.09 35.32s-12 34.57-33.43 34.57c-19.88 0-33.99-11.49-33.99-35.23Zm43.68.66c0-11.49-3.13-20.7-10.45-20.7-5.79-.09-9.78 8.26-9.78 20 0 12.44 4.47 20.32 10.54 20.32s9.65-7.88 9.65-19.62Zm27.49 20.23h5.89V14.34h-5.89V1.8h29c23 0 36.09 14.15 36.09 32.29 0 21.65-13.11 34.09-36.47 34.09h-28.62Zm29 0c10.03-.19 14.21-9.59 14.21-21.49 0-10.16-4.18-19.75-14.25-19.75h-3.61v41.24ZM303.04 1.8v21h-16.43v-8.46h-15.19v13.1h18v12.62h-18v15.49h15.19v-8.83h16.43v21.46h-57.26V55.55h6V14.34h-6V1.8Z" />
+          <path
+            fill="var(--theme-color--ink)"
+            d="M274.42 87.82v21h-16.8v-8.45h-14.37v16.52h18v12.63h-18v12.04h9.68v12.63h-35.29v-12.63h5.89v-41.21h-5.89V87.82Zm33.04 0v12.24h-5.12v20.51c0 15.28 3.41 18.51 9.49 18.51 5.79 0 9.59-2.28 9.59-18.61v-20.12h-5.17V87.82h28.11v12.24h-5.11v23.07c0 22.51-9.4 32.67-27.25 32.67-19.18-.57-29.43-10.64-29.43-32.19v-23.45h-5.32V87.82Zm103.5 24.69h-14v-12.16h-8v41.21h7.88v12.63h-35.26v-12.63h7.79v-41.21h-8.12v12.16h-14V87.82h63.71ZM444 87.82v12.24h-5.13v20.51c0 15.28 3.42 18.51 9.5 18.51 5.79 0 9.59-2.28 9.59-18.61v-20.12h-5.13V87.82h28.11v12.24h-5.13v23.07c0 22.51-9.4 32.67-27.25 32.67-19.18-.57-29.44-10.64-29.44-32.19v-23.45h-5.32V87.82Zm71.59 0c22 0 26.3 8.73 26.3 19.56 0 7.4-5.88 12.63-13.76 13.77 6.55.95 12.44 6.64 12.44 13.48 0 4.08.57 6.46 2.27 6.46 1.43 0 2.19-1.14 2.19-3v-3.13h6.36v5.22c0 7.88-3.32 15.19-13.86 15.19-12.44 0-18.42-6.55-18.42-17.66 0-8.64-1.05-10.73-9.5-10.73v14.68h5.79v12.53h-30.67v-12.53h5.32v-41.4h-5.32V87.82Zm-6 28.48h4.27c5.51 0 9.12-2.65 9.12-7.69 0-5.6-3.13-8.45-8.64-8.45h-4.75Zm102.38-28.48v21h-16.43v-8.45h-15.19v13.09h18v12.6h-18v15.5h15.19v-8.83h16.43v21.46h-57.26v-12.63h6v-41.21h-6V87.82Zm-227.72-56.1c.38-1.9 2.47-5.89 3.51-8.17l5.22-9.59h-5.22V1.8h25.54v12.16h-5.05l-17.62 30.86v11h5.32v12.36h-30.39V55.83h5.41v-11.2l-18.42-30.67h-4.65V1.8h32.47v12.16h-4.93l5.5 10.1c.57 1.81 2.57 6.08 2.95 7.7Zm29.54 2.94C413.79 14.15 427.47 0 447.12 0c23.27 0 34.09 14 34.09 35.32s-12 34.57-33.42 34.57c-19.85 0-34-11.49-34-35.23Zm43.68.66c0-11.49-3.13-20.7-10.44-20.7-5.79-.09-9.78 8.26-9.78 20 0 12.44 4.46 20.32 10.54 20.32s9.68-7.88 9.68-19.62ZM514.25 1.8v12.26h-5.13v20.5c0 15.29 3.42 18.52 9.5 18.52 5.79 0 9.59-2.28 9.59-18.61V14.34h-5.13V1.8h28.11v12.26h-5.13v23.07c0 22.5-9.4 32.66-27.25 32.66-19.18-.57-29.44-10.63-29.44-32.19V14.15h-5.32V1.8Zm71.59 0c22 0 26.31 8.74 26.31 19.57 0 7.4-5.89 12.62-13.77 13.76 6.55 1 12.44 6.65 12.44 13.49 0 4.08.57 6.46 2.27 6.46 1.43 0 2.19-1.14 2.19-3V48.9h6.36v5.23c0 7.88-3.32 15.19-13.86 15.19-12.44 0-18.42-6.55-18.42-17.66 0-8.64-1.05-10.73-9.5-10.73v14.71h5.79v12.54h-30.67V55.64h5.32v-41.4h-5.32V1.8Zm-6 28.49h4.27c5.51 0 9.12-2.66 9.12-7.69 0-5.6-3.13-8.45-8.64-8.45h-4.75ZM28.39 14.7l5.8 10.64-23.46 10.72 23.46 10.55-3.61 9.87L0 42.24v-13.3Zm318.7 14.24v13.3l-30.58 14.24-3.61-9.87 23.46-10.55-23.46-10.72 5.8-10.64Z" />
+        </svg>
+        </span>
+        <span class="is-none--gt-container">
+          <svg
+          xmlns="http://www.w3.org/2000/svg"
+          version="1.0"
+          viewBox="0 0 512 512"
+          width="48px">
+          <path
+            fill="currentcolor"
+            stroke="currentcolor"
+            d="M225.5 1c-1.1.5-3.5.9-5.3.9-4.1.1-22.9 4.5-30.7 7.2-63.1 22-114.7 72.3-142.7 139.4-6.4 15.2-11.8 33.8-16.7 57-4.1 19.7-5.4 64.5-2.6 90.8C33 346.2 49.8 390.1 76.8 425c6.2 7.9 23.9 26.4 30.7 32 8.1 6.7 26.1 18.7 35.1 23.6 28.1 15.1 58 24.3 91.9 28.3 5.5.7 13.6 1.7 18 2.2 8.8 1.2 33.9.7 48-.9 11-1.3 31.7-4.8 36.5-6.2 1.9-.5 8-2.3 13.5-3.9 21.3-6.1 47.2-17.8 67.5-30.5 8.8-5.4 23.7-15.8 28.5-19.7 10.2-8.4 24.5-21.3 31.4-28.2l8.4-8.5-2.2-2.9c-1.3-1.5-4.6-5.3-7.4-8.3-6.2-6.7-14.5-15.7-21.2-23.1-2.7-3-7.5-8.2-10.5-11.4-3-3.3-9.8-10.8-15.1-16.5-21.5-23.6-24.2-26.5-24.9-26.8-.3-.1-2 1.2-3.6 3-1.6 1.9-6.3 7.1-10.4 11.7-8.6 9.7-25.6 24.6-35.9 31.4-21.4 14.4-42.5 21.7-62.6 21.7-15.3-.1-29.3-3.3-42.5-10-22.8-11.5-41.9-35.5-51.5-64.7-4.2-12.8-4.3-13.4-5.9-22.8-3.8-22.9-4.6-39.2-2.6-55.6 2.7-22.7 3.3-26.5 5-33.2 7.9-30.9 16.7-48.6 32.4-65.6 16.8-17.9 41.1-24.9 65.1-18.6 30 7.8 50.7 36.3 55.5 76.3.5 4.6 1.2 8.7 1.5 9.3.4.5 25.1.9 62.6.9H474V9H364.2L357 26.7c-4 9.8-7.9 18.5-8.7 19.3-1.3 1.3-2.1.8-6.6-4.3-6-6.9-18.3-16.7-28.2-22.5-7.4-4.3-22.6-10.9-28.5-12.4-9.2-2.2-18.1-4.1-24-5-9-1.3-33.1-1.9-35.5-.8z" />
+        </svg>
+        </span>
+      </a>
+    </h1>
+    <link
+  href="/pagefind/pagefind-ui.css"
+  rel="stylesheet"
+  media="print"
+  onload="this.media='all'" />
+<style>
+  :root {
+    --pagefind-ui-primary: var(--theme-color--ink);
+    --pagefind-ui-text: var(--theme-color--ink);
+    --pagefind-ui-background: var(--theme-color--paper);
+    --pagefind-ui-border: var(--theme-color--outline);
+    --pagefind-ui-tag: var(--theme-color--block);
+    --pagefind-ui-border-radius: 2em;
+    --pagefind-ui-image-border-radius: var(--theme-border-radius);
+    --pagefind-ui-font: var(--theme-font--copy);
+  }
+  .pagefind-ui--reset {
+    position: absolute;
+  }
+  #search .pagefind-ui__search-input {
+    box-shadow: var(--theme-box-shadow--inset);
+    margin-bottom: var(--theme-spacing--1);
+  }
+  #search .pagefind-ui__search-clear {
+    background-color: transparent;
+  }
+  #search .pagefind-ui__drawer {
+    background-color: var(--theme-color--paper);
+    box-shadow: var(--theme-box-shadow--slim);
+    transform: translateY(-1.5px);
+    padding: 0 var(--theme-spacing--2);
+    max-height: calc(100vh - 4rem);
+    overflow-y: auto;
+  }
+  #search .pagefind-ui__result {
+    padding: var(--theme-spacing--1) 0 var(--theme-spacing--2) 0;
+  }
+  #search .pagefind-ui__result:focus-within,
+  #search .pagefind-ui__button:focus {
+    background-color: var(--theme-color--block);
+  }
+  #search .pagefind-ui__button {
+    border: none;
+  }
+</style>
+<script src="/pagefind/pagefind-ui.js" type="text/javascript" defer></script>
+<div id="search" class="l-header__search"></div>
+<script>
+  window.addEventListener("DOMContentLoaded", (event) => {
+    new PagefindUI({
+      element: "#search",
+      showSubResults: true,
+      pageSize: 3,
+      showImages: false,
+      showTags: true,
+    });
+  });
+</script>
+
+    <button
+      class="l-header__action e-button e-button--icon js-menu-toggle e-heading__3">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+        <path
+          stroke="var(--theme-color--ink)"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M13 5a1 1 0 1 0-2 0 1 1 0 0 0 2 0Zm0 7a1 1 0 1 0-2 0 1 1 0 0 0 2 0Zm0 7a1 1 0 1 0-2 0 1 1 0 0 0 2 0Z" />
+      </svg>
+      <span class="is-invisible">Open Menu.</span>
+    </button>
+  </div>
+</header>
+
+      <nav
+  class="l-layout__menu l-menu"
+  aria-label="Main Site Links."
+  id="site-menu"
+  hidden
+  tabindex="0">
+  <div class="l-menu__container">
+    <h2 class="l-menu__heading e-heading__2">
+      <a href="/" class="l-menu__home is-invisible">Menu</a>
+    </h2>
+    <button
+      class="l-menu__action e-button e-button--icon js-menu-toggle e-heading__2"
+      id="close-menu">
+      ❎
+      <span class="is-invisible">Close Menu.</span>
+    </button>
+    <ul class="l-menu__primary">
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/guides/">
+            Guides
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/sdc/tools/">
+            Tools
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/sdc/logic/">
+            Logic
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/sdc/decomposition/">
+            Decomposition
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/sdc/legacy/">
+            Legacy code
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/sdc/complexity/">
+            Complexity
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/tracks/servers/">
+            Servers
+          </a>
+        </li>
+    </ul>
+    <ul class="l-menu__secondary">
+        <li class="l-menu__item">
+          <a class="e-heading__3 l-menu__link" href="https://codeyourfuture.io">
+            CYF 👈🏾
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__3 l-menu__link" href="https://codeyourfuture.io/volunteers/">
+            Join Us 👋🏿
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__3 l-menu__link" href="https://codeyourfuture.io/donate/">
+            Support 🫶🏼
+          </a>
+        </li>
+    </ul>
+  </div>
+</nav>
+
+      <main
+        id="main"
+        class="l-layout__main l-main"
+        tabindex="0"
+        data-pagefind-body>
+        
+  
+    <solo-view tabindex="0">
+      
+
+
+      <div slot="header">
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+<header
+  class="c-page-header 
+    c-page-header--solo
+   c-page-header--toc">
+  
+  <div class="c-page-header__container">
+    <div class="c-page-header__breadcrumbs">
+      
+  <nav class="c-breadcrumbs">
+    <ol class="c-breadcrumbs__list">
+      
+        
+        
+          <li class="c-breadcrumbs__item">
+            <a
+              class="c-breadcrumbs__link"
+              href="/tracks/"data-pagefind-filter="module"><span class="c-breadcrumbs__text">Tracks</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                width="24px"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="c-breadcrumbs__icon">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+              </svg>
+            </a>
+          </li>
+        
+        
+          <li class="c-breadcrumbs__item">
+            <a
+              class="c-breadcrumbs__link"
+              href="/tracks/sql/"><span class="c-breadcrumbs__text">SQL</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                width="24px"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="c-breadcrumbs__icon">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+              </svg>
+            </a>
+          </li>
+      
+        <li class="c-breadcrumbs__item">
+          <a
+            class="c-breadcrumbs__link"
+            href="/tracks/sql/sprints/1/"data-pagefind-filter="sprint">Sprint 1</a
+          >
+        </li>
+      
+    </ol>
+  </nav>
+  
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Our Courses",
+      "item":"https://curriculum.codeyourfuture.io/"},
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Tracks",
+      "item":"https://curriculum.codeyourfuture.io/tracks/"},
+    {
+      "@type": "ListItem",
+      "position":  3 ,
+      "name": "SQL",
+      "item":"https://curriculum.codeyourfuture.io/tracks/sql/"},{
+      "@type": "ListItem",
+      "position":  5 ,
+      "name": "Sprint 1",
+      "item":"https://curriculum.codeyourfuture.io/tracks/sql/sprints/1/"},
+    {
+      "@type": "ListItem",
+      "position":  6 ,
+      "name": "prep",
+      "item":"https://curriculum.codeyourfuture.io/tracks/sql/sprints/1/"}
+  ]
+}
+</script>
+
+
+    </div>
+    <h1 class="c-page-header__title e-heading__1"data-pagefind-filter="view"
+        
+      data-pagefind-weight="10">
+      <span class="c-emoji">
+        
+        
+           
+            <time-total class="c-page-header__time"></time-total>
+      
+         
+        </span>
+        <span class="c-page-header__title-text">prep</span>
+               
+    </h1>
+    
+      
+        <h2 class="c-page-header__description e-heading__3">
+          Communicating with a database
+        </h2>
+      
+    
+    
+    
+    
+      <div class="c-page-header__toc " id="toc">
+        <section class="c-toc" aria-label="Table of contents.">
+          <a id="top" class="c-toc__top e-button e-button--icon" href="#toc"
+            >🔖 <span class="is-invisible">back to top</span></a
+          >
+          
+            <nav id="TableOfContents"></nav>
+          
+          
+            <ol>
+              
+                <li>
+                  <a href="#introduction-to-databases" data-pagefind-weight="5"
+                    >Introduction to Databases</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#what-is-a-relational-database" data-pagefind-weight="5"
+                    >What is a relational database?</a
+                  >
+                  📼
+                </li>
+              
+                <li>
+                  <a href="#introduction-to-postgresql" data-pagefind-weight="5"
+                    >Introduction to PostgreSQL</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#notes-and-exercises" data-pagefind-weight="5"
+                    >Notes and exercises</a
+                  >
+                  📼
+                </li>
+              
+                <li>
+                  <a href="#communicating-with-db" data-pagefind-weight="5"
+                    >Communicating with db</a
+                  >
+                  
+                </li>
+              
+            </ol>
+          
+          
+        </section>
+      </div>
+    
+
+  </div>
+</header>
+</div>
+      <div slot="blocks">
+        
+        
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="introduction-to-databases">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="introduction-to-databases">
+        Introduction to databases
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="30 minutes countdown" datetime="P30M">30&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Explain why databases are needed in Web Development</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <p>A database is a structured set of data held in a computer. It provides ways to store, retrieve and organize information.</p>
+<h3 id="why-do-we-need-them">Why do we need them?</h3>
+<p>In the past few weeks, you stored and retrieved data using files. This is fine for simple data but it can quickly become an issue as your application becomes more complex and needs to store and manipulate more complicated data. For example, imagine you are asked to develop a booking system for a medium-sized hotel. You will need to store the list of rooms available for booking, and as you add more features, you will need to save users information, the reviews they post, the bookings each user makes and payment information. You can see that the data you need to handle can become very complicated, especially when you need to consider that data are not static, as they can be updated or deleted. To work more effectively with data, we can then use a database, which presents the following benefits:</p>
+<ul>
+<li>A database defines a structure for your data and the relationships between entities</li>
+<li>A database provides convenient and performant ways to safely store and retrieve data</li>
+<li>A database provides a mechanism to check the validity of your data</li>
+</ul>
+<h3 id="different-types-of-database">Different types of database</h3>
+<p>There are many different kinds of database and different implementations. Sometimes, a database type is a better fit to certain use case or certain problems. The most well-known database types include relational database, key/value database, graph database and document database (also known as NoSQL). For this class, we will focus specifically on relational database as they are the most widely used and supported. You can consult <a
+  href="https://db-engines.com/en/ranking">DB-Engines</a> to see a ranking of the most used database, as you can see, there are a lot of them!</p>
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+
+  
+
+  
+  
+
+  
+    
+    
+  
+
+
+
+
+
+
+
+
+  
+<section
+  class="c-block c-block--youtube"
+  aria-labelledby="what-is-a-relational-database">
+  
+    <h2
+      class="c-block__title e-heading__2 is-invisible"
+      id="what-is-a-relational-database">
+      Youtube:
+      <a href="https://www.youtube.com/watch?v=OqjJjpjDRLc">What is a relational database?</a>
+    </h2>
+  
+  <div class="c-block__content">
+    <youtube-player data-src="https://www.youtube.com/watch?v=OqjJjpjDRLc"></youtube-player>
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="introduction-to-postgresql">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="introduction-to-postgresql">
+        Introduction to PostgreSQL
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="30 minutes countdown" datetime="P30M">30&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Define what SQL is and what it is used for</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Define an RDBMS</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Validate a PostgreSQL installation</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <p><em>&ldquo;PostgreSQL is a powerful, open source object-relational database system that uses and extends the SQL language combined with many features that safely store and scale the most complicated data workloads. The origins of PostgreSQL date back to 1986 as part of the POSTGRES project at the University of California at Berkeley and has more than 30 years of active development on the core platform.&rdquo;</em> (source: <a
+  href="https://www.postgresql.org/about/">postgresql.org</a>)</p>
+<h3 id="what-is-sql">What is SQL?</h3>
+<ul>
+<li>Pronounced S-Q-L or sequel</li>
+<li>Stands for Structured Query Language</li>
+<li>SQL is the standard language used to communicate with relational database</li>
+<li>SQL statements are used to query, create, update, delete records in a database as well as many other tasks</li>
+<li>SQL statements are executed by a RDBMS.</li>
+</ul>
+<h3 id="what-is-an-rdbms">What is an RDBMS?</h3>
+<ul>
+<li>Stands for Relational Database Management System</li>
+<li>It is a program that processes SQL statements to manage a relational database</li>
+<li>PostgreSQL is an RDBMS.</li>
+</ul>
+<h3 id="what-characterizes-a-relational-database">What characterizes a relational database?</h3>
+<p>As mentioned previously, a relational database is a specific type of database. Data is stored in <em>tables (relations)</em> of <em>rows (tuples)</em> and <em>columns (attributes)</em> as per the example below:</p>
+<p>
+
+  <figure>
+      <img
+        loading="lazy"
+        src="/module/databases/introduction-to-postgresql/table-diagram.png"alt="table-diagram" data-pagefind-index-attrs="table-diagram"/></figure></p>
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+
+  
+
+  
+  
+
+  
+    
+    
+  
+
+
+
+
+
+
+
+
+  
+<section
+  class="c-block c-block--youtube"
+  aria-labelledby="notes-and-exercises">
+  
+    <h2
+      class="c-block__title e-heading__2 is-invisible"
+      id="notes-and-exercises">
+      Youtube:
+      <a href="https://www.youtube.com/watch?v=cZyYyXltHa0">Notes and exercises</a>
+    </h2>
+  
+  <div class="c-block__content">
+    <youtube-player data-src="https://www.youtube.com/watch?v=cZyYyXltHa0"></youtube-player>
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="communicating-with-db">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="communicating-with-db">
+        Communicating with the database using SQL
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="120 minutes countdown" datetime="P120M">120&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Describe what <code>tables</code>, <code>rows</code> and <code>columns</code> are used for in a relational database</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Retrieve data from a table using PostgreSQL</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Use expressions to manipulate the results of queries</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Retrieve data from a table using conditionals in PostgreSQL</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Insert new data into existing tables</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <h2 id="code-along-with-video-mentors">👩🏽‍✈️👨🏾‍✈️Code along with video mentors</h2>
+
+
+
+<tab-panels class="c-tabs">
+  <div class="c-tabs__list" id="communicating-with-db" role="tablist"><button
+          data-toggle="tab"
+          id="tab-label-communicating-with-db-0"
+          class="c-tabs__tab e-heading__5 space 
+            is-active"
+          role="tab"
+          aria-controls="communicating-with-db-0"
+          aria-selected="true">
+          setup select statement
+        </button><button
+          data-toggle="tab"
+          id="tab-label-communicating-with-db-1"
+          class="c-tabs__tab e-heading__5 space "
+          role="tab"
+          aria-controls="communicating-with-db-1"
+          aria-selected="false">
+          selecting columns
+        </button><button
+          data-toggle="tab"
+          id="tab-label-communicating-with-db-2"
+          class="c-tabs__tab e-heading__5 space "
+          role="tab"
+          aria-controls="communicating-with-db-2"
+          aria-selected="false">
+          psql commands
+        </button><button
+          data-toggle="tab"
+          id="tab-label-communicating-with-db-3"
+          class="c-tabs__tab e-heading__5 space "
+          role="tab"
+          aria-controls="communicating-with-db-3"
+          aria-selected="false">
+          where clauses
+        </button><button
+          data-toggle="tab"
+          id="tab-label-communicating-with-db-4"
+          class="c-tabs__tab e-heading__5 space "
+          role="tab"
+          aria-controls="communicating-with-db-4"
+          aria-selected="false">
+          distinct ordering limits
+        </button></div>
+  <div class="c-tabs__group" id="communicating-with-db">
+        <div
+          id="communicating-with-db-0"
+          class="c-tabs__panel is-active"
+          role="tabpanel"
+          data-heading="setup select statement"
+          aria-labelledby="tab-label-communicating-with-db-0"><section
+  class="c-block c-block--youtube"
+  aria-labelledby="warning-name-is-empty">
+  <div class="c-block__content">
+    <youtube-player data-src="https://www.youtube.com/watch?v=jpCUG_NH_ew"></youtube-player>
+  </div>
+</section>
+</div>
+        <div
+          id="communicating-with-db-1"
+          class="c-tabs__panel "
+          role="tabpanel"
+          data-heading="selecting columns"
+          aria-labelledby="tab-label-communicating-with-db-1"><section
+  class="c-block c-block--youtube"
+  aria-labelledby="warning-name-is-empty">
+  <div class="c-block__content">
+    <youtube-player data-src="https://www.youtube.com/watch?v=cHM_nSSIyp8"></youtube-player>
+  </div>
+</section>
+</div>
+        <div
+          id="communicating-with-db-2"
+          class="c-tabs__panel "
+          role="tabpanel"
+          data-heading="psql commands"
+          aria-labelledby="tab-label-communicating-with-db-2"><section
+  class="c-block c-block--youtube"
+  aria-labelledby="warning-name-is-empty">
+  <div class="c-block__content">
+    <youtube-player data-src="https://www.youtube.com/watch?v=folFY2yrvBg"></youtube-player>
+  </div>
+</section>
+</div>
+        <div
+          id="communicating-with-db-3"
+          class="c-tabs__panel "
+          role="tabpanel"
+          data-heading="where clauses"
+          aria-labelledby="tab-label-communicating-with-db-3"><section
+  class="c-block c-block--youtube"
+  aria-labelledby="warning-name-is-empty">
+  <div class="c-block__content">
+    <youtube-player data-src="https://www.youtube.com/watch?v=DpS5dlIiHWU"></youtube-player>
+  </div>
+</section>
+</div>
+        <div
+          id="communicating-with-db-4"
+          class="c-tabs__panel "
+          role="tabpanel"
+          data-heading="distinct ordering limits"
+          aria-labelledby="tab-label-communicating-with-db-4"><section
+  class="c-block c-block--youtube"
+  aria-labelledby="warning-name-is-empty">
+  <div class="c-block__content">
+    <youtube-player data-src="https://www.youtube.com/watch?v=Ci4Dspp8h1A"></youtube-player>
+  </div>
+</section>
+</div></div>
+</tab-panels>
+
+<hr>
+<h2 id="the-psql-utility">The PSQL utility</h2>
+<p>We use SQL to perform actions on the database and initially we can use a terminal-like utility to do this. The utility is named <code>psql</code> and is run using the command:</p>
+<pre tabindex="0"><code>psql &lt;dbname&gt; &lt;username&gt;</code></pre><p>The command prompt from psql is the database name currently connected:</p>
+<pre tabindex="0"><code>my_hotel=&gt;</code></pre><p>In psql, you can use the command <code>help</code> to show the help menu. Within the command prompt, you can enter SQL statements and run them against PostgreSQL. To quit psql, enter the command <code>\q</code>.</p>
+<p>Download the following file to a directory on your computer. This file creates the sample data you can use for the following sections. To do this, click the file to open it in a github formatted page, then right click the Raw button in the bar just above the code and select Save As (or Save Link As or similar) to save it:</p>
+<ul>
+<li><a
+  href="https://github.com/CodeYourFuture/Module-SQL/blob/main/prep-resources/build-hotel.sql"><code>build-hotel.sql</code></a></li>
+</ul>
+<p>Once you have the file downloaded to a known directory, execute the file <code>build-hotel.sql</code> from <code>psql</code> as shown below (replace <code>/your/sql/path/</code> with the path to the download directory used above):</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-SQL" data-lang="SQL"><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">\</span>include <span style="color:#f92672">/</span>your<span style="color:#f92672">/</span><span style="color:#66d9ef">sql</span><span style="color:#f92672">/</span>path<span style="color:#f92672">/</span>build<span style="color:#f92672">-</span>hotel.<span style="color:#66d9ef">sql</span></span></span></code></pre></div><p>Check that you have built all the required tables:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">\</span>dt</span></span></code></pre></div><p>You should see a listing of your tables as follows (with your own username as owner):</p>
+<pre tabindex="0"><code>            List of relations
+    Schema |     Name      | Type  | Owner
+    --------+---------------+-------+-------
+    public | customers     | table | keith
+    public | invoices      | table | keith
+    public | reservations  | table | keith
+    public | room_types    | table | keith
+    public | rooms         | table | keith
+    (5 rows)</code></pre><p>Here is the table <a
+  href="https://mermaid.js.org/syntax/entityRelationshipDiagram.html">diagram</a> of the hotel database:</p>
+<style>
+  .mermaid svg {
+    height: initial;
+  }
+  .mermaid {
+    margin-bottom: var(--theme-spacing--gutter);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .mermaid[data-processed] {
+    opacity: 1;
+  }
+</style>
+<div class="mermaid">erDiagram
+
+room_types ||..|| rooms : "IS_A"
+customers ||--o{ reservations : "BOOKS"
+rooms ||--o{ reservations : "HAS"
+reservations ||--|{ invoices : "HAS"
+
+room_types {
+    string room_type PK
+    decimal def_rate
+}
+
+rooms {
+    int room_no PK
+    decimal rate
+    string room_type FK
+    int no_guests
+}
+
+customers {
+    int id PK
+    string name
+    string email
+    string phone
+    string address
+    string city
+    string postcode
+    string country
+}
+
+reservations {
+    int id PK
+    int cust_id FK
+    int room_no FK
+    date checkin_date
+    date checkout_date
+    int no_guests
+    date booking_date
+}
+
+invoices {
+    int id PK
+    int res_id FK
+    decimal total
+    date invoice_date
+    boolean paid
+}</div>
+
+<script type="module" src="/scripts/mermaid-observer.min.js" defer></script>
+<h2 id="the-select-statement">The SELECT Statement</h2>
+<p>We are first going to look at retrieving data from the database so we can examine it and later, use it in our applications.</p>
+<p>To get data out of a table you use the SELECT statement (or command):</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span> ... <span style="color:#66d9ef">FROM</span> ...;</span></span></code></pre></div><p>For example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span> name, phone, country <span style="color:#66d9ef">FROM</span> customers;</span></span></code></pre></div><p>SQL commands entered in the psql command line tool are terminated with a semicolon (;). The SQL command can extend across several lines, but each keyword, name or value cannot be split over more than one line. For example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span> name,
+</span></span><span style="display:flex;"><span>       phone,
+</span></span><span style="display:flex;"><span>       country
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">FROM</span>
+</span></span><span style="display:flex;"><span>       customers;</span></span></code></pre></div><p>is the same as the previous example.</p>
+<p>You can use <code>SELECT * FROM ...</code> to return all the columns of the table. For example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span> <span style="color:#f92672">*</span> <span style="color:#66d9ef">FROM</span> rooms;</span></span></code></pre></div><p>This is also a useful command to see what columns exist in a table. You can also use the <code>\d &lt;table_name&gt;</code> psql command to describe the table.</p>
+<p>Note that the use of UPPER/lower case is only to emphasise and differentiate the SQL keywords (upper case) from the other names (lower case) e.g. column and table names. SQL keywords are not case-sensitive.</p>
+<h3 id="scrolling-the-results">Scrolling the Results</h3>
+<p>When you issue a <code>SELECT</code> that returns a lot of data <code>psql</code> displays it one screenful at a time. To get the next screenful just press the Space key. You can also use the Up and Down arrow keys for line-by-line control and you can go back one screen with the &lsquo;B&rsquo; key.</p>
+<p>When you have finished reading the output use the &lsquo;Q&rsquo; key to quit the display manager.</p>
+<pre tabindex="0"><code>    Space       Next screenful
+    &#39;B&#39;         Previous screenful
+    Down Arrow  Next line
+    Up Arrow    Previous line
+    &#39;Q&#39;         Quit back to prompt</code></pre><p><section class="c-note c-note--activity">
+  <h4 class="c-note__title e-heading__4">🕹️Test Your Skills</span>
+  </h4>
+  <div class="c-note__text "><ol>
+<li>List the name, phone and email of all customers</li>
+<li>List all the details of rooms</li>
+<li>List the customer id, checkin date and number of guests from reservations</li>
+</ol>
+</div>
+</section>
+
+
+git</p>
+<h2 id="some-useful-psql-commands">Some Useful <code>psql</code> Commands</h2>
+<p>The <code>psql</code> commands are not SQL and are specific to PostgreSQL (although most other RDBMS&rsquo;s have commands to perform similar jobs). These commands let you display information, execute system commands, etc. Use \? to display a summary of all the <code>psql</code> commands.</p>
+<p>Display a list of available tables in the database:</p>
+<pre><code>\dt
+</code></pre>
+<p>Display the definition of a table:</p>
+<pre><code>\d &lt;table name&gt;
+</code></pre>
+<p>Display help for SQL commands:</p>
+<pre><code>\h [command]
+</code></pre>
+<p>Display a summary of the psql (backslash) commands:</p>
+<pre><code>\?
+</code></pre>
+<p>Exit (quit) from psql:</p>
+<pre><code>\q
+</code></pre>
+<p>Note that <code>psql</code> commands ARE case sensitive, unlike SQL commands.</p>
+<section class="c-note c-note--activity">
+  <h4 class="c-note__title e-heading__4">🕹️Test Your Skills</span>
+  </h4>
+  <div class="c-note__text "><ol>
+<li>Display the definition of the <code>customers</code> table</li>
+<li>Display the help for the SELECT command (Note: we will not be covering ALL of this syntax!)</li>
+<li>Read the psql command help and find out what \dS does then try it</li>
+</ol>
+</div>
+</section>
+
+
+<h2 id="displaying-more-than-just-columns">Displaying More Than Just Columns</h2>
+<p>You can use expressions in SQL:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span> room_no, rate <span style="color:#f92672">*</span> <span style="color:#ae81ff">0</span>.<span style="color:#ae81ff">85</span> <span style="color:#66d9ef">FROM</span> rooms;
+</span></span><span style="display:flex;"><span><span style="color:#f92672">+</span><span style="color:#75715e">---------+-------------+
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#f92672">|</span> room_no <span style="color:#f92672">|</span> rate <span style="color:#f92672">*</span> <span style="color:#ae81ff">0</span>.<span style="color:#ae81ff">85</span> <span style="color:#f92672">|</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">+</span><span style="color:#75715e">---------+-------------+
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#f92672">|</span>     <span style="color:#ae81ff">101</span> <span style="color:#f92672">|</span>     <span style="color:#ae81ff">72</span>.<span style="color:#ae81ff">2500</span> <span style="color:#f92672">|</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">|</span>     <span style="color:#ae81ff">102</span> <span style="color:#f92672">|</span>     <span style="color:#ae81ff">72</span>.<span style="color:#ae81ff">2500</span> <span style="color:#f92672">|</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">|</span>     <span style="color:#ae81ff">103</span> <span style="color:#f92672">|</span>     <span style="color:#ae81ff">72</span>.<span style="color:#ae81ff">2500</span> <span style="color:#f92672">|</span>
+</span></span><span style="display:flex;"><span>  ...</span></span></code></pre></div><p>Use a <strong>column alias</strong> to give the expression a meaningful name:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span> room_no,
+</span></span><span style="display:flex;"><span>       rate <span style="color:#f92672">*</span> <span style="color:#ae81ff">0</span>.<span style="color:#ae81ff">85</span> <span style="color:#66d9ef">AS</span> discounted_rate
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">FROM</span> rooms;
+</span></span><span style="display:flex;"><span><span style="color:#f92672">+</span><span style="color:#75715e">---------+-----------------+
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#f92672">|</span> room_no <span style="color:#f92672">|</span> discounted_rate <span style="color:#f92672">|</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">+</span><span style="color:#75715e">---------+-----------------+
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#f92672">|</span>     <span style="color:#ae81ff">101</span> <span style="color:#f92672">|</span>         <span style="color:#ae81ff">72</span>.<span style="color:#ae81ff">2500</span> <span style="color:#f92672">|</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">|</span>     <span style="color:#ae81ff">102</span> <span style="color:#f92672">|</span>         <span style="color:#ae81ff">72</span>.<span style="color:#ae81ff">2500</span> <span style="color:#f92672">|</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">|</span>     <span style="color:#ae81ff">103</span> <span style="color:#f92672">|</span>         <span style="color:#ae81ff">72</span>.<span style="color:#ae81ff">2500</span> <span style="color:#f92672">|</span></span></span></code></pre></div><p>Here, the query uses the alias as the column heading. Aliases can also be used in other contexts - more on this later&hellip;</p>
+<hr>
+<h2 id="expressions-in-sql">Expressions in SQL</h2>
+<p>As with Javascript you can use a variety of &lsquo;operators&rsquo; to define expressions in SQL.</p>
+<p>Arithmetic:</p>
+<pre><code>*   Multiply
+
+/   Divide
+
++   Add
+
+-   Subtract
+
+%   Modulo (remainder)
+
+(...) Parentheses (to override precedence)
+</code></pre>
+<p>String:</p>
+<pre><code>||  Concatenation
+</code></pre>
+<p>For example, to display the weekly rate for a room (with 10% weekly discount):</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span> room_no, room_type, rate <span style="color:#f92672">*</span> <span style="color:#ae81ff">7</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">0</span>.<span style="color:#ae81ff">90</span> <span style="color:#66d9ef">from</span> rooms;</span></span></code></pre></div><p>You can change the column heading using a <strong>column alias</strong>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span> room_no, room_type, rate <span style="color:#f92672">*</span> <span style="color:#ae81ff">7</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">0</span>.<span style="color:#ae81ff">90</span> <span style="color:#66d9ef">as</span> weekly_rate <span style="color:#66d9ef">from</span> rooms;</span></span></code></pre></div><p>Use string concatenation to glue character data together:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span> <span style="color:#e6db74">&#39;Customer name = &#39;</span> <span style="color:#f92672">||</span> name <span style="color:#66d9ef">FROM</span> customers;</span></span></code></pre></div><hr>
+<h2 id="choosing-the-rows">Choosing the Rows</h2>
+<p>You can choose which rows to display by specifying some condition that must be matched:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span> id, name, phone, email, country
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">FROM</span> customers
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">WHERE</span> country <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;France&#39;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span> id  <span style="color:#f92672">|</span>        name        <span style="color:#f92672">|</span>      phone       <span style="color:#f92672">|</span>            email            <span style="color:#f92672">|</span> country
+</span></span><span style="display:flex;"><span><span style="color:#75715e">-----+--------------------+------------------+-----------------------------+---------
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span> <span style="color:#ae81ff">9</span>   <span style="color:#f92672">|</span> Laurence Lebihan   <span style="color:#f92672">|</span> <span style="color:#ae81ff">91</span>.<span style="color:#ae81ff">24</span>.<span style="color:#ae81ff">4555</span>       <span style="color:#f92672">|</span> laurence.lebihan<span style="color:#f92672">@</span>xmzx.net   <span style="color:#f92672">|</span> France
+</span></span><span style="display:flex;"><span> <span style="color:#ae81ff">12</span>  <span style="color:#f92672">|</span> Carine Schmitt     <span style="color:#f92672">|</span> <span style="color:#ae81ff">40</span>.<span style="color:#ae81ff">32</span>.<span style="color:#ae81ff">2555</span>       <span style="color:#f92672">|</span> carine.schmitt<span style="color:#f92672">@</span>dftu.net     <span style="color:#f92672">|</span> France
+</span></span><span style="display:flex;"><span> <span style="color:#ae81ff">15</span>  <span style="color:#f92672">|</span> Janine Labrune     <span style="color:#f92672">|</span> <span style="color:#ae81ff">40</span>.<span style="color:#ae81ff">67</span>.<span style="color:#ae81ff">8555</span>       <span style="color:#f92672">|</span> janine.labrune<span style="color:#f92672">@</span>dlsh.net     <span style="color:#f92672">|</span> France
+</span></span><span style="display:flex;"><span> <span style="color:#ae81ff">25</span>  <span style="color:#f92672">|</span> Mary Saveley       <span style="color:#f92672">|</span> <span style="color:#ae81ff">78</span>.<span style="color:#ae81ff">32</span>.<span style="color:#ae81ff">5555</span>       <span style="color:#f92672">|</span> mary.saveley<span style="color:#f92672">@</span>yppl.net       <span style="color:#f92672">|</span> France
+</span></span><span style="display:flex;"><span> <span style="color:#ae81ff">34</span>  <span style="color:#f92672">|</span> Martine Rancé      <span style="color:#f92672">|</span> <span style="color:#ae81ff">20</span>.<span style="color:#ae81ff">16</span>.<span style="color:#ae81ff">1555</span>       <span style="color:#f92672">|</span> martine.rancé<span style="color:#f92672">@</span>xeqs.net      <span style="color:#f92672">|</span> France
+</span></span><span style="display:flex;"><span> <span style="color:#ae81ff">35</span>  <span style="color:#f92672">|</span> Marie Bertrand     <span style="color:#f92672">|</span> (<span style="color:#ae81ff">1</span>) <span style="color:#ae81ff">42</span>.<span style="color:#ae81ff">34</span>.<span style="color:#ae81ff">2555</span>   <span style="color:#f92672">|</span> marie.bertrand<span style="color:#f92672">@</span>glut.net     <span style="color:#f92672">|</span> France
+</span></span><span style="display:flex;"><span> <span style="color:#ae81ff">49</span>  <span style="color:#f92672">|</span> Frédérique Citeaux <span style="color:#f92672">|</span> <span style="color:#ae81ff">88</span>.<span style="color:#ae81ff">60</span>.<span style="color:#ae81ff">1555</span>       <span style="color:#f92672">|</span> frédérique.citeaux<span style="color:#f92672">@</span>vekn.net <span style="color:#f92672">|</span> France
+</span></span><span style="display:flex;"><span> <span style="color:#ae81ff">59</span>  <span style="color:#f92672">|</span> Annette Roulet     <span style="color:#f92672">|</span> <span style="color:#ae81ff">61</span>.<span style="color:#ae81ff">77</span>.<span style="color:#ae81ff">6555</span>       <span style="color:#f92672">|</span> annette.roulet<span style="color:#f92672">@</span>lgha.net     <span style="color:#f92672">|</span> France
+</span></span><span style="display:flex;"><span> <span style="color:#ae81ff">62</span>  <span style="color:#f92672">|</span> Daniel Da Silva    <span style="color:#f92672">|</span> <span style="color:#f92672">+</span><span style="color:#ae81ff">33</span> <span style="color:#ae81ff">1</span> <span style="color:#ae81ff">46</span> <span style="color:#ae81ff">62</span> <span style="color:#ae81ff">7555</span> <span style="color:#f92672">|</span> daniel.da.silva<span style="color:#f92672">@</span>hijy.net    <span style="color:#f92672">|</span> France
+</span></span><span style="display:flex;"><span> <span style="color:#ae81ff">63</span>  <span style="color:#f92672">|</span> Daniel Tonini      <span style="color:#f92672">|</span> <span style="color:#ae81ff">30</span>.<span style="color:#ae81ff">59</span>.<span style="color:#ae81ff">8555</span>       <span style="color:#f92672">|</span> daniel.tonini<span style="color:#f92672">@</span>mxvw.net      <span style="color:#f92672">|</span> France
+</span></span><span style="display:flex;"><span> <span style="color:#ae81ff">91</span>  <span style="color:#f92672">|</span> Laurence Lebihan   <span style="color:#f92672">|</span> <span style="color:#ae81ff">91</span>.<span style="color:#ae81ff">24</span>.<span style="color:#ae81ff">4555</span>       <span style="color:#f92672">|</span> laurence.lebihan<span style="color:#f92672">@</span>xmzx.net   <span style="color:#f92672">|</span> France
+</span></span><span style="display:flex;"><span> <span style="color:#ae81ff">92</span>  <span style="color:#f92672">|</span> Paul Henriot       <span style="color:#f92672">|</span> <span style="color:#ae81ff">26</span>.<span style="color:#ae81ff">47</span>.<span style="color:#ae81ff">1555</span>       <span style="color:#f92672">|</span> paul.henriot<span style="color:#f92672">@</span>uwua.net       <span style="color:#f92672">|</span> France
+</span></span><span style="display:flex;"><span> <span style="color:#ae81ff">106</span> <span style="color:#f92672">|</span> Dominique Perrier  <span style="color:#f92672">|</span> (<span style="color:#ae81ff">1</span>) <span style="color:#ae81ff">47</span>.<span style="color:#ae81ff">55</span>.<span style="color:#ae81ff">6555</span>   <span style="color:#f92672">|</span> dominique.perrier<span style="color:#f92672">@</span>bdim.net  <span style="color:#f92672">|</span> France
+</span></span><span style="display:flex;"><span>(<span style="color:#ae81ff">13</span> <span style="color:#66d9ef">rows</span>)</span></span></code></pre></div><p>You can use comparison operators <code>=</code>, <code>&lt;</code>, <code>&gt;</code>, <code>&lt;=</code>, <code>&gt;=</code>, <code>!=</code> (or <code>&lt;&gt;</code>)</p>
+<p>Note: use only one = (equals) symbol to test for equality</p>
+<p>When comparing numbers no punctuation is needed around the value, for example, <code>WHERE rate &gt; 100</code>.</p>
+<p>When comparing character data or dates you must enclose the values in single quotes (apostrophes), for example, <code>WHERE name = 'Mary Saveley'</code>.</p>
+<p>Only the rows that match the comparison test (called a predicate) are returned by the query. The predicate can use columns not returned by the query,</p>
+<h3 id="combining-tests-in-a-predicate">Combining Tests in a Predicate</h3>
+<p>Use AND and OR to combine tests:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span> <span style="color:#f92672">*</span> <span style="color:#66d9ef">FROM</span> reservations
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">WHERE</span> room_no <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">200</span>
+</span></span><span style="display:flex;"><span>     <span style="color:#66d9ef">AND</span> room_no <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">300</span>
+</span></span><span style="display:flex;"><span>     <span style="color:#66d9ef">AND</span> checkin_date <span style="color:#f92672">&gt;=</span> <span style="color:#e6db74">&#39;2018-01-01&#39;</span>;</span></span></code></pre></div><p>This lists reservations for rooms on the second floor (rooms 200 - 299) since the start of 2018. Note the format of the date value - this conforms to the ISO 8601 standard and should be used in preference to any other format to avoid ambiguity.</p>
+<p>Another example - to find cheap or Premier rooms on floors 1 and 2 - we might try this to start with:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span> <span style="color:#f92672">*</span> <span style="color:#66d9ef">FROM</span> rooms
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">WHERE</span> room_type <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;PREMIER&#39;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">OR</span> rate <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">100</span>.<span style="color:#ae81ff">00</span>
+</span></span><span style="display:flex;"><span>     <span style="color:#66d9ef">AND</span> room_no <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">300</span>;</span></span></code></pre></div><p>This isn&rsquo;t quite right - it returns rooms on the 3rd and 4th floors. Why?</p>
+<h3 id="overriding-evaluation-order">Overriding Evaluation Order</h3>
+<p>Just like any programming language, SQL has an evaluation order (precedence). For example, multiply and divide take precedence over add and subtract, so that:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span> rate <span style="color:#f92672">+</span> <span style="color:#ae81ff">20</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">0</span>.<span style="color:#ae81ff">85</span> <span style="color:#66d9ef">from</span> rooms;</span></span></code></pre></div><p>is not the same as:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span> (rate <span style="color:#f92672">+</span> <span style="color:#ae81ff">20</span>) <span style="color:#f92672">*</span> <span style="color:#ae81ff">0</span>.<span style="color:#ae81ff">85</span> <span style="color:#66d9ef">from</span> rooms;</span></span></code></pre></div><p>We can override the normal precedence by using parentheses <code>(...)</code> around parts of the expression, just as in JavaScript.</p>
+<p>With compound predicates AND takes precedence over OR, so that to make the query give the intended results we need to use:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span> <span style="color:#f92672">*</span> <span style="color:#66d9ef">FROM</span> rooms
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">WHERE</span> (room_type <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;PREMIER&#39;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">OR</span> rate <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">100</span>.<span style="color:#ae81ff">00</span>)
+</span></span><span style="display:flex;"><span>     <span style="color:#66d9ef">AND</span> room_no <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">300</span>;</span></span></code></pre></div><hr>
+<h2 id="more-predicate-types">More Predicate Types</h2>
+<p>The BETWEEN operator has the form <code>a BETWEEN b AND c</code> : checks that a is in the range b - c inclusive. For example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span> ... <span style="color:#66d9ef">WHERE</span> price <span style="color:#66d9ef">BETWEEN</span> <span style="color:#ae81ff">100</span> <span style="color:#66d9ef">AND</span> <span style="color:#ae81ff">250</span> ...</span></span></code></pre></div><p>Note that the AND in this case is not combining multiple predicates, it&rsquo;s part of the BETWEEN operator.</p>
+<p>The IN operator, <code>a IN (b, c, d, ...)</code> checks if the value of a is equal to any of b, c, d, etc&hellip; For example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span> ... <span style="color:#66d9ef">WHERE</span> room_no <span style="color:#66d9ef">IN</span> (<span style="color:#ae81ff">201</span>, <span style="color:#ae81ff">202</span>, <span style="color:#ae81ff">204</span>, <span style="color:#ae81ff">206</span>) ...</span></span></code></pre></div><p>Both the BETWEEN and the IN operators can be inverted using:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span>  ... a <span style="color:#66d9ef">NOT</span> <span style="color:#66d9ef">BETWEEN</span> b <span style="color:#66d9ef">AND</span> <span style="color:#66d9ef">c</span> ...
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  ... a <span style="color:#66d9ef">NOT</span> <span style="color:#66d9ef">IN</span> (b, <span style="color:#66d9ef">c</span>, d, ...)</span></span></code></pre></div><p>The LIKE operator tests for a match against a wildcard string as <code>a LIKE b</code> where a is being tested and b is the wildcard string. The wildcard string contains text to be matched along with wildcard symbols &lsquo;%&rsquo; and &lsquo;_&rsquo;.</p>
+<ul>
+<li><code>%</code> (percent) matches any number of any characters</li>
+<li><code>_</code> (underscore) matches exactly one of any character</li>
+</ul>
+<p>For example:</p>
+<p><code>name LIKE 'A%'</code> matches names starting with &lsquo;A&rsquo;</p>
+<p><code>name LIKE '_a%'</code> matches names that have &lsquo;a&rsquo; as the 2nd character (note the initial underscore &lsquo;_&rsquo;)</p>
+<p><code>name LIKE '%ow%'</code> matches names containing the sequence &lsquo;ow&rsquo; anywhere in the name</p>
+<p>LIKE can be inverted using <code>a NOT LIKE b</code></p>
+<p>If you need to match for a string that includes one of the wildard characters you can use the &rsquo;escape&rsquo; character, which defaults to &lsquo;\&rsquo; (backslash). For example:</p>
+<p><code>str LIKE '% discount = 5\% %'</code> matches any value in str that contains &lsquo;discount = 5%&rsquo;</p>
+<p>LIKE is case sensitive in many SQL implementations so to make a case insensitive match you should either convert the tested value to either all upper or all lower case, for example:</p>
+<p><code>lower(name) LIKE '%b%'</code> matches any name that contains the letters B or b</p>
+<p>Note: PostgreSQL also has the non-standard operator ILIKE that can perform a case-insensitive comparison - but avoid this to make code more portable.</p>
+<section class="c-note c-note--activity">
+  <h4 class="c-note__title e-heading__4">🕹️Test Your Skills</span>
+  </h4>
+  <div class="c-note__text "><ol>
+<li>Which customers are from Norway?</li>
+<li>Which rooms can accommodate more than two people?</li>
+<li>Which invoices are dated after one month ago?</li>
+<li>How would last month&rsquo;s invoices change if we gave a discount of 15%</li>
+<li>List all customers whose second name starts with &lsquo;M&rsquo; (hint: there&rsquo;s a space before the second name)</li>
+</ol>
+</div>
+</section>
+
+
+<h3 id="using-sql-functions">Using SQL Functions</h3>
+<p>You can use the built-in functions of SQL just as you can in JavaScript, but note that they are different (this is true of most programming languages) but there are also differences between SQL implementations.</p>
+<p>You use functions to change values, usually of columns, wherever you can use a column, for example, in the selected list of values:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span> name, <span style="color:#66d9ef">length</span>(name) <span style="color:#66d9ef">AS</span> namelen, <span style="color:#66d9ef">upper</span>(email)
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">FROM</span> customers;</span></span></code></pre></div><p>This query also uses a column alias (namelen) to provide a meaningful column heading.</p>
+<p>Functions are available that operate on all different datatypes.</p>
+<p>Country names are mixed case so to make sure we always match regardless of the stored case we can use the <code>lower</code> function to find all customers from Manchester, UK:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span> <span style="color:#f92672">*</span> <span style="color:#66d9ef">FROM</span> customers
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">WHERE</span> <span style="color:#66d9ef">lower</span>(country) <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;uk&#39;</span>
+</span></span><span style="display:flex;"><span>     <span style="color:#66d9ef">AND</span> city <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Manchester&#39;</span>;</span></span></code></pre></div><p>Assuming room rates include VAT at 20%, list room rates after VAT increases to 23.5% (from 20%), but round to the nearest pound:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span> room_no, room_type, rate <span style="color:#66d9ef">AS</span> old_rate,
+</span></span><span style="display:flex;"><span>       round(rate <span style="color:#f92672">*</span> <span style="color:#ae81ff">100</span><span style="color:#f92672">/</span><span style="color:#ae81ff">120</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">123</span>.<span style="color:#ae81ff">5</span><span style="color:#f92672">/</span><span style="color:#ae81ff">100</span>) <span style="color:#66d9ef">AS</span> new_rate
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">FROM</span> rooms;</span></span></code></pre></div><p><em>For further information on SQL functions see the official PostgreSQL documentation at <a
+  href="https://www.postgresql.org/docs/12/functions.html">https://www.postgresql.org/docs/12/functions.html</a> (for version 12 - for other versions change 12 to the required version)</em></p>
+<hr>
+<h3 id="date-and-time-in-sql">Date and Time in SQL</h3>
+<p>In SQL dates and times are held in an internal format but are represented externally (when entering values and displaying them) as strings;</p>
+<ul>
+<li>Text date format: &lsquo;YYYY-MM-DD&rsquo; e.g. &lsquo;2018-07-21&rsquo; = 21 July 2018</li>
+<li>Time format: &lsquo;HH:mm:SS.ddd&rsquo; e.g. &lsquo;14:32&rsquo;</li>
+<li>Date/Time format: &lsquo;YYYY-MM-DD HH:mm:SS.ddd&rsquo; e.g. &lsquo;2018-07-21 15:26:04&rsquo;</li>
+</ul>
+<p>You can perform arithmetic on dates and times, for example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span> cust_id, room_no, checkin_date,
+</span></span><span style="display:flex;"><span>       checkout_date <span style="color:#f92672">-</span> checkin_date <span style="color:#66d9ef">AS</span> nights
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">FROM</span> reservations
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">WHERE</span> checkout_date <span style="color:#f92672">=</span> <span style="color:#66d9ef">current_date</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>;</span></span></code></pre></div><p>This query performs subtraction of one date from another (<code>checkout_date - checkin_date</code>) to calculate the number of nights the customer has stayed. It also performs addition (<code>current_date + 1</code>) to get tomorrow&rsquo;s date so that it lists all reservations that will be checking out tomorrow.</p>
+<p>Note: <code>current_date</code> is a postgres function that returns the current date.</p>
+<p>Also note that there are many ways to get the same result - you may explore those for yourself.</p>
+<p>You can also represent time intervals but the representations can be complicated and we shall not cover them here.</p>
+<section class="c-note c-note--activity">
+  <h4 class="c-note__title e-heading__4">🕹️Test Your Skills</span>
+  </h4>
+  <div class="c-note__text "><ol>
+<li>Write a query to check that all booking dates are before their checkin dates</li>
+<li>We plan to offer a discount of 10% on all Premier and Premier Plus rooms next month. How much would we gain on each room if occupancy rose by 5 nights over the month.</li>
+<li>List all reservations for this month and the number of nights booked.</li>
+</ol>
+</div>
+</section>
+
+
+<h2 id="eliminating-duplicates">Eliminating Duplicates</h2>
+<p>&ldquo;Which nationalities visit our hotel?&rdquo;:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span> country <span style="color:#66d9ef">FROM</span> customers;</span></span></code></pre></div><p>But how many values do you see returned for each country? If two customers come from a particular country that country will appear twice in the output. If more than two come from the same country then&hellip; But we only need to know the different countries.</p>
+<p>To see each country only once, use the keyword DISTINCT, as follows:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span> <span style="color:#66d9ef">DISTINCT</span> country <span style="color:#66d9ef">FROM</span> customers;</span></span></code></pre></div><p>The keyword DISTINCT must appear immediately after the keyword SELECT. If more than one column is selected then DISTINCT applies to the combined values of those columns.</p>
+<hr>
+<h2 id="ordering-the-returned-rows">Ordering the Returned Rows</h2>
+<p>If you want to see the data in a specific order, e.g. &ldquo;List all customers alphabetically by name within each country&rdquo;:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span> id, name, phone, email, country
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">FROM</span> customers
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">ORDER</span> <span style="color:#66d9ef">BY</span> country, name;</span></span></code></pre></div><p>You can can add ASC (ascending, the default) or DESC (descending) after each column name in the ORDER BY clause to control the direction of sorting.</p>
+<p>For example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span> id, name, country, city
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">FROM</span> customers
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">ORDER</span> <span style="color:#66d9ef">BY</span> country <span style="color:#66d9ef">DESC</span>, city;</span></span></code></pre></div><p>This will sort the data into descending alphabetic order of country then ascending order of city name within each country. The output will look something like this:</p>
+<pre tabindex="0"><code> id  |          name           |   country    |       city
+-----+-------------------------+--------------+-------------------
+  28 | Kelvin Leong            | USA          | Allentown
+  96 | Juri Yoshido            | USA          | Boston
+ 132 | Valarie Franco          | USA          | Boston
+ 100 | Allen Nelson            | USA          | Brickhaven
+  46 | Miguel Barajas          | USA          | Brickhaven
+  43 | Leslie Taylor           | USA          | Brickhaven
+  37 | Julie King              | USA          | Bridgewater
+ 130 | Sue Taylor              | USA          | Brisbane
+ 124 | Steve Thompson          | USA          | Burbank
+  29 | Juri Hashimoto          | USA          | Burlingame
+  36 | Jerry Tseng             | USA          | Cambridge
+  70 | Marta Hernandez         | USA          | Cambridge
+ 112 | Dan Lewis               | USA          | Glendale
+  52 | Mary Young              | USA          | Glendale
+  13 | Jean King               | USA          | Las Vegas
+  89 | Brian Chandler          | USA          | Los Angeles
+  97 | Dorothy Young           | USA          | Nashua
+  83 | William Brown           | USA          | Newark
+ 120 | Violeta Benitez         | USA          | New Bedford
+  79 | Wing Huang              | USA          | New Bedford
+ 116 | Leslie Murphy           | USA          | New Haven
+       . . .</code></pre><p>Note: you can order by columns that are not returned by the query.</p>
+<h3 id="limiting-the-number-of-rows">Limiting the Number of Rows</h3>
+<p>You can reduce the number of rows returned by using the LIMIT clause at the end of the query:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span> id, name, phone, email, country
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">FROM</span> customers
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">ORDER</span> <span style="color:#66d9ef">BY</span> country, name
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">LIMIT</span> <span style="color:#ae81ff">20</span>;</span></span></code></pre></div><p>The LIMIT clause is not normally used without the ORDER BY clause - without the ORDER BY clause rows can be returned in any arbitrary sequence.</p>
+<p>Not all SQL implementations of SQL support LIMIT, some use TOP while Oracle uses ROWNUM.</p>
+<section class="c-note c-note--activity">
+  <h4 class="c-note__title e-heading__4">🕹️Test Your Skills</span>
+  </h4>
+  <div class="c-note__text "><ol>
+<li>List the different room types and rates for all rooms avoiding duplicates.</li>
+<li>List customers&rsquo; names addresses and phone numbers in alphabetic order of names.</li>
+<li>List customers&rsquo; names, addresses, city and country in ascending order of country then reverse order of city within country.</li>
+<li>List the room number, type and the cost of staying 5 nights in each of the top 15 most expensive rooms.</li>
+</ol>
+</div>
+</section>
+
+
+<h2 id="summary">Summary</h2>
+<p>In this lesson you have learned the use of databases and how relational databases are structured. You&rsquo;ve also learned how to use basic single-table query commands in SQL and some of the special &lsquo;backslash&rsquo; commands in <code>psql</code>. You have used the SELECT command to control the columns and values that are returned, the DISTINCT, ORDER BY and LIMIT clauses to control the order and numbers of rows returned and you&rsquo;ve used the WHERE clause to choose the rows that you access.</p>
+<p>Next time we shall go on to more complex query constructs including joins, insert, updates and deletes along with incorporating SQL into a node.js server.</p>
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+      </div>
+      <nav slot="nav">
+        <a href="#" class="e-button c-solo-view__back">&larr; Back</a>
+        <a href="#" class="e-button c-solo-view__next">Next &rarr;</a>
+      </nav>
+    </solo-view>
+    
+    <script src="/scripts/solo-view.min.js" defer></script>
+    
+    <script src="/scripts/time-total.min.js" defer></script>
+  
+
+
+        
+
+  <footer class="c-page-footer">
+    <nav class="c-page-footer__nav">
+      
+      
+      <span class="c-page-footer__this">prep</span>
+      
+        →<a
+          class="c-page-footer__next c-page-footer__link e-link"
+          href="/tracks/sql/sprints/1/backlog/"
+          >backlog</a
+        >
+      
+    </nav>
+  </footer>
+
+
+      </main><footer class="l-layout__footer l-footer">
+  <a
+    class="l-footer__github e-button e-button--icon"
+    href="https://github.com/CodeYourFuture/curriculum/">
+    <svg
+  focusable="false"
+  class="e-button__icon"
+  role="presentation"
+  width="96"
+  viewbox="0 0 98 96"
+  xmlns="http://www.w3.org/2000/svg">
+  <path
+    fill-rule="evenodd"
+    clip-rule="evenodd"
+    d="M48.854 0C21.839 0 0 22 0 49.217c0 21.756 13.993 40.172 33.405 46.69 2.427.49 3.316-1.059 3.316-2.362 0-1.141-.08-5.052-.08-9.127-13.59 2.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015 4.934.326 7.523 5.052 7.523 5.052 4.367 7.496 11.404 5.378 14.235 4.074.404-3.178 1.699-5.378 3.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283 0-5.378 1.94-9.778 5.014-13.2-.485-1.222-2.184-6.275.486-13.038 0 0 4.125-1.304 13.426 5.052a46.97 46.97 0 0 1 12.214-1.63c4.125 0 8.33.571 12.213 1.63 9.302-6.356 13.427-5.052 13.427-5.052 2.67 6.763.97 11.816.485 13.038 3.155 3.422 5.015 7.822 5.015 13.2 0 18.905-11.404 23.06-22.324 24.283 1.78 1.548 3.316 4.481 3.316 9.126 0 6.6-.08 11.897-.08 13.526 0 1.304.89 2.853 3.316 2.364 19.412-6.52 33.405-24.935 33.405-46.691C97.707 22 75.788 0 48.854 0z"
+    fill="currentColor" />
+</svg>
+
+    <span class="is-invisible">Find us on GitHub</span>
+  </a>
+  <p class="l-footer__impressum e-heading__6">
+    This
+    <a href="https://github.com/CodeYourFuture/curriculum/">free and open source programme</a>
+    is a project of
+    <a href="https://codeyourfuture.io/">Code Your Future</a>
+    <br />
+    Creative Commons Attribution-ShareAlike 4.0
+  </p>
+  <dark-mode class="l-footer__mode"
+    ><button
+      slot="button"
+      id="mode-toggle"
+      type="button"
+      class="e-button e__button--toggle e-button--icon">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="e-icon e__button__icon e-icon--moon">
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
+      </svg>
+      <span class="is-invisible">Toggle between light and dark mode</span>
+    </button></dark-mode
+  >
+</footer>
+
+
+
+<script src="/scripts/app.min.js" defer></script>
+
+<script src="/scripts/youtube-player.min.js" defer></script>
+
+<script src="/scripts/tab-panels.min.js" type="module" defer></script>
+
+<script src="/scripts/dark-mode.min.js"></script>
+
+<script src="/scripts/alert-message.min.js" defer></script>
+
+
+
+
+
+
+
+</div>
+  </body>
+</html>

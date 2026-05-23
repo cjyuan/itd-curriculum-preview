@@ -1,0 +1,3856 @@
+<!DOCTYPE html>
+
+
+
+
+<html lang="en" class="p-prep"><head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  <title data-pagefind-meta="title">
+    
+      Intro to Programming 
+    
+      Structuring and Testing Data 
+    
+      Sprint 1 
+    
+    Prep
+  </title>
+  
+    <meta
+      name="description"
+      content=" CYF Courses: **Prerequisites:** a terminal, basic arithmetic." />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+  <style>
+    body,
+    html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      animation: fade-in 300ms;
+    }
+    @keyframes fade-in {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  </style>
+  
+  
+  <link
+    rel="stylesheet"
+    href="/bundled.min.b6a4520237559385268d63a9daa81d96.css"
+    media="print"
+    onload="this.media='all'" />
+
+  
+  
+    
+    
+    <link
+      rel="stylesheet"
+      href="/custom.min.8ded6a1a88bc7cc98bdef8dc33d15f3a.css"
+      media="print"
+      onload="this.media='all'" />
+  
+
+
+  <noscript>
+    <link rel="stylesheet" href="/bundled.min.b6a4520237559385268d63a9daa81d96.css" />
+  </noscript>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&amp;display=swap"
+    rel="stylesheet"
+    media="print"
+    onload="this.media='all'" />
+
+  <link rel="shortcut icon" href="https://curriculum.codeyourfuture.io/favicon.ico" />
+  <meta name="theme-color" content="#e3ddeef2" />
+  <link rel="manifest" href="https://curriculum.codeyourfuture.io/manifest.json" />
+</head>
+<body>
+    <a class="c-skip-link e-button" id="skip-link" href="#main">Skip to main</a>
+    <div class="l-layout">
+      <header class="l-layout__header l-header">
+  <div class="l-header__container">
+    <h1 class="l-header__heading e-heading__6" data-pagefind-ignore>
+      <a class="l-header__home" href="/"
+        ><span class="is-invisible"
+          >itp prep CYF Courses</span
+        >
+        <span class="is-none--lt-container">
+          <svg
+          xmlns="http://www.w3.org/2000/svg"
+          title="Code Your Future."
+          viewBox="0 0 621.64 155.81"
+          width="140px"
+          focusable="false"
+          role="img">
+          <path
+            fill="var(--theme-color--brand)"
+            d="M103.37 56.51C96.91 63.64 87.03 69.9 74.6 69.9c-20.14 0-33.52-12.91-33.52-34.09C41.08 13.97 57.5.87 69.94.87c9.5 0 13.77 5.32 14.63 6.46l2.18-5.27h14.91v27h-17c-.28-6.18-3.32-12-10.06-12s-11.3 8.45-11.3 18.8c0 9.4 4.84 17.86 13.86 17.86 8 0 14.24-8.36 15.1-9.31Zm2.88-21.85C106.25 14.15 119.92 0 139.58 0c23.26 0 34.09 14 34.09 35.32s-12 34.57-33.43 34.57c-19.88 0-33.99-11.49-33.99-35.23Zm43.68.66c0-11.49-3.13-20.7-10.45-20.7-5.79-.09-9.78 8.26-9.78 20 0 12.44 4.47 20.32 10.54 20.32s9.65-7.88 9.65-19.62Zm27.49 20.23h5.89V14.34h-5.89V1.8h29c23 0 36.09 14.15 36.09 32.29 0 21.65-13.11 34.09-36.47 34.09h-28.62Zm29 0c10.03-.19 14.21-9.59 14.21-21.49 0-10.16-4.18-19.75-14.25-19.75h-3.61v41.24ZM303.04 1.8v21h-16.43v-8.46h-15.19v13.1h18v12.62h-18v15.49h15.19v-8.83h16.43v21.46h-57.26V55.55h6V14.34h-6V1.8Z" />
+          <path
+            fill="var(--theme-color--ink)"
+            d="M274.42 87.82v21h-16.8v-8.45h-14.37v16.52h18v12.63h-18v12.04h9.68v12.63h-35.29v-12.63h5.89v-41.21h-5.89V87.82Zm33.04 0v12.24h-5.12v20.51c0 15.28 3.41 18.51 9.49 18.51 5.79 0 9.59-2.28 9.59-18.61v-20.12h-5.17V87.82h28.11v12.24h-5.11v23.07c0 22.51-9.4 32.67-27.25 32.67-19.18-.57-29.43-10.64-29.43-32.19v-23.45h-5.32V87.82Zm103.5 24.69h-14v-12.16h-8v41.21h7.88v12.63h-35.26v-12.63h7.79v-41.21h-8.12v12.16h-14V87.82h63.71ZM444 87.82v12.24h-5.13v20.51c0 15.28 3.42 18.51 9.5 18.51 5.79 0 9.59-2.28 9.59-18.61v-20.12h-5.13V87.82h28.11v12.24h-5.13v23.07c0 22.51-9.4 32.67-27.25 32.67-19.18-.57-29.44-10.64-29.44-32.19v-23.45h-5.32V87.82Zm71.59 0c22 0 26.3 8.73 26.3 19.56 0 7.4-5.88 12.63-13.76 13.77 6.55.95 12.44 6.64 12.44 13.48 0 4.08.57 6.46 2.27 6.46 1.43 0 2.19-1.14 2.19-3v-3.13h6.36v5.22c0 7.88-3.32 15.19-13.86 15.19-12.44 0-18.42-6.55-18.42-17.66 0-8.64-1.05-10.73-9.5-10.73v14.68h5.79v12.53h-30.67v-12.53h5.32v-41.4h-5.32V87.82Zm-6 28.48h4.27c5.51 0 9.12-2.65 9.12-7.69 0-5.6-3.13-8.45-8.64-8.45h-4.75Zm102.38-28.48v21h-16.43v-8.45h-15.19v13.09h18v12.6h-18v15.5h15.19v-8.83h16.43v21.46h-57.26v-12.63h6v-41.21h-6V87.82Zm-227.72-56.1c.38-1.9 2.47-5.89 3.51-8.17l5.22-9.59h-5.22V1.8h25.54v12.16h-5.05l-17.62 30.86v11h5.32v12.36h-30.39V55.83h5.41v-11.2l-18.42-30.67h-4.65V1.8h32.47v12.16h-4.93l5.5 10.1c.57 1.81 2.57 6.08 2.95 7.7Zm29.54 2.94C413.79 14.15 427.47 0 447.12 0c23.27 0 34.09 14 34.09 35.32s-12 34.57-33.42 34.57c-19.85 0-34-11.49-34-35.23Zm43.68.66c0-11.49-3.13-20.7-10.44-20.7-5.79-.09-9.78 8.26-9.78 20 0 12.44 4.46 20.32 10.54 20.32s9.68-7.88 9.68-19.62ZM514.25 1.8v12.26h-5.13v20.5c0 15.29 3.42 18.52 9.5 18.52 5.79 0 9.59-2.28 9.59-18.61V14.34h-5.13V1.8h28.11v12.26h-5.13v23.07c0 22.5-9.4 32.66-27.25 32.66-19.18-.57-29.44-10.63-29.44-32.19V14.15h-5.32V1.8Zm71.59 0c22 0 26.31 8.74 26.31 19.57 0 7.4-5.89 12.62-13.77 13.76 6.55 1 12.44 6.65 12.44 13.49 0 4.08.57 6.46 2.27 6.46 1.43 0 2.19-1.14 2.19-3V48.9h6.36v5.23c0 7.88-3.32 15.19-13.86 15.19-12.44 0-18.42-6.55-18.42-17.66 0-8.64-1.05-10.73-9.5-10.73v14.71h5.79v12.54h-30.67V55.64h5.32v-41.4h-5.32V1.8Zm-6 28.49h4.27c5.51 0 9.12-2.66 9.12-7.69 0-5.6-3.13-8.45-8.64-8.45h-4.75ZM28.39 14.7l5.8 10.64-23.46 10.72 23.46 10.55-3.61 9.87L0 42.24v-13.3Zm318.7 14.24v13.3l-30.58 14.24-3.61-9.87 23.46-10.55-23.46-10.72 5.8-10.64Z" />
+        </svg>
+        </span>
+        <span class="is-none--gt-container">
+          <svg
+          xmlns="http://www.w3.org/2000/svg"
+          version="1.0"
+          viewBox="0 0 512 512"
+          width="48px">
+          <path
+            fill="currentcolor"
+            stroke="currentcolor"
+            d="M225.5 1c-1.1.5-3.5.9-5.3.9-4.1.1-22.9 4.5-30.7 7.2-63.1 22-114.7 72.3-142.7 139.4-6.4 15.2-11.8 33.8-16.7 57-4.1 19.7-5.4 64.5-2.6 90.8C33 346.2 49.8 390.1 76.8 425c6.2 7.9 23.9 26.4 30.7 32 8.1 6.7 26.1 18.7 35.1 23.6 28.1 15.1 58 24.3 91.9 28.3 5.5.7 13.6 1.7 18 2.2 8.8 1.2 33.9.7 48-.9 11-1.3 31.7-4.8 36.5-6.2 1.9-.5 8-2.3 13.5-3.9 21.3-6.1 47.2-17.8 67.5-30.5 8.8-5.4 23.7-15.8 28.5-19.7 10.2-8.4 24.5-21.3 31.4-28.2l8.4-8.5-2.2-2.9c-1.3-1.5-4.6-5.3-7.4-8.3-6.2-6.7-14.5-15.7-21.2-23.1-2.7-3-7.5-8.2-10.5-11.4-3-3.3-9.8-10.8-15.1-16.5-21.5-23.6-24.2-26.5-24.9-26.8-.3-.1-2 1.2-3.6 3-1.6 1.9-6.3 7.1-10.4 11.7-8.6 9.7-25.6 24.6-35.9 31.4-21.4 14.4-42.5 21.7-62.6 21.7-15.3-.1-29.3-3.3-42.5-10-22.8-11.5-41.9-35.5-51.5-64.7-4.2-12.8-4.3-13.4-5.9-22.8-3.8-22.9-4.6-39.2-2.6-55.6 2.7-22.7 3.3-26.5 5-33.2 7.9-30.9 16.7-48.6 32.4-65.6 16.8-17.9 41.1-24.9 65.1-18.6 30 7.8 50.7 36.3 55.5 76.3.5 4.6 1.2 8.7 1.5 9.3.4.5 25.1.9 62.6.9H474V9H364.2L357 26.7c-4 9.8-7.9 18.5-8.7 19.3-1.3 1.3-2.1.8-6.6-4.3-6-6.9-18.3-16.7-28.2-22.5-7.4-4.3-22.6-10.9-28.5-12.4-9.2-2.2-18.1-4.1-24-5-9-1.3-33.1-1.9-35.5-.8z" />
+        </svg>
+        </span>
+      </a>
+    </h1>
+    <link
+  href="/pagefind/pagefind-ui.css"
+  rel="stylesheet"
+  media="print"
+  onload="this.media='all'" />
+<style>
+  :root {
+    --pagefind-ui-primary: var(--theme-color--ink);
+    --pagefind-ui-text: var(--theme-color--ink);
+    --pagefind-ui-background: var(--theme-color--paper);
+    --pagefind-ui-border: var(--theme-color--outline);
+    --pagefind-ui-tag: var(--theme-color--block);
+    --pagefind-ui-border-radius: 2em;
+    --pagefind-ui-image-border-radius: var(--theme-border-radius);
+    --pagefind-ui-font: var(--theme-font--copy);
+  }
+  .pagefind-ui--reset {
+    position: absolute;
+  }
+  #search .pagefind-ui__search-input {
+    box-shadow: var(--theme-box-shadow--inset);
+    margin-bottom: var(--theme-spacing--1);
+  }
+  #search .pagefind-ui__search-clear {
+    background-color: transparent;
+  }
+  #search .pagefind-ui__drawer {
+    background-color: var(--theme-color--paper);
+    box-shadow: var(--theme-box-shadow--slim);
+    transform: translateY(-1.5px);
+    padding: 0 var(--theme-spacing--2);
+    max-height: calc(100vh - 4rem);
+    overflow-y: auto;
+  }
+  #search .pagefind-ui__result {
+    padding: var(--theme-spacing--1) 0 var(--theme-spacing--2) 0;
+  }
+  #search .pagefind-ui__result:focus-within,
+  #search .pagefind-ui__button:focus {
+    background-color: var(--theme-color--block);
+  }
+  #search .pagefind-ui__button {
+    border: none;
+  }
+</style>
+<script src="/pagefind/pagefind-ui.js" type="text/javascript" defer></script>
+<div id="search" class="l-header__search"></div>
+<script>
+  window.addEventListener("DOMContentLoaded", (event) => {
+    new PagefindUI({
+      element: "#search",
+      showSubResults: true,
+      pageSize: 3,
+      showImages: false,
+      showTags: true,
+    });
+  });
+</script>
+
+    <button
+      class="l-header__action e-button e-button--icon js-menu-toggle e-heading__3">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+        <path
+          stroke="var(--theme-color--ink)"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M13 5a1 1 0 1 0-2 0 1 1 0 0 0 2 0Zm0 7a1 1 0 1 0-2 0 1 1 0 0 0 2 0Zm0 7a1 1 0 1 0-2 0 1 1 0 0 0 2 0Z" />
+      </svg>
+      <span class="is-invisible">Open Menu.</span>
+    </button>
+  </div>
+</header>
+
+      <nav
+  class="l-layout__menu l-menu"
+  aria-label="Main Site Links."
+  id="site-menu"
+  hidden
+  tabindex="0">
+  <div class="l-menu__container">
+    <h2 class="l-menu__heading e-heading__2">
+      <a href="/" class="l-menu__home is-invisible">Menu</a>
+    </h2>
+    <button
+      class="l-menu__action e-button e-button--icon js-menu-toggle e-heading__2"
+      id="close-menu">
+      ❎
+      <span class="is-invisible">Close Menu.</span>
+    </button>
+    <ul class="l-menu__primary">
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/guides/">
+            Guides
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/sdc/tools/">
+            Tools
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/sdc/logic/">
+            Logic
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/sdc/decomposition/">
+            Decomposition
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/sdc/legacy/">
+            Legacy code
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/sdc/complexity/">
+            Complexity
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/tracks/servers/">
+            Servers
+          </a>
+        </li>
+    </ul>
+    <ul class="l-menu__secondary">
+        <li class="l-menu__item">
+          <a class="e-heading__3 l-menu__link" href="https://codeyourfuture.io">
+            CYF 👈🏾
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__3 l-menu__link" href="https://codeyourfuture.io/volunteers/">
+            Join Us 👋🏿
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__3 l-menu__link" href="https://codeyourfuture.io/donate/">
+            Support 🫶🏼
+          </a>
+        </li>
+    </ul>
+  </div>
+</nav>
+
+      <main
+        id="main"
+        class="l-layout__main l-main"
+        tabindex="0"
+        data-pagefind-body>
+        
+  
+    <solo-view tabindex="0">
+      
+
+
+      <div slot="header">
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+<header
+  class="c-page-header 
+    c-page-header--solo
+   c-page-header--toc">
+  
+  <div class="c-page-header__container">
+    <div class="c-page-header__breadcrumbs">
+      
+  <nav class="c-breadcrumbs">
+    <ol class="c-breadcrumbs__list">
+      
+        
+        
+          <li class="c-breadcrumbs__item">
+            <a
+              class="c-breadcrumbs__link"
+              href="/itp/"data-pagefind-filter="module"><span class="c-breadcrumbs__text">Intro to Programming</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                width="24px"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="c-breadcrumbs__icon">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+              </svg>
+            </a>
+          </li>
+        
+        
+          <li class="c-breadcrumbs__item">
+            <a
+              class="c-breadcrumbs__link"
+              href="/itp/structuring-data/"><span class="c-breadcrumbs__text">Structuring and testing data</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                width="24px"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="c-breadcrumbs__icon">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+              </svg>
+            </a>
+          </li>
+      
+        <li class="c-breadcrumbs__item">
+          <a
+            class="c-breadcrumbs__link"
+            href="/itp/structuring-data/sprints/1/"data-pagefind-filter="sprint">Sprint 1</a
+          >
+        </li>
+      
+    </ol>
+  </nav>
+  
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Our Courses",
+      "item":"https://curriculum.codeyourfuture.io/"},
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Intro to Programming",
+      "item":"https://curriculum.codeyourfuture.io/itp/"},
+    {
+      "@type": "ListItem",
+      "position":  3 ,
+      "name": "Structuring and testing data",
+      "item":"https://curriculum.codeyourfuture.io/itp/structuring-data/"},{
+      "@type": "ListItem",
+      "position":  5 ,
+      "name": "Sprint 1",
+      "item":"https://curriculum.codeyourfuture.io/itp/structuring-data/sprints/1/"},
+    {
+      "@type": "ListItem",
+      "position":  6 ,
+      "name": "prep",
+      "item":"https://curriculum.codeyourfuture.io/itp/structuring-data/sprints/1/"}
+  ]
+}
+</script>
+
+
+    </div>
+    <h1 class="c-page-header__title e-heading__1"data-pagefind-filter="view"
+        
+      data-pagefind-weight="10">
+      <span class="c-emoji">
+        
+        
+           
+            <time-total class="c-page-header__time"></time-total>
+      
+         
+        </span>
+        <span class="c-page-header__title-text">prep</span>
+               
+    </h1>
+    
+      
+        <h2 class="c-page-header__description e-heading__3">
+          <strong>Prerequisites:</strong> a terminal, basic arithmetic.
+        </h2>
+      
+    
+    
+    
+    
+      <div class="c-page-header__toc " id="toc">
+        <section class="c-toc" aria-label="Table of contents.">
+          <a id="top" class="c-toc__top e-button e-button--icon" href="#toc"
+            >🔖 <span class="is-invisible">back to top</span></a
+          >
+          
+            <nav id="TableOfContents"></nav>
+          
+          
+            <ol>
+              
+                <li>
+                  <a href="#define-a-computer" data-pagefind-weight="5"
+                    >Define a computer</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#interface" data-pagefind-weight="5"
+                    >Interface</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#terminal" data-pagefind-weight="5"
+                    >Terminal</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#data" data-pagefind-weight="5"
+                    >Data</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#repl" data-pagefind-weight="5"
+                    >REPL</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#prep-dir" data-pagefind-weight="5"
+                    >Prep dir</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#variables" data-pagefind-weight="5"
+                    >Variables</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#declarations-and-statements" data-pagefind-weight="5"
+                    >Declarations and Statements</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#functions" data-pagefind-weight="5"
+                    >Functions</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#scripts" data-pagefind-weight="5"
+                    >Scripts</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#logging" data-pagefind-weight="5"
+                    >Logging</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#errors" data-pagefind-weight="5"
+                    >Errors</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#percentages" data-pagefind-weight="5"
+                    >Percentages</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#defining-functions" data-pagefind-weight="5"
+                    >Defining functions</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#playing-computer" data-pagefind-weight="5"
+                    >Playing computer</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#scope" data-pagefind-weight="5"
+                    >Scope</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#return" data-pagefind-weight="5"
+                    >Return</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#reuse" data-pagefind-weight="5"
+                    >Reuse</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#parameters" data-pagefind-weight="5"
+                    >Parameters</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#solving-problems-with-functions" data-pagefind-weight="5"
+                    >Solving problems with functions 📼</a
+                  >
+                  
+                </li>
+              
+            </ol>
+          
+          
+        </section>
+      </div>
+    
+
+  </div>
+</header>
+</div>
+      <div slot="blocks">
+        
+        
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="define-a-computer">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="define-a-computer">
+        Interacting with computers
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="5 minutes countdown" datetime="P5M">5&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Define a computer</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <p>Modern computers are <strong>complicated</strong>: it would be too difficult and time-consuming to list all the components that make up a modern computer. So to build our mental model, we will use this simple definition of a computer:</p>
+<blockquote><p>A <strong>computer</strong> is a device used to store and perform operations on data.</p>
+</blockquote>
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="interface">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="interface">
+        Using an interface
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="15 minutes countdown" datetime="P15M">15&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Categorise different interfaces</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <p>We want to use computers without understanding <em>exactly</em> how they are built. Every day we ask machines to do things, and usually we have no idea how these machines work. We could not use modern technology if we had to understand it completely before we could use it; it would take too long! Instead we use 
+<tool-tip-container tabindex="0"><strong class="tooltip__trigger" id="trigger__interfaces">interfaces</strong><span class="tooltip__emoji">🧶</span><tool-tip role="tooltip" aria-labelledby="interfaces"><span class="tooltip__title e-heading__2"><span class="tooltip__emoji">🧶</span> interfaces</span><span class="tooltip__content">Think of an <strong>interface</strong> as a gate that allows communication between a user and a machine.
+The user asks the machine to do things via the interface.</span></tool-tip></tool-tip-container>
+</p>
+<p>Think about a cash machine (ATM). We go to a hole in the wall with a screen and a keypad. The <strong>screen and the keypad</strong> are the user interface. We press the buttons and ask the machine to do things - like giving our balance, or withdrawing some money from an account. We don&rsquo;t need to understand how the information it tells us comes on the screen.</p>
+<section class="c-note c-note--exercise">
+  <h4 class="c-note__title e-heading__4">✍️Exercise</span>
+  </h4>
+  <div class="c-note__text "><p>Define the <strong>user interface</strong> for these devices:</p>
+<ul>
+<li>a calculator</li>
+<li>a microwave</li>
+<li>a desktop lamp</li>
+<li>Facebook</li>
+<li>Alexa</li>
+<li>ChatGPT</li>
+</ul></div>
+</section>
+
+
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="terminal">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="terminal">
+        Terminal interface
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="10 minutes countdown" datetime="P10M">10&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Identify the terminal and its purpose</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Execute commands in the terminal</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <p>Programmers need interfaces to ask computers to do things. A computer terminal is an <strong>interface</strong> where programmers can issue commands to a computer. Because users enter text instructions and receive text output, we say that the terminal is a <strong>text-based interface</strong>.</p>
+<h3 id="open-your-terminal">Open Your Terminal</h3>
+<h4 id="interface-via-the-terminal">Interface via the terminal</h4>
+<p>We can input a command into the prompt and hit enter. The terminal then passes this command to the computer to execute. Find your own terminal and input the <code>ls</code> command:</p>
+<pre tabindex="0"><code>ls</code></pre><h4 id="the-terminal-on-mac">The terminal on Mac</h4>
+<p>
+
+  <figure>
+      <img
+        loading="lazy"
+        src="/module/js1/terminal/terminal.gif"alt="terminal" data-pagefind-index-attrs="terminal"/><figcaption>The terminal is a window on the computer, prompting users for instructions.</figcaption></figure></p>
+<h3 id="-writing-computer-instructions">🖊️ Writing computer instructions</h3>
+<p>We can issue commands to the computer using the terminal. These commands are instructions that the computer knows how to interpret.</p>
+<p>The computer knows <code>ls</code> means <strong>&ldquo;list the files and directories in the current directory&rdquo;</strong>.</p>
+<p>During the execution of a computer program, a computer will store and modify 
+<tool-tip-container tabindex="0"><strong class="tooltip__trigger" id="trigger__data">data</strong><span class="tooltip__emoji">🧶</span><tool-tip role="tooltip" aria-labelledby="data"><span class="tooltip__title e-heading__2"><span class="tooltip__emoji">🧶</span> data</span><span class="tooltip__content">Data is information. Text, images, numbers are all <em>forms</em> of data.</span></tool-tip></tool-tip-container>
+ The data in an executing program is sometimes called the <strong>state</strong>. A computer program will modify data with 
+<tool-tip-container tabindex="0"><strong class="tooltip__trigger" id="trigger__operations">operations</strong><span class="tooltip__emoji">🧶</span><tool-tip role="tooltip" aria-labelledby="operations"><span class="tooltip__title e-heading__2"><span class="tooltip__emoji">🧶</span> operations</span><span class="tooltip__content">Operations modify or create data, from the current data in the program. Adding numbers, joining words, changing text to ALLCAPS, are all operations.</span></tool-tip></tool-tip-container>
+</p>
+<p><code>ls</code> is a shell command. Shell is a programming language we use to interact with the files and folders on our computer. You already know at least two more programming languages. Can you name them?</p>
+<section class="c-note c-note--definition">
+  <h4 class="c-note__title e-heading__4">📖Definition: programming language</span>
+  </h4>
+  <div class="c-note__text ">A <strong>programming language</strong> is a limited set of rules for writing computer instructions.</div>
+</section>
+
+
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="data">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="data">
+        Classifying data
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="15 minutes countdown" datetime="P15M">15&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Define data type, expression, and operator</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <p>We’re going to focus on the JavaScript programming language.</p>
+<p>A programming language organises data with rules so we understand what we can and cannot do with it. Languages split data up into different categories called 
+<tool-tip-container tabindex="0"><strong class="tooltip__trigger" id="trigger__data types">data types</strong><span class="tooltip__emoji">🧶</span><tool-tip role="tooltip" aria-labelledby="data types"><span class="tooltip__title e-heading__2"><span class="tooltip__emoji">🧶</span> data types</span><span class="tooltip__content">A <strong>data type</strong> is a grouping of data with some particular properties</span></tool-tip></tool-tip-container>
+. In JavaScript, we have five data types. We will look first at numbers and strings.</p>
+<h4 id="number-data-type">Number data type</h4>
+<p><code>10</code> is an example of the number data type.
+<code>3.14</code> is also part of the number data type; both integers (whole numbers) and non-integers are types of number.</p>
+<p><code>-15</code> is also part of the number data type. Positive and negative numbers, as well as <code>0</code>, are all types of number.</p>
+<h4 id="string-data-type">String data type</h4>
+<p>A string is a sequence of characters demarcated by quotes.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#e6db74">&#34;Code Your Future&#34;</span>;</span></span></code></pre></div><h3 id="-creating-expressions">🧮 Creating expressions</h3>
+<p>Think of the numbers <code>10</code> and <code>32</code>. We could ask questions about these numbers, like: <em>What is the <strong>sum</strong> of 10 and 32?</em></p>
+<p>Another way to say this is <em>what do 10 and 32 add up to?</em> In English we can say this in many ways, but in JavaScript we can say this using numbers and an operator. Just like in mathematics, “the sum of 10 and 32” can be written as <code>10 + 32</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#ae81ff">10</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">32</span>;</span></span></code></pre></div><p>In JavaScript, <code>+</code> is an 
+<tool-tip-container tabindex="0"><strong class="tooltip__trigger" id="trigger__operator">operator</strong><span class="tooltip__emoji">🧶</span><tool-tip role="tooltip" aria-labelledby="operator"><span class="tooltip__title e-heading__2"><span class="tooltip__emoji">🧶</span> operator</span><span class="tooltip__content">An <strong>operator</strong> represents an operation, or act.</span></tool-tip></tool-tip-container>
+. It&rsquo;s a symbol. In this example, <code>+</code> represents the operation “make the sum of the numbers”. It symbolises addition.</p>
+<p>The combination of symbols <code>10 + 32</code> is an 
+<tool-tip-container tabindex="0"><strong class="tooltip__trigger" id="trigger__expression">expression</strong><span class="tooltip__emoji">🧶</span><tool-tip role="tooltip" aria-labelledby="expression"><span class="tooltip__title e-heading__2"><span class="tooltip__emoji">🧶</span> expression</span><span class="tooltip__content">An <strong>expression</strong> is a value or any valid combination of values and symbols that results in a single value.</span></tool-tip></tool-tip-container>
+ We say that expressions <strong>evaluate</strong> to a single value. So we say that <code>10 + 32</code> <strong>evaluates</strong> to the value <code>42</code>.</p>
+<p><code>10</code> is also an expression. It <strong>evaluates</strong> to the value <code>10</code>.</p>
+<p><code>&quot;Code Your Future&quot;</code> and <code>&quot;Code Your &quot; + &quot;Future&quot;</code> are also both expressions - both evaluate to the value <code>&quot;Code Your Future&quot;</code>.</p>
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="repl">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="repl">
+        Evaluating expressions
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="15 minutes countdown" datetime="P15M">15&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Define the features of the Node REPL</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Evaluate expressions using your mental model of JavaScript</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Evaluate expressions using the Node REPL</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <section class="c-note c-note--tip">
+    <h4 class="c-note__title">💡Tip</h4>
+    <div class="c-note__text"><p>Computers work by storing and performing operations on data.</p></div>
+  </section><p>Computer programs are built from many expressions. We must understand how expressions are evaluated to understand how computer programs are executed.</p>
+<p>We can take an expression like <code>36 * 45</code> and ask what it evaluates to. If we know what the <code>*</code> operator represents (multiplication) and if we understand the arithmetic rules represented by the operation we can evaluate this expression ourselves.</p>
+<p>Happily, computers can evaluate expressions for us.</p>
+<p><strong>NodeJS</strong> is an application that runs JavaScript programs. In other words, NodeJS can understand and execute programs written in JavaScript. One feature of Node is the <strong>REPL</strong>.</p>
+<!--prettier-ignore-->
+<section class="c-note c-note--note">
+    <h4 class="c-note__title">📝Note</h4>
+    <div class="c-note__text"><p>REPL is a special type of program that stands for:</p>
+<ul>
+<li><strong>Read</strong> - Users enter some code that Node will <strong>read</strong></li>
+<li><strong>Evaluate</strong> - Node will then <strong>evaluate</strong> this code</li>
+<li><strong>Print</strong> - Node will <strong>print</strong> the result to the terminal</li>
+<li><strong>Loop</strong> - Node will <strong>loop</strong> back to the beginning and prompt users to input some more code</li>
+</ul>
+<p title="Definition: REPL">With a REPL we can run pieces of code and look at what happens.</p></div>
+  </section><p>We input JavaScript instructions that are then executed by NodeJS. The REPL replies with, or prints out, the result of this execution.</p>
+
+
+
+<tab-panels class="c-tabs">
+  <div class="c-tabs__list" id="repl-1" role="tablist"><button
+          data-toggle="tab"
+          id="tab-label-repl-1-0"
+          class="c-tabs__tab e-heading__5 space 
+            is-active"
+          role="tab"
+          aria-controls="repl-1-0"
+          aria-selected="true">
+          REPL Activity Code
+        </button><button
+          data-toggle="tab"
+          id="tab-label-repl-1-1"
+          class="c-tabs__tab e-heading__5 space "
+          role="tab"
+          aria-controls="repl-1-1"
+          aria-selected="false">
+          Step by Step
+        </button><button
+          data-toggle="tab"
+          id="tab-label-repl-1-2"
+          class="c-tabs__tab e-heading__5 space "
+          role="tab"
+          aria-controls="repl-1-2"
+          aria-selected="false">
+          Explore REPL
+        </button></div>
+  <div class="c-tabs__group" id="repl-1">
+        <div
+          id="repl-1-0"
+          class="c-tabs__panel is-active"
+          role="tabpanel"
+          data-heading="REPL Activity Code"
+          aria-labelledby="tab-label-repl-1-0"><p>Type each of the following expressions <a
+  href="#repl-1-1">into the REPL</a> one at a time and then press enter to check the result.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ae81ff">10</span> + <span style="color:#ae81ff">32</span></span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ae81ff">32</span> / <span style="color:#ae81ff">10</span></span></span></code></pre></div></div>
+        <div
+          id="repl-1-1"
+          class="c-tabs__panel "
+          role="tabpanel"
+          data-heading="Step by Step"
+          aria-labelledby="tab-label-repl-1-1"><!--prettier-ignore-->
+<section class="c-note c-note--activity">
+    <h4 class="c-note__title">🕹️Activity</h4>
+    <div class="c-note__text"><p>In this activity, you&rsquo;ll check you&rsquo;re ready to use the Node REPL on your machine.</p>
+<ol>
+<li>Open the terminal on your computer</li>
+<li>Check you&rsquo;ve got Node installed on your computer</li>
+<li>Start the Node REPL in your terminal</li>
+<li><a
+  href="#repl-1-0">Enter the expressions</a> and evaluate them using the Node REPL</li>
+</ol></div>
+  </section><p>If you don&rsquo;t know how to do any of the steps above, then try searching for an <a
+  href="https://nodejs.org/en/learn/command-line/how-to-use-the-nodejs-repl">appropriate command</a> online. Searching for things when you&rsquo;re stuck is super important part of being a developer!</p>
+</div>
+        <div
+          id="repl-1-2"
+          class="c-tabs__panel "
+          role="tabpanel"
+          data-heading="Explore REPL"
+          aria-labelledby="tab-label-repl-1-2"><!--prettier-ignore-->
+<section class="c-note c-note--activity">
+    <h4 class="c-note__title">🕹️Activity</h4>
+    <div class="c-note__text"><p>Create your own expressions and enter them into the Node REPL.</p>
+<p>🧠  <em>Before</em> you type in the expressions, <strong>predict</strong> what the REPL output will be. Write your prediction down and compare it to the outcome.</p></div>
+  </section></div></div>
+</tab-panels>
+
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="prep-dir">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="prep-dir">
+        Prep dir
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="10 minutes countdown" datetime="P10M">10&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Create a working prep directory for the module</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <h3 id="-create-a-working-directory-for-the-module">📂 Create a working directory for the module</h3>
+<ol>
+<li>Fork the coursework module (always linked in every backlog) and open it in VSCode.</li>
+<li>In your VSCode terminal, navigate to the root of your project directory.</li>
+<li>Create a new directory called <code>prep</code> to store all the files you&rsquo;ll be working on for this module.</li>
+</ol>
+<p>As you work through the module, you&rsquo;ll be creating files in this directory to code along with the prep content. You are expected to code along with the prep content.</p>
+<p>For simple one liners, use the terminal REPL to run the code. For more complex problems, create files in the <code>prep</code> directory and write the code there. Make commented notes as you go along explaining why you&rsquo;re doing what you&rsquo;re doing. Your future self will thank you.</p>
+<h3 id="-the-most-important-thing-is-to-secure-your-understanding">🔑 The most important thing is to secure your understanding</h3>
+<p>The prep content is designed to help you understand the concepts you&rsquo;ll be working with in the module. Don&rsquo;t just read it, code along with it. Also take notes, draw diagrams, pose your own questions and try to answer them.</p>
+<p>To really understand programming, you need to write the code yourself, and do the exercises. You must <a
+  href="https://www.pnas.org/doi/10.1073/pnas.1319030111">take active part</a> in your learning to succeed.</p>
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="variables">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="variables">
+        Saving expressions
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="15 minutes countdown" datetime="P15M">15&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Identify the syntactic features of a variable declaration</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Explain why we use variable declarations</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Create strings using variables and template literals</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <p>In programming we often want to <em>reuse</em> our work. Consider the string: <code>&quot;Hello there&quot;</code></p>
+<p>Suppose we want to create different greetings for different people, like: <code>&quot;Hello there, Alicia&quot;</code> <code>&quot;Hello there, Barny&quot;</code></p>
+<p>We can use a <strong>variable</strong> to store this string and reuse it. How can we create a 
+<tool-tip-container tabindex="0"><strong class="tooltip__trigger" id="trigger__variable">variable</strong><span class="tooltip__emoji">🏷️</span><tool-tip role="tooltip" aria-labelledby="variable"><span class="tooltip__title e-heading__2"><span class="tooltip__emoji">🏷️</span> variable</span><span class="tooltip__content">A <strong>variable</strong> is a label for a piece of data. We assign a piece of data to a label and then refer back to this label, in place of the data.</span></tool-tip></tool-tip-container>
+</p>
+<p>We can create a variable in our program by writing a <strong>variable</strong> 
+<tool-tip-container tabindex="0"><strong class="tooltip__trigger" id="trigger__declaration">declaration</strong><span class="tooltip__emoji">🧶</span><tool-tip role="tooltip" aria-labelledby="declaration"><span class="tooltip__title e-heading__2"><span class="tooltip__emoji">🧶</span> declaration</span><span class="tooltip__content">A <em>declaration</em> is an instruction that binds an identifier to a value.</span></tool-tip></tool-tip-container>
+, like this:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">greeting</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Hello there&#34;</span>;</span></span></code></pre></div><p>Break down the different syntactic elements of this variable declaration:</p>
+<ul>
+<li><code>const</code> is a keyword used to indicate we&rsquo;re creating a variable.</li>
+<li><code>greeting</code> is the <strong>identifier</strong> - it can be used to refer to a variable after it has been declared.</li>
+<li><code>=</code> is the assignment operator. It means assign to the label <code>greeting</code> the value of the expression on the right hand side.</li>
+<li><code>&quot;Hello there&quot;</code> - this is the expression whose value we&rsquo;re assigning to the label <code>greeting</code>.</li>
+</ul>
+
+
+
+<tab-panels class="c-tabs">
+  <div class="c-tabs__list" id="greeting" role="tablist"><button
+          data-toggle="tab"
+          id="tab-label-greeting-0"
+          class="c-tabs__tab e-heading__5 space 
+            is-active"
+          role="tab"
+          aria-controls="greeting-0"
+          aria-selected="true">
+          Try it yourself
+        </button><button
+          data-toggle="tab"
+          id="tab-label-greeting-1"
+          class="c-tabs__tab e-heading__5 space "
+          role="tab"
+          aria-controls="greeting-1"
+          aria-selected="false">
+          Watch and follow along
+        </button></div>
+  <div class="c-tabs__group" id="greeting">
+        <div
+          id="greeting-0"
+          class="c-tabs__panel is-active"
+          role="tabpanel"
+          data-heading="Try it yourself"
+          aria-labelledby="tab-label-greeting-0"><p>Type this variable declaration into the REPL:</p>
+<pre tabindex="0"><code>const greeting = &#34;Hello there&#34;;</code></pre><p>Now refer to the label <code>greeting</code> in the REPL:</p>
+<pre tabindex="0"><code>`${greeting}, Alicia`</code></pre><p>Our <code>greeting</code> variable is stored in memory. We can reuse it to build more expressions:</p>
+<pre tabindex="0"><code>`${greeting}, Barny`</code></pre></div>
+        <div
+          id="greeting-1"
+          class="c-tabs__panel "
+          role="tabpanel"
+          data-heading="Watch and follow along"
+          aria-labelledby="tab-label-greeting-1"><figure>
+      <img
+        loading="lazy"
+        src="/module/js1/variables/greeting.gif"alt="greeting" data-pagefind-index-attrs="greeting"/><figcaption>Store your string in a variable and reuse it</figcaption></figure></div></div>
+</tab-panels>
+
+<p>We just used backticks to create a template literal.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#e6db74">`A template literal places </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">expressions</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> inside strings;
+</span></span></span></code></pre></div><p>With template literals, we can insert expressions into strings to produce new strings. Any time we want to reference a variable inside a template literal we use a dollar sign <code>$</code> and a set of curly braces <code>{}</code>. We can put any expression (e.g. a variable name) inside the curly braces. The value that expression evaluates to is then placed inside the string.</p>
+<p>When an operation uses an expression, that expression is immediately evaluated, and how it was written is forgotten about. That means that the <code>greetAlicia</code> variable is the same in all three of these cases:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">greetAlicia</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Hello there, Alicia&#34;</span>;</span></span></code></pre></div><section class="c-note c-note--note">
+  <h4 class="c-note__title e-heading__4">📝string literal</span>
+  </h4>
+  <div class="c-note__text "><p>In this example, we don&rsquo;t use a variable or a template to create a string. Instead we write a string <code>&quot;Hello there, Alicia&quot;</code>.</p>
+<p>A sequence of characters enclosed in quotation marks is called a <strong>string literal</strong>. <code>&quot;Hello there, Alicia&quot;</code> is a string literal.</p>
+<p>Similarly, <code>10</code> is a <strong>number literal</strong>.</p>
+<h2 id="heading"></h2>
+</div>
+</section>
+
+
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">name</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Alicia&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">greetAlicia</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">`Hello there, </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">name</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>;</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">greeting</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Hello there&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">name</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Alicia&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">greetAlicia</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">`</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">greeting</span><span style="color:#e6db74">}</span><span style="color:#e6db74">, </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">name</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>;</span></span></code></pre></div><p>The <code>greetAlicia</code> variable doesn&rsquo;t remember whether you used variables to make it or not - in all three cases, <code>greetAlicia</code> contains the string <code>&quot;Hello there, Alicia&quot;</code>. Once a value is made, it doesn&rsquo;t matter <em>how</em> it was made.</p>
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="declarations-and-statements">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="declarations-and-statements">
+        Declarations and statements
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="10 minutes countdown" datetime="P10M">10&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Define a declaration</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Define a statement</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Describe the difference between a declaration and a statement</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Describe the difference between let and const</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <p>A variable declaration is an example of a
+<tool-tip-container tabindex="0"><strong class="tooltip__trigger" id="trigger__declaration">declaration</strong><span class="tooltip__emoji">🧶</span><tool-tip role="tooltip" aria-labelledby="declaration"><span class="tooltip__title e-heading__2"><span class="tooltip__emoji">🧶</span> declaration</span><span class="tooltip__content">A <em>declaration</em> is an instruction that binds an identifier to a value</span></tool-tip></tool-tip-container>
+.
+It has the <em>effect</em> of creating a variable.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">versionNumber</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;2.0.0&#34;</span>; <span style="color:#75715e">// declaration
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">versionNumber</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;2.0.1&#34;</span>; <span style="color:#75715e">// statement
+</span></span></span></code></pre></div><p>The code above has one variable <strong>declaration</strong> and one <strong>statement</strong>.</p>
+<ol>
+<li>The first line is a <strong>declaration</strong> - creating a variable <code>versionNumber</code> with a value of <code>&quot;2.0.0&quot;</code></li>
+<li>The second line is a <strong>statement</strong> - 
+<tool-tip-container tabindex="0"><strong class="tooltip__trigger" id="trigger__reassignment">reassignment</strong><span class="tooltip__emoji">🧶</span><tool-tip role="tooltip" aria-labelledby="reassignment"><span class="tooltip__title e-heading__2"><span class="tooltip__emoji">🧶</span> reassignment</span><span class="tooltip__content">Reassignment means changing the value associated with an identifier.</span></tool-tip></tool-tip-container>
+ of the value of <code>versionNumber</code> to <code>&quot;2.0.1&quot;</code></li>
+</ol>
+<p>In this example, we&rsquo;ve used the <code>let</code> keyword to declare a new variable.
+The <code>let</code> keyword allows us to create new variables like the <code>const</code> keyword.</p>
+<p>However, we can reassign the value of a variable that is declared with the <code>let</code> keyword.</p>
+<p>If we&rsquo;d used <code>const</code> to declare <code>versionNumber</code>, we wouldn&rsquo;t be allowed to reassign it a new value.</p>
+<p>In JavaScript, we build up programs by combining declarations and statements.</p>
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="functions">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="functions">
+        Functions
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="20 minutes countdown" datetime="P20M">20&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Define a function in programming</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Evaluate a function expression</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Call a function with an input in REPL</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <p>Now, instead of adding or multiplying numbers, we’ll consider <code>10.3</code>.</p>
+<blockquote><p>🤔 &ldquo;What is the nearest whole number to <code>10.3</code>?&rdquo;</p>
+</blockquote><p>The process of finding the nearest whole number to a decimal number is called <strong>rounding</strong>. So we could rephrase our question as:</p>
+<blockquote><p>🤔 &ldquo;What does the number <code>10.3</code> <strong>round</strong> to?”</p>
+</blockquote><h2 id="-reusing-instructions">♻️ Reusing instructions</h2>
+<p>There is no operator for rounding the number <code>10.3</code> in JavaScript. But we will want to round numbers <strong>again and again</strong>. We should use a 
+<tool-tip-container tabindex="0"><strong class="tooltip__trigger" id="trigger__function">function</strong><span class="tooltip__emoji">🧶</span><tool-tip role="tooltip" aria-labelledby="function"><span class="tooltip__title e-heading__2"><span class="tooltip__emoji">🧶</span> function</span><span class="tooltip__content">A <strong>function</strong> is a reusable set of instructions.</span></tool-tip></tool-tip-container>
+.</p>
+<p><code>Math.round</code> is a function. Because a function is a <em>reusable</em> set of instructions, <code>Math.round</code> rounds any number.</p>
+<p>Functions usually take <strong>inputs</strong> and then <strong>apply their set of instructions to the inputs</strong> to produce an <strong>output</strong>.</p>
+
+
+
+<tab-panels class="c-tabs">
+  <div class="c-tabs__list" id="functions-in-repl" role="tablist"><button
+          data-toggle="tab"
+          id="tab-label-functions-in-repl-0"
+          class="c-tabs__tab e-heading__5 space 
+            is-active"
+          role="tab"
+          aria-controls="functions-in-repl-0"
+          aria-selected="true">
+          Try it yourself
+        </button><button
+          data-toggle="tab"
+          id="tab-label-functions-in-repl-1"
+          class="c-tabs__tab e-heading__5 space "
+          role="tab"
+          aria-controls="functions-in-repl-1"
+          aria-selected="false">
+          Watch and follow along
+        </button></div>
+  <div class="c-tabs__group" id="functions-in-repl">
+        <div
+          id="functions-in-repl-0"
+          class="c-tabs__panel is-active"
+          role="tabpanel"
+          data-heading="Try it yourself"
+          aria-labelledby="tab-label-functions-in-repl-0"><ol>
+<li>Write <code>Math.round</code> in the Node REPL</li>
+<li>Hit enter to evaluate our expression</li>
+</ol>
+<p>The REPL output <code>[Function: round]</code> is telling us <code>Math.round</code> is a function.</p></div>
+        <div
+          id="functions-in-repl-1"
+          class="c-tabs__panel "
+          role="tabpanel"
+          data-heading="Watch and follow along"
+          aria-labelledby="tab-label-functions-in-repl-1"><figure>
+      <img
+        loading="lazy"
+        src="/module/js1/functions/round.gif"alt="rounding" data-pagefind-index-attrs="rounding"/><figcaption>[Function: round] indicates that Math.round is a function</figcaption></figure></div></div>
+</tab-panels>
+
+<h2 id="-calling-a-function">📲 Calling a function</h2>
+<p>For our function to work, we need Node to read the instructions and 
+<tool-tip-container tabindex="0"><strong class="tooltip__trigger" id="trigger__execute">execute</strong><span class="tooltip__emoji">🧶</span><tool-tip role="tooltip" aria-labelledby="execute"><span class="tooltip__title e-heading__2"><span class="tooltip__emoji">🧶</span> execute</span><span class="tooltip__content">Execution means the computer reads and follows instructions.</span></tool-tip></tool-tip-container>
+ them. Write the following in the REPL:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span>Math.<span style="color:#a6e22e">round</span>(<span style="color:#ae81ff">10.3</span>);</span></span></code></pre></div><p>Notice the <code>(</code> and <code>)</code> brackets after the name of the function and a number inside the brackets. These brackets mean we are calling the function. The number inside the brackets is the <strong>input</strong> we&rsquo;re passing to the function.</p>
+<section class="c-note c-note--note">
+  <h4 class="c-note__title e-heading__4">📝Calling a function</span>
+  </h4>
+  <div class="c-note__text "><strong>Calling a function</strong> means telling the computer to read the function&rsquo;s instructions and carry out its instructions. When calling a function we can also pass inputs to the function.</div>
+</section>
+
+
+<p><code>Math.round(10.3)</code> is a call expression; read this as:</p>
+<p>&ldquo;apply the set of instructions for <code>Math.round</code> to the number <code>10.3</code>.&rdquo;</p>
+<p>If we type <code>Math.round(10.3)</code> then we get the result <code>10</code>. So we say that <code>Math.round(10.3)</code> <em>returns</em> <code>10</code>.</p>
+<p>A <strong>call expression</strong> is an <strong>expression</strong> which <strong>evaluates</strong> to the value returned by the function when it is called. So the expression <code>Math.round(10.3)</code> evaluates to the value <code>10</code>.</p>
+<p>If we assign that expression to a variable, or use it in a string, we&rsquo;ll get the value <code>10</code>. So we can write:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">roundedValue</span> <span style="color:#f92672">=</span> Math.<span style="color:#a6e22e">round</span>(<span style="color:#ae81ff">10.3</span>);</span></span></code></pre></div><p>or we can write:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">roundedValueInAString</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">`10.3 rounds to </span><span style="color:#e6db74">${</span>Math.<span style="color:#a6e22e">round</span>(<span style="color:#ae81ff">10.3</span>)<span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>;</span></span></code></pre></div><p>Both of these instructions <strong>evaluate</strong> the call expression <code>Math.round(10.3)</code> to the returned value <code>10</code> as soon as the call expression appears. The variable <code>roundedValue</code> will have a numeric value <code>10</code> (just like if we&rsquo;d written <code>const roundedValue = 10;</code>), and the variable <code>roundedValueInAString</code> will have a string value <code>&quot;10.3 rounds to 10&quot;</code>.</p>
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="scripts">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="scripts">
+        Running scripts
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="10 minutes countdown" datetime="P10M">10&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Execute a JavaScript file with Node</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <p>So far we’ve seen how expressions can be evaluated using the Node REPL. The Node REPL is useful for evaluating expressions quickly.</p>
+<p>But usually, our programs have many instructions, and we want to keep and re-run them instead of typing them out each time. So we save our instructions in files. Node can also execute instructions written in a file.</p>
+<p>We use the <code>node</code> command to run a JavaScript file in the terminal. A JavaScript file ends with <code>.js</code> - this is the &ldquo;file extension&rdquo;.</p>
+<p>Let’s suppose we have a file <code>age.js</code>. We run the command <code>node age.js</code>. This terminal command is an instruction to execute the program written inside <code>age.js</code>. Our program has five lines.
+So the computer will read and execute the program one line at a time:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">yearOfBirth</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1990</span>; <span style="color:#75715e">// declaration
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">currentYear</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">2023</span>; <span style="color:#75715e">// declaration
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">currentYear</span><span style="color:#f92672">++</span>; <span style="color:#75715e">// statement
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#e6db74">`I am </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">currentYear</span> <span style="color:#f92672">-</span> <span style="color:#a6e22e">yearOfBirth</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> years old`</span>; <span style="color:#75715e">// statement
+</span></span></span></code></pre></div><section class="c-note c-note--activity">
+  <h4 class="c-note__title e-heading__4">🕹️Activity</span>
+  </h4>
+  <div class="c-note__text "><h3 id="check-you-can-run-a-file-with-node">Check you can run a file with Node:</h3>
+<ol>
+<li>In your terminal, create a new file called <code>example.js</code>.</li>
+<li>Try writing a few lines in the file.</li>
+<li>Get Node to run this file. (Don&rsquo;t use the REPL now - you should run a command to execute the whole file.)</li>
+</ol>
+</div>
+</section>
+
+
+<p>Once the computer executes these statements, the execution of the program is complete. But we’re left with a problem. With the REPL, when the user inputs an expression statement or declaration, the computer reads and executes the line and <em>immediately</em> prints feedback to the terminal. With a file, the computer will execute each line sequentially until completion <em>without</em> printing the values of each expression it evaluates.</p>
+<p>So this new problem can be expressed as a question:</p>
+<blockquote><p>❓ Problem</p>
+<p>&ldquo;How can we check what the values evaluated to in our program during execution?&rdquo;</p>
+</blockquote>
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="logging">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="logging">
+        Logging
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="10 minutes countdown" datetime="P10M">10&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Use console.log to print a value</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <h3 id="printing-to-the-terminal">Printing to the terminal</h3>
+<p>To look at values when our program runs, we can use a function called <code>console.log</code>.</p>
+<section class="c-note c-note--tip">
+  <h4 class="c-note__title e-heading__4">💡console.log</span>
+  </h4>
+  <div class="c-note__text "><p><strong>console</strong> usually means <em>a text interface</em> like a terminal. A <strong>log</strong> is a written record of something that happened.</p>
+<p>So <code>console.log</code> will <em>record something that happens in our program</em> and print it to a <em>text based interface</em>.</p>
+</div>
+</section>
+
+
+<p><code>console.log</code> logs the result of expressions while our program is executing.
+This is very useful for complex programs when we need to check what values expressions evaluate to at <em>specific moments</em> of our program execution.</p>
+<p>Let&rsquo;s see how to use <code>console.log</code> . In a file called <code>example.js</code>, write the name of the function <code>console.log</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>;</span></span></code></pre></div><p>If we run this file with Node, we won&rsquo;t be able to see anything in the terminal. As with <code>Math.round</code> we need to use the syntax for calling a function. Add brackets after the function name:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;hello there!&#34;</span>);</span></span></code></pre></div><p>We should see the string <code>&quot;hello there!&quot;</code> logged out in the terminal.</p>
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="errors">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="errors">
+        Errors
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="20 minutes countdown" datetime="P20M">20&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Identify the cause of syntax errors in small snippets of JavaScript</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Interpret syntax error messages to determine their cause and how to fix them</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <blockquote><p>🗣️ Recall: A programming language is a set of rules for writing computer instructions.</p>
+</blockquote><p>So we need to understand what happens when we <strong><em>break</em></strong> those rules.</p>
+<p>Let&rsquo;s take an example:</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-js" data-lang="js"><span style="display:flex; background-color:#3c3d38"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">firstName</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Francesco;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">const age = 33;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">const nationality = &#34;</span><span style="color:#a6e22e">Italian</span><span style="color:#960050;background-color:#1e0010">&#34;</span>;</span></span></code></pre></td></tr></table>
+</div>
+</div><p>On line 1, we have a variable declaration, but the string has a missing <code>&quot;</code> We&rsquo;re not obeying the syntactic rules for JavaScript: the rules for writing expressions, statements and other parts of the language.</p>
+<p>When we execute the code above, we get this:</p>
+<pre tabindex="0"><code class="language-node" data-lang="node">const firstName = &#34;Francesco;
+                  ^^^^^^^^^^^
+
+Uncaught SyntaxError: Invalid or unexpected token</code></pre><p>We get a <strong>SyntaxError</strong> message. This error message is telling us that we&rsquo;ve broken the rules of the language.</p>
+<section class="c-note c-note--activity">
+  <h4 class="c-note__title e-heading__4">🕹️Predict, Explain</span>
+  </h4>
+  <div class="c-note__text "><p>Each block of code in this activity is broken. Before you run each block of code:</p>
+<ol>
+<li>Predict the error.</li>
+<li>Explain why the error happened.</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">volunteer</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Shadi&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">volunteer</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Abdi&#34;</span>;</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">volunteer</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Shadi&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">volunteer</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Hinde&#34;</span>;</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(Math.<span style="color:#a6e22e">round</span>(<span style="color:#ae81ff">10.3</span>);</span></span></code></pre></div></div>
+</section>
+
+
+<h3 id="saving-return-values">Saving return values</h3>
+<p>We can store the return value of a function in a variable. Function calls are also expressions. This means their value can also be stored in variables, just like with operations on numbers or strings.</p>
+<p>Suppose we have a file <code>arithmetic.js</code> containing this code:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">result</span> <span style="color:#f92672">=</span> Math.<span style="color:#a6e22e">round</span>(<span style="color:#ae81ff">10.3</span>);</span></span></code></pre></div><p>When this program is executed, it creates a variable called <code>result</code> and assigns to it <strong>the return value of the function</strong>, in this case the rounded number.</p>
+<p>So <code>result</code> will have a value of <code>10</code>.</p>
+<h3 id="-logging-and-returning">🔭 Logging and returning</h3>
+<p>Most functions return values we can use in our program.</p>
+<p><code>Math.round</code> takes a single input, does a calculation and then returns a value that we can use when our program is running.</p>
+<p>Some functions don&rsquo;t produce useful return values in our running program; but they can still cause <strong>effects</strong>.</p>
+<section class="c-note c-note--exercise">
+  <h4 class="c-note__title e-heading__4">✍️Predict, Run, Observe</span>
+  </h4>
+  <div class="c-note__text "><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">result</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;hello world&#34;</span>);</span></span></code></pre></div><ol>
+<li>Predict what <code>result</code> will <em>evaluate to</em> when the code above runs.</li>
+<li>Execute this line in the Node REPL.</li>
+<li>Evaluate the value of the <code>result</code> variable to observe what happens.</li>
+</ol>
+</div>
+</section>
+
+
+<p>When this program runs, the variable <code>result</code> will evaluate to <code>undefined</code>. <code>undefined</code> is a data type in JavaScript which usually means no value has been assigned. Unlike the <code>number</code> data type, which contains many possible values (<code>1</code>, <code>2</code>, <code>10.3</code>, etc), the <code>undefined</code> data type has exactly one value, <code>undefined</code>.</p>
+<p>This can feel confusing as <code>console.log</code> <em>is</em> a function with a set of instructions. <code>console.log</code> <em>does</em> have an effect: it logs values to the console. However, <code>console.log</code> doesn&rsquo;t produce an output that we can use <em>inside</em> the rest of our running program.</p>
+<section class="c-note c-note--tip">
+  <h4 class="c-note__title e-heading__4">💡tip</span>
+  </h4>
+  <div class="c-note__text ">Key fact: <code>console.log</code> is used to print values to the terminal. It doesn’t produce an output in the running program.</div>
+</section>
+
+
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="percentages">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="percentages">
+        Percentages
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="30 minutes countdown" datetime="P30M">30&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Construct simple expressions to represent a calculation</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <p>Let&rsquo;s begin with this problem:</p>
+<blockquote><p>Given a <em>decimal number</em> I want to convert it into a <em>percentage format</em>.</p>
+</blockquote><p>For example, given the decimal number <code>0.5</code> we return the string <code>&quot;50%&quot;</code>. Given the decimal number <code>0.231</code> we return the string <code>&quot;23.1%&quot;</code>.</p>
+<h3 id="restating-the-problem">Restating the problem</h3>
+<p>Our function must convert <em>any</em> decimal to a percentage. We have used functions already. Here are some functions we&rsquo;ve used:</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;hello world&#34;</span>); <span style="color:#75715e">// logs &#34;hello world&#34; to the console
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>Math.<span style="color:#a6e22e">round</span>(<span style="color:#ae81ff">3.141</span>); <span style="color:#75715e">// evaluates to the whole number 3
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>All these expressions are <em>function calls</em>: we’re passing input (<code>&quot;hello world&quot;</code> or <code>3.141</code>) to the functions (<code>console.log</code> or <code>Math.round</code>) to use their functionality. <code>Math.round</code> and <code>console.log</code> are functions that the JavaScript language designers have written and stored inside the language, because everyone needs them all the time.</p>
+<p>No such pre-built function converts any number to a percentage, so we must write our own. We&rsquo;re going to create a function called <code>convertToPercentage</code> with the following requirements:</p>
+<p><em>Given</em> a number input</p>
+<p><em>When</em> we call <code>convertToPercentage</code> with the number input</p>
+<p><em>Then</em> we get back a string representing the percentage equivalent of that number.</p>
+<p>Here are some examples:</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">convertToPercentage</span>(<span style="color:#ae81ff">0.5</span>); <span style="color:#75715e">// should return &#34;50%&#34;
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">convertToPercentage</span>(<span style="color:#ae81ff">0.231</span>); <span style="color:#75715e">// should return &#34;23.1%&#34;
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="useful-expressions">Useful expressions</h3>
+<p>It is often helpful to solve a problem in one specific instance before doing it for all cases.</p>
+<p>We&rsquo;re not going to define our function yet. Instead we will work out what our function should do. Then we&rsquo;ll define a function which does the same thing.</p>
+<p>In programming, we always try the simplest thing first. Let’s consider how to convert just one number to a percentage. Look at this variable declaration:</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">decimalNumber</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.5</span>;</span></span></code></pre></td></tr></table>
+</div>
+</div><p>We want to create an expression for the percentage using the value of <code>decimalNumber</code>. To convert to a percentage, we will multiply the number by 100 and then add a <code>&quot;%&quot;</code> sign on the end.</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">decimalNumber</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.5</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">percentage</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">`</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">decimalNumber</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">100</span><span style="color:#e6db74">}</span><span style="color:#e6db74">%`</span>;</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Recalling template literals, the expression in the curly braces will be evaluated first and then inserted into the string, giving us the percentage string.</p>
+
+
+
+<tab-panels class="c-tabs">
+  <div class="c-tabs__list" id="calculation-with-variables" role="tablist"><button
+          data-toggle="tab"
+          id="tab-label-calculation-with-variables-0"
+          class="c-tabs__tab e-heading__5 space 
+            is-active"
+          role="tab"
+          aria-controls="calculation-with-variables-0"
+          aria-selected="true">
+          Calculate area
+        </button><button
+          data-toggle="tab"
+          id="tab-label-calculation-with-variables-1"
+          class="c-tabs__tab e-heading__5 space "
+          role="tab"
+          aria-controls="calculation-with-variables-1"
+          aria-selected="false">
+          Convert pence
+        </button></div>
+  <div class="c-tabs__group" id="calculation-with-variables">
+        <div
+          id="calculation-with-variables-0"
+          class="c-tabs__panel is-active"
+          role="tabpanel"
+          data-heading="Calculate area"
+          aria-labelledby="tab-label-calculation-with-variables-0"><p>Now that we&rsquo;ve solved the problem of converting a single decimal number to a percentage, let&rsquo;s practice solving other similar problems using expressions.</p>
+<p>Create a new JavaScript file so that you can try running the code for yourself.</p>
+<h3 id="calculating-the-area-and-perimeter-of-a-rectangle">Calculating the area and perimeter of a rectangle</h3>
+<p>In one of these new files, let&rsquo;s make two variables that describe the dimensions of a rectangle:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">height</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>; <span style="color:#75715e">// 10 is just an example of a value here - your code should still work if you change this to another value.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">width</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">30</span>; <span style="color:#75715e">// Also just an example - your code should still work if this changes.
+</span></span></span></code></pre></div><p>Using these variables, let&rsquo;s calculate the <a
+  href="https://www.bbc.co.uk/bitesize/topics/zjbg87h/articles/zwqt6fr">area</a> and <a
+  href="https://www.bbc.co.uk/bitesize/topics/zvmxsbk/articles/zmrpxbk">perimeter</a> of the rectangle.</p>
+<p>We can calculate the area and perimeter by creating expressions that use the <code>height</code> and <code>width</code> variables we just created. Hint: read the links above if you don&rsquo;t know how to calculate area and perimeter of a rectangle.</p>
+<p>Finally, we&rsquo;ll create two more variables: <code>area</code> and <code>perimeter</code> to store the result of the calculations.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">area</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">FILL_ME_IN</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">perimeter</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">FILL_ME_IN</span>;</span></span></code></pre></div><p>Now, if we change the numbers assigned to <code>height</code> and <code>width</code>, are the <code>area</code> and <code>perimeter</code> values still correct? Try using <code>console.log</code> to print out the value of the variables and then run the script using Node to view the output.</p>
+</div>
+        <div
+          id="calculation-with-variables-1"
+          class="c-tabs__panel "
+          role="tabpanel"
+          data-heading="Convert pence"
+          aria-labelledby="tab-label-calculation-with-variables-1"><p>Remember to create a new JavaScript file to run the code for yourself.</p>
+<h3 id="converting-pence-to-pounds">Converting pence to pounds</h3>
+<p>Like the rectangle example, we&rsquo;ll start by creating a variable to store a <a
+  href="http://teach.files.bbci.co.uk/skillswise/ma26mone-e3-f-money-pounds-and-pence.pdf">price in pence</a>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">price</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">130</span>; <span style="color:#75715e">// Just an example value. Try changing this value to 0, 10, or 1521, and make sure you still get the right answer from your code.
+</span></span></span></code></pre></div><p>Now, you should write an expression that calculates the price in pounds. The price in pounds should be shown with 2 decimal places and start with &ldquo;£&rdquo;.</p>
+<p>Try using <code>console.log</code> to print out the value of price in pounds and then run the script using Node to view the output.</p>
+</div></div>
+</tab-panels>
+
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="defining-functions">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="defining-functions">
+        Declaring functions
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="20 minutes countdown" datetime="P20M">20&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Label and describe the syntactic features of a function declaration</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <section class="c-note c-note--tip">
+  <h4 class="c-note__title e-heading__4">💡Recall</span>
+  </h4>
+  <div class="c-note__text ">Functions are reusable blocks of code.</div>
+</section>
+
+
+<p>To create a function, we can use a function declaration. A function declaration looks like this:</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">convertToPercentage</span>() {}</span></span></code></pre></td></tr></table>
+</div>
+</div><p>The <code>function</code> declaration consists of the following syntactic elements:</p>
+<ul>
+<li><code>function</code> keyword, begins the function declaration</li>
+<li><code>convertToPercentage</code> - names the function</li>
+<li><code>()</code> - any input to the function will go between these round braces (our function above doesn&rsquo;t take any input (yet), but it still needs the <code>()</code>s)</li>
+<li><code>{}</code> - the body of the function is written inside the curly braces (our function above doesn&rsquo;t do anything yet, but it still needs the <code>{}</code>s)</li>
+</ul>
+<p>We can create a function declaration by wrapping up the <code>percentage</code> variable and the expression for the percentage inside the function.</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">decimalNumber</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.5</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">convertToPercentage</span>() {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">percentage</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">`</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">decimalNumber</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">100</span><span style="color:#e6db74">}</span><span style="color:#e6db74">%`</span>;
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></td></tr></table>
+</div>
+</div><p>At the moment <code>decimalNumber</code> is not wrapped up inside the body of the function. In the following sections, we will explore what happens when this is the case.</p>
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="playing-computer">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="playing-computer">
+        Playing computer
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="30 minutes countdown" datetime="P30M">30&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Analyse each line in a given program and state what the line does when the program executes</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Differentiate between a function declaration and a function invocation</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Define a frame</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Describe what happens when a function is called</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Differentiate between a local frame and a global frame</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <p>To understand how <code>convertToPercentage</code> works we must build a mental model of how the computer executes our code. To build this model, we use a method called 
+<tool-tip-container tabindex="0"><strong class="tooltip__trigger" id="trigger__playing computer">playing computer</strong><span class="tooltip__emoji">🧶</span><tool-tip role="tooltip" aria-labelledby="playing computer"><span class="tooltip__title e-heading__2"><span class="tooltip__emoji">🧶</span> playing computer</span><span class="tooltip__content">.<strong>Playing computer</strong> means simulating how the computer executes our code. We &ldquo;step through&rdquo; the code, line by line, and work out what the computer does when it follows each instruction.</span></tool-tip></tool-tip-container>
+</p>
+<p>We will use an interactive code visualiser to play computer.</p>
+<section class="c-note c-note--activity">
+  <h4 class="c-note__title e-heading__4">🕹️👣 Step through</span>
+  </h4>
+  <div class="c-note__text "><p>In a JavaScript program, each line is an instruction that will have some effect. For example, a line of code with a variable declaration means &ldquo;store a new variable with this value in memory&rdquo;. In the interactive widget, arrows are used to show which <em>line just executed</em> and which <em>line is next to be executed</em>.</p>
+<p>Click <em>next</em> to see what happens when the computer executes the following program. Pay particular attention to what happens when the function <code>convertToPercentage</code> is called.</p>
+<iframe title="interactive-widget" width="800" height="500" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=const%20decimalNumber%20%3D%200.5%3B%0A%0Afunction%20convertToPercentage%28%29%20%7B%0A%20%20const%20percentage%20%3D%20%60%24%7BdecimalNumber%20*%20100%7D%25%60%3B%0A%7D%0A%0AconvertToPercentage%280.5%29%3B&codeDivHeight=400&codeDivWidth=300&cumulative=false&curInstr=4&heapPrimitives=nevernest&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
+</div>
+</section>
+
+
+<h3 id="-global-frame">🖼️ Global frame</h3>
+<p>As we step through the program, we keep track of two things: <em>memory</em> and the <em>line that is being currently executed</em>. We keep track of this information using a 
+<tool-tip-container tabindex="0"><strong class="tooltip__trigger" id="trigger__frame">frame</strong><span class="tooltip__emoji">🧶</span><tool-tip role="tooltip" aria-labelledby="frame"><span class="tooltip__title e-heading__2"><span class="tooltip__emoji">🧶</span> frame</span><span class="tooltip__content">Think of a frame as the context in which some code gets executed. We use frames to keep track of memory and the line of code that is being currently executed.</span></tool-tip></tool-tip-container>
+.</p>
+<p>The <em>global frame</em> is always the first frame that gets created when our program starts executing. It is like the starting point for our program, the place where code gets executed first. When we run the code above, <code>decimalNumber</code> and <code>convertToPercentage</code> are both stored in the <em>global frame</em>.</p>
+<h3 id="-local-frame">🖼️  Local frame</h3>
+<section class="c-note c-note--tip">
+  <h4 class="c-note__title e-heading__4">💡recall</span>
+  </h4>
+  <div class="c-note__text ">A <strong>function call</strong> is an instruction to run the code inside a function</div>
+</section>
+
+
+<p>Whenever we call a function a new frame is created for executing the code inside that function. In the example above, we call the function <code>convertToPercentage</code> on line 7 and then a new frame is created for <code>convertToPercentage</code>. Inside the <code>convertToPercentage</code> frame, the computer executes the instructions inside <code>convertToPercentage</code>, storing new variables in memory and keeping track of the current line that is being executed.</p>
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="scope">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="scope">
+        Scope
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="20 minutes countdown" datetime="P20M">20&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Define scope</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Explain what happens when a variable is referenced out of scope</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <p>The function <code>convertToPercentage</code> will only be useful if we can access the <code>percentage</code> string that it creates. Otherwise, we won&rsquo;t be able to use the result of <code>convertToPercentage</code> in other parts of our code. We can try accessing the <code>percentage</code> variable outside the function body like this:</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">decimalNumber</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.5</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">convertToPercentage</span>() {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">percentage</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">`</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">decimalNumber</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">100</span><span style="color:#e6db74">}</span><span style="color:#e6db74">%`</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">convertToPercentage</span>(<span style="color:#ae81ff">0.5</span>);
+</span></span><span style="display:flex; background-color:#3c3d38"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">percentage</span>);</span></span></code></pre></td></tr></table>
+</div>
+</div><p>However if we run the code above, we get an error:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-console" data-lang="console"><span style="display:flex;"><span>ReferenceError: percentage is not defined
+</span></span></code></pre></div><p>We get an error because of 
+<tool-tip-container tabindex="0"><strong class="tooltip__trigger" id="trigger__scope">scope</strong><span class="tooltip__emoji">🧶</span><tool-tip role="tooltip" aria-labelledby="scope"><span class="tooltip__title e-heading__2"><span class="tooltip__emoji">🧶</span> scope</span><span class="tooltip__content">Scope means where variables are and what you can access.</span></tool-tip></tool-tip-container>
+. When we define <code>convertToPercentage</code> we also define a <strong>local scope</strong> - the region of code enclosed inside <code>convertToPercentage</code>&rsquo;s function body. This region is <code>convertToPercentage</code>&rsquo;s <strong>local scope</strong>. This means any variables we declare inside <code>convertToPercentage</code>&rsquo;s <strong>local scope</strong> can only be accessed within this region. If we attempt to reference a variable outside the scope where it was declared, then get a <code>ReferenceError</code>.</p>
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="return">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="return">
+        Returning from a function
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="30 minutes countdown" datetime="P30M">30&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Identify the return value at a call site given its function declaration</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Log the return value of a function</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Given a short program, state the number of times a given function is called</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <p>We need a way to access the percentage string that is created inside <code>convertToPercentage</code>. To access values created inside functions, we write 
+<tool-tip-container tabindex="0"><strong class="tooltip__trigger" id="trigger__return statements">return statements</strong><span class="tooltip__emoji">🧶</span><tool-tip role="tooltip" aria-labelledby="return statements"><span class="tooltip__title e-heading__2"><span class="tooltip__emoji">🧶</span> return statements</span><span class="tooltip__content">We write a return statement to specify a function&rsquo;s return value. If your function call is like a question, the return value is the answer. It&rsquo;s what comes back.</span></tool-tip></tool-tip-container>
+.</p>
+<p>We can add a return statement to <code>convertToPercentage</code> like this:</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span></span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span></span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">decimalNumber</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.5</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">convertToPercentage</span>() {
+</span></span><span style="display:flex; background-color:#3c3d38"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">percentage</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">`</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">decimalNumber</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">100</span><span style="color:#e6db74">}</span><span style="color:#e6db74">%`</span>;
+</span></span><span style="display:flex; background-color:#3c3d38"><span>  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">percentage</span>;
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></td></tr></table>
+</div>
+</div><p>If we want, we could also remove the variable <code>percentage</code>, since we can return the value of the expression directly:</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span></span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">decimalNumber</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.5</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">convertToPercentage</span>() {
+</span></span><span style="display:flex; background-color:#3c3d38"><span>  <span style="color:#66d9ef">return</span> <span style="color:#e6db74">`</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">decimalNumber</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">100</span><span style="color:#e6db74">}</span><span style="color:#e6db74">%`</span>;
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="-checking-the-output">🔎 Checking the output</h3>
+<p>We can store a function&rsquo;s return value in a variable.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">result</span> <span style="color:#f92672">=</span> Math.<span style="color:#a6e22e">round</span>(<span style="color:#ae81ff">10.3</span>);
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">result</span>); <span style="color:#75715e">// logs 10 to the console
+</span></span></span></code></pre></div><p>We call <code>Math.round</code> which takes the input <code>10.3</code> and then returns the rounded number <code>10</code>. So <code>result</code> stores a value of <code>10</code>.</p>
+<p><code>Math.round</code> is a function implemented by other developers and <code>convertToPercentage</code> is a function <em>we&rsquo;re</em> implementing, but calling <code>convertToPercentage</code> is just like calling <code>Math.round</code>.</p>
+<p>Now we want to <strong>call</strong> the function <code>convertToPercentage</code> and <strong>store the return value</strong> in a variable.</p>
+
+
+
+<tab-panels class="c-tabs">
+  <div class="c-tabs__list" id="checking-output" role="tablist"><button
+          data-toggle="tab"
+          id="tab-label-checking-output-0"
+          class="c-tabs__tab e-heading__5 space 
+            is-active"
+          role="tab"
+          aria-controls="checking-output-0"
+          aria-selected="true">
+          Store the return value
+        </button><button
+          data-toggle="tab"
+          id="tab-label-checking-output-1"
+          class="c-tabs__tab e-heading__5 space "
+          role="tab"
+          aria-controls="checking-output-1"
+          aria-selected="false">
+          Log the return value
+        </button></div>
+  <div class="c-tabs__group" id="checking-output">
+        <div
+          id="checking-output-0"
+          class="c-tabs__panel is-active"
+          role="tabpanel"
+          data-heading="Store the return value"
+          aria-labelledby="tab-label-checking-output-0"><p>We can store the return value in a variable in exactly the same way:</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">decimalNumber</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.5</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">convertToPercentage</span>() {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">percentage</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">`</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">decimalNumber</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">100</span><span style="color:#e6db74">}</span><span style="color:#e6db74">%`</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">percentage</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex; background-color:#3c3d38"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">result</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">convertToPercentage</span>(<span style="color:#ae81ff">0.5</span>);</span></span></code></pre></td></tr></table>
+</div>
+</div></div>
+        <div
+          id="checking-output-1"
+          class="c-tabs__panel "
+          role="tabpanel"
+          data-heading="Log the return value"
+          aria-labelledby="tab-label-checking-output-1"><p>Log out the value of <code>result</code> to the console using <code>console.log</code>.</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+</span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">9
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">decimalNumber</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.5</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">convertToPercentage</span>() {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">percentage</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">`</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">decimalNumber</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">100</span><span style="color:#e6db74">}</span><span style="color:#e6db74">%`</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">percentage</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">result</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">convertToPercentage</span>(<span style="color:#ae81ff">0.5</span>);
+</span></span><span style="display:flex; background-color:#3c3d38"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">result</span>);</span></span></code></pre></td></tr></table>
+</div>
+</div><p>This will now print the following when run:</p>
+<pre tabindex="0"><code>50%</code></pre></div></div>
+</tab-panels>
+
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="reuse">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="reuse">
+        Reusing the function
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="30 minutes countdown" datetime="P30M">30&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Evaluate a function expression</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Call a function with an input in REPL</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <p>Our goal is for <code>convertToPercentage</code> to be <em>reusable</em> for any number. To check this goal, let&rsquo;s call <code>convertToPercentage</code> with different arguments and check the return value each time:</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span></span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span></span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">decimalNumber</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.5</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">convertToPercentage</span>() {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">percentage</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">`</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">decimalNumber</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">100</span><span style="color:#e6db74">}</span><span style="color:#e6db74">%`</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">percentage</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex; background-color:#3c3d38"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">output1</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">convertToPercentage</span>(<span style="color:#ae81ff">0.5</span>);
+</span></span><span style="display:flex; background-color:#3c3d38"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">output2</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">convertToPercentage</span>(<span style="color:#ae81ff">0.231</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">output1</span>);
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">output2</span>);</span></span></code></pre></td></tr></table>
+</div>
+</div><p>When we execute this code we <em>want</em> to log the target output for each input: <code>0.5</code> and <code>0.231</code>:</p>
+<pre tabindex="0"><code>50%
+23.1%</code></pre><p>However, <em>given the function&rsquo;s current implementation</em>, we get the following logs:</p>
+<pre tabindex="0"><code>50%
+50%</code></pre><h3 id="-global-scope">🌍 Global scope</h3>
+<p>At the moment, <code>decimalNumber</code> is in the 
+<tool-tip-container tabindex="0"><strong class="tooltip__trigger" id="trigger__global scope">global scope</strong><span class="tooltip__emoji">🧶</span><tool-tip role="tooltip" aria-labelledby="global scope"><span class="tooltip__title e-heading__2"><span class="tooltip__emoji">🧶</span> global scope</span><span class="tooltip__content">Variables declared in the global scope are available everywhere in your program. Variables declared in a { block scope } are only available within that block. Any block within your program can access variables that are defined within the global scope.</span></tool-tip></tool-tip-container>
+. Any functions we declare can reference variables in the global scope. If a variable is in the global scope, we say that variable is a <strong>global variable</strong>.</p>
+<h3 id="-play-computer">🎮 Play computer</h3>
+<p>Play computer and step through the code to check why we get the output below:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-console" data-lang="console"><span style="display:flex;"><span>50%
+</span></span><span style="display:flex;"><span>50%
+</span></span></code></pre></div><iframe title="interactive widget" width="1200" height="500" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=const%20decimalNumber%20%3D%200.5%3B%0A%0Afunction%20convertToPercentage%28%29%20%7B%0A%20%20const%20percentage%20%3D%20%60%24%7BdecimalNumber%20*%20100%7D%25%60%3B%0A%20%20return%20percentage%3B%0A%7D%0A%0Aconst%20output1%20%3D%20convertToPercentage%280.5%29%3B%0Aconst%20output2%20%3D%20convertToPercentage%280.231%29%3B%0A%0Aconsole.log%28output1%29%3B%0Aconsole.log%28output2%29%3B&codeDivHeight=400&codeDivWidth=600&cumulative=false&curInstr=11&heapPrimitives=nevernest&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="parameters">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="parameters">
+        Parameterising a function
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="40 minutes countdown" datetime="P40M">40&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Define a parameter</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Identify the value assigned to a parameter when a function is invoked</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Differentiate between parameters and arguments</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Invoke a given function with an appropriate argument to produce some target output</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Reuse code to perform the same calculation with different inputs</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <p>At the moment, <code>decimalNumber</code> is a variable in the global scope of our program:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">decimalNumber</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.5</span>; <span style="color:#75715e">// defined in the global scope of our program
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">convertToPercentage</span>() {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">percentage</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">`</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">decimalNumber</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">100</span><span style="color:#e6db74">}</span><span style="color:#e6db74">%`</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">percentage</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">output1</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">convertToPercentage</span>(<span style="color:#ae81ff">0.5</span>);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">output2</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">convertToPercentage</span>(<span style="color:#ae81ff">0.231</span>);</span></span></code></pre></div><p>So long as <code>decimalNumber</code> is always in the global scope, <code>convertToPercentage</code> will always go to the global scope to get the value of <code>decimalNumber</code>.</p>
+<blockquote><p>However, we want <code>convertToPercentage</code> to work for <em>any</em> input we pass to it.</p>
+</blockquote><p>To make a function work for any number, we need to handle inputs. We do this using a 
+<tool-tip-container tabindex="0"><strong class="tooltip__trigger" id="trigger__parameter">parameter</strong><span class="tooltip__emoji">🧶</span><tool-tip role="tooltip" aria-labelledby="parameter"><span class="tooltip__title e-heading__2"><span class="tooltip__emoji">🧶</span> parameter</span><span class="tooltip__content">A parameter is a special kind of variable: its value is defined by the caller.</span></tool-tip></tool-tip-container>
+.</p>
+<p><code>decimalNumber</code> is still a variable - but as a <strong>parameter</strong> we don&rsquo;t assign <code>decimalNumber</code> a value inside the function&rsquo;s body. It is a placeholder. When we call the function, we pass an input to the function, and the value of that input is assigned to the <code>decimalNumber</code> parameter when the function is called. This happens automatically.</p>
+<p>We can add a parameter <code>decimalNumber</code> to our function:</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-js" data-lang="js"><span style="display:flex; background-color:#3c3d38"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">convertToPercentage</span>(<span style="color:#a6e22e">decimalNumber</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// now decimalNumber is a parameter of convertToPercentage
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">percentage</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">`</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">decimalNumber</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">100</span><span style="color:#e6db74">}</span><span style="color:#e6db74">%`</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">percentage</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">output1</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">convertToPercentage</span>(<span style="color:#ae81ff">0.5</span>);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">output2</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">convertToPercentage</span>(<span style="color:#ae81ff">0.231</span>);</span></span></code></pre></td></tr></table>
+</div>
+</div><p>In the example above, we&rsquo;re calling <code>convertToPercentage</code> twice: first with an <strong>input</strong> of <code>0.5</code> and second with an <strong>input</strong> of <code>0.231</code>. In JavaScript instead of <strong>input</strong> we use the word 
+<tool-tip-container tabindex="0"><strong class="tooltip__trigger" id="trigger__argument">argument</strong><span class="tooltip__emoji">🧶</span><tool-tip role="tooltip" aria-labelledby="argument"><span class="tooltip__title e-heading__2"><span class="tooltip__emoji">🧶</span> argument</span><span class="tooltip__content">Arguments are inputs given to a function inside <code>()</code>. An argument means an input.</span></tool-tip></tool-tip-container>
+.</p>
+<p>We&rsquo;re calling <code>convertToPercentage</code> twice: first with an <strong>argument</strong> of <code>0.5</code> and next with an <strong>argument</strong> of <code>0.231</code>.</p>
+<p>Think of a function as a box. We put data in and then act on it using the rules in the box; at the end, the box gives us new data back. In programming we say that we <em>pass arguments</em> into a function, the function&rsquo;s code is executed and we get a return value after the function has finished executing. Here&rsquo;s a diagram:</p>
+<style>
+  .mermaid svg {
+    height: initial;
+  }
+  .mermaid {
+    margin-bottom: var(--theme-spacing--gutter);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .mermaid[data-processed] {
+    opacity: 1;
+  }
+</style>
+<div class="mermaid">
+flowchart LR
+    A[argument] --> B{function}
+    B --> C[return]</div>
+
+<script type="module" src="/scripts/mermaid-observer.min.js" defer></script>
+<p>Here&rsquo;s a diagram of what happens when <code>convertToPercentage</code> is passed a specific <strong>argument</strong>:</p>
+<style>
+  .mermaid svg {
+    height: initial;
+  }
+  .mermaid {
+    margin-bottom: var(--theme-spacing--gutter);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .mermaid[data-processed] {
+    opacity: 1;
+  }
+</style>
+<div class="mermaid">
+flowchart LR
+    A[0.231] --> B{convertToPercentage}
+    B --> C[23.1%]</div>
+
+<script type="module" src="/scripts/mermaid-observer.min.js" defer></script>
+<p>In this interactive widget we have defined a parameter <code>decimalNumber</code> in the function declaration inside parentheses after the function name <code>convertToPercentage</code>. In our mental model, a function call means going to <code>convertToPercentage</code> and running the code inside the function.</p>
+<h3 id="-play-computer">🎮 Play computer</h3>
+<iframe title="interactive widget" width="1100" height="500" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=function%20convertToPercentage%28decimalNumber%29%20%7B%0A%20%20const%20percentage%20%3D%20%60%24%7BdecimalNumber%20*%20100%7D%25%60%3B%0A%20%20return%20percentage%3B%0A%7D%0A%0Aconst%20output1%20%3D%20convertToPercentage%280.5%29%3B%0Aconst%20output2%20%3D%20convertToPercentage%280.231%29%3B&codeDivHeight=400&codeDivWidth=500&cumulative=false&curInstr=0&heapPrimitives=nevernest&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
+<p>Use the interactive widget to see what happens when the code above is executed. Pay close attention to what happens inside the <code>convertToPercentage</code> frame.</p>
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="solving-problems-with-functions">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="solving-problems-with-functions">
+        Solving Problems with Functions
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="60 minutes countdown" datetime="P60M">60&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Practice solving problems with functions</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+
+  
+
+  
+  
+
+  
+    
+    
+  
+
+
+
+<section
+  class="c-block c-block--youtube"
+  aria-labelledby="warning-name-is-empty">
+  
+  <div class="c-block__content">
+    <youtube-player data-src="https://youtu.be/foc8E5Yi4c0"></youtube-player>
+  </div>
+</section>
+
+<p>To get the most out of this workshop - don&rsquo;t just watch, code along 💻
+You can use the code samples below as a starting point.</p>
+<h3 id="exercise-1">Exercise 1</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#75715e">// Write a function that will calculate the area of a rectangle
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">//   given it&#39;s width and height
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">width</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">3</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">height</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">4</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">calculateArea</span>() {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">area</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">width</span> <span style="color:#f92672">*</span> <span style="color:#a6e22e">height</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">area</span>);</span></span></code></pre></div><h3 id="exercise-2">Exercise 2</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">capitaliseFirstLetter</span>(<span style="color:#a6e22e">name</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">name</span>[<span style="color:#ae81ff">0</span>].<span style="color:#a6e22e">toUpperCase</span>() <span style="color:#f92672">+</span> <span style="color:#a6e22e">name</span>.<span style="color:#a6e22e">substring</span>(<span style="color:#ae81ff">1</span>));
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">createGreeting</span>(<span style="color:#a6e22e">name</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">result</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">capitaliseFirstLetter</span>(<span style="color:#a6e22e">name</span>);
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#e6db74">`Welcome </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">result</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">greeting</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">createGreeting</span>(<span style="color:#e6db74">&#34;barath&#34;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">greeting</span>);</span></span></code></pre></div>
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+      </div>
+      <nav slot="nav">
+        <a href="#" class="e-button c-solo-view__back">&larr; Back</a>
+        <a href="#" class="e-button c-solo-view__next">Next &rarr;</a>
+      </nav>
+    </solo-view>
+    
+    <script src="/scripts/solo-view.min.js" defer></script>
+    
+    <script src="/scripts/time-total.min.js" defer></script>
+  
+
+
+        
+
+  <footer class="c-page-footer">
+    <nav class="c-page-footer__nav">
+      
+      
+      <span class="c-page-footer__this">prep</span>
+      
+        →<a
+          class="c-page-footer__next c-page-footer__link e-link"
+          href="/itp/structuring-data/sprints/1/backlog/"
+          >backlog</a
+        >
+      
+    </nav>
+  </footer>
+
+
+      </main><footer class="l-layout__footer l-footer">
+  <a
+    class="l-footer__github e-button e-button--icon"
+    href="https://github.com/CodeYourFuture/curriculum/">
+    <svg
+  focusable="false"
+  class="e-button__icon"
+  role="presentation"
+  width="96"
+  viewbox="0 0 98 96"
+  xmlns="http://www.w3.org/2000/svg">
+  <path
+    fill-rule="evenodd"
+    clip-rule="evenodd"
+    d="M48.854 0C21.839 0 0 22 0 49.217c0 21.756 13.993 40.172 33.405 46.69 2.427.49 3.316-1.059 3.316-2.362 0-1.141-.08-5.052-.08-9.127-13.59 2.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015 4.934.326 7.523 5.052 7.523 5.052 4.367 7.496 11.404 5.378 14.235 4.074.404-3.178 1.699-5.378 3.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283 0-5.378 1.94-9.778 5.014-13.2-.485-1.222-2.184-6.275.486-13.038 0 0 4.125-1.304 13.426 5.052a46.97 46.97 0 0 1 12.214-1.63c4.125 0 8.33.571 12.213 1.63 9.302-6.356 13.427-5.052 13.427-5.052 2.67 6.763.97 11.816.485 13.038 3.155 3.422 5.015 7.822 5.015 13.2 0 18.905-11.404 23.06-22.324 24.283 1.78 1.548 3.316 4.481 3.316 9.126 0 6.6-.08 11.897-.08 13.526 0 1.304.89 2.853 3.316 2.364 19.412-6.52 33.405-24.935 33.405-46.691C97.707 22 75.788 0 48.854 0z"
+    fill="currentColor" />
+</svg>
+
+    <span class="is-invisible">Find us on GitHub</span>
+  </a>
+  <p class="l-footer__impressum e-heading__6">
+    This
+    <a href="https://github.com/CodeYourFuture/curriculum/">free and open source programme</a>
+    is a project of
+    <a href="https://codeyourfuture.io/">Code Your Future</a>
+    <br />
+    Creative Commons Attribution-ShareAlike 4.0
+  </p>
+  <dark-mode class="l-footer__mode"
+    ><button
+      slot="button"
+      id="mode-toggle"
+      type="button"
+      class="e-button e__button--toggle e-button--icon">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="e-icon e__button__icon e-icon--moon">
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
+      </svg>
+      <span class="is-invisible">Toggle between light and dark mode</span>
+    </button></dark-mode
+  >
+</footer>
+
+
+
+<script src="/scripts/app.min.js" defer></script>
+
+<script src="/scripts/youtube-player.min.js" defer></script>
+
+<script src="/scripts/tab-panels.min.js" type="module" defer></script>
+
+<script src="/scripts/dark-mode.min.js"></script>
+
+<script src="/scripts/alert-message.min.js" defer></script>
+
+
+
+
+
+
+
+</div>
+  </body>
+</html>

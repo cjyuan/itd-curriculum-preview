@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Github on CYF Courses</title>
+    <link>https://curriculum.codeyourfuture.io/guides/employability/github/</link>
+    <description>Recent content in Github on CYF Courses</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://curriculum.codeyourfuture.io/guides/employability/github/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>📌 Pinned projects</title>
+      <link>https://curriculum.codeyourfuture.io/guides/employability/github/pinned-projects/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://curriculum.codeyourfuture.io/guides/employability/github/pinned-projects/</guid>
+      <description>&lt;p&gt;Your GitHub portfolio should be a curated mix of projects you completed as part of CYF and some passion projects. It should show that you care about your work, that you are interested in coding and that you are a self-motivated person with good communication skills.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Choose 2 to 6 of your best projects and pin them to your GitHub profile.&lt;/li&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Make sure your pinned projects demonstrate your best work&lt;/li&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Keep updating your projects as you build new ones&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;project-readme-criteria&#34;&gt;Project Readme Criteria&lt;/h2&gt;&#xA;&lt;p&gt;Do the readmes on your portfolio projects say things like &amp;ldquo;A starting point for CYF&amp;rsquo;s TV show DOM project&amp;rdquo; and nothing else? How does this look to an employer? (It looks bad.)&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Activity</title>
+      <link>https://curriculum.codeyourfuture.io/guides/employability/github/activity/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://curriculum.codeyourfuture.io/guides/employability/github/activity/</guid>
+      <description>&lt;p&gt;Do as much work in public on your GitHub as possible. Employers will look at your GitHub, and they like to see the following:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;h3 id=&#34;active-commits&#34;&gt;Active commits&lt;/h3&gt;&#xA;&lt;p&gt;Lots of green on the profile graph, well distributed over time&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;h3 id=&#34;regular-coding&#34;&gt;Regular coding&lt;/h3&gt;&#xA;&lt;p&gt;Pull requests, code review, general competence with git and Github&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;h3 id=&#34;evidence-of-you-using-the-languages-you-list-on-your-cv&#34;&gt;Evidence of you using the languages you list on your CV&lt;/h3&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;h3 id=&#34;a-portfolio-of-projects&#34;&gt;A portfolio of projects&lt;/h3&gt;&#xA;&lt;p&gt;At least some self-organised passion projects you have done outside of class&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Highlight your skills</title>
+      <link>https://curriculum.codeyourfuture.io/guides/employability/github/highlight-skills/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://curriculum.codeyourfuture.io/guides/employability/github/highlight-skills/</guid>
+      <description>&lt;p&gt;Your GitHub profile gives you boundless opportunities to demonstrate your skills and passion. Ensure you&amp;rsquo;re highlighting the skills you want to be found for (i.e., the ones that match the jobs you&amp;rsquo;re applying for). Check you&amp;rsquo;ve done this in:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Your Bio&lt;/li&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Your Profile Readme&lt;/li&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; The projects you&amp;rsquo;ve pinned&lt;/li&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; The activity you&amp;rsquo;re sharing&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;discoverability&#34;&gt;Discoverability&lt;/h3&gt;&#xA;&lt;p&gt;Link your professional email and personal website on your Github. Link your Github to your LinkedIn. Make yourself easy to find and easy to contact.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

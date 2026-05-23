@@ -1,0 +1,2282 @@
+<!DOCTYPE html>
+
+
+
+
+<html lang="en" class="p-prep"><head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  <title data-pagefind-meta="title">
+    
+      Software Development Course 
+    
+      Decomposition 
+    
+      Sprint 3 
+    
+    Prep
+  </title>
+  
+    <meta
+      name="description"
+      content=" CYF Courses: Overview description of the prep work for the sprint" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+  <style>
+    body,
+    html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      animation: fade-in 300ms;
+    }
+    @keyframes fade-in {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  </style>
+  
+  
+  <link
+    rel="stylesheet"
+    href="/bundled.min.b6a4520237559385268d63a9daa81d96.css"
+    media="print"
+    onload="this.media='all'" />
+
+  
+  
+    
+    
+    <link
+      rel="stylesheet"
+      href="/custom.min.8ded6a1a88bc7cc98bdef8dc33d15f3a.css"
+      media="print"
+      onload="this.media='all'" />
+  
+
+
+  <noscript>
+    <link rel="stylesheet" href="/bundled.min.b6a4520237559385268d63a9daa81d96.css" />
+  </noscript>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&amp;display=swap"
+    rel="stylesheet"
+    media="print"
+    onload="this.media='all'" />
+
+  <link rel="shortcut icon" href="https://curriculum.codeyourfuture.io/favicon.ico" />
+  <meta name="theme-color" content="#e3ddeef2" />
+  <link rel="manifest" href="https://curriculum.codeyourfuture.io/manifest.json" />
+</head>
+<body>
+    <a class="c-skip-link e-button" id="skip-link" href="#main">Skip to main</a>
+    <div class="l-layout">
+      <header class="l-layout__header l-header">
+  <div class="l-header__container">
+    <h1 class="l-header__heading e-heading__6" data-pagefind-ignore>
+      <a class="l-header__home" href="/"
+        ><span class="is-invisible"
+          >sdc Prep CYF Courses</span
+        >
+        <span class="is-none--lt-container">
+          <svg
+          xmlns="http://www.w3.org/2000/svg"
+          title="Code Your Future."
+          viewBox="0 0 621.64 155.81"
+          width="140px"
+          focusable="false"
+          role="img">
+          <path
+            fill="var(--theme-color--brand)"
+            d="M103.37 56.51C96.91 63.64 87.03 69.9 74.6 69.9c-20.14 0-33.52-12.91-33.52-34.09C41.08 13.97 57.5.87 69.94.87c9.5 0 13.77 5.32 14.63 6.46l2.18-5.27h14.91v27h-17c-.28-6.18-3.32-12-10.06-12s-11.3 8.45-11.3 18.8c0 9.4 4.84 17.86 13.86 17.86 8 0 14.24-8.36 15.1-9.31Zm2.88-21.85C106.25 14.15 119.92 0 139.58 0c23.26 0 34.09 14 34.09 35.32s-12 34.57-33.43 34.57c-19.88 0-33.99-11.49-33.99-35.23Zm43.68.66c0-11.49-3.13-20.7-10.45-20.7-5.79-.09-9.78 8.26-9.78 20 0 12.44 4.47 20.32 10.54 20.32s9.65-7.88 9.65-19.62Zm27.49 20.23h5.89V14.34h-5.89V1.8h29c23 0 36.09 14.15 36.09 32.29 0 21.65-13.11 34.09-36.47 34.09h-28.62Zm29 0c10.03-.19 14.21-9.59 14.21-21.49 0-10.16-4.18-19.75-14.25-19.75h-3.61v41.24ZM303.04 1.8v21h-16.43v-8.46h-15.19v13.1h18v12.62h-18v15.49h15.19v-8.83h16.43v21.46h-57.26V55.55h6V14.34h-6V1.8Z" />
+          <path
+            fill="var(--theme-color--ink)"
+            d="M274.42 87.82v21h-16.8v-8.45h-14.37v16.52h18v12.63h-18v12.04h9.68v12.63h-35.29v-12.63h5.89v-41.21h-5.89V87.82Zm33.04 0v12.24h-5.12v20.51c0 15.28 3.41 18.51 9.49 18.51 5.79 0 9.59-2.28 9.59-18.61v-20.12h-5.17V87.82h28.11v12.24h-5.11v23.07c0 22.51-9.4 32.67-27.25 32.67-19.18-.57-29.43-10.64-29.43-32.19v-23.45h-5.32V87.82Zm103.5 24.69h-14v-12.16h-8v41.21h7.88v12.63h-35.26v-12.63h7.79v-41.21h-8.12v12.16h-14V87.82h63.71ZM444 87.82v12.24h-5.13v20.51c0 15.28 3.42 18.51 9.5 18.51 5.79 0 9.59-2.28 9.59-18.61v-20.12h-5.13V87.82h28.11v12.24h-5.13v23.07c0 22.51-9.4 32.67-27.25 32.67-19.18-.57-29.44-10.64-29.44-32.19v-23.45h-5.32V87.82Zm71.59 0c22 0 26.3 8.73 26.3 19.56 0 7.4-5.88 12.63-13.76 13.77 6.55.95 12.44 6.64 12.44 13.48 0 4.08.57 6.46 2.27 6.46 1.43 0 2.19-1.14 2.19-3v-3.13h6.36v5.22c0 7.88-3.32 15.19-13.86 15.19-12.44 0-18.42-6.55-18.42-17.66 0-8.64-1.05-10.73-9.5-10.73v14.68h5.79v12.53h-30.67v-12.53h5.32v-41.4h-5.32V87.82Zm-6 28.48h4.27c5.51 0 9.12-2.65 9.12-7.69 0-5.6-3.13-8.45-8.64-8.45h-4.75Zm102.38-28.48v21h-16.43v-8.45h-15.19v13.09h18v12.6h-18v15.5h15.19v-8.83h16.43v21.46h-57.26v-12.63h6v-41.21h-6V87.82Zm-227.72-56.1c.38-1.9 2.47-5.89 3.51-8.17l5.22-9.59h-5.22V1.8h25.54v12.16h-5.05l-17.62 30.86v11h5.32v12.36h-30.39V55.83h5.41v-11.2l-18.42-30.67h-4.65V1.8h32.47v12.16h-4.93l5.5 10.1c.57 1.81 2.57 6.08 2.95 7.7Zm29.54 2.94C413.79 14.15 427.47 0 447.12 0c23.27 0 34.09 14 34.09 35.32s-12 34.57-33.42 34.57c-19.85 0-34-11.49-34-35.23Zm43.68.66c0-11.49-3.13-20.7-10.44-20.7-5.79-.09-9.78 8.26-9.78 20 0 12.44 4.46 20.32 10.54 20.32s9.68-7.88 9.68-19.62ZM514.25 1.8v12.26h-5.13v20.5c0 15.29 3.42 18.52 9.5 18.52 5.79 0 9.59-2.28 9.59-18.61V14.34h-5.13V1.8h28.11v12.26h-5.13v23.07c0 22.5-9.4 32.66-27.25 32.66-19.18-.57-29.44-10.63-29.44-32.19V14.15h-5.32V1.8Zm71.59 0c22 0 26.31 8.74 26.31 19.57 0 7.4-5.89 12.62-13.77 13.76 6.55 1 12.44 6.65 12.44 13.49 0 4.08.57 6.46 2.27 6.46 1.43 0 2.19-1.14 2.19-3V48.9h6.36v5.23c0 7.88-3.32 15.19-13.86 15.19-12.44 0-18.42-6.55-18.42-17.66 0-8.64-1.05-10.73-9.5-10.73v14.71h5.79v12.54h-30.67V55.64h5.32v-41.4h-5.32V1.8Zm-6 28.49h4.27c5.51 0 9.12-2.66 9.12-7.69 0-5.6-3.13-8.45-8.64-8.45h-4.75ZM28.39 14.7l5.8 10.64-23.46 10.72 23.46 10.55-3.61 9.87L0 42.24v-13.3Zm318.7 14.24v13.3l-30.58 14.24-3.61-9.87 23.46-10.55-23.46-10.72 5.8-10.64Z" />
+        </svg>
+        </span>
+        <span class="is-none--gt-container">
+          <svg
+          xmlns="http://www.w3.org/2000/svg"
+          version="1.0"
+          viewBox="0 0 512 512"
+          width="48px">
+          <path
+            fill="currentcolor"
+            stroke="currentcolor"
+            d="M225.5 1c-1.1.5-3.5.9-5.3.9-4.1.1-22.9 4.5-30.7 7.2-63.1 22-114.7 72.3-142.7 139.4-6.4 15.2-11.8 33.8-16.7 57-4.1 19.7-5.4 64.5-2.6 90.8C33 346.2 49.8 390.1 76.8 425c6.2 7.9 23.9 26.4 30.7 32 8.1 6.7 26.1 18.7 35.1 23.6 28.1 15.1 58 24.3 91.9 28.3 5.5.7 13.6 1.7 18 2.2 8.8 1.2 33.9.7 48-.9 11-1.3 31.7-4.8 36.5-6.2 1.9-.5 8-2.3 13.5-3.9 21.3-6.1 47.2-17.8 67.5-30.5 8.8-5.4 23.7-15.8 28.5-19.7 10.2-8.4 24.5-21.3 31.4-28.2l8.4-8.5-2.2-2.9c-1.3-1.5-4.6-5.3-7.4-8.3-6.2-6.7-14.5-15.7-21.2-23.1-2.7-3-7.5-8.2-10.5-11.4-3-3.3-9.8-10.8-15.1-16.5-21.5-23.6-24.2-26.5-24.9-26.8-.3-.1-2 1.2-3.6 3-1.6 1.9-6.3 7.1-10.4 11.7-8.6 9.7-25.6 24.6-35.9 31.4-21.4 14.4-42.5 21.7-62.6 21.7-15.3-.1-29.3-3.3-42.5-10-22.8-11.5-41.9-35.5-51.5-64.7-4.2-12.8-4.3-13.4-5.9-22.8-3.8-22.9-4.6-39.2-2.6-55.6 2.7-22.7 3.3-26.5 5-33.2 7.9-30.9 16.7-48.6 32.4-65.6 16.8-17.9 41.1-24.9 65.1-18.6 30 7.8 50.7 36.3 55.5 76.3.5 4.6 1.2 8.7 1.5 9.3.4.5 25.1.9 62.6.9H474V9H364.2L357 26.7c-4 9.8-7.9 18.5-8.7 19.3-1.3 1.3-2.1.8-6.6-4.3-6-6.9-18.3-16.7-28.2-22.5-7.4-4.3-22.6-10.9-28.5-12.4-9.2-2.2-18.1-4.1-24-5-9-1.3-33.1-1.9-35.5-.8z" />
+        </svg>
+        </span>
+      </a>
+    </h1>
+    <link
+  href="/pagefind/pagefind-ui.css"
+  rel="stylesheet"
+  media="print"
+  onload="this.media='all'" />
+<style>
+  :root {
+    --pagefind-ui-primary: var(--theme-color--ink);
+    --pagefind-ui-text: var(--theme-color--ink);
+    --pagefind-ui-background: var(--theme-color--paper);
+    --pagefind-ui-border: var(--theme-color--outline);
+    --pagefind-ui-tag: var(--theme-color--block);
+    --pagefind-ui-border-radius: 2em;
+    --pagefind-ui-image-border-radius: var(--theme-border-radius);
+    --pagefind-ui-font: var(--theme-font--copy);
+  }
+  .pagefind-ui--reset {
+    position: absolute;
+  }
+  #search .pagefind-ui__search-input {
+    box-shadow: var(--theme-box-shadow--inset);
+    margin-bottom: var(--theme-spacing--1);
+  }
+  #search .pagefind-ui__search-clear {
+    background-color: transparent;
+  }
+  #search .pagefind-ui__drawer {
+    background-color: var(--theme-color--paper);
+    box-shadow: var(--theme-box-shadow--slim);
+    transform: translateY(-1.5px);
+    padding: 0 var(--theme-spacing--2);
+    max-height: calc(100vh - 4rem);
+    overflow-y: auto;
+  }
+  #search .pagefind-ui__result {
+    padding: var(--theme-spacing--1) 0 var(--theme-spacing--2) 0;
+  }
+  #search .pagefind-ui__result:focus-within,
+  #search .pagefind-ui__button:focus {
+    background-color: var(--theme-color--block);
+  }
+  #search .pagefind-ui__button {
+    border: none;
+  }
+</style>
+<script src="/pagefind/pagefind-ui.js" type="text/javascript" defer></script>
+<div id="search" class="l-header__search"></div>
+<script>
+  window.addEventListener("DOMContentLoaded", (event) => {
+    new PagefindUI({
+      element: "#search",
+      showSubResults: true,
+      pageSize: 3,
+      showImages: false,
+      showTags: true,
+    });
+  });
+</script>
+
+    <button
+      class="l-header__action e-button e-button--icon js-menu-toggle e-heading__3">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+        <path
+          stroke="var(--theme-color--ink)"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M13 5a1 1 0 1 0-2 0 1 1 0 0 0 2 0Zm0 7a1 1 0 1 0-2 0 1 1 0 0 0 2 0Zm0 7a1 1 0 1 0-2 0 1 1 0 0 0 2 0Z" />
+      </svg>
+      <span class="is-invisible">Open Menu.</span>
+    </button>
+  </div>
+</header>
+
+      <nav
+  class="l-layout__menu l-menu"
+  aria-label="Main Site Links."
+  id="site-menu"
+  hidden
+  tabindex="0">
+  <div class="l-menu__container">
+    <h2 class="l-menu__heading e-heading__2">
+      <a href="/" class="l-menu__home is-invisible">Menu</a>
+    </h2>
+    <button
+      class="l-menu__action e-button e-button--icon js-menu-toggle e-heading__2"
+      id="close-menu">
+      ❎
+      <span class="is-invisible">Close Menu.</span>
+    </button>
+    <ul class="l-menu__primary">
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/guides/">
+            Guides
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/sdc/tools/">
+            Tools
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/sdc/logic/">
+            Logic
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/sdc/decomposition/">
+            Decomposition
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/sdc/legacy/">
+            Legacy code
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/sdc/complexity/">
+            Complexity
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/tracks/servers/">
+            Servers
+          </a>
+        </li>
+    </ul>
+    <ul class="l-menu__secondary">
+        <li class="l-menu__item">
+          <a class="e-heading__3 l-menu__link" href="https://codeyourfuture.io">
+            CYF 👈🏾
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__3 l-menu__link" href="https://codeyourfuture.io/volunteers/">
+            Join Us 👋🏿
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__3 l-menu__link" href="https://codeyourfuture.io/donate/">
+            Support 🫶🏼
+          </a>
+        </li>
+    </ul>
+  </div>
+</nav>
+
+      <main
+        id="main"
+        class="l-layout__main l-main"
+        tabindex="0"
+        data-pagefind-body>
+        
+  
+    <solo-view tabindex="0">
+      
+
+
+      <div slot="header">
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+<header
+  class="c-page-header 
+    c-page-header--solo
+   c-page-header--toc">
+  
+  <div class="c-page-header__container">
+    <div class="c-page-header__breadcrumbs">
+      
+  <nav class="c-breadcrumbs">
+    <ol class="c-breadcrumbs__list">
+      
+        
+        
+          <li class="c-breadcrumbs__item">
+            <a
+              class="c-breadcrumbs__link"
+              href="/sdc/"data-pagefind-filter="module"><span class="c-breadcrumbs__text">Software Development Course</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                width="24px"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="c-breadcrumbs__icon">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+              </svg>
+            </a>
+          </li>
+        
+        
+          <li class="c-breadcrumbs__item">
+            <a
+              class="c-breadcrumbs__link"
+              href="/sdc/decomposition/"><span class="c-breadcrumbs__text">Decomposition</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                width="24px"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="c-breadcrumbs__icon">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+              </svg>
+            </a>
+          </li>
+      
+        <li class="c-breadcrumbs__item">
+          <a
+            class="c-breadcrumbs__link"
+            href="/sdc/decomposition/sprints/3/"data-pagefind-filter="sprint">Sprint 3</a
+          >
+        </li>
+      
+    </ol>
+  </nav>
+  
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Our Courses",
+      "item":"https://curriculum.codeyourfuture.io/"},
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Software Development Course",
+      "item":"https://curriculum.codeyourfuture.io/sdc/"},
+    {
+      "@type": "ListItem",
+      "position":  3 ,
+      "name": "Decomposition",
+      "item":"https://curriculum.codeyourfuture.io/sdc/decomposition/"},{
+      "@type": "ListItem",
+      "position":  5 ,
+      "name": "Sprint 3",
+      "item":"https://curriculum.codeyourfuture.io/sdc/decomposition/sprints/3/"},
+    {
+      "@type": "ListItem",
+      "position":  6 ,
+      "name": "Prep",
+      "item":"https://curriculum.codeyourfuture.io/sdc/decomposition/sprints/3/"}
+  ]
+}
+</script>
+
+
+    </div>
+    <h1 class="c-page-header__title e-heading__1"data-pagefind-filter="view"
+        
+      data-pagefind-weight="10">
+      <span class="c-emoji">
+        
+        
+           
+            <time-total class="c-page-header__time"></time-total>
+      
+         
+        </span>
+        <span class="c-page-header__title-text">Prep</span>
+               
+    </h1>
+    
+      
+        <h2 class="c-page-header__description e-heading__3">
+          Overview description of the prep work for the sprint
+        </h2>
+      
+    
+    
+    
+    
+      <div class="c-page-header__toc " id="toc">
+        <section class="c-toc" aria-label="Table of contents.">
+          <a id="top" class="c-toc__top e-button e-button--icon" href="#toc"
+            >🔖 <span class="is-invisible">back to top</span></a
+          >
+          
+            <nav id="TableOfContents"></nav>
+          
+          
+            <ol>
+              
+                <li>
+                  <a href="#websockets" data-pagefind-weight="5"
+                    >Websockets</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#adding-like%2fdislike" data-pagefind-weight="5"
+                    >Adding like/dislike</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#identifying-common-functionality" data-pagefind-weight="5"
+                    >Identifying common functionality</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#extracting-common-functionality" data-pagefind-weight="5"
+                    >Extracting common functionality</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#continuation-styles" data-pagefind-weight="5"
+                    >Continuation styles</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#extracting-a-middleware" data-pagefind-weight="5"
+                    >Extracting a middleware</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#using-existing-middleware" data-pagefind-weight="5"
+                    >Using existing middleware</a
+                  >
+                  
+                </li>
+              
+            </ol>
+          
+          
+        </section>
+      </div>
+    
+
+  </div>
+</header>
+</div>
+      <div slot="blocks">
+        
+        
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="websockets">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="websockets">
+        WebSockets
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="120 minutes countdown" datetime="P120M">120&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Stream live updates from a server using WebSockets.</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Discuss the trade-offs of using WebSockets or polling.</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Describe properties of message formats (e.g. including a command name).</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <blockquote><p><a
+  href="https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API">WebSockets </a> are an API and protocol which create a two-way communication channel between two programs.</p>
+</blockquote><p>Websockets are used to establish a channel so that a backend can send updates to a frontend website.</p>
+<p>You can read <a
+  href="https://docs.developer.tech.gov.sg/docs/data-engineering-initiative-playbook/Chapter5/Introduction_to_WebSockets">an introduction to WebSockets</a>, as well as roughly <a
+  href="https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API/Writing_WebSocket_client_applications">what a client looks like</a>, and <a
+  href="https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API/Writing_WebSocket_servers">what a server does</a>.</p>
+<p>On the server side, we will be using the <a
+  href="https://www.npmjs.com/package/websocket">websocket npm package</a> which lists a server example in its README.</p>
+<section class="c-note c-note--tip">
+    <h4 class="c-note__title">💡Tip</h4>
+    <div class="c-note__text"><p>This sprint, you will need to submit <em>both</em> a copy of your code which supports polling, <em>and</em> a copy which supports WebSockets.</p>
+<p>You probably want to make a copy of your polling code, and have two separate (similar) pages in your repo.</p>
+<p>Note that this is different from other work you&rsquo;ve done, where you make different branches for different pieces of work. We want both of your implementations on one branch.</p>
+<p>You should aim to share code between these implementations where possible.</p></div>
+  </section><p>On the backend, create a WebSocket server by adding this code:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">server</span> <span style="color:#a6e22e">as</span> <span style="color:#a6e22e">WebSocketServer</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#34;websocket&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">server</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">http</span>.<span style="color:#a6e22e">createServer</span>(<span style="color:#a6e22e">app</span>);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">webSocketServer</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">WebSocketServer</span>({ <span style="color:#a6e22e">httpServer</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">server</span> });</span></span></code></pre></div><p>Next, follow the example in the <code>websocket</code> npm package&rsquo;s documentation to have your server handle requests.</p>
+<p>On the client-side, you will need to make a new <code>WebSocket</code> connection to the server.</p>
+<p>Some things to think about when implementing WebSockets updates:</p>
+<h3 id="learn-new-apis-in-isolation">Learn new APIs in isolation</h3>
+<p>It will be easier for you to learn a new API (like WebSockets) with a simple example.</p>
+<p>Your goal is to make a WebSocket to stream new messages from the server to the client. Your existing codebase is more complicated and handles many other concerns. To explore WebSockets, configure the server to always report the message &ldquo;Hello&rdquo;. This way, you can isolate the new process and test things out more easily.</p>
+<p>You could even write a whole new website which <em>only</em> makes a WebSocket connection and displays a message.</p>
+<p>Once you have an example WebSocket working, and understand how it works, keep going. Apply your new understanding to the real problem you&rsquo;re trying to solve.</p>
+<h3 id="think-about-the-protocol-you-want">Think about the protocol you want</h3>
+<p>WebSockets let you send arbitrary text (or binary) messages.</p>
+<p>In our quote server, we switched from our backend returning a pre-formatted string of a quote, to returning a JSON object so we could get the parts ourselves.</p>
+<p>Think about what structure would be useful for our client and our server to know about.</p>
+<p>If we&rsquo;re going to add more messages in the future (e.g. for &ldquo;liking&rdquo; a message), how will the receiver of the message know what kind of message the one it receives is?</p>
+<p>One thing we often do is wrap our message in an object, with a field specifically saying what the command is.</p>
+<p>e.g. instead of sending:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;user&#34;</span>: <span style="color:#e6db74">&#34;Azin&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;message&#34;</span>: <span style="color:#e6db74">&#34;Hello!&#34;</span>
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div><p>we may send:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;command&#34;</span>: <span style="color:#e6db74">&#34;send-message&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;message&#34;</span>: {
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;user&#34;</span>: <span style="color:#e6db74">&#34;Azin&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;message&#34;</span>: <span style="color:#e6db74">&#34;Hello!&#34;</span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div><p>This means that if we add new commands in the future, we don&rsquo;t need to change our existing code.</p>
+<h3 id="think-about-timings">Think about timings</h3>
+<p>When we first load a page, we need to get all of the messages that already exist.</p>
+<p>After that, we can ask to be notified of new messages.</p>
+<p>There are a few ways we could do that. An interesting question is what happens <em>between</em> these events?</p>
+<p>Imagine we made an HTTP GET request to ask for all of the messages, then created a WebSocket to get new messages. What happens if someone sent a message between when we got our response, and when the WebSocket was connected? How can we make sure we don&rsquo;t miss any messages?</p>
+<p>Or imagine we made a WebSocket request, and expected to receive a list of all previous messages, and then to keep receiving updates. Does the server need to remember which messages have already been sent to each client?</p>
+<section class="c-note c-note--Exercise">
+  <h4 class="c-note__title e-heading__4">Exercise</span>
+  </h4>
+  <div class="c-note__text ">How will you make sure that your client won&rsquo;t miss any new messages, after getting the initial messages? Write down your strategy.</div>
+</section>
+
+
+<h3 id="remember-websockets-are-bi-directional">Remember WebSockets are bi-directional</h3>
+<p>Now, we&rsquo;re using a <code>POST</code> request to send a new message, and a <code>WebSocket</code> to stream receiving new messages. But we know that WebSockets are bi-directional - we can both send and receive information on them. We could change our sending logic to also use our WebSocket. Or we could keep using HTTP POST requests. Both of these approaches work.</p>
+<section class="c-note c-note--Exercise">
+  <h4 class="c-note__title e-heading__4">Exercise</span>
+  </h4>
+  <div class="c-note__text "><p>Think: What advantages does each approach have?</p>
+<p>Why might we want to change our implementation to use a WebSocket for sending messages?</p>
+<p>Why might we want to keep using POST requests for sending messages?</p>
+<p>Why might we want to support <em>both</em> on our server? Why might we only want to support one on our server?</p>
+</div>
+</section>
+
+
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="adding-like/dislike">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="adding-like/dislike">
+        Adding like/dislike
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="120 minutes countdown" datetime="P120M">120&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Identify what data needs to be stored and exchanged between a client and server.</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Devise a scheme for differentiating messages with different meanings (e.g. a new message vs a new like).</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Contrast giving updated values as absolute values or relative changes.</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Implement an end-to-end feature involving data updates and reconciliation across a client and server.</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <p>The last requirement we have for our chat application is the ability to like/dislike a message (and see what messages have been liked/disliked).</p>
+<section class="c-note c-note--Exercise">
+  <h4 class="c-note__title e-heading__4">Exercise</span>
+  </h4>
+  <div class="c-note__text "><p>Think about what information a client would need to provide to a server in order to like/dislike a message.</p>
+<p>Think about what information a server would need to provide to a client in order to display how many likes/dislikes a message has.</p>
+<p>Think about what information a server would need to provide to a client in order to <em>update</em> how many likes/dislikes a message has.</p>
+<p>Write these things down.</p>
+</div>
+</section>
+
+
+<h3 id="identifiers">Identifiers</h3>
+<p>One of the key new requirements to add liking/disliking a message is knowing <em>which</em> message is being liked/disliked. When a client wants to like a message, it needs some way of saying <em>this</em> is the message I want to like.</p>
+<p>This suggests we need a unique identifier for each message:</p>
+<ul>
+<li>When the server tells a client about a message, it needs to tell it what the identifier is for that message.</li>
+<li>When a client tells the server it wants to like a message, it needs to tell it the identifier for the message it wants to like.</li>
+<li>When the server tells a client a message has been liked, it needs to tell the client which message was liked, and the client needs to know enough about that message to be able to update the UI.</li>
+</ul>
+<h3 id="message-formats">Message formats</h3>
+<p>Your server is now sending multiple kinds of updates: &ldquo;Here&rsquo;s a new message&rdquo; or &ldquo;Here&rsquo;s an update to the number of likes of an existing message&rdquo;. You will need to make sure the client knows the difference between these messages. Your client will need to know how to act when it receives each kind of message.</p>
+<h3 id="changes-or-absolutes">Changes or absolutes?</h3>
+<p>When new likes happen, the server needs to tell the client about it. We need to choose how the server will tell the client about this. Two options:</p>
+<ul>
+<li>The server could tell the client &ldquo;this message was liked again&rdquo;.</li>
+<li>The server could tell the client &ldquo;this message now has 10 likes&rdquo;.</li>
+</ul>
+<p>Both of these can work.</p>
+<section class="c-note c-note--Exercise">
+  <h4 class="c-note__title e-heading__4">Exercise</span>
+  </h4>
+  <div class="c-note__text "><p>Write down some advantages and disadvantages of a server -&gt; client update being &ldquo;+1 compared to before&rdquo; or &ldquo;now =10&rdquo;.</p>
+<p>Choose which approach you want to take.</p>
+</div>
+</section>
+
+
+<section class="c-note c-note--Exercise">
+  <h4 class="c-note__title e-heading__4">Exercise</span>
+  </h4>
+  <div class="c-note__text "><p>Implement liking and disliking messages:</p>
+<ol>
+<li>If a message has a non-zero number of likes or dislikes, the frontend needs to show this.</li>
+<li>The frontend needs to expose some way for a user to like or dislike any message.</li>
+<li>When a user likes or dislikes a message, the frontend needs to tell the backend about this, and the backend needs to notify all clients of this.</li>
+<li>When a frontend is notified by a backend about a new like or dislike, it needs to update the UI to show this.</li>
+</ol>
+<p>You may do this in your polling implementation, WebSockets implementation, or both.</p>
+</div>
+</section>
+
+
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="identifying-common-functionality">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="identifying-common-functionality">
+        Identifying common functionality
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="30 minutes countdown" datetime="P30M">30&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Identify and explain the risks and costs of duplicate code.</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Identify which code is equivalent, equivalent with parameters, or unique.</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <p>Often in different HTTP handlers we do the same thing. This happens because we use similar patterns. For instance, we may expect all of our request bodies to contain JSON objects. Or we may expect all requests from signed in users to have an <code>Authorization</code> header in a certain format.</p>
+<p>For instance, an implementation of &ldquo;receiving messages&rdquo; and &ldquo;receiving reactions to messages&rdquo; may look like this:</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">33
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">34
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">35
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">36
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">37
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">38
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">39
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">40
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">41
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">42
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">43
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">44
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">45
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">46
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">47
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">48
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">49
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">50
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">51
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">52
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">53
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">54
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">55
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">post</span>(<span style="color:#e6db74">&#34;/message&#34;</span>, (<span style="color:#a6e22e">req</span>, <span style="color:#a6e22e">res</span>) =&gt; {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">bodyBytes</span> <span style="color:#f92672">=</span> [];
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">req</span>.<span style="color:#a6e22e">on</span>(<span style="color:#e6db74">&#34;data&#34;</span>, <span style="color:#a6e22e">chunk</span> =&gt; <span style="color:#a6e22e">bodyBytes</span>.<span style="color:#a6e22e">push</span>(...<span style="color:#a6e22e">chunk</span>));
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">req</span>.<span style="color:#a6e22e">on</span>(<span style="color:#e6db74">&#34;end&#34;</span>, () =&gt; {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">bodyString</span> <span style="color:#f92672">=</span> String.<span style="color:#a6e22e">fromCharCode</span>(...<span style="color:#a6e22e">bodyBytes</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">body</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">try</span> {
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">body</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">JSON</span>.<span style="color:#a6e22e">parse</span>(<span style="color:#a6e22e">bodyString</span>);
+</span></span><span style="display:flex;"><span>    } <span style="color:#66d9ef">catch</span> (<span style="color:#a6e22e">error</span>) {
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">error</span>(<span style="color:#e6db74">`Failed to parse body </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">bodyString</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> as JSON: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">error</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>);
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">status</span>(<span style="color:#ae81ff">400</span>).<span style="color:#a6e22e">send</span>(<span style="color:#e6db74">&#34;Expected body to be JSON.&#34;</span>);
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">return</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (<span style="color:#66d9ef">typeof</span> <span style="color:#a6e22e">body</span> <span style="color:#f92672">!==</span> <span style="color:#e6db74">&#34;object&#34;</span> <span style="color:#f92672">||</span> <span style="color:#f92672">!</span>(<span style="color:#e6db74">&#34;user&#34;</span> <span style="color:#66d9ef">in</span> <span style="color:#a6e22e">body</span>) <span style="color:#f92672">||</span> <span style="color:#f92672">!</span>(<span style="color:#e6db74">&#34;message&#34;</span> <span style="color:#66d9ef">in</span> <span style="color:#a6e22e">body</span>)) {
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">error</span>(<span style="color:#e6db74">`Failed to extract user and message from post body: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">bodyString</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>);
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">status</span>(<span style="color:#ae81ff">400</span>).<span style="color:#a6e22e">send</span>(<span style="color:#e6db74">&#34;Expected body to be a JSON object containing keys user and message.&#34;</span>);
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">return</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">receiveMessage</span>(<span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">user</span>, <span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">message</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">send</span>(<span style="color:#e6db74">&#34;ok&#34;</span>);
+</span></span><span style="display:flex;"><span>  });
+</span></span><span style="display:flex;"><span>});
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">post</span>(<span style="color:#e6db74">&#34;/react&#34;</span>, (<span style="color:#a6e22e">req</span>, <span style="color:#a6e22e">res</span>) =&gt; {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">bodyBytes</span> <span style="color:#f92672">=</span> [];
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">req</span>.<span style="color:#a6e22e">on</span>(<span style="color:#e6db74">&#34;data&#34;</span>, <span style="color:#a6e22e">chunk</span> =&gt; <span style="color:#a6e22e">bodyBytes</span>.<span style="color:#a6e22e">push</span>(...<span style="color:#a6e22e">chunk</span>));
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">req</span>.<span style="color:#a6e22e">on</span>(<span style="color:#e6db74">&#34;end&#34;</span>, () =&gt; {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">bodyString</span> <span style="color:#f92672">=</span> String.<span style="color:#a6e22e">fromCharCode</span>(...<span style="color:#a6e22e">bodyBytes</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">body</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">try</span> {
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">body</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">JSON</span>.<span style="color:#a6e22e">parse</span>(<span style="color:#a6e22e">bodyString</span>);
+</span></span><span style="display:flex;"><span>    } <span style="color:#66d9ef">catch</span> (<span style="color:#a6e22e">error</span>) {
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">error</span>(<span style="color:#e6db74">`Failed to parse body </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">bodyString</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> as JSON: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">error</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>);
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">status</span>(<span style="color:#ae81ff">400</span>).<span style="color:#a6e22e">send</span>(<span style="color:#e6db74">&#34;Expected body to be JSON.&#34;</span>);
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">return</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (<span style="color:#66d9ef">typeof</span> <span style="color:#a6e22e">body</span> <span style="color:#f92672">!==</span> <span style="color:#e6db74">&#34;object&#34;</span> <span style="color:#f92672">||</span> <span style="color:#f92672">!</span>(<span style="color:#e6db74">&#34;id&#34;</span> <span style="color:#66d9ef">in</span> <span style="color:#a6e22e">body</span>) <span style="color:#f92672">||</span> <span style="color:#f92672">!</span>(<span style="color:#e6db74">&#34;reaction&#34;</span> <span style="color:#66d9ef">in</span> <span style="color:#a6e22e">body</span>)) {
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">error</span>(<span style="color:#e6db74">`Failed to extract id and reaction from post body: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">bodyString</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>);
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">status</span>(<span style="color:#ae81ff">400</span>).<span style="color:#a6e22e">send</span>(<span style="color:#e6db74">&#34;Expected body to be a JSON object containing keys id and reaction.&#34;</span>);
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">return</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (<span style="color:#f92672">!</span>(<span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">id</span> <span style="color:#66d9ef">in</span> <span style="color:#a6e22e">messageReactions</span>)) {
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">status</span>(<span style="color:#ae81ff">404</span>).<span style="color:#a6e22e">send</span>(<span style="color:#e6db74">`Got reaction to message id </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">id</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> which doesn&#39;t exist.`</span>);
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">return</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">reactionsForMessage</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">messageReactions</span>[<span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">id</span>];
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (<span style="color:#f92672">!</span>(<span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">reaction</span>) <span style="color:#66d9ef">in</span> <span style="color:#a6e22e">reactionsForMessage</span>) {
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">status</span>(<span style="color:#ae81ff">400</span>).<span style="color:#a6e22e">send</span>(<span style="color:#e6db74">`Reaction </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">reaction</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> isn&#39;t allowed.`</span>);
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">return</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">reactionsForMessage</span>[<span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">reaction</span>]<span style="color:#f92672">++</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">send</span>(<span style="color:#e6db74">&#34;ok&#34;</span>);
+</span></span><span style="display:flex;"><span>  });
+</span></span><span style="display:flex;"><span>});</span></span></code></pre></td></tr></table>
+</div>
+</div><p>(It&rsquo;s ok if your implementation looked different, but we&rsquo;re going to talk about this example).</p>
+<p>Both of these POST handlers mostly contain code for parsing a response body as JSON.</p>
+<p>This causes a few problems:</p>
+<ol>
+<li>Imagine we found a bug in our parsing - we&rsquo;d need to fix that bug in multiple places.</li>
+<li>It&rsquo;s really hard to tell, at a glance, what each handler is actually doing.</li>
+</ol>
+<p>Let&rsquo;s try to work out what is specific to each handler, and what is more general shared behaviour.</p>
+<h2 id="specific-vs-shared-behaviours">Specific vs shared behaviours</h2>
+<p>Both handlers accumulate chunks of the request as a string, then parse them as a JSON object, returning an error if this failed:</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span></span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span></span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span></span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span></span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span></span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span></span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span></span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span></span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span></span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span></span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span></span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span></span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+</span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
+</span></span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
+</span></span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
+</span></span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
+</span></span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29
+</span></span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30
+</span></span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31
+</span></span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32
+</span></span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">33
+</span></span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">34
+</span></span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">35
+</span></span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">36
+</span></span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">37
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">38
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">39
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">40
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">41
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">42
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">43
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">44
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">45
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">46
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">47
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">48
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">49
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">50
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">51
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">52
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">53
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">54
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">55
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">post</span>(<span style="color:#e6db74">&#34;/message&#34;</span>, (<span style="color:#a6e22e">req</span>, <span style="color:#a6e22e">res</span>) =&gt; {
+</span></span><span style="display:flex; background-color:#3c3d38"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">bodyBytes</span> <span style="color:#f92672">=</span> [];
+</span></span><span style="display:flex; background-color:#3c3d38"><span>  <span style="color:#a6e22e">req</span>.<span style="color:#a6e22e">on</span>(<span style="color:#e6db74">&#34;data&#34;</span>, <span style="color:#a6e22e">chunk</span> =&gt; <span style="color:#a6e22e">bodyBytes</span>.<span style="color:#a6e22e">push</span>(...<span style="color:#a6e22e">chunk</span>));
+</span></span><span style="display:flex; background-color:#3c3d38"><span>  <span style="color:#a6e22e">req</span>.<span style="color:#a6e22e">on</span>(<span style="color:#e6db74">&#34;end&#34;</span>, () =&gt; {
+</span></span><span style="display:flex; background-color:#3c3d38"><span>    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">bodyString</span> <span style="color:#f92672">=</span> String.<span style="color:#a6e22e">fromCharCode</span>(...<span style="color:#a6e22e">bodyBytes</span>);
+</span></span><span style="display:flex; background-color:#3c3d38"><span>    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">body</span>;
+</span></span><span style="display:flex; background-color:#3c3d38"><span>    <span style="color:#66d9ef">try</span> {
+</span></span><span style="display:flex; background-color:#3c3d38"><span>      <span style="color:#a6e22e">body</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">JSON</span>.<span style="color:#a6e22e">parse</span>(<span style="color:#a6e22e">bodyString</span>);
+</span></span><span style="display:flex; background-color:#3c3d38"><span>    } <span style="color:#66d9ef">catch</span> (<span style="color:#a6e22e">error</span>) {
+</span></span><span style="display:flex; background-color:#3c3d38"><span>      <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">error</span>(<span style="color:#e6db74">`Failed to parse body </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">bodyString</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> as JSON: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">error</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>);
+</span></span><span style="display:flex; background-color:#3c3d38"><span>      <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">status</span>(<span style="color:#ae81ff">400</span>).<span style="color:#a6e22e">send</span>(<span style="color:#e6db74">&#34;Expected body to be JSON.&#34;</span>);
+</span></span><span style="display:flex; background-color:#3c3d38"><span>      <span style="color:#66d9ef">return</span>;
+</span></span><span style="display:flex; background-color:#3c3d38"><span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (<span style="color:#66d9ef">typeof</span> <span style="color:#a6e22e">body</span> <span style="color:#f92672">!==</span> <span style="color:#e6db74">&#34;object&#34;</span> <span style="color:#f92672">||</span> <span style="color:#f92672">!</span>(<span style="color:#e6db74">&#34;user&#34;</span> <span style="color:#66d9ef">in</span> <span style="color:#a6e22e">body</span>) <span style="color:#f92672">||</span> <span style="color:#f92672">!</span>(<span style="color:#e6db74">&#34;message&#34;</span> <span style="color:#66d9ef">in</span> <span style="color:#a6e22e">body</span>)) {
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">error</span>(<span style="color:#e6db74">`Failed to extract user and message from post body: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">bodyString</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>);
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">status</span>(<span style="color:#ae81ff">400</span>).<span style="color:#a6e22e">send</span>(<span style="color:#e6db74">&#34;Expected body to be a JSON object containing keys user and message.&#34;</span>);
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">return</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">receiveMessage</span>(<span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">user</span>, <span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">message</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">send</span>(<span style="color:#e6db74">&#34;ok&#34;</span>);
+</span></span><span style="display:flex;"><span>  });
+</span></span><span style="display:flex;"><span>});
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">post</span>(<span style="color:#e6db74">&#34;/react&#34;</span>, (<span style="color:#a6e22e">req</span>, <span style="color:#a6e22e">res</span>) =&gt; {
+</span></span><span style="display:flex; background-color:#3c3d38"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">bodyBytes</span> <span style="color:#f92672">=</span> [];
+</span></span><span style="display:flex; background-color:#3c3d38"><span>  <span style="color:#a6e22e">req</span>.<span style="color:#a6e22e">on</span>(<span style="color:#e6db74">&#34;data&#34;</span>, <span style="color:#a6e22e">chunk</span> =&gt; <span style="color:#a6e22e">bodyBytes</span>.<span style="color:#a6e22e">push</span>(...<span style="color:#a6e22e">chunk</span>));
+</span></span><span style="display:flex; background-color:#3c3d38"><span>  <span style="color:#a6e22e">req</span>.<span style="color:#a6e22e">on</span>(<span style="color:#e6db74">&#34;end&#34;</span>, () =&gt; {
+</span></span><span style="display:flex; background-color:#3c3d38"><span>    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">bodyString</span> <span style="color:#f92672">=</span> String.<span style="color:#a6e22e">fromCharCode</span>(...<span style="color:#a6e22e">bodyBytes</span>);
+</span></span><span style="display:flex; background-color:#3c3d38"><span>    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">body</span>;
+</span></span><span style="display:flex; background-color:#3c3d38"><span>    <span style="color:#66d9ef">try</span> {
+</span></span><span style="display:flex; background-color:#3c3d38"><span>      <span style="color:#a6e22e">body</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">JSON</span>.<span style="color:#a6e22e">parse</span>(<span style="color:#a6e22e">bodyString</span>);
+</span></span><span style="display:flex; background-color:#3c3d38"><span>    } <span style="color:#66d9ef">catch</span> (<span style="color:#a6e22e">error</span>) {
+</span></span><span style="display:flex; background-color:#3c3d38"><span>      <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">error</span>(<span style="color:#e6db74">`Failed to parse body </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">bodyString</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> as JSON: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">error</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>);
+</span></span><span style="display:flex; background-color:#3c3d38"><span>      <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">status</span>(<span style="color:#ae81ff">400</span>).<span style="color:#a6e22e">send</span>(<span style="color:#e6db74">&#34;Expected body to be JSON.&#34;</span>);
+</span></span><span style="display:flex; background-color:#3c3d38"><span>      <span style="color:#66d9ef">return</span>;
+</span></span><span style="display:flex; background-color:#3c3d38"><span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (<span style="color:#66d9ef">typeof</span> <span style="color:#a6e22e">body</span> <span style="color:#f92672">!==</span> <span style="color:#e6db74">&#34;object&#34;</span> <span style="color:#f92672">||</span> <span style="color:#f92672">!</span>(<span style="color:#e6db74">&#34;id&#34;</span> <span style="color:#66d9ef">in</span> <span style="color:#a6e22e">body</span>) <span style="color:#f92672">||</span> <span style="color:#f92672">!</span>(<span style="color:#e6db74">&#34;reaction&#34;</span> <span style="color:#66d9ef">in</span> <span style="color:#a6e22e">body</span>)) {
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">error</span>(<span style="color:#e6db74">`Failed to extract id and reaction from post body: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">bodyString</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>);
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">status</span>(<span style="color:#ae81ff">400</span>).<span style="color:#a6e22e">send</span>(<span style="color:#e6db74">&#34;Expected body to be a JSON object containing keys id and reaction.&#34;</span>);
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">return</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (<span style="color:#f92672">!</span>(<span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">id</span> <span style="color:#66d9ef">in</span> <span style="color:#a6e22e">messageReactions</span>)) {
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">status</span>(<span style="color:#ae81ff">404</span>).<span style="color:#a6e22e">send</span>(<span style="color:#e6db74">`Got reaction to message id </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">id</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> which doesn&#39;t exist.`</span>);
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">return</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">reactionsForMessage</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">messageReactions</span>[<span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">id</span>];
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (<span style="color:#f92672">!</span>(<span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">reaction</span>) <span style="color:#66d9ef">in</span> <span style="color:#a6e22e">reactionsForMessage</span>) {
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">status</span>(<span style="color:#ae81ff">400</span>).<span style="color:#a6e22e">send</span>(<span style="color:#e6db74">`Reaction </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">reaction</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> isn&#39;t allowed.`</span>);
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">return</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">reactionsForMessage</span>[<span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">reaction</span>]<span style="color:#f92672">++</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">send</span>(<span style="color:#e6db74">&#34;ok&#34;</span>);
+</span></span><span style="display:flex;"><span>  });
+</span></span><span style="display:flex;"><span>});</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Both implementations check that the object contains certain keys, but they each check for different specific keys. These are doing the same thing, but with different parameters:</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span></span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span></span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span></span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span></span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span></span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">33
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">34
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">35
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">36
+</span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">37
+</span></span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">38
+</span></span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">39
+</span></span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">40
+</span></span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">41
+</span></span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">42
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">43
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">44
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">45
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">46
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">47
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">48
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">49
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">50
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">51
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">52
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">53
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">54
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">55
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">post</span>(<span style="color:#e6db74">&#34;/message&#34;</span>, (<span style="color:#a6e22e">req</span>, <span style="color:#a6e22e">res</span>) =&gt; {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">bodyBytes</span> <span style="color:#f92672">=</span> [];
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">req</span>.<span style="color:#a6e22e">on</span>(<span style="color:#e6db74">&#34;data&#34;</span>, <span style="color:#a6e22e">chunk</span> =&gt; <span style="color:#a6e22e">bodyBytes</span>.<span style="color:#a6e22e">push</span>(...<span style="color:#a6e22e">chunk</span>));
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">req</span>.<span style="color:#a6e22e">on</span>(<span style="color:#e6db74">&#34;end&#34;</span>, () =&gt; {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">bodyString</span> <span style="color:#f92672">=</span> String.<span style="color:#a6e22e">fromCharCode</span>(...<span style="color:#a6e22e">bodyBytes</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">body</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">try</span> {
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">body</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">JSON</span>.<span style="color:#a6e22e">parse</span>(<span style="color:#a6e22e">bodyString</span>);
+</span></span><span style="display:flex;"><span>    } <span style="color:#66d9ef">catch</span> (<span style="color:#a6e22e">error</span>) {
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">error</span>(<span style="color:#e6db74">`Failed to parse body </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">bodyString</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> as JSON: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">error</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>);
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">status</span>(<span style="color:#ae81ff">400</span>).<span style="color:#a6e22e">send</span>(<span style="color:#e6db74">&#34;Expected body to be JSON.&#34;</span>);
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">return</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex; background-color:#3c3d38"><span>    <span style="color:#66d9ef">if</span> (<span style="color:#66d9ef">typeof</span> <span style="color:#a6e22e">body</span> <span style="color:#f92672">!==</span> <span style="color:#e6db74">&#34;object&#34;</span> <span style="color:#f92672">||</span> <span style="color:#f92672">!</span>(<span style="color:#e6db74">&#34;user&#34;</span> <span style="color:#66d9ef">in</span> <span style="color:#a6e22e">body</span>) <span style="color:#f92672">||</span> <span style="color:#f92672">!</span>(<span style="color:#e6db74">&#34;message&#34;</span> <span style="color:#66d9ef">in</span> <span style="color:#a6e22e">body</span>)) {
+</span></span><span style="display:flex; background-color:#3c3d38"><span>      <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">error</span>(<span style="color:#e6db74">`Failed to extract user and message from post body: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">bodyString</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>);
+</span></span><span style="display:flex; background-color:#3c3d38"><span>      <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">status</span>(<span style="color:#ae81ff">400</span>).<span style="color:#a6e22e">send</span>(<span style="color:#e6db74">&#34;Expected body to be a JSON object containing keys user and message.&#34;</span>);
+</span></span><span style="display:flex; background-color:#3c3d38"><span>      <span style="color:#66d9ef">return</span>;
+</span></span><span style="display:flex; background-color:#3c3d38"><span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">receiveMessage</span>(<span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">user</span>, <span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">message</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">send</span>(<span style="color:#e6db74">&#34;ok&#34;</span>);
+</span></span><span style="display:flex;"><span>  });
+</span></span><span style="display:flex;"><span>});
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">post</span>(<span style="color:#e6db74">&#34;/react&#34;</span>, (<span style="color:#a6e22e">req</span>, <span style="color:#a6e22e">res</span>) =&gt; {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">bodyBytes</span> <span style="color:#f92672">=</span> [];
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">req</span>.<span style="color:#a6e22e">on</span>(<span style="color:#e6db74">&#34;data&#34;</span>, <span style="color:#a6e22e">chunk</span> =&gt; <span style="color:#a6e22e">bodyBytes</span>.<span style="color:#a6e22e">push</span>(...<span style="color:#a6e22e">chunk</span>));
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">req</span>.<span style="color:#a6e22e">on</span>(<span style="color:#e6db74">&#34;end&#34;</span>, () =&gt; {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">bodyString</span> <span style="color:#f92672">=</span> String.<span style="color:#a6e22e">fromCharCode</span>(...<span style="color:#a6e22e">bodyBytes</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">body</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">try</span> {
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">body</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">JSON</span>.<span style="color:#a6e22e">parse</span>(<span style="color:#a6e22e">bodyString</span>);
+</span></span><span style="display:flex;"><span>    } <span style="color:#66d9ef">catch</span> (<span style="color:#a6e22e">error</span>) {
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">error</span>(<span style="color:#e6db74">`Failed to parse body </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">bodyString</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> as JSON: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">error</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>);
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">status</span>(<span style="color:#ae81ff">400</span>).<span style="color:#a6e22e">send</span>(<span style="color:#e6db74">&#34;Expected body to be JSON.&#34;</span>);
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">return</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex; background-color:#3c3d38"><span>    <span style="color:#66d9ef">if</span> (<span style="color:#66d9ef">typeof</span> <span style="color:#a6e22e">body</span> <span style="color:#f92672">!==</span> <span style="color:#e6db74">&#34;object&#34;</span> <span style="color:#f92672">||</span> <span style="color:#f92672">!</span>(<span style="color:#e6db74">&#34;id&#34;</span> <span style="color:#66d9ef">in</span> <span style="color:#a6e22e">body</span>) <span style="color:#f92672">||</span> <span style="color:#f92672">!</span>(<span style="color:#e6db74">&#34;reaction&#34;</span> <span style="color:#66d9ef">in</span> <span style="color:#a6e22e">body</span>)) {
+</span></span><span style="display:flex; background-color:#3c3d38"><span>      <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">error</span>(<span style="color:#e6db74">`Failed to extract id and reaction from post body: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">bodyString</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>);
+</span></span><span style="display:flex; background-color:#3c3d38"><span>      <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">status</span>(<span style="color:#ae81ff">400</span>).<span style="color:#a6e22e">send</span>(<span style="color:#e6db74">&#34;Expected body to be a JSON object containing keys id and reaction.&#34;</span>);
+</span></span><span style="display:flex; background-color:#3c3d38"><span>      <span style="color:#66d9ef">return</span>;
+</span></span><span style="display:flex; background-color:#3c3d38"><span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (<span style="color:#f92672">!</span>(<span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">id</span> <span style="color:#66d9ef">in</span> <span style="color:#a6e22e">messageReactions</span>)) {
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">status</span>(<span style="color:#ae81ff">404</span>).<span style="color:#a6e22e">send</span>(<span style="color:#e6db74">`Got reaction to message id </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">id</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> which doesn&#39;t exist.`</span>);
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">return</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">reactionsForMessage</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">messageReactions</span>[<span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">id</span>];
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (<span style="color:#f92672">!</span>(<span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">reaction</span>) <span style="color:#66d9ef">in</span> <span style="color:#a6e22e">reactionsForMessage</span>) {
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">status</span>(<span style="color:#ae81ff">400</span>).<span style="color:#a6e22e">send</span>(<span style="color:#e6db74">`Reaction </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">reaction</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> isn&#39;t allowed.`</span>);
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">return</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">reactionsForMessage</span>[<span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">reaction</span>]<span style="color:#f92672">++</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">send</span>(<span style="color:#e6db74">&#34;ok&#34;</span>);
+</span></span><span style="display:flex;"><span>  });
+</span></span><span style="display:flex;"><span>});</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Then each implementation does something quite different. The highlighted code is very specific to what the endpoint is for:</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span></span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span></span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">33
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">34
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">35
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">36
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">37
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">38
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">39
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">40
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">41
+</span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">42
+</span></span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">43
+</span></span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">44
+</span></span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">45
+</span></span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">46
+</span></span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">47
+</span></span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">48
+</span></span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">49
+</span></span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">50
+</span></span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">51
+</span></span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">52
+</span></span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">53
+</span></span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">54
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">55
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">post</span>(<span style="color:#e6db74">&#34;/message&#34;</span>, (<span style="color:#a6e22e">req</span>, <span style="color:#a6e22e">res</span>) =&gt; {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">bodyBytes</span> <span style="color:#f92672">=</span> [];
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">req</span>.<span style="color:#a6e22e">on</span>(<span style="color:#e6db74">&#34;data&#34;</span>, <span style="color:#a6e22e">chunk</span> =&gt; <span style="color:#a6e22e">bodyBytes</span>.<span style="color:#a6e22e">push</span>(...<span style="color:#a6e22e">chunk</span>));
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">req</span>.<span style="color:#a6e22e">on</span>(<span style="color:#e6db74">&#34;end&#34;</span>, () =&gt; {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">bodyString</span> <span style="color:#f92672">=</span> String.<span style="color:#a6e22e">fromCharCode</span>(...<span style="color:#a6e22e">bodyBytes</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">body</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">try</span> {
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">body</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">JSON</span>.<span style="color:#a6e22e">parse</span>(<span style="color:#a6e22e">bodyString</span>);
+</span></span><span style="display:flex;"><span>    } <span style="color:#66d9ef">catch</span> (<span style="color:#a6e22e">error</span>) {
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">error</span>(<span style="color:#e6db74">`Failed to parse body </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">bodyString</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> as JSON: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">error</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>);
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">status</span>(<span style="color:#ae81ff">400</span>).<span style="color:#a6e22e">send</span>(<span style="color:#e6db74">&#34;Expected body to be JSON.&#34;</span>);
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">return</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (<span style="color:#66d9ef">typeof</span> <span style="color:#a6e22e">body</span> <span style="color:#f92672">!==</span> <span style="color:#e6db74">&#34;object&#34;</span> <span style="color:#f92672">||</span> <span style="color:#f92672">!</span>(<span style="color:#e6db74">&#34;user&#34;</span> <span style="color:#66d9ef">in</span> <span style="color:#a6e22e">body</span>) <span style="color:#f92672">||</span> <span style="color:#f92672">!</span>(<span style="color:#e6db74">&#34;message&#34;</span> <span style="color:#66d9ef">in</span> <span style="color:#a6e22e">body</span>)) {
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">error</span>(<span style="color:#e6db74">`Failed to extract user and message from post body: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">bodyString</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>);
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">status</span>(<span style="color:#ae81ff">400</span>).<span style="color:#a6e22e">send</span>(<span style="color:#e6db74">&#34;Expected body to be a JSON object containing keys user and message.&#34;</span>);
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">return</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex; background-color:#3c3d38"><span>    <span style="color:#a6e22e">receiveMessage</span>(<span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">user</span>, <span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">message</span>);
+</span></span><span style="display:flex; background-color:#3c3d38"><span>    <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">send</span>(<span style="color:#e6db74">&#34;ok&#34;</span>);
+</span></span><span style="display:flex;"><span>  });
+</span></span><span style="display:flex;"><span>});
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">post</span>(<span style="color:#e6db74">&#34;/react&#34;</span>, (<span style="color:#a6e22e">req</span>, <span style="color:#a6e22e">res</span>) =&gt; {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">bodyBytes</span> <span style="color:#f92672">=</span> [];
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">req</span>.<span style="color:#a6e22e">on</span>(<span style="color:#e6db74">&#34;data&#34;</span>, <span style="color:#a6e22e">chunk</span> =&gt; <span style="color:#a6e22e">bodyBytes</span>.<span style="color:#a6e22e">push</span>(...<span style="color:#a6e22e">chunk</span>));
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">req</span>.<span style="color:#a6e22e">on</span>(<span style="color:#e6db74">&#34;end&#34;</span>, () =&gt; {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">bodyString</span> <span style="color:#f92672">=</span> String.<span style="color:#a6e22e">fromCharCode</span>(...<span style="color:#a6e22e">bodyBytes</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">body</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">try</span> {
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">body</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">JSON</span>.<span style="color:#a6e22e">parse</span>(<span style="color:#a6e22e">bodyString</span>);
+</span></span><span style="display:flex;"><span>    } <span style="color:#66d9ef">catch</span> (<span style="color:#a6e22e">error</span>) {
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">error</span>(<span style="color:#e6db74">`Failed to parse body </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">bodyString</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> as JSON: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">error</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>);
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">status</span>(<span style="color:#ae81ff">400</span>).<span style="color:#a6e22e">send</span>(<span style="color:#e6db74">&#34;Expected body to be JSON.&#34;</span>);
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">return</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (<span style="color:#66d9ef">typeof</span> <span style="color:#a6e22e">body</span> <span style="color:#f92672">!==</span> <span style="color:#e6db74">&#34;object&#34;</span> <span style="color:#f92672">||</span> <span style="color:#f92672">!</span>(<span style="color:#e6db74">&#34;id&#34;</span> <span style="color:#66d9ef">in</span> <span style="color:#a6e22e">body</span>) <span style="color:#f92672">||</span> <span style="color:#f92672">!</span>(<span style="color:#e6db74">&#34;reaction&#34;</span> <span style="color:#66d9ef">in</span> <span style="color:#a6e22e">body</span>)) {
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">error</span>(<span style="color:#e6db74">`Failed to extract id and reaction from post body: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">bodyString</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>);
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">status</span>(<span style="color:#ae81ff">400</span>).<span style="color:#a6e22e">send</span>(<span style="color:#e6db74">&#34;Expected body to be a JSON object containing keys id and reaction.&#34;</span>);
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">return</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex; background-color:#3c3d38"><span>    <span style="color:#66d9ef">if</span> (<span style="color:#f92672">!</span>(<span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">id</span> <span style="color:#66d9ef">in</span> <span style="color:#a6e22e">messageReactions</span>)) {
+</span></span><span style="display:flex; background-color:#3c3d38"><span>      <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">status</span>(<span style="color:#ae81ff">404</span>).<span style="color:#a6e22e">send</span>(<span style="color:#e6db74">`Got reaction to message id </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">id</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> which doesn&#39;t exist.`</span>);
+</span></span><span style="display:flex; background-color:#3c3d38"><span>      <span style="color:#66d9ef">return</span>;
+</span></span><span style="display:flex; background-color:#3c3d38"><span>    }
+</span></span><span style="display:flex; background-color:#3c3d38"><span>    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">reactionsForMessage</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">messageReactions</span>[<span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">id</span>];
+</span></span><span style="display:flex; background-color:#3c3d38"><span>    <span style="color:#66d9ef">if</span> (<span style="color:#f92672">!</span>(<span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">reaction</span>) <span style="color:#66d9ef">in</span> <span style="color:#a6e22e">reactionsForMessage</span>) {
+</span></span><span style="display:flex; background-color:#3c3d38"><span>      <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">status</span>(<span style="color:#ae81ff">400</span>).<span style="color:#a6e22e">send</span>(<span style="color:#e6db74">`Reaction </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">reaction</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> isn&#39;t allowed.`</span>);
+</span></span><span style="display:flex; background-color:#3c3d38"><span>      <span style="color:#66d9ef">return</span>;
+</span></span><span style="display:flex; background-color:#3c3d38"><span>    }
+</span></span><span style="display:flex; background-color:#3c3d38"><span>    <span style="color:#a6e22e">reactionsForMessage</span>[<span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">reaction</span>]<span style="color:#f92672">++</span>;
+</span></span><span style="display:flex; background-color:#3c3d38"><span>
+</span></span><span style="display:flex; background-color:#3c3d38"><span>    <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">send</span>(<span style="color:#e6db74">&#34;ok&#34;</span>);
+</span></span><span style="display:flex;"><span>  });
+</span></span><span style="display:flex;"><span>});</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Ideally, most of the code in these functions would be specific to the behaviour of the handler. It would be easy to see each function does from reading them.</p>
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="extracting-common-functionality">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="extracting-common-functionality">
+        Extracting common functionality
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="30 minutes countdown" datetime="P30M">30&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Extract functionality used by multiple route handlers into a common function.</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <p>Having identified these three parts of our handlers, we can extract functions to make them more clear.</p>
+<p>One way we could do this is:</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">33
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">34
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">35
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">36
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">37
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">38
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">39
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">40
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">41
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">42
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">43
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">44
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">45
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">46
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">47
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">48
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">49
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">50
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">51
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">52
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">53
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">54
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">55
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">56
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">57
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">58
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">59
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">60
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">61
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">62
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">63
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">64
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">65
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">66
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">67
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">68
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">post</span>(<span style="color:#e6db74">&#34;/message&#34;</span>, (<span style="color:#a6e22e">req</span>, <span style="color:#a6e22e">res</span>) =&gt; {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">parseRequestAsJsonObject</span>(<span style="color:#a6e22e">req</span>, <span style="color:#a6e22e">res</span>, (<span style="color:#a6e22e">req</span>, <span style="color:#a6e22e">res</span>, <span style="color:#a6e22e">body</span>) =&gt; {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (<span style="color:#f92672">!</span><span style="color:#a6e22e">ensureFields</span>(<span style="color:#a6e22e">body</span>, <span style="color:#a6e22e">res</span>, [<span style="color:#e6db74">&#34;user&#34;</span>, <span style="color:#e6db74">&#34;message&#34;</span>])) {
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">return</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">receiveMessage</span>(<span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">user</span>, <span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">message</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">send</span>(<span style="color:#e6db74">&#34;ok&#34;</span>);
+</span></span><span style="display:flex;"><span>  });
+</span></span><span style="display:flex;"><span>});
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">post</span>(<span style="color:#e6db74">&#34;/react&#34;</span>, (<span style="color:#a6e22e">req</span>, <span style="color:#a6e22e">res</span>) =&gt; {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">parseRequestAsJsonObject</span>(<span style="color:#a6e22e">req</span>, <span style="color:#a6e22e">res</span>, (<span style="color:#a6e22e">req</span>, <span style="color:#a6e22e">res</span>, <span style="color:#a6e22e">body</span>) =&gt; {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (<span style="color:#f92672">!</span><span style="color:#a6e22e">ensureFields</span>(<span style="color:#a6e22e">body</span>, <span style="color:#a6e22e">res</span>, [<span style="color:#e6db74">&#34;id&#34;</span>, <span style="color:#e6db74">&#34;reaction&#34;</span>])) {
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">return</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (<span style="color:#f92672">!</span>(<span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">id</span> <span style="color:#66d9ef">in</span> <span style="color:#a6e22e">messageReactions</span>)) {
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">status</span>(<span style="color:#ae81ff">404</span>).<span style="color:#a6e22e">send</span>(<span style="color:#e6db74">`Got reaction to message id </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">id</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> which doesn&#39;t exist.`</span>);
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">return</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">reactionsForMessage</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">messageReactions</span>[<span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">id</span>];
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (<span style="color:#f92672">!</span>(<span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">reaction</span>) <span style="color:#66d9ef">in</span> <span style="color:#a6e22e">reactionsForMessage</span>) {
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">status</span>(<span style="color:#ae81ff">400</span>).<span style="color:#a6e22e">send</span>(<span style="color:#e6db74">`Reaction </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">reaction</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> isn&#39;t allowed.`</span>);
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">return</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">reactionsForMessage</span>[<span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">reaction</span>]<span style="color:#f92672">++</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">send</span>(<span style="color:#e6db74">&#34;ok&#34;</span>);
+</span></span><span style="display:flex;"><span>  });
+</span></span><span style="display:flex;"><span>});
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">parseRequestAsJsonObject</span> <span style="color:#f92672">=</span> (<span style="color:#a6e22e">req</span>, <span style="color:#a6e22e">res</span>, <span style="color:#a6e22e">callback</span>) =&gt; {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">bodyBytes</span> <span style="color:#f92672">=</span> [];
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">req</span>.<span style="color:#a6e22e">on</span>(<span style="color:#e6db74">&#34;data&#34;</span>, <span style="color:#a6e22e">chunk</span> =&gt; <span style="color:#a6e22e">bodyBytes</span>.<span style="color:#a6e22e">push</span>(...<span style="color:#a6e22e">chunk</span>));
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">req</span>.<span style="color:#a6e22e">on</span>(<span style="color:#e6db74">&#34;end&#34;</span>, () =&gt; {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">bodyString</span> <span style="color:#f92672">=</span> String.<span style="color:#a6e22e">fromCharCode</span>(...<span style="color:#a6e22e">bodyBytes</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">body</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">try</span> {
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">body</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">JSON</span>.<span style="color:#a6e22e">parse</span>(<span style="color:#a6e22e">bodyString</span>);
+</span></span><span style="display:flex;"><span>    } <span style="color:#66d9ef">catch</span> (<span style="color:#a6e22e">error</span>) {
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">error</span>(<span style="color:#e6db74">`Failed to parse body </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">bodyString</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> as JSON: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">error</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>);
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">status</span>(<span style="color:#ae81ff">400</span>).<span style="color:#a6e22e">send</span>(<span style="color:#e6db74">&#34;Expected body to be JSON.&#34;</span>);
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">return</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (<span style="color:#66d9ef">typeof</span> <span style="color:#a6e22e">body</span> <span style="color:#f92672">!==</span> <span style="color:#e6db74">&#34;object&#34;</span>) {
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">error</span>(<span style="color:#e6db74">`Got POST body which was not an object: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">bodyString</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>);
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">status</span>(<span style="color:#ae81ff">400</span>).<span style="color:#a6e22e">send</span>(<span style="color:#e6db74">&#34;Expected body to be a JSON object.&#34;</span>);
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">return</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">callback</span>(<span style="color:#a6e22e">req</span>, <span style="color:#a6e22e">res</span>, <span style="color:#a6e22e">body</span>);
+</span></span><span style="display:flex;"><span>  });
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">ensureFields</span> <span style="color:#f92672">=</span> (<span style="color:#a6e22e">body</span>, <span style="color:#a6e22e">res</span>, <span style="color:#a6e22e">expectedFields</span>) =&gt; {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">missingFields</span> <span style="color:#f92672">=</span> [];
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">expectedField</span> <span style="color:#66d9ef">of</span> <span style="color:#a6e22e">expectedFields</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (<span style="color:#f92672">!</span>(<span style="color:#a6e22e">expectedField</span> <span style="color:#66d9ef">in</span> <span style="color:#a6e22e">body</span>)) {
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">missingFields</span>.<span style="color:#a6e22e">push</span>(<span style="color:#a6e22e">expectedField</span>);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">missingFields</span>.<span style="color:#a6e22e">length</span> <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">joinedExpectedFields</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">expectedFields</span>.<span style="color:#a6e22e">join</span>(<span style="color:#e6db74">&#34;, &#34;</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">joinedMissingFields</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">missingFields</span>.<span style="color:#a6e22e">join</span>(<span style="color:#e6db74">&#34;, &#34;</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">error</span>(<span style="color:#e6db74">`Failed to extract fields </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">joinedMissingFields</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> from post body: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">bodyString</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">status</span>(<span style="color:#ae81ff">400</span>).<span style="color:#a6e22e">send</span>(<span style="color:#e6db74">`Expected body to be a JSON object containing keys </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">joinedExpectedFields</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> but was missing </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">joinedMissingFields</span><span style="color:#e6db74">}</span><span style="color:#e6db74">.`</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">false</span>;
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">true</span>;
+</span></span><span style="display:flex;"><span>};</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="why-is-this-better">Why is this better?</h2>
+<p>Before, the <code>/message</code> function body was 20 lines. 18 were just for processing the post body, and 2 were for the actual functionality. 10% of the function was for relevant functionality.</p>
+<p>Now, the function body is 7 lines. They say: &ldquo;I expect the request to be a JSON object&rdquo;, &ldquo;I expect these fields in the object&rdquo;, and then do the relevant functionality.</p>
+<p>We can see at a glance what the function does. And the common functionality has a clear name explaining what it&rsquo;s doing, rather than needing us to read 18 lines to work it out.</p>
+<p>We can also more easily see the <em>difference</em> between what the two endpoints do. Each endpoint expects the request to be a JSON object. They both expect some fields, but different fields. Then they do something different with them. This is much easier to see than before, where a subtle difference may have been hard to notice.</p>
+<p>We can also ignore the details of the helper functions if we don&rsquo;t need to know them. If we don&rsquo;t care exactly how the body is parsed as JSON, we can just trust that the function does it somehow. If we <em>do</em> need to know, we can look into the function. If we need to change or fix something, we only need to do it in one place.</p>
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="continuation-styles">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="continuation-styles">
+        Continuation styles
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="45 minutes countdown" datetime="P45M">45&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Compare different approaches to choosing how to handle potential request errors.</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <p>We extracted functions from our code. We saw three different ways of deciding what to do next:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">post</span>(<span style="color:#e6db74">&#34;/message&#34;</span>, (<span style="color:#a6e22e">req</span>, <span style="color:#a6e22e">res</span>) =&gt; {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">parseRequestAsJsonObject</span>(<span style="color:#a6e22e">req</span>, <span style="color:#a6e22e">res</span>, (<span style="color:#a6e22e">req</span>, <span style="color:#a6e22e">res</span>, <span style="color:#a6e22e">body</span>) =&gt; {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (<span style="color:#f92672">!</span><span style="color:#a6e22e">ensureFields</span>(<span style="color:#a6e22e">body</span>, <span style="color:#a6e22e">res</span>, [<span style="color:#e6db74">&#34;user&#34;</span>, <span style="color:#e6db74">&#34;message&#34;</span>])) {
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">return</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">receiveMessage</span>(<span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">user</span>, <span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">message</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">send</span>(<span style="color:#e6db74">&#34;ok&#34;</span>);
+</span></span><span style="display:flex;"><span>  });
+</span></span><span style="display:flex;"><span>});</span></span></code></pre></div><ol>
+<li><code>app.post</code> takes a callback which expects two arguments: a request, and a response. It resolves to a completed state when <code>res.send</code> is called (which may be done asynchronously).</li>
+<li><code>parseRequestAsJsonObject</code> takes a callback very similar to <code>app.post</code>&rsquo;s, but which also takes a <code>body</code> parameter.</li>
+<li><code>ensureFields</code> itself calls <code>res.send</code> if there was an error, and returns a boolean indicating whether the function should keep going or stop.</li>
+</ol>
+<p>Each of these approaches is doing something similar, but they&rsquo;re all a little different.</p>
+<p>Let&rsquo;s look at a few different ways we could&rsquo;ve written <code>ensureFields</code> and <code>parseRequestAsJsonObject</code>:</p>
+<h2 id="more-callbacks">More callbacks</h2>
+<p><code>ensureFields</code> could&rsquo;ve taken a callback to call if the fields were correct:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">post</span>(<span style="color:#e6db74">&#34;/message&#34;</span>, (<span style="color:#a6e22e">req</span>, <span style="color:#a6e22e">res</span>) =&gt; {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">parseRequestAsJsonObject</span>(<span style="color:#a6e22e">req</span>, <span style="color:#a6e22e">res</span>, (<span style="color:#a6e22e">req</span>, <span style="color:#a6e22e">res</span>, <span style="color:#a6e22e">body</span>) =&gt; {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">ensureFields</span>(<span style="color:#a6e22e">req</span>, <span style="color:#a6e22e">res</span>, <span style="color:#a6e22e">body</span>, [<span style="color:#e6db74">&#34;user&#34;</span>, <span style="color:#e6db74">&#34;message&#34;</span>], (<span style="color:#a6e22e">req</span>, <span style="color:#a6e22e">res</span>, <span style="color:#a6e22e">body</span>) =&gt; {
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">receiveMessage</span>(<span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">user</span>, <span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">message</span>);
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">send</span>(<span style="color:#e6db74">&#34;ok&#34;</span>);
+</span></span><span style="display:flex;"><span>    });
+</span></span><span style="display:flex;"><span>  });
+</span></span><span style="display:flex;"><span>});</span></span></code></pre></div><p>This works, but lots of callbacks can get quite hard to read and follow.</p>
+<p>We&rsquo;ve seen a similar problem before with asynchronous code. And we&rsquo;ve seen Promises, and <code>async</code>/<code>await</code> as ways of solving that problem.</p>
+<p>Unfortunately, the reason we need callbacks here is different, and so can&rsquo;t be solved exactly the same way. The problem here is that a function cannot tell the function that called it to stop running. That&rsquo;s what we&rsquo;re doing in the original code with:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">if</span> (<span style="color:#f92672">!</span><span style="color:#a6e22e">ensureFields</span>(<span style="color:#a6e22e">body</span>, <span style="color:#a6e22e">res</span>, [<span style="color:#e6db74">&#34;user&#34;</span>, <span style="color:#e6db74">&#34;message&#34;</span>])) {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span>;
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div><p><code>ensureFields</code> really wants to tell the calling function &ldquo;If the fields aren&rsquo;t correct, I&rsquo;ve already rejected the request, you should stop running&rdquo;. But it can&rsquo;t automatically do this. So it returns a boolean, and we need to <em>check</em> it and decide to call <code>return</code> ourselves.</p>
+<p>We could use Promises to manage our callbacks a bit better, but we can&rsquo;t use <code>async</code>/<code>await</code> because it doesn&rsquo;t have a way to say &ldquo;return early and stop running&rdquo;.</p>
+<h2 id="hiding-information-in-existing-parameters">Hiding information in existing parameters</h2>
+<p><code>parseRequestAsJsonObject</code> takes a callback which takes three parameter: <code>req</code>, <code>res</code>, and <code>body</code>.</p>
+<p>Alternatively, we could&rsquo;ve written <code>parseRequestAsJsonObject</code> in such a way that it would add information to the <code>req</code> parameter, rather than require an extra one:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">post</span>(<span style="color:#e6db74">&#34;/message&#34;</span>, (<span style="color:#a6e22e">req</span>, <span style="color:#a6e22e">res</span>) =&gt; {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">parseRequestAsJsonObject</span>(<span style="color:#a6e22e">req</span>, <span style="color:#a6e22e">res</span>, (<span style="color:#a6e22e">req</span>, <span style="color:#a6e22e">res</span>) =&gt; {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">ensureFields</span>(<span style="color:#a6e22e">req</span>, <span style="color:#a6e22e">res</span>, [<span style="color:#e6db74">&#34;user&#34;</span>, <span style="color:#e6db74">&#34;message&#34;</span>], (<span style="color:#a6e22e">req</span>, <span style="color:#a6e22e">res</span>) =&gt; {
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">receiveMessage</span>(<span style="color:#a6e22e">req</span>.<span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">user</span>, <span style="color:#a6e22e">req</span>.<span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">message</span>);
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">send</span>(<span style="color:#e6db74">&#34;ok&#34;</span>);
+</span></span><span style="display:flex;"><span>    });
+</span></span><span style="display:flex;"><span>  });
+</span></span><span style="display:flex;"><span>});</span></span></code></pre></div><p>Here <code>parseRequestAsJsonObject</code> would add a property named <code>body</code> to the <code>req</code> object it was passed, which callbacks can access as <code>req.body</code>.</p>
+<p>In some ways, it&rsquo;s really useful to have this third parameter. It means it&rsquo;s obvious to us which functions expect to be able to access the parsed body. It also makes it obvious that we can&rsquo;t use our callback <em>without</em> going via <code>parseRequestAsJsonObject</code> - i.e. we can&rsquo;t write:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">post</span>(<span style="color:#e6db74">&#34;/message&#34;</span>, (<span style="color:#a6e22e">req</span>, <span style="color:#a6e22e">res</span>) =&gt; {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">receiveMessage</span>(<span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">user</span>, <span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">message</span>);
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">send</span>(<span style="color:#e6db74">&#34;ok&#34;</span>);
+</span></span><span style="display:flex;"><span>});</span></span></code></pre></div><p>Because there is no variable called <code>body</code> - we can <em>only</em> use this in a callback which declares <code>body</code>.</p>
+<p>In other ways, it&rsquo;s annoying that the 
+<tool-tip-container tabindex="0"><strong class="tooltip__trigger" id="trigger__signature of the function">signature of the function</strong><span class="tooltip__emoji">🧶</span><tool-tip role="tooltip" aria-labelledby="signature of the function"><span class="tooltip__title e-heading__2"><span class="tooltip__emoji">🧶</span> Function signature</span><span class="tooltip__content">The signature of a function is its name, parameters, and return value. It describes how the function is called, and what it produces, without worrying about how it does its work.</span></tool-tip></tool-tip-container>
+ has changed. Imagine if we had two different pieces of code here - one which parses the request body as an object, one which gets the user&rsquo;s username based on an authentication token. What order should they add their parameters to the expected callbacks? Would we write:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">post</span>(<span style="color:#e6db74">&#34;/message&#34;</span>, (<span style="color:#a6e22e">req</span>, <span style="color:#a6e22e">res</span>) =&gt; {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">parseRequestAsJsonObject</span>(<span style="color:#a6e22e">req</span>, <span style="color:#a6e22e">res</span>, (<span style="color:#a6e22e">req</span>, <span style="color:#a6e22e">res</span>, <span style="color:#a6e22e">body</span>) =&gt; {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">checkAuthentication</span>(<span style="color:#a6e22e">req</span>, <span style="color:#a6e22e">res</span>, <span style="color:#a6e22e">body</span>, (<span style="color:#a6e22e">req</span>, <span style="color:#a6e22e">res</span>, <span style="color:#a6e22e">body</span>, <span style="color:#a6e22e">username</span>) =&gt; {
+</span></span><span style="display:flex;"><span>      <span style="color:#75715e">// Handle the request here
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    });
+</span></span><span style="display:flex;"><span>  });
+</span></span><span style="display:flex;"><span>});</span></span></code></pre></div><p>Or would we write:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">post</span>(<span style="color:#e6db74">&#34;/message&#34;</span>, (<span style="color:#a6e22e">req</span>, <span style="color:#a6e22e">res</span>) =&gt; {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">checkAuthentication</span>(<span style="color:#a6e22e">req</span>, <span style="color:#a6e22e">res</span>, <span style="color:#a6e22e">body</span>, (<span style="color:#a6e22e">req</span>, <span style="color:#a6e22e">res</span>, <span style="color:#a6e22e">username</span>) =&gt; {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">parseRequestAsJsonObject</span>(<span style="color:#a6e22e">req</span>, <span style="color:#a6e22e">res</span>, (<span style="color:#a6e22e">req</span>, <span style="color:#a6e22e">res</span>, <span style="color:#a6e22e">username</span>, <span style="color:#a6e22e">body</span>) =&gt; {
+</span></span><span style="display:flex;"><span>      <span style="color:#75715e">// Handle the request here
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    });
+</span></span><span style="display:flex;"><span>  });
+</span></span><span style="display:flex;"><span>});</span></span></code></pre></div><p>Because we change the signatures here, the order actually matters. These two functions which extract independent information need to be aware of each other and can only be called in a particular order. Maybe in some of our endpoints we only want to call one of them, but they&rsquo;re now tied together. These 
+<tool-tip-container tabindex="0"><strong class="tooltip__trigger" id="trigger__orthogonal">orthogonal</strong><span class="tooltip__emoji">🧶</span><tool-tip role="tooltip" aria-labelledby="orthogonal"><span class="tooltip__title e-heading__2"><span class="tooltip__emoji">🧶</span> Orthogonality</span><span class="tooltip__content">Orthogonal means unrelated or independent. Parsing the Authorization header is orthogonal to parsing the request body because they can be done separately and don&rsquo;t impact each other.<br /><br />But using the results of those may not be orthogonal, e.g. if we&rsquo;re editing a post, and the request body contains the ID of the post we&rsquo;re trying to edit, the user you&rsquo;re authenticated as may affect whether you&rsquo;re allowed to edit that message.</span></tool-tip></tool-tip-container>
+ concepts have become linked.</p>
+<p>Modifying the existing parameters (e.g. setting <code>req.body</code>) can keep our code more orthogonal. But it also makes some behaviour implicit rather than explicit: taking an argument as a parameter makes it explicit that you expect that parameter to be passed. Just calling <code>req.body</code> and hoping <code>body</code> has been set <em>hides</em> the requirement that <code>parseRequestAsJsonObject</code> was already called. Including requirements in function signatures makes explicit the needs of the function.</p>
+<h2 id="control-over-next-steps">Control over next steps</h2>
+<p>Let&rsquo;s look at three different ways <code>ensureFields</code> could be written:</p>
+<h3 id="complete-control-over-next-steps">Complete control over next steps</h3>
+<p><code>ensureFields</code> could take a callback to call on success, and could reject the request on failure. It would have complete control over what happens next for this request:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">ensureFields</span> <span style="color:#f92672">=</span> (<span style="color:#a6e22e">req</span>, <span style="color:#a6e22e">res</span>, <span style="color:#a6e22e">expectedFields</span>, <span style="color:#a6e22e">callback</span>) =&gt; {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">missingFields</span> <span style="color:#f92672">=</span> [];
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">expectedField</span> <span style="color:#66d9ef">of</span> <span style="color:#a6e22e">expectedFields</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (<span style="color:#f92672">!</span>(<span style="color:#a6e22e">expectedField</span> <span style="color:#66d9ef">in</span> <span style="color:#a6e22e">req</span>.<span style="color:#a6e22e">body</span>)) {
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">missingFields</span>.<span style="color:#a6e22e">push</span>(<span style="color:#a6e22e">expectedField</span>);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">missingFields</span>.<span style="color:#a6e22e">length</span> <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">joinedExpectedFields</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">expectedFields</span>.<span style="color:#a6e22e">join</span>(<span style="color:#e6db74">&#34;, &#34;</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">joinedMissingFields</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">missingFields</span>.<span style="color:#a6e22e">join</span>(<span style="color:#e6db74">&#34;, &#34;</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">error</span>(<span style="color:#e6db74">`Failed to extract fields </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">joinedMissingFields</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> from post body: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">bodyString</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">status</span>(<span style="color:#ae81ff">400</span>).<span style="color:#a6e22e">send</span>(<span style="color:#e6db74">`Expected body to be a JSON object containing keys </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">joinedExpectedFields</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> but was missing </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">joinedMissingFields</span><span style="color:#e6db74">}</span><span style="color:#e6db74">.`</span>);
+</span></span><span style="display:flex;"><span>  } <span style="color:#66d9ef">else</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">callback</span>(<span style="color:#a6e22e">req</span>, <span style="color:#a6e22e">res</span>);
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>};</span></span></code></pre></div><h3 id="responsible-for-rejecting-but-not-continuing">Responsible for rejecting but not continuing</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">ensureFields</span> <span style="color:#f92672">=</span> (<span style="color:#a6e22e">req</span>, <span style="color:#a6e22e">res</span>, <span style="color:#a6e22e">expectedFields</span>) =&gt; {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">missingFields</span> <span style="color:#f92672">=</span> [];
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">expectedField</span> <span style="color:#66d9ef">of</span> <span style="color:#a6e22e">expectedFields</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (<span style="color:#f92672">!</span>(<span style="color:#a6e22e">expectedField</span> <span style="color:#66d9ef">in</span> <span style="color:#a6e22e">req</span>.<span style="color:#a6e22e">body</span>)) {
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">missingFields</span>.<span style="color:#a6e22e">push</span>(<span style="color:#a6e22e">expectedField</span>);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">missingFields</span>.<span style="color:#a6e22e">length</span> <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">joinedExpectedFields</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">expectedFields</span>.<span style="color:#a6e22e">join</span>(<span style="color:#e6db74">&#34;, &#34;</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">joinedMissingFields</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">missingFields</span>.<span style="color:#a6e22e">join</span>(<span style="color:#e6db74">&#34;, &#34;</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">error</span>(<span style="color:#e6db74">`Failed to extract fields </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">joinedMissingFields</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> from post body: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">bodyString</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">status</span>(<span style="color:#ae81ff">400</span>).<span style="color:#a6e22e">send</span>(<span style="color:#e6db74">`Expected body to be a JSON object containing keys </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">joinedExpectedFields</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> but was missing </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">joinedMissingFields</span><span style="color:#e6db74">}</span><span style="color:#e6db74">.`</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">false</span>;
+</span></span><span style="display:flex;"><span>  } <span style="color:#66d9ef">else</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">true</span>;
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>};</span></span></code></pre></div><h3 id="responsible-for-deciding-but-not-rejecting-or-continuing">Responsible for deciding, but not rejecting or continuing</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">ensureFields</span> <span style="color:#f92672">=</span> (<span style="color:#a6e22e">req</span>, <span style="color:#a6e22e">res</span>, <span style="color:#a6e22e">expectedFields</span>) =&gt; {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">missingFields</span> <span style="color:#f92672">=</span> [];
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">expectedField</span> <span style="color:#66d9ef">of</span> <span style="color:#a6e22e">expectedFields</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (<span style="color:#f92672">!</span>(<span style="color:#a6e22e">expectedField</span> <span style="color:#66d9ef">in</span> <span style="color:#a6e22e">req</span>.<span style="color:#a6e22e">body</span>)) {
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">missingFields</span>.<span style="color:#a6e22e">push</span>(<span style="color:#a6e22e">expectedField</span>);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">missingFields</span>;
+</span></span><span style="display:flex;"><span>};</span></span></code></pre></div><section class="c-note c-note--Exercise">
+  <h4 class="c-note__title e-heading__4">Exercise</span>
+  </h4>
+  <div class="c-note__text "><p>Compare these three approaches. What advantages does each have? What problems do they have? When would each be better to choose?</p>
+<p>Write down your thoughts.</p>
+<p>In class this sprint you will discuss this.</p>
+</div>
+</section>
+
+
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="extracting-a-middleware">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="extracting-a-middleware">
+        Extracting a middleware
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="105 minutes countdown" datetime="P105M">105&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Identify and explain the risks and costs of manually calling code (e.g. authentication validators/extractors) from multiple route handlers.</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Explain the middleware pattern.</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Implement and wire up a middleware with Express.</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <p>It is very common that in an application there are operations we want to perform for most or all requests.</p>
+<p>For instance, we often want to check authentication details for <em>every</em> request to an endpoint which requires authentication.</p>
+<p>And typically we use the same format for all POST request bodies to an application (often JSON, but some applications use other formats) - we want to parse <em>all</em> POST request bodies in that format.</p>
+<p>It can be annoying to have to write the same code (like calling <code>parseRequestAsJsonObject</code>) in every handler. It can also be <strong>dangerous</strong> to require doing so:</p>
+<section class="c-note c-note--warning">
+    <h4 class="c-note__title">⚠️Warning</h4>
+    <div class="c-note__text"><p>If we forget to call a function to check a user is logged in in one endpoint, that may be a big security problem.</p></div>
+  </section><p>One strategy to improve this is to use a 
+<tool-tip-container tabindex="0"><strong class="tooltip__trigger" id="trigger__middleware">middleware</strong><span class="tooltip__emoji">🧶</span><tool-tip role="tooltip" aria-labelledby="middleware"><span class="tooltip__title e-heading__2"><span class="tooltip__emoji">🧶</span> Middleware</span><span class="tooltip__content">A middleware is a piece of code which is called before route handlers.</span></tool-tip></tool-tip-container>
+. A middleware may process the request, do extra checks (e.g. check an authorization token), or attach extra data (e.g. parsing a POST body as JSON and adding the fields to the request object). It can choose to respond to the request itself, or allow the route handler to do so.</p>
+<section class="c-note c-note--Reading">
+  <h4 class="c-note__title e-heading__4">Reading</span>
+  </h4>
+  <div class="c-note__text ">Read the <a
+  href="https://expressjs.com/en/guide/writing-middleware.html">Express documentation on writing middleware</a>.</div>
+</section>
+
+
+<section class="c-note c-note--Exercise">
+  <h4 class="c-note__title e-heading__4">Exercise</span>
+  </h4>
+  <div class="c-note__text "><p>Write a tiny Express application. You must write two separate middlewares.</p>
+<p>Requirements:</p>
+<ul>
+<li>There must be an endpoint which handles POST requests.</li>
+<li>A middleware should look for a header with name <code>X-Username</code>. If this is set, it will modify <code>req</code> to add a <code>username</code> property set to this value. If it is not set, the property should be set to <code>null</code>.</li>
+<li>A middleware should parse the request POST body as a JSON array. It should modify <code>req</code> to add a <code>body</code> property to this value. If the POST body was not a JSON array, or the array contains non-string elements, it should reject the request.</li>
+<li>The response should look like:</li>
+</ul>
+<pre tabindex="0"><code>You are authenticated as Ahmed.
+
+You have requested information about 4 subjects: Birds, Bats, Lizards, Bees.</code></pre><p>or</p>
+<pre tabindex="0"><code>You are not authenticated.
+
+You have requested information about 1 subject: Bees.</code></pre><p>or</p>
+<pre tabindex="0"><code>You are authenticated as Gemma.
+
+You have requested information about 0 subjects.</code></pre><p>You can test your application by running some <code>curl</code> commands like:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-console" data-lang="console"><span style="display:flex;"><span>% curl -X POST --data <span style="color:#e6db74">&#39;[&#34;Bees&#34;]&#39;</span> -H <span style="color:#e6db74">&#34;X-Username: Ahmed&#34;</span> http://localhost:3000
+</span></span><span style="display:flex;"><span>You are authenticated as Ahmed.
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>You have requested information about 1 subject: Bees.
+</span></span></code></pre></div></div>
+</section>
+
+
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="using-existing-middleware">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="using-existing-middleware">
+        Using existing middleware
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="30 minutes countdown" datetime="P30M">30&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Use an existing middleware with Express.</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <p>We don&rsquo;t always need to write our own middlewares. For common tasks, such as parsing JSON request bodies, there are existing middlewares we can re-use.</p>
+<section class="c-note c-note--Exercise">
+  <h4 class="c-note__title e-heading__4">Exercise</span>
+  </h4>
+  <div class="c-note__text "><p>Make a copy of your previous middleware application.</p>
+<p>Delete the middleware you wrote that handles the JSON request POST body.</p>
+<p>Switch to instead the JSON middleware built in to Express.</p>
+<p>Debug why the <code>curl</code> command suggested in the previous exercise doesn&rsquo;t work. Fix this problem by modifying the <code>curl</code> command.</p>
+</div>
+</section>
+
+
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+      </div>
+      <nav slot="nav">
+        <a href="#" class="e-button c-solo-view__back">&larr; Back</a>
+        <a href="#" class="e-button c-solo-view__next">Next &rarr;</a>
+      </nav>
+    </solo-view>
+    
+    <script src="/scripts/solo-view.min.js" defer></script>
+    
+    <script src="/scripts/time-total.min.js" defer></script>
+  
+
+
+        
+
+  <footer class="c-page-footer">
+    <nav class="c-page-footer__nav">
+      
+      
+      <span class="c-page-footer__this">Prep</span>
+      
+        →<a
+          class="c-page-footer__next c-page-footer__link e-link"
+          href="/sdc/decomposition/sprints/3/backlog/"
+          >Backlog</a
+        >
+      
+    </nav>
+  </footer>
+
+
+      </main><footer class="l-layout__footer l-footer">
+  <a
+    class="l-footer__github e-button e-button--icon"
+    href="https://github.com/CodeYourFuture/curriculum/">
+    <svg
+  focusable="false"
+  class="e-button__icon"
+  role="presentation"
+  width="96"
+  viewbox="0 0 98 96"
+  xmlns="http://www.w3.org/2000/svg">
+  <path
+    fill-rule="evenodd"
+    clip-rule="evenodd"
+    d="M48.854 0C21.839 0 0 22 0 49.217c0 21.756 13.993 40.172 33.405 46.69 2.427.49 3.316-1.059 3.316-2.362 0-1.141-.08-5.052-.08-9.127-13.59 2.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015 4.934.326 7.523 5.052 7.523 5.052 4.367 7.496 11.404 5.378 14.235 4.074.404-3.178 1.699-5.378 3.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283 0-5.378 1.94-9.778 5.014-13.2-.485-1.222-2.184-6.275.486-13.038 0 0 4.125-1.304 13.426 5.052a46.97 46.97 0 0 1 12.214-1.63c4.125 0 8.33.571 12.213 1.63 9.302-6.356 13.427-5.052 13.427-5.052 2.67 6.763.97 11.816.485 13.038 3.155 3.422 5.015 7.822 5.015 13.2 0 18.905-11.404 23.06-22.324 24.283 1.78 1.548 3.316 4.481 3.316 9.126 0 6.6-.08 11.897-.08 13.526 0 1.304.89 2.853 3.316 2.364 19.412-6.52 33.405-24.935 33.405-46.691C97.707 22 75.788 0 48.854 0z"
+    fill="currentColor" />
+</svg>
+
+    <span class="is-invisible">Find us on GitHub</span>
+  </a>
+  <p class="l-footer__impressum e-heading__6">
+    This
+    <a href="https://github.com/CodeYourFuture/curriculum/">free and open source programme</a>
+    is a project of
+    <a href="https://codeyourfuture.io/">Code Your Future</a>
+    <br />
+    Creative Commons Attribution-ShareAlike 4.0
+  </p>
+  <dark-mode class="l-footer__mode"
+    ><button
+      slot="button"
+      id="mode-toggle"
+      type="button"
+      class="e-button e__button--toggle e-button--icon">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="e-icon e__button__icon e-icon--moon">
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
+      </svg>
+      <span class="is-invisible">Toggle between light and dark mode</span>
+    </button></dark-mode
+  >
+</footer>
+
+
+
+<script src="/scripts/app.min.js" defer></script>
+
+<script src="/scripts/youtube-player.min.js" defer></script>
+
+<script src="/scripts/tab-panels.min.js" type="module" defer></script>
+
+<script src="/scripts/dark-mode.min.js"></script>
+
+<script src="/scripts/alert-message.min.js" defer></script>
+
+
+
+
+
+
+
+</div>
+  </body>
+</html>

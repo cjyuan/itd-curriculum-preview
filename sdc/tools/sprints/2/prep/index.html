@@ -1,0 +1,3050 @@
+<!DOCTYPE html>
+
+
+
+
+<html lang="en" class="p-prep"><head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  <title data-pagefind-meta="title">
+    
+      Software Development Course 
+    
+      Tools 
+    
+      Sprint 2 
+    
+    Prep
+  </title>
+  
+    <meta
+      name="description"
+      content=" CYF Courses: Overview description of the prep work for the sprint" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+  <style>
+    body,
+    html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      animation: fade-in 300ms;
+    }
+    @keyframes fade-in {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  </style>
+  
+  
+  <link
+    rel="stylesheet"
+    href="/bundled.min.b6a4520237559385268d63a9daa81d96.css"
+    media="print"
+    onload="this.media='all'" />
+
+  
+  
+    
+    
+    <link
+      rel="stylesheet"
+      href="/custom.min.8ded6a1a88bc7cc98bdef8dc33d15f3a.css"
+      media="print"
+      onload="this.media='all'" />
+  
+
+
+  <noscript>
+    <link rel="stylesheet" href="/bundled.min.b6a4520237559385268d63a9daa81d96.css" />
+  </noscript>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&amp;display=swap"
+    rel="stylesheet"
+    media="print"
+    onload="this.media='all'" />
+
+  <link rel="shortcut icon" href="https://curriculum.codeyourfuture.io/favicon.ico" />
+  <meta name="theme-color" content="#e3ddeef2" />
+  <link rel="manifest" href="https://curriculum.codeyourfuture.io/manifest.json" />
+</head>
+<body>
+    <a class="c-skip-link e-button" id="skip-link" href="#main">Skip to main</a>
+    <div class="l-layout">
+      <header class="l-layout__header l-header">
+  <div class="l-header__container">
+    <h1 class="l-header__heading e-heading__6" data-pagefind-ignore>
+      <a class="l-header__home" href="/"
+        ><span class="is-invisible"
+          >sdc Prep CYF Courses</span
+        >
+        <span class="is-none--lt-container">
+          <svg
+          xmlns="http://www.w3.org/2000/svg"
+          title="Code Your Future."
+          viewBox="0 0 621.64 155.81"
+          width="140px"
+          focusable="false"
+          role="img">
+          <path
+            fill="var(--theme-color--brand)"
+            d="M103.37 56.51C96.91 63.64 87.03 69.9 74.6 69.9c-20.14 0-33.52-12.91-33.52-34.09C41.08 13.97 57.5.87 69.94.87c9.5 0 13.77 5.32 14.63 6.46l2.18-5.27h14.91v27h-17c-.28-6.18-3.32-12-10.06-12s-11.3 8.45-11.3 18.8c0 9.4 4.84 17.86 13.86 17.86 8 0 14.24-8.36 15.1-9.31Zm2.88-21.85C106.25 14.15 119.92 0 139.58 0c23.26 0 34.09 14 34.09 35.32s-12 34.57-33.43 34.57c-19.88 0-33.99-11.49-33.99-35.23Zm43.68.66c0-11.49-3.13-20.7-10.45-20.7-5.79-.09-9.78 8.26-9.78 20 0 12.44 4.47 20.32 10.54 20.32s9.65-7.88 9.65-19.62Zm27.49 20.23h5.89V14.34h-5.89V1.8h29c23 0 36.09 14.15 36.09 32.29 0 21.65-13.11 34.09-36.47 34.09h-28.62Zm29 0c10.03-.19 14.21-9.59 14.21-21.49 0-10.16-4.18-19.75-14.25-19.75h-3.61v41.24ZM303.04 1.8v21h-16.43v-8.46h-15.19v13.1h18v12.62h-18v15.49h15.19v-8.83h16.43v21.46h-57.26V55.55h6V14.34h-6V1.8Z" />
+          <path
+            fill="var(--theme-color--ink)"
+            d="M274.42 87.82v21h-16.8v-8.45h-14.37v16.52h18v12.63h-18v12.04h9.68v12.63h-35.29v-12.63h5.89v-41.21h-5.89V87.82Zm33.04 0v12.24h-5.12v20.51c0 15.28 3.41 18.51 9.49 18.51 5.79 0 9.59-2.28 9.59-18.61v-20.12h-5.17V87.82h28.11v12.24h-5.11v23.07c0 22.51-9.4 32.67-27.25 32.67-19.18-.57-29.43-10.64-29.43-32.19v-23.45h-5.32V87.82Zm103.5 24.69h-14v-12.16h-8v41.21h7.88v12.63h-35.26v-12.63h7.79v-41.21h-8.12v12.16h-14V87.82h63.71ZM444 87.82v12.24h-5.13v20.51c0 15.28 3.42 18.51 9.5 18.51 5.79 0 9.59-2.28 9.59-18.61v-20.12h-5.13V87.82h28.11v12.24h-5.13v23.07c0 22.51-9.4 32.67-27.25 32.67-19.18-.57-29.44-10.64-29.44-32.19v-23.45h-5.32V87.82Zm71.59 0c22 0 26.3 8.73 26.3 19.56 0 7.4-5.88 12.63-13.76 13.77 6.55.95 12.44 6.64 12.44 13.48 0 4.08.57 6.46 2.27 6.46 1.43 0 2.19-1.14 2.19-3v-3.13h6.36v5.22c0 7.88-3.32 15.19-13.86 15.19-12.44 0-18.42-6.55-18.42-17.66 0-8.64-1.05-10.73-9.5-10.73v14.68h5.79v12.53h-30.67v-12.53h5.32v-41.4h-5.32V87.82Zm-6 28.48h4.27c5.51 0 9.12-2.65 9.12-7.69 0-5.6-3.13-8.45-8.64-8.45h-4.75Zm102.38-28.48v21h-16.43v-8.45h-15.19v13.09h18v12.6h-18v15.5h15.19v-8.83h16.43v21.46h-57.26v-12.63h6v-41.21h-6V87.82Zm-227.72-56.1c.38-1.9 2.47-5.89 3.51-8.17l5.22-9.59h-5.22V1.8h25.54v12.16h-5.05l-17.62 30.86v11h5.32v12.36h-30.39V55.83h5.41v-11.2l-18.42-30.67h-4.65V1.8h32.47v12.16h-4.93l5.5 10.1c.57 1.81 2.57 6.08 2.95 7.7Zm29.54 2.94C413.79 14.15 427.47 0 447.12 0c23.27 0 34.09 14 34.09 35.32s-12 34.57-33.42 34.57c-19.85 0-34-11.49-34-35.23Zm43.68.66c0-11.49-3.13-20.7-10.44-20.7-5.79-.09-9.78 8.26-9.78 20 0 12.44 4.46 20.32 10.54 20.32s9.68-7.88 9.68-19.62ZM514.25 1.8v12.26h-5.13v20.5c0 15.29 3.42 18.52 9.5 18.52 5.79 0 9.59-2.28 9.59-18.61V14.34h-5.13V1.8h28.11v12.26h-5.13v23.07c0 22.5-9.4 32.66-27.25 32.66-19.18-.57-29.44-10.63-29.44-32.19V14.15h-5.32V1.8Zm71.59 0c22 0 26.31 8.74 26.31 19.57 0 7.4-5.89 12.62-13.77 13.76 6.55 1 12.44 6.65 12.44 13.49 0 4.08.57 6.46 2.27 6.46 1.43 0 2.19-1.14 2.19-3V48.9h6.36v5.23c0 7.88-3.32 15.19-13.86 15.19-12.44 0-18.42-6.55-18.42-17.66 0-8.64-1.05-10.73-9.5-10.73v14.71h5.79v12.54h-30.67V55.64h5.32v-41.4h-5.32V1.8Zm-6 28.49h4.27c5.51 0 9.12-2.66 9.12-7.69 0-5.6-3.13-8.45-8.64-8.45h-4.75ZM28.39 14.7l5.8 10.64-23.46 10.72 23.46 10.55-3.61 9.87L0 42.24v-13.3Zm318.7 14.24v13.3l-30.58 14.24-3.61-9.87 23.46-10.55-23.46-10.72 5.8-10.64Z" />
+        </svg>
+        </span>
+        <span class="is-none--gt-container">
+          <svg
+          xmlns="http://www.w3.org/2000/svg"
+          version="1.0"
+          viewBox="0 0 512 512"
+          width="48px">
+          <path
+            fill="currentcolor"
+            stroke="currentcolor"
+            d="M225.5 1c-1.1.5-3.5.9-5.3.9-4.1.1-22.9 4.5-30.7 7.2-63.1 22-114.7 72.3-142.7 139.4-6.4 15.2-11.8 33.8-16.7 57-4.1 19.7-5.4 64.5-2.6 90.8C33 346.2 49.8 390.1 76.8 425c6.2 7.9 23.9 26.4 30.7 32 8.1 6.7 26.1 18.7 35.1 23.6 28.1 15.1 58 24.3 91.9 28.3 5.5.7 13.6 1.7 18 2.2 8.8 1.2 33.9.7 48-.9 11-1.3 31.7-4.8 36.5-6.2 1.9-.5 8-2.3 13.5-3.9 21.3-6.1 47.2-17.8 67.5-30.5 8.8-5.4 23.7-15.8 28.5-19.7 10.2-8.4 24.5-21.3 31.4-28.2l8.4-8.5-2.2-2.9c-1.3-1.5-4.6-5.3-7.4-8.3-6.2-6.7-14.5-15.7-21.2-23.1-2.7-3-7.5-8.2-10.5-11.4-3-3.3-9.8-10.8-15.1-16.5-21.5-23.6-24.2-26.5-24.9-26.8-.3-.1-2 1.2-3.6 3-1.6 1.9-6.3 7.1-10.4 11.7-8.6 9.7-25.6 24.6-35.9 31.4-21.4 14.4-42.5 21.7-62.6 21.7-15.3-.1-29.3-3.3-42.5-10-22.8-11.5-41.9-35.5-51.5-64.7-4.2-12.8-4.3-13.4-5.9-22.8-3.8-22.9-4.6-39.2-2.6-55.6 2.7-22.7 3.3-26.5 5-33.2 7.9-30.9 16.7-48.6 32.4-65.6 16.8-17.9 41.1-24.9 65.1-18.6 30 7.8 50.7 36.3 55.5 76.3.5 4.6 1.2 8.7 1.5 9.3.4.5 25.1.9 62.6.9H474V9H364.2L357 26.7c-4 9.8-7.9 18.5-8.7 19.3-1.3 1.3-2.1.8-6.6-4.3-6-6.9-18.3-16.7-28.2-22.5-7.4-4.3-22.6-10.9-28.5-12.4-9.2-2.2-18.1-4.1-24-5-9-1.3-33.1-1.9-35.5-.8z" />
+        </svg>
+        </span>
+      </a>
+    </h1>
+    <link
+  href="/pagefind/pagefind-ui.css"
+  rel="stylesheet"
+  media="print"
+  onload="this.media='all'" />
+<style>
+  :root {
+    --pagefind-ui-primary: var(--theme-color--ink);
+    --pagefind-ui-text: var(--theme-color--ink);
+    --pagefind-ui-background: var(--theme-color--paper);
+    --pagefind-ui-border: var(--theme-color--outline);
+    --pagefind-ui-tag: var(--theme-color--block);
+    --pagefind-ui-border-radius: 2em;
+    --pagefind-ui-image-border-radius: var(--theme-border-radius);
+    --pagefind-ui-font: var(--theme-font--copy);
+  }
+  .pagefind-ui--reset {
+    position: absolute;
+  }
+  #search .pagefind-ui__search-input {
+    box-shadow: var(--theme-box-shadow--inset);
+    margin-bottom: var(--theme-spacing--1);
+  }
+  #search .pagefind-ui__search-clear {
+    background-color: transparent;
+  }
+  #search .pagefind-ui__drawer {
+    background-color: var(--theme-color--paper);
+    box-shadow: var(--theme-box-shadow--slim);
+    transform: translateY(-1.5px);
+    padding: 0 var(--theme-spacing--2);
+    max-height: calc(100vh - 4rem);
+    overflow-y: auto;
+  }
+  #search .pagefind-ui__result {
+    padding: var(--theme-spacing--1) 0 var(--theme-spacing--2) 0;
+  }
+  #search .pagefind-ui__result:focus-within,
+  #search .pagefind-ui__button:focus {
+    background-color: var(--theme-color--block);
+  }
+  #search .pagefind-ui__button {
+    border: none;
+  }
+</style>
+<script src="/pagefind/pagefind-ui.js" type="text/javascript" defer></script>
+<div id="search" class="l-header__search"></div>
+<script>
+  window.addEventListener("DOMContentLoaded", (event) => {
+    new PagefindUI({
+      element: "#search",
+      showSubResults: true,
+      pageSize: 3,
+      showImages: false,
+      showTags: true,
+    });
+  });
+</script>
+
+    <button
+      class="l-header__action e-button e-button--icon js-menu-toggle e-heading__3">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+        <path
+          stroke="var(--theme-color--ink)"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M13 5a1 1 0 1 0-2 0 1 1 0 0 0 2 0Zm0 7a1 1 0 1 0-2 0 1 1 0 0 0 2 0Zm0 7a1 1 0 1 0-2 0 1 1 0 0 0 2 0Z" />
+      </svg>
+      <span class="is-invisible">Open Menu.</span>
+    </button>
+  </div>
+</header>
+
+      <nav
+  class="l-layout__menu l-menu"
+  aria-label="Main Site Links."
+  id="site-menu"
+  hidden
+  tabindex="0">
+  <div class="l-menu__container">
+    <h2 class="l-menu__heading e-heading__2">
+      <a href="/" class="l-menu__home is-invisible">Menu</a>
+    </h2>
+    <button
+      class="l-menu__action e-button e-button--icon js-menu-toggle e-heading__2"
+      id="close-menu">
+      ❎
+      <span class="is-invisible">Close Menu.</span>
+    </button>
+    <ul class="l-menu__primary">
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/guides/">
+            Guides
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/sdc/tools/">
+            Tools
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/sdc/logic/">
+            Logic
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/sdc/decomposition/">
+            Decomposition
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/sdc/legacy/">
+            Legacy code
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/sdc/complexity/">
+            Complexity
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/tracks/servers/">
+            Servers
+          </a>
+        </li>
+    </ul>
+    <ul class="l-menu__secondary">
+        <li class="l-menu__item">
+          <a class="e-heading__3 l-menu__link" href="https://codeyourfuture.io">
+            CYF 👈🏾
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__3 l-menu__link" href="https://codeyourfuture.io/volunteers/">
+            Join Us 👋🏿
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__3 l-menu__link" href="https://codeyourfuture.io/donate/">
+            Support 🫶🏼
+          </a>
+        </li>
+    </ul>
+  </div>
+</nav>
+
+      <main
+        id="main"
+        class="l-layout__main l-main"
+        tabindex="0"
+        data-pagefind-body>
+        
+  
+    <solo-view tabindex="0">
+      
+
+
+      <div slot="header">
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+<header
+  class="c-page-header 
+    c-page-header--solo
+   c-page-header--toc">
+  
+  <div class="c-page-header__container">
+    <div class="c-page-header__breadcrumbs">
+      
+  <nav class="c-breadcrumbs">
+    <ol class="c-breadcrumbs__list">
+      
+        
+        
+          <li class="c-breadcrumbs__item">
+            <a
+              class="c-breadcrumbs__link"
+              href="/sdc/"data-pagefind-filter="module"><span class="c-breadcrumbs__text">Software Development Course</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                width="24px"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="c-breadcrumbs__icon">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+              </svg>
+            </a>
+          </li>
+        
+        
+          <li class="c-breadcrumbs__item">
+            <a
+              class="c-breadcrumbs__link"
+              href="/sdc/tools/"><span class="c-breadcrumbs__text">Tools</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                width="24px"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="c-breadcrumbs__icon">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+              </svg>
+            </a>
+          </li>
+      
+        <li class="c-breadcrumbs__item">
+          <a
+            class="c-breadcrumbs__link"
+            href="/sdc/tools/sprints/2/"data-pagefind-filter="sprint">Sprint 2</a
+          >
+        </li>
+      
+    </ol>
+  </nav>
+  
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Our Courses",
+      "item":"https://curriculum.codeyourfuture.io/"},
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Software Development Course",
+      "item":"https://curriculum.codeyourfuture.io/sdc/"},
+    {
+      "@type": "ListItem",
+      "position":  3 ,
+      "name": "Tools",
+      "item":"https://curriculum.codeyourfuture.io/sdc/tools/"},{
+      "@type": "ListItem",
+      "position":  5 ,
+      "name": "Sprint 2",
+      "item":"https://curriculum.codeyourfuture.io/sdc/tools/sprints/2/"},
+    {
+      "@type": "ListItem",
+      "position":  6 ,
+      "name": "Prep",
+      "item":"https://curriculum.codeyourfuture.io/sdc/tools/sprints/2/"}
+  ]
+}
+</script>
+
+
+    </div>
+    <h1 class="c-page-header__title e-heading__1"data-pagefind-filter="view"
+        
+      data-pagefind-weight="10">
+      <span class="c-emoji">
+        
+        
+           
+            <time-total class="c-page-header__time"></time-total>
+      
+         
+        </span>
+        <span class="c-page-header__title-text">Prep</span>
+               
+    </h1>
+    
+      
+        <h2 class="c-page-header__description e-heading__3">
+          Overview description of the prep work for the sprint
+        </h2>
+      
+    
+    
+    
+    
+      <div class="c-page-header__toc " id="toc">
+        <section class="c-toc" aria-label="Table of contents.">
+          <a id="top" class="c-toc__top e-button e-button--icon" href="#toc"
+            >🔖 <span class="is-invisible">back to top</span></a
+          >
+          
+            <nav id="TableOfContents"></nav>
+          
+          
+            <ol>
+              
+                <li>
+                  <a href="#programming-language-concepts" data-pagefind-weight="5"
+                    >Programming language concepts</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#bitwise-operators" data-pagefind-weight="5"
+                    >Bitwise operators</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#comparing-programming-languages" data-pagefind-weight="5"
+                    >Comparing programming languages</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#shell-pipelines" data-pagefind-weight="5"
+                    >Shell pipelines</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#brian-kernighan-on-pipelines" data-pagefind-weight="5"
+                    >Brian Kernighan on pipelines</a
+                  >
+                  📼
+                </li>
+              
+                <li>
+                  <a href="#grep-in-pipelines" data-pagefind-weight="5"
+                    >grep in pipelines</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#sort-and-uniq" data-pagefind-weight="5"
+                    >sort and uniq</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#head-and-tail" data-pagefind-weight="5"
+                    >head and tail</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#tr" data-pagefind-weight="5"
+                    >tr</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#jq" data-pagefind-weight="5"
+                    >jq</a
+                  >
+                  
+                </li>
+              
+            </ol>
+          
+          
+        </section>
+      </div>
+    
+
+  </div>
+</header>
+</div>
+      <div slot="blocks">
+        
+        
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="programming-language-concepts">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="programming-language-concepts">
+        Programming language concepts
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="120 minutes countdown" datetime="P120M">120&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Define the term variable.</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Describe how a variable relates to a memory location.</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Give 3 examples of common operators.</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Define the <code>&amp;&amp;</code> (<code>and</code>), <code>||</code> (<code>or</code>), and <code>!</code> (<code>not</code>) operators.</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Explain what happens when you call a function.</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <p>Read the learning objectives listed on this page: Bear in mind what you’re trying to achieve while reading this text. If a topic isn’t making much sense, and isn’t in the objectives, you can probably skip over it. If a topic is listed in the objectives, you should keep studying it until you are confident you’ve met the objective.</p>
+<section class="c-note c-note--Reading">
+  <h4 class="c-note__title e-heading__4">Reading</span>
+  </h4>
+  <div class="c-note__text "><p>Read chapter 9 of How Computers Work.</p>
+<p>Do every exercise listed in the chapter.</p>
+<p>You can skip the projects (though you&rsquo;re welcome to try any of them if you have time!).</p>
+</div>
+</section>
+
+
+<p>Check you have achieved each learning objective listed on this page. If you&rsquo;re not sure about any of them, ask in Slack.</p>
+<h4 id="exercise">Exercise</h4>
+<p>Label each operator with its correct arity:</p>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+    
+    
+
+    
+    
+      
+    
+  
+
+
+  
+    
+    
+
+    
+    
+      
+    
+  
+
+
+  
+    
+    
+
+    
+    
+      
+    
+  
+
+
+  
+    
+    
+
+    
+    
+      
+    
+  
+
+
+  
+    
+    
+
+    
+    
+      
+    
+  
+
+
+  
+    
+    
+
+    
+    
+      
+    
+  
+
+
+  
+    
+    
+
+    
+    
+      
+    
+  
+
+
+
+
+
+
+<div class="c-block">
+  <label-items>
+    <section slot="labels" class="c-labels" aria-label="Labels">
+      
+        <button class="c-label" data-label="unary">Unary</button>
+      
+        <button class="c-label" data-label="ternary">Ternary</button>
+      
+        <button class="c-label" data-label="binary">Binary</button>
+      
+    </section>
+    <h3 slot="heading" class="e-heading__5">Drag the correct arity from 👆🏾 onto each operator 👇🏽</h3>
+    <section slot="content" aria-label="Items to label">
+      
+        <div
+          data-item="1"
+          data-correct="ternary">
+          The <code>?</code> operator in JavaScript.
+        </div>
+      
+        <div
+          data-item="2"
+          data-correct="binary">
+          The &ldquo;logical and&rdquo; operator (<code>and</code> in Python, <code>&amp;&amp;</code> in JavaScript and C).
+        </div>
+      
+        <div
+          data-item="3"
+          data-correct="unary">
+          The &ldquo;logical not&rdquo; operator (<code>not</code> in Python, <code>!</code> in JavaScript and C).
+        </div>
+      
+        <div
+          data-item="4"
+          data-correct="binary">
+          The &ldquo;plus&rdquo; operator (<code>+</code>).
+        </div>
+      
+        <div
+          data-item="5"
+          data-correct="binary">
+          The &ldquo;logical or&rdquo; operator (<code>or</code> in Python, <code>||</code> in JavaScript and C).
+        </div>
+      
+        <div
+          data-item="6"
+          data-correct="binary">
+          The &ldquo;bitwise and&rdquo; operator (<code>&amp;</code>).
+        </div>
+      
+        <div
+          data-item="7"
+          data-correct="unary">
+          The &ldquo;bitwise not&rdquo; operator (<code>~</code>).
+        </div>
+      
+    </section>
+    <section aria-label="Feedback" slot="feedback"></section>
+  </label-items>
+</div>
+
+<script src="/scripts/label-items.min.js" defer></script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  <multiple-choice data-correct="3" class="c-quiz">
+    <form slot="quiz">
+      <fieldset class="c-quiz__fieldset" tabindex="0">
+        <legend class="c-quiz__legend">🤔 What is the arity of the <code>-</code> operator?</legend>
+        <ol class="c-quiz__list"><li class="c-quiz__answer">
+            <label
+              class="c-quiz__label"
+              ><input
+              class="c-quiz__input"
+              type="radio"
+              name="answer"
+              value="0" />
+            Unary</label
+            >
+          </li><li class="c-quiz__answer">
+            <label
+              class="c-quiz__label"
+              ><input
+              class="c-quiz__input"
+              type="radio"
+              name="answer"
+              value="1" />
+            Binary</label
+            >
+          </li><li class="c-quiz__answer">
+            <label
+              class="c-quiz__label"
+              ><input
+              class="c-quiz__input"
+              type="radio"
+              name="answer"
+              value="2" />
+            Ternary</label
+            >
+          </li><li class="c-quiz__answer">
+            <label
+              class="c-quiz__label"
+              ><input
+              class="c-quiz__input"
+              type="radio"
+              name="answer"
+              value="3" />
+            It depends</label
+            >
+          </li></ol>
+      </fieldset>
+    </form>
+    <section class="c-quiz__feedback" slot="feedback" aria-live="polite"><p class="c-quiz__remark" data-index="0" >💬 Sometimes: when used in <code>value = -1</code> it&rsquo;s unary. But can it be used other ways?</p><p class="c-quiz__remark" data-index="1" >💬 Sometimes: when used like <code>value = 2 - 1</code> it&rsquo;s binary. But can it be used other ways?</p><p class="c-quiz__remark" data-index="2" >💬 No, in the languages we&rsquo;re learning <code>-</code> isn&rsquo;t a ternary operator.</p><p class="c-quiz__remark" data-index="3" >💬 Right - sometimes it applies to one value (<code>value = -1</code>) and other times it needs two (<code>value = 2 - 1</code>).</p></section>
+  </multiple-choice>
+ 
+  
+  <script src="/scripts/multiple-choice.min.js" defer></script>
+
+
+<p>In class, we will have a discussion about each of the below prompts. Think about them, and write down notes in your notebook to help you participate in the discussion.</p>
+<section class="c-note c-note--Exercise">
+  <h4 class="c-note__title e-heading__4">Exercise</span>
+  </h4>
+  <div class="c-note__text ">Explain what a variable is and how it&rsquo;s used. Make sure to use the term &ldquo;memory location&rdquo; in your explanation.</div>
+</section>
+
+
+<section class="c-note c-note--Exercise">
+  <h4 class="c-note__title e-heading__4">Exercise</span>
+  </h4>
+  <div class="c-note__text "><p>Write down what happens when you call a function.</p>
+<p>Make sure you include how the &ldquo;next line of code to run&rdquo; moves around, parameters/arguments, return values, and scope.</p>
+</div>
+</section>
+
+
+<section class="c-note c-note--Exercise">
+  <h4 class="c-note__title e-heading__4">Exercise</span>
+  </h4>
+  <div class="c-note__text "><p>Write down an explanation of what a class is, which could be understood by someone who&rsquo;s never written any code before.</p>
+<p>To help you think about this, consider:</p>
+<ol>
+<li>What properties may a &ldquo;recipe&rdquo; class have, for representing recipes you could cook? How may a person interact with a recipe?</li>
+<li>What properties may a &ldquo;Big Mac recipe&rdquo; have, for representing how to make a Big Mac?</li>
+<li>What is the difference between a recipe for a Big Mac, and an actual Big Mac you may buy yourself?</li>
+<li>What is the difference between the idea of <em>any recipe</em>, and an actual recipe for a Big Mac?</li>
+</ol>
+<p>Include at least one real-world example of when a class is useful.</p>
+<p>Make sure you describe the relationship between a class and an instance of a class.</p>
+</div>
+</section>
+
+
+<section class="c-note c-note--Exercise">
+  <h4 class="c-note__title e-heading__4">Exercise</span>
+  </h4>
+  <div class="c-note__text "><p>Instances of classes are often called objects.</p>
+<p>This kind of &ldquo;object&rdquo; is similar to, but slightly different from what we call an &ldquo;object&rdquo; in JavaScript.</p>
+<p>Write down the differences between these two meanings of the word object.</p>
+</div>
+</section>
+
+
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="bitwise-operators">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="bitwise-operators">
+        Bitwise operators
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="120 minutes countdown" datetime="P120M">120&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Describe the meaning of the <code>&amp;</code>, <code>|</code>, <code>^</code>, and <code>~</code> bitwise operators.</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Manually perform the function of the <code>&amp;</code>, <code>|</code>, <code>^</code>, and <code>~</code> bitwise operators on two integers.</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  <multiple-choice data-correct="1" class="c-quiz">
+    <form slot="quiz">
+      <fieldset class="c-quiz__fieldset" tabindex="0">
+        <legend class="c-quiz__legend">🤔 What does the following decimal expression evaluate to?: <code>9 | 14</code> (Hint: Convert to binary)</legend>
+        <ol class="c-quiz__list"><li class="c-quiz__answer">
+            <label
+              class="c-quiz__label"
+              ><input
+              class="c-quiz__input"
+              type="radio"
+              name="answer"
+              value="0" />
+            23</label
+            >
+          </li><li class="c-quiz__answer">
+            <label
+              class="c-quiz__label"
+              ><input
+              class="c-quiz__input"
+              type="radio"
+              name="answer"
+              value="1" />
+            15</label
+            >
+          </li><li class="c-quiz__answer">
+            <label
+              class="c-quiz__label"
+              ><input
+              class="c-quiz__input"
+              type="radio"
+              name="answer"
+              value="2" />
+            8</label
+            >
+          </li></ol>
+      </fieldset>
+    </form>
+    <section class="c-quiz__feedback" slot="feedback" aria-live="polite"><p class="c-quiz__remark" data-index="0" >💬 Not quite - if a bit is set in both numbers, we don&rsquo;t add them.</p><p class="c-quiz__remark" data-index="1" >💬 Right! 1001 | 1110 = 1111 - we take all of the bits that are set in either number.</p><p class="c-quiz__remark" data-index="2" >💬 Not quite - check again what | does.</p></section>
+  </multiple-choice>
+ 
+  
+  <script src="/scripts/multiple-choice.min.js" defer></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  <multiple-choice data-correct="2" class="c-quiz">
+    <form slot="quiz">
+      <fieldset class="c-quiz__fieldset" tabindex="0">
+        <legend class="c-quiz__legend">🤔 What does the following decimal expression evaluate to?: <code>9 &amp; 14</code> (Hint: Convert to binary)</legend>
+        <ol class="c-quiz__list"><li class="c-quiz__answer">
+            <label
+              class="c-quiz__label"
+              ><input
+              class="c-quiz__input"
+              type="radio"
+              name="answer"
+              value="0" />
+            16</label
+            >
+          </li><li class="c-quiz__answer">
+            <label
+              class="c-quiz__label"
+              ><input
+              class="c-quiz__input"
+              type="radio"
+              name="answer"
+              value="1" />
+            15</label
+            >
+          </li><li class="c-quiz__answer">
+            <label
+              class="c-quiz__label"
+              ><input
+              class="c-quiz__input"
+              type="radio"
+              name="answer"
+              value="2" />
+            8</label
+            >
+          </li></ol>
+      </fieldset>
+    </form>
+    <section class="c-quiz__feedback" slot="feedback" aria-live="polite"><p class="c-quiz__remark" data-index="0" >💬 Not quite - if a bit is set in both numbers, we don&rsquo;t add them.</p><p class="c-quiz__remark" data-index="1" >💬 Not quite - check again what &amp; does.</p><p class="c-quiz__remark" data-index="2" >💬 Right! 1001 &amp; 1110 = 1000 - we take all of the bits that are set in both numbers.</p></section>
+  </multiple-choice>
+ 
+  
+  <script src="/scripts/multiple-choice.min.js" defer></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  <multiple-choice data-correct="1" class="c-quiz">
+    <form slot="quiz">
+      <fieldset class="c-quiz__fieldset" tabindex="0">
+        <legend class="c-quiz__legend">🤔 What does the following decimal expression evaluate to?: <code>9 ^ 14</code> (Hint: Convert to binary)</legend>
+        <ol class="c-quiz__list"><li class="c-quiz__answer">
+            <label
+              class="c-quiz__label"
+              ><input
+              class="c-quiz__input"
+              type="radio"
+              name="answer"
+              value="0" />
+            15</label
+            >
+          </li><li class="c-quiz__answer">
+            <label
+              class="c-quiz__label"
+              ><input
+              class="c-quiz__input"
+              type="radio"
+              name="answer"
+              value="1" />
+            7</label
+            >
+          </li><li class="c-quiz__answer">
+            <label
+              class="c-quiz__label"
+              ><input
+              class="c-quiz__input"
+              type="radio"
+              name="answer"
+              value="2" />
+            8</label
+            >
+          </li></ol>
+      </fieldset>
+    </form>
+    <section class="c-quiz__feedback" slot="feedback" aria-live="polite"><p class="c-quiz__remark" data-index="0" >💬 Not quite - check again what ^ does.</p><p class="c-quiz__remark" data-index="1" >💬 Right! 1001 ^ 1110 = 0111 - we take all of the bits that are set in exactly one of the numbers.</p><p class="c-quiz__remark" data-index="2" >💬 Not quite - check again what ^ does.</p></section>
+  </multiple-choice>
+ 
+  
+  <script src="/scripts/multiple-choice.min.js" defer></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  <multiple-choice data-correct="0" class="c-quiz">
+    <form slot="quiz">
+      <fieldset class="c-quiz__fieldset" tabindex="0">
+        <legend class="c-quiz__legend">🤔 What does the following decimal expression evaluate to?: <code>~9</code> (Hint: Convert to binary)</legend>
+        <ol class="c-quiz__list"><li class="c-quiz__answer">
+            <label
+              class="c-quiz__label"
+              ><input
+              class="c-quiz__input"
+              type="radio"
+              name="answer"
+              value="0" />
+            6</label
+            >
+          </li><li class="c-quiz__answer">
+            <label
+              class="c-quiz__label"
+              ><input
+              class="c-quiz__input"
+              type="radio"
+              name="answer"
+              value="1" />
+            -10</label
+            >
+          </li><li class="c-quiz__answer">
+            <label
+              class="c-quiz__label"
+              ><input
+              class="c-quiz__input"
+              type="radio"
+              name="answer"
+              value="2" />
+            -9</label
+            >
+          </li></ol>
+      </fieldset>
+    </form>
+    <section class="c-quiz__feedback" slot="feedback" aria-live="polite"><p class="c-quiz__remark" data-index="0" >💬 Right! ~1001 flips every bit, which produces 0110 which is 6.</p><p class="c-quiz__remark" data-index="1" >💬 Interesting - how did you come to this answer? If you can&rsquo;t explain why 6 and -10 are both valid answers, learn more about two&rsquo;s complement, truncation, and sign-extension.</p><p class="c-quiz__remark" data-index="2" >💬 Not quite - check again what ~ does.</p></section>
+  </multiple-choice>
+ 
+  
+  <script src="/scripts/multiple-choice.min.js" defer></script>
+
+
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="comparing-programming-languages">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="comparing-programming-languages">
+        Comparing programming languages
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="20 minutes countdown" datetime="P20M">20&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Identify whether variables have fixed types in C, Python, and JavaScript.</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Identify and explain the differences between a function definition in C and Python.</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Compare compiled and interpreted languages.</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Explain one advantage of compiled languages, and one advantage of interpreted languages.</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <p>Variables are names for 
+<tool-tip-container tabindex="0"><strong class="tooltip__trigger" id="trigger__memory locations">memory locations</strong><span class="tooltip__emoji">🧶</span><tool-tip role="tooltip" aria-labelledby="memory locations"><span class="tooltip__title e-heading__2"><span class="tooltip__emoji">🧶</span> Memory location</span><span class="tooltip__content">Memory is where we store values. You can think of memory as a long list of locations. Each location can store one byte of data. We can store the byte <code>0x41</code> in a memory location. One variable always points at one memory location, but depending on its type may include the data from subsequent memory locations too.</span></tool-tip></tool-tip-container>
+. What&rsquo;s inside the memory location can be changed.</p>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  <multiple-choice data-correct="3" class="c-quiz">
+    <form slot="quiz">
+      <fieldset class="c-quiz__fieldset" tabindex="0">
+        <legend class="c-quiz__legend">🤔 Which languages allow assigning a new value with a different type to a variable.</legend>
+        <ol class="c-quiz__list"><li class="c-quiz__answer">
+            <label
+              class="c-quiz__label"
+              ><input
+              class="c-quiz__input"
+              type="radio"
+              name="answer"
+              value="0" />
+            All programming languages</label
+            >
+          </li><li class="c-quiz__answer">
+            <label
+              class="c-quiz__label"
+              ><input
+              class="c-quiz__input"
+              type="radio"
+              name="answer"
+              value="1" />
+            Only JavaScript</label
+            >
+          </li><li class="c-quiz__answer">
+            <label
+              class="c-quiz__label"
+              ><input
+              class="c-quiz__input"
+              type="radio"
+              name="answer"
+              value="2" />
+            C and Python</label
+            >
+          </li><li class="c-quiz__answer">
+            <label
+              class="c-quiz__label"
+              ><input
+              class="c-quiz__input"
+              type="radio"
+              name="answer"
+              value="3" />
+            JavaScript and Python</label
+            >
+          </li><li class="c-quiz__answer">
+            <label
+              class="c-quiz__label"
+              ><input
+              class="c-quiz__input"
+              type="radio"
+              name="answer"
+              value="4" />
+            C and JavaScript</label
+            >
+          </li></ol>
+      </fieldset>
+    </form>
+    <section class="c-quiz__feedback" slot="feedback" aria-live="polite"><p class="c-quiz__remark" data-index="0" >💬 No - some languages require any new value for a variable has the same type as the old value.</p><p class="c-quiz__remark" data-index="1" >💬 JavaScript does allow this, but it isn&rsquo;t the only language to allow it.</p><p class="c-quiz__remark" data-index="2" >💬 No - one of these languages doesn&rsquo;t allow this.</p><p class="c-quiz__remark" data-index="3" >💬 Right - JavaScript and Python are both dynamically typed languages. C is a statically typed language.</p><p class="c-quiz__remark" data-index="4" >💬 No - one of these languages doesn&rsquo;t allow this.</p></section>
+  </multiple-choice>
+ 
+  
+  <script src="/scripts/multiple-choice.min.js" defer></script>
+
+
+<section class="c-note c-note--Exercise">
+  <h4 class="c-note__title e-heading__4">Exercise</span>
+  </h4>
+  <div class="c-note__text "><p>Write the same function twice, once in C and once in Python. The function should take two numbers as parameters, and return the sum of those two numbers.</p>
+<p>Write down what&rsquo;s different about the two function definitions.</p>
+</div>
+</section>
+
+
+<p>Some programming languages are compiled. Others are interpreted.</p>
+<section class="c-note c-note--Exercise">
+  <h4 class="c-note__title e-heading__4">Exercise</span>
+  </h4>
+  <div class="c-note__text "><p>Write down an explanation of what it means to be compiled or interpreted.</p>
+<p>List all of the programming languages you know about - is each one compiled or interpreted?</p>
+<p>What are the advantages and disadvantages of being compiled or interpreted? Write them down.</p>
+</div>
+</section>
+
+
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="shell-pipelines">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="shell-pipelines">
+        Shell pipelines
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="30 minutes countdown" datetime="P30M">30&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Describe what a shell pipeline is.</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Explain why we use shell pipelines.</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Explain the difference between stdout and stderr.</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Explain what gets passed between two programs when they&rsquo;re combined with a <code>|</code>.</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <p>Read the learning objectives listed on this page: Bear in mind what you’re trying to achieve while reading this text. If a topic isn’t making much sense, and isn’t in the objectives, you can probably skip over it. If a topic is listed in the objectives, you should keep studying it until you are confident you’ve met the objective.</p>
+<section class="c-note c-note--Reading">
+  <h4 class="c-note__title e-heading__4">Reading</span>
+  </h4>
+  <div class="c-note__text ">Read <a
+  href="https://effective-shell.com/part-2-core-skills/thinking-in-pipelines/">Thinking in Pipelines from Effective Shell</a>.</div>
+</section>
+
+
+<h3 id="key-take-aways">Key take-aways:</h3>
+<ul>
+<li>Most programs take some input, and produce some output.</li>
+<li>Instead of writing one program to do exactly what we want, we can often combine existing programs.</li>
+<li>Programs read from stdin, and write to stdout and stderr.
+<ul>
+<li>They write their main output to stdout.</li>
+<li>They write error messages, progress messages, and other information that isn&rsquo;t their main output to stderr.</li>
+</ul>
+</li>
+<li>We can pass information between programs using a pipe: <code>|</code></li>
+<li>We can write the output of programs to a file using <code>&gt;</code>, or append to a file using <code>&gt;&gt;</code>.</li>
+</ul>
+<h3 id="comparison-with-javascript">Comparison with JavaScript</h3>
+<p>A shell pipeline is like a chain of function calls.</p>
+<p>In JavaScript we joined together pipeline stages (functions) with <code>.</code>s:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span>[<span style="color:#e6db74">&#34;Hello&#34;</span>, <span style="color:#e6db74">&#34;I&#34;</span>, <span style="color:#e6db74">&#34;am&#34;</span>, <span style="color:#e6db74">&#34;EXTRA&#34;</span>, <span style="color:#e6db74">&#34;happy&#34;</span>]
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">filter</span>((<span style="color:#a6e22e">word</span>) =&gt; <span style="color:#f92672">/</span>[<span style="color:#a6e22e">A</span><span style="color:#f92672">-</span><span style="color:#a6e22e">Z</span>]<span style="color:#f92672">/</span>.<span style="color:#a6e22e">test</span>(<span style="color:#a6e22e">word</span>))
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">map</span>((<span style="color:#a6e22e">word</span>) =&gt; <span style="color:#a6e22e">word</span>.<span style="color:#a6e22e">toLowerCase</span>())
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">sort</span>()</span></span></code></pre></div><p>In shell we join together pipeline stages (commands) with <code>|</code>s:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>printf <span style="color:#e6db74">&#34;Hello\nI\nam\nEXTRA\nhappy\n&#34;</span> | grep <span style="color:#e6db74">&#39;[A-Z]&#39;</span> | tr <span style="color:#e6db74">&#39;[:upper:]&#39;</span> <span style="color:#e6db74">&#39;[:lower:]&#39;</span> | sort</span></span></code></pre></div><style>
+  .mermaid svg {
+    height: initial;
+  }
+  .mermaid {
+    margin-bottom: var(--theme-spacing--gutter);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .mermaid[data-processed] {
+    opacity: 1;
+  }
+</style>
+<div class="mermaid">flowchart LR
+    Initial[Hello
+    I
+    am
+    EXTRA
+    happy]
+    Initial --grep '[A-Z]'--> Filtered[Hello
+    I
+    EXTRA] --tr '[:upper:]' '[:lower:]'--> Mapped[hello
+    i
+    extra] --sort--> Sorted[hello
+    extra
+    i]</div>
+
+<script type="module" src="/scripts/mermaid-observer.min.js" defer></script>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  <multiple-choice data-correct="2" class="c-quiz">
+    <form slot="quiz">
+      <fieldset class="c-quiz__fieldset" tabindex="0">
+        <legend class="c-quiz__legend">🤔 If /doesnotexist doesn&rsquo;t exist, what will be output to stdout and stderr by the command <code>ls /doesnotexist</code></legend>
+        <ol class="c-quiz__list"><li class="c-quiz__answer">
+            <label
+              class="c-quiz__label"
+              ><input
+              class="c-quiz__input"
+              type="radio"
+              name="answer"
+              value="0" />
+            stdout: an error message. stderr: nothing.</label
+            >
+          </li><li class="c-quiz__answer">
+            <label
+              class="c-quiz__label"
+              ><input
+              class="c-quiz__input"
+              type="radio"
+              name="answer"
+              value="1" />
+            stdout: /doesnotexist. stderr: an error message.</label
+            >
+          </li><li class="c-quiz__answer">
+            <label
+              class="c-quiz__label"
+              ><input
+              class="c-quiz__input"
+              type="radio"
+              name="answer"
+              value="2" />
+            stdout: nothing. stderr: an error message.</label
+            >
+          </li></ol>
+      </fieldset>
+    </form>
+    <section class="c-quiz__feedback" slot="feedback" aria-live="polite"><p class="c-quiz__remark" data-index="0" >💬 Not quite - what are stdout and stderr for?</p><p class="c-quiz__remark" data-index="1" >💬 Not quite - ls only lists files that exist.</p><p class="c-quiz__remark" data-index="2" >💬 Right - ls doesn&rsquo;t have any files to list as output, but does have an error to display.</p></section>
+  </multiple-choice>
+ 
+  
+  <script src="/scripts/multiple-choice.min.js" defer></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  <multiple-choice data-correct="1" class="c-quiz">
+    <form slot="quiz">
+      <fieldset class="c-quiz__fieldset" tabindex="0">
+        <legend class="c-quiz__legend">🤔 If the working directory contains the files: &lsquo;primates&rsquo;, &lsquo;fish&rsquo;, and &lsquo;monotremes&rsquo;, what will <code>ls | sort | grep i | wc -l</code> output?</legend>
+        <ol class="c-quiz__list"><li class="c-quiz__answer">
+            <label
+              class="c-quiz__label"
+              ><input
+              class="c-quiz__input"
+              type="radio"
+              name="answer"
+              value="0" />
+            fish primates monotremes</label
+            >
+          </li><li class="c-quiz__answer">
+            <label
+              class="c-quiz__label"
+              ><input
+              class="c-quiz__input"
+              type="radio"
+              name="answer"
+              value="1" />
+            2</label
+            >
+          </li><li class="c-quiz__answer">
+            <label
+              class="c-quiz__label"
+              ><input
+              class="c-quiz__input"
+              type="radio"
+              name="answer"
+              value="2" />
+            fish primates</label
+            >
+          </li><li class="c-quiz__answer">
+            <label
+              class="c-quiz__label"
+              ><input
+              class="c-quiz__input"
+              type="radio"
+              name="answer"
+              value="3" />
+            3</label
+            >
+          </li></ol>
+      </fieldset>
+    </form>
+    <section class="c-quiz__feedback" slot="feedback" aria-live="polite"><p class="c-quiz__remark" data-index="0" >💬 Not quite - <code>ls | sort</code> would output this, but there are more commands in the pipeline.</p><p class="c-quiz__remark" data-index="1" >💬 Right! We list three files, sort them, search for ones that contain an i (fish and primates), then count the number of output lines (one per file).</p><p class="c-quiz__remark" data-index="2" >💬 Not quite - <code>ls | sort | grep i</code> would output this, but there&rsquo;s one more command in the pipeline.</p><p class="c-quiz__remark" data-index="3" >💬 Not quite - check what the grep command in the pipeline does.</p></section>
+  </multiple-choice>
+ 
+  
+  <script src="/scripts/multiple-choice.min.js" defer></script>
+
+
+<p>Next we will learn about some programs commonly used in pipelines.</p>
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+
+  
+
+  
+  
+
+  
+    
+    
+  
+
+
+
+
+
+
+
+
+  
+<section
+  class="c-block c-block--youtube"
+  aria-labelledby="brian-kernighan-on-pipelines">
+  
+    <h2
+      class="c-block__title e-heading__2 is-invisible"
+      id="brian-kernighan-on-pipelines">
+      Youtube:
+      <a href="https://www.youtube.com/watch?v=bKzonnwoR2I">Brian Kernighan on pipelines</a>
+    </h2>
+  
+  <div class="c-block__content">
+    <youtube-player data-src="https://www.youtube.com/watch?v=bKzonnwoR2I"></youtube-player>
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="grep-in-pipelines">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="grep-in-pipelines">
+        grep in pipelines
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="20 minutes countdown" datetime="P20M">20&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />List the files in a directory which contain an upper-case letter in their name with <code>ls</code> and <code>grep</code>.</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Count the number of files in a directory which contain an upper-case letter in their name with <code>ls</code>, <code>grep</code>, and <code>wc</code>.</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Explain why we don&rsquo;t need to pass <code>-1</code> to <code>ls</code> when piping its output.</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <p>We&rsquo;ve already used grep to search for text in files using regular expressions.</p>
+<p>We can also pipe other commands&rsquo; output to <code>grep</code> to search the output the same way.</p>
+<p>For example, we can write:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-console" data-lang="console"><span style="display:flex;"><span>% ls -1
+</span></span><span style="display:flex;"><span>report-draft
+</span></span><span style="display:flex;"><span>report-version-1
+</span></span><span style="display:flex;"><span>report-version-1.1
+</span></span><span style="display:flex;"><span>report-version-2
+</span></span><span style="display:flex;"><span>report-final
+</span></span><span style="display:flex;"><span>report-final-2
+</span></span><span style="display:flex;"><span>% ls -1 | grep -v <span style="color:#e6db74">&#39;[0-9]&#39;</span>
+</span></span><span style="display:flex;"><span>report-draft
+</span></span><span style="display:flex;"><span>report-final
+</span></span></code></pre></div><p>The original <code>ls -1</code> command showed us all the files in the current directory.</p>
+<p>By piping this to <code>grep -v '[0-9]'</code> we can filter this output down to just the files whose names don&rsquo;t contain numbers.</p>
+<p><code>grep</code> operates on lines, and <code>ls -1</code> outputs one file per line, so <code>grep</code> tests each file one at a time.</p>
+<h3 id="ls-vs-ls--1"><code>ls</code> vs <code>ls -1</code></h3>
+<p>In our terminal, when we run <code>ls -1</code>, we get one file output per line. But if we run <code>ls</code> in our terminal, we get the files on one line, separated by spaces.</p>
+<p>We know that <code>grep</code> operates on individual lines, so it may seem like <code>ls | grep</code> would have a problem - <code>ls</code> prints more than one file per line.</p>
+<p>But <code>ls</code> behaves specially. It detects whether it&rsquo;s outputting to a terminal, or a pipe, and acts differently:</p>
+<ul>
+<li>If it&rsquo;s outputting to a pipe, it outputs one file per line.</li>
+<li>If it&rsquo;s outputting to a terminal, it tries to be useful and take up less space. But if you pass <code>-1</code> it will <em>force</em> <code>ls</code> to output one file per line.</li>
+</ul>
+<p>So we can write <code>ls | grep -v '[0-9]'</code> - we don&rsquo;t need to pass <code>-1</code> to <code>ls</code>.</p>
+<p>It&rsquo;s good to know that sometimes programs behave differently when outputting to a terminal or a pipeline.</p>
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="sort-and-uniq">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="sort-and-uniq">
+        sort and uniq
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="20 minutes countdown" datetime="P20M">20&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Count the occurrences of different lines within a file using <code>sort</code> and <code>uniq</code>.</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <p><code>sort</code> sorts its input. <code>uniq</code> deduplicates adjacent matching lines.</p>
+<p>
+
+  <figure>
+      <img
+        loading="lazy"
+        src="/sort-uniq_6237025290146502403.png"alt="Julia Evans comic about sort and uniq" data-pagefind-index-attrs="Julia Evans comic about sort and uniq"/></figure></p>
+<p>(Source, including text-only transcript: <a
+  href="https://wizardzines.com/comics/sort-uniq/">https://wizardzines.com/comics/sort-uniq/</a>)</p>
+<p>Learn about <code>sort</code> and <code>uniq</code> from their man pages (and the backlog exercises).</p>
+<p>Often we pipe to <code>sort | uniq</code> not just <code>uniq</code> so that duplicate lines will be next to each other before they&rsquo;re passed to <code>uniq</code>.</p>
+<p>For the following quizzes, consider the following input file:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-console" data-lang="console"><span style="display:flex;"><span>% cat input.txt
+</span></span><span style="display:flex;"><span>pigs 10
+</span></span><span style="display:flex;"><span>chickens 2
+</span></span><span style="display:flex;"><span>pigs 10
+</span></span><span style="display:flex;"><span>goats 3
+</span></span><span style="display:flex;"><span>hamsters 300
+</span></span></code></pre></div>
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  <multiple-choice data-correct="0" class="c-quiz">
+    <form slot="quiz">
+      <fieldset class="c-quiz__fieldset" tabindex="0">
+        <legend class="c-quiz__legend">🤔 What command would output the lines of the file sorted alphabetically?</legend>
+        <ol class="c-quiz__list"><li class="c-quiz__answer">
+            <label
+              class="c-quiz__label"
+              ><input
+              class="c-quiz__input"
+              type="radio"
+              name="answer"
+              value="0" />
+            <code>sort input.txt</code></label
+            >
+          </li><li class="c-quiz__answer">
+            <label
+              class="c-quiz__label"
+              ><input
+              class="c-quiz__input"
+              type="radio"
+              name="answer"
+              value="1" />
+            <code>sort -u input.txt</code></label
+            >
+          </li><li class="c-quiz__answer">
+            <label
+              class="c-quiz__label"
+              ><input
+              class="c-quiz__input"
+              type="radio"
+              name="answer"
+              value="2" />
+            <code>sort input.txt | uniq</code></label
+            >
+          </li></ol>
+      </fieldset>
+    </form>
+    <section class="c-quiz__feedback" slot="feedback" aria-live="polite"><p class="c-quiz__remark" data-index="0" >💬 Right - sort sorts the file.</p><p class="c-quiz__remark" data-index="1" >💬 Not quite - what does <code>-u</code> do?</p><p class="c-quiz__remark" data-index="2" >💬 Not quite - what does piping to uniq do?</p></section>
+  </multiple-choice>
+ 
+  
+  <script src="/scripts/multiple-choice.min.js" defer></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  <multiple-choice data-correct="2" class="c-quiz">
+    <form slot="quiz">
+      <fieldset class="c-quiz__fieldset" tabindex="0">
+        <legend class="c-quiz__legend">🤔 What command would output the lines of the file sorted by the number after the first space, starting with hamsters 300?</legend>
+        <ol class="c-quiz__list"><li class="c-quiz__answer">
+            <label
+              class="c-quiz__label"
+              ><input
+              class="c-quiz__input"
+              type="radio"
+              name="answer"
+              value="0" />
+            <code>sort -k1 input.txt</code></label
+            >
+          </li><li class="c-quiz__answer">
+            <label
+              class="c-quiz__label"
+              ><input
+              class="c-quiz__input"
+              type="radio"
+              name="answer"
+              value="1" />
+            <code>sort -k2 input.txt</code></label
+            >
+          </li><li class="c-quiz__answer">
+            <label
+              class="c-quiz__label"
+              ><input
+              class="c-quiz__input"
+              type="radio"
+              name="answer"
+              value="2" />
+            <code>sort -k2 -r -n input.txt</code></label
+            >
+          </li><li class="c-quiz__answer">
+            <label
+              class="c-quiz__label"
+              ><input
+              class="c-quiz__input"
+              type="radio"
+              name="answer"
+              value="3" />
+            <code>sort -k2 -n input.txt</code></label
+            >
+          </li></ol>
+      </fieldset>
+    </form>
+    <section class="c-quiz__feedback" slot="feedback" aria-live="polite"><p class="c-quiz__remark" data-index="0" >💬 Not quite - check what <code>-k1</code> does.</p><p class="c-quiz__remark" data-index="1" >💬 Not quite - look at the difference between alphabetical sorting and numerical sorting.</p><p class="c-quiz__remark" data-index="2" >💬 Right! We need to select the right field, sort numerically, and reverse the order to go biggest to smallest.</p><p class="c-quiz__remark" data-index="3" >💬 Close, but what order will things be sorted?</p></section>
+  </multiple-choice>
+ 
+  
+  <script src="/scripts/multiple-choice.min.js" defer></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  <multiple-choice data-correct="1" class="c-quiz">
+    <form slot="quiz">
+      <fieldset class="c-quiz__fieldset" tabindex="0">
+        <legend class="c-quiz__legend">🤔 What would the command <code>awk '{print $1}' input.txt | sort | uniq -c | sort -rn</code> output?</legend>
+        <ol class="c-quiz__list"><li class="c-quiz__answer">
+            <label
+              class="c-quiz__label"
+              ><input
+              class="c-quiz__input"
+              type="radio"
+              name="answer"
+              value="0" />
+            The names of each animal, sorted by which has the biggest number in their line.</label
+            >
+          </li><li class="c-quiz__answer">
+            <label
+              class="c-quiz__label"
+              ><input
+              class="c-quiz__input"
+              type="radio"
+              name="answer"
+              value="1" />
+            A list of each unique animal in the file, sorted by which is on the most lines.</label
+            >
+          </li><li class="c-quiz__answer">
+            <label
+              class="c-quiz__label"
+              ><input
+              class="c-quiz__input"
+              type="radio"
+              name="answer"
+              value="2" />
+            A list of each animal, sorted alphabetically, adding together the numbers that came after them if there were duplicates.</label
+            >
+          </li></ol>
+      </fieldset>
+    </form>
+    <section class="c-quiz__feedback" slot="feedback" aria-live="polite"><p class="c-quiz__remark" data-index="0" >💬 Not quite - look at the order the commands are being run in the pipeline.</p><p class="c-quiz__remark" data-index="1" >💬 Right! We take just the animal names, then sort them so that uniq will work, then ask uniq to count how many of each it saw, and then sort by how many uniq counted.</p><p class="c-quiz__remark" data-index="2" >💬 Not quite - look at the order the commands and running in the pipeline.</p></section>
+  </multiple-choice>
+ 
+  
+  <script src="/scripts/multiple-choice.min.js" defer></script>
+
+
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="head-and-tail">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="head-and-tail">
+        head and tail
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="20 minutes countdown" datetime="P20M">20&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Output the first 5 lines of a file using <code>head</code>.</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Output the last 5 lines of a file using <code>tail</code>.</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Output the five lines starting 10 lines into a file using <code>head</code> and <code>tail</code>.</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <p><code>head</code> outputs lines (or bytes) from the start of a file. <code>tail</code> outputs lines (or bytes) from the end of a fail.</p>
+<p>
+
+  <figure>
+      <img
+        loading="lazy"
+        src="/head-tail_8886705884850290614.png"alt="Julia Evans comic about head and tail" data-pagefind-index-attrs="Julia Evans comic about head and tail"/></figure></p>
+<p>(Source, including text-only transcript: <a
+  href="https://wizardzines.com/comics/head-tail/">https://wizardzines.com/comics/head-tail/</a>)</p>
+<style>
+  .mermaid svg {
+    height: initial;
+  }
+  .mermaid {
+    margin-bottom: var(--theme-spacing--gutter);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .mermaid[data-processed] {
+    opacity: 1;
+  }
+</style>
+<div class="mermaid">flowchart LR
+   Initial[1 This is the first line
+2 And more
+3
+4 Yet more
+5 It keeps going
+6 This file has 9 lines
+7 This is line 7
+8 And they all lived
+9 happily ever after] --head -n5--> Head[1 This is the first line
+2 And more
+3
+4 Yet more
+5 It keeps going] --tail -n2--> Tail[4 Yet more
+5 It keeps going]
+
+style Initial text-align:left
+style Head text-align:left
+style Tail text-align:left</div>
+
+<script type="module" src="/scripts/mermaid-observer.min.js" defer></script>
+<p>Learn about <code>head</code> and <code>tail</code> from their man pages (and the backlog exercises).</p>
+<p>Imagine we have an input file which has 100 lines.</p>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  <multiple-choice data-correct="2" class="c-quiz">
+    <form slot="quiz">
+      <fieldset class="c-quiz__fieldset" tabindex="0">
+        <legend class="c-quiz__legend">🤔 What would the command <code>head -n 8 input</code> output?</legend>
+        <ol class="c-quiz__list"><li class="c-quiz__answer">
+            <label
+              class="c-quiz__label"
+              ><input
+              class="c-quiz__input"
+              type="radio"
+              name="answer"
+              value="0" />
+            The first 8 bytes of the file</label
+            >
+          </li><li class="c-quiz__answer">
+            <label
+              class="c-quiz__label"
+              ><input
+              class="c-quiz__input"
+              type="radio"
+              name="answer"
+              value="1" />
+            The last 8 lines of the file.</label
+            >
+          </li><li class="c-quiz__answer">
+            <label
+              class="c-quiz__label"
+              ><input
+              class="c-quiz__input"
+              type="radio"
+              name="answer"
+              value="2" />
+            The first 8 lines of the file.</label
+            >
+          </li></ol>
+      </fieldset>
+    </form>
+    <section class="c-quiz__feedback" slot="feedback" aria-live="polite"><p class="c-quiz__remark" data-index="0" >💬 Not quite - are you confusing -n and -c?</p><p class="c-quiz__remark" data-index="1" >💬 Not quite - are you confusing head and tail?</p><p class="c-quiz__remark" data-index="2" >💬 Right! -n takes a number of lines to output, and head goes from the start of the file.</p></section>
+  </multiple-choice>
+ 
+  
+  <script src="/scripts/multiple-choice.min.js" defer></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  <multiple-choice data-correct="1" class="c-quiz">
+    <form slot="quiz">
+      <fieldset class="c-quiz__fieldset" tabindex="0">
+        <legend class="c-quiz__legend">🤔 What command/pipeline could we write to skip the first three lines of the file, and then output the next 2 lines?</legend>
+        <ol class="c-quiz__list"><li class="c-quiz__answer">
+            <label
+              class="c-quiz__label"
+              ><input
+              class="c-quiz__input"
+              type="radio"
+              name="answer"
+              value="0" />
+            <code>head -n3 input | tail -n2</code></label
+            >
+          </li><li class="c-quiz__answer">
+            <label
+              class="c-quiz__label"
+              ><input
+              class="c-quiz__input"
+              type="radio"
+              name="answer"
+              value="1" />
+            <code>tail -n+4 | head -n2</code></label
+            >
+          </li><li class="c-quiz__answer">
+            <label
+              class="c-quiz__label"
+              ><input
+              class="c-quiz__input"
+              type="radio"
+              name="answer"
+              value="2" />
+            <code>tail -n+3 | head -n2</code></label
+            >
+          </li></ol>
+      </fieldset>
+    </form>
+    <section class="c-quiz__feedback" slot="feedback" aria-live="polite"><p class="c-quiz__remark" data-index="0" >💬 No - remember each stage in a pipeline applies to the output of the previous stage, not the original file.</p><p class="c-quiz__remark" data-index="1" >💬 Right - tail skips the first few lines, then head takes just a few from the top of that output.</p><p class="c-quiz__remark" data-index="2" >💬 Not quite - how many lines does this skip?</p></section>
+  </multiple-choice>
+ 
+  
+  <script src="/scripts/multiple-choice.min.js" defer></script>
+
+
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="tr">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="tr">
+        tr
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="20 minutes countdown" datetime="P20M">20&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Replace all occurrences of one character with another using <code>tr</code>.</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <p><code>tr</code> translates (replaces) characters.</p>
+<p>Learn about <code>tr</code> from its man page (and the backlog exercises).</p>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  <multiple-choice data-correct="1" class="c-quiz">
+    <form slot="quiz">
+      <fieldset class="c-quiz__fieldset" tabindex="0">
+        <legend class="c-quiz__legend">🤔 What would the command <code>echo 'hello' | tr 'eo' 'yz'</code> output?</legend>
+        <ol class="c-quiz__list"><li class="c-quiz__answer">
+            <label
+              class="c-quiz__label"
+              ><input
+              class="c-quiz__input"
+              type="radio"
+              name="answer"
+              value="0" />
+            hello</label
+            >
+          </li><li class="c-quiz__answer">
+            <label
+              class="c-quiz__label"
+              ><input
+              class="c-quiz__input"
+              type="radio"
+              name="answer"
+              value="1" />
+            hyllz</label
+            >
+          </li><li class="c-quiz__answer">
+            <label
+              class="c-quiz__label"
+              ><input
+              class="c-quiz__input"
+              type="radio"
+              name="answer"
+              value="2" />
+            hyzllyz</label
+            >
+          </li></ol>
+      </fieldset>
+    </form>
+    <section class="c-quiz__feedback" slot="feedback" aria-live="polite"><p class="c-quiz__remark" data-index="0" >💬 Not quite - check how multiple characters in a string are interpreted.</p><p class="c-quiz__remark" data-index="1" >💬 Right! Multiple characters in the first arguments means look for any of them.</p><p class="c-quiz__remark" data-index="2" >💬 Not quite - check how multiple characters in a string are interpreted.</p></section>
+  </multiple-choice>
+ 
+  
+  <script src="/scripts/multiple-choice.min.js" defer></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  <multiple-choice data-correct="0" class="c-quiz">
+    <form slot="quiz">
+      <fieldset class="c-quiz__fieldset" tabindex="0">
+        <legend class="c-quiz__legend">🤔 What command could we write to delete all of the vowels from the input?</legend>
+        <ol class="c-quiz__list"><li class="c-quiz__answer">
+            <label
+              class="c-quiz__label"
+              ><input
+              class="c-quiz__input"
+              type="radio"
+              name="answer"
+              value="0" />
+            <code>tr -d 'aeiou'</code></label
+            >
+          </li><li class="c-quiz__answer">
+            <label
+              class="c-quiz__label"
+              ><input
+              class="c-quiz__input"
+              type="radio"
+              name="answer"
+              value="1" />
+            <code>tr 'aeiou' ''</code></label
+            >
+          </li><li class="c-quiz__answer">
+            <label
+              class="c-quiz__label"
+              ><input
+              class="c-quiz__input"
+              type="radio"
+              name="answer"
+              value="2" />
+            <code>tr -d '[aeiou]'</code></label
+            >
+          </li></ol>
+      </fieldset>
+    </form>
+    <section class="c-quiz__feedback" slot="feedback" aria-live="polite"><p class="c-quiz__remark" data-index="0" >💬 Right - we list all of the vowels as things to delete.</p><p class="c-quiz__remark" data-index="1" >💬 No - the no-flag form of tr doesn&rsquo;t allow an empty second string.</p><p class="c-quiz__remark" data-index="2" >💬 No - this will remove all of the vowels, but also remove other characters. tr doesn&rsquo;t accept regular expressions.</p></section>
+  </multiple-choice>
+ 
+  
+  <script src="/scripts/multiple-choice.min.js" defer></script>
+
+
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="jq">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="jq">
+        jq
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="90 minutes countdown" datetime="P90M">90&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Use <code>jq</code> to retrieve information from a JSON file</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <p>All of the tools we&rsquo;ve seen so far operate on lines, words, or characters.</p>
+<p>Often these are the formats we have. And indeed, often we decide to have our programs output in these formats to make the output easy to process with tools.</p>
+<p>But there are more complex formats it can be useful to process too. You have already used JSON in the course. It is a text format that allows us to represent arrays, objects, strings, numbers, and more.</p>
+<p><code>jq</code> is a tool for processing JSON without having to write a whole program. This can be really useful to quickly analyse some data.</p>
+<section class="c-note c-note--Reading">
+  <h4 class="c-note__title e-heading__4">Reading</span>
+  </h4>
+  <div class="c-note__text ">Read <a
+  href="https://earthly.dev/blog/jq-select/">Earthly&rsquo;s introduction to <code>jq</code></a>.</div>
+</section>
+
+
+<p>Practice using <code>jq</code> using the relevant backlog exercises.</p>
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+      </div>
+      <nav slot="nav">
+        <a href="#" class="e-button c-solo-view__back">&larr; Back</a>
+        <a href="#" class="e-button c-solo-view__next">Next &rarr;</a>
+      </nav>
+    </solo-view>
+    
+    <script src="/scripts/solo-view.min.js" defer></script>
+    
+    <script src="/scripts/time-total.min.js" defer></script>
+  
+
+
+        
+
+  <footer class="c-page-footer">
+    <nav class="c-page-footer__nav">
+      
+      
+      <span class="c-page-footer__this">Prep</span>
+      
+        →<a
+          class="c-page-footer__next c-page-footer__link e-link"
+          href="/sdc/tools/sprints/2/backlog/"
+          >Backlog</a
+        >
+      
+    </nav>
+  </footer>
+
+
+      </main><footer class="l-layout__footer l-footer">
+  <a
+    class="l-footer__github e-button e-button--icon"
+    href="https://github.com/CodeYourFuture/curriculum/">
+    <svg
+  focusable="false"
+  class="e-button__icon"
+  role="presentation"
+  width="96"
+  viewbox="0 0 98 96"
+  xmlns="http://www.w3.org/2000/svg">
+  <path
+    fill-rule="evenodd"
+    clip-rule="evenodd"
+    d="M48.854 0C21.839 0 0 22 0 49.217c0 21.756 13.993 40.172 33.405 46.69 2.427.49 3.316-1.059 3.316-2.362 0-1.141-.08-5.052-.08-9.127-13.59 2.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015 4.934.326 7.523 5.052 7.523 5.052 4.367 7.496 11.404 5.378 14.235 4.074.404-3.178 1.699-5.378 3.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283 0-5.378 1.94-9.778 5.014-13.2-.485-1.222-2.184-6.275.486-13.038 0 0 4.125-1.304 13.426 5.052a46.97 46.97 0 0 1 12.214-1.63c4.125 0 8.33.571 12.213 1.63 9.302-6.356 13.427-5.052 13.427-5.052 2.67 6.763.97 11.816.485 13.038 3.155 3.422 5.015 7.822 5.015 13.2 0 18.905-11.404 23.06-22.324 24.283 1.78 1.548 3.316 4.481 3.316 9.126 0 6.6-.08 11.897-.08 13.526 0 1.304.89 2.853 3.316 2.364 19.412-6.52 33.405-24.935 33.405-46.691C97.707 22 75.788 0 48.854 0z"
+    fill="currentColor" />
+</svg>
+
+    <span class="is-invisible">Find us on GitHub</span>
+  </a>
+  <p class="l-footer__impressum e-heading__6">
+    This
+    <a href="https://github.com/CodeYourFuture/curriculum/">free and open source programme</a>
+    is a project of
+    <a href="https://codeyourfuture.io/">Code Your Future</a>
+    <br />
+    Creative Commons Attribution-ShareAlike 4.0
+  </p>
+  <dark-mode class="l-footer__mode"
+    ><button
+      slot="button"
+      id="mode-toggle"
+      type="button"
+      class="e-button e__button--toggle e-button--icon">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="e-icon e__button__icon e-icon--moon">
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
+      </svg>
+      <span class="is-invisible">Toggle between light and dark mode</span>
+    </button></dark-mode
+  >
+</footer>
+
+
+
+<script src="/scripts/app.min.js" defer></script>
+
+<script src="/scripts/youtube-player.min.js" defer></script>
+
+<script src="/scripts/tab-panels.min.js" type="module" defer></script>
+
+<script src="/scripts/dark-mode.min.js"></script>
+
+<script src="/scripts/alert-message.min.js" defer></script>
+
+
+
+
+
+
+
+</div>
+  </body>
+</html>

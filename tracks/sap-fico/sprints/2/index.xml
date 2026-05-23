@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sprint 2 on CYF Courses</title>
+    <link>https://curriculum.codeyourfuture.io/tracks/sap-fico/sprints/2/</link>
+    <description>Recent content in Sprint 2 on CYF Courses</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="https://curriculum.codeyourfuture.io/tracks/sap-fico/sprints/2/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>prep</title>
+      <link>https://curriculum.codeyourfuture.io/tracks/sap-fico/sprints/2/prep/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://curriculum.codeyourfuture.io/tracks/sap-fico/sprints/2/prep/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>backlog</title>
+      <link>https://curriculum.codeyourfuture.io/tracks/sap-fico/sprints/2/backlog/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://curriculum.codeyourfuture.io/tracks/sap-fico/sprints/2/backlog/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>day-plan</title>
+      <link>https://curriculum.codeyourfuture.io/tracks/sap-fico/sprints/2/day-plan/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://curriculum.codeyourfuture.io/tracks/sap-fico/sprints/2/day-plan/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>End of Sprint Review</title>
+      <link>https://curriculum.codeyourfuture.io/tracks/sap-fico/sprints/2/success/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://curriculum.codeyourfuture.io/tracks/sap-fico/sprints/2/success/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

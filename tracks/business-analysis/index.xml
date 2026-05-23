@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Business Analysis on CYF Courses</title>
+    <link>https://curriculum.codeyourfuture.io/tracks/business-analysis/</link>
+    <description>Recent content in Business Analysis on CYF Courses</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="https://curriculum.codeyourfuture.io/tracks/business-analysis/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>prep</title>
+      <link>https://curriculum.codeyourfuture.io/tracks/business-analysis/prep/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://curriculum.codeyourfuture.io/tracks/business-analysis/prep/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,2056 @@
+<!DOCTYPE html>
+
+
+
+
+<html lang="en" class="p-prep"><head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  <title data-pagefind-meta="title">
+    
+      Intro to Programming 
+    
+      Data Flows 
+    
+      Sprint 3 
+    
+    Prep
+  </title>
+  
+    <meta name="description" content="A free and open source software development programme." />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+  <style>
+    body,
+    html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      animation: fade-in 300ms;
+    }
+    @keyframes fade-in {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  </style>
+  
+  
+  <link
+    rel="stylesheet"
+    href="/bundled.min.b6a4520237559385268d63a9daa81d96.css"
+    media="print"
+    onload="this.media='all'" />
+
+  
+  
+    
+    
+    <link
+      rel="stylesheet"
+      href="/custom.min.8ded6a1a88bc7cc98bdef8dc33d15f3a.css"
+      media="print"
+      onload="this.media='all'" />
+  
+
+
+  <noscript>
+    <link rel="stylesheet" href="/bundled.min.b6a4520237559385268d63a9daa81d96.css" />
+  </noscript>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&amp;display=swap"
+    rel="stylesheet"
+    media="print"
+    onload="this.media='all'" />
+
+  <link rel="shortcut icon" href="https://curriculum.codeyourfuture.io/favicon.ico" />
+  <meta name="theme-color" content="#e3ddeef2" />
+  <link rel="manifest" href="https://curriculum.codeyourfuture.io/manifest.json" />
+</head>
+<body>
+    <a class="c-skip-link e-button" id="skip-link" href="#main">Skip to main</a>
+    <div class="l-layout">
+      <header class="l-layout__header l-header">
+  <div class="l-header__container">
+    <h1 class="l-header__heading e-heading__6" data-pagefind-ignore>
+      <a class="l-header__home" href="/"
+        ><span class="is-invisible"
+          >itp prep CYF Courses</span
+        >
+        <span class="is-none--lt-container">
+          <svg
+          xmlns="http://www.w3.org/2000/svg"
+          title="Code Your Future."
+          viewBox="0 0 621.64 155.81"
+          width="140px"
+          focusable="false"
+          role="img">
+          <path
+            fill="var(--theme-color--brand)"
+            d="M103.37 56.51C96.91 63.64 87.03 69.9 74.6 69.9c-20.14 0-33.52-12.91-33.52-34.09C41.08 13.97 57.5.87 69.94.87c9.5 0 13.77 5.32 14.63 6.46l2.18-5.27h14.91v27h-17c-.28-6.18-3.32-12-10.06-12s-11.3 8.45-11.3 18.8c0 9.4 4.84 17.86 13.86 17.86 8 0 14.24-8.36 15.1-9.31Zm2.88-21.85C106.25 14.15 119.92 0 139.58 0c23.26 0 34.09 14 34.09 35.32s-12 34.57-33.43 34.57c-19.88 0-33.99-11.49-33.99-35.23Zm43.68.66c0-11.49-3.13-20.7-10.45-20.7-5.79-.09-9.78 8.26-9.78 20 0 12.44 4.47 20.32 10.54 20.32s9.65-7.88 9.65-19.62Zm27.49 20.23h5.89V14.34h-5.89V1.8h29c23 0 36.09 14.15 36.09 32.29 0 21.65-13.11 34.09-36.47 34.09h-28.62Zm29 0c10.03-.19 14.21-9.59 14.21-21.49 0-10.16-4.18-19.75-14.25-19.75h-3.61v41.24ZM303.04 1.8v21h-16.43v-8.46h-15.19v13.1h18v12.62h-18v15.49h15.19v-8.83h16.43v21.46h-57.26V55.55h6V14.34h-6V1.8Z" />
+          <path
+            fill="var(--theme-color--ink)"
+            d="M274.42 87.82v21h-16.8v-8.45h-14.37v16.52h18v12.63h-18v12.04h9.68v12.63h-35.29v-12.63h5.89v-41.21h-5.89V87.82Zm33.04 0v12.24h-5.12v20.51c0 15.28 3.41 18.51 9.49 18.51 5.79 0 9.59-2.28 9.59-18.61v-20.12h-5.17V87.82h28.11v12.24h-5.11v23.07c0 22.51-9.4 32.67-27.25 32.67-19.18-.57-29.43-10.64-29.43-32.19v-23.45h-5.32V87.82Zm103.5 24.69h-14v-12.16h-8v41.21h7.88v12.63h-35.26v-12.63h7.79v-41.21h-8.12v12.16h-14V87.82h63.71ZM444 87.82v12.24h-5.13v20.51c0 15.28 3.42 18.51 9.5 18.51 5.79 0 9.59-2.28 9.59-18.61v-20.12h-5.13V87.82h28.11v12.24h-5.13v23.07c0 22.51-9.4 32.67-27.25 32.67-19.18-.57-29.44-10.64-29.44-32.19v-23.45h-5.32V87.82Zm71.59 0c22 0 26.3 8.73 26.3 19.56 0 7.4-5.88 12.63-13.76 13.77 6.55.95 12.44 6.64 12.44 13.48 0 4.08.57 6.46 2.27 6.46 1.43 0 2.19-1.14 2.19-3v-3.13h6.36v5.22c0 7.88-3.32 15.19-13.86 15.19-12.44 0-18.42-6.55-18.42-17.66 0-8.64-1.05-10.73-9.5-10.73v14.68h5.79v12.53h-30.67v-12.53h5.32v-41.4h-5.32V87.82Zm-6 28.48h4.27c5.51 0 9.12-2.65 9.12-7.69 0-5.6-3.13-8.45-8.64-8.45h-4.75Zm102.38-28.48v21h-16.43v-8.45h-15.19v13.09h18v12.6h-18v15.5h15.19v-8.83h16.43v21.46h-57.26v-12.63h6v-41.21h-6V87.82Zm-227.72-56.1c.38-1.9 2.47-5.89 3.51-8.17l5.22-9.59h-5.22V1.8h25.54v12.16h-5.05l-17.62 30.86v11h5.32v12.36h-30.39V55.83h5.41v-11.2l-18.42-30.67h-4.65V1.8h32.47v12.16h-4.93l5.5 10.1c.57 1.81 2.57 6.08 2.95 7.7Zm29.54 2.94C413.79 14.15 427.47 0 447.12 0c23.27 0 34.09 14 34.09 35.32s-12 34.57-33.42 34.57c-19.85 0-34-11.49-34-35.23Zm43.68.66c0-11.49-3.13-20.7-10.44-20.7-5.79-.09-9.78 8.26-9.78 20 0 12.44 4.46 20.32 10.54 20.32s9.68-7.88 9.68-19.62ZM514.25 1.8v12.26h-5.13v20.5c0 15.29 3.42 18.52 9.5 18.52 5.79 0 9.59-2.28 9.59-18.61V14.34h-5.13V1.8h28.11v12.26h-5.13v23.07c0 22.5-9.4 32.66-27.25 32.66-19.18-.57-29.44-10.63-29.44-32.19V14.15h-5.32V1.8Zm71.59 0c22 0 26.31 8.74 26.31 19.57 0 7.4-5.89 12.62-13.77 13.76 6.55 1 12.44 6.65 12.44 13.49 0 4.08.57 6.46 2.27 6.46 1.43 0 2.19-1.14 2.19-3V48.9h6.36v5.23c0 7.88-3.32 15.19-13.86 15.19-12.44 0-18.42-6.55-18.42-17.66 0-8.64-1.05-10.73-9.5-10.73v14.71h5.79v12.54h-30.67V55.64h5.32v-41.4h-5.32V1.8Zm-6 28.49h4.27c5.51 0 9.12-2.66 9.12-7.69 0-5.6-3.13-8.45-8.64-8.45h-4.75ZM28.39 14.7l5.8 10.64-23.46 10.72 23.46 10.55-3.61 9.87L0 42.24v-13.3Zm318.7 14.24v13.3l-30.58 14.24-3.61-9.87 23.46-10.55-23.46-10.72 5.8-10.64Z" />
+        </svg>
+        </span>
+        <span class="is-none--gt-container">
+          <svg
+          xmlns="http://www.w3.org/2000/svg"
+          version="1.0"
+          viewBox="0 0 512 512"
+          width="48px">
+          <path
+            fill="currentcolor"
+            stroke="currentcolor"
+            d="M225.5 1c-1.1.5-3.5.9-5.3.9-4.1.1-22.9 4.5-30.7 7.2-63.1 22-114.7 72.3-142.7 139.4-6.4 15.2-11.8 33.8-16.7 57-4.1 19.7-5.4 64.5-2.6 90.8C33 346.2 49.8 390.1 76.8 425c6.2 7.9 23.9 26.4 30.7 32 8.1 6.7 26.1 18.7 35.1 23.6 28.1 15.1 58 24.3 91.9 28.3 5.5.7 13.6 1.7 18 2.2 8.8 1.2 33.9.7 48-.9 11-1.3 31.7-4.8 36.5-6.2 1.9-.5 8-2.3 13.5-3.9 21.3-6.1 47.2-17.8 67.5-30.5 8.8-5.4 23.7-15.8 28.5-19.7 10.2-8.4 24.5-21.3 31.4-28.2l8.4-8.5-2.2-2.9c-1.3-1.5-4.6-5.3-7.4-8.3-6.2-6.7-14.5-15.7-21.2-23.1-2.7-3-7.5-8.2-10.5-11.4-3-3.3-9.8-10.8-15.1-16.5-21.5-23.6-24.2-26.5-24.9-26.8-.3-.1-2 1.2-3.6 3-1.6 1.9-6.3 7.1-10.4 11.7-8.6 9.7-25.6 24.6-35.9 31.4-21.4 14.4-42.5 21.7-62.6 21.7-15.3-.1-29.3-3.3-42.5-10-22.8-11.5-41.9-35.5-51.5-64.7-4.2-12.8-4.3-13.4-5.9-22.8-3.8-22.9-4.6-39.2-2.6-55.6 2.7-22.7 3.3-26.5 5-33.2 7.9-30.9 16.7-48.6 32.4-65.6 16.8-17.9 41.1-24.9 65.1-18.6 30 7.8 50.7 36.3 55.5 76.3.5 4.6 1.2 8.7 1.5 9.3.4.5 25.1.9 62.6.9H474V9H364.2L357 26.7c-4 9.8-7.9 18.5-8.7 19.3-1.3 1.3-2.1.8-6.6-4.3-6-6.9-18.3-16.7-28.2-22.5-7.4-4.3-22.6-10.9-28.5-12.4-9.2-2.2-18.1-4.1-24-5-9-1.3-33.1-1.9-35.5-.8z" />
+        </svg>
+        </span>
+      </a>
+    </h1>
+    <link
+  href="/pagefind/pagefind-ui.css"
+  rel="stylesheet"
+  media="print"
+  onload="this.media='all'" />
+<style>
+  :root {
+    --pagefind-ui-primary: var(--theme-color--ink);
+    --pagefind-ui-text: var(--theme-color--ink);
+    --pagefind-ui-background: var(--theme-color--paper);
+    --pagefind-ui-border: var(--theme-color--outline);
+    --pagefind-ui-tag: var(--theme-color--block);
+    --pagefind-ui-border-radius: 2em;
+    --pagefind-ui-image-border-radius: var(--theme-border-radius);
+    --pagefind-ui-font: var(--theme-font--copy);
+  }
+  .pagefind-ui--reset {
+    position: absolute;
+  }
+  #search .pagefind-ui__search-input {
+    box-shadow: var(--theme-box-shadow--inset);
+    margin-bottom: var(--theme-spacing--1);
+  }
+  #search .pagefind-ui__search-clear {
+    background-color: transparent;
+  }
+  #search .pagefind-ui__drawer {
+    background-color: var(--theme-color--paper);
+    box-shadow: var(--theme-box-shadow--slim);
+    transform: translateY(-1.5px);
+    padding: 0 var(--theme-spacing--2);
+    max-height: calc(100vh - 4rem);
+    overflow-y: auto;
+  }
+  #search .pagefind-ui__result {
+    padding: var(--theme-spacing--1) 0 var(--theme-spacing--2) 0;
+  }
+  #search .pagefind-ui__result:focus-within,
+  #search .pagefind-ui__button:focus {
+    background-color: var(--theme-color--block);
+  }
+  #search .pagefind-ui__button {
+    border: none;
+  }
+</style>
+<script src="/pagefind/pagefind-ui.js" type="text/javascript" defer></script>
+<div id="search" class="l-header__search"></div>
+<script>
+  window.addEventListener("DOMContentLoaded", (event) => {
+    new PagefindUI({
+      element: "#search",
+      showSubResults: true,
+      pageSize: 3,
+      showImages: false,
+      showTags: true,
+    });
+  });
+</script>
+
+    <button
+      class="l-header__action e-button e-button--icon js-menu-toggle e-heading__3">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+        <path
+          stroke="var(--theme-color--ink)"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M13 5a1 1 0 1 0-2 0 1 1 0 0 0 2 0Zm0 7a1 1 0 1 0-2 0 1 1 0 0 0 2 0Zm0 7a1 1 0 1 0-2 0 1 1 0 0 0 2 0Z" />
+      </svg>
+      <span class="is-invisible">Open Menu.</span>
+    </button>
+  </div>
+</header>
+
+      <nav
+  class="l-layout__menu l-menu"
+  aria-label="Main Site Links."
+  id="site-menu"
+  hidden
+  tabindex="0">
+  <div class="l-menu__container">
+    <h2 class="l-menu__heading e-heading__2">
+      <a href="/" class="l-menu__home is-invisible">Menu</a>
+    </h2>
+    <button
+      class="l-menu__action e-button e-button--icon js-menu-toggle e-heading__2"
+      id="close-menu">
+      ❎
+      <span class="is-invisible">Close Menu.</span>
+    </button>
+    <ul class="l-menu__primary">
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/guides/">
+            Guides
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/sdc/tools/">
+            Tools
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/sdc/logic/">
+            Logic
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/sdc/decomposition/">
+            Decomposition
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/sdc/legacy/">
+            Legacy code
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/sdc/complexity/">
+            Complexity
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/tracks/servers/">
+            Servers
+          </a>
+        </li>
+    </ul>
+    <ul class="l-menu__secondary">
+        <li class="l-menu__item">
+          <a class="e-heading__3 l-menu__link" href="https://codeyourfuture.io">
+            CYF 👈🏾
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__3 l-menu__link" href="https://codeyourfuture.io/volunteers/">
+            Join Us 👋🏿
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__3 l-menu__link" href="https://codeyourfuture.io/donate/">
+            Support 🫶🏼
+          </a>
+        </li>
+    </ul>
+  </div>
+</nav>
+
+      <main
+        id="main"
+        class="l-layout__main l-main"
+        tabindex="0"
+        data-pagefind-body>
+        
+  
+    <solo-view tabindex="0">
+      
+
+
+      <div slot="header">
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+<header
+  class="c-page-header 
+    c-page-header--solo
+   c-page-header--toc">
+  
+  <div class="c-page-header__container">
+    <div class="c-page-header__breadcrumbs">
+      
+  <nav class="c-breadcrumbs">
+    <ol class="c-breadcrumbs__list">
+      
+        
+        
+          <li class="c-breadcrumbs__item">
+            <a
+              class="c-breadcrumbs__link"
+              href="/itp/"data-pagefind-filter="module"><span class="c-breadcrumbs__text">Intro to Programming</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                width="24px"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="c-breadcrumbs__icon">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+              </svg>
+            </a>
+          </li>
+        
+        
+          <li class="c-breadcrumbs__item">
+            <a
+              class="c-breadcrumbs__link"
+              href="/itp/data-flows/"><span class="c-breadcrumbs__text">Data flows</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                width="24px"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="c-breadcrumbs__icon">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+              </svg>
+            </a>
+          </li>
+      
+        <li class="c-breadcrumbs__item">
+          <a
+            class="c-breadcrumbs__link"
+            href="/itp/data-flows/sprints/3/"data-pagefind-filter="sprint">Sprint 3</a
+          >
+        </li>
+      
+    </ol>
+  </nav>
+  
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Our Courses",
+      "item":"https://curriculum.codeyourfuture.io/"},
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Intro to Programming",
+      "item":"https://curriculum.codeyourfuture.io/itp/"},
+    {
+      "@type": "ListItem",
+      "position":  3 ,
+      "name": "Data flows",
+      "item":"https://curriculum.codeyourfuture.io/itp/data-flows/"},{
+      "@type": "ListItem",
+      "position":  5 ,
+      "name": "Sprint 3",
+      "item":"https://curriculum.codeyourfuture.io/itp/data-flows/sprints/3/"},
+    {
+      "@type": "ListItem",
+      "position":  6 ,
+      "name": "prep",
+      "item":"https://curriculum.codeyourfuture.io/itp/data-flows/sprints/3/"}
+  ]
+}
+</script>
+
+
+    </div>
+    <h1 class="c-page-header__title e-heading__1"data-pagefind-filter="view"
+        
+      data-pagefind-weight="10">
+      <span class="c-emoji">
+        
+        
+           
+            <time-total class="c-page-header__time"></time-total>
+      
+         
+        </span>
+        <span class="c-page-header__title-text">prep</span>
+               
+    </h1>
+    
+      
+    
+    
+    
+    
+      <div class="c-page-header__toc " id="toc">
+        <section class="c-toc" aria-label="Table of contents.">
+          <a id="top" class="c-toc__top e-button e-button--icon" href="#toc"
+            >🔖 <span class="is-invisible">back to top</span></a
+          >
+          
+            <nav id="TableOfContents"></nav>
+          
+          
+            <ol>
+              
+                <li>
+                  <a href="#fetching-data" data-pagefind-weight="5"
+                    >Fetching data</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#step-through-prep-workshop" data-pagefind-weight="5"
+                    >Step-through-prep workshop</a
+                  >
+                  📼
+                </li>
+              
+                <li>
+                  <a href="#latency" data-pagefind-weight="5"
+                    >Latency</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#synchronous-execution" data-pagefind-weight="5"
+                    >Synchronous execution</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#callbacks" data-pagefind-weight="5"
+                    >Callbacks</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#using-.fetch" data-pagefind-weight="5"
+                    >Using .fetch()</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#promises" data-pagefind-weight="5"
+                    >Promises</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#then" data-pagefind-weight="5"
+                    >Then</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#async%2fawait" data-pagefind-weight="5"
+                    >Async/Await</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#fetch-films" data-pagefind-weight="5"
+                    >Fetch Films</a
+                  >
+                  
+                </li>
+              
+            </ol>
+          
+          
+        </section>
+      </div>
+    
+
+  </div>
+</header>
+</div>
+      <div slot="blocks">
+        
+        
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="fetching-data">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="fetching-data">
+        Fetching data
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="20 minutes countdown" datetime="P20M">20&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Define a client side Web API</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Define a server side API</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <p>So far we have displayed film data stored in our JavaScript code. But real applications fetch data from servers over the internet. We can restate our problem as follows:</p>
+<blockquote><p><em>Given</em> an <strong>API that serves</strong> film data<br>
+<em>When</em> the page first loads<br>
+<em>Then</em> the page should <code>fetch</code> and display the list of film data, including the film title, times, and film certificate.</p>
+</blockquote><h3 id="-client-side-and--server-side-apis">💻 Client side and 🌐 Server side APIs</h3>
+<p>We will use <a
+  href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch"><code>fetch()</code></a>, a 
+<tool-tip-container tabindex="0"><strong class="tooltip__trigger" id="trigger__client side Web API">client side Web API</strong><span class="tooltip__emoji">🧶</span><tool-tip role="tooltip" aria-labelledby="client side Web API"><span class="tooltip__title e-heading__2"><span class="tooltip__emoji">🧶</span> client side Web API</span><span class="tooltip__content">A client side <a
+  href="https://developer.mozilla.org/en-US/docs/Web/API">Web API</a> lives in the browser. They provide programmatic access <em>to</em> built-in browser functions <em>from</em> JavaScript.</span></tool-tip></tool-tip-container>
+. Fetch will fetch our data from the 
+<tool-tip-container tabindex="0"><strong class="tooltip__trigger" id="trigger__server side API">server side API</strong><span class="tooltip__emoji">🧶</span><tool-tip role="tooltip" aria-labelledby="server side API"><span class="tooltip__title e-heading__2"><span class="tooltip__emoji">🧶</span> server side API</span><span class="tooltip__content">A server side API lives on a server. They provide programmatic access <em>to</em> data or functions stored on the server <em>from</em> JavaScript.</span></tool-tip></tool-tip-container>
+.</p>
+<p>APIs are useful because they let us get information which we don&rsquo;t ourselves know. The information may change over time, and we don&rsquo;t need to update our application. When we ask for the information, the API will tell us the latest version.</p>
+<p>We also don&rsquo;t need to know how the API works in order to use it. It may be written in a different programming language. It may talk to other APIs we don&rsquo;t know about. All we need to know is how to talk to it. This is called the <strong>interface</strong>.</p>
+<p><em>Using</em> fetch is simple. But we want to understand what is happening more completely. So let&rsquo;s take ourselves on a journey through time.</p>
+<details> 
+<summary>👉🏾 Unfurl to see the journey (we will explain this in little pieces)</summary>
+<style>
+  .mermaid svg {
+    height: initial;
+  }
+  .mermaid {
+    margin-bottom: var(--theme-spacing--gutter);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .mermaid[data-processed] {
+    opacity: 1;
+  }
+</style>
+<div class="mermaid">graph TD
+    fetch[(🐕 fetch)] --> |sends a| Request{📤 Request}
+    Request --> |has a latency| TimeProblem[🗓️ Time Problem]
+    Request --> |to| ServerAPIs
+    fetch --> |is a| ClientAPIs
+
+    TimeProblem --> |caused by| SingleThread[🧵 Single thread]
+    Callbacks{{🪃 Callbacks}} --> |run on| SingleThread
+    SingleThread --> |handled by| EventLoop[🔁 Event Loop]
+    EventLoop --> |queues| Callbacks
+    SingleThread --> |send tasks to| ClientAPIs
+    SingleThread --> |handled by| Asynchrony
+
+    TimeProblem --> |solved by| Asynchrony[🛎️ Asynchrony]
+    Asynchrony --> |delivered with| Promise{{🤝 Promises}}
+    Asynchrony --> | delivered with | ClientAPIs
+    Promise --> |resolve to a| Response{📤 Response}
+    Promise --> |join the| EventLoop{{Event Loop 🔁}}
+    Promise --> |syntax| async{{🏃‍♂️ async}}
+    async --> |syntax| await{{📭 await}}
+    await --> |resolves to| Response
+    Response ---> |sequence with| then{{✔️ then}}
+
+
+    APIs((🧰 APIs)) --> |live in your browser| ClientAPIs{💻 Client side APIs}
+    ClientAPIs --> |like| setTimeout[(⏲️ setTimeout)]
+    ClientAPIs --> |like| eventListener[(🦻🏾 eventListener)]
+    APIs --> |live on the internet| ServerAPIs{🌐 Server side APIs}
+    ServerAPIs --> |serve our| Data[(💾 Data)]
+    Data --> |as a| Response</div>
+
+<script type="module" src="/scripts/mermaid-observer.min.js" defer></script>
+<p>😵‍💫 This is a lot to take in. Let&rsquo;s break it down and make sense of it.</p>
+</details>
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+
+  
+
+  
+  
+
+  
+    
+    
+  
+
+
+
+
+
+
+
+
+  
+<section
+  class="c-block c-block--youtube"
+  aria-labelledby="step-through-prep-workshop">
+  
+    <h2
+      class="c-block__title e-heading__2 is-invisible"
+      id="step-through-prep-workshop">
+      Youtube:
+      <a href="https://www.youtube.com/watch?v=J-0XkB54yp8">Step-through-prep workshop</a>
+    </h2>
+  
+  <div class="c-block__content">
+    <youtube-player data-src="https://www.youtube.com/watch?v=J-0XkB54yp8"></youtube-player>
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="latency">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="latency">
+        Latency
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="5 minutes countdown" datetime="P5M">5&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Define latency</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <style>
+  .mermaid svg {
+    height: initial;
+  }
+  .mermaid {
+    margin-bottom: var(--theme-spacing--gutter);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .mermaid[data-processed] {
+    opacity: 1;
+  }
+</style>
+<div class="mermaid">graph LR
+    fetch[(🐕 fetch)] --> |sends a| Request{📤 Request}
+    Request --> |has a latency| TimeProblem[🗓️ Time Problem]</div>
+
+<script type="module" src="/scripts/mermaid-observer.min.js" defer></script>
+<p>Instead of already having our data, we are now sending a request over the network to another computer, and then waiting for that computer to send us a response back. Now that our data is going on a journey over a network, we introduce the problem of <strong>latency</strong>.</p>
+<p>Latency is the time taken for a request to traverse the network.</p>
+<blockquote><p>💡 Network latency is travel time.</p>
+</blockquote><p>Why is latency a problem? Because it means we need to <strong>wait</strong> for our data. But our program can only do one thing at a time. If we stopped our program to wait for data, then we wouldn&rsquo;t be able to do anything else (like show the rest of the page, or respond to a user clicking in the page). We need to handle this time problem.</p>
+<p>Programming often involves time problems, and latency is just one of them.</p>
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="synchronous-execution">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="synchronous-execution">
+        Synchronous execution
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="10 minutes countdown" datetime="P10M">10&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Define asynchrony</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Explain how synchronous execution works</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <p>We can handle latency using 
+<tool-tip-container tabindex="0"><strong class="tooltip__trigger" id="trigger__asynchronous execution">asynchronous execution</strong><span class="tooltip__emoji">🧶</span><tool-tip role="tooltip" aria-labelledby="asynchronous execution"><span class="tooltip__title e-heading__2"><span class="tooltip__emoji">🧶</span> asynchronous execution</span><span class="tooltip__content">Asynchronous execution is running code in a different order than it was written.</span></tool-tip></tool-tip-container>
+ To understand asynchrony we first need to be clear about 
+<tool-tip-container tabindex="0"><strong class="tooltip__trigger" id="trigger__synchronous execution">synchronous execution</strong><span class="tooltip__emoji">🧶</span><tool-tip role="tooltip" aria-labelledby="synchronous execution"><span class="tooltip__title e-heading__2"><span class="tooltip__emoji">🧶</span> synchronous execution</span><span class="tooltip__content">Synchronous execution is running code in the order it is written.</span></tool-tip></tool-tip-container>
+.</p>
+<p>We have written a lot of JavaScript programs that execute sequentially. This means that each line of code is run in order, one after the other.
+
+
+<div class="c-columns">
+  
+  
+    <div class="c-columns__column">
+      <h4 id="for-example">For example:</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;first&#34;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;second&#34;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;third&#34;</span>);</span></span></code></pre></div>
+    </div>
+  
+    <div class="c-columns__column">
+      <h4 id="outputs">Outputs:</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-console" data-lang="console"><span style="display:flex;"><span>first
+</span></span><span style="display:flex;"><span>second
+</span></span><span style="display:flex;"><span>third
+</span></span></code></pre></div>
+    </div>
+  
+</div>
+
+Each line of code is run in order. This is synchronous execution. We do this because JavaScript is 
+<tool-tip-container tabindex="0"><strong class="tooltip__trigger" id="trigger__single threaded">single threaded</strong><span class="tooltip__emoji">🧶</span><tool-tip role="tooltip" aria-labelledby="single threaded"><span class="tooltip__title e-heading__2"><span class="tooltip__emoji">🧶</span> single threaded</span><span class="tooltip__content">A single thread can do one thing at a time. JavaScript is a single threaded language.</span></tool-tip></tool-tip-container>
+.</p>
+<p>When we call a function, the function will run to completion before the next line of code is executed. But what if we need to wait for something to happen? What if we need to wait for our data to arrive before we can show it? In this case, we can use <strong>asynchronous execution</strong>.</p>
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="callbacks">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="callbacks">
+        Callbacks
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="30 minutes countdown" datetime="P30M">30&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Define a callback</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Sketch the event loop</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Predict the order of logged numbers using the event loop model</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <p>Consider this visualisation of an asynchronous program:</p>
+<p><strong>👉🏽 <a
+  href="http://latentflip.com/loupe/?code=c2V0VGltZW91dChmdW5jdGlvbiB0aW1lb3V0KCkgewogICAgY29uc29sZS5sb2coIjEiKTsKfSwgMjAwMCk7CnNldFRpbWVvdXQoZnVuY3Rpb24gdGltZW91dCgpIHsKICAgIGNvbnNvbGUubG9nKCIyIik7Cn0sIDUwMCk7CnNldFRpbWVvdXQoZnVuY3Rpb24gdGltZW91dCgpIHsKICAgIGNvbnNvbGUubG9nKCIzIik7Cn0sIDApOwo%3D!!!">Code running out of order and off the thread</a></strong></p>
+<p>When we call <a
+  href="https://developer.mozilla.org/en-US/docs/Web/API/setTimeout"><code>setTimeout</code></a> we send <strong>a function call</strong> to a client side Web API. The code isn&rsquo;t executing in our single thread any more, so we can run the next line. The countdown <em>is</em> happening, but it&rsquo;s not happening <em>in code we control</em>.</p>
+<p>When the time runs out, the Web API sends a message to our program to let us know. This is called an 
+<tool-tip-container tabindex="0"><strong class="tooltip__trigger" id="trigger__event">event</strong><span class="tooltip__emoji">🧶</span><tool-tip role="tooltip" aria-labelledby="event"><span class="tooltip__title e-heading__2"><span class="tooltip__emoji">🧶</span> event</span><span class="tooltip__content">An event is a signal that something has happened.</span></tool-tip></tool-tip-container>
+. The API sends its message to our 
+<tool-tip-container tabindex="0"><strong class="tooltip__trigger" id="trigger__event loop">event loop</strong><span class="tooltip__emoji">🧶</span><tool-tip role="tooltip" aria-labelledby="event loop"><span class="tooltip__title e-heading__2"><span class="tooltip__emoji">🧶</span> event loop</span><span class="tooltip__content">The event loop is a JavaScript mechanism that handles asynchronous callbacks.</span></tool-tip></tool-tip-container>
+. And what message does the event loop send? It sends a <strong>callback</strong>. It sends <em>our</em> call <em>back</em>. It tells our thread to run the code in that function.</p>
+<section class="c-note c-note--tip">
+  <h4 class="c-note__title e-heading__4">💡Our call is back</span>
+  </h4>
+  <div class="c-note__text ">A callback is our function call, sent back to us through the event loop, for us to run.</div>
+</section>
+
+
+
+
+
+<tab-panels class="c-tabs">
+  <div class="c-tabs__list" id="event-loop" role="tablist"><button
+          data-toggle="tab"
+          id="tab-label-event-loop-0"
+          class="c-tabs__tab e-heading__5 space 
+            is-active"
+          role="tab"
+          aria-controls="event-loop-0"
+          aria-selected="true">
+          Sketch your mental model
+        </button><button
+          data-toggle="tab"
+          id="tab-label-event-loop-1"
+          class="c-tabs__tab e-heading__5 space "
+          role="tab"
+          aria-controls="event-loop-1"
+          aria-selected="false">
+          Compare your model
+        </button></div>
+  <div class="c-tabs__group" id="event-loop">
+        <div
+          id="event-loop-0"
+          class="c-tabs__panel is-active"
+          role="tabpanel"
+          data-heading="Sketch your mental model"
+          aria-labelledby="tab-label-event-loop-0"><p><strong>With a pen and paper</strong>, draw a diagram of your mental model of the event loop.</p>
+<p>Use your model to predict the order of logged numbers in the following code snippet:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">setTimeout</span>(<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">timeout1</span>() {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;1&#34;</span>);
+</span></span><span style="display:flex;"><span>}, <span style="color:#ae81ff">2000</span>);
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">setTimeout</span>(<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">timeout2</span>() {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;2&#34;</span>);
+</span></span><span style="display:flex;"><span>}, <span style="color:#ae81ff">500</span>);
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">setTimeout</span>(<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">timeout3</span>() {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;3&#34;</span>);
+</span></span><span style="display:flex;"><span>}, <span style="color:#ae81ff">0</span>);
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;4&#34;</span>);</span></span></code></pre></div></div>
+        <div
+          id="event-loop-1"
+          class="c-tabs__panel "
+          role="tabpanel"
+          data-heading="Compare your model"
+          aria-labelledby="tab-label-event-loop-1"><style>
+  .mermaid svg {
+    height: initial;
+  }
+  .mermaid {
+    margin-bottom: var(--theme-spacing--gutter);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .mermaid[data-processed] {
+    opacity: 1;
+  }
+</style>
+<div class="mermaid">graph
+  Callbacks{{🪃 Callbacks}} --> |run on| SingleThread[🧵 Single thread]
+    SingleThread --> |handled by| EventLoop[🔁 Event Loop]
+    EventLoop --> |queues| Callbacks
+    SingleThread --> |send tasks to| ClientAPIs{💻 Client APIs}
+    ClientAPIs --> | send| Callbacks</div>
+
+<script type="module" src="/scripts/mermaid-observer.min.js" defer></script>
+<p>Did yours look different? There are many ways to visualise the event loop. Work on building your own mental model that helps you predict how code will run.</p></div></div>
+</tab-panels>
+
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="using-.fetch">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="using-.fetch">
+        Requesting from a server side API
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="20 minutes countdown" datetime="P20M">20&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Fetch data from a server side API using a client side Web API</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <p>So now we have these pieces of our giant concept map:</p>
+<ol>
+<li>📤 We know that we can send a request using <code>fetch()</code></li>
+<li>🐕 We know that <code>fetch</code> is a 💻 client-side 🧰 Web API that requires an HTTP connection</li>
+<li>🗓️ We know that sending requests over a network takes time</li>
+<li>🧵 We know that we should not stop our program to wait for data</li>
+<li>🪃 We know that we can use Promises to manage asynchronous operations</li>
+</ol>
+<p>But we still don’t know how to use <code>fetch</code> to get data from a server side API.</p>
+<h3 id="loading-html-files">Loading html files</h3>
+<p>When you double-click an HTML file in your file explorer to open it directly in your browser, you&rsquo;re using what&rsquo;s called the &ldquo;file protocol&rdquo; or &ldquo;file scheme.&rdquo; In your browser&rsquo;s URL bar, you&rsquo;ll see something like:</p>
+<pre tabindex="0"><code>file:///Users/username/projects/my-website/index.html</code></pre><p>The <code>file://</code> prefix indicates that your browser is reading the file directly from your computer&rsquo;s filesystem, without going through a web server. While this approach might seem convenient for simple HTML files, it will prevent us from using <code>fetch</code>.</p>
+<h3 id="web-server-access-the-http-protocol">Web Server Access: The HTTP Protocol</h3>
+<p>Another approach involves using a local development server. You can create one using tools like <a
+  href="https://realpython.com/python-http-server/">Python&rsquo;s built-in server</a> or <a
+  href="https://www.npmjs.com/package/http-server">npm&rsquo;s http-server</a>. These tools create a web server on your computer that serves your files using the HTTP protocol. Your browser will then access the files through a URL like:</p>
+<pre tabindex="0"><code>http://localhost:8000/index.html</code></pre><p>The <code>http://</code> prefix shows that you&rsquo;re accessing the file through a proper web server, even though that server is running on your own computer.</p>
+<p>You need to be using <code>http://</code> (or <code>https://</code>) <em>not</em> <code>file://</code> in order to use <code>fetch</code>.</p>
+<h2 id="using-fetch">Using <code>fetch</code></h2>
+<p>Previously, we had a list of films hard-coded in our <code>state</code>. Now, let&rsquo;s continue using our concept map to fetch data from a server.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#75715e">// Begin with an empty state
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">state</span> <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">films</span><span style="color:#f92672">:</span> [],
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">searchTerm</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;&#34;</span>,
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">endpoint</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;https://curriculum.codeyourfuture.io/itp/dummy-apis/films.json&#34;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">fetchFilms</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">async</span> () =&gt; {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">response</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">fetch</span>(<span style="color:#a6e22e">endpoint</span>);
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">response</span>.<span style="color:#a6e22e">json</span>();
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">fetchFilms</span>().<span style="color:#a6e22e">then</span>((<span style="color:#a6e22e">films</span>) =&gt; {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">state</span>.<span style="color:#a6e22e">films</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">films</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">render</span>();
+</span></span><span style="display:flex;"><span>});</span></span></code></pre></div><section class="c-note c-note--remember">
+  <h4 class="c-note__title e-heading__4">Serving files locally</span>
+  </h4>
+  <div class="c-note__text ">Remember: If you see an error message about fetch not being allowed from <code>file://</code> URLs, that&rsquo;s your signal to serve your files through a local development server instead of opening them directly in the browser.</div>
+</section>
+
+
+<p>fetch returns a Promise; the Promise fulfils itself with a response; the response contains our data.</p>
+<p>Next, we&rsquo;ll dig into <code>Promise</code>s, <code>async</code>, <code>await</code>, and <code>then</code> in more detail to complete our concept map.</p>
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="promises">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="promises">
+        Promises
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="15 minutes countdown" datetime="P15M">15&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Define a Promise</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Log a Promise to the console</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <style>
+  .mermaid svg {
+    height: initial;
+  }
+  .mermaid {
+    margin-bottom: var(--theme-spacing--gutter);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .mermaid[data-processed] {
+    opacity: 1;
+  }
+</style>
+<div class="mermaid">graph LR
+    Asynchrony --> |delivered with| Promise{{🤝 Promises}}
+    Promise --> |resolve to a| Response{📤 Response}
+    Promise --> |join the| EventLoop{{Event Loop 🔁}}</div>
+
+<script type="module" src="/scripts/mermaid-observer.min.js" defer></script>
+<p>To get data from a server, we make a request with <code>fetch</code>. We act on what comes back: the response. But what happens in the middle? We already know that JavaScript is single-threaded: it can only do one thing at a time.</p>
+<p>So do we just stop and wait? No! We have a special object to handle this time problem. Put this code in a file and run it with node:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">url</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;https://api.github.com/users/SallyMcGrath&#34;</span>; <span style="color:#75715e">// try your own username
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">response</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">fetch</span>(<span style="color:#a6e22e">url</span>);
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">response</span>);</span></span></code></pre></div><details>
+<summary>Your Promise should look like this:</summary>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span>Promise {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">Response</span> {
+</span></span><span style="display:flex;"><span>    [<span style="color:#a6e22e">Symbol</span>(<span style="color:#a6e22e">realm</span>)]<span style="color:#f92672">:</span> <span style="color:#66d9ef">null</span>,
+</span></span><span style="display:flex;"><span>    [<span style="color:#a6e22e">Symbol</span>(<span style="color:#a6e22e">state</span>)]<span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">aborted</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">false</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">rangeRequested</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">false</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">timingAllowPassed</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">requestIncludesCredentials</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">type</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;default&#39;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">status</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">200</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">timingInfo</span><span style="color:#f92672">:</span> [Object],
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">cacheState</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;&#39;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">statusText</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;OK&#39;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">headersList</span><span style="color:#f92672">:</span> [<span style="color:#a6e22e">HeadersList</span>],
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">urlList</span><span style="color:#f92672">:</span> [Array],
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">body</span><span style="color:#f92672">:</span> [Object]
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>    [<span style="color:#a6e22e">Symbol</span>(<span style="color:#a6e22e">headers</span>)]<span style="color:#f92672">:</span> <span style="color:#a6e22e">HeadersList</span> {
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">cookies</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">null</span>,
+</span></span><span style="display:flex;"><span>      [<span style="color:#a6e22e">Symbol</span>(<span style="color:#a6e22e">headers</span> <span style="color:#a6e22e">map</span>)]<span style="color:#f92672">:</span> [<span style="color:#a6e22e">Map</span>],
+</span></span><span style="display:flex;"><span>      [<span style="color:#a6e22e">Symbol</span>(<span style="color:#a6e22e">headers</span> <span style="color:#a6e22e">map</span> <span style="color:#a6e22e">sorted</span>)]<span style="color:#f92672">:</span> <span style="color:#66d9ef">null</span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span>  [<span style="color:#a6e22e">Symbol</span>(<span style="color:#a6e22e">async_id_symbol</span>)]<span style="color:#f92672">:</span> <span style="color:#ae81ff">54</span>,
+</span></span><span style="display:flex;"><span>  [<span style="color:#a6e22e">Symbol</span>(<span style="color:#a6e22e">trigger_async_id_symbol</span>)]<span style="color:#f92672">:</span> <span style="color:#ae81ff">30</span>
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div></details>
+<p>The <code>response</code> variable in this code is not labelling <a
+  href="https://api.github.com/users/SallyMcGrath">the data</a>. It&rsquo;s labelling a <a
+  href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise"><code>Promise</code></a>.</p>
+<p>A promise is exactly what it sounds like: a promise to do something. You can use this promise object to <em>sequence</em> your code. You can say, &ldquo;When the data comes back, <code>then</code> do this.&rdquo;</p>
+<p>You will explore Promises in more detail as you build more complex applications. For now, let&rsquo;s move on to <code>.then()</code>.</p>
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="then">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="then">
+        .then()
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="30 minutes countdown" datetime="P30M">30&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Chain then() on to a Promise</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <style>
+  .mermaid svg {
+    height: initial;
+  }
+  .mermaid {
+    margin-bottom: var(--theme-spacing--gutter);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .mermaid[data-processed] {
+    opacity: 1;
+  }
+</style>
+<div class="mermaid">graph LR
+    Promise{{🤝 Promises}} --> |resolve to a| Response{📤 Response}
+    Response ---> |sequence with| then{{🪆️ then}}</div>
+
+<script type="module" src="/scripts/mermaid-observer.min.js" defer></script>
+<p><a
+  href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/then"><code>.then()</code></a> is a method that all <code>Promise</code>s have. You can interpret this code:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">url</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;https://api.github.com/users/SallyMcGrath&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">callback</span> <span style="color:#f92672">=</span> (<span style="color:#a6e22e">response</span>) =&gt; <span style="color:#a6e22e">response</span>.<span style="color:#a6e22e">json</span>(); <span style="color:#75715e">// .json() is an instance method that exists for all Response objects.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">fetch</span>(<span style="color:#a6e22e">url</span>).<span style="color:#a6e22e">then</span>(<span style="color:#a6e22e">callback</span>);</span></span></code></pre></div><ol>
+<li><em>given</em> a request to <code>fetch</code> some data</li>
+<li><em>when</em> the <code>response</code> comes back / the promise resolves to a <a
+  href="https://developer.mozilla.org/en-US/docs/Web/API/Response">response object</a></li>
+<li><code>then</code> do this next thing with the data / execute this callback</li>
+</ol>
+<p>The <code>.then()</code> method takes in a <a
+  href="https://www.w3schools.com/js/js_callback.asp">callback</a> function that will run once the promise resolves.</p>
+<p>We can also inline the <code>callback</code> variable here - this code does exactly the same as the code above:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">url</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;https://api.github.com/users/SallyMcGrath&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">fetch</span>(<span style="color:#a6e22e">url</span>).<span style="color:#a6e22e">then</span>((<span style="color:#a6e22e">response</span>) =&gt; <span style="color:#a6e22e">response</span>.<span style="color:#a6e22e">json</span>());</span></span></code></pre></div><p>It&rsquo;s a similar idea as the event loop we have already investigated, but this time we can control it clearly. The <code>.then()</code> method <em>queues</em> up callback functions to execute in sequence once the asynchronous operation completes successfully. This allows us to write code as if it was happening in time order.</p>
+<section class="c-note c-note--tip">
+  <h4 class="c-note__title e-heading__4">💡tip</span>
+  </h4>
+  <div class="c-note__text ">The <code>then()</code> method of a <code>Promise</code> always returns a new <code>Promise</code>.</div>
+</section>
+
+
+<p>We can chain multiple <code>.then()</code> calls to run more logic, passing the resolved value to the next callback in the chain. This allows us to handle the asynchronous response in distinct steps. Let&rsquo;s create a getProfile function in a file, call it, and try running the file with node:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">getProfile</span> <span style="color:#f92672">=</span> (<span style="color:#a6e22e">url</span>) =&gt; {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">fetch</span>(<span style="color:#a6e22e">url</span>)
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">then</span>((<span style="color:#a6e22e">response</span>) =&gt; <span style="color:#a6e22e">response</span>.<span style="color:#a6e22e">json</span>()) <span style="color:#75715e">// This callback consumes the response string and parses it as JSON into an object.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    .<span style="color:#a6e22e">then</span>((<span style="color:#a6e22e">data</span>) =&gt; <span style="color:#a6e22e">data</span>.<span style="color:#a6e22e">html_url</span>) <span style="color:#75715e">// This callback takes the object and gets one property of it.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    .<span style="color:#a6e22e">then</span>((<span style="color:#a6e22e">htmlUrl</span>) =&gt; <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">htmlUrl</span>)); <span style="color:#75715e">// This callback logs that property.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>};
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">getProfile</span>(<span style="color:#e6db74">&#34;https://api.github.com/users/SallyMcGrath&#34;</span>);</span></span></code></pre></div><p>So <code>then</code> returns a <em>new</em> <code>Promise</code>, and you can call <code>then</code> again on the new object. You can chain Promises in ever more complex dependent steps. This is called <a
+  href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises#chaining">Promise chaining</a>.</p>
+<p>It&rsquo;s important to understand some of what is happening with Promises and <code>then</code>. But for the most part, you will not be writing code in this style.</p>
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="async/await">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="async/await">
+        async/await
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="30 minutes countdown" datetime="P30M">30&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Define syntactic sugar</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Write a function using async/await</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Explain what happens when an async function is awaited</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <p>These two blocks of code do exactly the same thing:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">getProfile</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">async</span> (<span style="color:#a6e22e">url</span>) =&gt; {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">response</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">fetch</span>(<span style="color:#a6e22e">url</span>);
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">data</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">response</span>.<span style="color:#a6e22e">json</span>();
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">htmlUrl</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">data</span>.<span style="color:#a6e22e">html_url</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">htmlUrl</span>);
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">getProfile</span>(<span style="color:#e6db74">&#34;https://api.github.com/users/SallyMcGrath&#34;</span>);</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">getProfile</span> <span style="color:#f92672">=</span> (<span style="color:#a6e22e">url</span>) =&gt; {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">fetch</span>(<span style="color:#a6e22e">url</span>)
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">then</span>((<span style="color:#a6e22e">response</span>) =&gt; <span style="color:#a6e22e">response</span>.<span style="color:#a6e22e">json</span>())
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">then</span>((<span style="color:#a6e22e">data</span>) =&gt; <span style="color:#a6e22e">data</span>.<span style="color:#a6e22e">html_url</span>)
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">then</span>((<span style="color:#a6e22e">htmlUrl</span>) =&gt; <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">htmlUrl</span>));
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">getProfile</span>(<span style="color:#e6db74">&#34;https://api.github.com/users/SallyMcGrath&#34;</span>);</span></span></code></pre></div><p>Async/await is 
+<tool-tip-container tabindex="0"><strong class="tooltip__trigger" id="trigger__syntactic sugar">syntactic sugar</strong><span class="tooltip__emoji">🧶</span><tool-tip role="tooltip" aria-labelledby="syntactic sugar"><span class="tooltip__title e-heading__2"><span class="tooltip__emoji">🧶</span> syntactic sugar</span><span class="tooltip__content">A simpler, or &ldquo;sweeter&rdquo; way to write the same thing. The code works the same under the hood, but it&rsquo;s easier to read.</span></tool-tip></tool-tip-container>
+ for Promises.</p>
+<p>We group <code>async</code> and <code>await</code> together: async/await, because we 
+<tool-tip-container tabindex="0"><strong class="tooltip__trigger" id="trigger__use them together. ">use them together. </strong><span class="tooltip__emoji">🧶</span><tool-tip role="tooltip" aria-labelledby="use them together. "><span class="tooltip__title e-heading__2"><span class="tooltip__emoji">🧶</span> use them together. </span><span class="tooltip__content">We can only use <code>await</code> inside an <code>async</code> function or at the <a
+  href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/await#top_level_await">top level</a> of a module.</span></tool-tip></tool-tip-container>
+</p>
+<p>We use the <a
+  href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function"><code>async</code></a> <a
+  href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#keywords">keyword</a> to define a function that returns a Promise. An async function always returns a Promise.</p>
+<p>We can see this with a simple function which doesn&rsquo;t need to await anything. Save this in a file and run it with node:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">getProfile</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">async</span> (<span style="color:#a6e22e">url</span>) =&gt; <span style="color:#a6e22e">url</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">getProfile</span>(<span style="color:#e6db74">&#34;hello&#34;</span>)); <span style="color:#75715e">// Logs a Promise.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">getProfile</span>(<span style="color:#e6db74">&#34;hello&#34;</span>).<span style="color:#a6e22e">then</span>((<span style="color:#a6e22e">value</span>) =&gt; <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">value</span>)); <span style="color:#75715e">// Logs a value
+</span></span></span></code></pre></div><p>Even though the function above doesn&rsquo;t <em>have</em> a time problem, the fact that we define the function as an <code>async</code> function means it returns a <code>Promise</code>.</p>
+<p>But let&rsquo;s do something more interesting - let&rsquo;s actually solve a time problem.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">getProfile</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">async</span> (<span style="color:#a6e22e">url</span>) =&gt; {
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// the async keyword tells us this function handles a time problem
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>};</span></span></code></pre></div><p>We use the <a
+  href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/await"><code>await</code></a> operator to say &ldquo;don&rsquo;t move on until this is done&rdquo;. Importantly, we are not actually <em>waiting</em> for a Promise to resolve. We are scheduling a callback that will be called when the Promise resolves. But this allows us to write code that looks like it&rsquo;s happening in time order (as if we <em>are</em> waiting), without actually blocking our main thread.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">getProfile</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">async</span> (<span style="color:#a6e22e">url</span>) =&gt; {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">response</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">fetch</span>(<span style="color:#a6e22e">url</span>);
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">response</span>.<span style="color:#a6e22e">json</span>();
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">getProfile</span>(<span style="color:#e6db74">&#34;https://api.github.com/users/SallyMcGrath&#34;</span>).<span style="color:#a6e22e">then</span>((<span style="color:#a6e22e">response</span>) =&gt;
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">response</span>)
+</span></span><span style="display:flex;"><span>);</span></span></code></pre></div><p>Save this to a file and run with with node. It works the same as before.</p>
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="fetch-films">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="fetch-films">
+        Fetch Films
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="30 minutes countdown" datetime="P30M">30&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Apply fetch to get data from an API</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <p>Now that we have a basic understanding of Web APIs and Promises, let&rsquo;s use look again at our code for fetching film data:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">endpoint</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;https://curriculum.codeyourfuture.io/itp/dummy-apis/films.json&#34;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">fetchFilms</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">async</span> () =&gt; {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">response</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">fetch</span>(<span style="color:#a6e22e">endpoint</span>);
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">response</span>.<span style="color:#a6e22e">json</span>();
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">fetchFilms</span>().<span style="color:#a6e22e">then</span>((<span style="color:#a6e22e">films</span>) =&gt; {
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// When the fetchFilms Promise resolves, this callback will be called.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#a6e22e">state</span>.<span style="color:#a6e22e">films</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">films</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">render</span>();
+</span></span><span style="display:flex;"><span>});</span></span></code></pre></div><p>We are defining <code>fetchFilms</code>: an <code>async</code> function - a function which returns a <code>Promise</code>.</p>
+<p>When we call <code>fetchFilms</code>, what we get is an unresolved <code>Promise</code>.</p>
+<p>What <code>fetchFilms</code> does is fetch a URL (with our call to <code>fetch</code> itself returning a <code>Promise</code> resolving to a <code>Response</code>). When the <code>Promise</code> from <code>fetch</code> resolves, <code>fetchFilms</code> reads the body of the <code>Response</code> (a string), and parses is as JSON. The <code>Promise</code> returned by <code>fetchFilms</code> then resolves with the result of parsing the string as JSON.</p>
+<p>When the <code>Promise</code> from <code>fetchFilms</code> resolves, our next callback is called: We update our <code>state</code>, and call <code>render()</code>.</p>
+<p>After this is done, the rest of our code works exactly the same as it did before. We <em>have</em> our list of films in our state, so we never need to fetch the list of films again.</p>
+<p><code>render</code> works the same - it only cares that <code>state.films</code> is an array of films, it doesn&rsquo;t care where they came from.</p>
+<p>When we change our filter by typing, events fire and our event handler will be called back exactly the same as it did before.</p>
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+      </div>
+      <nav slot="nav">
+        <a href="#" class="e-button c-solo-view__back">&larr; Back</a>
+        <a href="#" class="e-button c-solo-view__next">Next &rarr;</a>
+      </nav>
+    </solo-view>
+    
+    <script src="/scripts/solo-view.min.js" defer></script>
+    
+    <script src="/scripts/time-total.min.js" defer></script>
+  
+
+
+        
+
+  <footer class="c-page-footer">
+    <nav class="c-page-footer__nav">
+      
+      
+      <span class="c-page-footer__this">prep</span>
+      
+        →<a
+          class="c-page-footer__next c-page-footer__link e-link"
+          href="/itp/data-flows/sprints/3/backlog/"
+          >backlog</a
+        >
+      
+    </nav>
+  </footer>
+
+
+      </main><footer class="l-layout__footer l-footer">
+  <a
+    class="l-footer__github e-button e-button--icon"
+    href="https://github.com/CodeYourFuture/curriculum/">
+    <svg
+  focusable="false"
+  class="e-button__icon"
+  role="presentation"
+  width="96"
+  viewbox="0 0 98 96"
+  xmlns="http://www.w3.org/2000/svg">
+  <path
+    fill-rule="evenodd"
+    clip-rule="evenodd"
+    d="M48.854 0C21.839 0 0 22 0 49.217c0 21.756 13.993 40.172 33.405 46.69 2.427.49 3.316-1.059 3.316-2.362 0-1.141-.08-5.052-.08-9.127-13.59 2.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015 4.934.326 7.523 5.052 7.523 5.052 4.367 7.496 11.404 5.378 14.235 4.074.404-3.178 1.699-5.378 3.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283 0-5.378 1.94-9.778 5.014-13.2-.485-1.222-2.184-6.275.486-13.038 0 0 4.125-1.304 13.426 5.052a46.97 46.97 0 0 1 12.214-1.63c4.125 0 8.33.571 12.213 1.63 9.302-6.356 13.427-5.052 13.427-5.052 2.67 6.763.97 11.816.485 13.038 3.155 3.422 5.015 7.822 5.015 13.2 0 18.905-11.404 23.06-22.324 24.283 1.78 1.548 3.316 4.481 3.316 9.126 0 6.6-.08 11.897-.08 13.526 0 1.304.89 2.853 3.316 2.364 19.412-6.52 33.405-24.935 33.405-46.691C97.707 22 75.788 0 48.854 0z"
+    fill="currentColor" />
+</svg>
+
+    <span class="is-invisible">Find us on GitHub</span>
+  </a>
+  <p class="l-footer__impressum e-heading__6">
+    This
+    <a href="https://github.com/CodeYourFuture/curriculum/">free and open source programme</a>
+    is a project of
+    <a href="https://codeyourfuture.io/">Code Your Future</a>
+    <br />
+    Creative Commons Attribution-ShareAlike 4.0
+  </p>
+  <dark-mode class="l-footer__mode"
+    ><button
+      slot="button"
+      id="mode-toggle"
+      type="button"
+      class="e-button e__button--toggle e-button--icon">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="e-icon e__button__icon e-icon--moon">
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
+      </svg>
+      <span class="is-invisible">Toggle between light and dark mode</span>
+    </button></dark-mode
+  >
+</footer>
+
+
+
+<script src="/scripts/app.min.js" defer></script>
+
+<script src="/scripts/youtube-player.min.js" defer></script>
+
+<script src="/scripts/tab-panels.min.js" type="module" defer></script>
+
+<script src="/scripts/dark-mode.min.js"></script>
+
+<script src="/scripts/alert-message.min.js" defer></script>
+
+
+
+
+
+
+
+</div>
+  </body>
+</html>

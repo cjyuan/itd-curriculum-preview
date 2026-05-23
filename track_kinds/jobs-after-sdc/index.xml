@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jobs-After-Sdc on CYF Courses</title>
+    <link>https://curriculum.codeyourfuture.io/track_kinds/jobs-after-sdc/</link>
+    <description>Recent content in Jobs-After-Sdc on CYF Courses</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="https://curriculum.codeyourfuture.io/track_kinds/jobs-after-sdc/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Containers</title>
+      <link>https://curriculum.codeyourfuture.io/tracks/containers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://curriculum.codeyourfuture.io/tracks/containers/</guid>
+      <description>&lt;p&gt;This track introduces building and running containers using Docker and orchestrating them locally with Docker Compose.&lt;/p&gt;&#xA;&lt;p&gt;It assumes you already know how to build working software, including multiple components which need to talk to each other (such as a frontend and a backend).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Concurrency</title>
+      <link>https://curriculum.codeyourfuture.io/tracks/concurrency/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://curriculum.codeyourfuture.io/tracks/concurrency/</guid>
+      <description>&lt;p&gt;This track introduces threads and thread safety, and ways of making concurrent operations safe using atomics and mutexes.&lt;/p&gt;&#xA;&lt;p&gt;It assumes you already know how to build working software in Java or Go.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Event-driven Architecture</title>
+      <link>https://curriculum.codeyourfuture.io/tracks/event-driven-architecture/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://curriculum.codeyourfuture.io/tracks/event-driven-architecture/</guid>
+      <description>&lt;p&gt;This track introduces event-driven architectures using Kafka, and monitoring event-driven architectures using Prometheus. After taking this track, someone should be sufficiently familiar with Kafka for a junior job focused on Kafka (or similar systems), or a mid-level job involving event-driven systems. Through this course, you will build an increasingly complex distributed cron-job scheduler.&lt;/p&gt;&#xA;&lt;p&gt;It assumes you have already:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Completed the &lt;a&#xA;  href=&#34;https://curriculum.codeyourfuture.io/sdc/&#34;&gt;Software Development Course&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;Gained enough familiarity with Docker that you can create a docker image for an application you have developed, and run it locally using &lt;code&gt;docker run&lt;/code&gt;.&lt;/li&gt;&#xA;&lt;li&gt;Used &lt;code&gt;docker compose&lt;/code&gt; to run multiple coordinated Docker containers locally.&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>SQL</title>
+      <link>https://curriculum.codeyourfuture.io/tracks/sql/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://curriculum.codeyourfuture.io/tracks/sql/</guid>
+      <description>&lt;p&gt;This track contains a record of some past SQL teaching material, but is not very thorough or well structured. It includes basic querying, both in raw SQL and from NodeJS. It does not cover schema design, more advanced querying patterns, or joins other than inner joins. It also has little by way of practical exercises or projects.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Cloud</title>
+      <link>https://curriculum.codeyourfuture.io/tracks/cloud/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://curriculum.codeyourfuture.io/tracks/cloud/</guid>
+      <description>&lt;p&gt;This track is a work in progress. It contains an outline of a course, but much of the detail is missing. When it&amp;rsquo;s been studied in the past, these gaps have been filled by volunteers leading the course. Accordingly, this track is not appropriate for self-study.&lt;/p&gt;&#xA;&lt;p&gt;We hope to flesh out its content in the future.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

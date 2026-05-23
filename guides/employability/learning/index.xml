@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Continuous Learning on CYF Courses</title>
+    <link>https://curriculum.codeyourfuture.io/guides/employability/learning/</link>
+    <description>Recent content in Continuous Learning on CYF Courses</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://curriculum.codeyourfuture.io/guides/employability/learning/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Documentation</title>
+      <link>https://curriculum.codeyourfuture.io/guides/employability/learning/documentation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://curriculum.codeyourfuture.io/guides/employability/learning/documentation/</guid>
+      <description>&lt;p&gt;If you have not taken the &lt;a&#xA;  href=&#34;https://developers.google.com/tech-writing/one&#34;&gt;Technical Writing course&lt;/a&gt;, do so now.&lt;/p&gt;&#xA;&lt;p&gt;There are three key aspects of technical writing for developers:&lt;/p&gt;&#xA;&lt;h3 id=&#34;code&#34;&gt;Code&lt;/h3&gt;&#xA;&lt;p&gt;Your code should be simple, clearly named, and easy to follow. Your code must express your ideas, not encrypt them.&lt;/p&gt;&#xA;&lt;h3 id=&#34;comments&#34;&gt;Comments&lt;/h3&gt;&#xA;&lt;p&gt;Why, not what&lt;/p&gt;&#xA;&lt;p&gt;Your comments should explain why you&amp;rsquo;ve made a choice, not what the code does. Your code should be simple, clearly named, and easy to follow, and if it isn&amp;rsquo;t, refactor it.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Exercism</title>
+      <link>https://curriculum.codeyourfuture.io/guides/employability/learning/exercism/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://curriculum.codeyourfuture.io/guides/employability/learning/exercism/</guid>
+      <description>&lt;p&gt;If your development plan involves learning a new language, you can join an &lt;a&#xA;  href=&#34;https://exercism.org/&#34;&gt;Exercism&lt;/a&gt; track. Some common languages grads choose to learn next are:&lt;/p&gt;&#xA;&lt;p&gt;&lt;a&#xA;  href=&#34;https://exercism.org/tracks/php&#34;&gt;PHP track&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a&#xA;  href=&#34;https://exercism.org/tracks/csharp&#34;&gt;C# track&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a&#xA;  href=&#34;https://exercism.org/tracks/ruby&#34;&gt;Ruby track&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a&#xA;  href=&#34;https://exercism.org/tracks/typescript&#34;&gt;Typescript track&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a&#xA;  href=&#34;https://exercism.io/tracks/python&#34;&gt;Python track&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Roadmaps</title>
+      <link>https://curriculum.codeyourfuture.io/guides/employability/learning/roadmaps/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://curriculum.codeyourfuture.io/guides/employability/learning/roadmaps/</guid>
+      <description>&lt;p&gt;Use development &lt;a&#xA;  href=&#34;https://roadmap.sh/get-started&#34;&gt;roadmaps&lt;/a&gt; to structure your learning in new areas. Here are a few example roadmaps:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;h3 id=&#34;frontend-roadmaphttpsroadmapshfrontend&#34;&gt;&lt;a&#xA;  href=&#34;https://roadmap.sh/frontend&#34;&gt;Frontend roadmap&lt;/a&gt;&lt;/h3&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;h3 id=&#34;backend-roadmaphttpsroadmapshbackend&#34;&gt;&lt;a&#xA;  href=&#34;https://roadmap.sh/backend&#34;&gt;Backend roadmap&lt;/a&gt;&lt;/h3&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;h3 id=&#34;devops-roadmaphttpsroadmapshdevops&#34;&gt;&lt;a&#xA;  href=&#34;https://roadmap.sh/devops&#34;&gt;Devops roadmap&lt;/a&gt;&lt;/h3&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Guides on CYF Courses</title>
+    <link>https://curriculum.codeyourfuture.io/guides/</link>
+    <description>Recent content in Guides on CYF Courses</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://curriculum.codeyourfuture.io/guides/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI Usage Guidelines</title>
+      <link>https://curriculum.codeyourfuture.io/guides/ai-usage/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://curriculum.codeyourfuture.io/guides/ai-usage/</guid>
+      <description>&lt;p&gt;AI tools are changing the way the tech industry is approaching software engineering.&lt;/p&gt;&#xA;&lt;p&gt;At &lt;span class=&#34;c-our-name&#34;&gt;CYF&lt;/span&gt; we have found that AI tools are changing the way people learn, for example:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Making concepts easier to understand, explaining ideas back to the learner.&lt;/li&gt;&#xA;&lt;li&gt;Generating code to solve problems.&lt;/li&gt;&#xA;&lt;li&gt;Using AI to complete large portions of projects.&lt;/li&gt;&#xA;&lt;li&gt;Asking difficult questions.&lt;/li&gt;&#xA;&lt;li&gt;Generating written work, emails etc.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Some of these changes have made learning more accessible to people which is great! But other impacts have taken away the &amp;ldquo;processing&amp;rdquo; needed for picking up a new skill, and often can lead learners to incorrect implementation without them knowing.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Pair programming</title>
+      <link>https://curriculum.codeyourfuture.io/guides/pair-programming/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://curriculum.codeyourfuture.io/guides/pair-programming/</guid>
+      <description>&lt;p&gt;Pair programming is working together with someone else to code a solution to a problem.&lt;/p&gt;&#xA;&lt;p&gt;There are 2 main types of pair programming: Mentored and Driver/Navigator. At CYF you will use &lt;strong&gt;Mentored Pair Programming&lt;/strong&gt; with volunteers, and you can do &lt;strong&gt;Driver/Navigator&lt;/strong&gt; style when working with other trainees.&lt;/p&gt;&#xA;&lt;h2 id=&#34;why&#34;&gt;Why&lt;/h2&gt;&#xA;&lt;p&gt;Pair programming is an excellent way to develop programming and communication skills.&lt;/p&gt;&#xA;&lt;p&gt;It can be easier to work through a problem when working with someone 1-to-1.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Virtual class</title>
+      <link>https://curriculum.codeyourfuture.io/guides/virtual-class/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://curriculum.codeyourfuture.io/guides/virtual-class/</guid>
+      <description>&lt;p&gt;Some tips we&amp;rsquo;ve accumulated through experience:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Webcams&lt;/strong&gt;: Encourage everyone to turn on their webcams, it&amp;rsquo;s more engaging.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Roles&lt;/strong&gt;: Have people add &amp;ldquo;Trainee&amp;rdquo; or &amp;ldquo;Volunteer&amp;rdquo; to the end of their name, to easily identify people and also put people into breakout rooms.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Popcorning&lt;/strong&gt;: If you&amp;rsquo;re trying to have everyone talk about something, have everyone raise their hands, and lower their hand after they&amp;rsquo;ve spoken. Then you can tell who hasn&amp;rsquo;t spoken yet.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Cold calling&lt;/strong&gt;: Say a name of someone to answer a question, don&amp;rsquo;t just say &amp;ldquo;Who wants to answer&amp;rdquo;.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Breakout rooms&lt;/strong&gt;: Set up breakout rooms intentionally - make sure you have at least one volunteer in each room, and mix up who is working with whom.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;zoom-specific&#34;&gt;Zoom-specific&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Hosts&lt;/strong&gt;: Make sure you know how to claim host. Hosts can manage breakout rooms much better than co-hosts or non-hosts.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;virtual-meeting-etiquette&#34;&gt;Virtual Meeting Etiquette&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Mic&lt;/strong&gt;: Mics are stay muted by default, unless it is their turn to speak. Request everyone to mute after they have finished speaking.&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+  </channel>
+</rss>

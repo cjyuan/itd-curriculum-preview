@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sprint 3 on CYF Courses</title>
+    <link>https://curriculum.codeyourfuture.io/checkpoint/sprints/3/</link>
+    <description>Recent content in Sprint 3 on CYF Courses</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="https://curriculum.codeyourfuture.io/checkpoint/sprints/3/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>prep</title>
+      <link>https://curriculum.codeyourfuture.io/checkpoint/sprints/3/prep/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://curriculum.codeyourfuture.io/checkpoint/sprints/3/prep/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>backlog</title>
+      <link>https://curriculum.codeyourfuture.io/checkpoint/sprints/3/backlog/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://curriculum.codeyourfuture.io/checkpoint/sprints/3/backlog/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>day-plan</title>
+      <link>https://curriculum.codeyourfuture.io/checkpoint/sprints/3/day-plan/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://curriculum.codeyourfuture.io/checkpoint/sprints/3/day-plan/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>End of Sprint Review</title>
+      <link>https://curriculum.codeyourfuture.io/checkpoint/sprints/3/success/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://curriculum.codeyourfuture.io/checkpoint/sprints/3/success/</guid>
+      <description>&lt;blockquote&gt;&lt;p&gt;Your key goal this sprint is to complete your team project.&lt;/p&gt;&#xA;&lt;/blockquote&gt;&lt;p&gt;You must submit a link to your deployed project, as well as your GitHub repo.&lt;/p&gt;&#xA;&lt;p&gt;You must be able to explain every line of code in your project, even ones you didn&amp;rsquo;t write yourself.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

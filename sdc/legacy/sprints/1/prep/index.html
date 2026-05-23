@@ -1,0 +1,2746 @@
+<!DOCTYPE html>
+
+
+
+
+<html lang="en" class="p-prep"><head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  <title data-pagefind-meta="title">
+    
+      Software Development Course 
+    
+      Legacy Code 
+    
+      Sprint 1 
+    
+    Prep
+  </title>
+  
+    <meta
+      name="description"
+      content=" CYF Courses: Navigating and working with code written by others" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+  <style>
+    body,
+    html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      animation: fade-in 300ms;
+    }
+    @keyframes fade-in {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  </style>
+  
+  
+  <link
+    rel="stylesheet"
+    href="/bundled.min.b6a4520237559385268d63a9daa81d96.css"
+    media="print"
+    onload="this.media='all'" />
+
+  
+  
+    
+    
+    <link
+      rel="stylesheet"
+      href="/custom.min.8ded6a1a88bc7cc98bdef8dc33d15f3a.css"
+      media="print"
+      onload="this.media='all'" />
+  
+
+
+  <noscript>
+    <link rel="stylesheet" href="/bundled.min.b6a4520237559385268d63a9daa81d96.css" />
+  </noscript>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&amp;display=swap"
+    rel="stylesheet"
+    media="print"
+    onload="this.media='all'" />
+
+  <link rel="shortcut icon" href="https://curriculum.codeyourfuture.io/favicon.ico" />
+  <meta name="theme-color" content="#e3ddeef2" />
+  <link rel="manifest" href="https://curriculum.codeyourfuture.io/manifest.json" />
+</head>
+<body>
+    <a class="c-skip-link e-button" id="skip-link" href="#main">Skip to main</a>
+    <div class="l-layout">
+      <header class="l-layout__header l-header">
+  <div class="l-header__container">
+    <h1 class="l-header__heading e-heading__6" data-pagefind-ignore>
+      <a class="l-header__home" href="/"
+        ><span class="is-invisible"
+          >sdc Prep CYF Courses</span
+        >
+        <span class="is-none--lt-container">
+          <svg
+          xmlns="http://www.w3.org/2000/svg"
+          title="Code Your Future."
+          viewBox="0 0 621.64 155.81"
+          width="140px"
+          focusable="false"
+          role="img">
+          <path
+            fill="var(--theme-color--brand)"
+            d="M103.37 56.51C96.91 63.64 87.03 69.9 74.6 69.9c-20.14 0-33.52-12.91-33.52-34.09C41.08 13.97 57.5.87 69.94.87c9.5 0 13.77 5.32 14.63 6.46l2.18-5.27h14.91v27h-17c-.28-6.18-3.32-12-10.06-12s-11.3 8.45-11.3 18.8c0 9.4 4.84 17.86 13.86 17.86 8 0 14.24-8.36 15.1-9.31Zm2.88-21.85C106.25 14.15 119.92 0 139.58 0c23.26 0 34.09 14 34.09 35.32s-12 34.57-33.43 34.57c-19.88 0-33.99-11.49-33.99-35.23Zm43.68.66c0-11.49-3.13-20.7-10.45-20.7-5.79-.09-9.78 8.26-9.78 20 0 12.44 4.47 20.32 10.54 20.32s9.65-7.88 9.65-19.62Zm27.49 20.23h5.89V14.34h-5.89V1.8h29c23 0 36.09 14.15 36.09 32.29 0 21.65-13.11 34.09-36.47 34.09h-28.62Zm29 0c10.03-.19 14.21-9.59 14.21-21.49 0-10.16-4.18-19.75-14.25-19.75h-3.61v41.24ZM303.04 1.8v21h-16.43v-8.46h-15.19v13.1h18v12.62h-18v15.49h15.19v-8.83h16.43v21.46h-57.26V55.55h6V14.34h-6V1.8Z" />
+          <path
+            fill="var(--theme-color--ink)"
+            d="M274.42 87.82v21h-16.8v-8.45h-14.37v16.52h18v12.63h-18v12.04h9.68v12.63h-35.29v-12.63h5.89v-41.21h-5.89V87.82Zm33.04 0v12.24h-5.12v20.51c0 15.28 3.41 18.51 9.49 18.51 5.79 0 9.59-2.28 9.59-18.61v-20.12h-5.17V87.82h28.11v12.24h-5.11v23.07c0 22.51-9.4 32.67-27.25 32.67-19.18-.57-29.43-10.64-29.43-32.19v-23.45h-5.32V87.82Zm103.5 24.69h-14v-12.16h-8v41.21h7.88v12.63h-35.26v-12.63h7.79v-41.21h-8.12v12.16h-14V87.82h63.71ZM444 87.82v12.24h-5.13v20.51c0 15.28 3.42 18.51 9.5 18.51 5.79 0 9.59-2.28 9.59-18.61v-20.12h-5.13V87.82h28.11v12.24h-5.13v23.07c0 22.51-9.4 32.67-27.25 32.67-19.18-.57-29.44-10.64-29.44-32.19v-23.45h-5.32V87.82Zm71.59 0c22 0 26.3 8.73 26.3 19.56 0 7.4-5.88 12.63-13.76 13.77 6.55.95 12.44 6.64 12.44 13.48 0 4.08.57 6.46 2.27 6.46 1.43 0 2.19-1.14 2.19-3v-3.13h6.36v5.22c0 7.88-3.32 15.19-13.86 15.19-12.44 0-18.42-6.55-18.42-17.66 0-8.64-1.05-10.73-9.5-10.73v14.68h5.79v12.53h-30.67v-12.53h5.32v-41.4h-5.32V87.82Zm-6 28.48h4.27c5.51 0 9.12-2.65 9.12-7.69 0-5.6-3.13-8.45-8.64-8.45h-4.75Zm102.38-28.48v21h-16.43v-8.45h-15.19v13.09h18v12.6h-18v15.5h15.19v-8.83h16.43v21.46h-57.26v-12.63h6v-41.21h-6V87.82Zm-227.72-56.1c.38-1.9 2.47-5.89 3.51-8.17l5.22-9.59h-5.22V1.8h25.54v12.16h-5.05l-17.62 30.86v11h5.32v12.36h-30.39V55.83h5.41v-11.2l-18.42-30.67h-4.65V1.8h32.47v12.16h-4.93l5.5 10.1c.57 1.81 2.57 6.08 2.95 7.7Zm29.54 2.94C413.79 14.15 427.47 0 447.12 0c23.27 0 34.09 14 34.09 35.32s-12 34.57-33.42 34.57c-19.85 0-34-11.49-34-35.23Zm43.68.66c0-11.49-3.13-20.7-10.44-20.7-5.79-.09-9.78 8.26-9.78 20 0 12.44 4.46 20.32 10.54 20.32s9.68-7.88 9.68-19.62ZM514.25 1.8v12.26h-5.13v20.5c0 15.29 3.42 18.52 9.5 18.52 5.79 0 9.59-2.28 9.59-18.61V14.34h-5.13V1.8h28.11v12.26h-5.13v23.07c0 22.5-9.4 32.66-27.25 32.66-19.18-.57-29.44-10.63-29.44-32.19V14.15h-5.32V1.8Zm71.59 0c22 0 26.31 8.74 26.31 19.57 0 7.4-5.89 12.62-13.77 13.76 6.55 1 12.44 6.65 12.44 13.49 0 4.08.57 6.46 2.27 6.46 1.43 0 2.19-1.14 2.19-3V48.9h6.36v5.23c0 7.88-3.32 15.19-13.86 15.19-12.44 0-18.42-6.55-18.42-17.66 0-8.64-1.05-10.73-9.5-10.73v14.71h5.79v12.54h-30.67V55.64h5.32v-41.4h-5.32V1.8Zm-6 28.49h4.27c5.51 0 9.12-2.66 9.12-7.69 0-5.6-3.13-8.45-8.64-8.45h-4.75ZM28.39 14.7l5.8 10.64-23.46 10.72 23.46 10.55-3.61 9.87L0 42.24v-13.3Zm318.7 14.24v13.3l-30.58 14.24-3.61-9.87 23.46-10.55-23.46-10.72 5.8-10.64Z" />
+        </svg>
+        </span>
+        <span class="is-none--gt-container">
+          <svg
+          xmlns="http://www.w3.org/2000/svg"
+          version="1.0"
+          viewBox="0 0 512 512"
+          width="48px">
+          <path
+            fill="currentcolor"
+            stroke="currentcolor"
+            d="M225.5 1c-1.1.5-3.5.9-5.3.9-4.1.1-22.9 4.5-30.7 7.2-63.1 22-114.7 72.3-142.7 139.4-6.4 15.2-11.8 33.8-16.7 57-4.1 19.7-5.4 64.5-2.6 90.8C33 346.2 49.8 390.1 76.8 425c6.2 7.9 23.9 26.4 30.7 32 8.1 6.7 26.1 18.7 35.1 23.6 28.1 15.1 58 24.3 91.9 28.3 5.5.7 13.6 1.7 18 2.2 8.8 1.2 33.9.7 48-.9 11-1.3 31.7-4.8 36.5-6.2 1.9-.5 8-2.3 13.5-3.9 21.3-6.1 47.2-17.8 67.5-30.5 8.8-5.4 23.7-15.8 28.5-19.7 10.2-8.4 24.5-21.3 31.4-28.2l8.4-8.5-2.2-2.9c-1.3-1.5-4.6-5.3-7.4-8.3-6.2-6.7-14.5-15.7-21.2-23.1-2.7-3-7.5-8.2-10.5-11.4-3-3.3-9.8-10.8-15.1-16.5-21.5-23.6-24.2-26.5-24.9-26.8-.3-.1-2 1.2-3.6 3-1.6 1.9-6.3 7.1-10.4 11.7-8.6 9.7-25.6 24.6-35.9 31.4-21.4 14.4-42.5 21.7-62.6 21.7-15.3-.1-29.3-3.3-42.5-10-22.8-11.5-41.9-35.5-51.5-64.7-4.2-12.8-4.3-13.4-5.9-22.8-3.8-22.9-4.6-39.2-2.6-55.6 2.7-22.7 3.3-26.5 5-33.2 7.9-30.9 16.7-48.6 32.4-65.6 16.8-17.9 41.1-24.9 65.1-18.6 30 7.8 50.7 36.3 55.5 76.3.5 4.6 1.2 8.7 1.5 9.3.4.5 25.1.9 62.6.9H474V9H364.2L357 26.7c-4 9.8-7.9 18.5-8.7 19.3-1.3 1.3-2.1.8-6.6-4.3-6-6.9-18.3-16.7-28.2-22.5-7.4-4.3-22.6-10.9-28.5-12.4-9.2-2.2-18.1-4.1-24-5-9-1.3-33.1-1.9-35.5-.8z" />
+        </svg>
+        </span>
+      </a>
+    </h1>
+    <link
+  href="/pagefind/pagefind-ui.css"
+  rel="stylesheet"
+  media="print"
+  onload="this.media='all'" />
+<style>
+  :root {
+    --pagefind-ui-primary: var(--theme-color--ink);
+    --pagefind-ui-text: var(--theme-color--ink);
+    --pagefind-ui-background: var(--theme-color--paper);
+    --pagefind-ui-border: var(--theme-color--outline);
+    --pagefind-ui-tag: var(--theme-color--block);
+    --pagefind-ui-border-radius: 2em;
+    --pagefind-ui-image-border-radius: var(--theme-border-radius);
+    --pagefind-ui-font: var(--theme-font--copy);
+  }
+  .pagefind-ui--reset {
+    position: absolute;
+  }
+  #search .pagefind-ui__search-input {
+    box-shadow: var(--theme-box-shadow--inset);
+    margin-bottom: var(--theme-spacing--1);
+  }
+  #search .pagefind-ui__search-clear {
+    background-color: transparent;
+  }
+  #search .pagefind-ui__drawer {
+    background-color: var(--theme-color--paper);
+    box-shadow: var(--theme-box-shadow--slim);
+    transform: translateY(-1.5px);
+    padding: 0 var(--theme-spacing--2);
+    max-height: calc(100vh - 4rem);
+    overflow-y: auto;
+  }
+  #search .pagefind-ui__result {
+    padding: var(--theme-spacing--1) 0 var(--theme-spacing--2) 0;
+  }
+  #search .pagefind-ui__result:focus-within,
+  #search .pagefind-ui__button:focus {
+    background-color: var(--theme-color--block);
+  }
+  #search .pagefind-ui__button {
+    border: none;
+  }
+</style>
+<script src="/pagefind/pagefind-ui.js" type="text/javascript" defer></script>
+<div id="search" class="l-header__search"></div>
+<script>
+  window.addEventListener("DOMContentLoaded", (event) => {
+    new PagefindUI({
+      element: "#search",
+      showSubResults: true,
+      pageSize: 3,
+      showImages: false,
+      showTags: true,
+    });
+  });
+</script>
+
+    <button
+      class="l-header__action e-button e-button--icon js-menu-toggle e-heading__3">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+        <path
+          stroke="var(--theme-color--ink)"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M13 5a1 1 0 1 0-2 0 1 1 0 0 0 2 0Zm0 7a1 1 0 1 0-2 0 1 1 0 0 0 2 0Zm0 7a1 1 0 1 0-2 0 1 1 0 0 0 2 0Z" />
+      </svg>
+      <span class="is-invisible">Open Menu.</span>
+    </button>
+  </div>
+</header>
+
+      <nav
+  class="l-layout__menu l-menu"
+  aria-label="Main Site Links."
+  id="site-menu"
+  hidden
+  tabindex="0">
+  <div class="l-menu__container">
+    <h2 class="l-menu__heading e-heading__2">
+      <a href="/" class="l-menu__home is-invisible">Menu</a>
+    </h2>
+    <button
+      class="l-menu__action e-button e-button--icon js-menu-toggle e-heading__2"
+      id="close-menu">
+      ❎
+      <span class="is-invisible">Close Menu.</span>
+    </button>
+    <ul class="l-menu__primary">
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/guides/">
+            Guides
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/sdc/tools/">
+            Tools
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/sdc/logic/">
+            Logic
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/sdc/decomposition/">
+            Decomposition
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/sdc/legacy/">
+            Legacy code
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/sdc/complexity/">
+            Complexity
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/tracks/servers/">
+            Servers
+          </a>
+        </li>
+    </ul>
+    <ul class="l-menu__secondary">
+        <li class="l-menu__item">
+          <a class="e-heading__3 l-menu__link" href="https://codeyourfuture.io">
+            CYF 👈🏾
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__3 l-menu__link" href="https://codeyourfuture.io/volunteers/">
+            Join Us 👋🏿
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__3 l-menu__link" href="https://codeyourfuture.io/donate/">
+            Support 🫶🏼
+          </a>
+        </li>
+    </ul>
+  </div>
+</nav>
+
+      <main
+        id="main"
+        class="l-layout__main l-main"
+        tabindex="0"
+        data-pagefind-body>
+        
+  
+    <solo-view tabindex="0">
+      
+
+
+      <div slot="header">
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+<header
+  class="c-page-header 
+    c-page-header--solo
+   c-page-header--toc">
+  
+  <div class="c-page-header__container">
+    <div class="c-page-header__breadcrumbs">
+      
+  <nav class="c-breadcrumbs">
+    <ol class="c-breadcrumbs__list">
+      
+        
+        
+          <li class="c-breadcrumbs__item">
+            <a
+              class="c-breadcrumbs__link"
+              href="/sdc/"data-pagefind-filter="module"><span class="c-breadcrumbs__text">Software Development Course</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                width="24px"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="c-breadcrumbs__icon">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+              </svg>
+            </a>
+          </li>
+        
+        
+          <li class="c-breadcrumbs__item">
+            <a
+              class="c-breadcrumbs__link"
+              href="/sdc/legacy/"><span class="c-breadcrumbs__text">Legacy code</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                width="24px"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="c-breadcrumbs__icon">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+              </svg>
+            </a>
+          </li>
+      
+        <li class="c-breadcrumbs__item">
+          <a
+            class="c-breadcrumbs__link"
+            href="/sdc/legacy/sprints/1/"data-pagefind-filter="sprint">Sprint 1</a
+          >
+        </li>
+      
+    </ol>
+  </nav>
+  
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Our Courses",
+      "item":"https://curriculum.codeyourfuture.io/"},
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Software Development Course",
+      "item":"https://curriculum.codeyourfuture.io/sdc/"},
+    {
+      "@type": "ListItem",
+      "position":  3 ,
+      "name": "Legacy code",
+      "item":"https://curriculum.codeyourfuture.io/sdc/legacy/"},{
+      "@type": "ListItem",
+      "position":  5 ,
+      "name": "Sprint 1",
+      "item":"https://curriculum.codeyourfuture.io/sdc/legacy/sprints/1/"},
+    {
+      "@type": "ListItem",
+      "position":  6 ,
+      "name": "Prep",
+      "item":"https://curriculum.codeyourfuture.io/sdc/legacy/sprints/1/"}
+  ]
+}
+</script>
+
+
+    </div>
+    <h1 class="c-page-header__title e-heading__1"data-pagefind-filter="view"
+        
+      data-pagefind-weight="10">
+      <span class="c-emoji">
+        
+        
+           
+            <time-total class="c-page-header__time"></time-total>
+      
+         
+        </span>
+        <span class="c-page-header__title-text">Prep</span>
+               
+    </h1>
+    
+      
+        <h2 class="c-page-header__description e-heading__3">
+          Navigating and working with code written by others
+        </h2>
+      
+    
+    
+    
+    
+      <div class="c-page-header__toc " id="toc">
+        <section class="c-toc" aria-label="Table of contents.">
+          <a id="top" class="c-toc__top e-button e-button--icon" href="#toc"
+            >🔖 <span class="is-invisible">back to top</span></a
+          >
+          
+            <nav id="TableOfContents"></nav>
+          
+          
+            <ol>
+              
+                <li>
+                  <a href="#introduction" data-pagefind-weight="5"
+                    >Introduction</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#practices-to-remember" data-pagefind-weight="5"
+                    >Practices to remember</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#purple-forest" data-pagefind-weight="5"
+                    >Purple Forest</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#understanding" data-pagefind-weight="5"
+                    >Understanding</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#fear-and-logic" data-pagefind-weight="5"
+                    >Fear and logic</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#finding-things" data-pagefind-weight="5"
+                    >Finding things</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#patterns" data-pagefind-weight="5"
+                    >Patterns</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#debugging" data-pagefind-weight="5"
+                    >Debugging</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#reproduction-steps" data-pagefind-weight="5"
+                    >Reproduction Steps</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#testing" data-pagefind-weight="5"
+                    >Testing</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#fixing" data-pagefind-weight="5"
+                    >Fixing</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#extending" data-pagefind-weight="5"
+                    >Extending</a
+                  >
+                  
+                </li>
+              
+            </ol>
+          
+          
+        </section>
+      </div>
+    
+
+  </div>
+</header>
+</div>
+      <div slot="blocks">
+        
+        
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="introduction">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="introduction">
+        What is Legacy Code?
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="15 minutes countdown" datetime="P15M">15&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Define legacy code</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <p>Welcome to the Legacy Code module. In this module, you&rsquo;ll be working with existing code rather than starting from scratch. This is a crucial skill for professional developers, as most of your career will involve understanding, maintaining, and extending codebases created by others.</p>
+<p>You will need:</p>
+<ul>
+<li>📓 Notebook and pen</li>
+<li>💻 VSCode and Chrome Devtools</li>
+<li>🧩 The PurpleForest application (our Bluesky type app)</li>
+<li>🔍 Your analytical thinking skills, so get those Logic module notes out</li>
+</ul>
+<h3 id="what-is-legacy-code">What is Legacy Code?</h3>
+<p>Legacy code is any existing codebase that you didn&rsquo;t write. (Or maybe you wrote a long time ago and have forgotten.) It will also likely have limited documentation, bugs, and unusual design decisions. You might have forgotten why it&rsquo;s like this, but it still needs to be maintained and improved.</p>
+<p>Sound challenging? It is! But it&rsquo;s also where many developers spend most of their working lives. The skills you&rsquo;ll develop in this module will prepare you for the reality of professional software development.</p>
+<h3 id="what-youll-learn">What You&rsquo;ll Learn</h3>
+<p>By the end of this module, you will have had the opportunity to:</p>
+<ul>
+<li><input disabled="" type="checkbox"> Navigate and understand an unfamiliar codebase</li>
+<li><input disabled="" type="checkbox"> Debug existing features using systematic approaches</li>
+<li><input disabled="" type="checkbox"> Fix issues without breaking functionality</li>
+<li><input disabled="" type="checkbox"> Extend legacy applications with new features</li>
+<li><input disabled="" type="checkbox"> Work effectively within existing architectural constraints</li>
+</ul>
+<p>In this module you will start building the mental models you&rsquo;ll need to become effective at working with legacy code. You will use a lot of models and skills you already have to help you. And let&rsquo;s also talk a bit about handling the fear of breaking things. We will use logic to conquer fear.</p>
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="practices-to-remember">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="practices-to-remember">
+        Practices to remember
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="30 minutes countdown" datetime="P30M">30&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+    <div class="c-block__content c-copy">
+      <p>Some of our standard development practices are <em>even more important</em> when working with legacy code. These are things you should already be doing, but you should remember.</p>
+<h3 id="formatting">Formatting</h3>
+<p>We should be <em>consistent</em> with our formatting. We may not have any control over what decisions were made in the past. When we&rsquo;re writing brand new code in a new code, we can choose whether we use two spaces or four. But when we jump into an existing codebase, we should use whatever style it already has. If we send a PR fixing a small bug, and it changes every line in the file, it&rsquo;s really hard to see what changed, and what stayed the same. If we have two people joining a codebase, and one is reformatting every file they touch to use two spaces, and the other is reformatting every file they touch to use two spaces, there are going to be lots of spurious changes, and lots of merge conflicts.\</p>
+<p>To approach this, we may need to:</p>
+<ul>
+<li>Disable our auto code formatters</li>
+<li>Change the configuration of our auto code formatters (maybe by finding an existing configuration in the repo, or adding one)</li>
+<li>Reformat the whole repo with a consistent configuration in one commit, and then keep it formatted.</li>
+</ul>
+<p>We should <strong>never</strong> include spurious reformatting changes in the same commit as real code changes.</p>
+<h3 id="pr-descriptions">PR Descriptions</h3>
+<p>PR descriptions are even more important when working with Legacy Code. We probably had to do a lot of learning to work out how something works, what was wrong, and how to fix out. The person reviewing our change may not know the codebase very well either. The more detail we can write in our PR descriptions, the more information the next person has when they need to investigate something (and the easier it will be for our reviewer to review our change).</p>
+<p>Make sure your PR description clearly describes what you learnt - how do things work, what was wrong, and how did you fix it?</p>
+<h3 id="appetite-for-risk">Appetite for risk</h3>
+<p>When we&rsquo;re working on brand new codebases, often we will make risky choices. Maybe we will use a new framework. Or a new language. Or decide to use a new serialisation format.</p>
+<p>When working with legacy code, these choices often have more risk associated. There is lots of existing code - we may need to update lots of it, which means understanding it. And modifications often lead to bugs. Every time we rewrite some piece of code, there&rsquo;s a chance we change its behaviour in an important way. Maybe the old code handled <code>null</code> and the empty string differently, and the new code treats them the same.</p>
+<p>When working with legacy code, we often make <em>conservative</em> choices. We try to change the minimum we can to make the fix or feature we need.</p>
+<p>Sometimes we can justify bigger changes, but doing so is a big decision we need to take seriously.</p>
+
+    </div>
+    
+    
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+    
+    
+
+    
+      
+      
+    
+
+    
+    
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  <section
+    class="c-block c-block--readme"
+    aria-labelledby="purple-forest">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="purple-forest">
+        <a href="https://github.com/CodeYourFuture/Module-Legacy-Code/blob/main/README.md">🔗 Purple Forest</a>
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="60 minutes countdown" datetime="P60M">60&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+    
+    <div class="c-block__content c-copy">
+      
+      
+      
+      
+      
+      
+      <h1 id="module-legacy-code">Module-Legacy-Code</h1>
+<p>This repository hosts an existing codebase for you to work with.</p>
+<p>The codebase is a web-app called PurpleForest. It consists of a single-page application frontend written in JavaScript, a backend written in Python, and a PostgreSQL database.</p>
+<p>The repository contains a number of bug reports and feature requests as issues in this repo.</p>
+<p>Your objective is to understand the codebase, debug and fix the bug reports, and implement the feature requests.</p>
+
+
+    </div>
+
+    
+    
+    
+  </section>
+
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="understanding">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="understanding">
+        Understanding Legacy Code
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="5 minutes countdown" datetime="P5M">5&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Define legacy code and its characteristics</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />List common challenges when working with legacy code</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <blockquote><p>Legacy code is any code you inherit</p>
+</blockquote><h2 id="what-makes-code-legacy">What Makes Code &ldquo;Legacy&rdquo;?</h2>
+<p>Legacy code isn&rsquo;t necessarily bad or even that old. It&rsquo;s code that:</p>
+<ol>
+<li><strong>You didn&rsquo;t write</strong> - It lacks your mental model and intentions.</li>
+<li><strong>Powers important systems</strong> - It can&rsquo;t simply be deleted or replaced.</li>
+<li><strong>Contains institutional knowledge</strong> - Sometime undocumented! Decisions were often made for good reasons which we may not remember any more, and changing those decisions may be risky.</li>
+</ol>
+<p>The Purple Forest application is now your legacy code. Someone else designed and built it, and you need to maintain and extend it.</p>
+<h2 id="working-with-purple-forest">Working with Purple Forest</h2>
+<p>Purple Forest has:</p>
+<ul>
+<li><strong>Established architecture</strong> - It follows defined patterns</li>
+<li><strong>Functional system</strong> - It mostly works, even if you don&rsquo;t understand how</li>
+<li><strong>Multiple components</strong> - Changes might have unexpected side effects</li>
+<li><strong>Documented design</strong> - But the documentation might be incomplete or out of date</li>
+</ul>
+<p>So how do you approach understanding and working with this legacy codebase?</p>
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="fear-and-logic">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="fear-and-logic">
+        Fear and logic
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="15 minutes countdown" datetime="P15M">15&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Define and explain Chesterton&rsquo;s Fence</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <p>Do you remember your first day at <span class="c-our-name">CYF</span>? You couldn&rsquo;t find the building, maybe, and you had no idea how the day would go. What on earth is a day plan, or a backlog, you thought to yourself. Perhaps you got frustrated: <em>why</em> are all my changes from last week in my new PR? <strong>How</strong>?! It was incomprehensible. But you learned! You asked questions, you read the guides, and you built a mental map of the system.</p>
+<p>You might have found your first code reviews challenging too. You worked on a project for days, <em>just</em> got it all working, and now someone is telling you to change it. Changing code you don&rsquo;t understand very well feels risky.</p>
+<p>Feeling a bit hesitant is fine. In fact, some caution is healthy. If code is working and it&rsquo;s doing something important for the business, we don&rsquo;t want to break it. But we also don&rsquo;t want to be <em>so</em> fearful that we can&rsquo;t fix it or write new features. We must balance caution with curiosity. We will approach legacy code with a structured, logical plan.</p>
+
+
+<div class="c-columns">
+  
+  
+    <div class="c-columns__column">
+      <style>
+  .mermaid svg {
+    height: initial;
+  }
+  .mermaid {
+    margin-bottom: var(--theme-spacing--gutter);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .mermaid[data-processed] {
+    opacity: 1;
+  }
+</style>
+<div class="mermaid">---
+title: How we're feeling
+config:
+  look: handDrawn
+---
+graph TD
+    Fear -->|What if I break it?| Paralysis
+    Paralysis -->|I'll just work around it| Avoidance
+    Avoidance -->|Let's rewrite from scratch| Rewrite
+    Rewrite -->|What should it do?| Fear</div>
+
+<script type="module" src="/scripts/mermaid-observer.min.js" defer></script>
+
+    </div>
+  
+    <div class="c-columns__column">
+      <style>
+  .mermaid svg {
+    height: initial;
+  }
+  .mermaid {
+    margin-bottom: var(--theme-spacing--gutter);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .mermaid[data-processed] {
+    opacity: 1;
+  }
+</style>
+<div class="mermaid">---
+title: How we act to address those feelings
+config:
+  look: handDrawn
+---
+graph TD
+ Logic -->|What should it do?| Hypothesise
+    Hypothesise -->|What does it actually do?|Test
+    Test -->|Small, careful changes| Modify --->|Cycle of progress|Logic</div>
+
+<script type="module" src="/scripts/mermaid-observer.min.js" defer></script>
+
+    </div>
+  
+</div>
+
+<p>A good rule here is <a
+  href="https://www.youtube.com/watch?v=qPGbl2gxGqI%7b">Chesterton&rsquo;s Fence</a>. This says that before we change something, we must <a
+  href="https://thoughtbot.com/blog/chestertons-fence">explain why</a> it&rsquo;s like that in the first place.</p>
+<p>In code, Chesterton&rsquo;s Fence comes up a lot when we read code that looks complicated. It&rsquo;s easy to think &ldquo;This code could be simpler&rdquo;. And maybe it could! There are a lot of reasons code is more complicated than it could be. Maybe it is complicated because:</p>
+<ul>
+<li>✅ the person who wrote it didn&rsquo;t know a better way. If so, we can simplify it.</li>
+<li>✅ the simpler way was only introduced to the language after the code was written. If so, we can simplify it.</li>
+<li>🚫 we want to support old versions of the language when the simpler way didn&rsquo;t exist. If so, we can&rsquo;t simplify it: we would break something important!</li>
+<li>🚫 some important edge-case we hadn&rsquo;t considered. If so, we need to understand that edge-case before we can change it, or we&rsquo;ll break it.</li>
+</ul>
+<p><em>Understanding why</em> is crucial here. Tests can help us to understand. If we simplify the code and a test for a particular edge-case breaks, we found out why the code was more complicated! Comments can help too. A comment saying <em>&ldquo;We don&rsquo;t do the simpler thing because it doesn&rsquo;t handle <code>undefined</code> properly&rdquo;</em> tells us why the code is more complicated. But sometimes legacy code doesn&rsquo;t have useful tests or comments.</p>
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="finding-things">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="finding-things">
+        Finding things
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="45 minutes countdown" datetime="P45M">45&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Use IDE features to navigate an unfamiliar codebase</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Trace a request flow through an application</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Sketch system architecture</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <blockquote><p>By tracing request flows, drawing maps, and using code search tools, you can efficiently find your way through legacy code.</p>
+</blockquote><h3 id="1--find">1. 🔍 Find</h3>
+<p>We&rsquo;re going to use the features of our IDE to help us. <a
+  href="https://code.visualstudio.com/docs/getstarted/getting-started">VSCode</a> has a million features for this, but we&rsquo;re just going to start with four: <strong>Open</strong> file, <strong>Find</strong> references, <strong>Peek</strong> definition, and <strong>Find in</strong> files.</p>
+
+
+
+<tab-panels class="c-tabs">
+  <div class="c-tabs__list" id="code-along" role="tablist"><button
+          data-toggle="tab"
+          id="tab-label-code-along-0"
+          class="c-tabs__tab e-heading__5 space 
+            is-active"
+          role="tab"
+          aria-controls="code-along-0"
+          aria-selected="true">
+          📂 1. Open
+        </button><button
+          data-toggle="tab"
+          id="tab-label-code-along-1"
+          class="c-tabs__tab e-heading__5 space "
+          role="tab"
+          aria-controls="code-along-1"
+          aria-selected="false">
+          🏷 2. References
+        </button><button
+          data-toggle="tab"
+          id="tab-label-code-along-2"
+          class="c-tabs__tab e-heading__5 space "
+          role="tab"
+          aria-controls="code-along-2"
+          aria-selected="false">
+          🫣 3. Peek
+        </button><button
+          data-toggle="tab"
+          id="tab-label-code-along-3"
+          class="c-tabs__tab e-heading__5 space "
+          role="tab"
+          aria-controls="code-along-3"
+          aria-selected="false">
+          🗃 4. Find
+        </button></div>
+  <div class="c-tabs__group" id="code-along">
+        <div
+          id="code-along-0"
+          class="c-tabs__panel is-active"
+          role="tabpanel"
+          data-heading="📂 1. Open"
+          aria-labelledby="tab-label-code-along-0"><h4 id="-1-open-file--cmdp-or-ctrlp">📂 1. Open file : <code>Cmd+P</code> or <code>Ctrl+P</code></h4>
+<h5 id="code-along">Code Along</h5>
+<p>Open the <a
+  href="https://github.com/CodeYourFuture/Module-Legacy-Code">Purple Forest codebase</a>. Let&rsquo;s start at the router. Press <code>Cmd+P</code> and type <code>router</code>. O<em>p</em>en the file <code>router.mjs</code> and look at where it shows up in the <a
+  href="https://code.visualstudio.com/docs/getstarted/userinterface#_explorer-view">Explorer</a>. What else is in that directory? Why have these files been grouped together? Write down your ideas.</p>
+<p>What does this module do? What can it tell you about the system?</p>
+</div>
+        <div
+          id="code-along-1"
+          class="c-tabs__panel "
+          role="tabpanel"
+          data-heading="🏷 2. References"
+          aria-labelledby="tab-label-code-along-1"><h4 id="-2-find-references-fnshiftf12">🏷 2. Find references: <code>fn+Shift+F12</code></h4>
+<h5 id="code-along">Code Along</h5>
+<p>In <code>router.mjs</code> there is a function called <code>handleRouteChange</code>. What is using this function? Where is it called?</p>
+<p>Press <code>fn+Shift+F12</code> . This will show you a <a
+  href="https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_go-to-references">references panel</a> with links to every place that references this function. Double click on a reference to navigate to that file.</p>
+</div>
+        <div
+          id="code-along-2"
+          class="c-tabs__panel "
+          role="tabpanel"
+          data-heading="🫣 3. Peek"
+          aria-labelledby="tab-label-code-along-2"><h4 id="-3-peek-definition-fnf12">🫣 3. Peek definition: <code>fn+F12</code></h4>
+<h5 id="code-along">Code Along</h5>
+<p>Now you&rsquo;re in <code>index.mjs</code> you can see <em>where</em> the function is called, but you can&rsquo;t see the details of the function. Double click on the function name to select it and now press <code>Fn+Option+F12</code>. This opens the <strong><a
+  href="https://code.visualstudio.com/docs/editor/editingevolved#_peek">peek panel</a></strong>, which shows you the function definition <em>without</em> leaving the file you&rsquo;re in.</p></div>
+        <div
+          id="code-along-3"
+          class="c-tabs__panel "
+          role="tabpanel"
+          data-heading="🗃 4. Find"
+          aria-labelledby="tab-label-code-along-3"><h4 id="-4-find-in-fileshttpscodevisualstudiocomdocseditorcodebasicssourcepost_page-----4e234d504dd--------------------------------_search-across-files-cmdshiftf-or-ctrlshiftf">🗃 4. <a
+  href="https://code.visualstudio.com/docs/editor/codebasics?source=post_page-----4e234d504dd--------------------------------#_search-across-files">Find in files</a>: <code>Cmd+Shift+F</code> or <code>Ctrl+Shift+F</code></h4>
+<h5 id="code-along">Code Along</h5>
+<p>Is that everything to do with the router? Press <code>Cmd+Shift+F</code> and search for <code>route</code>. What else do you find?</p>
+<p>Repeat this process with <code>navigateTo</code>. Deliberately practice using keyboard shortcuts to navigate your codebase. As the code you work with gets more complicated, scrolling through files becomes enormously time-consuming.</p>
+</div></div>
+</tab-panels>
+
+<section class="c-note c-note--tip">
+    <h4 class="c-note__title">💡Tip</h4>
+    <div class="c-note__text"><p>You will learn these keyboard shortcuts over time.</p>
+<p>Use the commands now, but you won&rsquo;t be able to remember all the keyboard shortcuts at once. Try to learn one or two more each week. Use the <a
+  href="https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette">Command Palette</a> to look up the keyboard shortcuts.</p></div>
+  </section><hr>
+<h3 id="2--trace-a-request-flow">2. 📞 Trace a Request Flow</h3>
+<p>Open Purple Forest on your local machine. Read the README to get it running, and launch the frontend with <a
+  href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer">Live Server</a>. Again, Devtools has a million features but we&rsquo;re going to use four: <a
+  href="https://developer.chrome.com/blog/easily-jump-to-event-listeners">Event Listener</a> panel, <a
+  href="https://developer.chrome.com/docs/devtools/network">Network</a> panel, <a
+  href="https://developer.chrome.com/docs/devtools/sources">Sources</a> panel, and <a
+  href="https://developer.chrome.com/docs/devtools/storage/localstorage">Local Storage</a> in the Application panel.</p>
+<section class="c-note c-note--Activity">
+  <h4 class="c-note__title e-heading__4">Code Along</span>
+  </h4>
+  <div class="c-note__text "><ol>
+<li>
+<p><strong>Inspect</strong> the login form and find the event listener in the listener panel. Make a prediction. What will happen, step by step, when we submit this form? Write down your answer in a numbered list. It doesn&rsquo;t have to be perfect, just jot down a quick prediction.</p>
+</li>
+<li>
+<p>Open the Network panel.
+<tool-tip-container tabindex="0"><strong class="tooltip__trigger" id="trigger__Log in">Log in</strong><span class="tooltip__emoji">🧶</span><tool-tip role="tooltip" aria-labelledby="Log in"><span class="tooltip__title e-heading__2"><span class="tooltip__emoji">🧶</span> Log in</span><span class="tooltip__content">You can <strong>find</strong> the seed login details in the codebase you are reading!</span></tool-tip></tool-tip-container>
+as user <code>sample</code>. What do you see? Write down any observations you can make in bullet points.</p>
+</li>
+<li>
+<p>In your notebook, sketch the flow of the request from the user click to the server response. Complete this flowchart:</p>
+</li>
+</ol>
+<style>
+  .mermaid svg {
+    height: initial;
+  }
+  .mermaid {
+    margin-bottom: var(--theme-spacing--gutter);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .mermaid[data-processed] {
+    opacity: 1;
+  }
+</style>
+<div class="mermaid">---
+config:
+  look: handDrawn
+---
+graph LR
+    A[Login form submit] -->|Event| B[handleLogin] -->C[?]</div>
+
+<script type="module" src="/scripts/mermaid-observer.min.js" defer></script>
+</div>
+</section>
+
+
+<p>Note: Your completed flowchart should show a sequence from the user click to the UI update. Label the answers to the following questions:</p>
+<ul>
+<li>What function makes a request to the server?</li>
+<li>What is the endpoint?</li>
+<li>What comes back from the server?</li>
+<li>Where does that response go next?</li>
+<li>What drives the UI update?</li>
+</ul>
+<details>
+<summary>Some help if you are completely stuck</summary>
+Login form submit --> handleLogin --> Sends form data to apiService.login --> Fetches token & success from /login --> calls updateState --> State updates, persists to localStorage, dispatches state-change event --> Router listens for event and --> calls Home View --> clears page with Destroy, then calls Render --> renders Profile, Timeline, and Logout components with current State
+<p>Add a <a
+  href="https://developer.mozilla.org/en-US/docs/Web/API/console/trace_static"><code>console.trace();</code> </a>to the home view to help you trace the flow.</p>
+</details>
+<hr>
+<h3 id="3--sketch-the-system-from-different-perspectives">3. 🖍 Sketch the System from different perspectives</h3>
+<p>The practice of sketching clarifies the mental model of the system in your mind. It doesn&rsquo;t have to be a complicated drawing. The router module calls different &ldquo;<a
+  href="https://medium.com/front-end-weekly/what-is-a-view-in-web-application-6a2836eed4eb">views</a>&rdquo;. Where are the views defined? What do they do? Here&rsquo;s a quick sketch showing the relationship between the router and views:</p>
+<style>
+  .mermaid svg {
+    height: initial;
+  }
+  .mermaid {
+    margin-bottom: var(--theme-spacing--gutter);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .mermaid[data-processed] {
+    opacity: 1;
+  }
+</style>
+<div class="mermaid">---
+config:
+  look: handDrawn
+---
+graph LR
+    A[Router] -->|matches url| B{Views}
+    B --> C[Home View]
+    B --> D[Login View]</div>
+
+<script type="module" src="/scripts/mermaid-observer.min.js" defer></script>
+<p>What about the relationship between views and components? Find the components that are called in the home view. In your notebook, draw your own diagram showing the relationship between <code>views/home</code> and <code>components/*</code>.</p>
+<p>You could also sketch:</p>
+<ul>
+<li><strong>Data Flow Map</strong>: Illustrate how data moves through the system</li>
+<li><strong>Component Tree</strong>: Show the hierarchy of components</li>
+<li><strong>Dependency Map</strong>: Identify which modules depend on each other</li>
+</ul>
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="patterns">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="patterns">
+        Identifying patterns
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="30 minutes countdown" datetime="P30M">30&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+    <div class="c-block__content c-copy">
+      <blockquote><p>Patterns are reusable solutions to common problems.</p>
+</blockquote><p>In <a
+  href="https://github.com/CodeYourFuture/Module-Legacy-Code">the PurpleForest application</a>, there are identifiable patterns. These are rules that the original developers followed when they built the application. By understanding these patterns, you can understand how the application works and how to extend it.
+
+
+<div class="c-columns">
+  
+  
+    <div class="c-columns__column">
+      <h3 id="architectural-patterns">Architectural Patterns</h3>
+<p>These are <a
+  href="https://www.turing.com/blog/software-architecture-patterns-types">known solutions</a> to common tasks in software. In Purple Forest, we could identify an <a
+  href="https://developer.mozilla.org/en-US/docs/Glossary/MVC">MVC</a> pattern, a <a
+  href="https://developer.mozilla.org/en-US/docs/Glossary/SPA">SPA</a> pattern, and a <a
+  href="https://developer.mozilla.org/en-US/docs/Glossary/REST">RESTful API</a> pattern, among others.</p>
+<p>You don&rsquo;t need to memorise all these names, just be alive to the idea that there are patterns in the codebase that you should look for and reuse. You have implemented patterns many times before in previous modules without knowing their names.</p>
+
+    </div>
+  
+    <div class="c-columns__column">
+      <h3 id="design-patterns">Design Patterns</h3>
+<p>Formal <a
+  href="https://refactoring.guru/design-patterns/what-is-pattern">design patterns</a> are more commonly used in object-oriented programming (OOP).</p>
+<p>In Purple Forest, which is not written in an OOP style, you can still find patterns like the <a
+  href="https://refactoring.guru/design-patterns/factory-method">Factory Method</a> or the <a
+  href="https://refactoring.guru/design-patterns/singleton">Singleton</a>.</p>
+
+    </div>
+  
+</div>
+</p>
+<h3 id="code-conventions">Code Conventions</h3>
+<p>We can also see regularities in the codebase called conventions. You can derive useful information from these conventions. Write down your answers to the following questions:
+<section class="c-note c-note--Activity">
+  <h4 class="c-note__title e-heading__4">Investigate and document</span>
+  </h4>
+  <div class="c-note__text "><ol>
+<li>How are functions named? If you wanted to edit a function that handles user input, what could you search for?</li>
+<li>How are files organised? To find out how the application puts together the signup page, where will you look?</li>
+<li>Is there <a
+  href="https://getbem.com/">a pattern</a> to the classes and ID names in the HTML? If you were to add a new template, how would you name it?</li>
+<li>Compare any two components. Is there a similarity in their structure? How would you write a new one?</li>
+</ol>
+</div>
+</section>
+
+</p>
+<h3 id="component-creation-pattern">Component Creation Pattern</h3>
+<p>Let&rsquo;s identify a convention in the Purple Forest application. Read any &ldquo;createComponent&rdquo; function in the Purple Forest codebase. In your notebook, write down the general steps this function takes to create a component.</p>
+<details><summary>Play computer and think about it</summary>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#75715e">// function name starts with create
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// then name of file
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// function expects a template (id) and data as arguments {
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// first, return if there&#39;s no data
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// next, clone template to create a fragment
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// then, populate the fragment with data
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// return fragment
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">//}
+</span></span></span></code></pre></div></details>
+<p>Check your specification against another &ldquo;createComponent&rdquo; function. Does the pattern hold?</p>
+<section class="c-note c-note--tip">
+    <h4 class="c-note__title">💡Tip</h4>
+    <div class="c-note__text"><p>Once you identify a pattern, you can predict how other parts of the system will work.</p></div>
+  </section><h4 id="why-patterns-matter">Why Patterns Matter</h4>
+<p>Patterns help you:</p>
+<ul>
+<li>Predict how other parts of the system work</li>
+<li>Guide your implementation of new features</li>
+<li>Spot potential problems where patterns are broken</li>
+</ul>
+<p>Understanding patterns allows you to 
+<tool-tip-container tabindex="0"><strong class="tooltip__trigger" id="trigger__chunk">chunk</strong><span class="tooltip__emoji">🧶</span><tool-tip role="tooltip" aria-labelledby="chunk"><span class="tooltip__title e-heading__2"><span class="tooltip__emoji">🧶</span> chunk</span><span class="tooltip__content"><a
+  href="https://www.youtube.com/watch?v=hydCdGLAh00">Chunking</a> is a way to group information together so it&rsquo;s easier to remember and understand.</span></tool-tip></tool-tip-container>
+ information, making complex codebases easier to comprehend.</p>
+<h4 id="enforcing-patterns">Enforcing patterns</h4>
+<p>Sometimes these patterns are enforced by the shape of the code, e.g. <code>renderEach</code> ensures that if we&rsquo;re rendering multiple pieces of data we will always have the data, a container, a template name, and a <code>create*</code> function.</p>
+<p>Other times these patterns are just implemented by writing code in similar styles. This is less reliable - it&rsquo;s easy for someone to forget a step. Particularly this is harder to <em>keep</em> consistent over time - if you change the pattern, you need to make sure you update it everywhere.</p>
+<p>Relying on code constructs (like functions) to <em>enforce</em> our use of patterns makes them more likely to be consistently followed.</p>
+
+    </div>
+    
+    
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="debugging">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="debugging">
+        Debugging: Proposing and Discarding Hypotheses
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="30 minutes countdown" datetime="P30M">30&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Apply scientific debugging methodology to legacy code</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Formulate and test hypotheses systematically</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Use browser debugging tools effectively with legacy applications</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+    
+    
+
+    
+      
+    
+
+    
+    
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+  
+  <section class="c-block c-block--issue">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="bug-report">
+        <a href="https://github.com/CodeYourFuture/Module-Legacy-Code/issues/3">Bug Report 🔗</a>
+      </h2>
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+
+      
+      
+      
+      
+
+      
+    </header>
+
+    <div class="c-block__content c-copy">
+      <h3 id="bug-report">Bug report</h3>
+<blockquote><p>👤 When I click on hashtags, the page flashes blank on and off</p>
+</blockquote><h3 id="user-provided-details">User provided details</h3>
+<ul>
+<li>User agent: <code>Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36</code></li>
+<li>URL: <code>#/hashtag/do</code></li>
+</ul>
+    </div>
+  </section>
+
+
+(You could take a moment to <a
+  href="https://workshops.codeyourfuture.io/#reporting-bugs">refine the issue report</a>.
+)</p>
+<blockquote><p>🧠 Recall that debugging is about forming and testing hypotheses. Each test brings you closer to understanding the system&rsquo;s intended and actual behaviour.</p>
+</blockquote><details>
+<summary>Remind yourself of your debugging skills</summary>
+<style>
+  .mermaid svg {
+    height: initial;
+  }
+  .mermaid {
+    margin-bottom: var(--theme-spacing--gutter);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .mermaid[data-processed] {
+    opacity: 1;
+  }
+</style>
+<div class="mermaid">---
+config:
+  look: handDrawn
+---
+graph LR
+A[Predict]
+B[Explain]
+C[Try]
+D[Compare]
+E[Update]
+A --> B
+B --> C
+C --> D
+D --> E
+E --> A</div>
+
+<script type="module" src="/scripts/mermaid-observer.min.js" defer></script>
+<p>You have used this strategy many times before at <span class="c-our-name">CYF</span>, and loads of <a
+  href="https://developer.chrome.com/docs/devtools/javascript/reference">debugging</a> too.</p>
+</details>
+<p>With the application running, reproduce the issue by creating a bloom with the hashtag #do and navigating to <code>/#/hashtag/do</code>. Open Devtools and trace the request flow, just as we did in Navigation.</p>
+<p>Yikes! As soon as we open the <a
+  href="https://developer.chrome.com/docs/devtools/network/overview#overview">Network panel</a> we can see the app is making many many <em>many</em> requests!</p>
+<p><strong>Prediction</strong>: there&rsquo;s some kind of loop in the system that&rsquo;s causing the page to refresh over and over. <strong>Explanation</strong>: the network panel is showing a lot of requests to the same endpoint.</p>
+<p>We can see precisely which files are involved in this request in the <a
+  href="https://developer.mozilla.org/en-US/docs/Glossary/Call_stack">call stack</a>. This <a
+  href="https://developer.chrome.com/blog/print-out-a-quick-stack-trace-from-the-console">stack trace</a> allows us to reduce our problem domain to these 5 files.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">_apiRequest</span> <span style="color:#960050;background-color:#1e0010">@</span> <span style="color:#75715e">//front-end/lib/api.mjs:33
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">getBloomsByHashtag</span> <span style="color:#960050;background-color:#1e0010">@</span> <span style="color:#75715e">//front-end/lib/api.mjs:163
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">hashtagView</span> <span style="color:#960050;background-color:#1e0010">@</span> <span style="color:#75715e">//front-end/views/hashtag.mjs:20
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">handleRouteChange</span> <span style="color:#960050;background-color:#1e0010">@</span> <span style="color:#75715e">//front-end/lib/router.mjs:24
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>(<span style="color:#a6e22e">anonymous</span>) <span style="color:#960050;background-color:#1e0010">@</span> <span style="color:#75715e">//front-end/index.mjs:44
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">updateState</span> <span style="color:#960050;background-color:#1e0010">@</span> <span style="color:#75715e">//front-end/lib/state.mjs:26
+</span></span></span></code></pre></div><p>Remembering what we just learned, <code>Cmd+P</code> and open <code>api.mjs</code>, <code>Cmd+F</code> to jump to <code>_apiRequest</code>. This is a wrapper function that all these endpoints call, so it&rsquo;s not likely to be the problem if only this one view is refreshing.</p>
+<ol>
+<li>Read <code>getBloomsByHashtag</code>. Is there a clue in here?</li>
+<li>What is calling this function? Use <code>fn+Shift+F12</code> to navigate to <code>hashtagView</code>. <strong>Prediction:</strong> if we comment out the <code>apiService.getBloomsByHashtag</code> call, the page will stop refreshing. Try it.</li>
+</ol>
+<p>This should be a clue.</p>
+<section class="c-note c-note--tip">
+    <h4 class="c-note__title">💡Tip</h4>
+    <div class="c-note__text"><p>Legacy code is like a crime scene. Use your detective skills to understand how it happened.</p></div>
+  </section><details>
+<summary>
+<p>Our <em>expected</em> request flow is:</summary></p>
+<figure>
+<style>
+  .mermaid svg {
+    height: initial;
+  }
+  .mermaid {
+    margin-bottom: var(--theme-spacing--gutter);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .mermaid[data-processed] {
+    opacity: 1;
+  }
+</style>
+<div class="mermaid">sequenceDiagram
+    title Expected Flow
+    hashtagView->>apiService: Get blooms
+    apiService->>Server: Request
+    Server-->>updateState: Update
+    State-->>Router: Event
+    Router-->>hashtagView: Render once</div>
+
+<script type="module" src="/scripts/mermaid-observer.min.js" defer></script>
+<figcaption>
+<p><code>hashtagView</code> calls <code>apiService.getBloomsByHashtag</code> which calls <code>_apiRequest</code> which makes a request to the server. Success updates the state which dispatches a state-change event that the router listens for and calls <code>hashtagView</code> again to render the page with the blooms.</p>
+</figcaption>
+</figure>
+</details>
+<details>
+<summary>
+<p>But our <em>actual</em> flow is:</summary></p>
+<figure>
+<style>
+  .mermaid svg {
+    height: initial;
+  }
+  .mermaid {
+    margin-bottom: var(--theme-spacing--gutter);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .mermaid[data-processed] {
+    opacity: 1;
+  }
+</style>
+<div class="mermaid">sequenceDiagram
+    title Actual Flow (Loop)
+    hashtagView->>apiService: Get blooms
+    apiService->>Server: Request
+    Server-->>State: Update
+    State-->>Router: Event
+    Router-->>hashtagView: Render
+    Note right of hashtagView: Loop starts
+    hashtagView->>apiService: Get blooms again
+    apiService->>Server: Request again
+    Note right of Server: Endless cycle...</div>
+
+<script type="module" src="/scripts/mermaid-observer.min.js" defer></script>
+<figcaption>
+<p><code>hashtagView</code> calls <code>apiService.getBloomsByHashtag</code> which calls <code>_apiRequest</code> which makes a request to the server. Success updates the state which dispatches a state-change event that the router listens for and calls <code>hashtagView</code> that calls <code>apiService.getBloomsByHashtag</code> which calls <code>_apiRequest</code> which makes a request to the server&hellip;</p>
+</figcaption>
+</figure>
+</details>
+<p>This is where debugging legacy code can be faster than a greenfield application. This application is <em>working</em>, and other views <em>don&rsquo;t</em> have this problem. So we can look at other views, and spot the difference. In <code>views/profile.mjs</code> for example, we call the apiService inside a conditional:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#75715e">// Only fetch profile if we don&#39;t have it or if it&#39;s incomplete
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">if</span> (<span style="color:#f92672">!</span><span style="color:#a6e22e">existingProfile</span> <span style="color:#f92672">||</span> <span style="color:#f92672">!</span><span style="color:#a6e22e">existingProfile</span>.<span style="color:#a6e22e">recent_blooms</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">apiService</span>.<span style="color:#a6e22e">getProfile</span>(<span style="color:#a6e22e">username</span>);
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div><p>This is <em>different</em> to how we are using <code>apiService</code> for hashtags. Maybe this is intentional, or maybe this is a violation of a pattern.</p>
+<ol>
+<li><strong>Hypothesis</strong>: The <code>hashtagView</code> is calling <code>apiService.getBloomsByHashtag</code> multiple times.</li>
+<li><strong>Test</strong>: Comment out the <code>apiService.getBloomsByHashtag</code> call in <code>hashtagView</code>.</li>
+<li><strong>Result</strong>: The page stops refreshing&hellip; and is also blank.</li>
+<li><strong>Conclusion</strong>: The loop is caused by <code>hashtagView</code> calling <code>apiService.getBloomsByHashtag</code> multiple times.</li>
+</ol>
+<p>Uncomment the line and don&rsquo;t make any further changes to the codebase. Move on to the next step.</p>
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="reproduction-steps">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="reproduction-steps">
+        Reproduction Steps
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="5 minutes countdown" datetime="P5M">5&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+    <div class="c-block__content c-copy">
+      <p>It&rsquo;s easier to fix a bug if you can reproduce it. Reproducing a bug allows you to see what&rsquo;s happening, inspect what assumptions are incorrect, and verify that you have actually fixed it when you think you have.</p>
+<p>Bugs without reproduction steps are often harder to debug and fix that ones with reproduction steps. Ideally reproduction steps tell you <em>everything</em> you need to do to reproduce the bug.</p>
+<p>But it&rsquo;s important to remember: reproduction steps are just an example. Our goal in debugging isn&rsquo;t just to make the reproduction steps no longer show the bug. It&rsquo;s to understand what the underlying problem was, and prevent that.</p>
+<p>If, for instance, the reproduction steps mention a problem on one particular page, but that problem will <em>also</em> show up on other pages, it isn&rsquo;t enough to just fix the one page given in the reproduction steps. We need to think about what caused the problem, where else it may occur, and how we can prevent the <em>underlying</em> problem, not just the example.</p>
+
+    </div>
+    
+    
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="testing">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="testing">
+        Capturing behaviour in tests
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="45 minutes countdown" datetime="P45M">45&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Describe a feature in terms of its behaviour</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Write a test that captures the behaviour of a feature</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <blockquote><p>Tests are the best documentation for how a system should behave.</p>
+</blockquote><h2 id="describe-the-behaviour-capture-your-understanding">Describe the Behaviour, Capture your Understanding</h2>
+<p>Now we have an understanding of the system, the bug, and the intended behaviour, we need to write a test to capture our understanding. There are some <a
+  href="https://playwright.dev/docs/writing-tests">Playwright tests</a> in the codebase already, but no project has complete test coverage for absolutely every eventuality.</p>
+<p>Launch the test runner (look in <code>package.json</code> to find the command). Find the file to add your test and describe the behaviour you expect.</p>
+<h3 id="-activity-write-a-test-for-the-hashtag-endpoint">📝 Activity: Write a test for the hashtag endpoint</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#75715e">// Given I am logged in
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// When I navigate to /#/hashtag/do
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// Then the number of fetch requests should be 1
+</span></span></span></code></pre></div><details>
+<summary>You might find this a bit tricky if you're new to end to end testing, so here's a test to copy if you get stuck.</summary>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">test</span>(<span style="color:#e6db74">&#34;should not make infinite hashtag endpoint requests&#34;</span>, <span style="color:#66d9ef">async</span> ({ <span style="color:#a6e22e">page</span> }) =&gt; {
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// ===== ARRANGE
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">requests</span> <span style="color:#f92672">=</span> [];
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">page</span>.<span style="color:#a6e22e">on</span>(<span style="color:#e6db74">&#34;request&#34;</span>, (<span style="color:#a6e22e">request</span>) =&gt; {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">request</span>.<span style="color:#a6e22e">url</span>().<span style="color:#a6e22e">includes</span>(<span style="color:#e6db74">&#34;:3000/hashtag/do&#34;</span>) <span style="color:#f92672">&amp;&amp;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">request</span>.<span style="color:#a6e22e">resourceType</span>() <span style="color:#f92672">===</span> <span style="color:#e6db74">&#34;fetch&#34;</span>
+</span></span><span style="display:flex;"><span>    ) {
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">requests</span>.<span style="color:#a6e22e">push</span>(<span style="color:#a6e22e">request</span>);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  });
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// ====== ACT
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#75715e">// When I navigate to the hashtag
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">page</span>.<span style="color:#66d9ef">goto</span>(<span style="color:#e6db74">&#34;/#/hashtag/do&#34;</span>);
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// And I wait a reasonable time for any additional requests
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">page</span>.<span style="color:#a6e22e">waitForTimeout</span>(<span style="color:#ae81ff">200</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// ====== ASSERT
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#75715e">// Then the number of requests should be 1
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#a6e22e">expect</span>(<span style="color:#a6e22e">requests</span>.<span style="color:#a6e22e">length</span>).<span style="color:#a6e22e">toEqual</span>(<span style="color:#ae81ff">1</span>);
+</span></span><span style="display:flex;"><span>});</span></span></code></pre></div></details>
+<p>Your test should be failing because your system is making too many requests. This is a good thing! It means you have a clear goal for your next step.</p>
+<p>When we fix our code, having written this test means someone won&rsquo;t be able to break this in the future without noticing. (If they&rsquo;d written the test in the first place, we would never have had to debug this!)</p>
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="fixing">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="fixing">
+        Fixing: Targeted Changes with Test Support
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="30 minutes countdown" datetime="P30M">30&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Make a small, targeted fix to legacy code</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Use tests to verify fixes don&rsquo;t break existing functionality</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Document fixes and their rationale</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <blockquote><p>The fixing cycle protects against regressions</p>
+</blockquote><style>
+  .mermaid svg {
+    height: initial;
+  }
+  .mermaid {
+    margin-bottom: var(--theme-spacing--gutter);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .mermaid[data-processed] {
+    opacity: 1;
+  }
+</style>
+<div class="mermaid">---
+config:
+  look: handDrawn
+---
+graph LR
+    A{Identify Issue} --> B[Write Test]
+    B --> C[Write Fix]
+    C -->|Tests Pass| E(Document Fix)
+    C -->|Tests Fail| F[Revise Fix]
+    F --> C</div>
+
+<script type="module" src="/scripts/mermaid-observer.min.js" defer></script>
+<p>We have identified our issue and written our test(s). We&rsquo;ve really done all the hard work already. Fixing the actual code is now simple.</p>
+<p>Fix your code!</p>
+<details>
+<summary>If you are really stumped, here's the fix</summary>
+<p>On line 20 of <code>views/hashtag.mjs</code>, only fetch if the hashtag has changed.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">hashtag</span> <span style="color:#f92672">!==</span> <span style="color:#a6e22e">state</span>.<span style="color:#a6e22e">currentHashtag</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">apiService</span>.<span style="color:#a6e22e">getBloomsByHashtag</span>(<span style="color:#a6e22e">hashtag</span>);
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div><p>If you were tempted to write something like <code>if (state.hashtagBlooms?.length)</code>, consider: what would happen if you navigated to a hashtag view with no matching blooms in the database?</p>
+<p>Try it and look in the network tab. Yikes! Another infinite loop. A conditional written presuming there is always content available is risky with user generated content. You can&rsquo;t rely on users!</p>
+<p>What extra test could you write to cover this case? Write it.</p>
+</details>
+<h3 id="-document-your-fix-in-your-pr-message">✍🏾 Document your fix in your PR message.</h3>
+<p>Once you have got the entire fix working end to end with tests, open a PR with your changes. In your PR message, write everything that you needed to know to solve this problem. Be good to the reviewer, they&rsquo;re a good friend of yours.</p>
+<h3 id="-schedule-a-revision">📅 Schedule a revision</h3>
+<p>Schedule a revision in your calendar for one week from today to come back and review your own PR.</p>
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="extending">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="extending">
+        Extending: Adding Features the Right Way
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="90 minutes countdown" datetime="P90M">90&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Add new features that respect existing patterns</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Extend legacy code without breaking existing functionality</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Follow the design principles of the original codebase</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Use test-driven development for new features</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <section class="c-note c-note--tip">
+  <h4 class="c-note__title e-heading__4">💡When in Rome</span>
+  </h4>
+  <div class="c-note__text "><p>When adding features to legacy code, write code that looks like it belongs. This isn&rsquo;t the time to introduce radically different approaches or programming paradigms. That would make our code harder to navigate and understand.</p>
+<p>If we <em>do</em> want to change things, we should do so separately from fixes or features. <em>Refactoring</em> shouldn&rsquo;t change what code does, just how it is written. But if you&rsquo;re going to refactor code, you should do so consistently across the whole codebase. Remember why patterns are useful: If suddenly all of the code works one way <em>except</em> for this one view, it&rsquo;s harder to understand the codebase.</p>
+</div>
+</section>
+
+
+<p>For Purple Forest, this means:</p>
+<ol>
+<li>Following the component-based architecture</li>
+<li>Using the single source of truth pattern for state</li>
+<li>Extending the API service for data fetching and updates if necessary</li>
+</ol>
+<p>In your backlog, you have some more features to add. Let&rsquo;s do one simple feature extension together. Branch from main to <code>feature/unfollow</code>.</p>
+<p>Add an &ldquo;Unfollow&rdquo; button to the Profile component. This button should remove the current user from the list of followers. The button should only appear if the current user is following the user.</p>
+
+
+
+<tab-panels class="c-tabs">
+  <div class="c-tabs__list" id="feature-extension" role="tablist"><button
+          data-toggle="tab"
+          id="tab-label-feature-extension-0"
+          class="c-tabs__tab e-heading__5 space 
+            is-active"
+          role="tab"
+          aria-controls="feature-extension-0"
+          aria-selected="true">
+          Step 1: Describe the feature
+        </button><button
+          data-toggle="tab"
+          id="tab-label-feature-extension-1"
+          class="c-tabs__tab e-heading__5 space "
+          role="tab"
+          aria-controls="feature-extension-1"
+          aria-selected="false">
+          Step 2: Write a test
+        </button><button
+          data-toggle="tab"
+          id="tab-label-feature-extension-2"
+          class="c-tabs__tab e-heading__5 space "
+          role="tab"
+          aria-controls="feature-extension-2"
+          aria-selected="false">
+          Step 3: Implement the UI
+        </button><button
+          data-toggle="tab"
+          id="tab-label-feature-extension-3"
+          class="c-tabs__tab e-heading__5 space "
+          role="tab"
+          aria-controls="feature-extension-3"
+          aria-selected="false">
+          Step 4: Hook up the back end
+        </button></div>
+  <div class="c-tabs__group" id="feature-extension">
+        <div
+          id="feature-extension-0"
+          class="c-tabs__panel is-active"
+          role="tabpanel"
+          data-heading="Step 1: Describe the feature"
+          aria-labelledby="tab-label-feature-extension-0"><p>Given a profile component for user AnotherUser<br>
+And I am logged in as sample<br>
+And the sample is following AnotherUser<br>
+When I view the profile component for AnotherUser<br>
+Then I should see a button labeled &ldquo;Unfollow&rdquo;<br>
+When I click the &ldquo;Unfollow&rdquo; button<br>
+Then I should no longer be following AnotherUser<br>
+And the unfollow button is not visible<br>
+And a &ldquo;Follow&rdquo; button should be visible</p>
+<p>The tabs contain sample code for each step of this process, but you should write your own implementation, based on your understanding of the Purple Forest codebase.</p>
+<p>Before you start coding, open each file you think you will need in your editor. You will need to touch 5-7 files only. Use what you understand about the system to predict which files these will be.</p>
+</div>
+        <div
+          id="feature-extension-1"
+          class="c-tabs__panel "
+          role="tabpanel"
+          data-heading="Step 2: Write a test"
+          aria-labelledby="tab-label-feature-extension-1"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">test</span>(<span style="color:#e6db74">&#34;allows unfollowing a user from their profile&#34;</span>, <span style="color:#66d9ef">async</span> ({ <span style="color:#a6e22e">page</span> }) =&gt; {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">signUp</span>(<span style="color:#a6e22e">page</span>, <span style="color:#e6db74">&#34;sample&#34;</span>);
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">signUp</span>(<span style="color:#a6e22e">page</span>, <span style="color:#e6db74">&#34;AnotherUser&#34;</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// Given a profile component AnotherUser
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#75715e">// And I am logged in as sample
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">loginAsSample</span>(<span style="color:#a6e22e">page</span>);
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">page</span>.<span style="color:#66d9ef">goto</span>(<span style="color:#e6db74">&#34;/#/profile/AnotherUser&#34;</span>);
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// And sample is following AS
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">page</span>.<span style="color:#a6e22e">click</span>(<span style="color:#e6db74">&#39;[data-action=&#34;follow&#34;]&#39;</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// When I view the profile component for AnotherUser
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#75715e">// Then I should see a button labeled &#34;Unfollow&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">unfollowButton</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">page</span>.<span style="color:#a6e22e">locator</span>(<span style="color:#e6db74">&#39;[data-action=&#34;unfollow&#34;]&#39;</span>);
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">expect</span>(<span style="color:#a6e22e">unfollowButton</span>).<span style="color:#a6e22e">toBeVisible</span>();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// When I click the &#34;Unfollow&#34; button
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">unfollowButton</span>.<span style="color:#a6e22e">click</span>();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// Then I should no longer be following AnotherUser
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">followerCount</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">page</span>.<span style="color:#a6e22e">locator</span>(<span style="color:#e6db74">&#34;[data-follower-count]&#34;</span>);
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">expect</span>(<span style="color:#a6e22e">followerCount</span>).<span style="color:#a6e22e">toHaveText</span>(<span style="color:#e6db74">&#34;0&#34;</span>);
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// And the unfollow button is not visible
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">expect</span>(<span style="color:#a6e22e">unfollowButton</span>).<span style="color:#a6e22e">toBe</span>(<span style="color:#e6db74">&#34;hidden&#34;</span>);
+</span></span><span style="display:flex;"><span>});</span></span></code></pre></div><p>Commit your changes to your branch.</p></div>
+        <div
+          id="feature-extension-2"
+          class="c-tabs__panel "
+          role="tabpanel"
+          data-heading="Step 3: Implement the UI"
+          aria-labelledby="tab-label-feature-extension-2"><h4 id="-indexhtml">🏠 <code>index.html</code></h4>
+<p>Find the follow button and, and following its patterns, add an unfollow button next to it.</p>
+<h4 id="-componentsprofilemjs">🪪 <code>components/profile.mjs</code></h4>
+<p><code>handleUnfollow</code>: Add a new function to handle the unfollow action. Find the follow handler and use it as a template.</p>
+<p><code>createProfile</code> : For each line that creates the follow button, add a line that creates the unfollow button. For example, after:</p>
+<p><code>const followButtonEl = profileElement.querySelector(&quot;[data-action='follow']&quot;);</code></p>
+<p>add</p>
+<p><code>const unfollowButtonEl = profileElement.querySelector(&quot;[data-action='unfollow']&quot;);</code></p>
+<p>Don&rsquo;t feel tempted to optimise this yet. You can refactor later.</p>
+<h3 id="-viewsprofilemjs">🍱 <code>views/profile.mjs</code></h3>
+<p>You should have exported the <code>handleUnfollow</code> function from the profile component. Now you need to import it into the profile view and call it when the unfollow button is clicked.</p>
+<p>Find the follow button event listener and add a similar listener for the unfollow button.</p>
+<p>Commit your changes to your branch.</p>
+<p>Your test is still failing. Make a prediction about what will happen when you click the unfollow button. What will you need to change to make the test pass?</p>
+<p>Use your debugging skills to find out.</p>
+</div>
+        <div
+          id="feature-extension-3"
+          class="c-tabs__panel "
+          role="tabpanel"
+          data-heading="Step 4: Hook up the back end"
+          aria-labelledby="tab-label-feature-extension-3"><p>(You could have done this from the back to the front, we just happened to start at the front end.)</p>
+<p>You have written an interface, but you haven&rsquo;t connected it to anything in the back end! There&rsquo;s an API endpoint in the apiService, but is there an matching endpoint in <code>main.py</code>? Go look.</p>
+<p>Find the endpoint for <code>do_follow</code> in <code>endpoints.py</code> and use it to make a new route, directly underneath, called <code>unfollow</code>. Play computer with each line of code so you are sure you understand what is happening.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#a6e22e">@jwt_required</span>()
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">do_unfollow</span>():
+</span></span><span style="display:flex;"><span>    type_check_error <span style="color:#f92672">=</span> verify_request_fields({<span style="color:#e6db74">&#34;unfollow_username&#34;</span>: str})
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> type_check_error <span style="color:#f92672">is</span> <span style="color:#f92672">not</span> <span style="color:#66d9ef">None</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> type_check_error
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    current_user <span style="color:#f92672">=</span> get_current_user()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    follow_username <span style="color:#f92672">=</span> request<span style="color:#f92672">.</span>json[<span style="color:#e6db74">&#34;unfollow_username&#34;</span>]
+</span></span><span style="display:flex;"><span>    unfollow_user <span style="color:#f92672">=</span> get_user(follow_username)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> unfollow_user <span style="color:#f92672">is</span> <span style="color:#66d9ef">None</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> make_response(
+</span></span><span style="display:flex;"><span>            (<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Cannot unfollow </span><span style="color:#e6db74">{</span>unfollow_username<span style="color:#e6db74">}</span><span style="color:#e6db74"> - user does not exist&#34;</span>, <span style="color:#ae81ff">404</span>)
+</span></span><span style="display:flex;"><span>        )
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    unfollow(current_user, unfollow_user)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> jsonify(
+</span></span><span style="display:flex;"><span>        {
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#34;success&#34;</span>: <span style="color:#66d9ef">True</span>,
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    )</span></span></code></pre></div><p>Will this make the test pass? Make a prediction and then go look.</p>
+</div></div>
+</tab-panels>
+
+<h3 id="-document-your-feature-in-your-pr-message">✍🏾 Document your feature in your PR message.</h3>
+<p>Once you have got the entire feature working end to end with tests, open a PR with your changes. In your PR message, write everything that you needed to know to build this feature. Be good to the reviewer, they&rsquo;re a good friend of yours.</p>
+<h3 id="-schedule-a-revision">📅 Schedule a revision</h3>
+<p>Schedule a revision in your calendar for two weeks from today to come back and review your own PR. You might choose to refactor your feature in your review.</p>
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+      </div>
+      <nav slot="nav">
+        <a href="#" class="e-button c-solo-view__back">&larr; Back</a>
+        <a href="#" class="e-button c-solo-view__next">Next &rarr;</a>
+      </nav>
+    </solo-view>
+    
+    <script src="/scripts/solo-view.min.js" defer></script>
+    
+    <script src="/scripts/time-total.min.js" defer></script>
+  
+
+
+        
+
+  <footer class="c-page-footer">
+    <nav class="c-page-footer__nav">
+      
+      
+      <span class="c-page-footer__this">Prep</span>
+      
+        →<a
+          class="c-page-footer__next c-page-footer__link e-link"
+          href="/sdc/legacy/sprints/1/backlog/"
+          >Backlog</a
+        >
+      
+    </nav>
+  </footer>
+
+
+      </main><footer class="l-layout__footer l-footer">
+  <a
+    class="l-footer__github e-button e-button--icon"
+    href="https://github.com/CodeYourFuture/curriculum/">
+    <svg
+  focusable="false"
+  class="e-button__icon"
+  role="presentation"
+  width="96"
+  viewbox="0 0 98 96"
+  xmlns="http://www.w3.org/2000/svg">
+  <path
+    fill-rule="evenodd"
+    clip-rule="evenodd"
+    d="M48.854 0C21.839 0 0 22 0 49.217c0 21.756 13.993 40.172 33.405 46.69 2.427.49 3.316-1.059 3.316-2.362 0-1.141-.08-5.052-.08-9.127-13.59 2.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015 4.934.326 7.523 5.052 7.523 5.052 4.367 7.496 11.404 5.378 14.235 4.074.404-3.178 1.699-5.378 3.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283 0-5.378 1.94-9.778 5.014-13.2-.485-1.222-2.184-6.275.486-13.038 0 0 4.125-1.304 13.426 5.052a46.97 46.97 0 0 1 12.214-1.63c4.125 0 8.33.571 12.213 1.63 9.302-6.356 13.427-5.052 13.427-5.052 2.67 6.763.97 11.816.485 13.038 3.155 3.422 5.015 7.822 5.015 13.2 0 18.905-11.404 23.06-22.324 24.283 1.78 1.548 3.316 4.481 3.316 9.126 0 6.6-.08 11.897-.08 13.526 0 1.304.89 2.853 3.316 2.364 19.412-6.52 33.405-24.935 33.405-46.691C97.707 22 75.788 0 48.854 0z"
+    fill="currentColor" />
+</svg>
+
+    <span class="is-invisible">Find us on GitHub</span>
+  </a>
+  <p class="l-footer__impressum e-heading__6">
+    This
+    <a href="https://github.com/CodeYourFuture/curriculum/">free and open source programme</a>
+    is a project of
+    <a href="https://codeyourfuture.io/">Code Your Future</a>
+    <br />
+    Creative Commons Attribution-ShareAlike 4.0
+  </p>
+  <dark-mode class="l-footer__mode"
+    ><button
+      slot="button"
+      id="mode-toggle"
+      type="button"
+      class="e-button e__button--toggle e-button--icon">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="e-icon e__button__icon e-icon--moon">
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
+      </svg>
+      <span class="is-invisible">Toggle between light and dark mode</span>
+    </button></dark-mode
+  >
+</footer>
+
+
+
+<script src="/scripts/app.min.js" defer></script>
+
+<script src="/scripts/youtube-player.min.js" defer></script>
+
+<script src="/scripts/tab-panels.min.js" type="module" defer></script>
+
+<script src="/scripts/dark-mode.min.js"></script>
+
+<script src="/scripts/alert-message.min.js" defer></script>
+
+
+
+
+
+
+
+</div>
+  </body>
+</html>

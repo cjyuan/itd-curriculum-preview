@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Choosing a job role on CYF Courses</title>
+    <link>https://curriculum.codeyourfuture.io/guides/employability/job-choice/</link>
+    <description>Recent content in Choosing a job role on CYF Courses</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="https://curriculum.codeyourfuture.io/guides/employability/job-choice/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Engineering job roles</title>
+      <link>https://curriculum.codeyourfuture.io/guides/employability/job-choice/engineering/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://curriculum.codeyourfuture.io/guides/employability/job-choice/engineering/</guid>
+      <description>&lt;h2 id=&#34;engineering-by-part-of-stack&#34;&gt;Engineering by part of stack&lt;/h2&gt;&#xA;&lt;p&gt;In lots of company engineering roles are separated by what part of the stack they work on.&lt;/p&gt;&#xA;&lt;h3 id=&#34;cloud-engineer--devops-engineer--platform-engineer--infrastructure-engineer--sre-engineer&#34;&gt;Cloud engineer / DevOps engineer / Platform engineer / Infrastructure engineer / SRE engineer&lt;/h3&gt;&#xA;&lt;p&gt;This role typically works on core infrastructure rather than the user facing products and you will be working closer to the operating system level.&lt;/p&gt;&#xA;&lt;p&gt;You may be working with Go, Terraform, AWS Cloudformation, Pulumi, Bash, Python.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Non engineering job roles</title>
+      <link>https://curriculum.codeyourfuture.io/guides/employability/job-choice/non-engineering/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://curriculum.codeyourfuture.io/guides/employability/job-choice/non-engineering/</guid>
+      <description>&lt;h2 id=&#34;non-engineering-roles&#34;&gt;Non engineering roles&lt;/h2&gt;&#xA;&lt;h3 id=&#34;product-owner--product-manager&#34;&gt;Product owner / product manager&lt;/h3&gt;&#xA;&lt;p&gt;A Product Manager sits at the intersection of users, business, and technology. The role focuses on deciding what to build, why it matters, and what problem it solves, then working closely with others to make it happen.&#xA;Product Managers don’t usually write code, but they work closely with software engineers. They also collaborate with designers, data teams, and stakeholders across the business. A large part of the role involves communication, decision making, and prioritisation.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Skills frameworks</title>
+      <link>https://curriculum.codeyourfuture.io/guides/employability/job-choice/skills-framework/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://curriculum.codeyourfuture.io/guides/employability/job-choice/skills-framework/</guid>
+      <description>&lt;p&gt;If you are unsure what sort of job would be right for you, it can be helpful to look at a skills framework to see where your strengths and weakness lie and what sort of skills are needed for each job. When you are doing your job search you can also search by skill instead of by job title to see what jobs match those skills. During your career you will likely also have appraisal periods where you have to self evaluate your skills and have others give you feedback on them, so having a good self awareness of your skills will stand you in good stead for your whole career as well as your first tech job search.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

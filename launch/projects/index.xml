@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on CYF Courses</title>
+    <link>https://curriculum.codeyourfuture.io/launch/projects/</link>
+    <description>Recent content in Projects on CYF Courses</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="https://curriculum.codeyourfuture.io/launch/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CV Matching Game</title>
+      <link>https://curriculum.codeyourfuture.io/launch/projects/cv-matching-game/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://curriculum.codeyourfuture.io/launch/projects/cv-matching-game/</guid>
+      <description>&lt;h2 id=&#34;business-problem&#34;&gt;Business problem&lt;/h2&gt;&#xA;&lt;p&gt;CV Personal Statements &lt;a&#xA;  href=&#34;https://curriculum.codeyourfuture.io/guides/employability/cvs/common-mistakes/#generic-personal-statements&#34;&gt;should be personal&lt;/a&gt;. Many of our trainees write really impersonal statements.&lt;/p&gt;&#xA;&lt;p&gt;We want to be able to run a fun game in class to test how personal their personal statements are.&lt;/p&gt;&#xA;&lt;p&gt;We want a website people can go to in class. A volunteer should be able to start a game, and trainees should be able to join a started game.&lt;/p&gt;&#xA;&lt;p&gt;Each trainee should be able to enter their name, and their personal statement from their CV.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Lunch Organiser</title>
+      <link>https://curriculum.codeyourfuture.io/launch/projects/lunch-organiser/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://curriculum.codeyourfuture.io/launch/projects/lunch-organiser/</guid>
+      <description>&lt;h2 id=&#34;business-problem&#34;&gt;Business problem&lt;/h2&gt;&#xA;&lt;p&gt;In CodeYourFuture&amp;rsquo;s London office, we have lots of trainees on different courses. Sometimes we&amp;rsquo;re running one course, sometimes we&amp;rsquo;re running five. Organising lunch for them is often complicated. It involves coordinating between a lot of different people and tracking lots of input.&lt;/p&gt;&#xA;&lt;p&gt;The process currently is roughly:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Someone has to know whether there are leftovers in the kitchen from the last week - this may reduce how much we order.&lt;/li&gt;&#xA;&lt;li&gt;We need to know what classes are happening, and how many people we expect to show up. (Sometimes it&amp;rsquo;s just ITP, sometimes there are four other courses going on!)&lt;/li&gt;&#xA;&lt;li&gt;We need to know any dietary requirements of attendees. We don&amp;rsquo;t necessarily need to know &lt;em&gt;every&lt;/em&gt; dietary requirement (e.g. if we get lots of vegetarian food, that happens to cover several dietary requirements). But we do need a general idea, and &lt;em&gt;some&lt;/em&gt; are quite specific.&lt;/li&gt;&#xA;&lt;li&gt;Someone is responsible for creating a lunch order online (generally from a supermarket). This is normally created in a Google Doc (but this isn&amp;rsquo;t a necessary part of the workflow - we can change this).&lt;/li&gt;&#xA;&lt;li&gt;A CYF staff member creates the order on the supermarket website and pays it.&lt;/li&gt;&#xA;&lt;li&gt;Someone checks the order is correct before the deadline, and suggests amendments.&lt;/li&gt;&#xA;&lt;li&gt;Someone is at the office to receive the order. (Ideally their phone number is attached to the order.)&lt;/li&gt;&#xA;&lt;li&gt;The community provide feedback on what could be better next time.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;This is currently a very manual process. Lots of Slack messages are exchanged. Most people don&amp;rsquo;t know the status of things (so people may re-do work, or worry it won&amp;rsquo;t get done). We probably ask people for their dietary requirements too often, or don&amp;rsquo;t ask enough people about them or both.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Pair Scheduling</title>
+      <link>https://curriculum.codeyourfuture.io/launch/projects/pair-scheduling/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://curriculum.codeyourfuture.io/launch/projects/pair-scheduling/</guid>
+      <description>&lt;h2 id=&#34;business-problem&#34;&gt;Business problem&lt;/h2&gt;&#xA;&lt;p&gt;We have a lot of volunteers who want to offer their time to have 1:1 sessions with trainees.&lt;/p&gt;&#xA;&lt;p&gt;And we have a lot of trainees who want to book one-off sessions with a volunteer - they generally don&amp;rsquo;t mind &lt;em&gt;which&lt;/em&gt; volunteer.&lt;/p&gt;&#xA;&lt;p&gt;Everyone has limited time available, so the primary matching should be done based on what time slots work for people.&lt;/p&gt;&#xA;&lt;h3 id=&#34;what-we-have-right-now&#34;&gt;What we have right now&lt;/h3&gt;&#xA;&lt;p&gt;Right now, each volunteer shares a Calendly / Google Calendar Appointment Schedule link.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SQL on CYF Courses</title>
+    <link>https://curriculum.codeyourfuture.io/tracks/sql/</link>
+    <description>Recent content in SQL on CYF Courses</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="https://curriculum.codeyourfuture.io/tracks/sql/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>prep</title>
+      <link>https://curriculum.codeyourfuture.io/tracks/sql/prep/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://curriculum.codeyourfuture.io/tracks/sql/prep/</guid>
+      <description>&lt;h2 id=&#34;lets-get-started&#34;&gt;Let&amp;rsquo;s Get Started&lt;/h2&gt;&#xA;&lt;p&gt;We shall be using PostgreSQL - a widely used relational database. It&amp;rsquo;s open-source and free to use. If you haven&amp;rsquo;t already installed it then follow the instructions below:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;If you use &lt;a&#xA;  href=&#34;#ubuntu-setup&#34;&gt;Ubuntu&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;If you have &lt;a&#xA;  href=&#34;#macos-setup&#34;&gt;Mac-OS&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;section class=&#34;c-note c-note--warning&#34;&gt;&#xD;&#xA;  &lt;h4 class=&#34;c-note__title e-heading__4&#34;&gt;⚠️Windows&lt;/span&gt;&#xD;&#xA;  &lt;/h4&gt;&#xD;&#xA;  &lt;div class=&#34;c-note__text &#34;&gt;&lt;p&gt;Windows is not supported at CYF. You are not allowed to use Windows.&lt;/p&gt;&#xA;&lt;!-- END-CYF-ONLY --&gt;&lt;/div&gt;&#xD;&#xA;&lt;/section&gt;&#xD;&#xA;&#xD;&#xA;&#xA;&lt;p&gt;If you get stuck post a message asking for help on your class channel.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>End of Module Review</title>
+      <link>https://curriculum.codeyourfuture.io/tracks/sql/success/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://curriculum.codeyourfuture.io/tracks/sql/success/</guid>
+      <description>&lt;p&gt;Every module, you must review your progress to understand if your cohort can progress to the next stage. The conditions for success are listed below. If your cohort has met all of these conditions, you can progress to the next module. If you have not met them yet, what actions will you take to meet them?&lt;/p&gt;&#xA;&lt;p&gt;Discuss your plan in your class channel.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

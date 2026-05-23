@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+
+
+
+
+<html lang="en" class="p-page"><head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  <title data-pagefind-meta="title">
+    
+      Guides 
+    
+      Code Review 
+    
+    Things to Look for in a Code Review
+  </title>
+  
+    <meta name="description" content="A free and open source software development programme." />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+  <style>
+    body,
+    html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      animation: fade-in 300ms;
+    }
+    @keyframes fade-in {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  </style>
+  
+  
+  <link
+    rel="stylesheet"
+    href="/bundled.min.b6a4520237559385268d63a9daa81d96.css"
+    media="print"
+    onload="this.media='all'" />
+
+  
+  
+    
+    
+    <link
+      rel="stylesheet"
+      href="/custom.min.8ded6a1a88bc7cc98bdef8dc33d15f3a.css"
+      media="print"
+      onload="this.media='all'" />
+  
+
+
+  <noscript>
+    <link rel="stylesheet" href="/bundled.min.b6a4520237559385268d63a9daa81d96.css" />
+  </noscript>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&amp;display=swap"
+    rel="stylesheet"
+    media="print"
+    onload="this.media='all'" />
+
+  <link rel="shortcut icon" href="https://curriculum.codeyourfuture.io/favicon.ico" />
+  <meta name="theme-color" content="#e3ddeef2" />
+  <link rel="manifest" href="https://curriculum.codeyourfuture.io/manifest.json" />
+</head>
+<body>
+    <a class="c-skip-link e-button" id="skip-link" href="#main">Skip to main</a>
+    <div class="l-layout">
+      <header class="l-layout__header l-header">
+  <div class="l-header__container">
+    <h1 class="l-header__heading e-heading__6" data-pagefind-ignore>
+      <a class="l-header__home" href="/"
+        ><span class="is-invisible"
+          >guides Things to look for in a code review CYF Courses</span
+        >
+        <span class="is-none--lt-container">
+          <svg
+          xmlns="http://www.w3.org/2000/svg"
+          title="Code Your Future."
+          viewBox="0 0 621.64 155.81"
+          width="140px"
+          focusable="false"
+          role="img">
+          <path
+            fill="var(--theme-color--brand)"
+            d="M103.37 56.51C96.91 63.64 87.03 69.9 74.6 69.9c-20.14 0-33.52-12.91-33.52-34.09C41.08 13.97 57.5.87 69.94.87c9.5 0 13.77 5.32 14.63 6.46l2.18-5.27h14.91v27h-17c-.28-6.18-3.32-12-10.06-12s-11.3 8.45-11.3 18.8c0 9.4 4.84 17.86 13.86 17.86 8 0 14.24-8.36 15.1-9.31Zm2.88-21.85C106.25 14.15 119.92 0 139.58 0c23.26 0 34.09 14 34.09 35.32s-12 34.57-33.43 34.57c-19.88 0-33.99-11.49-33.99-35.23Zm43.68.66c0-11.49-3.13-20.7-10.45-20.7-5.79-.09-9.78 8.26-9.78 20 0 12.44 4.47 20.32 10.54 20.32s9.65-7.88 9.65-19.62Zm27.49 20.23h5.89V14.34h-5.89V1.8h29c23 0 36.09 14.15 36.09 32.29 0 21.65-13.11 34.09-36.47 34.09h-28.62Zm29 0c10.03-.19 14.21-9.59 14.21-21.49 0-10.16-4.18-19.75-14.25-19.75h-3.61v41.24ZM303.04 1.8v21h-16.43v-8.46h-15.19v13.1h18v12.62h-18v15.49h15.19v-8.83h16.43v21.46h-57.26V55.55h6V14.34h-6V1.8Z" />
+          <path
+            fill="var(--theme-color--ink)"
+            d="M274.42 87.82v21h-16.8v-8.45h-14.37v16.52h18v12.63h-18v12.04h9.68v12.63h-35.29v-12.63h5.89v-41.21h-5.89V87.82Zm33.04 0v12.24h-5.12v20.51c0 15.28 3.41 18.51 9.49 18.51 5.79 0 9.59-2.28 9.59-18.61v-20.12h-5.17V87.82h28.11v12.24h-5.11v23.07c0 22.51-9.4 32.67-27.25 32.67-19.18-.57-29.43-10.64-29.43-32.19v-23.45h-5.32V87.82Zm103.5 24.69h-14v-12.16h-8v41.21h7.88v12.63h-35.26v-12.63h7.79v-41.21h-8.12v12.16h-14V87.82h63.71ZM444 87.82v12.24h-5.13v20.51c0 15.28 3.42 18.51 9.5 18.51 5.79 0 9.59-2.28 9.59-18.61v-20.12h-5.13V87.82h28.11v12.24h-5.13v23.07c0 22.51-9.4 32.67-27.25 32.67-19.18-.57-29.44-10.64-29.44-32.19v-23.45h-5.32V87.82Zm71.59 0c22 0 26.3 8.73 26.3 19.56 0 7.4-5.88 12.63-13.76 13.77 6.55.95 12.44 6.64 12.44 13.48 0 4.08.57 6.46 2.27 6.46 1.43 0 2.19-1.14 2.19-3v-3.13h6.36v5.22c0 7.88-3.32 15.19-13.86 15.19-12.44 0-18.42-6.55-18.42-17.66 0-8.64-1.05-10.73-9.5-10.73v14.68h5.79v12.53h-30.67v-12.53h5.32v-41.4h-5.32V87.82Zm-6 28.48h4.27c5.51 0 9.12-2.65 9.12-7.69 0-5.6-3.13-8.45-8.64-8.45h-4.75Zm102.38-28.48v21h-16.43v-8.45h-15.19v13.09h18v12.6h-18v15.5h15.19v-8.83h16.43v21.46h-57.26v-12.63h6v-41.21h-6V87.82Zm-227.72-56.1c.38-1.9 2.47-5.89 3.51-8.17l5.22-9.59h-5.22V1.8h25.54v12.16h-5.05l-17.62 30.86v11h5.32v12.36h-30.39V55.83h5.41v-11.2l-18.42-30.67h-4.65V1.8h32.47v12.16h-4.93l5.5 10.1c.57 1.81 2.57 6.08 2.95 7.7Zm29.54 2.94C413.79 14.15 427.47 0 447.12 0c23.27 0 34.09 14 34.09 35.32s-12 34.57-33.42 34.57c-19.85 0-34-11.49-34-35.23Zm43.68.66c0-11.49-3.13-20.7-10.44-20.7-5.79-.09-9.78 8.26-9.78 20 0 12.44 4.46 20.32 10.54 20.32s9.68-7.88 9.68-19.62ZM514.25 1.8v12.26h-5.13v20.5c0 15.29 3.42 18.52 9.5 18.52 5.79 0 9.59-2.28 9.59-18.61V14.34h-5.13V1.8h28.11v12.26h-5.13v23.07c0 22.5-9.4 32.66-27.25 32.66-19.18-.57-29.44-10.63-29.44-32.19V14.15h-5.32V1.8Zm71.59 0c22 0 26.31 8.74 26.31 19.57 0 7.4-5.89 12.62-13.77 13.76 6.55 1 12.44 6.65 12.44 13.49 0 4.08.57 6.46 2.27 6.46 1.43 0 2.19-1.14 2.19-3V48.9h6.36v5.23c0 7.88-3.32 15.19-13.86 15.19-12.44 0-18.42-6.55-18.42-17.66 0-8.64-1.05-10.73-9.5-10.73v14.71h5.79v12.54h-30.67V55.64h5.32v-41.4h-5.32V1.8Zm-6 28.49h4.27c5.51 0 9.12-2.66 9.12-7.69 0-5.6-3.13-8.45-8.64-8.45h-4.75ZM28.39 14.7l5.8 10.64-23.46 10.72 23.46 10.55-3.61 9.87L0 42.24v-13.3Zm318.7 14.24v13.3l-30.58 14.24-3.61-9.87 23.46-10.55-23.46-10.72 5.8-10.64Z" />
+        </svg>
+        </span>
+        <span class="is-none--gt-container">
+          <svg
+          xmlns="http://www.w3.org/2000/svg"
+          version="1.0"
+          viewBox="0 0 512 512"
+          width="48px">
+          <path
+            fill="currentcolor"
+            stroke="currentcolor"
+            d="M225.5 1c-1.1.5-3.5.9-5.3.9-4.1.1-22.9 4.5-30.7 7.2-63.1 22-114.7 72.3-142.7 139.4-6.4 15.2-11.8 33.8-16.7 57-4.1 19.7-5.4 64.5-2.6 90.8C33 346.2 49.8 390.1 76.8 425c6.2 7.9 23.9 26.4 30.7 32 8.1 6.7 26.1 18.7 35.1 23.6 28.1 15.1 58 24.3 91.9 28.3 5.5.7 13.6 1.7 18 2.2 8.8 1.2 33.9.7 48-.9 11-1.3 31.7-4.8 36.5-6.2 1.9-.5 8-2.3 13.5-3.9 21.3-6.1 47.2-17.8 67.5-30.5 8.8-5.4 23.7-15.8 28.5-19.7 10.2-8.4 24.5-21.3 31.4-28.2l8.4-8.5-2.2-2.9c-1.3-1.5-4.6-5.3-7.4-8.3-6.2-6.7-14.5-15.7-21.2-23.1-2.7-3-7.5-8.2-10.5-11.4-3-3.3-9.8-10.8-15.1-16.5-21.5-23.6-24.2-26.5-24.9-26.8-.3-.1-2 1.2-3.6 3-1.6 1.9-6.3 7.1-10.4 11.7-8.6 9.7-25.6 24.6-35.9 31.4-21.4 14.4-42.5 21.7-62.6 21.7-15.3-.1-29.3-3.3-42.5-10-22.8-11.5-41.9-35.5-51.5-64.7-4.2-12.8-4.3-13.4-5.9-22.8-3.8-22.9-4.6-39.2-2.6-55.6 2.7-22.7 3.3-26.5 5-33.2 7.9-30.9 16.7-48.6 32.4-65.6 16.8-17.9 41.1-24.9 65.1-18.6 30 7.8 50.7 36.3 55.5 76.3.5 4.6 1.2 8.7 1.5 9.3.4.5 25.1.9 62.6.9H474V9H364.2L357 26.7c-4 9.8-7.9 18.5-8.7 19.3-1.3 1.3-2.1.8-6.6-4.3-6-6.9-18.3-16.7-28.2-22.5-7.4-4.3-22.6-10.9-28.5-12.4-9.2-2.2-18.1-4.1-24-5-9-1.3-33.1-1.9-35.5-.8z" />
+        </svg>
+        </span>
+      </a>
+    </h1>
+    <link
+  href="/pagefind/pagefind-ui.css"
+  rel="stylesheet"
+  media="print"
+  onload="this.media='all'" />
+<style>
+  :root {
+    --pagefind-ui-primary: var(--theme-color--ink);
+    --pagefind-ui-text: var(--theme-color--ink);
+    --pagefind-ui-background: var(--theme-color--paper);
+    --pagefind-ui-border: var(--theme-color--outline);
+    --pagefind-ui-tag: var(--theme-color--block);
+    --pagefind-ui-border-radius: 2em;
+    --pagefind-ui-image-border-radius: var(--theme-border-radius);
+    --pagefind-ui-font: var(--theme-font--copy);
+  }
+  .pagefind-ui--reset {
+    position: absolute;
+  }
+  #search .pagefind-ui__search-input {
+    box-shadow: var(--theme-box-shadow--inset);
+    margin-bottom: var(--theme-spacing--1);
+  }
+  #search .pagefind-ui__search-clear {
+    background-color: transparent;
+  }
+  #search .pagefind-ui__drawer {
+    background-color: var(--theme-color--paper);
+    box-shadow: var(--theme-box-shadow--slim);
+    transform: translateY(-1.5px);
+    padding: 0 var(--theme-spacing--2);
+    max-height: calc(100vh - 4rem);
+    overflow-y: auto;
+  }
+  #search .pagefind-ui__result {
+    padding: var(--theme-spacing--1) 0 var(--theme-spacing--2) 0;
+  }
+  #search .pagefind-ui__result:focus-within,
+  #search .pagefind-ui__button:focus {
+    background-color: var(--theme-color--block);
+  }
+  #search .pagefind-ui__button {
+    border: none;
+  }
+</style>
+<script src="/pagefind/pagefind-ui.js" type="text/javascript" defer></script>
+<div id="search" class="l-header__search"></div>
+<script>
+  window.addEventListener("DOMContentLoaded", (event) => {
+    new PagefindUI({
+      element: "#search",
+      showSubResults: true,
+      pageSize: 3,
+      showImages: false,
+      showTags: true,
+    });
+  });
+</script>
+
+    <button
+      class="l-header__action e-button e-button--icon js-menu-toggle e-heading__3">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+        <path
+          stroke="var(--theme-color--ink)"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M13 5a1 1 0 1 0-2 0 1 1 0 0 0 2 0Zm0 7a1 1 0 1 0-2 0 1 1 0 0 0 2 0Zm0 7a1 1 0 1 0-2 0 1 1 0 0 0 2 0Z" />
+      </svg>
+      <span class="is-invisible">Open Menu.</span>
+    </button>
+  </div>
+</header>
+
+      <nav
+  class="l-layout__menu l-menu"
+  aria-label="Main Site Links."
+  id="site-menu"
+  hidden
+  tabindex="0">
+  <div class="l-menu__container">
+    <h2 class="l-menu__heading e-heading__2">
+      <a href="/" class="l-menu__home is-invisible">Menu</a>
+    </h2>
+    <button
+      class="l-menu__action e-button e-button--icon js-menu-toggle e-heading__2"
+      id="close-menu">
+      ❎
+      <span class="is-invisible">Close Menu.</span>
+    </button>
+    <ul class="l-menu__primary">
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/guides/">
+            Guides
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/sdc/tools/">
+            Tools
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/sdc/logic/">
+            Logic
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/sdc/decomposition/">
+            Decomposition
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/sdc/legacy/">
+            Legacy code
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/sdc/complexity/">
+            Complexity
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/tracks/servers/">
+            Servers
+          </a>
+        </li>
+    </ul>
+    <ul class="l-menu__secondary">
+        <li class="l-menu__item">
+          <a class="e-heading__3 l-menu__link" href="https://codeyourfuture.io">
+            CYF 👈🏾
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__3 l-menu__link" href="https://codeyourfuture.io/volunteers/">
+            Join Us 👋🏿
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__3 l-menu__link" href="https://codeyourfuture.io/donate/">
+            Support 🫶🏼
+          </a>
+        </li>
+    </ul>
+  </div>
+</nav>
+
+      <main
+        id="main"
+        class="l-layout__main l-main"
+        tabindex="0"
+        data-pagefind-body>
+        
+  <article>
+    
+
+
+
+
+
+
+
+  
+  
+
+
+
+<header
+  class="c-page-header  c-page-header--toc">
+  
+  <div class="c-page-header__container">
+    <div class="c-page-header__breadcrumbs">
+      
+  <nav class="c-breadcrumbs">
+    <ol class="c-breadcrumbs__list">
+      
+        
+        
+          <li class="c-breadcrumbs__item">
+            <a
+              class="c-breadcrumbs__link"
+              href="/guides/"data-pagefind-filter="module"><span class="c-breadcrumbs__text">Guides</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                width="24px"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="c-breadcrumbs__icon">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+              </svg>
+            </a>
+          </li>
+      
+        <li class="c-breadcrumbs__item">
+          <a
+            class="c-breadcrumbs__link"
+            href="/guides/reviewing/">Code Review</a
+          >
+        </li>
+      
+    </ol>
+  </nav>
+  
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Our Courses",
+      "item":"https://curriculum.codeyourfuture.io/"},
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Guides",
+      "item":"https://curriculum.codeyourfuture.io/guides/"},{
+      "@type": "ListItem",
+      "position":  4 ,
+      "name": "Code Review",
+      "item":"https://curriculum.codeyourfuture.io/guides/reviewing/"},
+    {
+      "@type": "ListItem",
+      "position":  5 ,
+      "name": "Things to look for in a code review",
+      "item":"https://curriculum.codeyourfuture.io/guides/reviewing/"}
+  ]
+}
+</script>
+
+
+    </div>
+    <h1 class="c-page-header__title e-heading__1"
+      data-pagefind-weight="10">
+      <span class="c-emoji">
+        
+        
+           
+         
+        </span>
+        <span class="c-page-header__title-text">Things to look for in a code review</span>
+               
+    </h1>
+    
+      
+    
+    
+    
+    
+      <div class="c-page-header__toc " id="toc">
+        <section class="c-toc" aria-label="Table of contents.">
+          <a id="top" class="c-toc__top e-button e-button--icon" href="#toc"
+            >🔖 <span class="is-invisible">back to top</span></a
+          >
+          
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#overview">Overview</a></li>
+    <li><a href="#explanations">Explanations</a></li>
+  </ol>
+</nav>
+          
+          
+          
+        </section>
+      </div>
+    
+
+  </div>
+</header>
+
+    
+      <section class="l-page__main c-copy">
+        <h2 id="overview">Overview</h2>
+<h3 id="completeness">Completeness</h3>
+<ul>
+<li>The code achieves all of the tasks in the coursework <a
+  href="#complete-all-tasks">[read more about completeness]</a></li>
+<li>The code achieves the task in an intended way and solves the &ldquo;general&rdquo; problem <a
+  href="#achieves-task-in-intended-way">[read more about intention]</a></li>
+<li>The code covers all edge cases <a
+  href="#edge-cases">[read more about edge cases]</a></li>
+<li>The code does not contain any obvious bugs</li>
+<li>The code handles error responses as well as success responses <a
+  href="#error-responses">[read more about errors]</a></li>
+</ul>
+<h3 id="code-style">Code Style</h3>
+<ul>
+<li>The code follows a consistent style</li>
+<li>The code follows CodeYourFuture&rsquo;s coding standards: <a
+  href="#coding-standards">[read more about coding standards]</a></li>
+<li>The code is well indented: <a
+  href="#well-indented-code">[read more about indentation]</a></li>
+<li>The code uses good variable names: <a
+  href="#good-variable-names">[read more about naming variables]</a></li>
+<li>The code uses good function names: <a
+  href="#good-function-names">[read more about naming functions]</a></li>
+<li>The code uses code which is easy to read and understand: <a
+  href="#more-readable-code">[read more about readability]</a></li>
+<li>The code should not use hard coded values: <a
+  href="#hard-coded-values">[read more about hard coded values]</a></li>
+</ul>
+<h3 id="clarity">Clarity</h3>
+<ul>
+<li>The code is broken up into small reusable functions: <a
+  href="#small-functions">[read more about small functions]</a></li>
+<li>Code is not repeated in several locations of the coursework: <a
+  href="#non-duplicated-code">[read more about DRY]</a></li>
+<li>The coursework does not have commented out code: <a
+  href="#commented-out-code">[read more about commented out code]</a></li>
+<li>There is no dead code in the coursework: <a
+  href="#dead-code">[read more about unreachable code]</a></li>
+<li>There is no extra or debug logging: <a
+  href="#debug-logging">[read more about debug logging]</a></li>
+</ul>
+<h2 id="explanations">Explanations</h2>
+<h3 id="complete-all-tasks">Complete All Tasks</h3>
+<p>Completion of all of the tasks is essential.</p>
+<h3 id="pass-the-tests">Pass the tests</h3>
+<p>Do not rewrite the tests to &lsquo;pass&rsquo; your code. Rewrite your code to pass the tests. Pay attention to the real goal here.</p>
+<p>Tests are your friend and your guide. Let tests help you. When you work for an employer, will they find it a good solution if you &ldquo;fix&rdquo; their payments system by making any input a valid credit card number? If not, why not?</p>
+<h3 id="achieves-task-in-intended-way">Achieves task in intended way</h3>
+<p>You should also always try to solve the problem in the &ldquo;general&rdquo; rather than in the &ldquo;specific&rdquo;.</p>
+<p>For example, we could set the challenge</p>
+<blockquote><p>Print every element of an array to the console
+Test 1: let array = [&ldquo;A&rdquo;,&ldquo;B&rdquo;,&ldquo;C&rdquo;]
+Test 2: let array = [&ldquo;1&rdquo;,&ldquo;2&rdquo;,&ldquo;3&rdquo;,&ldquo;4&rdquo;]
+Test 3: let array = [&ldquo;Up&rdquo;, &ldquo;Down&rdquo;]</p>
+</blockquote><p>To make this test pass you could write</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">array</span>[<span style="color:#ae81ff">0</span>]);
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">array</span>[<span style="color:#ae81ff">1</span>]);
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">array</span>[<span style="color:#ae81ff">2</span>]);
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">array</span>[<span style="color:#ae81ff">3</span>]);</span></span></code></pre></div><p>However, that would not work for <em>every</em> case that exists - only the ones that we&rsquo;re writing. Your aim isn&rsquo;t to just pass the tests, it&rsquo;s to write good code that solves the problem.</p>
+<p>A better solution would be</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">array</span>.<span style="color:#a6e22e">forEach</span>((<span style="color:#a6e22e">item</span>) =&gt; {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">item</span>);
+</span></span><span style="display:flex;"><span>});</span></span></code></pre></div><h3 id="edge-cases">Edge Cases</h3>
+<p>Inputs to some code can often be grouped into different categories.</p>
+<p>For example, if you accept a string, there are some strings which are all letters, some which are all numbers, some which contain punctuation, the empty string, and so on.</p>
+<p>Maybe your function accepts strings, but it always tries to get the first character from the string. In this case, the empty string is an edge-case - it&rsquo;s something you may need to handle specially, or that you may need to reject with an error.</p>
+<p>Some edge cases are valid data, and some are not.</p>
+<p>Some names contain punctuation; some people may only have a single name; your code must handle these edge cases by accepting the names. If someone doesn&rsquo;t enter a name at all, your code should reject this edge case and throw an error.</p>
+<p>If your code doesn&rsquo;t notice unexpected inputs, you might rely on data that doesn&rsquo;t exist or are malformed. As your code gets more complicated, these problems get more difficult to resolve.</p>
+<p>See <a
+  href="https://www.kalzumeus.com/2010/06/17/falsehoods-programmers-believe-about-names/">Falsehoods Programmers Believe About Names</a> for some interesting examples.</p>
+<p>Good code should handle all of these cases so that they can&rsquo;t happen - and if they do - they don&rsquo;t make your program crash or stop working.</p>
+<p>Validations are used wherever necessary. The code never breaks under any circumstances. User input is never trusted. Regardless of it being a negative, over-sized, invalid format, etc., every input passed should be processed, sanitized before taking it further. Every object is checked for its existence before accessing its properties.</p>
+<h4 id="more-reading">More Reading</h4>
+<ul>
+<li><a
+  href="https://www.geeksforgeeks.org/dont-forget-edge-cases/">Don&rsquo;t forget edge cases</a></li>
+</ul>
+<h3 id="small-functions">Small Functions</h3>
+<p>Writing small functions makes your code easier to understand and easier to work with. Ideally you should be able to describe what a function does in one sentence, without the word &ldquo;and&rdquo;.</p>
+<p>Good examples: &ldquo;This function returns the user&rsquo;s favourite author&rdquo;, &ldquo;This other function Tweets the title of an author&rsquo;s most popular book&rdquo;.</p>
+<p>Bad example: &ldquo;This function finds the user&rsquo;s favourite author and sends a Tweet with the name of that author&rsquo;s most popular book&rdquo;.</p>
+<h4 id="more-reading-1">More Reading</h4>
+<ul>
+<li><a
+  href="https://thecodersblog.com/how-big-a-function-should-be/">How big should a function be?</a></li>
+</ul>
+<h3 id="debug-logging">Debug Logging</h3>
+<p>The code should not contain debug logging that was used during development. For example, any logs like</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;Does this work&#34;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;1&#34;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">array</span>[<span style="color:#ae81ff">1</span>].<span style="color:#a6e22e">object</span>.<span style="color:#a6e22e">name</span>);</span></span></code></pre></div><p>should be removed.</p>
+<h3 id="error-responses">Error Responses</h3>
+<p>Not just the error messages, every response that is returned by the server must be properly handled. It should have necessary headers, response messages, error codes and any other necessary details attached with it in required format. All possible scenarios are tested to avoid timeouts, unresponsive UI, etc.</p>
+<h4 id="more-reading-2">More Reading</h4>
+<ul>
+<li><a
+  href="https://usefulangle.com/post/314/javascript-fetch-error-handling">Handling Error HTTP Responses in Javascript fetch</a></li>
+</ul>
+<h3 id="non-duplicated-code">Non-duplicated Code</h3>
+<p>Duplicated code should be moved into functions so they can be referenced from multiple places.</p>
+<p>Having lots of duplicated code in your coursework means that it is harder to change or update your code.</p>
+<h4 id="more-reading-3">More Reading</h4>
+<ul>
+<li><a
+  href="https://dev.to/thinkster/code-smell-duplicated-code-fc1">Duplication Code</a></li>
+</ul>
+<h3 id="commented-out-code">Commented Out Code</h3>
+<p>Commenting out code is a great way to debug your code but when you use it to keep code for later it can become a problem.</p>
+<p>Instead of commenting out code you want to keep but not use, consider moving it to separate file. This will make it easier to keep track of the code you&rsquo;re currently working on.</p>
+<p>Having lots of commented out code makes your code harder to read and makes it easier for you to get overwhelmed and lost in your code.</p>
+<p>Since we use Git to record all of the changes to our code you can always use the Git History to see everything that has changed.</p>
+<h4 id="more-reading-4">More Reading</h4>
+<ul>
+<li><a
+  href="https://kentcdodds.com/blog/please-dont-commit-commented-out-code">Please don&rsquo;t comment out code</a></li>
+</ul>
+<h3 id="dead-code">Dead Code</h3>
+<p>Dead Code is code that is in your coursework but can&rsquo;t be reached or run by your program.</p>
+<p>For example, a function that is never called is considered dead code.</p>
+<p>Dead code should be removed from your coursework or re-written so it is used. Having lots of dead code in your coursework can make your work hard to read and understand.</p>
+<h4 id="more-reading-5">More Reading</h4>
+<ul>
+<li><a
+  href="https://en.wikipedia.org/wiki/Dead_code">Dead Code</a></li>
+</ul>
+<h3 id="coding-standards">Coding Standards</h3>
+<p>All code written by trainees at Code Your Future should follow our <a
+  href="../style-guide">Coding Standard</a> guidelines.</p>
+<p>These guidelines are based on ones used in industry.</p>
+<p>Guidelines are important in big organisations so that everyone writes code in the same way across a large application. It&rsquo;s important that trainees get used to writing in a consistent style early on.</p>
+<h4 id="more-reading-6">More Reading</h4>
+<ul>
+<li><a
+  href="../style-guide">CodeYourFuture Coding Standards</a></li>
+</ul>
+<h3 id="well-indented-code">Well Indented Code</h3>
+<p>Indentation is a fundamental aspect of code styling, and plays a large role in influencing readability. First of all, indented code is easier to read through than unindented code.</p>
+<p>With unindented code, the overall structure of the code might be somewhat difficult to see. However, with indented code, the overall structure of the code jumps out at you. Tabs tell you that a line of code is inside a function, loop, if statement, or else statement. Knowing which parts of the code is inside what will become especially important when your code becomes more complex.</p>
+<h3 id="good-function-names">Good Function Names</h3>
+<p>Good function names are important so that code is easy to read and understand what it is doing.</p>
+<p>A bad function name might be</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">doWork</span>() {}</span></span></code></pre></div><p>A good function name might be</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">removeCapitalLetters</span>(){)</span></span></code></pre></div><p>Sometimes if you can&rsquo;t come up with a good function name it&rsquo;s an indication that the function doesn&rsquo;t have a nice, crisp focus and needs to be broken up or rewritten.</p>
+<p>But it&rsquo;s well worth the trouble finding the best possible names, since it makes your code so much more understandable and usable.</p>
+<h4 id="more-reading-7">More Reading</h4>
+<ul>
+<li><a
+  href="https://dmitripavlutin.com/coding-like-shakespeare-practical-function-naming-conventions/">Coding like Shakespeare: Practical Function Naming Conventions</a></li>
+<li><a
+  href="https://stackoverflow.com/questions/979118/trouble-coming-up-with-good-names-for-functions">Trouble coming up with good names for functions</a></li>
+</ul>
+<h3 id="good-variable-names">Good Variable Names</h3>
+<p>Each variable is named so it is clear which variable is being used at any time. It is important to use meaningful names for variables:</p>
+<p>For example,</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">pocketMoneyPence</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">2000</span>;</span></span></code></pre></div><p>means that the variable <code>pocketMoneyPence</code> is being used to store how much pocket money you have, counting the number of pence. Right now you have £20.</p>
+<p>The name given to each variable is up to the programmer, but ideally a variable name should have meaning you can understand without needing to read any other code, i.e. it should reflect the value that it is holding.</p>
+<p>When tracking numbers that have multiple possible units, we often include the unit in the variable name. Above, we used <code>pocketMoneyPence</code>, because if we&rsquo;d just used <code>pocketMoney</code> it would be unclear whether 2000 meant £20 or £2000 (or possibly €20!).</p>
+<h4 id="more-reading-8">More Reading</h4>
+<ul>
+<li><a
+  href="https://spin.atomicobject.com/2017/11/01/good-variable-names/">Good Variable Names</a></li>
+<li><a
+  href="https://www.bbc.co.uk/bitesize/guides/zwmbgk7/revision/3">Programming Basics - Naming Variables</a></li>
+</ul>
+<h3 id="more-readable-code">More Readable Code</h3>
+<p>The most important thing when writing code is to make it easy to read and understand, and as simple as possible.</p>
+<p>An example of writing more readable code might be using a <code>filter</code> instead of a complicated <code>for</code> loop. This is better, because it is immediately obvious what you&rsquo;re trying to do - filter an array - and you&rsquo;re less likely to make a mistake using it.</p>
+<p>For example,</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">trees</span> <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#34;Oak&#34;</span>, <span style="color:#e6db74">&#34;Birch&#34;</span>, <span style="color:#e6db74">&#34;Beech&#34;</span>, <span style="color:#e6db74">&#34;Elm&#34;</span>, <span style="color:#e6db74">&#34;Hazel&#34;</span>];
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">treesBeginningWithB</span> <span style="color:#f92672">=</span> [];
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; <span style="color:#a6e22e">i</span> <span style="color:#f92672">&lt;</span> <span style="color:#a6e22e">trees</span>.<span style="color:#a6e22e">length</span>; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">trees</span>[<span style="color:#a6e22e">i</span>].<span style="color:#a6e22e">chatAt</span>(<span style="color:#ae81ff">0</span>) <span style="color:#f92672">===</span> <span style="color:#e6db74">&#34;B&#34;</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">treesBeginningWithB</span>.<span style="color:#a6e22e">push</span>(<span style="color:#a6e22e">trees</span>[<span style="color:#a6e22e">i</span>]);
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">treesBeginningWithB</span>); <span style="color:#75715e">// [&#34;Birch&#34;, &#34;Beech&#34;]
+</span></span></span></code></pre></div><p>Could be written like this be easier to understand and read.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">trees</span> <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#34;Oak&#34;</span>, <span style="color:#e6db74">&#34;Birch&#34;</span>, <span style="color:#e6db74">&#34;Beech&#34;</span>, <span style="color:#e6db74">&#34;Elm&#34;</span>, <span style="color:#e6db74">&#34;Hazel&#34;</span>];
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">treesBeginningWithB</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">trees</span>.<span style="color:#a6e22e">filter</span>((<span style="color:#a6e22e">tree</span>) =&gt; <span style="color:#a6e22e">tree</span>.<span style="color:#a6e22e">chatAt</span>(<span style="color:#ae81ff">0</span>) <span style="color:#f92672">===</span> <span style="color:#e6db74">&#34;B&#34;</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">treesBeginningWithB</span>); <span style="color:#75715e">// [&#34;Birch&#34;, &#34;Beech&#34;]
+</span></span></span></code></pre></div><p>As you can see, we&rsquo;ve reduced six lines of code into one and it is immediately obvious that it is trying to filter the trees beginning with B.</p>
+<p>Writing readable code is a big topic and one that you&rsquo;ll get better at as you go on. We encourage you to read more about it.</p>
+<h4 id="more-reading-9">More Reading</h4>
+<ul>
+<li><a
+  href="https://blog.pragmaticengineer.com/readable-code/">Readable Code</a></li>
+</ul>
+<h3 id="hard-coded-values">Hard Coded Values</h3>
+<p>Hard coded values with no explanation make code hard to understand and read in the long term. For example</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">getData</span>(<span style="color:#e6db74">&#34;https://www.api.com/retrieve&#34;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">calculateScreenSize</span>(<span style="color:#ae81ff">1800</span>);</span></span></code></pre></div><p>Will be hard to understand when your codebase grows.</p>
+<p>Instead use constants to store your hard coded values - this means the value has a name, which can be <a
+  href="#good-variable-names">usefully descriptive</a>. For example</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">WEATHER_ENDPOINT</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;https://www.api.com/retrieve&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">MAX_SCREEN_WIDTH</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1800</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">getData</span>(<span style="color:#a6e22e">WEATHER_ENDPOINT</span>);
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">calculateScreenSize</span>(<span style="color:#a6e22e">MAX_SCREEN_WIDTH</span>);</span></span></code></pre></div><h4 id="more-reading-10">More Reading</h4>
+<ul>
+<li><a
+  href="https://softwareengineering.stackexchange.com/questions/67982/is-it-ever-a-good-idea-to-hardcode-values-into-our-applications">Is it ever a good idea to hardcode values into our applications?</a></li>
+</ul>
+
+      </section>
+    
+    <div class="c-block__list">
+      
+      
+    </div>
+  </article>
+
+
+        
+
+  <footer class="c-page-footer">
+    <nav class="c-page-footer__nav">
+      
+      
+        <a
+          class="c-page-footer__prev c-page-footer__link e-link"
+          href="/guides/reviewing/code-review-basics/"
+          >Code Review Basics</a
+        >←
+      
+      <span class="c-page-footer__this">Things to look for in a code review</span>
+      
+    </nav>
+  </footer>
+
+
+      </main><footer class="l-layout__footer l-footer">
+  <a
+    class="l-footer__github e-button e-button--icon"
+    href="https://github.com/CodeYourFuture/curriculum/">
+    <svg
+  focusable="false"
+  class="e-button__icon"
+  role="presentation"
+  width="96"
+  viewbox="0 0 98 96"
+  xmlns="http://www.w3.org/2000/svg">
+  <path
+    fill-rule="evenodd"
+    clip-rule="evenodd"
+    d="M48.854 0C21.839 0 0 22 0 49.217c0 21.756 13.993 40.172 33.405 46.69 2.427.49 3.316-1.059 3.316-2.362 0-1.141-.08-5.052-.08-9.127-13.59 2.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015 4.934.326 7.523 5.052 7.523 5.052 4.367 7.496 11.404 5.378 14.235 4.074.404-3.178 1.699-5.378 3.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283 0-5.378 1.94-9.778 5.014-13.2-.485-1.222-2.184-6.275.486-13.038 0 0 4.125-1.304 13.426 5.052a46.97 46.97 0 0 1 12.214-1.63c4.125 0 8.33.571 12.213 1.63 9.302-6.356 13.427-5.052 13.427-5.052 2.67 6.763.97 11.816.485 13.038 3.155 3.422 5.015 7.822 5.015 13.2 0 18.905-11.404 23.06-22.324 24.283 1.78 1.548 3.316 4.481 3.316 9.126 0 6.6-.08 11.897-.08 13.526 0 1.304.89 2.853 3.316 2.364 19.412-6.52 33.405-24.935 33.405-46.691C97.707 22 75.788 0 48.854 0z"
+    fill="currentColor" />
+</svg>
+
+    <span class="is-invisible">Find us on GitHub</span>
+  </a>
+  <p class="l-footer__impressum e-heading__6">
+    This
+    <a href="https://github.com/CodeYourFuture/curriculum/">free and open source programme</a>
+    is a project of
+    <a href="https://codeyourfuture.io/">Code Your Future</a>
+    <br />
+    Creative Commons Attribution-ShareAlike 4.0
+  </p>
+  <dark-mode class="l-footer__mode"
+    ><button
+      slot="button"
+      id="mode-toggle"
+      type="button"
+      class="e-button e__button--toggle e-button--icon">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="e-icon e__button__icon e-icon--moon">
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
+      </svg>
+      <span class="is-invisible">Toggle between light and dark mode</span>
+    </button></dark-mode
+  >
+</footer>
+
+
+
+<script src="/scripts/app.min.js" defer></script>
+
+<script src="/scripts/youtube-player.min.js" defer></script>
+
+<script src="/scripts/tab-panels.min.js" type="module" defer></script>
+
+<script src="/scripts/dark-mode.min.js"></script>
+
+<script src="/scripts/alert-message.min.js" defer></script>
+
+
+
+
+
+
+
+</div>
+  </body>
+</html>

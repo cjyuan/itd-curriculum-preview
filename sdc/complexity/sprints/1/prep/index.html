@@ -1,0 +1,2060 @@
+<!DOCTYPE html>
+
+
+
+
+<html lang="en" class="p-prep"><head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  <title data-pagefind-meta="title">
+    
+      Software Development Course 
+    
+      Complexity 
+    
+      Sprint 1 
+    
+    Prep
+  </title>
+  
+    <meta
+      name="description"
+      content=" CYF Courses: Examining the cost of computation" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+  <style>
+    body,
+    html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      animation: fade-in 300ms;
+    }
+    @keyframes fade-in {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  </style>
+  
+  
+  <link
+    rel="stylesheet"
+    href="/bundled.min.b6a4520237559385268d63a9daa81d96.css"
+    media="print"
+    onload="this.media='all'" />
+
+  
+  
+    
+    
+    <link
+      rel="stylesheet"
+      href="/custom.min.8ded6a1a88bc7cc98bdef8dc33d15f3a.css"
+      media="print"
+      onload="this.media='all'" />
+  
+
+
+  <noscript>
+    <link rel="stylesheet" href="/bundled.min.b6a4520237559385268d63a9daa81d96.css" />
+  </noscript>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&amp;display=swap"
+    rel="stylesheet"
+    media="print"
+    onload="this.media='all'" />
+
+  <link rel="shortcut icon" href="https://curriculum.codeyourfuture.io/favicon.ico" />
+  <meta name="theme-color" content="#e3ddeef2" />
+  <link rel="manifest" href="https://curriculum.codeyourfuture.io/manifest.json" />
+</head>
+<body>
+    <a class="c-skip-link e-button" id="skip-link" href="#main">Skip to main</a>
+    <div class="l-layout">
+      <header class="l-layout__header l-header">
+  <div class="l-header__container">
+    <h1 class="l-header__heading e-heading__6" data-pagefind-ignore>
+      <a class="l-header__home" href="/"
+        ><span class="is-invisible"
+          >sdc Prep CYF Courses</span
+        >
+        <span class="is-none--lt-container">
+          <svg
+          xmlns="http://www.w3.org/2000/svg"
+          title="Code Your Future."
+          viewBox="0 0 621.64 155.81"
+          width="140px"
+          focusable="false"
+          role="img">
+          <path
+            fill="var(--theme-color--brand)"
+            d="M103.37 56.51C96.91 63.64 87.03 69.9 74.6 69.9c-20.14 0-33.52-12.91-33.52-34.09C41.08 13.97 57.5.87 69.94.87c9.5 0 13.77 5.32 14.63 6.46l2.18-5.27h14.91v27h-17c-.28-6.18-3.32-12-10.06-12s-11.3 8.45-11.3 18.8c0 9.4 4.84 17.86 13.86 17.86 8 0 14.24-8.36 15.1-9.31Zm2.88-21.85C106.25 14.15 119.92 0 139.58 0c23.26 0 34.09 14 34.09 35.32s-12 34.57-33.43 34.57c-19.88 0-33.99-11.49-33.99-35.23Zm43.68.66c0-11.49-3.13-20.7-10.45-20.7-5.79-.09-9.78 8.26-9.78 20 0 12.44 4.47 20.32 10.54 20.32s9.65-7.88 9.65-19.62Zm27.49 20.23h5.89V14.34h-5.89V1.8h29c23 0 36.09 14.15 36.09 32.29 0 21.65-13.11 34.09-36.47 34.09h-28.62Zm29 0c10.03-.19 14.21-9.59 14.21-21.49 0-10.16-4.18-19.75-14.25-19.75h-3.61v41.24ZM303.04 1.8v21h-16.43v-8.46h-15.19v13.1h18v12.62h-18v15.49h15.19v-8.83h16.43v21.46h-57.26V55.55h6V14.34h-6V1.8Z" />
+          <path
+            fill="var(--theme-color--ink)"
+            d="M274.42 87.82v21h-16.8v-8.45h-14.37v16.52h18v12.63h-18v12.04h9.68v12.63h-35.29v-12.63h5.89v-41.21h-5.89V87.82Zm33.04 0v12.24h-5.12v20.51c0 15.28 3.41 18.51 9.49 18.51 5.79 0 9.59-2.28 9.59-18.61v-20.12h-5.17V87.82h28.11v12.24h-5.11v23.07c0 22.51-9.4 32.67-27.25 32.67-19.18-.57-29.43-10.64-29.43-32.19v-23.45h-5.32V87.82Zm103.5 24.69h-14v-12.16h-8v41.21h7.88v12.63h-35.26v-12.63h7.79v-41.21h-8.12v12.16h-14V87.82h63.71ZM444 87.82v12.24h-5.13v20.51c0 15.28 3.42 18.51 9.5 18.51 5.79 0 9.59-2.28 9.59-18.61v-20.12h-5.13V87.82h28.11v12.24h-5.13v23.07c0 22.51-9.4 32.67-27.25 32.67-19.18-.57-29.44-10.64-29.44-32.19v-23.45h-5.32V87.82Zm71.59 0c22 0 26.3 8.73 26.3 19.56 0 7.4-5.88 12.63-13.76 13.77 6.55.95 12.44 6.64 12.44 13.48 0 4.08.57 6.46 2.27 6.46 1.43 0 2.19-1.14 2.19-3v-3.13h6.36v5.22c0 7.88-3.32 15.19-13.86 15.19-12.44 0-18.42-6.55-18.42-17.66 0-8.64-1.05-10.73-9.5-10.73v14.68h5.79v12.53h-30.67v-12.53h5.32v-41.4h-5.32V87.82Zm-6 28.48h4.27c5.51 0 9.12-2.65 9.12-7.69 0-5.6-3.13-8.45-8.64-8.45h-4.75Zm102.38-28.48v21h-16.43v-8.45h-15.19v13.09h18v12.6h-18v15.5h15.19v-8.83h16.43v21.46h-57.26v-12.63h6v-41.21h-6V87.82Zm-227.72-56.1c.38-1.9 2.47-5.89 3.51-8.17l5.22-9.59h-5.22V1.8h25.54v12.16h-5.05l-17.62 30.86v11h5.32v12.36h-30.39V55.83h5.41v-11.2l-18.42-30.67h-4.65V1.8h32.47v12.16h-4.93l5.5 10.1c.57 1.81 2.57 6.08 2.95 7.7Zm29.54 2.94C413.79 14.15 427.47 0 447.12 0c23.27 0 34.09 14 34.09 35.32s-12 34.57-33.42 34.57c-19.85 0-34-11.49-34-35.23Zm43.68.66c0-11.49-3.13-20.7-10.44-20.7-5.79-.09-9.78 8.26-9.78 20 0 12.44 4.46 20.32 10.54 20.32s9.68-7.88 9.68-19.62ZM514.25 1.8v12.26h-5.13v20.5c0 15.29 3.42 18.52 9.5 18.52 5.79 0 9.59-2.28 9.59-18.61V14.34h-5.13V1.8h28.11v12.26h-5.13v23.07c0 22.5-9.4 32.66-27.25 32.66-19.18-.57-29.44-10.63-29.44-32.19V14.15h-5.32V1.8Zm71.59 0c22 0 26.31 8.74 26.31 19.57 0 7.4-5.89 12.62-13.77 13.76 6.55 1 12.44 6.65 12.44 13.49 0 4.08.57 6.46 2.27 6.46 1.43 0 2.19-1.14 2.19-3V48.9h6.36v5.23c0 7.88-3.32 15.19-13.86 15.19-12.44 0-18.42-6.55-18.42-17.66 0-8.64-1.05-10.73-9.5-10.73v14.71h5.79v12.54h-30.67V55.64h5.32v-41.4h-5.32V1.8Zm-6 28.49h4.27c5.51 0 9.12-2.66 9.12-7.69 0-5.6-3.13-8.45-8.64-8.45h-4.75ZM28.39 14.7l5.8 10.64-23.46 10.72 23.46 10.55-3.61 9.87L0 42.24v-13.3Zm318.7 14.24v13.3l-30.58 14.24-3.61-9.87 23.46-10.55-23.46-10.72 5.8-10.64Z" />
+        </svg>
+        </span>
+        <span class="is-none--gt-container">
+          <svg
+          xmlns="http://www.w3.org/2000/svg"
+          version="1.0"
+          viewBox="0 0 512 512"
+          width="48px">
+          <path
+            fill="currentcolor"
+            stroke="currentcolor"
+            d="M225.5 1c-1.1.5-3.5.9-5.3.9-4.1.1-22.9 4.5-30.7 7.2-63.1 22-114.7 72.3-142.7 139.4-6.4 15.2-11.8 33.8-16.7 57-4.1 19.7-5.4 64.5-2.6 90.8C33 346.2 49.8 390.1 76.8 425c6.2 7.9 23.9 26.4 30.7 32 8.1 6.7 26.1 18.7 35.1 23.6 28.1 15.1 58 24.3 91.9 28.3 5.5.7 13.6 1.7 18 2.2 8.8 1.2 33.9.7 48-.9 11-1.3 31.7-4.8 36.5-6.2 1.9-.5 8-2.3 13.5-3.9 21.3-6.1 47.2-17.8 67.5-30.5 8.8-5.4 23.7-15.8 28.5-19.7 10.2-8.4 24.5-21.3 31.4-28.2l8.4-8.5-2.2-2.9c-1.3-1.5-4.6-5.3-7.4-8.3-6.2-6.7-14.5-15.7-21.2-23.1-2.7-3-7.5-8.2-10.5-11.4-3-3.3-9.8-10.8-15.1-16.5-21.5-23.6-24.2-26.5-24.9-26.8-.3-.1-2 1.2-3.6 3-1.6 1.9-6.3 7.1-10.4 11.7-8.6 9.7-25.6 24.6-35.9 31.4-21.4 14.4-42.5 21.7-62.6 21.7-15.3-.1-29.3-3.3-42.5-10-22.8-11.5-41.9-35.5-51.5-64.7-4.2-12.8-4.3-13.4-5.9-22.8-3.8-22.9-4.6-39.2-2.6-55.6 2.7-22.7 3.3-26.5 5-33.2 7.9-30.9 16.7-48.6 32.4-65.6 16.8-17.9 41.1-24.9 65.1-18.6 30 7.8 50.7 36.3 55.5 76.3.5 4.6 1.2 8.7 1.5 9.3.4.5 25.1.9 62.6.9H474V9H364.2L357 26.7c-4 9.8-7.9 18.5-8.7 19.3-1.3 1.3-2.1.8-6.6-4.3-6-6.9-18.3-16.7-28.2-22.5-7.4-4.3-22.6-10.9-28.5-12.4-9.2-2.2-18.1-4.1-24-5-9-1.3-33.1-1.9-35.5-.8z" />
+        </svg>
+        </span>
+      </a>
+    </h1>
+    <link
+  href="/pagefind/pagefind-ui.css"
+  rel="stylesheet"
+  media="print"
+  onload="this.media='all'" />
+<style>
+  :root {
+    --pagefind-ui-primary: var(--theme-color--ink);
+    --pagefind-ui-text: var(--theme-color--ink);
+    --pagefind-ui-background: var(--theme-color--paper);
+    --pagefind-ui-border: var(--theme-color--outline);
+    --pagefind-ui-tag: var(--theme-color--block);
+    --pagefind-ui-border-radius: 2em;
+    --pagefind-ui-image-border-radius: var(--theme-border-radius);
+    --pagefind-ui-font: var(--theme-font--copy);
+  }
+  .pagefind-ui--reset {
+    position: absolute;
+  }
+  #search .pagefind-ui__search-input {
+    box-shadow: var(--theme-box-shadow--inset);
+    margin-bottom: var(--theme-spacing--1);
+  }
+  #search .pagefind-ui__search-clear {
+    background-color: transparent;
+  }
+  #search .pagefind-ui__drawer {
+    background-color: var(--theme-color--paper);
+    box-shadow: var(--theme-box-shadow--slim);
+    transform: translateY(-1.5px);
+    padding: 0 var(--theme-spacing--2);
+    max-height: calc(100vh - 4rem);
+    overflow-y: auto;
+  }
+  #search .pagefind-ui__result {
+    padding: var(--theme-spacing--1) 0 var(--theme-spacing--2) 0;
+  }
+  #search .pagefind-ui__result:focus-within,
+  #search .pagefind-ui__button:focus {
+    background-color: var(--theme-color--block);
+  }
+  #search .pagefind-ui__button {
+    border: none;
+  }
+</style>
+<script src="/pagefind/pagefind-ui.js" type="text/javascript" defer></script>
+<div id="search" class="l-header__search"></div>
+<script>
+  window.addEventListener("DOMContentLoaded", (event) => {
+    new PagefindUI({
+      element: "#search",
+      showSubResults: true,
+      pageSize: 3,
+      showImages: false,
+      showTags: true,
+    });
+  });
+</script>
+
+    <button
+      class="l-header__action e-button e-button--icon js-menu-toggle e-heading__3">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+        <path
+          stroke="var(--theme-color--ink)"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M13 5a1 1 0 1 0-2 0 1 1 0 0 0 2 0Zm0 7a1 1 0 1 0-2 0 1 1 0 0 0 2 0Zm0 7a1 1 0 1 0-2 0 1 1 0 0 0 2 0Z" />
+      </svg>
+      <span class="is-invisible">Open Menu.</span>
+    </button>
+  </div>
+</header>
+
+      <nav
+  class="l-layout__menu l-menu"
+  aria-label="Main Site Links."
+  id="site-menu"
+  hidden
+  tabindex="0">
+  <div class="l-menu__container">
+    <h2 class="l-menu__heading e-heading__2">
+      <a href="/" class="l-menu__home is-invisible">Menu</a>
+    </h2>
+    <button
+      class="l-menu__action e-button e-button--icon js-menu-toggle e-heading__2"
+      id="close-menu">
+      ❎
+      <span class="is-invisible">Close Menu.</span>
+    </button>
+    <ul class="l-menu__primary">
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/guides/">
+            Guides
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/sdc/tools/">
+            Tools
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/sdc/logic/">
+            Logic
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/sdc/decomposition/">
+            Decomposition
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/sdc/legacy/">
+            Legacy code
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/sdc/complexity/">
+            Complexity
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/tracks/servers/">
+            Servers
+          </a>
+        </li>
+    </ul>
+    <ul class="l-menu__secondary">
+        <li class="l-menu__item">
+          <a class="e-heading__3 l-menu__link" href="https://codeyourfuture.io">
+            CYF 👈🏾
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__3 l-menu__link" href="https://codeyourfuture.io/volunteers/">
+            Join Us 👋🏿
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__3 l-menu__link" href="https://codeyourfuture.io/donate/">
+            Support 🫶🏼
+          </a>
+        </li>
+    </ul>
+  </div>
+</nav>
+
+      <main
+        id="main"
+        class="l-layout__main l-main"
+        tabindex="0"
+        data-pagefind-body>
+        
+  
+    <solo-view tabindex="0">
+      
+
+
+      <div slot="header">
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+<header
+  class="c-page-header 
+    c-page-header--solo
+   c-page-header--toc">
+  
+  <div class="c-page-header__container">
+    <div class="c-page-header__breadcrumbs">
+      
+  <nav class="c-breadcrumbs">
+    <ol class="c-breadcrumbs__list">
+      
+        
+        
+          <li class="c-breadcrumbs__item">
+            <a
+              class="c-breadcrumbs__link"
+              href="/sdc/"data-pagefind-filter="module"><span class="c-breadcrumbs__text">Software Development Course</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                width="24px"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="c-breadcrumbs__icon">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+              </svg>
+            </a>
+          </li>
+        
+        
+          <li class="c-breadcrumbs__item">
+            <a
+              class="c-breadcrumbs__link"
+              href="/sdc/complexity/"><span class="c-breadcrumbs__text">Complexity</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                width="24px"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="c-breadcrumbs__icon">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+              </svg>
+            </a>
+          </li>
+      
+        <li class="c-breadcrumbs__item">
+          <a
+            class="c-breadcrumbs__link"
+            href="/sdc/complexity/sprints/1/"data-pagefind-filter="sprint">Sprint 1</a
+          >
+        </li>
+      
+    </ol>
+  </nav>
+  
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Our Courses",
+      "item":"https://curriculum.codeyourfuture.io/"},
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Software Development Course",
+      "item":"https://curriculum.codeyourfuture.io/sdc/"},
+    {
+      "@type": "ListItem",
+      "position":  3 ,
+      "name": "Complexity",
+      "item":"https://curriculum.codeyourfuture.io/sdc/complexity/"},{
+      "@type": "ListItem",
+      "position":  5 ,
+      "name": "Sprint 1",
+      "item":"https://curriculum.codeyourfuture.io/sdc/complexity/sprints/1/"},
+    {
+      "@type": "ListItem",
+      "position":  6 ,
+      "name": "Prep",
+      "item":"https://curriculum.codeyourfuture.io/sdc/complexity/sprints/1/"}
+  ]
+}
+</script>
+
+
+    </div>
+    <h1 class="c-page-header__title e-heading__1"data-pagefind-filter="view"
+        
+      data-pagefind-weight="10">
+      <span class="c-emoji">
+        
+        
+           
+            <time-total class="c-page-header__time"></time-total>
+      
+         
+        </span>
+        <span class="c-page-header__title-text">Prep</span>
+               
+    </h1>
+    
+      
+        <h2 class="c-page-header__description e-heading__3">
+          Examining the cost of computation
+        </h2>
+      
+    
+    
+    
+    
+      <div class="c-page-header__toc " id="toc">
+        <section class="c-toc" aria-label="Table of contents.">
+          <a id="top" class="c-toc__top e-button e-button--icon" href="#toc"
+            >🔖 <span class="is-invisible">back to top</span></a
+          >
+          
+            <nav id="TableOfContents"></nav>
+          
+          
+            <ol>
+              
+                <li>
+                  <a href="#space-memory-consumption" data-pagefind-weight="5"
+                    >Space: Memory consumption</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#time-big-o" data-pagefind-weight="5"
+                    >Time: Big-O</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#worked-example" data-pagefind-weight="5"
+                    >Worked example</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#expensive-operations" data-pagefind-weight="5"
+                    >&#39;Expensive&#39; Operations</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#network-as-a-bottleneck" data-pagefind-weight="5"
+                    >Network as a bottleneck</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#n%2b1" data-pagefind-weight="5"
+                    >n&#43;1</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#memory-cache-locality-and-why-arrays-are-fast" data-pagefind-weight="5"
+                    >Memory, Cache Locality, and why arrays are fast</a
+                  >
+                  📼
+                </li>
+              
+            </ol>
+          
+          
+        </section>
+      </div>
+    
+
+  </div>
+</header>
+</div>
+      <div slot="blocks">
+        
+        
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="space-memory-consumption">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="space-memory-consumption">
+        Memory consumption
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="30 minutes countdown" datetime="P30M">30&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Quantify the memory used by different arrays</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <blockquote><p>📏 There are only so many bits you can fit on a chip.</p>
+</blockquote><p>Computers are real things, not diagrams or mathematical models. This means a computer has a limited physical size and a finite amount of memory. When your program runs, it uses some of this memory to store data.</p>
+<p>Think back to Chapter 7 of <cite>How Your Computer Really Works</cite>.</p>
+<style>
+  .mermaid svg {
+    height: initial;
+  }
+  .mermaid {
+    margin-bottom: var(--theme-spacing--gutter);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .mermaid[data-processed] {
+    opacity: 1;
+  }
+</style>
+<div class="mermaid">graph LR
+CPU -->|️ Fastest and Smallest| Cache -->|Fast and Small| RAM -->|Slow and Big| Disk -->|Slowest and Vast| Network</div>
+
+<script type="module" src="/scripts/mermaid-observer.min.js" defer></script>
+<p>At each stage there are <strong>limits</strong> to <strong>how fast</strong> you can get the data and <strong>how much</strong> data you can store. Given this constraint, we need to consider how much memory our programs consume.</p>
+<h3 id="-simpler-is-smaller">🧘🏽 Simpler is smaller</h3>
+<p>Consider these data structures. Order them from least to most memory needed:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">userIds</span> <span style="color:#f92672">=</span> [<span style="color:#ae81ff">101</span>, <span style="color:#ae81ff">102</span>, ..., <span style="color:#ae81ff">1100</span>]; <span style="color:#75715e">// An array of 1000 numbers
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">userRoles</span> <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#34;Admin&#34;</span>, <span style="color:#e6db74">&#34;Editor&#34;</span>, <span style="color:#e6db74">&#34;Viewer&#34;</span>]; <span style="color:#75715e">//An array of 3 short strings
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">userProfiles</span> <span style="color:#f92672">=</span> [ {<span style="color:#a6e22e">id</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">1</span>, <span style="color:#a6e22e">name</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Farzaneh&#34;</span>, <span style="color:#a6e22e">role</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Admin&#34;</span>, <span style="color:#a6e22e">preferences</span><span style="color:#f92672">:</span> {...}}, {<span style="color:#a6e22e">id</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">2</span>, <span style="color:#a6e22e">name</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Cuneyt&#34;</span>, <span style="color:#a6e22e">role</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Editor&#34;</span>, <span style="color:#a6e22e">preferences</span><span style="color:#f92672">:</span> {...}} ]; <span style="color:#75715e">// An array of 2 complex objects
+</span></span></span></code></pre></div><p>Different kinds of data have different memory footprints. All data is fundamentally stored as bytes. We can form intuition for how much memory a piece of data takes:</p>
+<ul>
+<li>Numbers are typically stored as 8 bytes. In some languages, you can define numbers which take up less space (but can store a smaller range of values).</li>
+<li>Each character in an ASCII string takes 1 byte. More complex characters may take more bytes. The biggest characters take up to 4 bytes.</li>
+<li>The longer a string, the more bytes it consumes.</li>
+<li>Objects and arrays are stored in different ways in different languages. But they need to store <em>at least</em> the information contained within them.
+<ul>
+<li>This means an array of 5 elements will use <em>at least</em> as much memory as the 5 elements would on their own.</li>
+<li>And objects will use <em>at least</em> as much memory as all of the <em>values</em> inside the object (and in some languages, all of the keys as well).</li>
+</ul>
+</li>
+</ul>
+<p>More complicated elements or more properties need more memory. It matters what things are made of. All of this data added up is how much <em>space</em> our program takes.</p>
+<p>It also matters how many <em>steps</em> our program takes. Another way to think of this is how much <em>time</em> it takes to get the answer&hellip;</p>
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="time-big-o">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="time-big-o">
+        Big-O
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="30 minutes countdown" datetime="P30M">30&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Categorise algorithms as O(lg(n)), O(n), O(n^2), O(2^n)</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <blockquote><p><a
+  href="https://en.wikipedia.org/wiki/Big_O_notation">Big-O</a> notation describes how <strong>resource use</strong> grows as the <strong>input</strong> size (n) <strong>grows</strong>.</p>
+</blockquote><style>
+  .mermaid svg {
+    height: initial;
+  }
+  .mermaid {
+    margin-bottom: var(--theme-spacing--gutter);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .mermaid[data-processed] {
+    opacity: 1;
+  }
+</style>
+<div class="mermaid">
+xychart-beta
+title "Big O Notation - Constant to Exponential"
+x-axis "Input size (n)" [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+y-axis "Time/Space (log)" 0 --> 1024
+line [1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+line [0, 1, 1.6, 2, 2.3, 2.6, 2.8, 3, 3.2, 3.3]
+line [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+line [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+line [2, 4, 8, 16, 32, 64, 128, 256, 512, 1024]</div>
+
+<script type="module" src="/scripts/mermaid-observer.min.js" defer></script>
+<section class="c-note c-note--Reading">
+  <h4 class="c-note__title e-heading__4">Reading</span>
+  </h4>
+  <div class="c-note__text "><p>Complete the coursework <a
+  href="https://www.wscubetech.com/resources/dsa/time-complexity">Data Structures and Algorithms: Space and Time Complexity</a>.</p>
+<p>This is in your backlog. You do not need to do it right now, but it might help to. If not, you might like to open it in a tab.</p>
+</div>
+</section>
+
+
+<details><summary>
+<p>😀 <strong>Constant:</strong> The algorithm takes the same amount of time, regardless of the input size.</p>
+</summary>
+<style>
+  .mermaid svg {
+    height: initial;
+  }
+  .mermaid {
+    margin-bottom: var(--theme-spacing--gutter);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .mermaid[data-processed] {
+    opacity: 1;
+  }
+</style>
+<div class="mermaid">
+xychart-beta
+title "O(1) Constant Time"
+x-axis "Input Size" [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+y-axis "Computation Time" 0 --> 10
+line [1, 1, 1, 1, 1, 1, 1, 1, 1, 1]</div>
+
+<script type="module" src="/scripts/mermaid-observer.min.js" defer></script>
+<p>An example is getting the first character of a string. No matter how long the string is, we know where the first character is, and we can get it.</p>
+</details>
+<details>
+<style>
+  .mermaid svg {
+    height: initial;
+  }
+  .mermaid {
+    margin-bottom: var(--theme-spacing--gutter);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .mermaid[data-processed] {
+    opacity: 1;
+  }
+</style>
+<div class="mermaid">xychart-beta
+title "O(log n) Logarithmic Time"
+x-axis [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+y-axis "Computation Time" 0 --> 10
+line [2.3, 3.0, 3.4, 3.7, 3.9, 4.1, 4.2, 4.4, 4.5, 4.6]</div>
+
+<script type="module" src="/scripts/mermaid-observer.min.js" defer></script>
+<summary>
+<p>☺️ <strong>Logarithmic:</strong> The runtime grows proportionally to the <a
+  href="https://www.bbc.co.uk/bitesize/guides/zn3ty9q/revision/1">logarithm</a> of the input size.</summary></p>
+<p>An example is finding a string in a sorted list. Each time we can look in the middle of the list, and halve the number of entries we need to consider next time by looking either in the half before or the half after that element.</p>
+</details>
+<details>
+<style>
+  .mermaid svg {
+    height: initial;
+  }
+  .mermaid {
+    margin-bottom: var(--theme-spacing--gutter);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .mermaid[data-processed] {
+    opacity: 1;
+  }
+</style>
+<div class="mermaid">xychart-beta
+title "O(n) Linear Time"
+x-axis "Input Size" [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+y-axis "Computation Time" 0 --> 10
+line [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]</div>
+
+<script type="module" src="/scripts/mermaid-observer.min.js" defer></script>
+<summary>
+<p>🙂 <strong>Linear:</strong> The runtime grows proportionally to the input size.</summary></p>
+<p>An example is finding an element by value in an un-sorted list. To be sure we find the element, we may need to look through every element in the list and check if it&rsquo;s the one we&rsquo;re looking for.</p>
+<p>If we double the length of the list, we need to check twice as many elements.</p>
+</details>
+<details>
+
+
+<div class="c-columns">
+  
+  
+    <div class="c-columns__column">
+      <style>
+  .mermaid svg {
+    height: initial;
+  }
+  .mermaid {
+    margin-bottom: var(--theme-spacing--gutter);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .mermaid[data-processed] {
+    opacity: 1;
+  }
+</style>
+<div class="mermaid">xychart-beta
+title "O(n²) Quadratic Time"
+x-axis "Input Size" [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+y-axis "Computation Time" 0 --> 10000
+line [100, 400, 900, 1600, 2500, 3600, 4900, 6400, 8100, 10000]</div>
+
+<script type="module" src="/scripts/mermaid-observer.min.js" defer></script>
+
+    </div>
+  
+    <div class="c-columns__column">
+      <table>
+  <thead>
+      <tr>
+          <th>input</th>
+          <th>time</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>1</td>
+          <td>1</td>
+      </tr>
+      <tr>
+          <td>2</td>
+          <td>4</td>
+      </tr>
+      <tr>
+          <td>&hellip;</td>
+          <td>&hellip;</td>
+      </tr>
+      <tr>
+          <td>7</td>
+          <td>49</td>
+      </tr>
+      <tr>
+          <td>8</td>
+          <td>64</td>
+      </tr>
+      <tr>
+          <td>9</td>
+          <td>81</td>
+      </tr>
+      <tr>
+          <td>10</td>
+          <td>100</td>
+      </tr>
+  </tbody>
+</table>
+
+    </div>
+  
+</div>
+
+<p>What does this mean? It means that the time is the square of the input size: n*n.</p>
+<p>An example is finding which elements in an array are present more than once. For each element, we need to check every other element in the same array to see if they&rsquo;re equal. If we double the number of elements in the array, we <em>quadruple</em> the number of checks we need to do.</p>
+<summary>
+<p>😨 <strong>Quadratic:</strong> The runtime grows proportionally to the square of the input size.</summary></p>
+</details>
+<details>
+
+
+<div class="c-columns">
+  
+  
+    <div class="c-columns__column">
+      <style>
+  .mermaid svg {
+    height: initial;
+  }
+  .mermaid {
+    margin-bottom: var(--theme-spacing--gutter);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .mermaid[data-processed] {
+    opacity: 1;
+  }
+</style>
+<div class="mermaid">xychart-beta
+title "O(2ⁿ) Exponential Time"
+x-axis [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+y-axis "Computation Time" 0 --> 1024
+line [2, 4, 8, 16, 32, 64, 128, 256, 512, 1024]</div>
+
+<script type="module" src="/scripts/mermaid-observer.min.js" defer></script>
+
+    </div>
+  
+    <div class="c-columns__column">
+      <table>
+  <thead>
+      <tr>
+          <th>input</th>
+          <th>time</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>1</td>
+          <td>2</td>
+      </tr>
+      <tr>
+          <td>2</td>
+          <td>4</td>
+      </tr>
+      <tr>
+          <td>3</td>
+          <td>8</td>
+      </tr>
+      <tr>
+          <td>4</td>
+          <td>16</td>
+      </tr>
+      <tr>
+          <td>&hellip;</td>
+          <td>&hellip;</td>
+      </tr>
+      <tr>
+          <td>9</td>
+          <td>512</td>
+      </tr>
+      <tr>
+          <td>10</td>
+          <td>1024</td>
+      </tr>
+  </tbody>
+</table>
+
+    </div>
+  
+</div>
+
+Oh where have we seen this sequence of numbers before? ;)
+<summary>
+<p>😱 <strong>Exponential:</strong> The runtime grows exponentially with the input size.</summary></p>
+<p>An example is making a list of every <em>combination</em> of ever element in a list (so if we have <code>[1, 2, 3]</code> and want to make all the combinations: <code>[]</code>, <code>[1]</code>, <code>[2]</code>, <code>[3]</code>, <code>[1, 2]</code>, <code>[1, 3]</code>, <code>[2, 3]</code>, <code>[1, 2, 3]</code>).</p>
+</details>
+<p>You will explore this theory in your backlog, but you will find that you already have a basic understanding of this idea. No really! Let&rsquo;s look at these algorithms in real life:</p>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+    
+    
+
+    
+    
+      
+    
+  
+
+
+  
+    
+    
+
+    
+    
+      
+    
+  
+
+
+  
+    
+    
+
+    
+    
+      
+    
+  
+
+
+  
+    
+    
+
+    
+    
+      
+    
+  
+
+
+  
+    
+    
+
+    
+    
+      
+    
+  
+
+
+
+
+
+
+<div class="c-block">
+  <label-items>
+    <section slot="labels" class="c-labels" aria-label="Labels">
+      
+        <button class="c-label" data-label="constant-time">Constant Time</button>
+      
+        <button class="c-label" data-label="logarithmic-time">Logarithmic Time</button>
+      
+        <button class="c-label" data-label="exponential-time">Exponential Time</button>
+      
+        <button class="c-label" data-label="linear-time">Linear Time</button>
+      
+        <button class="c-label" data-label="quadratic-time">Quadratic Time</button>
+      
+    </section>
+    <h3 slot="heading" class="e-heading__5">Drag the complexity categories onto the correct examples</h3>
+    <section slot="content" aria-label="Items to label">
+      
+        <div
+          data-item="1"
+          data-correct="constant-time">
+          <ul>
+<li>Finding your own parked car in your designated spot. Doesn&rsquo;t matter if the car park has 10 spots or 1000, finding your spot takes the same time. This is like accessing an index in an array.</li>
+</ul>
+
+        </div>
+      
+        <div
+          data-item="2"
+          data-correct="logarithmic-time">
+          <ul>
+<li>Finding a name in a physical dictionary or <strong>sorted</strong> phone book. You open to the middle, decide which half the name is in, and repeat. Each step halves the problem. Adding way more pages doesn&rsquo;t increase the search time proportionally. This is like <a
+  href="logic/sprints/1/prep#bisection">binary search</a>.</li>
+</ul>
+
+        </div>
+      
+        <div
+          data-item="3"
+          data-correct="linear-time">
+          <ul>
+<li>Reading every page of a book in order to find a specific word. If the book doubles in length, it takes roughly double the time. This is like looping over an array.</li>
+</ul>
+
+        </div>
+      
+        <div
+          data-item="4"
+          data-correct="quadratic-time">
+          <ul>
+<li>Everyone at a party shaking hands with everyone else. If you double the number of people (n), the number of handshakes increases much faster (roughly n * n). This is like nesting a loop inside a loop.</li>
+</ul>
+
+        </div>
+      
+        <div
+          data-item="5"
+          data-correct="exponential-time">
+          <ul>
+<li>Trying every possible combination to unlock a password. Each extra character dramatically increases the possibilities.</li>
+</ul>
+
+        </div>
+      
+    </section>
+    <section aria-label="Feedback" slot="feedback"></section>
+  </label-items>
+</div>
+
+<script src="/scripts/label-items.min.js" defer></script>
+
+<section class="c-note c-note--tip">
+    <h4 class="c-note__title">💡Tip</h4>
+    <div class="c-note__text"><p>Big-O notation also describes space complexity (how memory use grows). Sometimes an algorithm&rsquo;s time complexity is different from its space complexity. We have focused on time here, but you&rsquo;ll meet space complexity analysis in the assigned reading.</p></div>
+  </section><p>Big-O notation is focused on the <em>trend</em> of growth, not the exact growth.</p>
+<p>Think about strings: one character may take up one byte or four. If we double the length of the string, we don&rsquo;t check which characters are in the string. We just think about the <strong>trend</strong>. The string will take <em>about</em> twice as much space. If the string only has four-byte characters, and we add one-byte characters, the string is <em>still</em> growing linearly, even though it may not take <em>exactly</em> double the space.</p>
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="worked-example">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="worked-example">
+        Worked example: Duplicate Encoder
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="90 minutes countdown" datetime="P90M">90&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+    <div class="c-block__content c-copy">
+      <p>Let&rsquo;s consider this problem:</p>
+<section class="c-note c-note--exercise">
+  <h4 class="c-note__title e-heading__4">✍️exercise</span>
+  </h4>
+  <div class="c-note__text "><p>Convert a string to a new string. The new string should:</p>
+<ul>
+<li>Replace each character which occurs exactly once in the original string with a <code>1</code> character.</li>
+<li>Replace each character which occurs more than once in the original string with a <code>*</code> character.</li>
+</ul>
+<p>Ignore capitalization when determining if a character is a duplicate.</p>
+<p>Examples</p>
+<table>
+  <thead>
+      <tr>
+          <th>Input</th>
+          <th>Output</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>&quot;din&quot;</code></td>
+          <td><code>&quot;```&quot;</code></td>
+      </tr>
+      <tr>
+          <td><code>&quot;recede&quot;</code></td>
+          <td><code>&quot;1*1*1*&quot;</code></td>
+      </tr>
+      <tr>
+          <td><code>&quot;Success&quot;</code></td>
+          <td><code>&quot;*1**1**&quot;</code></td>
+      </tr>
+      <tr>
+          <td><code>&quot;11*2&quot;</code></td>
+          <td><code>&quot;**11&quot;</code></td>
+      </tr>
+  </tbody>
+</table>
+<pre tabindex="0"><code></code></pre></div>
+</section>
+
+
+<section class="c-note c-note--warning">
+    <h4 class="c-note__title">⚠️Warning</h4>
+    <div class="c-note__text"><p>First, try solving this exercise yourself.</p></div>
+  </section><p>Here are three sample solutions we will compare:</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">duplicateEncode</span>(<span style="color:#a6e22e">mixedCaseWord</span>){
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">lowerCaseWord</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">mixedCaseWord</span>.<span style="color:#a6e22e">toLowerCase</span>();
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">result</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">const</span> <span style="color:#66d9ef">char</span> <span style="color:#66d9ef">of</span> <span style="color:#a6e22e">lowerCaseWord</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">lowerCaseWord</span>.<span style="color:#a6e22e">indexOf</span>(<span style="color:#66d9ef">char</span>) <span style="color:#f92672">===</span> <span style="color:#a6e22e">lowerCaseWord</span>.<span style="color:#a6e22e">lastIndexOf</span>(<span style="color:#66d9ef">char</span>)) {
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">result</span> <span style="color:#f92672">+=</span> <span style="color:#e6db74">&#34;1&#34;</span>;
+</span></span><span style="display:flex;"><span>    } <span style="color:#66d9ef">else</span> {
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">result</span> <span style="color:#f92672">+=</span> <span style="color:#e6db74">&#34;*&#34;</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">result</span>;
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">duplicateEncode</span>(<span style="color:#a6e22e">word</span>){
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">chars</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">word</span>.<span style="color:#a6e22e">split</span>(<span style="color:#e6db74">&#34;&#34;</span>);
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">result</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">const</span> <span style="color:#66d9ef">char</span> <span style="color:#66d9ef">of</span> <span style="color:#a6e22e">chars</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">charInCases</span> <span style="color:#f92672">=</span> [<span style="color:#66d9ef">char</span>.<span style="color:#a6e22e">toLowerCase</span>(), <span style="color:#66d9ef">char</span>.<span style="color:#a6e22e">toUpperCase</span>()];
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">chars</span>.<span style="color:#a6e22e">findIndex</span>((<span style="color:#a6e22e">c</span>) =&gt; <span style="color:#a6e22e">charInCases</span>.<span style="color:#a6e22e">includes</span>(<span style="color:#a6e22e">c</span>)) <span style="color:#f92672">===</span> <span style="color:#a6e22e">chars</span>.<span style="color:#a6e22e">findLastIndex</span>((<span style="color:#a6e22e">c</span>) =&gt; <span style="color:#a6e22e">charInCases</span>.<span style="color:#a6e22e">includes</span>(<span style="color:#a6e22e">c</span>))) {
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">result</span> <span style="color:#f92672">+=</span> <span style="color:#e6db74">&#34;1&#34;</span>;
+</span></span><span style="display:flex;"><span>    } <span style="color:#66d9ef">else</span> {
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">result</span> <span style="color:#f92672">+=</span> <span style="color:#e6db74">&#34;*&#34;</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">result</span>;
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">duplicateEncode</span>(<span style="color:#a6e22e">word</span>){
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">occurrences</span> <span style="color:#f92672">=</span> {};
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">const</span> <span style="color:#66d9ef">char</span> <span style="color:#66d9ef">of</span> <span style="color:#a6e22e">word</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">normalisedChar</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">char</span>.<span style="color:#a6e22e">toLowerCase</span>();
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">occurrences</span>[<span style="color:#a6e22e">normalisedChar</span>] <span style="color:#f92672">=</span> (<span style="color:#a6e22e">occurrences</span>[<span style="color:#a6e22e">normalisedChar</span>] <span style="color:#f92672">||</span> <span style="color:#ae81ff">0</span>) <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>;
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">out</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">const</span> <span style="color:#66d9ef">char</span> <span style="color:#66d9ef">of</span> <span style="color:#a6e22e">word</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">out</span> <span style="color:#f92672">+=</span> (<span style="color:#a6e22e">occurrences</span>[<span style="color:#66d9ef">char</span>.<span style="color:#a6e22e">toLowerCase</span>()] <span style="color:#f92672">===</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">?</span> <span style="color:#e6db74">&#34;1&#34;</span> <span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;*&#34;</span>);
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">out</span>;
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="comparing-the-approaches">Comparing the approaches</h3>
+<p>Approaches 1 and 2 are very similar. In terms of time and memory complexity, they are the same as each other. But the second uses less memory than the first. The first one keeps around an entire copy of <code>word</code> (converted to lower case) for the whole function. The second one only converts each character in <code>word</code> to lower case one at a time. It&rsquo;s important to remember that big-O complexity doesn&rsquo;t tell you how much time or memory an approach takes, only fast how they grow.</p>
+<p>Approaches 2 and 3 are quite different. Let&rsquo;s analyse them each for time complexity:</p>
+<h4 id="approach-2">Approach 2</h4>
+<ul>
+<li>Approach 2 splits <code>word</code> into an array (line 2). If we say the size of the word is <code>n</code>, splitting a string of that length is <code>O(n)</code>.</li>
+<li>Line 4 has a <code>for</code>-loop over each character in the word. A <code>for</code>-loop on its own is <code>O(n)</code>.</li>
+<li>Line 5 calls <code>char.toLowerCase()</code> - this is an <code>O(1)</code> operation - changing the case of one character takes constant time. It also calls <code>char.toUpperCase()</code> - also an <code>O(1)</code> operation. Two <code>O(1)</code> operations are still <code>O(1)</code>.</li>
+<li>Line 6 calls <code>chars.findIndex</code> - this is an <code>O(n)</code> operation - it may have to look through the whole string, comparing every character to see if it&rsquo;s the one we&rsquo;re looking for. Because we have an <code>O(n)</code> operation (the <code>chars.findIndex</code> call) inside an <code>O(n)</code> operation (the for loop), this makes the function at least <code>O(n^2)</code>.</li>
+<li>Line 6 also calls <code>chars.lastIndexOf</code> - this is <em>also</em> an <code>O(n)</code> operation for the same reason. But it doesn&rsquo;t change the complexity of our function - doing an <code>O(n)</code> operation <em>twice</em> is still <code>O(n)</code> - we ignore constant factors. This is different from doing an <code>O(n)</code> operation inside a for loop (where do we do an <code>O(n)</code> operation <em>for each <code>n</code></em> - making it <code>O(n^2)</code>).</li>
+<li>Line 6 <em>also</em> calls <code>charInCases.includes</code> - this is generally an <code>O(n)</code> operation, but because we know the array has a constant size (it always contains exactly two elements, regardless of the input size), in this instance it&rsquo;s an <code>O(1)</code> operation. It&rsquo;s the same as if we&rsquo;d written <code>chars.findIndex((c) =&gt; c === lowerCaseChar || c === upperCaseChar)</code>. Remember, the <code>n</code> in <code>O(n)</code> refers to the input size, and here the input size is a constant - it doesn&rsquo;t depend on <code>n</code>.</li>
+</ul>
+<p>Because the worst thing we&rsquo;ve seen is <code>O(n^2)</code> (an <code>O(n)</code> operation inside a <code>for</code> loop), approach 2 takes <code>O(n^2)</code> time.</p>
+<h4 id="approach-3">Approach 3</h4>
+<ul>
+<li>Approach 3 has a <code>for</code>-loop over each character in the word (line 3). This is <code>O(n)</code>.</li>
+<li>Each operation inside the <code>for</code>-loop is <code>O(1)</code> (converting one character to lower case, looking up a value in an object, adding two numbers, inserting a value in an object). So this whole loop is <code>O(n)</code>.</li>
+<li>We have a second <code>for</code>-loop over each character in the word - <code>O(n)</code>.</li>
+<li>Each operation inside the <code>for</code>-loop is <code>O(1)</code> (converting one character to lower case, looking up a value in an object, a ternary operator, and appending one character to a string). So this whole loop is <code>O(n)</code>.</li>
+</ul>
+<p>Because the worst thing we&rsquo;ve seen is <code>O(n)</code> (even though there were two <code>O(n)</code> loops), approach 3 takes <code>O(n)</code> time.</p>
+<p>This technique is called 
+<tool-tip-container tabindex="0"><strong class="tooltip__trigger" id="trigger__precomputing">precomputing</strong><span class="tooltip__emoji">🧶</span><tool-tip role="tooltip" aria-labelledby="precomputing"><span class="tooltip__title e-heading__2"><span class="tooltip__emoji">🧶</span> Precomputing</span><span class="tooltip__content">Precomputing is when we do some work in advance which we can use to avoid needing to do it later.<br /><br />Here we counted the occurrences of each character <em>before</em> the loop (which was <code>O(n)</code>) rather than needing to search through the string for each character (which would&rsquo;ve been <code>O(n^2)</code>).</span></tool-tip></tool-tip-container>
+. We will learn more about it later.</p>
+<h3 id="which-is-better">Which is better?</h3>
+<p>Approach 3 has a better time complexity than approach 2. As longer input is given to the function, approach 3 will be much faster than approach 2.</p>
+<p>Speed is not the only concern, however!</p>
+<p>Approach 3 uses more memory than approach 2 (though not in terms of memory complexity), because it stores a whole extra object.</p>
+<p>Which approach do you think is easiest to read? Ease of reading is an important concern to consider in code.</p>
+<p>If we know our function will only take small strings as input, the time and memory use of the functions probably doesn&rsquo;t matter much, and we should prefer the easiest code to read, maintain, and modify. We can still make small choices to speed things up (like choosing approach 2 over approach 1). But we should only make our code harder to read if we know that we&rsquo;ll have a problem if we don&rsquo;t.</p>
+
+    </div>
+    
+    
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="expensive-operations">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="expensive-operations">
+        &#34;Expensive&#34; Operations
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="30 minutes countdown" datetime="P30M">30&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Explain what the significant/expensive operations for a particular algorithm are likely to be</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Quantify the number of significant operations taken by a particular algorithm</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <p>Let&rsquo;s think about Purple Forest from the <a
+  href="https://github.com/CodeYourFuture/Module-Legacy-Code/">Legacy Code</a> module.</p>
+<p>When we build the timeline of blooms on the homepage, we call an endpoint <code>/home</code>. This returns an array of objects, blooms, produced by people we follow, plus our own blooms, sorted by timestamp. We stuff this in our state object (and cache <em>that</em> in our local storage).</p>
+<p>There are many different ways we could get and show this information in our frontend. Some ways are 
+<tool-tip-container tabindex="0"><strong class="tooltip__trigger" id="trigger__better">better</strong><span class="tooltip__emoji">🧶</span><tool-tip role="tooltip" aria-labelledby="better"><span class="tooltip__title e-heading__2"><span class="tooltip__emoji">🧶</span> better</span><span class="tooltip__content">Here we are defining better as faster. We might at other times define better as <em>simpler</em>, <em>clearer</em>, or <em>safer</em>.</span></tool-tip></tool-tip-container>
+ than others.</p>
+<p>What if we had tried any of the following strategies:</p>
+<h4 id="1-get-all-blooms-then-filter">1. Get ALL Blooms, then Filter</h4>
+<ol>
+<li>Request all the blooms in the database</li>
+<li>Request a list of all the people we follow</li>
+<li>Filter all the blooms by the people we follow, plus our own name</li>
+<li>Sort by timestamp</li>
+<li>Display blooms</li>
+</ol>
+<h4 id="2-loop-network-requests">2. Loop Network Requests</h4>
+<ol>
+<li>Request a list of all the people we follow</li>
+<li>For each person we follow, request their blooms</li>
+<li>Request our own blooms</li>
+<li>Merge all the arrays</li>
+<li>Sort by timestamp</li>
+<li>Display blooms</li>
+</ol>
+<h4 id="3-get-all-blooms--people-then-loop--filter">3. Get ALL Blooms &amp; People, then Loop &amp; Filter</h4>
+<ol>
+<li>Request all the blooms in the database</li>
+<li>Request all the people in the database</li>
+<li>Request a list of all the people we follow</li>
+<li>For each bloom.sender, loop over all the people and check if they are in our &ldquo;following&rdquo; list</li>
+<li>Sort by timestamp</li>
+<li>Display blooms</li>
+</ol>
+<p>Given what we&rsquo;ve just thought about, how efficient are these programs? Which is going to be fastest or slowest? Which is going to use the most or least memory? How could you make them more efficient? Write your ideas down in your notebook.</p>
+<p>Our end state is always to show the latest blooms that meet our criteria. How we produce that list determines how quickly our user gets their page. This is very very important. After just <strong>three seconds</strong>, half of all your users have given up and left.</p>
+<p>The Purple Forest application does not do most of this work on the front end, but it does still do it somewhere. (We can make our work cheaper, but never free.) The application uses common strategies to minimise:</p>
+<ol>
+<li>Steps taken to find and sort the data</li>
+<li>Quantity of data requested</li>
+<li>Number of network calls</li>
+</ol>
+<p>This is because some operations are more 
+<tool-tip-container tabindex="0"><strong class="tooltip__trigger" id="trigger__expensive">expensive</strong><span class="tooltip__emoji">🧶</span><tool-tip role="tooltip" aria-labelledby="expensive"><span class="tooltip__title e-heading__2"><span class="tooltip__emoji">🧶</span> expensive</span><span class="tooltip__content">Expensive operations consume a lot of computational resources like CPU time, memory, or disk I/O.</span></tool-tip></tool-tip-container>
+ than others.</p>
+<p>The <em>order</em> also matters. In all of the above strategies, we filter the blooms <em>before</em> sorting them. Sorting isn&rsquo;t a constant-time operation, so it takes more time to sort more data. If in the first strategy we had sorted <em>all</em> of the blooms before we filtered down to the just the ones we cared about, we would have spent a lot more time sorting blooms we don&rsquo;t care about.</p>
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="network-as-a-bottleneck">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="network-as-a-bottleneck">
+        Network as a bottleneck
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="15 minutes countdown" datetime="P15M">15&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Explain limitations of needing to make network calls (e.g. from a backend to a database)</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <p>We first thought about latency when we learned about <code>fetch</code>, remember:</p>
+<blockquote><p>💡 Network latency is travel time.</p>
+</blockquote><p>Network calls are <strong>slow</strong>. Even the shortest round trip on a local area network takes around 500 microseconds (µs) or 500,000 nanoseconds (ns). This is <em>thousands</em> of times slower than accessing RAM (~100 ns) and several times slower than a fast local SSD (~16-150 µs).</p>
+<p>The further data must travel, the longer it takes. This is why we try to store data close to where we need it. A round trip between continents, like the US and Europe, can easily take 150 milliseconds (ms) or 150,000,000 ns. This is orders of magnitude slower than any local operation.</p>
+<p>Thinking back to the strategies we mooted in <a
+  href="#expensive-operations">Expensive Operations</a>, there are two main network related costs:</p>
+<h3 id="-fetching-too-much-data">🦥 Fetching Too Much Data</h3>
+<p>In design one and three, we just get everything and sort it out in the browser. This sends too much data over the network! Every single byte of data we request extends the time we have to wait. Once we have all this data, we have to waste yet more time and energy sorting through items we knew we could never need or use.</p>
+<h3 id="-making-too-many-requests">🦥 Making Too Many Requests</h3>
+<p>In the second design, we make network calls inside a loop. Each network call in the loop adds latency. If we follow 50 people, we wait for the network 50+ times! Another way to say this is that this is an &ldquo;N+1 API problem&rdquo;.</p>
+<h3 id="-too-much-too-often">🤑 Too much, too often</h3>
+<p>Both looping network calls and fetching/processing huge amounts of data are examples of overusing a limited resource. They make the user wait.</p>
+<blockquote><p>Remember: after just three seconds of waiting, half of all your users have given up and left.</p>
+</blockquote><p>But there&rsquo;s a further problem with making too many requests or asking for too much data. Let&rsquo;s think again about our &ldquo;N+1&rdquo; problem.</p>
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="n&#43;1">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="n&#43;1">
+        N&#43;1 Query Problem
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="60 minutes countdown" datetime="P60M">60&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Define the n+1 query problem</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />List effective strategies to reduce database queries</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <p>You fetch data from an endpoint, but where does the endpoint get its data? Usually from a database, by sending a query.</p>
+<blockquote><p>💡 Databases also take time to find data</p>
+</blockquote><p><a
+  href="https://learn.microsoft.com/en-us/sql/relational-databases/sql-server-storage-guide?view=sql-server-ver16#disk-io">Database calls</a> are expensive. When our backend needs data from the database, it sends a query. If we&rsquo;re not careful, we can end up making many more queries than necessary.</p>
+<h3 id="-purple-forest-profile-picture">🟣 Purple Forest Profile Picture</h3>
+<p>We are building a new feature of &ldquo;user profile picture&rdquo;. We already show blooms from people you follow. Now each bloom also needs to show the author&rsquo;s name and profile picture.</p>
+<p>Let&rsquo;s say we are using a SQL database. A simple, but
+inefficient, way to fetch this data from the database might be:</p>
+<ol>
+<li>Get the IDs of the 50 people you follow: <code>SELECT user_id FROM follows WHERE follower_id = current_user_id (1 query)</code></li>
+<li>Get the latest 10 bloom IDs for each of those 50 people:<code> SELECT bloom_id FROM blooms WHERE author_id = ? ORDER BY timestamp DESC LIMIT 10</code> (50 separate queries, one for each followed user)</li>
+<li>Now we have, say, 100 unique bloom IDs. For each of those 100 blooms, get the bloom content: <code>SELECT * FROM blooms WHERE bloom_id = ?</code> (100 separate queries!)</li>
+<li>And for each of those 100 blooms, get the author&rsquo;s details: <code>SELECT name, avatar_url FROM users WHERE user_id = ?</code></li>
+</ol>
+<p>This pattern: one initial query followed by N queries inside a loop is the &ldquo;N+1 Query Problem&rdquo;. In this example, it&rsquo;s more like 1 + N + M + P queries! It results in hundreds of separate trips to the database.</p>
+<section class="c-note c-note--activity">
+  <h4 class="c-note__title e-heading__4">🕹️Draft this feature</span>
+  </h4>
+  <div class="c-note__text "><ol>
+<li>In your notebook, plan how <em>you</em> would build this feature in your local copy of Purple Forest.</li>
+<li>Now build out the feature from the back end to the front. Don&rsquo;t worry about the layout, just focus on finding the most efficient route through the system.</li>
+</ol>
+</div>
+</section>
+
+
+<h3 id="-flooding-and-performance">🌊 Flooding and Performance</h3>
+<p>Even if each individual database query is reasonably fast. Making hundreds of them back-to-back has serious consequences.</p>
+<p>We&rsquo;ve already seen that every query adds network delay and processing time. This is the latency problem we considered before. But there&rsquo;s also a problem with the number of queries. There are only so many queries you can fit in a queue. Sending a burst of hundreds of simple queries can <em>overwhelm</em> the database server. This is sometimes called &ldquo;flooding&rdquo; the database.</p>
+<p>The server has to handle each request individually, consuming resources (CPU, memory, connections). If many users trigger this N+1 pattern at once, the database can slow down for everyone, or even fall over entirely.</p>
+<p>This N+1 problem can happen with any database interaction if you loop and query individually. Understanding this helps you write code that doesn&rsquo;t accidentally overload the database.</p>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  <multiple-choice data-correct="1" class="c-quiz">
+    <form slot="quiz">
+      <fieldset class="c-quiz__fieldset" tabindex="0">
+        <legend class="c-quiz__legend">🤔 What is the N+1 Query Problem?</legend>
+        <ol class="c-quiz__list"><li class="c-quiz__answer">
+            <label
+              class="c-quiz__label"
+              ><input
+              class="c-quiz__input"
+              type="radio"
+              name="answer"
+              value="0" />
+            Fetching N items plus 1 extra backup item.</label
+            >
+          </li><li class="c-quiz__answer">
+            <label
+              class="c-quiz__label"
+              ><input
+              class="c-quiz__input"
+              type="radio"
+              name="answer"
+              value="1" />
+            Making 1 query to get a list, then N separate queries to get details for each item in the list.</label
+            >
+          </li><li class="c-quiz__answer">
+            <label
+              class="c-quiz__label"
+              ><input
+              class="c-quiz__input"
+              type="radio"
+              name="answer"
+              value="2" />
+            A query that is N times too complex.</label
+            >
+          </li><li class="c-quiz__answer">
+            <label
+              class="c-quiz__label"
+              ><input
+              class="c-quiz__input"
+              type="radio"
+              name="answer"
+              value="3" />
+            Trying N+1 different network endpoints.</label
+            >
+          </li></ol>
+      </fieldset>
+    </form>
+    <section class="c-quiz__feedback" slot="feedback" aria-live="polite"><p class="c-quiz__remark" data-index="0" >💬 No, but flip this and try again?</p><p class="c-quiz__remark" data-index="1" >💬 Right! That&rsquo;s a clear description.</p><p class="c-quiz__remark" data-index="2" >💬 No, this is so vague it describes nothing.</p><p class="c-quiz__remark" data-index="3" >💬 No, it&rsquo;s not about network endpoints.</p></section>
+  </multiple-choice>
+ 
+  
+  <script src="/scripts/multiple-choice.min.js" defer></script>
+
+
+<h3 id="-what-to-do-instead">📦 What to do instead</h3>
+<p>The real <code>/home </code>endpoint avoids these problems by using efficient strategies:</p>
+<p><strong>Batching</strong>: Ask for many items in one request. &ldquo;get blooms for users Daniel, Ali, and Sally&rdquo;.<br>
+<strong>Caching</strong>: Store results so you don&rsquo;t have to ask the network again. Ask for only new changes in future.<br>
+<strong>Pagination</strong>: Ask for only the first page of results. Load more later if the user scrolls or clicks &ldquo;next&rdquo;.</p>
+<p>All these are ways to save the data we need, close to where we need it. But each strategy also has downsides.</p>
+<ul>
+<li>Batching may reduce our responsiveness. It will probably take longer to fetch three users&rsquo; blooms than one user&rsquo;s blooms. If we&rsquo;d just asked for one user&rsquo;s blooms, then the next user&rsquo;s, we probably probably could&rsquo;ve showed the user <em>some</em> results sooner. Batching forces us to wait for <em>all</em> of the results before we show anything.</li>
+<li>Caching may result in stale results. If we store a user&rsquo;s most recent blooms, and when they re-visit the page we don&rsquo;t ask the database for the most recent blooms, it&rsquo;s possible we&rsquo;ll return old results missing the newest blooms.</li>
+<li>Pagination means the user doesn&rsquo;t have complete results up-front. If they want to ask a question like &ldquo;has this user ever bloomed the word cheese&rdquo;, they may need to keep scrolling and searching to find the answer (with each scroll requiring a separate network call and database lookup).</li>
+</ul>
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+
+  
+
+  
+  
+
+  
+    
+    
+  
+
+
+
+
+
+
+
+
+  
+<section
+  class="c-block c-block--youtube"
+  aria-labelledby="memory-cache-locality-and-why-arrays-are-fast">
+  
+    <h2
+      class="c-block__title e-heading__2 is-invisible"
+      id="memory-cache-locality-and-why-arrays-are-fast">
+      Youtube:
+      <a href="https://www.youtube.com/watch?v=247cXLkYt2M">Memory, Cache Locality, and why arrays are fast</a>
+    </h2>
+  
+  <div class="c-block__content">
+    <youtube-player data-src="https://www.youtube.com/watch?v=247cXLkYt2M"></youtube-player>
+  </div>
+</section>
+
+
+
+        
+      </div>
+      <nav slot="nav">
+        <a href="#" class="e-button c-solo-view__back">&larr; Back</a>
+        <a href="#" class="e-button c-solo-view__next">Next &rarr;</a>
+      </nav>
+    </solo-view>
+    
+    <script src="/scripts/solo-view.min.js" defer></script>
+    
+    <script src="/scripts/time-total.min.js" defer></script>
+  
+
+
+        
+
+  <footer class="c-page-footer">
+    <nav class="c-page-footer__nav">
+      
+      
+      <span class="c-page-footer__this">Prep</span>
+      
+        →<a
+          class="c-page-footer__next c-page-footer__link e-link"
+          href="/sdc/complexity/sprints/1/backlog/"
+          >Backlog</a
+        >
+      
+    </nav>
+  </footer>
+
+
+      </main><footer class="l-layout__footer l-footer">
+  <a
+    class="l-footer__github e-button e-button--icon"
+    href="https://github.com/CodeYourFuture/curriculum/">
+    <svg
+  focusable="false"
+  class="e-button__icon"
+  role="presentation"
+  width="96"
+  viewbox="0 0 98 96"
+  xmlns="http://www.w3.org/2000/svg">
+  <path
+    fill-rule="evenodd"
+    clip-rule="evenodd"
+    d="M48.854 0C21.839 0 0 22 0 49.217c0 21.756 13.993 40.172 33.405 46.69 2.427.49 3.316-1.059 3.316-2.362 0-1.141-.08-5.052-.08-9.127-13.59 2.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015 4.934.326 7.523 5.052 7.523 5.052 4.367 7.496 11.404 5.378 14.235 4.074.404-3.178 1.699-5.378 3.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283 0-5.378 1.94-9.778 5.014-13.2-.485-1.222-2.184-6.275.486-13.038 0 0 4.125-1.304 13.426 5.052a46.97 46.97 0 0 1 12.214-1.63c4.125 0 8.33.571 12.213 1.63 9.302-6.356 13.427-5.052 13.427-5.052 2.67 6.763.97 11.816.485 13.038 3.155 3.422 5.015 7.822 5.015 13.2 0 18.905-11.404 23.06-22.324 24.283 1.78 1.548 3.316 4.481 3.316 9.126 0 6.6-.08 11.897-.08 13.526 0 1.304.89 2.853 3.316 2.364 19.412-6.52 33.405-24.935 33.405-46.691C97.707 22 75.788 0 48.854 0z"
+    fill="currentColor" />
+</svg>
+
+    <span class="is-invisible">Find us on GitHub</span>
+  </a>
+  <p class="l-footer__impressum e-heading__6">
+    This
+    <a href="https://github.com/CodeYourFuture/curriculum/">free and open source programme</a>
+    is a project of
+    <a href="https://codeyourfuture.io/">Code Your Future</a>
+    <br />
+    Creative Commons Attribution-ShareAlike 4.0
+  </p>
+  <dark-mode class="l-footer__mode"
+    ><button
+      slot="button"
+      id="mode-toggle"
+      type="button"
+      class="e-button e__button--toggle e-button--icon">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="e-icon e__button__icon e-icon--moon">
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
+      </svg>
+      <span class="is-invisible">Toggle between light and dark mode</span>
+    </button></dark-mode
+  >
+</footer>
+
+
+
+<script src="/scripts/app.min.js" defer></script>
+
+<script src="/scripts/youtube-player.min.js" defer></script>
+
+<script src="/scripts/tab-panels.min.js" type="module" defer></script>
+
+<script src="/scripts/dark-mode.min.js"></script>
+
+<script src="/scripts/alert-message.min.js" defer></script>
+
+
+
+
+
+
+
+</div>
+  </body>
+</html>

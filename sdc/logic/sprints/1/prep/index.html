@@ -1,0 +1,2872 @@
+<!DOCTYPE html>
+
+
+
+
+<html lang="en" class="p-prep"><head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  <title data-pagefind-meta="title">
+    
+      Software Development Course 
+    
+      Logic 
+    
+      Sprint 1 
+    
+    Prep
+  </title>
+  
+    <meta
+      name="description"
+      content=" CYF Courses: Mental models for logical reasoning" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+  <style>
+    body,
+    html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      animation: fade-in 300ms;
+    }
+    @keyframes fade-in {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  </style>
+  
+  
+  <link
+    rel="stylesheet"
+    href="/bundled.min.b6a4520237559385268d63a9daa81d96.css"
+    media="print"
+    onload="this.media='all'" />
+
+  
+  
+    
+    
+    <link
+      rel="stylesheet"
+      href="/custom.min.8ded6a1a88bc7cc98bdef8dc33d15f3a.css"
+      media="print"
+      onload="this.media='all'" />
+  
+
+
+  <noscript>
+    <link rel="stylesheet" href="/bundled.min.b6a4520237559385268d63a9daa81d96.css" />
+  </noscript>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&amp;display=swap"
+    rel="stylesheet"
+    media="print"
+    onload="this.media='all'" />
+
+  <link rel="shortcut icon" href="https://curriculum.codeyourfuture.io/favicon.ico" />
+  <meta name="theme-color" content="#e3ddeef2" />
+  <link rel="manifest" href="https://curriculum.codeyourfuture.io/manifest.json" />
+</head>
+<body>
+    <a class="c-skip-link e-button" id="skip-link" href="#main">Skip to main</a>
+    <div class="l-layout">
+      <header class="l-layout__header l-header">
+  <div class="l-header__container">
+    <h1 class="l-header__heading e-heading__6" data-pagefind-ignore>
+      <a class="l-header__home" href="/"
+        ><span class="is-invisible"
+          >sdc Prep CYF Courses</span
+        >
+        <span class="is-none--lt-container">
+          <svg
+          xmlns="http://www.w3.org/2000/svg"
+          title="Code Your Future."
+          viewBox="0 0 621.64 155.81"
+          width="140px"
+          focusable="false"
+          role="img">
+          <path
+            fill="var(--theme-color--brand)"
+            d="M103.37 56.51C96.91 63.64 87.03 69.9 74.6 69.9c-20.14 0-33.52-12.91-33.52-34.09C41.08 13.97 57.5.87 69.94.87c9.5 0 13.77 5.32 14.63 6.46l2.18-5.27h14.91v27h-17c-.28-6.18-3.32-12-10.06-12s-11.3 8.45-11.3 18.8c0 9.4 4.84 17.86 13.86 17.86 8 0 14.24-8.36 15.1-9.31Zm2.88-21.85C106.25 14.15 119.92 0 139.58 0c23.26 0 34.09 14 34.09 35.32s-12 34.57-33.43 34.57c-19.88 0-33.99-11.49-33.99-35.23Zm43.68.66c0-11.49-3.13-20.7-10.45-20.7-5.79-.09-9.78 8.26-9.78 20 0 12.44 4.47 20.32 10.54 20.32s9.65-7.88 9.65-19.62Zm27.49 20.23h5.89V14.34h-5.89V1.8h29c23 0 36.09 14.15 36.09 32.29 0 21.65-13.11 34.09-36.47 34.09h-28.62Zm29 0c10.03-.19 14.21-9.59 14.21-21.49 0-10.16-4.18-19.75-14.25-19.75h-3.61v41.24ZM303.04 1.8v21h-16.43v-8.46h-15.19v13.1h18v12.62h-18v15.49h15.19v-8.83h16.43v21.46h-57.26V55.55h6V14.34h-6V1.8Z" />
+          <path
+            fill="var(--theme-color--ink)"
+            d="M274.42 87.82v21h-16.8v-8.45h-14.37v16.52h18v12.63h-18v12.04h9.68v12.63h-35.29v-12.63h5.89v-41.21h-5.89V87.82Zm33.04 0v12.24h-5.12v20.51c0 15.28 3.41 18.51 9.49 18.51 5.79 0 9.59-2.28 9.59-18.61v-20.12h-5.17V87.82h28.11v12.24h-5.11v23.07c0 22.51-9.4 32.67-27.25 32.67-19.18-.57-29.43-10.64-29.43-32.19v-23.45h-5.32V87.82Zm103.5 24.69h-14v-12.16h-8v41.21h7.88v12.63h-35.26v-12.63h7.79v-41.21h-8.12v12.16h-14V87.82h63.71ZM444 87.82v12.24h-5.13v20.51c0 15.28 3.42 18.51 9.5 18.51 5.79 0 9.59-2.28 9.59-18.61v-20.12h-5.13V87.82h28.11v12.24h-5.13v23.07c0 22.51-9.4 32.67-27.25 32.67-19.18-.57-29.44-10.64-29.44-32.19v-23.45h-5.32V87.82Zm71.59 0c22 0 26.3 8.73 26.3 19.56 0 7.4-5.88 12.63-13.76 13.77 6.55.95 12.44 6.64 12.44 13.48 0 4.08.57 6.46 2.27 6.46 1.43 0 2.19-1.14 2.19-3v-3.13h6.36v5.22c0 7.88-3.32 15.19-13.86 15.19-12.44 0-18.42-6.55-18.42-17.66 0-8.64-1.05-10.73-9.5-10.73v14.68h5.79v12.53h-30.67v-12.53h5.32v-41.4h-5.32V87.82Zm-6 28.48h4.27c5.51 0 9.12-2.65 9.12-7.69 0-5.6-3.13-8.45-8.64-8.45h-4.75Zm102.38-28.48v21h-16.43v-8.45h-15.19v13.09h18v12.6h-18v15.5h15.19v-8.83h16.43v21.46h-57.26v-12.63h6v-41.21h-6V87.82Zm-227.72-56.1c.38-1.9 2.47-5.89 3.51-8.17l5.22-9.59h-5.22V1.8h25.54v12.16h-5.05l-17.62 30.86v11h5.32v12.36h-30.39V55.83h5.41v-11.2l-18.42-30.67h-4.65V1.8h32.47v12.16h-4.93l5.5 10.1c.57 1.81 2.57 6.08 2.95 7.7Zm29.54 2.94C413.79 14.15 427.47 0 447.12 0c23.27 0 34.09 14 34.09 35.32s-12 34.57-33.42 34.57c-19.85 0-34-11.49-34-35.23Zm43.68.66c0-11.49-3.13-20.7-10.44-20.7-5.79-.09-9.78 8.26-9.78 20 0 12.44 4.46 20.32 10.54 20.32s9.68-7.88 9.68-19.62ZM514.25 1.8v12.26h-5.13v20.5c0 15.29 3.42 18.52 9.5 18.52 5.79 0 9.59-2.28 9.59-18.61V14.34h-5.13V1.8h28.11v12.26h-5.13v23.07c0 22.5-9.4 32.66-27.25 32.66-19.18-.57-29.44-10.63-29.44-32.19V14.15h-5.32V1.8Zm71.59 0c22 0 26.31 8.74 26.31 19.57 0 7.4-5.89 12.62-13.77 13.76 6.55 1 12.44 6.65 12.44 13.49 0 4.08.57 6.46 2.27 6.46 1.43 0 2.19-1.14 2.19-3V48.9h6.36v5.23c0 7.88-3.32 15.19-13.86 15.19-12.44 0-18.42-6.55-18.42-17.66 0-8.64-1.05-10.73-9.5-10.73v14.71h5.79v12.54h-30.67V55.64h5.32v-41.4h-5.32V1.8Zm-6 28.49h4.27c5.51 0 9.12-2.66 9.12-7.69 0-5.6-3.13-8.45-8.64-8.45h-4.75ZM28.39 14.7l5.8 10.64-23.46 10.72 23.46 10.55-3.61 9.87L0 42.24v-13.3Zm318.7 14.24v13.3l-30.58 14.24-3.61-9.87 23.46-10.55-23.46-10.72 5.8-10.64Z" />
+        </svg>
+        </span>
+        <span class="is-none--gt-container">
+          <svg
+          xmlns="http://www.w3.org/2000/svg"
+          version="1.0"
+          viewBox="0 0 512 512"
+          width="48px">
+          <path
+            fill="currentcolor"
+            stroke="currentcolor"
+            d="M225.5 1c-1.1.5-3.5.9-5.3.9-4.1.1-22.9 4.5-30.7 7.2-63.1 22-114.7 72.3-142.7 139.4-6.4 15.2-11.8 33.8-16.7 57-4.1 19.7-5.4 64.5-2.6 90.8C33 346.2 49.8 390.1 76.8 425c6.2 7.9 23.9 26.4 30.7 32 8.1 6.7 26.1 18.7 35.1 23.6 28.1 15.1 58 24.3 91.9 28.3 5.5.7 13.6 1.7 18 2.2 8.8 1.2 33.9.7 48-.9 11-1.3 31.7-4.8 36.5-6.2 1.9-.5 8-2.3 13.5-3.9 21.3-6.1 47.2-17.8 67.5-30.5 8.8-5.4 23.7-15.8 28.5-19.7 10.2-8.4 24.5-21.3 31.4-28.2l8.4-8.5-2.2-2.9c-1.3-1.5-4.6-5.3-7.4-8.3-6.2-6.7-14.5-15.7-21.2-23.1-2.7-3-7.5-8.2-10.5-11.4-3-3.3-9.8-10.8-15.1-16.5-21.5-23.6-24.2-26.5-24.9-26.8-.3-.1-2 1.2-3.6 3-1.6 1.9-6.3 7.1-10.4 11.7-8.6 9.7-25.6 24.6-35.9 31.4-21.4 14.4-42.5 21.7-62.6 21.7-15.3-.1-29.3-3.3-42.5-10-22.8-11.5-41.9-35.5-51.5-64.7-4.2-12.8-4.3-13.4-5.9-22.8-3.8-22.9-4.6-39.2-2.6-55.6 2.7-22.7 3.3-26.5 5-33.2 7.9-30.9 16.7-48.6 32.4-65.6 16.8-17.9 41.1-24.9 65.1-18.6 30 7.8 50.7 36.3 55.5 76.3.5 4.6 1.2 8.7 1.5 9.3.4.5 25.1.9 62.6.9H474V9H364.2L357 26.7c-4 9.8-7.9 18.5-8.7 19.3-1.3 1.3-2.1.8-6.6-4.3-6-6.9-18.3-16.7-28.2-22.5-7.4-4.3-22.6-10.9-28.5-12.4-9.2-2.2-18.1-4.1-24-5-9-1.3-33.1-1.9-35.5-.8z" />
+        </svg>
+        </span>
+      </a>
+    </h1>
+    <link
+  href="/pagefind/pagefind-ui.css"
+  rel="stylesheet"
+  media="print"
+  onload="this.media='all'" />
+<style>
+  :root {
+    --pagefind-ui-primary: var(--theme-color--ink);
+    --pagefind-ui-text: var(--theme-color--ink);
+    --pagefind-ui-background: var(--theme-color--paper);
+    --pagefind-ui-border: var(--theme-color--outline);
+    --pagefind-ui-tag: var(--theme-color--block);
+    --pagefind-ui-border-radius: 2em;
+    --pagefind-ui-image-border-radius: var(--theme-border-radius);
+    --pagefind-ui-font: var(--theme-font--copy);
+  }
+  .pagefind-ui--reset {
+    position: absolute;
+  }
+  #search .pagefind-ui__search-input {
+    box-shadow: var(--theme-box-shadow--inset);
+    margin-bottom: var(--theme-spacing--1);
+  }
+  #search .pagefind-ui__search-clear {
+    background-color: transparent;
+  }
+  #search .pagefind-ui__drawer {
+    background-color: var(--theme-color--paper);
+    box-shadow: var(--theme-box-shadow--slim);
+    transform: translateY(-1.5px);
+    padding: 0 var(--theme-spacing--2);
+    max-height: calc(100vh - 4rem);
+    overflow-y: auto;
+  }
+  #search .pagefind-ui__result {
+    padding: var(--theme-spacing--1) 0 var(--theme-spacing--2) 0;
+  }
+  #search .pagefind-ui__result:focus-within,
+  #search .pagefind-ui__button:focus {
+    background-color: var(--theme-color--block);
+  }
+  #search .pagefind-ui__button {
+    border: none;
+  }
+</style>
+<script src="/pagefind/pagefind-ui.js" type="text/javascript" defer></script>
+<div id="search" class="l-header__search"></div>
+<script>
+  window.addEventListener("DOMContentLoaded", (event) => {
+    new PagefindUI({
+      element: "#search",
+      showSubResults: true,
+      pageSize: 3,
+      showImages: false,
+      showTags: true,
+    });
+  });
+</script>
+
+    <button
+      class="l-header__action e-button e-button--icon js-menu-toggle e-heading__3">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+        <path
+          stroke="var(--theme-color--ink)"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M13 5a1 1 0 1 0-2 0 1 1 0 0 0 2 0Zm0 7a1 1 0 1 0-2 0 1 1 0 0 0 2 0Zm0 7a1 1 0 1 0-2 0 1 1 0 0 0 2 0Z" />
+      </svg>
+      <span class="is-invisible">Open Menu.</span>
+    </button>
+  </div>
+</header>
+
+      <nav
+  class="l-layout__menu l-menu"
+  aria-label="Main Site Links."
+  id="site-menu"
+  hidden
+  tabindex="0">
+  <div class="l-menu__container">
+    <h2 class="l-menu__heading e-heading__2">
+      <a href="/" class="l-menu__home is-invisible">Menu</a>
+    </h2>
+    <button
+      class="l-menu__action e-button e-button--icon js-menu-toggle e-heading__2"
+      id="close-menu">
+      ❎
+      <span class="is-invisible">Close Menu.</span>
+    </button>
+    <ul class="l-menu__primary">
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/guides/">
+            Guides
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/sdc/tools/">
+            Tools
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/sdc/logic/">
+            Logic
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/sdc/decomposition/">
+            Decomposition
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/sdc/legacy/">
+            Legacy code
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/sdc/complexity/">
+            Complexity
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/tracks/servers/">
+            Servers
+          </a>
+        </li>
+    </ul>
+    <ul class="l-menu__secondary">
+        <li class="l-menu__item">
+          <a class="e-heading__3 l-menu__link" href="https://codeyourfuture.io">
+            CYF 👈🏾
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__3 l-menu__link" href="https://codeyourfuture.io/volunteers/">
+            Join Us 👋🏿
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__3 l-menu__link" href="https://codeyourfuture.io/donate/">
+            Support 🫶🏼
+          </a>
+        </li>
+    </ul>
+  </div>
+</nav>
+
+      <main
+        id="main"
+        class="l-layout__main l-main"
+        tabindex="0"
+        data-pagefind-body>
+        
+  
+    <solo-view tabindex="0">
+      
+
+
+      <div slot="header">
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+<header
+  class="c-page-header 
+    c-page-header--solo
+   c-page-header--toc">
+  
+  <div class="c-page-header__container">
+    <div class="c-page-header__breadcrumbs">
+      
+  <nav class="c-breadcrumbs">
+    <ol class="c-breadcrumbs__list">
+      
+        
+        
+          <li class="c-breadcrumbs__item">
+            <a
+              class="c-breadcrumbs__link"
+              href="/sdc/"data-pagefind-filter="module"><span class="c-breadcrumbs__text">Software Development Course</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                width="24px"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="c-breadcrumbs__icon">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+              </svg>
+            </a>
+          </li>
+        
+        
+          <li class="c-breadcrumbs__item">
+            <a
+              class="c-breadcrumbs__link"
+              href="/sdc/logic/"><span class="c-breadcrumbs__text">Logic</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                width="24px"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="c-breadcrumbs__icon">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+              </svg>
+            </a>
+          </li>
+      
+        <li class="c-breadcrumbs__item">
+          <a
+            class="c-breadcrumbs__link"
+            href="/sdc/logic/sprints/1/"data-pagefind-filter="sprint">Sprint 1</a
+          >
+        </li>
+      
+    </ol>
+  </nav>
+  
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Our Courses",
+      "item":"https://curriculum.codeyourfuture.io/"},
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Software Development Course",
+      "item":"https://curriculum.codeyourfuture.io/sdc/"},
+    {
+      "@type": "ListItem",
+      "position":  3 ,
+      "name": "Logic",
+      "item":"https://curriculum.codeyourfuture.io/sdc/logic/"},{
+      "@type": "ListItem",
+      "position":  5 ,
+      "name": "Sprint 1",
+      "item":"https://curriculum.codeyourfuture.io/sdc/logic/sprints/1/"},
+    {
+      "@type": "ListItem",
+      "position":  6 ,
+      "name": "Prep",
+      "item":"https://curriculum.codeyourfuture.io/sdc/logic/sprints/1/"}
+  ]
+}
+</script>
+
+
+    </div>
+    <h1 class="c-page-header__title e-heading__1"data-pagefind-filter="view"
+        
+      data-pagefind-weight="10">
+      <span class="c-emoji">
+        
+        
+           
+            <time-total class="c-page-header__time"></time-total>
+      
+         
+        </span>
+        <span class="c-page-header__title-text">Prep</span>
+               
+    </h1>
+    
+      
+        <h2 class="c-page-header__description e-heading__3">
+          Mental models for logical reasoning
+        </h2>
+      
+    
+    
+    
+    
+      <div class="c-page-header__toc " id="toc">
+        <section class="c-toc" aria-label="Table of contents.">
+          <a id="top" class="c-toc__top e-button e-button--icon" href="#toc"
+            >🔖 <span class="is-invisible">back to top</span></a
+          >
+          
+            <nav id="TableOfContents"></nav>
+          
+          
+            <ol>
+              
+                <li>
+                  <a href="#recap-binary" data-pagefind-weight="5"
+                    >Recap binary</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#introduction" data-pagefind-weight="5"
+                    >Introduction</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#deduction" data-pagefind-weight="5"
+                    >Deduction</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#induction" data-pagefind-weight="5"
+                    >Induction</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#abduction" data-pagefind-weight="5"
+                    >Abduction</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#problem-domain" data-pagefind-weight="5"
+                    >Problem Domain</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#falsification" data-pagefind-weight="5"
+                    >Falsification</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#bisection" data-pagefind-weight="5"
+                    >Bisection</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#binary-logic" data-pagefind-weight="5"
+                    >Binary Logic</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#1000-wine-bottles" data-pagefind-weight="5"
+                    >1000 Wine Bottles</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#binary-information-theory" data-pagefind-weight="5"
+                    >Binary Information Theory</a
+                  >
+                  
+                </li>
+              
+            </ol>
+          
+          
+        </section>
+      </div>
+    
+
+  </div>
+</header>
+</div>
+      <div slot="blocks">
+        
+        
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="recap-binary">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="recap-binary">
+        Binary Logic recap
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="60 minutes countdown" datetime="P60M">60&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Add together two binary numbers without converting to decimal</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Identify which of two binary numbers is larger without converting to decimal</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Identify whether a binary number is a power of two</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Write a truth table for a given logic gate</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <p>Read the learning objectives listed on this page: Bear in mind what you&rsquo;re trying to achieve while reading this text. If a topic isn&rsquo;t making much sense, and isn&rsquo;t in the objectives, you can probably skip over it. If a topic is listed in the objectives, you should keep studying it until you are confident you&rsquo;ve met the objective.</p>
+<section class="c-note c-note--Reading">
+  <h4 class="c-note__title e-heading__4">Reading</span>
+  </h4>
+  <div class="c-note__text "><p>Review chapters 1, 2, and the &ldquo;Binary Addition&rdquo;, &ldquo;Signed Numbers&rdquo; and &ldquo;Unsigned Numbers&rdquo; sections of chapter 5 of How Computers Really Work. This time focus on the Binary Logic section that you might have skipped before.</p>
+<p>Do every exercise listed in the chapters that you haven&rsquo;t done before. You can skip the projects.</p>
+</div>
+</section>
+
+
+<p>Check you have achieved each learning objective listed on this page.</p>
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="introduction">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="introduction">
+        Introduction
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="5 minutes countdown" datetime="P5M">5&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+    <div class="c-block__content c-copy">
+      <p>Welcome to Logic. For this module, we will get out of VSCode and build mental models we can use anywhere to reason more effectively.</p>
+<h3 id="you-will-need">You will need</h3>
+<p>📓 Notebook and pen<br>
+🧠 Your wonderful brain<br>
+🔍 And you will still need the curriculum and Google, that&rsquo;s not banned, don&rsquo;t worry.</p>
+<h3 id="learning-by-teaching">Learning by teaching</h3>
+<p>In this prep you will build a series of mental models necessary for logical reasoning. You likely already know some of these pieces. We will start to build each model by playing a game. Pay attention, because&hellip;</p>
+<p>In class this week <em>you</em> will be teaching something. You will be explaining one of these mental models. You will not use a computer to explain this, but something else. This could be a drawing, a game, a conversation, or anything you like that will help you communicate the concept, except a computer!</p>
+<p>You should make sure you understand all these models, but choose just one to teach in class.</p>
+<h3 id="mental-models">Mental models</h3>
+<ol>
+<li><strong>Deduction</strong>: Reasoning from general rules to a specific conclusion that is <em>definitely</em> true</li>
+<li><strong>Induction</strong>: Reasoning from specific examples to form general patterns that are <em>probably</em> true</li>
+<li><strong>Abduction</strong>: Reasoning to the best explanation for all the evidence we observe</li>
+<li><strong>Falsification</strong>: Testing a theory by trying to prove it wrong</li>
+<li><strong>Problem Domain</strong>: Identifying the bounded space that contains all possible solutions to a problem</li>
+<li><strong>Bisection</strong>: Reasoning by reducing a problem space to the smallest possible size</li>
+<li><strong>Binary Logic</strong>: Reasoning with only two possible states (true or false)</li>
+</ol>
+<h3 id="your-task">Your task</h3>
+<p>Your core prep for this sprint is to learn about <em>all</em> of these mental models. You will do this by reading, and by playing games that use them.</p>
+<p>You will need to prepare to teach other people about <em>one</em> of these mental models. Make sure to coordinate on Slack so that people are teaching different mental models.</p>
+
+    </div>
+    
+    
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="deduction">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="deduction">
+        Deduction
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="25 minutes countdown" datetime="P25M">25&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Define deduction</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Use deduction to solve a matrix puzzle</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <blockquote><p>Deduction is reasoning from <strong>general</strong> rules to a <strong>specific</strong> conclusion that is <em>definitely</em> true</p>
+</blockquote><style>
+  .mermaid svg {
+    height: initial;
+  }
+  .mermaid {
+    margin-bottom: var(--theme-spacing--gutter);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .mermaid[data-processed] {
+    opacity: 1;
+  }
+</style>
+<div class="mermaid">flowchart LR
+    d1[Rule 1: If A then B]
+    d2[Rule 2: We have A]
+    d1 --> dc[Therefore we must have B]
+    d2 --> dc</div>
+
+<script type="module" src="/scripts/mermaid-observer.min.js" defer></script>
+<p>In <a
+  href="https://murdle.com/">Murdle</a>, we use deduction to solve murders. Given general rules about the crime scene and specific clues, we can 
+<tool-tip-container tabindex="0"><strong class="tooltip__trigger" id="trigger__deduce">deduce</strong><span class="tooltip__emoji">🧶</span><tool-tip role="tooltip" aria-labelledby="deduce"><span class="tooltip__title e-heading__2"><span class="tooltip__emoji">🧶</span> deduce</span><span class="tooltip__content">Use rules you know are true to prove something specific <em>must</em> also be true.</span></tool-tip></tool-tip-container>
+ who the murderer must be.</p>
+<blockquote><p><em>Given</em> the body was found in the kitchen<br>
+<em>And</em> only Miss Saffron had been in the kitchen<br>
+<em>Then</em> Miss Saffron must be the murderer</p>
+</blockquote><p>This is deduction: starting with general rules and arriving at a specific conclusion that must be true. Unlike guessing or inferring patterns, deduction gives us certainty. If our premises are true, our conclusion must be true.</p>
+<p>In Murdle, every puzzle can be solved through pure deduction. There&rsquo;s no need to guess. The clues and rules will lead you to a single possible murderer.</p>
+<p>Go play Murdle.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+
+<section class="c-block c-block--link">
+  <a
+    id="murdle"
+    href="https://murdle.com/"
+    class="c-chip">
+    
+      <img
+        src="/images/backgrounds/dddepth--320_hu613215134278895542.webp"
+        alt=""
+        role="presentation"
+        class="c-chip__icon c-chip__icon--circle" />
+    
+    <h4 class="c-chip__title e-heading__2">Murdle</h4>
+    
+      <p class="c-chip__description">🔗 A deductive logic puzzle game</p>
+    
+  </a>
+</section>
+
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="induction">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="induction">
+        Induction
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="45 minutes countdown" datetime="P45M">45&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Define induction</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Use induction to form general theories about the best strategies in Sushi Go</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <blockquote><p>Induction is reasoning from <strong>specific</strong> examples to form <strong>general</strong> patterns that are <em>probably</em> true</p>
+</blockquote><style>
+  .mermaid svg {
+    height: initial;
+  }
+  .mermaid {
+    margin-bottom: var(--theme-spacing--gutter);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .mermaid[data-processed] {
+    opacity: 1;
+  }
+</style>
+<div class="mermaid">flowchart TD
+    sp1[Specific Example 1] --> gp[General Pattern]
+    sp2[Specific Example 2] --> gp
+    sp3[Specific Example 3] --> gp
+    gp --> pc[Probable Conclusion]</div>
+
+<script type="module" src="/scripts/mermaid-observer.min.js" defer></script>
+<p>In Sushi Go, we use induction to build winning strategies. By observing specific outcomes across multiple hands, we form general theories about what works. For example:</p>
+<blockquote><p><em>Given</em> collecting 3 tempura scored 10 points<br>
+<em>And</em> collecting 2 tempura scored 5 points<br>
+<em>And</em> collecting 1 tempura scored 0 points<br>
+<em>Then</em> tempura probably works best in pairs</p>
+</blockquote><p>Unlike deduction which gives certainty, induction helps us form educated guesses about patterns. The more examples we see, the more confident we can be in our general conclusions - but we can never be 100% certain.</p>
+<p>In <a
+  href="https://en.boardgamearena.com/gamepanel?game=sushigo">Sushi Go</a>, every game teaches us something new about card combinations, timing, and player behavior. Through repeated play, we inductively learn strategies like:</p>
+<ul>
+<li>Watching what others collect helps predict what cards will come around</li>
+<li>Early puddings often pay off in the final round</li>
+<li>Chopsticks are most valuable when saved for high-scoring combinations</li>
+</ul>
+<p>Play a few rounds of <a
+  href="https://en.boardgamearena.com/gamepanel?game=sushigo">Sushi Go</a> and practice inductive reasoning. Don&rsquo;t spend a long time reading the rules, just play through a few rounds to get the idea. Try to:</p>
+<ol>
+<li>Notice specific scoring patterns</li>
+<li>Look for recurring situations</li>
+<li>Form general theories about good strategies</li>
+</ol>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+
+<section class="c-block c-block--link">
+  <a
+    id="sushi-go"
+    href="https://en.boardgamearena.com/gamepanel?game=sushigo"
+    class="c-chip">
+    
+      <img
+        src="/images/backgrounds/dddepth-025_hu4662949219319011053.webp"
+        alt=""
+        role="presentation"
+        class="c-chip__icon c-chip__icon--circle" />
+    
+    <h4 class="c-chip__title e-heading__2">Sushi Go</h4>
+    
+      <p class="c-chip__description">🔗 Pattern finding</p>
+    
+  </a>
+</section>
+
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="abduction">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="abduction">
+        Abduction
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="30 minutes countdown" datetime="P30M">30&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Define abduction</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Use evidence to reason to the best explanation</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <blockquote><p>Abduction is reasoning to the best explanation for all the evidence we observe</p>
+</blockquote><style>
+  .mermaid svg {
+    height: initial;
+  }
+  .mermaid {
+    margin-bottom: var(--theme-spacing--gutter);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .mermaid[data-processed] {
+    opacity: 1;
+  }
+</style>
+<div class="mermaid">flowchart TD
+   ev1[🟨 Yellow S] --> h1[Hypothesis LAPSE]
+   ev2[🟨 Yellow A] --> h1
+   ev3[🟩 Green E] --> h1
+   ev1 --> h2[Hypothesis SHAME]
+   ev3 --> h2
+   h1 --> be[Best Word]
+   style h2 stroke-dasharray: 5 5</div>
+
+<script type="module" src="/scripts/mermaid-observer.min.js" defer></script>
+<p>Unlike deduction which proves only what <em>must</em> be true, or induction which only finds patterns that are probably true, abduction seeks the most complete explanation.</p>
+<blockquote><p><em>Given</em> we guessed STARE<br>
+<em>And</em> we got 🟨⬜🟨⬜🟩<br>
+<em>Then</em> LAPSE might be the answer (but we can&rsquo;t be certain)</p>
+</blockquote><p>In Wordle, we think like word detectives. We have an initial constraint: it must be an English word of five letters.</p>
+<p>We have five attempts. Each guess we make gives us some feedback and allows us to eliminate some hypotheses, or guesses. A yellow square might support our theory about which letters are in the word, contradict it, or suggest a completely different explanation. We must:</p>
+<ul>
+<li>Keep track of all feedback squares</li>
+<li>Form multiple possible word theories</li>
+<li>Test each word against <em>all</em> the evidence</li>
+<li>Choose the word that best fits everything we know</li>
+<li>Make a guess even though we can&rsquo;t know for sure whether we&rsquo;re right</li>
+<li>Revise our guess when new evidence appears</li>
+</ul>
+<p>It&rsquo;s quite a lot like problem solving we&rsquo;ve done before, isn&rsquo;t it? This process of seeking the best explanation mirrors how we approach complex problems in many fields:</p>
+<p>🧑🏽‍⚕️ Doctors diagnosing illnesses from symptoms<br>
+🕵🏿 Detectives solving cases from clues<br>
+🧑🏿‍🔬 Scientists developing theories from observations<br>
+🧑🏻‍🔧 Engineers troubleshooting system failures</p>
+<p>We need a strategy, but experience also matters. In Wordle, the more English words we know, and the more we know about words, the better our guesses. In engineering, the more we know about building software, the faster we can find our problems.</p>
+<p>Now go solve today&rsquo;s puzzle:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+
+<section class="c-block c-block--link">
+  <a
+    id="todays-wordle"
+    href="https://www.nytimes.com/games/wordle"
+    class="c-chip">
+    
+      <img
+        src="/images/backgrounds/dddepth-086_hu9485195966470048883.webp"
+        alt=""
+        role="presentation"
+        class="c-chip__icon c-chip__icon--circle" />
+    
+    <h4 class="c-chip__title e-heading__2">Today&#39;s Wordle</h4>
+    
+      <p class="c-chip__description">🔗 Use abductive reasoning to best explain the evidence</p>
+    
+  </a>
+</section>
+
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="problem-domain">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="problem-domain">
+        The Problem Domain
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="15 minutes countdown" datetime="P15M">15&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Define the problem domain</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Learn to constrain problems before solving them</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <blockquote><p>The problem domain is a bounded space that contains all possible solutions to a problem. Everything outside the problem domain is impossible or irrelevant.</p>
+</blockquote>
+
+<div class="c-columns">
+  
+  
+    <div class="c-columns__column">
+      <figure>
+<style>
+  .mermaid svg {
+    height: initial;
+  }
+  .mermaid {
+    margin-bottom: var(--theme-spacing--gutter);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .mermaid[data-processed] {
+    opacity: 1;
+  }
+</style>
+<div class="mermaid">stateDiagram-v2
+    state "Everything Possible" as EP {
+        state "Numbers" as N {
+            state "1-100" as H {
+                state "Even Numbers" as E
+            }
+        }
+    }</div>
+
+<script type="module" src="/scripts/mermaid-observer.min.js" defer></script>
+<figcaption>Each constraint reduces our problem space</figcaption>
+</figure>
+
+    </div>
+  
+    <div class="c-columns__column">
+      <blockquote><p><em>Given</em> no constraints<br>
+<em>Then</em>&hellip; the answer could be anything in the universe!<br>
+<em>When</em> we add &ldquo;must be a number&rdquo;<br>
+<em>Then</em> we constrain to the domain of numbers</p>
+</blockquote>
+    </div>
+  
+</div>
+
+<p>Before we can solve a problem, we need to understand what&rsquo;s possible. In <a
+  href="http://20q.net/">Twenty Questions</a> we start with everything in the universe, then ask questions to reduce our problem space. We might start with &ldquo;Is it alive?&rdquo; to constrain our domain to animals, then &ldquo;Is it a mammal?&rdquo; to reduce further.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+
+<section class="c-block c-block--link">
+  <a
+    id="twenty-questions"
+    href="http://20q.net/"
+    class="c-chip">
+    
+      <img
+        src="/images/backgrounds/dddepth-016_hu9164667339808514187.webp"
+        alt=""
+        role="presentation"
+        class="c-chip__icon c-chip__icon--circle" />
+    
+    <h4 class="c-chip__title e-heading__2">Twenty Questions</h4>
+    
+      <p class="c-chip__description">🔗 Ask questions to reduce possibilities</p>
+    
+  </a>
+</section>
+
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="falsification">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="falsification">
+        Falsification
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="45 minutes countdown" datetime="P45M">45&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Define Popper&rsquo;s falsification principle</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Use elimination to reduce possibilities</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <blockquote><p>Falsification is an efficient <em>reduction</em> strategy. It means making predictions that <strong>eliminate</strong> possibilities, rather than gathering evidence that supports them</p>
+</blockquote>
+
+<div class="c-columns">
+  
+  
+    <div class="c-columns__column">
+      <style>
+  .mermaid svg {
+    height: initial;
+  }
+  .mermaid {
+    margin-bottom: var(--theme-spacing--gutter);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .mermaid[data-processed] {
+    opacity: 1;
+  }
+</style>
+<div class="mermaid">stateDiagram-v2
+    state "All Possibilities" as AP {
+        state "Theory Space" as T1 {
+            state "Remaining" as T2 {
+                state "Survivors" as T3
+            }
+        }
+    }</div>
+
+<script type="module" src="/scripts/mermaid-observer.min.js" defer></script>
+
+    </div>
+  
+    <div class="c-columns__column">
+      <blockquote><p><em>Given</em> many possible rules<br>
+<em>Make</em> a prediction that could eliminate some<br>
+<em>When</em> the prediction fails<br>
+<em>Then</em> we can discard those possibilities</p>
+</blockquote>
+    </div>
+  
+</div>
+
+<p>This is a subtle distinction: <em>dis</em> confirmation is the mental model we must build here. In 20 Questions we discovered our problem space by confirming <em>and</em> disconfirming our guesses. In <a
+  href="https://www.looneylabs.com/games/zendo">Zendo</a>, we will try to discover the rule governing pyramid patterns not by <em>confirming</em> our guesses, but by <em>eliminating</em> what&rsquo;s impossible</p>
+<p>Here&rsquo;s a <a
+  href="https://simple.wikipedia.org/wiki/Falsifiability">classic example</a>:</p>
+<style>
+  .mermaid svg {
+    height: initial;
+  }
+  .mermaid {
+    margin-bottom: var(--theme-spacing--gutter);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .mermaid[data-processed] {
+    opacity: 1;
+  }
+</style>
+<div class="mermaid">flowchart TD
+    T["🦢 Theory: All Swans Are White"]
+    O["Observe Next Swan"]
+    D{"What Color?"}
+    W["Theory Holds..."]
+    F["Theory Falsified!"]
+
+    T --> O
+    O --> D
+    D -->|⬜ White| W
+    D -->|⬛ Black| F
+    W -->|"Keep testing"| O</div>
+
+<script type="module" src="/scripts/mermaid-observer.min.js" defer></script>
+<p><a
+  href="https://en.wikipedia.org/wiki/Falsifiability">Popper</a> explains that each additional white swan appears to confirm our wrong idea that all swans are white. A single black swan disproves it, and ends the loop. This strategy shows us that:</p>
+<ol>
+<li>Only gathering confirming evidence leaves too many possibilities, or too large a problem domain</li>
+<li>However, each failed prediction narrows our search space by discarding possibilities</li>
+<li>We learn <em>more</em> from being wrong than being right</li>
+</ol>
+<p>It is more efficient to find a way to disprove your hypothesis or falsify your proposition, if you can. This is because you only need to disprove something once to discard it, but you may apparently verify a hypothesis many times in many different ways and still be wrong.</p>
+<p>Now, practice eliminating possibilities in <a
+  href="https://www.koryheath.com/zendo/">Zendo</a>. For this game you need a group, so post in Slack to find others to play with.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+
+<section class="c-block c-block--link">
+  <a
+    id="zendo"
+    href="https://www.perlkonig.com/zendo/"
+    class="c-chip">
+    
+      <img
+        src="/images/backgrounds/dddepth-016_hu9164667339808514187.webp"
+        alt=""
+        role="presentation"
+        class="c-chip__icon c-chip__icon--circle" />
+    
+    <h4 class="c-chip__title e-heading__2">Zendo</h4>
+    
+      <p class="c-chip__description">🔗 Eliminate to learn</p>
+    
+  </a>
+</section>
+
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="bisection">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="bisection">
+        Bisection
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="10 minutes countdown" datetime="P10M">10&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Define bisection search</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Apply binary search to guess a number</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <blockquote><p>In bisection, we start with a large problem space and cut it in half with each guess.</p>
+</blockquote><p>
+
+  <figure>
+      <img
+        loading="lazy"
+        src="/module/logic/bisection/bisection.svg"alt="bisection.svg" data-pagefind-index-attrs="bisection.svg"/></figure></p>
+<p>In software development, bisection helps us find exactly when a change occurred. For example:</p>
+<blockquote><p><em>Given</em> our code worked last week but not today<br>
+<em>When</em> we test the middle version and it works<br>
+<em>Then</em> the problem must be in the newer half</p>
+</blockquote><p>With each test, we:</p>
+<ol>
+<li>Select the middle version</li>
+<li>Test if it works</li>
+<li>Eliminate half the versions</li>
+<li>Repeat until we find the exact change</li>
+</ol>
+<p>This <a
+  href="https://www.khanacademy.org/computing/computer-science/algorithms/binary-search/a/binary-search">binary search</a> technique is remarkably efficient. Even with thousands of versions, we&rsquo;ll find the problematic change in just a few tests. Git and other version control systems include <a
+  href="https://git-scm.com/docs/git-bisect">built-in bisect tools</a> for this purpose.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+
+<section class="c-block c-block--link">
+  <a
+    id="higher-or-lower"
+    href="https://www.mathsisfun.com/games/guess_number.html"
+    class="c-chip">
+    
+      <img
+        src="/images/backgrounds/dddepth-025_hu4662949219319011053.webp"
+        alt=""
+        role="presentation"
+        class="c-chip__icon c-chip__icon--circle" />
+    
+    <h4 class="c-chip__title e-heading__2">Higher or Lower</h4>
+    
+      <p class="c-chip__description">🔗 Guess the number efficiently</p>
+    
+  </a>
+</section>
+
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="binary-logic">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="binary-logic">
+        Boolean Logic
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="45 minutes countdown" datetime="P45M">45&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Define binary logic and its role in computing</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Express logical statements as truth tables</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <blockquote><p>Boolean logic uses only <strong>true</strong> or <strong>false</strong> to reason about the world.</p>
+</blockquote><p>In the real world, we use logic to make decisions all the time. For example: if it&rsquo;s raining and you don&rsquo;t have an umbrella, you will get wet. This can be represented as a truth table:</p>
+
+
+<div class="c-columns">
+  
+  
+    <div class="c-columns__column">
+      <table>
+  <thead>
+      <tr>
+          <th>Is Raining</th>
+          <th>Has Umbrella</th>
+          <th>Is Wet</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>F</td>
+          <td>F</td>
+          <td>F</td>
+      </tr>
+      <tr>
+          <td>F</td>
+          <td>T</td>
+          <td>F</td>
+      </tr>
+      <tr>
+          <td>T</td>
+          <td>F</td>
+          <td>T</td>
+      </tr>
+      <tr>
+          <td>T</td>
+          <td>T</td>
+          <td>F</td>
+      </tr>
+  </tbody>
+</table>
+<p>Truth tables show all possible combinations and all possible outcomes.</p>
+    </div>
+  
+    <div class="c-columns__column">
+      <blockquote><p><em>Given</em> A is true (1)<br>
+<em>And</em> B is true (1)<br>
+<em>Then</em> A AND B is true (1)</p>
+</blockquote>
+    </div>
+  
+</div>
+
+<p>In computers, we use binary logic to derive conclusions from data. Each bit can represent a logical state: 
+<tool-tip-container tabindex="0"><strong class="tooltip__trigger" id="trigger__true">true</strong><span class="tooltip__emoji">🧶</span><tool-tip role="tooltip" aria-labelledby="true"><span class="tooltip__title e-heading__2"><span class="tooltip__emoji">🧶</span> true</span><span class="tooltip__content">Represented as 1 in binary</span></tool-tip></tool-tip-container>
+ or 
+<tool-tip-container tabindex="0"><strong class="tooltip__trigger" id="trigger__false">false</strong><span class="tooltip__emoji">🧶</span><tool-tip role="tooltip" aria-labelledby="false"><span class="tooltip__title e-heading__2"><span class="tooltip__emoji">🧶</span> false</span><span class="tooltip__content">Represented as 0 in binary</span></tool-tip></tool-tip-container>
+.</p>
+<table>
+  <thead>
+      <tr>
+          <th>Raining</th>
+          <th>Umbrella</th>
+          <th>Wet</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+      </tr>
+      <tr>
+          <td>0</td>
+          <td>1</td>
+          <td>0</td>
+      </tr>
+      <tr>
+          <td>1</td>
+          <td>0</td>
+          <td>1</td>
+      </tr>
+      <tr>
+          <td>1</td>
+          <td>1</td>
+          <td>0</td>
+      </tr>
+  </tbody>
+</table>
+<p>This is fundamental to how computers work. Every operation a computer performs, from simple addition to complex decision-making, ultimately comes down to chains of basic logical operations on 1s and 0s.</p>
+<p>Try building some truth tables yourself in your notebook. Here are some examples to get you started:</p>
+<ul>
+<li>&ldquo;You can get a loyalty reward if you have the app AND have made 10 purchases&rdquo;</li>
+<li>&ldquo;The alarm will sound if the door is open OR motion is detected, UNLESS the system is disabled&rdquo;</li>
+<li>&ldquo;Trainees pass the course if they complete coursework AND attend class AND complete their steps&rdquo;</li>
+</ul>
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="1000-wine-bottles">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="1000-wine-bottles">
+        1000 Bottles of Wine
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="60 minutes countdown" datetime="P60M">60&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+    <div class="c-block__content c-copy">
+      <p>Now we&rsquo;re going to solve a puzzle together. We&rsquo;re going to think through a few different ways to approach it. This is a well-known puzzle and it&rsquo;s certainly possible to google the answer. However, we&rsquo;d suggest: don&rsquo;t do that - you would steal from yourself the opportunity of learning this important idea.</p>
+<section class="c-note c-note--activity">
+  <h4 class="c-note__title e-heading__4">🕹️A long awaited party</span>
+  </h4>
+  <div class="c-note__text "><strong>The King</strong> has stocked his wine cellar with one thousand bottles of wine for his birthday party tomorrow. However, the King&rsquo;s evil brother, the Duke, has poisoned one of the bottles! The poison is lethal and will kill anyone who takes even one sip within one hour. You, the Butler, must find the poisoned bottle and save the party! But how?</div>
+</section>
+
+
+<blockquote><h4 id="conditions">Conditions:</h4>
+<p>🍾 You have <strong>1000</strong> wine bottles, one of which is poisoned.<br>
+🐀 You have <strong>500</strong> rats you can use to test the wine.<br>
+⌛ The poison is lethal and will kill within <strong>1</strong> hour.</p>
+</blockquote>
+
+
+<tab-panels class="c-tabs">
+  <div class="c-tabs__list" id="boolean" role="tablist"><button
+          data-toggle="tab"
+          id="tab-label-boolean-0"
+          class="c-tabs__tab e-heading__5 space 
+            is-active"
+          role="tab"
+          aria-controls="boolean-0"
+          aria-selected="true">
+          Write down your solution
+        </button><button
+          data-toggle="tab"
+          id="tab-label-boolean-1"
+          class="c-tabs__tab e-heading__5 space "
+          role="tab"
+          aria-controls="boolean-1"
+          aria-selected="false">
+          🍾 🍾 🐀 Look at a solution
+        </button></div>
+  <div class="c-tabs__group" id="boolean">
+        <div
+          id="boolean-0"
+          class="c-tabs__panel is-active"
+          role="tabpanel"
+          data-heading="Write down your solution"
+          aria-labelledby="tab-label-boolean-0"><p>In your notebook, write down your solution to this problem. Here are the constraints again:</p>
+<p>🍾 You have <strong>1000</strong> wine bottles, one of which is poisoned.<br>
+🐀 You have <strong>500</strong> rats you can use to test the wine.<br>
+⏳ The poison is lethal and will kill within <strong>1</strong> hour.</p>
+</div>
+        <div
+          id="boolean-1"
+          class="c-tabs__panel "
+          role="tabpanel"
+          data-heading="🍾 🍾 🐀 Look at a solution"
+          aria-labelledby="tab-label-boolean-1"><h3 id="--">🍾 🍾 🐀</h3>
+<p>One way to think of this is to reduce this problem to its simplest case. If you have 2 bottles and 1 rat, you can test the wine by giving the rat a sip from one bottle. Wait one hour. If the rat is alive, the bottle is safe. If the rat is dead, the bottle is poisoned.</p>
+<p>With 500 rats, it&rsquo;s similar, but not the same. Divide the 1000 bottles into 500 groups of 2. In round 1, give each rat a sip from one bottle in each group. Wait one hour. If the rat is alive, the bottle is safe. If the rat is dead, you found the poisoned bottle. If all rats are alive, the poisoned bottle is in the 500 bottles that were not tested. You still have 500 rats, so you can have each rat test the other bottle in their group.</p>
+<p>This solution will take a maximum of 2 hours.</p>
+</div></div>
+</tab-panels>
+
+<blockquote><h4 id="new-condition">New condition</h4>
+<p>You now have just <strong>10</strong> rats to test the wine.</p>
+</blockquote>
+
+
+<tab-panels class="c-tabs">
+  <div class="c-tabs__list" id="decimation" role="tablist"><button
+          data-toggle="tab"
+          id="tab-label-decimation-0"
+          class="c-tabs__tab e-heading__5 space 
+            is-active"
+          role="tab"
+          aria-controls="decimation-0"
+          aria-selected="true">
+          Write down your solution
+        </button><button
+          data-toggle="tab"
+          id="tab-label-decimation-1"
+          class="c-tabs__tab e-heading__5 space "
+          role="tab"
+          aria-controls="decimation-1"
+          aria-selected="false">
+          Look at a solution
+        </button></div>
+  <div class="c-tabs__group" id="decimation">
+        <div
+          id="decimation-0"
+          class="c-tabs__panel is-active"
+          role="tabpanel"
+          data-heading="Write down your solution"
+          aria-labelledby="tab-label-decimation-0"><p>In your notebook, write down your solution to this problem. Here are the constraints again:</p>
+<p>🍾 You have <strong>1000</strong> wine bottles, one of which is poisoned.<br>
+🐀 You have <strong>10</strong> rats you can use to test the wine.<br>
+⏳ The poison is lethal and will kill within <strong>1</strong> hour.</p>
+</div>
+        <div
+          id="decimation-1"
+          class="c-tabs__panel "
+          role="tabpanel"
+          data-heading="Look at a solution"
+          aria-labelledby="tab-label-decimation-1"><p>With just 10 rats, we need a way to make our solution more efficient. We can break our problem into 10 smaller problems. Think of it as a search pattern, narrowing down our suspects with each round of testing.</p>
+<p><strong>Round 1:</strong> Let&rsquo;s divide our 1000 bottles into 10 groups of 100. Each rat tests one <em>group</em> : a sip from every bottle in its group of 100. An hour later, with one dead rat, we have narrowed our search to 100 bottles. We&rsquo;ve saved 900 bottles of wine and we still have 9 rats to help us.</p>
+<p><strong>Round 2</strong> Let&rsquo;s do it again: take our suspicious 100 bottles and create ten groups of ten. Our nine rats each drink from one whole group (and one group goes un-drunk). Our doomed rat perishes again, and after another hour, we&rsquo;ve found the right group of ten. We now have 8 rats.</p>
+<p><strong>Round 3</strong> Now we&rsquo;re down to just 10 bottles. Eight rats test a bottle each, leaving two untested. If a rat dies, we&rsquo;ve found the poisoned bottle. If not, we have two bottles left for the last round.</p>
+<p><strong>Round 4: Base case</strong> We can use just one rat to test one bottle. If we have a dead rat, it&rsquo;s the poisoned bottle. If not, the last untasted bottle is the culprit.</p>
+<p>Through careful division and patience, we&rsquo;ve turned an overwhelming search into a manageable investigation. Four hours, and we&rsquo;ll have our answer.</p>
+</div></div>
+</tab-panels>
+
+<blockquote><h4 id="new-condition-1">New condition</h4>
+<p>The birthday party is now in <strong>1</strong> hour, so you only have time for one test!</p>
+</blockquote>
+
+
+<tab-panels class="c-tabs">
+  <div class="c-tabs__list" id="binary" role="tablist"><button
+          data-toggle="tab"
+          id="tab-label-binary-0"
+          class="c-tabs__tab e-heading__5 space 
+            is-active"
+          role="tab"
+          aria-controls="binary-0"
+          aria-selected="true">
+          Write down your solution
+        </button><button
+          data-toggle="tab"
+          id="tab-label-binary-1"
+          class="c-tabs__tab e-heading__5 space "
+          role="tab"
+          aria-controls="binary-1"
+          aria-selected="false">
+          Look at a solution
+        </button><button
+          data-toggle="tab"
+          id="tab-label-binary-2"
+          class="c-tabs__tab e-heading__5 space "
+          role="tab"
+          aria-controls="binary-2"
+          aria-selected="false">
+          8 bottles, 3 rats
+        </button></div>
+  <div class="c-tabs__group" id="binary">
+        <div
+          id="binary-0"
+          class="c-tabs__panel is-active"
+          role="tabpanel"
+          data-heading="Write down your solution"
+          aria-labelledby="tab-label-binary-0"><p>Think about how you can use some of the thinking tools you just learned to solve this problem.</p>
+<p>You will need boolean logic, deduction, and binary at least. Here are the constraints again:</p>
+<p>🍾 You have <strong>1000</strong> wine bottles, one of which is poisoned.<br>
+🐀 You have <strong>10</strong> rats you can use to test the wine.<br>
+⏳ The poison is lethal and will kill within <strong>1</strong> hour.
+⌛ You only have <strong>1</strong> hour so can only do <strong>1</strong> round of testing.</p>
+</div>
+        <div
+          id="binary-1"
+          class="c-tabs__panel "
+          role="tabpanel"
+          data-heading="Look at a solution"
+          aria-labelledby="tab-label-binary-1"><p>If we only have one hour, we can only do a single round of testing! Our strategy of narrowing down can&rsquo;t work. We&rsquo;re going to have to think about what we have learned about binary to solve this problem.</p>
+<p>I really advise that you write this out yourself in binary as you follow the solution through.</p>
+<p>Let&rsquo;s reduce our case. Let&rsquo;s say we have 3 bottles and 2 rats.</p>
+<p>We&rsquo;re going to number the bottles in binary. Each rat will test a different <em>bit</em> of the binary number. Rat 1 will test the 1s place, Rat 2 the 2s place.</p>
+<table>
+  <thead>
+      <tr>
+          <th>Decimal</th>
+          <th>Binary</th>
+          <th>Rat 1</th>
+          <th>Rat 2</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>1</td>
+          <td>001</td>
+          <td>x</td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>2</td>
+          <td>010</td>
+          <td></td>
+          <td>x</td>
+      </tr>
+      <tr>
+          <td>3</td>
+          <td>011</td>
+          <td>x</td>
+          <td>x</td>
+      </tr>
+  </tbody>
+</table>
+<p>If <em>only</em> rat 1 dies, we know the poison is in the 1s place. It&rsquo;s bottle 1. If <em>only</em> rat 2 dies, the poison is in the 2s place: bottle 2 is poisoned. If <em>both</em> die, bottle 3 is our culprit.</p>
+<p>To be clear: instead of testing bottles one by one, we will have the rats sip from <em>multiple</em> bottles at once, just as with our progressive elimination search. But in this test, each rat&rsquo;s survival or death becomes a piece of information that we can <em>combine</em> to locate the poisoned bottle.</p>
+<p>Take a moment to check this out for yourself with 8 bottles and 3 rats.</p>
+</div>
+        <div
+          id="binary-2"
+          class="c-tabs__panel "
+          role="tabpanel"
+          data-heading="8 bottles, 3 rats"
+          aria-labelledby="tab-label-binary-2"><table>
+  <thead>
+      <tr>
+          <th>Decimal</th>
+          <th>Binary</th>
+          <th>Rat 1</th>
+          <th>Rat 2</th>
+          <th>Rat 3</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>1</td>
+          <td>001</td>
+          <td><input type="checkbox"></td>
+          <td><input type="checkbox"></td>
+          <td><input type="checkbox"></td>
+      </tr>
+      <tr>
+          <td>2</td>
+          <td>010</td>
+          <td><input type="checkbox"></td>
+          <td><input type="checkbox"></td>
+          <td><input type="checkbox"></td>
+      </tr>
+      <tr>
+          <td>3</td>
+          <td>011</td>
+          <td><input type="checkbox"></td>
+          <td><input type="checkbox"></td>
+          <td><input type="checkbox"></td>
+      </tr>
+      <tr>
+          <td>4</td>
+          <td>100</td>
+          <td><input type="checkbox"></td>
+          <td><input type="checkbox"></td>
+          <td><input type="checkbox"></td>
+      </tr>
+      <tr>
+          <td>5</td>
+          <td>101</td>
+          <td><input type="checkbox"></td>
+          <td><input type="checkbox"></td>
+          <td><input type="checkbox"></td>
+      </tr>
+      <tr>
+          <td>6</td>
+          <td>110</td>
+          <td><input type="checkbox"></td>
+          <td><input type="checkbox"></td>
+          <td><input type="checkbox"></td>
+      </tr>
+      <tr>
+          <td>7</td>
+          <td>111</td>
+          <td><input type="checkbox"></td>
+          <td><input type="checkbox"></td>
+          <td><input type="checkbox"></td>
+      </tr>
+      <tr>
+          <td>8</td>
+          <td>100</td>
+          <td><input type="checkbox"></td>
+          <td><input type="checkbox"></td>
+          <td><input type="checkbox"></td>
+      </tr>
+  </tbody>
+</table>
+<p>Now, what about 16 bottles? How many rats do you need?</p>
+<p>We can also frame this as: how many rats do we need for <code>n</code> bottles? With 1000 bottles, do you definitely need 10 rats? How would you prove that?</p>
+</div></div>
+</tab-panels>
+
+
+    </div>
+    
+    
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="binary-information-theory">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="binary-information-theory">
+        Binary Information Theory
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="10 minutes countdown" datetime="P10M">10&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+    <div class="c-block__content c-copy">
+      <p>At its heart, our rat puzzle demonstrates how binary data encoding works. Each rat represents one binary digit (a bit). They either live (1) or die (0). With 10 rats, we have 10 bits of information.</p>
+<h3 id="-the-power-of-binary">🧮 The Power of Binary</h3>
+<ul>
+<li>1 bit can represent 2^1 = 2 possibilities (0 or 1)</li>
+<li>2 bits can represent 2^2 = 4 possibilities (00, 01, 10, 11)</li>
+<li>3 bits → 2^3 = 8 possibilities</li>
+<li>10 bits → 2^10 = 1024 possibilities!</li>
+</ul>
+<h3 id="-key-insight">🎯 Key Insight</h3>
+<p>This is why 10 rats are enough for 1000 bottles. Each possible combination of rat survival/death can uniquely identify one bottle number. We&rsquo;re seeing the same principle that allows computers to encode vast amounts of information using just 1s and 0s.</p>
+<h4 id="-memory-locations">🐀 Memory Locations</h4>
+<p>Just like how computers use binary addressing to locate specific memory locations, we&rsquo;re using our &ldquo;rat bits&rdquo; to encode the location (bottle number) of our poison. Each bit helps narrow down the possibilities until we have a unique address.</p>
+
+    </div>
+    
+    
+    
+  </div>
+</section>
+
+
+
+        
+      </div>
+      <nav slot="nav">
+        <a href="#" class="e-button c-solo-view__back">&larr; Back</a>
+        <a href="#" class="e-button c-solo-view__next">Next &rarr;</a>
+      </nav>
+    </solo-view>
+    
+    <script src="/scripts/solo-view.min.js" defer></script>
+    
+    <script src="/scripts/time-total.min.js" defer></script>
+  
+
+
+        
+
+  <footer class="c-page-footer">
+    <nav class="c-page-footer__nav">
+      
+      
+      <span class="c-page-footer__this">Prep</span>
+      
+        →<a
+          class="c-page-footer__next c-page-footer__link e-link"
+          href="/sdc/logic/sprints/1/backlog/"
+          >Backlog</a
+        >
+      
+    </nav>
+  </footer>
+
+
+      </main><footer class="l-layout__footer l-footer">
+  <a
+    class="l-footer__github e-button e-button--icon"
+    href="https://github.com/CodeYourFuture/curriculum/">
+    <svg
+  focusable="false"
+  class="e-button__icon"
+  role="presentation"
+  width="96"
+  viewbox="0 0 98 96"
+  xmlns="http://www.w3.org/2000/svg">
+  <path
+    fill-rule="evenodd"
+    clip-rule="evenodd"
+    d="M48.854 0C21.839 0 0 22 0 49.217c0 21.756 13.993 40.172 33.405 46.69 2.427.49 3.316-1.059 3.316-2.362 0-1.141-.08-5.052-.08-9.127-13.59 2.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015 4.934.326 7.523 5.052 7.523 5.052 4.367 7.496 11.404 5.378 14.235 4.074.404-3.178 1.699-5.378 3.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283 0-5.378 1.94-9.778 5.014-13.2-.485-1.222-2.184-6.275.486-13.038 0 0 4.125-1.304 13.426 5.052a46.97 46.97 0 0 1 12.214-1.63c4.125 0 8.33.571 12.213 1.63 9.302-6.356 13.427-5.052 13.427-5.052 2.67 6.763.97 11.816.485 13.038 3.155 3.422 5.015 7.822 5.015 13.2 0 18.905-11.404 23.06-22.324 24.283 1.78 1.548 3.316 4.481 3.316 9.126 0 6.6-.08 11.897-.08 13.526 0 1.304.89 2.853 3.316 2.364 19.412-6.52 33.405-24.935 33.405-46.691C97.707 22 75.788 0 48.854 0z"
+    fill="currentColor" />
+</svg>
+
+    <span class="is-invisible">Find us on GitHub</span>
+  </a>
+  <p class="l-footer__impressum e-heading__6">
+    This
+    <a href="https://github.com/CodeYourFuture/curriculum/">free and open source programme</a>
+    is a project of
+    <a href="https://codeyourfuture.io/">Code Your Future</a>
+    <br />
+    Creative Commons Attribution-ShareAlike 4.0
+  </p>
+  <dark-mode class="l-footer__mode"
+    ><button
+      slot="button"
+      id="mode-toggle"
+      type="button"
+      class="e-button e__button--toggle e-button--icon">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="e-icon e__button__icon e-icon--moon">
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
+      </svg>
+      <span class="is-invisible">Toggle between light and dark mode</span>
+    </button></dark-mode
+  >
+</footer>
+
+
+
+<script src="/scripts/app.min.js" defer></script>
+
+<script src="/scripts/youtube-player.min.js" defer></script>
+
+<script src="/scripts/tab-panels.min.js" type="module" defer></script>
+
+<script src="/scripts/dark-mode.min.js"></script>
+
+<script src="/scripts/alert-message.min.js" defer></script>
+
+
+
+
+
+
+
+</div>
+  </body>
+</html>

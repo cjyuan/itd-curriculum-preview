@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Setting Up on CYF Courses</title>
+    <link>https://curriculum.codeyourfuture.io/guides/setting-up/</link>
+    <description>Recent content in Setting Up on CYF Courses</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="https://curriculum.codeyourfuture.io/guides/setting-up/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Install PostGresQL</title>
+      <link>https://curriculum.codeyourfuture.io/guides/setting-up/psql/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://curriculum.codeyourfuture.io/guides/setting-up/psql/</guid>
+      <description>&lt;h1 id=&#34;install-postgresql&#34;&gt;Install PostgreSQL&lt;/h1&gt;&#xA;&lt;h2 id=&#34;lets-get-started&#34;&gt;Let&amp;rsquo;s Get Started&lt;/h2&gt;&#xA;&lt;p&gt;We shall be using PostgreSQL - a widely used relational database. It&amp;rsquo;s open-source and free to use. If you haven&amp;rsquo;t already installed it then follow the instructions below:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;If you use Ubuntu then see &lt;a&#xA;  href=&#34;#ubuntu-install&#34;&gt;here&lt;/a&gt;.&lt;/li&gt;&#xA;&lt;li&gt;If you have Mac-OS then see &lt;a&#xA;  href=&#34;#macos-install&#34;&gt;here&lt;/a&gt;.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;If you get stuck at any stage please post a message requesting help on your cohort channel.&lt;/p&gt;&#xA;&lt;p&gt;If you don&amp;rsquo;t use any of the above operating systems then go and install Linux.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

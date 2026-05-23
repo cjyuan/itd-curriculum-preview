@@ -1,0 +1,3662 @@
+<!DOCTYPE html>
+
+
+
+
+<html lang="en" class="p-prep"><head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  <title data-pagefind-meta="title">
+    
+      Intro to Programming 
+    
+      Onboarding 
+    
+      Sprint 1 
+    
+    Prep
+  </title>
+  
+    <meta name="description" content="A free and open source software development programme." />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+  <style>
+    body,
+    html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      animation: fade-in 300ms;
+    }
+    @keyframes fade-in {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  </style>
+  
+  
+  <link
+    rel="stylesheet"
+    href="/bundled.min.b6a4520237559385268d63a9daa81d96.css"
+    media="print"
+    onload="this.media='all'" />
+
+  
+  
+    
+    
+    <link
+      rel="stylesheet"
+      href="/custom.min.8ded6a1a88bc7cc98bdef8dc33d15f3a.css"
+      media="print"
+      onload="this.media='all'" />
+  
+
+
+  <noscript>
+    <link rel="stylesheet" href="/bundled.min.b6a4520237559385268d63a9daa81d96.css" />
+  </noscript>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&amp;display=swap"
+    rel="stylesheet"
+    media="print"
+    onload="this.media='all'" />
+
+  <link rel="shortcut icon" href="https://curriculum.codeyourfuture.io/favicon.ico" />
+  <meta name="theme-color" content="#e3ddeef2" />
+  <link rel="manifest" href="https://curriculum.codeyourfuture.io/manifest.json" />
+</head>
+<body>
+    <a class="c-skip-link e-button" id="skip-link" href="#main">Skip to main</a>
+    <div class="l-layout">
+      <header class="l-layout__header l-header">
+  <div class="l-header__container">
+    <h1 class="l-header__heading e-heading__6" data-pagefind-ignore>
+      <a class="l-header__home" href="/"
+        ><span class="is-invisible"
+          >itp Prep CYF Courses</span
+        >
+        <span class="is-none--lt-container">
+          <svg
+          xmlns="http://www.w3.org/2000/svg"
+          title="Code Your Future."
+          viewBox="0 0 621.64 155.81"
+          width="140px"
+          focusable="false"
+          role="img">
+          <path
+            fill="var(--theme-color--brand)"
+            d="M103.37 56.51C96.91 63.64 87.03 69.9 74.6 69.9c-20.14 0-33.52-12.91-33.52-34.09C41.08 13.97 57.5.87 69.94.87c9.5 0 13.77 5.32 14.63 6.46l2.18-5.27h14.91v27h-17c-.28-6.18-3.32-12-10.06-12s-11.3 8.45-11.3 18.8c0 9.4 4.84 17.86 13.86 17.86 8 0 14.24-8.36 15.1-9.31Zm2.88-21.85C106.25 14.15 119.92 0 139.58 0c23.26 0 34.09 14 34.09 35.32s-12 34.57-33.43 34.57c-19.88 0-33.99-11.49-33.99-35.23Zm43.68.66c0-11.49-3.13-20.7-10.45-20.7-5.79-.09-9.78 8.26-9.78 20 0 12.44 4.47 20.32 10.54 20.32s9.65-7.88 9.65-19.62Zm27.49 20.23h5.89V14.34h-5.89V1.8h29c23 0 36.09 14.15 36.09 32.29 0 21.65-13.11 34.09-36.47 34.09h-28.62Zm29 0c10.03-.19 14.21-9.59 14.21-21.49 0-10.16-4.18-19.75-14.25-19.75h-3.61v41.24ZM303.04 1.8v21h-16.43v-8.46h-15.19v13.1h18v12.62h-18v15.49h15.19v-8.83h16.43v21.46h-57.26V55.55h6V14.34h-6V1.8Z" />
+          <path
+            fill="var(--theme-color--ink)"
+            d="M274.42 87.82v21h-16.8v-8.45h-14.37v16.52h18v12.63h-18v12.04h9.68v12.63h-35.29v-12.63h5.89v-41.21h-5.89V87.82Zm33.04 0v12.24h-5.12v20.51c0 15.28 3.41 18.51 9.49 18.51 5.79 0 9.59-2.28 9.59-18.61v-20.12h-5.17V87.82h28.11v12.24h-5.11v23.07c0 22.51-9.4 32.67-27.25 32.67-19.18-.57-29.43-10.64-29.43-32.19v-23.45h-5.32V87.82Zm103.5 24.69h-14v-12.16h-8v41.21h7.88v12.63h-35.26v-12.63h7.79v-41.21h-8.12v12.16h-14V87.82h63.71ZM444 87.82v12.24h-5.13v20.51c0 15.28 3.42 18.51 9.5 18.51 5.79 0 9.59-2.28 9.59-18.61v-20.12h-5.13V87.82h28.11v12.24h-5.13v23.07c0 22.51-9.4 32.67-27.25 32.67-19.18-.57-29.44-10.64-29.44-32.19v-23.45h-5.32V87.82Zm71.59 0c22 0 26.3 8.73 26.3 19.56 0 7.4-5.88 12.63-13.76 13.77 6.55.95 12.44 6.64 12.44 13.48 0 4.08.57 6.46 2.27 6.46 1.43 0 2.19-1.14 2.19-3v-3.13h6.36v5.22c0 7.88-3.32 15.19-13.86 15.19-12.44 0-18.42-6.55-18.42-17.66 0-8.64-1.05-10.73-9.5-10.73v14.68h5.79v12.53h-30.67v-12.53h5.32v-41.4h-5.32V87.82Zm-6 28.48h4.27c5.51 0 9.12-2.65 9.12-7.69 0-5.6-3.13-8.45-8.64-8.45h-4.75Zm102.38-28.48v21h-16.43v-8.45h-15.19v13.09h18v12.6h-18v15.5h15.19v-8.83h16.43v21.46h-57.26v-12.63h6v-41.21h-6V87.82Zm-227.72-56.1c.38-1.9 2.47-5.89 3.51-8.17l5.22-9.59h-5.22V1.8h25.54v12.16h-5.05l-17.62 30.86v11h5.32v12.36h-30.39V55.83h5.41v-11.2l-18.42-30.67h-4.65V1.8h32.47v12.16h-4.93l5.5 10.1c.57 1.81 2.57 6.08 2.95 7.7Zm29.54 2.94C413.79 14.15 427.47 0 447.12 0c23.27 0 34.09 14 34.09 35.32s-12 34.57-33.42 34.57c-19.85 0-34-11.49-34-35.23Zm43.68.66c0-11.49-3.13-20.7-10.44-20.7-5.79-.09-9.78 8.26-9.78 20 0 12.44 4.46 20.32 10.54 20.32s9.68-7.88 9.68-19.62ZM514.25 1.8v12.26h-5.13v20.5c0 15.29 3.42 18.52 9.5 18.52 5.79 0 9.59-2.28 9.59-18.61V14.34h-5.13V1.8h28.11v12.26h-5.13v23.07c0 22.5-9.4 32.66-27.25 32.66-19.18-.57-29.44-10.63-29.44-32.19V14.15h-5.32V1.8Zm71.59 0c22 0 26.31 8.74 26.31 19.57 0 7.4-5.89 12.62-13.77 13.76 6.55 1 12.44 6.65 12.44 13.49 0 4.08.57 6.46 2.27 6.46 1.43 0 2.19-1.14 2.19-3V48.9h6.36v5.23c0 7.88-3.32 15.19-13.86 15.19-12.44 0-18.42-6.55-18.42-17.66 0-8.64-1.05-10.73-9.5-10.73v14.71h5.79v12.54h-30.67V55.64h5.32v-41.4h-5.32V1.8Zm-6 28.49h4.27c5.51 0 9.12-2.66 9.12-7.69 0-5.6-3.13-8.45-8.64-8.45h-4.75ZM28.39 14.7l5.8 10.64-23.46 10.72 23.46 10.55-3.61 9.87L0 42.24v-13.3Zm318.7 14.24v13.3l-30.58 14.24-3.61-9.87 23.46-10.55-23.46-10.72 5.8-10.64Z" />
+        </svg>
+        </span>
+        <span class="is-none--gt-container">
+          <svg
+          xmlns="http://www.w3.org/2000/svg"
+          version="1.0"
+          viewBox="0 0 512 512"
+          width="48px">
+          <path
+            fill="currentcolor"
+            stroke="currentcolor"
+            d="M225.5 1c-1.1.5-3.5.9-5.3.9-4.1.1-22.9 4.5-30.7 7.2-63.1 22-114.7 72.3-142.7 139.4-6.4 15.2-11.8 33.8-16.7 57-4.1 19.7-5.4 64.5-2.6 90.8C33 346.2 49.8 390.1 76.8 425c6.2 7.9 23.9 26.4 30.7 32 8.1 6.7 26.1 18.7 35.1 23.6 28.1 15.1 58 24.3 91.9 28.3 5.5.7 13.6 1.7 18 2.2 8.8 1.2 33.9.7 48-.9 11-1.3 31.7-4.8 36.5-6.2 1.9-.5 8-2.3 13.5-3.9 21.3-6.1 47.2-17.8 67.5-30.5 8.8-5.4 23.7-15.8 28.5-19.7 10.2-8.4 24.5-21.3 31.4-28.2l8.4-8.5-2.2-2.9c-1.3-1.5-4.6-5.3-7.4-8.3-6.2-6.7-14.5-15.7-21.2-23.1-2.7-3-7.5-8.2-10.5-11.4-3-3.3-9.8-10.8-15.1-16.5-21.5-23.6-24.2-26.5-24.9-26.8-.3-.1-2 1.2-3.6 3-1.6 1.9-6.3 7.1-10.4 11.7-8.6 9.7-25.6 24.6-35.9 31.4-21.4 14.4-42.5 21.7-62.6 21.7-15.3-.1-29.3-3.3-42.5-10-22.8-11.5-41.9-35.5-51.5-64.7-4.2-12.8-4.3-13.4-5.9-22.8-3.8-22.9-4.6-39.2-2.6-55.6 2.7-22.7 3.3-26.5 5-33.2 7.9-30.9 16.7-48.6 32.4-65.6 16.8-17.9 41.1-24.9 65.1-18.6 30 7.8 50.7 36.3 55.5 76.3.5 4.6 1.2 8.7 1.5 9.3.4.5 25.1.9 62.6.9H474V9H364.2L357 26.7c-4 9.8-7.9 18.5-8.7 19.3-1.3 1.3-2.1.8-6.6-4.3-6-6.9-18.3-16.7-28.2-22.5-7.4-4.3-22.6-10.9-28.5-12.4-9.2-2.2-18.1-4.1-24-5-9-1.3-33.1-1.9-35.5-.8z" />
+        </svg>
+        </span>
+      </a>
+    </h1>
+    <link
+  href="/pagefind/pagefind-ui.css"
+  rel="stylesheet"
+  media="print"
+  onload="this.media='all'" />
+<style>
+  :root {
+    --pagefind-ui-primary: var(--theme-color--ink);
+    --pagefind-ui-text: var(--theme-color--ink);
+    --pagefind-ui-background: var(--theme-color--paper);
+    --pagefind-ui-border: var(--theme-color--outline);
+    --pagefind-ui-tag: var(--theme-color--block);
+    --pagefind-ui-border-radius: 2em;
+    --pagefind-ui-image-border-radius: var(--theme-border-radius);
+    --pagefind-ui-font: var(--theme-font--copy);
+  }
+  .pagefind-ui--reset {
+    position: absolute;
+  }
+  #search .pagefind-ui__search-input {
+    box-shadow: var(--theme-box-shadow--inset);
+    margin-bottom: var(--theme-spacing--1);
+  }
+  #search .pagefind-ui__search-clear {
+    background-color: transparent;
+  }
+  #search .pagefind-ui__drawer {
+    background-color: var(--theme-color--paper);
+    box-shadow: var(--theme-box-shadow--slim);
+    transform: translateY(-1.5px);
+    padding: 0 var(--theme-spacing--2);
+    max-height: calc(100vh - 4rem);
+    overflow-y: auto;
+  }
+  #search .pagefind-ui__result {
+    padding: var(--theme-spacing--1) 0 var(--theme-spacing--2) 0;
+  }
+  #search .pagefind-ui__result:focus-within,
+  #search .pagefind-ui__button:focus {
+    background-color: var(--theme-color--block);
+  }
+  #search .pagefind-ui__button {
+    border: none;
+  }
+</style>
+<script src="/pagefind/pagefind-ui.js" type="text/javascript" defer></script>
+<div id="search" class="l-header__search"></div>
+<script>
+  window.addEventListener("DOMContentLoaded", (event) => {
+    new PagefindUI({
+      element: "#search",
+      showSubResults: true,
+      pageSize: 3,
+      showImages: false,
+      showTags: true,
+    });
+  });
+</script>
+
+    <button
+      class="l-header__action e-button e-button--icon js-menu-toggle e-heading__3">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+        <path
+          stroke="var(--theme-color--ink)"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M13 5a1 1 0 1 0-2 0 1 1 0 0 0 2 0Zm0 7a1 1 0 1 0-2 0 1 1 0 0 0 2 0Zm0 7a1 1 0 1 0-2 0 1 1 0 0 0 2 0Z" />
+      </svg>
+      <span class="is-invisible">Open Menu.</span>
+    </button>
+  </div>
+</header>
+
+      <nav
+  class="l-layout__menu l-menu"
+  aria-label="Main Site Links."
+  id="site-menu"
+  hidden
+  tabindex="0">
+  <div class="l-menu__container">
+    <h2 class="l-menu__heading e-heading__2">
+      <a href="/" class="l-menu__home is-invisible">Menu</a>
+    </h2>
+    <button
+      class="l-menu__action e-button e-button--icon js-menu-toggle e-heading__2"
+      id="close-menu">
+      ❎
+      <span class="is-invisible">Close Menu.</span>
+    </button>
+    <ul class="l-menu__primary">
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/guides/">
+            Guides
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/sdc/tools/">
+            Tools
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/sdc/logic/">
+            Logic
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/sdc/decomposition/">
+            Decomposition
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/sdc/legacy/">
+            Legacy code
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/sdc/complexity/">
+            Complexity
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/tracks/servers/">
+            Servers
+          </a>
+        </li>
+    </ul>
+    <ul class="l-menu__secondary">
+        <li class="l-menu__item">
+          <a class="e-heading__3 l-menu__link" href="https://codeyourfuture.io">
+            CYF 👈🏾
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__3 l-menu__link" href="https://codeyourfuture.io/volunteers/">
+            Join Us 👋🏿
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__3 l-menu__link" href="https://codeyourfuture.io/donate/">
+            Support 🫶🏼
+          </a>
+        </li>
+    </ul>
+  </div>
+</nav>
+
+      <main
+        id="main"
+        class="l-layout__main l-main"
+        tabindex="0"
+        data-pagefind-body>
+        
+  
+    <solo-view tabindex="0">
+      
+
+
+      <div slot="header">
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+<header
+  class="c-page-header 
+    c-page-header--solo
+   c-page-header--toc">
+  
+  <div class="c-page-header__container">
+    <div class="c-page-header__breadcrumbs">
+      
+  <nav class="c-breadcrumbs">
+    <ol class="c-breadcrumbs__list">
+      
+        
+        
+          <li class="c-breadcrumbs__item">
+            <a
+              class="c-breadcrumbs__link"
+              href="/itp/"data-pagefind-filter="module"><span class="c-breadcrumbs__text">Intro to Programming</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                width="24px"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="c-breadcrumbs__icon">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+              </svg>
+            </a>
+          </li>
+        
+        
+          <li class="c-breadcrumbs__item">
+            <a
+              class="c-breadcrumbs__link"
+              href="/itp/onboarding/"><span class="c-breadcrumbs__text">Onboarding</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                width="24px"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="c-breadcrumbs__icon">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+              </svg>
+            </a>
+          </li>
+      
+        <li class="c-breadcrumbs__item">
+          <a
+            class="c-breadcrumbs__link"
+            href="/itp/onboarding/sprints/1/"data-pagefind-filter="sprint">Sprint 1</a
+          >
+        </li>
+      
+    </ol>
+  </nav>
+  
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Our Courses",
+      "item":"https://curriculum.codeyourfuture.io/"},
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Intro to Programming",
+      "item":"https://curriculum.codeyourfuture.io/itp/"},
+    {
+      "@type": "ListItem",
+      "position":  3 ,
+      "name": "Onboarding",
+      "item":"https://curriculum.codeyourfuture.io/itp/onboarding/"},{
+      "@type": "ListItem",
+      "position":  5 ,
+      "name": "Sprint 1",
+      "item":"https://curriculum.codeyourfuture.io/itp/onboarding/sprints/1/"},
+    {
+      "@type": "ListItem",
+      "position":  6 ,
+      "name": "Prep",
+      "item":"https://curriculum.codeyourfuture.io/itp/onboarding/sprints/1/"}
+  ]
+}
+</script>
+
+
+    </div>
+    <h1 class="c-page-header__title e-heading__1"data-pagefind-filter="view"
+        
+      data-pagefind-weight="10">
+      <span class="c-emoji">
+        
+        
+           
+            <time-total class="c-page-header__time"></time-total>
+      
+         
+        </span>
+        <span class="c-page-header__title-text">Prep</span>
+               
+    </h1>
+    
+      
+    
+    
+    
+    
+      <div class="c-page-header__toc " id="toc">
+        <section class="c-toc" aria-label="Table of contents.">
+          <a id="top" class="c-toc__top e-button e-button--icon" href="#toc"
+            >🔖 <span class="is-invisible">back to top</span></a
+          >
+          
+            <nav id="TableOfContents"></nav>
+          
+          
+            <ol>
+              
+                <li>
+                  <a href="#do-the-prep" data-pagefind-weight="5"
+                    >Do the prep</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#github-dot-dev" data-pagefind-weight="5"
+                    >GitHub Dot Dev</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#install-vs-code" data-pagefind-weight="5"
+                    >Install VS Code</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#check-git" data-pagefind-weight="5"
+                    >Check Git</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#create-cyf-folder" data-pagefind-weight="5"
+                    >Create CYF Folder</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#fork-your-planner" data-pagefind-weight="5"
+                    >Fork your Planner</a
+                  >
+                  📼
+                </li>
+              
+                <li>
+                  <a href="#make-your-planning-board" data-pagefind-weight="5"
+                    >Make your Planning Board</a
+                  >
+                  📼
+                </li>
+              
+                <li>
+                  <a href="#set-up-planner" data-pagefind-weight="5"
+                    >Set up Planner</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#cyf-blog" data-pagefind-weight="5"
+                    >CYF Blog</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#development-process" data-pagefind-weight="5"
+                    >Development Process</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#version-control" data-pagefind-weight="5"
+                    >Version Control</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#sharing-history" data-pagefind-weight="5"
+                    >Sharing History</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#explore" data-pagefind-weight="5"
+                    >Explore</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#previous-versions" data-pagefind-weight="5"
+                    >Previous Versions</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#forking-a-repository" data-pagefind-weight="5"
+                    >Forking a Repository</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#working-locally" data-pagefind-weight="5"
+                    >Working Locally</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#viewing-files" data-pagefind-weight="5"
+                    >Viewing Files</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#branching" data-pagefind-weight="5"
+                    >Branching</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#wrapping-up-git" data-pagefind-weight="5"
+                    >Wrapping up Git</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#forms-in-25-minutes" data-pagefind-weight="5"
+                    >Forms in 25 minutes</a
+                  >
+                  📼
+                </li>
+              
+                <li>
+                  <a href="#backlog" data-pagefind-weight="5"
+                    >Backlog</a
+                  >
+                  
+                </li>
+              
+            </ol>
+          
+          
+        </section>
+      </div>
+    
+
+  </div>
+</header>
+</div>
+      <div slot="blocks">
+        
+        
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="do-the-prep">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="do-the-prep">
+        Do the Prep
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="5 minutes countdown" datetime="P5M">5&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+    <div class="c-block__content c-copy">
+      <p>You should have completed the prep listed in <a
+  href="/itp/welcome/prep/">Welcome to CodeYourFuture</a>. If you haven&rsquo;t done that yet, go back and complete it now.</p>
+<blockquote><p>🧠 You must always do the prep.</p>
+</blockquote><p>If you have worked through the Welcome prep, begin the prep for the first Onboarding sprint (which starts here!).</p>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  <multiple-choice data-correct="2" class="c-quiz">
+    <form slot="quiz">
+      <fieldset class="c-quiz__fieldset" tabindex="0">
+        <legend class="c-quiz__legend">🤔 Where do you start with a new module?</legend>
+        <ol class="c-quiz__list"><li class="c-quiz__answer">
+            <label
+              class="c-quiz__label"
+              ><input
+              class="c-quiz__input"
+              type="radio"
+              name="answer"
+              value="0" />
+            Just randomly pick something from the backlog</label
+            >
+          </li><li class="c-quiz__answer">
+            <label
+              class="c-quiz__label"
+              ><input
+              class="c-quiz__input"
+              type="radio"
+              name="answer"
+              value="1" />
+            Do nothing and wait to be told in class</label
+            >
+          </li><li class="c-quiz__answer">
+            <label
+              class="c-quiz__label"
+              ><input
+              class="c-quiz__input"
+              type="radio"
+              name="answer"
+              value="2" />
+            I should start with the prep for the first module</label
+            >
+          </li></ol>
+      </fieldset>
+    </form>
+    <section class="c-quiz__feedback" slot="feedback" aria-live="polite"><p class="c-quiz__remark" data-index="0" >💬 No, the prep will show you HOW to complete the backlog, so do it first</p><p class="c-quiz__remark" data-index="1" >💬 Nope, you&rsquo;re being told right now</p><p class="c-quiz__remark" data-index="2" >💬 Yes, you should always start with the prep</p></section>
+  </multiple-choice>
+ 
+  
+  <script src="/scripts/multiple-choice.min.js" defer></script>
+
+
+
+    </div>
+    
+    
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="github-dot-dev">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="github-dot-dev">
+        GitHub.dev
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="20 minutes countdown" datetime="P20M">20&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Access the dotdev environment on a library computer if you do not have your own</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <p>If you do not have a computer of your own yet, here&rsquo;s how to complete your work directly on GitHub without a local environment.</p>
+<p>Each repo on GitHub has a <code>.dev</code> environment so you can edit the code in your browser using an online VSCode.</p>
+<p>You can go to this environment directly by replacing <code>github.com</code> with <code>github.dev</code> in the URL. For example, to open the <a
+  href="https://github.com/CodeYourFuture/Module-Onboarding"><code>Module-Onboarding</code></a> repo, you can go to</p>
+<p><a
+  href="https://github.dev/CodeYourFuture/Module-Onboarding">https://github.dev/CodeYourFuture/Module-Onboarding</a></p>
+<section class="c-note c-note--tip">
+    <h4 class="c-note__title">💡Tip</h4>
+    <div class="c-note__text"><p>If you do have a computer, you should set up VSCode and a local environment. This is a workaround for people who don&rsquo;t yet have the luxury of a personal computer.</p></div>
+  </section>
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="install-vs-code">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="install-vs-code">
+        Install VSCode
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="10 minutes countdown" datetime="P10M">10&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Download and install VSCode</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Identify the key parts of the VSCode interface</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <p>We use VS Code to write all of our code in the course. It is known as an Integrated Development Environment (IDE) and really helps you write great code.</p>
+<blockquote><p><a
+  href="https://code.visualstudio.com/">🔗 Download and install VSCode now</a></p>
+</blockquote>
+
+<div class="c-columns">
+  
+  
+    <div class="c-columns__column">
+      <section class="c-note c-note--tip">
+    <h4 class="c-note__title">💡Tip</h4>
+    <div class="c-note__text"><p>If you are working on a library computer, use the online version of VSCode called Github.dev.</p></div>
+  </section><p>The interface is mostly the same, but you cannot install extensions or use the terminal. You can complete all the tasks in the onboarding module without these features.</p>
+
+    </div>
+  
+    <div class="c-columns__column">
+      <figure>
+      <img
+        loading="lazy"
+        src="/130119109-4769f2d7-9027-4bc4-a38c-10f297499e8f_5306818686353561249.gif"alt="Github.dev can be accessed by pressing dot on any GitHub repo" data-pagefind-index-attrs="Github.dev can be accessed by pressing dot on any GitHub repo"/><figcaption>Press the dot while on any GitHub repo to open Github.dev.</figcaption></figure>
+    </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+
+  
+
+  
+  
+
+  
+    
+    
+  
+
+
+
+<section
+  class="c-block c-block--youtube"
+  aria-labelledby="warning-name-is-empty">
+  
+  <div class="c-block__content">
+    <youtube-player data-src="https://www.youtube.com/watch?v=B-s71n0dHUk"></youtube-player>
+  </div>
+</section>
+
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="check-git">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="check-git">
+        Check Git installation
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="5 minutes countdown" datetime="P5M">5&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Double check Git is installed on your local machine</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <h3 id="git">Git</h3>
+<p>You will use Git continually as a developer. We will cover Git in more depth later in the course. Right now, we will just check that you have it installed.</p>
+<p>Open up a terminal and run the command <code>git --version</code> to double check you have Git installed.
+If it is installed successfully, you should get a version number (which may not be exactly the same as this example, but should look similar):</p>
+<pre tabindex="0"><code>git version 2.40.0</code></pre><p>Otherwise, you will need to <a
+  href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git">install</a> it or ask for support on your Slack channel.</p>
+<section class="c-note c-note--tip">
+    <h4 class="c-note__title">💡Tip</h4>
+    <div class="c-note__text"><p>If you are working on a library computer, you do not have a terminal, but your github.dev account already has Git installed. (It&rsquo;s called &ldquo;Source Control&rdquo;.) So you can skip this step.</p></div>
+  </section>
+    </div>
+    
+    
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="create-cyf-folder">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="create-cyf-folder">
+        Create a work folder
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="5 minutes countdown" datetime="P5M">5&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Create a named directory to store your work over the course</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <section class="c-note c-note--important">
+    <h4 class="c-note__title">📢Important</h4>
+    <div class="c-note__text"><p>Make a folder called <code><span class="c-our-name">CYF</span></code> in your home directory. Store all your work for the course in this folder.</p></div>
+  </section><p>You&rsquo;ll need to create a <span class="c-our-name">CYF</span> folder to store your projects on the course. You can do this any way you like (e.g. through a file explorer, or using the terminal.)</p>
+<details>
+<summary>If you want to create the folder using the terminal, expand these instructions.</summary>
+<ol>
+<li>Open a terminal on your computer.</li>
+</ol>
+<p>For each of the steps below, you&rsquo;ll need to use the command line in your terminal.</p>
+<p>Use this <a
+  href="https://www.techrepublic.com/article/16-terminal-commands-every-user-should-know/">cli documentation</a> to remember terminal commands.</p>
+<ol start="2">
+<li>
+<p>In your terminal, <strong>p</strong>rint your current <strong>w</strong>orking <strong>d</strong>irectory (by running <code>pwd</code>). Make sure you&rsquo;re in your home directory. If you&rsquo;re not, you may need to <strong>c</strong>hange <strong>d</strong>irectory with the command <code>cd</code> to your home directory.</p>
+</li>
+<li>
+<p><strong>M</strong>a<strong>k</strong>e a new <strong>dir</strong>ectory called <code><span class="c-our-name">CYF</span></code> in your home directory (by running <code>mkdir <span class="c-our-name">CYF</span></code>).</p>
+</li>
+<li>
+<p>Check that the directory got created by <strong>l</strong>i<strong>s</strong>ting the children of the directory (by running <code>ls</code>) - you should see <code><span class="c-our-name">CYF</span></code> there.</p>
+</li>
+<li>
+<p><strong>C</strong>hange <strong>d</strong>irectory into the <code><span class="c-our-name">CYF</span></code> directory by running <code>cd <span class="c-our-name">CYF</span></code>.</p>
+</li>
+<li>
+<p>Double check you&rsquo;re in the right place by <strong>p</strong>rinting your current <strong>w</strong>orking <strong>d</strong>irectory (by running <code>pwd</code>) again.</p>
+</li>
+</ol>
+</details>
+<section class="c-note c-note--tip">
+    <h4 class="c-note__title">💡Tip</h4>
+    <div class="c-note__text"><p>If you&rsquo;re working on a library computer, skip this step. You will store your work in your GitHub account.</p></div>
+  </section>
+    </div>
+    
+    
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+
+  
+
+  
+  
+
+  
+    
+    
+  
+
+
+
+
+
+
+
+
+  
+<section
+  class="c-block c-block--youtube"
+  aria-labelledby="fork-your-planner">
+  
+    <h2
+      class="c-block__title e-heading__2 is-invisible"
+      id="fork-your-planner">
+      Youtube:
+      <a href="https://www.youtube.com/watch?v=cnx0RuAu2tc">Fork your Planner</a>
+    </h2>
+  
+  <div class="c-block__content">
+    <youtube-player data-src="https://www.youtube.com/watch?v=cnx0RuAu2tc"></youtube-player>
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+
+  
+
+  
+  
+
+  
+    
+    
+  
+
+
+
+
+
+
+
+
+  
+<section
+  class="c-block c-block--youtube"
+  aria-labelledby="make-your-planning-board">
+  
+    <h2
+      class="c-block__title e-heading__2 is-invisible"
+      id="make-your-planning-board">
+      Youtube:
+      <a href="https://www.youtube.com/watch?v=Hbtfil-G0h0">Make your Planning Board</a>
+    </h2>
+  
+  <div class="c-block__content">
+    <youtube-player data-src="https://www.youtube.com/watch?v=Hbtfil-G0h0"></youtube-player>
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+    
+    
+
+    
+      
+      
+    
+
+    
+    
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  <section
+    class="c-block c-block--readme"
+    aria-labelledby="set-up-planner">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="set-up-planner">
+        <a href="https://github.com/CodeYourFuture/My-Coursework-Planner/blob/main/readme.md">🔗 Set up Planner</a>
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="30 minutes countdown" datetime="P30M">30&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+    
+    <div class="c-block__content c-copy">
+      
+      
+      
+      
+      
+      
+      <h1 id="welcome-to-your-coursework-planner">Welcome to your coursework planner</h1>
+<p>This is how you will plan and manage your coursework at CYF. You will add all your work as issues to your fork of this repository, and then use a <a
+  href="https://github.com/CodeYourFuture/My-Coursework-Planner/projects?query=is%3Aopen">project board</a> to manage your work. This is broadly how all technical projects are managed, so you will need lots of practice. Get started today.</p>
+<h2 id="1-how-to-get-set-up">1. How to get set up</h2>
+<h4 id="forking-the-my-coursework-planner-repo">Forking the My-Coursework-Planner repo</h4>
+<ol>
+<li>Fork <a
+  href="https://github.com/CodeYourFuture/My-Coursework-Planner/">this repo</a> to your own GitHub
+
+
+  <figure>
+      <img
+        loading="lazy"
+        src="/fork-planner_1894717188324108637.png"alt="image" data-pagefind-index-attrs="image"/></figure></li>
+<li>You should see your own GitHub username under <code>Owner</code>
+
+
+  <figure>
+      <img
+        loading="lazy"
+        src="/create-planner-fork_10214630600444271046.png"alt="image" data-pagefind-index-attrs="image"/></figure></li>
+<li>Turn on <code>issues</code> in the <code>Settings</code> of your forked version of the repo
+
+
+  <figure>
+      <img
+        loading="lazy"
+        src="/fork-settings-issues_6393130503100353444.png"alt="image" data-pagefind-index-attrs="image"/></figure></li>
+</ol>
+<p><em><strong>You must fork to your personal Github account. Forks created in the CYF org will be deleted by a bot.</strong></em></p>
+<h4 id="creating-your-project-board">Creating your project board</h4>
+<ol>
+<li>Go to the <a
+  href="https://github.com/CodeYourFuture/Coursework-Planner/projects?query=is%3Aopen">example project board</a></li>
+<li>Click the three-dot menu on the <code>Coursework Planner Board</code> then select <code>Make a copy</code>
+
+
+  <figure>
+      <img
+        loading="lazy"
+        src="/cloning-board_4455413860976179286.png"alt="image" data-pagefind-index-attrs="image"/></figure></li>
+<li>Make sure your own GitHub username is under <code>Owner</code> and change the name to &ldquo;Coursework Planner&rdquo;. These steps are <strong>very important</strong>! If either value is incorrect the issues will not be cloned correctly.
+
+
+  <figure>
+      <img
+        loading="lazy"
+        src="/naming-board_11592966889604532055.png"alt="image" data-pagefind-index-attrs="image"/></figure></li>
+<li>If you make a mistake naming your project you can go back and change it later. Hover your cursor over the board&rsquo;s name then click the pen icon which appears.
+
+
+  <figure>
+      <img
+        loading="lazy"
+        src="/board-name-edit-button_3077318975285662454.png"alt="image" data-pagefind-index-attrs="image"/></figure></li>
+</ol>
+<p>On the next screen you can rename your board to &ldquo;Coursework Planner&rdquo; and save your changes.
+
+
+  <figure>
+      <img
+        loading="lazy"
+        src="/renaming-board_15493701009645524709.png"alt="image" data-pagefind-index-attrs="image"/></figure></p>
+<ol start="5">
+<li>Make your project board public so your mentors can see your progress - open the project board settings
+
+
+  <figure>
+      <img
+        loading="lazy"
+        src="/project-board-settings_1167262997526216532.png"alt="image" data-pagefind-index-attrs="image"/></figure></li>
+<li>Scroll to the bottom to find the setting to make your board public
+
+
+  <figure>
+      <img
+        loading="lazy"
+        src="/project-board-public_4951485173571429249.png"alt="image" data-pagefind-index-attrs="image"/></figure></li>
+</ol>
+<h4 id="linking-the-my-coursework-planner-repo-to-your-project-board">Linking the My-Coursework-Planner repo to your project board</h4>
+<ol>
+<li>Go back to your forked version of the My-Coursework-Planner repo</li>
+<li>Under <code>Projects</code>, click <code>Link a project</code> and select your project board
+
+
+  <figure>
+      <img
+        loading="lazy"
+        src="/linking-project_4957243553155666803.png"alt="image" data-pagefind-index-attrs="image"/></figure></li>
+<li>That&rsquo;s it! You&rsquo;re ready to start adding issues to your board!</li>
+</ol>
+<h2 id="2-in-every-module-you-will-add-your-work-as-issues">2. In every module, you will add your work as issues</h2>
+<p>Each sprint in each module has a Backlog page which lists the work you&rsquo;re expected to do for that module. Every item in the list is actually a GitHub issue.</p>
+<p>There is a &ldquo;Clone&rdquo; button next to each issue. When you&rsquo;re starting a sprint, clone each of its issues into your coursework planner.</p>
+<p>Copy issues for each week or at most for each module. The coursework content is updated frequently, you will not have the most up to date tasks on your board if you copy all modules at once.</p>
+<p>If the Clone button isn&rsquo;t working you can send a message in Slack asking for help, or speak to a volunteer in class on Saturday.</p>
+<h2 id="3-manage-and-adapt-your-project-board-as-you-learn">3. Manage and adapt your project board as you learn</h2>
+<p>There are example project boards attached to each module, showing you ways you can use boards to manage your time, prioritise, scope, and track your work. You should use the <em>same project board</em> all the way through the course, and add to it as you go. Learn as you go, and adapt your board as you learn.</p>
+<p>You can, and should, also add your own tickets to the board. Just remember it&rsquo;s a public board, so don&rsquo;t add anything you don&rsquo;t want to share with your mentors.</p>
+<p>You can watch <a
+  href="https://www.loom.com/share/825be2e98a5046339500449dbf86ff01">this video</a> about how to create your coursework-planner board.</p>
+
+
+    </div>
+
+    
+    
+    
+  </section>
+
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="cyf-blog">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="cyf-blog">
+        Blog
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="5 minutes countdown" datetime="P5M">5&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+    <div class="c-block__content c-copy">
+      <p>Imagine that two people are writing a blog.
+Ahmed and Naima are writing a blog together about their struggles learning coding.</p>
+<p>The published blog is live here 👉 <a
+  href="https://git-demo-week1.netlify.app/">Educational blog</a></p>
+<section class="c-note c-note--exercise">
+  <h4 class="c-note__title e-heading__4">✍️exercise 1.1</span>
+  </h4>
+  <div class="c-note__text ">Explore the <a
+  href="https://git-demo-week1.netlify.app/">Educational blog</a>. Click on the link on the site and check to see if it is working.</div>
+</section>
+
+
+
+    </div>
+    
+    
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="development-process">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="development-process">
+        Development process
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="10 minutes countdown" datetime="P10M">10&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+    <div class="c-block__content c-copy">
+      <p>Ahmed and Naima are using the following <strong>development process</strong> for writing their blog:</p>
+<blockquote><ul>
+<li>writing the blog in a single file on a <strong>single</strong> computer</li>
+<li>saving multiple versions of the file on the same computer</li>
+<li>taking turns to use the computer during the day</li>
+</ul>
+</blockquote><p>At the moment, the computer has a folder with the blog that looks like this:</p>
+<p>
+
+  <figure>
+      <img
+        loading="lazy"
+        src="/module/induction/development-process/different-blog-versions.png"alt="different-blog-versions" data-pagefind-index-attrs="different-blog-versions"/></figure></p>
+<section class="c-note c-note--exercise">
+  <h4 class="c-note__title e-heading__4">✍️Exercise</span>
+  </h4>
+  <div class="c-note__text "><p>Describe some of the challenges that Ahmed and Naima face when trying to write a blog together in this way.</p>
+<p>Look in Slack. Has someone made a post describing Ahmed and Naima&rsquo;s challenge? Share your answers as a <strong>reply</strong> to this post, making a <a
+  href="https://slack.com/intl/en-gb/help/articles/115000769927-Use-threads-to-organise-discussion">conversation 🧵 thread</a>.</p>
+</div>
+</section>
+
+
+
+    </div>
+    
+    
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="version-control">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="version-control">
+        Version control software
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="10 minutes countdown" datetime="P10M">10&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Define a repository</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Define a commit</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Explain the purpose of version control software</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <p>To improve their way of working, Ahmed and Naima realise they need the following:</p>
+<blockquote><ul>
+<li>a way to both know what the most recent version is</li>
+<li>a way to know what the old versions were, and in what order (i.e. how they got to the current version, and what content they may have deleted that they may want to get back)</li>
+</ul>
+</blockquote><p>To manage the different versions of the blog project, they decide to use <strong>Git</strong>.</p>
+<section class="c-note c-note--definition">
+  <h4 class="c-note__title e-heading__4">📖definition: Git</span>
+  </h4>
+  <div class="c-note__text ">Git is <strong>version control software</strong> that allows developers to create and manage different versions of a project.</div>
+</section>
+
+
+<p>In Git, we create different versions of a project over time by creating <strong>commits</strong>.</p>
+<p>A <strong>commit</strong> is a snapshot of our project at a particular point in time. You can also think of a <strong>commit</strong> as a particular version of a project.</p>
+<p><strong>Commits</strong> store the following information:</p>
+<ul>
+<li>what changed in this commit</li>
+<li>who created the change</li>
+<li>what time the change happened</li>
+<li>what the previous commit was</li>
+</ul>
+<p>A typical timeline of commits might look like this:</p>
+<p>
+
+  <figure>
+      <img
+        loading="lazy"
+        src="/module/induction/version-control/commit-history-relative-dates.png"alt="commit-history" data-pagefind-index-attrs="commit-history"/></figure></p>
+<section class="c-note c-note--note">
+  <h4 class="c-note__title e-heading__4">📝Commit hashes</span>
+  </h4>
+  <div class="c-note__text "><p>Commits also have a <strong>hash</strong> associated with them. A <strong>hash</strong> is a long string of characters used to identify a particular commit.</p>
+<p>A typical hash will look like this: <code>fec6909d6de23c75e77960986a9b6a7aee7feec7</code> but you will often see them abbreviated to the first few characters like this: <code>fec6909</code></p>
+</div>
+</section>
+
+
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="sharing-history">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="sharing-history">
+        Sharing history
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="30 minutes countdown" datetime="P30M">30&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Identify the number of commits on the main branch of a remote repository</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Identify the author, time and message of a given commit on GitHub</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <p>Earlier on, Ahmed and Naima realised they also need the following:</p>
+<blockquote><p>a way to share the history of the project between different users and different computers</p>
+</blockquote><p>To share a project and its history, we can use an online platform called <strong>GitHub</strong></p>
+<p><strong>GitHub</strong> is a platform where teams can store projects along with a history of their different versions.</p>
+<p>By storing projects on GitHub, multiple users can gain access to the history of a project.</p>
+<section class="c-note c-note--definition">
+  <h4 class="c-note__title e-heading__4">📖Definition: Repository</span>
+  </h4>
+  <div class="c-note__text ">On GitHub we call our project and its history a <strong>repository</strong>.</div>
+</section>
+
+
+<section class="c-note c-note--exercise">
+  <h4 class="c-note__title e-heading__4">✍️Exercise</span>
+  </h4>
+  <div class="c-note__text "><h3 id="explore-">Explore 🔍</h3>
+<p>In this exercise, you&rsquo;ll need to explore a <strong>GitHub repository.</strong></p>
+<p>You&rsquo;ll need to look around and figure out where to find different files and find out information about them.</p>
+<p><strong>⚠️ You won&rsquo;t be expected to know what the files do at this stage.</strong></p>
+<p>Go to the following link: <a
+  href="https://github.com/CodeYourFuture/education-blog">https://github.com/CodeYourFuture/education-blog</a></p>
+<p>It will take you to a GitHub repository called <strong>education-blog</strong>.</p>
+<p>Answer the following questions using the page linked to above:</p>
+<p>a) View the <strong>README.md</strong> file. What do the instructions tell you?
+b) How many files are there inside the <code>blogs</code> folder?
+c) How many lines are there in the <strong>package.json</strong> file?
+d) Find the file with the blog content you can see on the live site here <a
+  href="https://git-demo-week1.netlify.app/blogs/1">blog 1</a></p>
+<p>You&rsquo;ll learn more about these type of files throughout the course.</p>
+</div>
+</section>
+
+
+<blockquote><p>We can use the Github interface to explore the different <strong>commits</strong> (versions) of a project too.</p>
+</blockquote><section class="c-note c-note--exercise">
+  <h4 class="c-note__title e-heading__4">✍️exercise</span>
+  </h4>
+  <div class="c-note__text "><h3 id="explore-">Explore 🔍</h3>
+<p>Go to the following link: <a
+  href="https://github.com/CodeYourFuture/education-blog/commits/main">https://github.com/CodeYourFuture/education-blog/commits/main</a></p>
+<p>Try answering the following questions:</p>
+<p>Go to the commit that says &ldquo;add test p element to index page&rdquo;</p>
+<h4 id="questions">Questions</h4>
+<ul>
+<li>How many files were changed in this commit?</li>
+<li>Who created the change?</li>
+<li>What time did the change take place?</li>
+</ul>
+</div>
+</section>
+
+
+<section class="c-note c-note--exercise">
+  <h4 class="c-note__title e-heading__4">✍️exercise</span>
+  </h4>
+  <div class="c-note__text "><h3 id="explore-">Explore 🔍</h3>
+<p>Go to the following link: <a
+  href="https://github.com/CodeYourFuture/education-blog/commits/main">https://github.com/CodeYourFuture/education-blog/commits/main</a> and locate commit that says &ldquo;remove \ and # from start of paragraph&rdquo;</p>
+<h4 id="questions">Questions</h4>
+<ul>
+<li>How many files were changed in this commit?</li>
+<li>What change was made in this commit?</li>
+</ul></div>
+</section>
+
+
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="explore">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="explore">
+        Inspecting a commit
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="15 minutes countdown" datetime="P15M">15&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Given a remote repository on GitHub, identify the files and folders from any commit in a version timeline</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <p>Recall that a commit is a snapshot of our project at some point in time.</p>
+<p>Therefore, we should be able to check out a previous version of our project and look at the files and folders there.
+We can use the Github interface to check out the files and folders at a previous commit.</p>
+<section class="c-note c-note--exercise">
+  <h4 class="c-note__title e-heading__4">✍️exercise</span>
+  </h4>
+  <div class="c-note__text "><p>Go back to this page <a
+  href="https://github.com/CodeYourFuture/education-blog/commits/main">https://github.com/CodeYourFuture/education-blog/commits/main</a></p>
+<p>Locate the the commit with hash <code>4e78b32</code> and then look for the icon that that says &ldquo;Browse the repository at this point in the history&rdquo;.
+Explore the code at this point in the history. What differences do you notice?</p>
+<p>Do the same but for the commit <code>cd981a0</code>.</p>
+</div>
+</section>
+
+
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="previous-versions">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="previous-versions">
+        Inspecting previous versions
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="20 minutes countdown" datetime="P20M">20&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Use a Git history to view previous versions of a project</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Find the commit that corresponds to a particular version of a project</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <p>We can view the different commits of a project on Github. This means we can see what the website looked like before, in previous versions.</p>
+<section class="c-note c-note--exercise">
+  <h4 class="c-note__title e-heading__4">✍️exercise</span>
+  </h4>
+  <div class="c-note__text "><p>Here are some different versions of the same educational backlog.</p>
+<p><a
+  href="https://git-demo-week1-version-a.netlify.app/">Deployed version A educational blog</a></p>
+<!---
+Version A should have a test p element on the index page
+-->
+<p><a
+  href="https://git-demo-week1-version-b.netlify.app/">Deployed version B educational blog</a></p>
+<!---
+Version B should have nothing on the index page
+-->
+<p><a
+  href="https://git-demo-week1-version-c.netlify.app/">Deployed version C educational blog</a></p>
+<!---
+Version C should be same as production deployment but with some rogue characters on the page
+-->
+<h4 id="questions">Questions</h4>
+<ol>
+<li>What is the difference between Version A and Version B on the index page (the page you first land on after clicking on the link)</li>
+<li>What is the difference between Version C and the main version of the site.</li>
+<li>Which commit from the <a
+  href="https://github.com/CodeYourFuture/education-blog/commits/main"><strong>education-blog</strong></a> repo correspond to Version C? Remember to check the git history.</li>
+<li>Which commit from the <a
+  href="https://github.com/CodeYourFuture/education-blog/commits/main"><strong>education-blog</strong></a> repo correspond to Version A?</li>
+</ol>
+</div>
+</section>
+
+
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="forking-a-repository">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="forking-a-repository">
+        Forking a repository
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="10 minutes countdown" datetime="P10M">10&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Create a fork of a repository</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <p>Often we want to take an existing project and start working on it independently. In other words: we start making our own versions of the project separate from the original project.</p>
+<p>We can create a 
+<tool-tip-container tabindex="0"><strong class="tooltip__trigger" id="trigger__fork">fork</strong><span class="tooltip__emoji">🧶</span><tool-tip role="tooltip" aria-labelledby="fork"><span class="tooltip__title e-heading__2"><span class="tooltip__emoji">🧶</span> fork</span><span class="tooltip__content">A <strong>fork</strong> is a copy of a repository that exists on Github</span></tool-tip></tool-tip-container>
+.</p>
+<p>When we create a fork on Github, the new forked repository gets a new url:</p>
+<h4 id="httpsgithubcomcodeyourfuturecyf-demo-repo"><a
+  href="https://github.com/CodeYourFuture/cyf-demo-repo">https://github.com/CodeYourFuture/cyf-demo-repo</a></h4>
+<style>
+  .mermaid svg {
+    height: initial;
+  }
+  .mermaid {
+    margin-bottom: var(--theme-spacing--gutter);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .mermaid[data-processed] {
+    opacity: 1;
+  }
+</style>
+<div class="mermaid">flowchart LR
+    subgraph "📍 domain"
+      B
+    end
+    subgraph "👤 username"
+      C
+    end
+    subgraph "📁 repo"
+      D
+    end
+    A[🔗 https://] --> B[github.com]
+    B--> C[CodeYourFuture]
+    C --> D[cyf-demo-repo]</div>
+
+<script type="module" src="/scripts/mermaid-observer.min.js" defer></script>
+<p>When the user EagerLearner forks this repo, the path changes from <code>CodeYourFuture</code> to <code>EagerLearner</code>.</p>
+<style>
+  .mermaid svg {
+    height: initial;
+  }
+  .mermaid {
+    margin-bottom: var(--theme-spacing--gutter);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .mermaid[data-processed] {
+    opacity: 1;
+  }
+</style>
+<div class="mermaid">flowchart LR
+    subgraph "📍 domain"
+      B
+    end
+    subgraph "👤 username"
+      C
+    end
+    subgraph "📁 repo"
+      D
+    end
+    A[🔗 https://] --> B[github.com]
+    B--> C[EagerLearner]
+    C --> D[cyf-demo-repo]</div>
+
+<script type="module" src="/scripts/mermaid-observer.min.js" defer></script>
+<section class="c-note c-note--exercise">
+  <h4 class="c-note__title e-heading__4">✍️🍴 Fork a repo</span>
+  </h4>
+  <div class="c-note__text "><h3 id="-fork-a-repo">🍴 Fork a repo</h3>
+<ol>
+<li>Go to <a
+  href="https://github.com/CodeYourFuture/education-blog">https://github.com/CodeYourFuture/education-blog</a>.</li>
+<li>Find the <strong>Fork</strong> button on this page.</li>
+<li>Click on the Fork button to create a new fork of the repository and set yourself as the owner of the fork.</li>
+</ol>
+<p>📋 How can you check you successfully forked the original repository?</p>
+<p>Hint: Check the URL of your forked repository</p>
+</div>
+</section>
+
+
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="working-locally">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="working-locally">
+        Working locally
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="20 minutes countdown" datetime="P20M">20&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Clone a remote repository from GitHub into a local folder</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Define the terms &lsquo;remote&rsquo; and &rsquo;local&rsquo; in the context of GitHub</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <p>Here is a diagram representing how the repositories interact after forking and cloning:</p>
+<style>
+  .mermaid svg {
+    height: initial;
+  }
+  .mermaid {
+    margin-bottom: var(--theme-spacing--gutter);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .mermaid[data-processed] {
+    opacity: 1;
+  }
+</style>
+<div class="mermaid">flowchart TD
+    subgraph Remote["Remote (GitHub)"]
+        A["CodeYourFuture/education-blog"] -->|fork| B["EagerLearner/education-blog"]
+    end
+    
+    B -->|clone| C
+    
+    subgraph Local["Local (your computer)"]
+        C["YOUR_CYF_FOLDER/education-blog"]
+    end
+    
+    %% Style definitions
+    classDef container stroke-dasharray:5 5,fill:#f8f9fa,stroke:#495057
+    classDef rounded rx:10,ry:10,fill:#e9ecef,stroke:#495057
+    classDef arrow color:#0d6efd,stroke-width:2px
+    
+    %% Apply styles
+    class Remote,Local container
+    class A,B,C rounded
+    linkStyle 0,1 stroke:#0d6efd,stroke-width:2px</div>
+
+<script type="module" src="/scripts/mermaid-observer.min.js" defer></script>
+<p>Sketch this diagram in your notebook. When you inevitably get mixed lost about where your changes are, you can refer back to this diagram to help you understand what&rsquo;s happening.</p>
+<section class="c-note c-note--note">
+    <h4 class="c-note__title">📝Note</h4>
+    <div class="c-note__text"><p>If you&rsquo;re working on a library computer, just fork the repo to your own GitHub account. You can&rsquo;t clone a repo on a library computer, so come to class to try cloning out. You can explore the files using dot dev in the same way as you would in Visual Studio Code.</p></div>
+  </section><p>We can also use Git on our local machine to perform similar tasks as we do on GitHub. So we need to address the following question:</p>
+<blockquote><p>How can we get a copy of an existing GitHub repository on our local machine?</p>
+</blockquote><p>In other words, we need to get a 
+<tool-tip-container tabindex="0"><strong class="tooltip__trigger" id="trigger__local copy">local copy</strong><span class="tooltip__emoji">🧶</span><tool-tip role="tooltip" aria-labelledby="local copy"><span class="tooltip__title e-heading__2"><span class="tooltip__emoji">🧶</span> local copy</span><span class="tooltip__content">A repository on GitHub is said to be <strong>remote</strong>. A repository on our own computer is said to be <strong>local</strong>.</span></tool-tip></tool-tip-container>
+ of the repository which is on GitHub.</p>
+<p>We call a local copy of a GitHub repository a <strong>clone</strong>. The process of copying a remote repository on to a local machine is called <strong>cloning</strong>.</p>
+<h3 id="-goal-clone-a-remote-repository-to-your-local-machine">🎯 Goal: Clone a remote repository to your local machine</h3>
+<p>You&rsquo;ll need to clone <strong>your fork</strong> of the education blog repo. Follow through the steps in the video &ldquo;How to clone a repository from GitHub to Visual Studio Code&rdquo;.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+
+  
+
+  
+  
+
+  
+    
+    
+  
+
+
+
+<section
+  class="c-block c-block--youtube"
+  aria-labelledby="warning-name-is-empty">
+  
+  <div class="c-block__content">
+    <youtube-player data-src="https://www.youtube.com/watch?v=ILJ4dfOL7zs"></youtube-player>
+  </div>
+</section>
+
+<hr>
+<h5 id="-reminder">🎗️ Reminder:</h5>
+<ul>
+<li>Use the URL for your fork of the <code>education-blog</code> repo when you are cloning</li>
+<li>When selecting the location to clone your files, choose the <code>CYF</code> folder you created in the <a
+  href="/user-data/prep/#create-cyf-folder">module prep</a></li>
+</ul>
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="viewing-files">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="viewing-files">
+        Viewing files from a git clone
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="20 minutes countdown" datetime="P20M">20&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Open a cloned repository in your IDE</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Explore the repository in your IDE</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Open the Integrated Terminal in VSCode</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <p>Once you&rsquo;ve got a local copy of a codebase on your local machine you can start to view the files and folders in that codebase. You can use a code editor like VSCode.</p>
+<p>VSCode is an application that enables developers to view and edit files on their local machine.</p>
+<section class="c-note c-note--exercise">
+  <h4 class="c-note__title e-heading__4">✍️Exercise</span>
+  </h4>
+  <div class="c-note__text "><h3 id="explore-vscode">Explore VSCode</h3>
+<ol>
+<li>
+<p>Figure out how to open the cloned repository on your local machine in VSCode.</p>
+</li>
+<li>
+<p>Explore the repository in VSCode and use the code editor to look at the various files and folders.</p>
+</li>
+<li>
+<p>Try opening the Integrated Terminal in your VSCode window</p>
+</li>
+</ol>
+<p>🤔 If you get stuck on any of these exercises, it&rsquo;s a good idea to search online. For example, you could Google &ldquo;opening terminal in vscode&rdquo;</p>
+</div>
+</section>
+
+
+<section class="c-note c-note--note">
+    <h4 class="c-note__title">📝Note</h4>
+    <div class="c-note__text"><p>If you&rsquo;re working on a library computer, use dot dev to open the repo in your browser, and navigate the files and folder there. You cannot open a terminal in the library, so come to class to try this part out.</p></div>
+  </section>
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="branching">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="branching">
+        Branching
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="45 minutes countdown" datetime="P45M">45&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Explain why a git repository may have multiple branches</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Describe what&rsquo;s special about the branch named main</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Create a new local branch in a git repository</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <p>We can check the commits on the remote repository as before:</p>
+<p>
+
+  <figure>
+      <img
+        loading="lazy"
+        src="/module/induction/branching/commit-history.png"alt="commit-history" data-pagefind-index-attrs="commit-history"/></figure></p>
+<p>On the left page of the page, we see additional information:</p>
+<p>
+
+  <figure>
+      <img
+        loading="lazy"
+        src="/module/induction/branching/main-branch-highlighted.png"alt="main-branch-highlighted" data-pagefind-index-attrs="main-branch-highlighted"/></figure></p>
+<blockquote><p>So what is <strong><code>main</code></strong>?</p>
+</blockquote><p><code>main</code> is a <strong>branch</strong>.</p>
+<p>Commits form a sequence that look like this:</p>
+<style>
+  .mermaid svg {
+    height: initial;
+  }
+  .mermaid {
+    margin-bottom: var(--theme-spacing--gutter);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .mermaid[data-processed] {
+    opacity: 1;
+  }
+</style>
+<div class="mermaid">gitGraph
+       commit
+       commit
+       commit</div>
+
+<script type="module" src="/scripts/mermaid-observer.min.js" defer></script>
+<p>A branch represents a particular history of development in a project - the different versions there have been.</p>
+<section class="c-note c-note--definition">
+  <h4 class="c-note__title e-heading__4">📖definition: Branch</span>
+  </h4>
+  <div class="c-note__text ">A <strong>branch</strong> is a sequence of commits in a project.</div>
+</section>
+
+
+<p>There can be different branches with different names, which may have different versions.</p>
+<p>For example, if we were testing out some different visual styles, maybe we would have one branch with some extra changes which make the website more blue, and a different branch with some extra changes which make the website more purple. These branches may share some commits in history, but have some extra different commits separately.</p>
+<style>
+  .mermaid svg {
+    height: initial;
+  }
+  .mermaid {
+    margin-bottom: var(--theme-spacing--gutter);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .mermaid[data-processed] {
+    opacity: 1;
+  }
+</style>
+<div class="mermaid">gitGraph
+        commit
+        commit
+        branch "try-purple"
+        commit
+        commit
+        checkout main
+        branch "try-blue"
+        commit</div>
+
+<script type="module" src="/scripts/mermaid-observer.min.js" defer></script>
+<p>The <strong><code>main</code></strong> branch is often treated as a special branch - it&rsquo;s where we put commits which people working on the project have agreed on. Other branches (e.g. the experimental purple branch) may have extra changes that have not been agreed on. If people working on the project agree the changes from the purple branch are good, we&rsquo;ll add those changes to the main branch.</p>
+<p>When we&rsquo;re working on something new, we haven&rsquo;t agreed with other people that our new thing is good yet, so we often don&rsquo;t add our changes to the main branch straight away. Instead we make our own branch to experiment on.</p>
+<p>We can start to create independent branches like this:</p>
+<style>
+  .mermaid svg {
+    height: initial;
+  }
+  .mermaid {
+    margin-bottom: var(--theme-spacing--gutter);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .mermaid[data-processed] {
+    opacity: 1;
+  }
+</style>
+<div class="mermaid">gitGraph
+        commit
+        commit
+        branch "week-1-coursework"
+        commit
+        commit
+        commit</div>
+
+<script type="module" src="/scripts/mermaid-observer.min.js" defer></script>
+<p>In the diagram above, we can continue to commit on the &ldquo;week-1-coursework&rdquo; branch without altering the history of the <code>main</code> branch.</p>
+<section class="c-note c-note--exercise">
+  <h4 class="c-note__title e-heading__4">✍️exercise 8.1</span>
+  </h4>
+  <div class="c-note__text "><h3 id="creating-a-local-branch">Creating a local branch</h3>
+<ol>
+<li>
+<p>Open the <code>education-blog</code> repository in VSCode.</p>
+</li>
+<li>
+<p>Using this clip, create a new branch called <code>update-blog-1</code> in your local repository 👉 <a
+  href="https://youtube.com/clip/UgkxvXsnm_98Rx0NUZq25apQWA6POccRoQzw">https://youtube.com/clip/UgkxvXsnm_98Rx0NUZq25apQWA6POccRoQzw</a></p>
+</li>
+</ol>
+<p>📋 How can you check that you&rsquo;ve successfully created a branch?</p>
+</div>
+</section>
+
+
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="wrapping-up-git">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="wrapping-up-git">
+        Wrapping up Git
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="15 minutes countdown" datetime="P15M">15&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Commit changes to a local git branch</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <section class="c-note c-note--activity">
+  <h4 class="c-note__title e-heading__4">🕹️Creating a commit - Figure it out 🔍</span>
+  </h4>
+  <div class="c-note__text "><p>📋 Double check the learning objectives from this sprint. Make a note of those objectives that you&rsquo;re still struggling with.</p>
+<p>Now you&rsquo;ll need to <strong>create a commit</strong>.</p>
+<p>You can use the &ldquo;How to commit changes and push them in Visual Studio Code&rdquo; video to figure out how to create a commit.</p>
+<p>We&rsquo;ll cover this topic often in workshops. Come to a CYF centre to work on this with a mentor.</p>
+<ol>
+<li>Try opening your clone of education-blog in VSCode</li>
+<li>Make sure you&rsquo;re on the <code>main</code> branch</li>
+<li>Make a <strong>new</strong> branch for your changes</li>
+<li>Try fixing a typo in the <code>README.md</code> file</li>
+<li>Try using the video to create a commit of your work.</li>
+</ol>
+</div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+
+  
+
+  
+  
+
+  
+    
+    
+  
+
+
+
+<section
+  class="c-block c-block--youtube"
+  aria-labelledby="warning-name-is-empty">
+  
+  <div class="c-block__content">
+    <youtube-player data-src="https://www.youtube.com/watch?v=B8RSMBSzFuA"></youtube-player>
+  </div>
+</section>
+
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+
+  
+
+  
+  
+
+  
+    
+    
+  
+
+
+
+
+
+
+
+
+  
+<section
+  class="c-block c-block--youtube"
+  aria-labelledby="forms-in-25-minutes">
+  
+    <h2
+      class="c-block__title e-heading__2 is-invisible"
+      id="forms-in-25-minutes">
+      Youtube:
+      <a href="https://www.youtube.com/watch?v=fNcJuPIZ2WE">Forms in 25 minutes</a>
+    </h2>
+  
+  <div class="c-block__content">
+    <youtube-player data-src="https://www.youtube.com/watch?v=fNcJuPIZ2WE"></youtube-player>
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="backlog">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="backlog">
+        Backlog
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="30 minutes countdown" datetime="P30M">30&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Find the backlog</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Copy your tickets to your own backlog</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Manage your tickets on your board</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <p>In software development, we break down complex projects into smaller, manageable parts, which we work on for a week or two. These periods are called &ldquo;sprints.&rdquo;</p>
+<p>A sprint backlog is like a to-do list. It lists what the team has decided to work on this sprint. It&rsquo;s chosen from a larger list, usually called the &ldquo;product backlog,&rdquo; which holds the entire project to-do list.</p>
+<p>In this course, the backlog is a set of work designed to build understanding beyond the concepts introduced in the course prep. For your course, we have prepared a backlog of mandatory work for each sprint. You will copy these tasks into your own backlog. You can also add any other tickets you want to work on to your backlog, and schedule all of the tasks according to your own goals and capacity. Use your planning board to do this.</p>
+<p>You will find the backlog in the <strong>Backlog</strong> view on every sprint.</p>
+<p>Copy the tickets you are working on to your own backlog. Organise your tickets on your board and move them to the right column as you work through them. Here&rsquo;s a flowchart showing the stages a ticket goes through:</p>
+<style>
+  .mermaid svg {
+    height: initial;
+  }
+  .mermaid {
+    margin-bottom: var(--theme-spacing--gutter);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .mermaid[data-processed] {
+    opacity: 1;
+  }
+</style>
+<div class="mermaid">flowchart LR
+    Backlog --> Ready
+    Ready --> in_progress
+    in_progress[In Progress] --> in_review
+    in_review[In Review] --> Done</div>
+
+<script type="module" src="/scripts/mermaid-observer.min.js" defer></script>
+<section class="c-note c-note--activity">
+  <h4 class="c-note__title e-heading__4">🕹️Backlog (30 minutes)</span>
+  </h4>
+  <div class="c-note__text "><ol>
+<li>Find the sprint backlog</li>
+<li>Copy your tickets to your own backlog</li>
+<li>Organise your tickets on your board</li>
+</ol>
+</div>
+</section>
+
+
+
+    </div>
+    
+    
+    
+  </div>
+</section>
+
+
+
+        
+      </div>
+      <nav slot="nav">
+        <a href="#" class="e-button c-solo-view__back">&larr; Back</a>
+        <a href="#" class="e-button c-solo-view__next">Next &rarr;</a>
+      </nav>
+    </solo-view>
+    
+    <script src="/scripts/solo-view.min.js" defer></script>
+    
+    <script src="/scripts/time-total.min.js" defer></script>
+  
+
+
+        
+
+  <footer class="c-page-footer">
+    <nav class="c-page-footer__nav">
+      
+      
+      <span class="c-page-footer__this">Prep</span>
+      
+        →<a
+          class="c-page-footer__next c-page-footer__link e-link"
+          href="/itp/onboarding/sprints/1/backlog/"
+          >Backlog</a
+        >
+      
+    </nav>
+  </footer>
+
+
+      </main><footer class="l-layout__footer l-footer">
+  <a
+    class="l-footer__github e-button e-button--icon"
+    href="https://github.com/CodeYourFuture/curriculum/">
+    <svg
+  focusable="false"
+  class="e-button__icon"
+  role="presentation"
+  width="96"
+  viewbox="0 0 98 96"
+  xmlns="http://www.w3.org/2000/svg">
+  <path
+    fill-rule="evenodd"
+    clip-rule="evenodd"
+    d="M48.854 0C21.839 0 0 22 0 49.217c0 21.756 13.993 40.172 33.405 46.69 2.427.49 3.316-1.059 3.316-2.362 0-1.141-.08-5.052-.08-9.127-13.59 2.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015 4.934.326 7.523 5.052 7.523 5.052 4.367 7.496 11.404 5.378 14.235 4.074.404-3.178 1.699-5.378 3.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283 0-5.378 1.94-9.778 5.014-13.2-.485-1.222-2.184-6.275.486-13.038 0 0 4.125-1.304 13.426 5.052a46.97 46.97 0 0 1 12.214-1.63c4.125 0 8.33.571 12.213 1.63 9.302-6.356 13.427-5.052 13.427-5.052 2.67 6.763.97 11.816.485 13.038 3.155 3.422 5.015 7.822 5.015 13.2 0 18.905-11.404 23.06-22.324 24.283 1.78 1.548 3.316 4.481 3.316 9.126 0 6.6-.08 11.897-.08 13.526 0 1.304.89 2.853 3.316 2.364 19.412-6.52 33.405-24.935 33.405-46.691C97.707 22 75.788 0 48.854 0z"
+    fill="currentColor" />
+</svg>
+
+    <span class="is-invisible">Find us on GitHub</span>
+  </a>
+  <p class="l-footer__impressum e-heading__6">
+    This
+    <a href="https://github.com/CodeYourFuture/curriculum/">free and open source programme</a>
+    is a project of
+    <a href="https://codeyourfuture.io/">Code Your Future</a>
+    <br />
+    Creative Commons Attribution-ShareAlike 4.0
+  </p>
+  <dark-mode class="l-footer__mode"
+    ><button
+      slot="button"
+      id="mode-toggle"
+      type="button"
+      class="e-button e__button--toggle e-button--icon">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="e-icon e__button__icon e-icon--moon">
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
+      </svg>
+      <span class="is-invisible">Toggle between light and dark mode</span>
+    </button></dark-mode
+  >
+</footer>
+
+
+
+<script src="/scripts/app.min.js" defer></script>
+
+<script src="/scripts/youtube-player.min.js" defer></script>
+
+<script src="/scripts/tab-panels.min.js" type="module" defer></script>
+
+<script src="/scripts/dark-mode.min.js"></script>
+
+<script src="/scripts/alert-message.min.js" defer></script>
+
+
+
+
+
+
+
+</div>
+  </body>
+</html>

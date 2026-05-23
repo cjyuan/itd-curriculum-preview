@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Presenting on CYF Courses</title>
+    <link>https://curriculum.codeyourfuture.io/guides/presenting/</link>
+    <description>Recent content in Presenting on CYF Courses</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="https://curriculum.codeyourfuture.io/guides/presenting/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Demos</title>
+      <link>https://curriculum.codeyourfuture.io/guides/presenting/demoing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://curriculum.codeyourfuture.io/guides/presenting/demoing/</guid>
+      <description>&lt;p&gt;Make sure you&amp;rsquo;ve read all of &lt;a&#xA;  href=&#34;https://curriculum.codeyourfuture.io/guides/presenting/&#34;&gt;the general presentation guidance&lt;/a&gt;. This page adds to that information.&lt;/p&gt;&#xA;&lt;h2 id=&#34;purpose&#34;&gt;Purpose&lt;/h2&gt;&#xA;&lt;p&gt;Think about the purpose of your demo.&lt;/p&gt;&#xA;&lt;p&gt;Are you &lt;strong&gt;pitching&lt;/strong&gt; - trying to get someone to use/buy/support your product?&lt;br&gt;&#xA;If so, you probably want to focus on features, value, and why your product is unique.&lt;/p&gt;&#xA;&lt;p&gt;Are you &lt;strong&gt;seeking feedback&lt;/strong&gt; - asking people for suggestions or ideas?&lt;br&gt;&#xA;If so, you probably want to tell the audience what feedback you want, and make sure they know how to give it.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

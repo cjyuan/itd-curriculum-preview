@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Teaching on CYF Courses</title>
+    <link>https://curriculum.codeyourfuture.io/guides/teaching/</link>
+    <description>Recent content in Teaching on CYF Courses</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="https://curriculum.codeyourfuture.io/guides/teaching/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Don&#39;t answer questions</title>
+      <link>https://curriculum.codeyourfuture.io/guides/teaching/do-not-answer-questions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://curriculum.codeyourfuture.io/guides/teaching/do-not-answer-questions/</guid>
+      <description>&lt;p&gt;Instead, help a trainee answer their own question.&lt;/p&gt;&#xA;&lt;p&gt;If someone asks &amp;ldquo;How can I make this text green&amp;rdquo;, instead of telling them, consider answering:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;What could we Google to find that out?&lt;/li&gt;&#xA;&lt;li&gt;When have you done something similar?&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;If someone asks &amp;ldquo;Why is this text green?&amp;rdquo;:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://curriculum.codeyourfuture.io/guides/getting-help/asking-questions/&#34;&gt;Make them ask a better question&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;Ask &amp;ldquo;What techniques do we have to work this out?&amp;rdquo; (have &lt;em&gt;them&lt;/em&gt; identify that devtools could be useful).&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;Helping someone craft a good search will help them much more in the future than giving them the answer.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>It&#39;s OK not to know things</title>
+      <link>https://curriculum.codeyourfuture.io/guides/teaching/it-is-ok-not-to-know-things/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://curriculum.codeyourfuture.io/guides/teaching/it-is-ok-not-to-know-things/</guid>
+      <description>&lt;p&gt;Our trainees often get intimidated and are scared to apply for jobs because they think professionals (like our volunteers) know everything.&lt;/p&gt;&#xA;&lt;p&gt;In reality, we look stuff up all the time.&lt;/p&gt;&#xA;&lt;p&gt;This is a really healthy behaviour to demonstrate.&lt;/p&gt;&#xA;&lt;p&gt;Even if you do know the answer to a question:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://curriculum.codeyourfuture.io/guides/teaching/do-not-answer-questions/&#34;&gt;Don&amp;rsquo;t answer questions&lt;/a&gt;.&lt;/li&gt;&#xA;&lt;li&gt;Demonstrate that everyone has to look things up.&lt;/li&gt;&#xA;&lt;/ol&gt;</description>
+    </item>
+    <item>
+      <title>Don&#39;t touch a trainee&#39;s keyboard</title>
+      <link>https://curriculum.codeyourfuture.io/guides/teaching/do-not-touch-a-trainee-keyboard/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://curriculum.codeyourfuture.io/guides/teaching/do-not-touch-a-trainee-keyboard/</guid>
+      <description>&lt;p&gt;People learn by doing.&lt;/p&gt;&#xA;&lt;p&gt;Even if it&amp;rsquo;s going to be slower, or frustrating, &lt;em&gt;explain&lt;/em&gt; to a trainee what you need them to type/do, and have them do it.&lt;/p&gt;&#xA;&lt;p&gt;Don&amp;rsquo;t do it for them.&lt;/p&gt;&#xA;&lt;p&gt;This helps trainees to practice.&lt;/p&gt;&#xA;&lt;p&gt;Also, often times an expert will do some things without realising they&amp;rsquo;re doing them. If you have to explain them, you can&amp;rsquo;t skip them!&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>No one talks for more than five minutes</title>
+      <link>https://curriculum.codeyourfuture.io/guides/teaching/no-one-talks-for-more-than-five-minutes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://curriculum.codeyourfuture.io/guides/teaching/no-one-talks-for-more-than-five-minutes/</guid>
+      <description>&lt;p&gt;Talking for long periods of time means you&amp;rsquo;re not getting feedback on what is/isn&amp;rsquo;t being understood.&lt;/p&gt;&#xA;&lt;p&gt;It also often leads to people disengaging, and stopping taking in new information.&lt;/p&gt;&#xA;&lt;p&gt;Whether you&amp;rsquo;re a volunteer or a trainee, if you&amp;rsquo;ve been talking for 5 minutes, stop and find out what the people you&amp;rsquo;re talking with are thinking.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

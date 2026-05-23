@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Deploying to CYF&#39;s hosted environment on CYF Courses</title>
+    <link>https://curriculum.codeyourfuture.io/guides/deploying/cyf/</link>
+    <description>Recent content in Deploying to CYF&#39;s hosted environment on CYF Courses</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="https://curriculum.codeyourfuture.io/guides/deploying/cyf/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Adding a backend</title>
+      <link>https://curriculum.codeyourfuture.io/guides/deploying/cyf/backend/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://curriculum.codeyourfuture.io/guides/deploying/cyf/backend/</guid>
+      <description>&lt;h2 id=&#34;creating-a-backend&#34;&gt;Creating a backend&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Click &amp;ldquo;Add New Resource&amp;rdquo;&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;&#xD;&#xA;&#xD;&#xA;  &lt;figure&gt;&#xD;&#xA;      &lt;img&#xD;&#xA;        loading=&#34;lazy&#34;&#xD;&#xA;        src=&#34;https://curriculum.codeyourfuture.io/guides/deploying/cyf/backend/click-add-new-resource.png&#34;alt=&#34;Click Add New Resource&#34; data-pagefind-index-attrs=&#34;Click Add New Resource&#34;/&gt;&lt;/figure&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Add the GitHub repository&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;The hosting platform needs to know where to get your backend from.&lt;/p&gt;&#xA;&lt;p&gt;You probably want to add a &amp;ldquo;Public Repository&amp;rdquo; Git Based repository, to tell it your project is in GitHub.&lt;/p&gt;&#xA;&lt;p&gt;If you want your application to auto-deploy when you push changes to it, you&amp;rsquo;ll need to instead choose &amp;ldquo;Private Repository (with GitHub App)&amp;rdquo; and set up a GitHub App yourself.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Adding a frontend</title>
+      <link>https://curriculum.codeyourfuture.io/guides/deploying/cyf/frontend/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://curriculum.codeyourfuture.io/guides/deploying/cyf/frontend/</guid>
+      <description>&lt;h2 id=&#34;creating-a-frontend&#34;&gt;Creating a frontend&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Click &amp;ldquo;Add New Resource&amp;rdquo;&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;&#xD;&#xA;&#xD;&#xA;  &lt;figure&gt;&#xD;&#xA;      &lt;img&#xD;&#xA;        loading=&#34;lazy&#34;&#xD;&#xA;        src=&#34;https://curriculum.codeyourfuture.io/guides/deploying/cyf/frontend/click-add-new-resource.png&#34;alt=&#34;Click Add New Resource&#34; data-pagefind-index-attrs=&#34;Click Add New Resource&#34;/&gt;&lt;/figure&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Add the GitHub repository&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;The hosting platform needs to know where to get your backend from.&lt;/p&gt;&#xA;&lt;p&gt;You probably want to add a &amp;ldquo;Public Repository&amp;rdquo; Git Based repository, to tell it your project is in GitHub.&lt;/p&gt;&#xA;&lt;p&gt;If you want your application to auto-deploy when you push changes to it, you&amp;rsquo;ll need to instead choose &amp;ldquo;Private Repository (with GitHub App)&amp;rdquo; and set up a GitHub App yourself.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Sending emails</title>
+      <link>https://curriculum.codeyourfuture.io/guides/deploying/cyf/email/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://curriculum.codeyourfuture.io/guides/deploying/cyf/email/</guid>
+      <description>&lt;h2 id=&#34;how-it-works&#34;&gt;How it works&lt;/h2&gt;&#xA;&lt;p&gt;Projects on the CYF Coolify platform can send emails using Amazon SES (Simple Email Service). The platform is configured with the &lt;code&gt;cyf.academy&lt;/code&gt; domain, separate from the main &lt;code&gt;codeyourfuture.io&lt;/code&gt; domain. You can send up to 124,200 emails per day (shared across all projects) to any email address without verification.&lt;/p&gt;&#xA;&lt;h2 id=&#34;api-to-use&#34;&gt;API to use&lt;/h2&gt;&#xA;&lt;p&gt;Use the AWS SDK in your application. The Coolify EC2 instance has IAM permissions configured, so no credentials are needed. Configure AWS SES with:&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

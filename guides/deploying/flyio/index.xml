@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Deploying to Fly.io on CYF Courses</title>
+    <link>https://curriculum.codeyourfuture.io/guides/deploying/flyio/</link>
+    <description>Recent content in Deploying to Fly.io on CYF Courses</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="https://curriculum.codeyourfuture.io/guides/deploying/flyio/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Setup</title>
+      <link>https://curriculum.codeyourfuture.io/guides/deploying/flyio/setup/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://curriculum.codeyourfuture.io/guides/deploying/flyio/setup/</guid>
+      <description>&lt;h2 id=&#34;install-flyctl&#34;&gt;Install &lt;code&gt;flyctl&lt;/code&gt;&lt;/h2&gt;&#xA;&lt;p&gt;Fly.io relies on a command line utility to launch and deploy applications. You need to download and install it. You can find installation instructions here: &lt;a&#xA;  href=&#34;https://fly.io/docs/hands-on/install-flyctl/&#34;&gt;https://fly.io/docs/hands-on/install-flyctl/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;After installing you might need to close your terminal and reopen it to be able to access &lt;code&gt;flyctl&lt;/code&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;signing-up&#34;&gt;Signing up&lt;/h2&gt;&#xA;&lt;p&gt;To sign up for a fly.io account go to their sign up page at &lt;a&#xA;  href=&#34;https://fly.io/app/sign-up&#34;&gt;https://fly.io/app/sign-up&lt;/a&gt; Make sure you register using the &amp;ldquo;Sign up using GitHub&amp;rdquo;, as otherwise you won&amp;rsquo;t get added to the Trial package!&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Serving frontend from your backend</title>
+      <link>https://curriculum.codeyourfuture.io/guides/deploying/flyio/serving-frontend/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://curriculum.codeyourfuture.io/guides/deploying/flyio/serving-frontend/</guid>
+      <description>&lt;p&gt;Fly.io doesn&amp;rsquo;t have a built-in CDN for serving static frontend files directly, so if you wish to deploy your frontend you need to do it through your backend.&#xA;Fortunately, Express.JS has a built-in middleware for serving your frontend through your backend. You only need to set the location of your frontend files, and it will take care of serving the contents for you.&#xA;For example, if you add the following middleware inside your &lt;code&gt;/server/app.js&lt;/code&gt;:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Accessing fly.io databases</title>
+      <link>https://curriculum.codeyourfuture.io/guides/deploying/flyio/database-access/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://curriculum.codeyourfuture.io/guides/deploying/flyio/database-access/</guid>
+      <description>&lt;h2 id=&#34;-accessing-database&#34;&gt;🗝️ Accessing database&lt;/h2&gt;&#xA;&lt;p&gt;If you have been following the setup guides you would have both a backend and a database system running under fly.io.&lt;/p&gt;&#xA;&lt;p&gt;Your database can hold data for multiple applications, so first you need to get a list of them:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;flyctl postgres db list -a YOURNAME-PROJECTNAME-db&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;(Make sure you use your database&amp;rsquo;s name after the &lt;code&gt;-a&lt;/code&gt; that you have set up before)&lt;/p&gt;&#xA;&lt;p&gt;On the list you will find under the NAME column three values: &lt;code&gt;postgres&lt;/code&gt;, &lt;code&gt;repmgr&lt;/code&gt; and finally the name of your application&amp;rsquo;s datastore. It will be something like &lt;code&gt;YOURNAME_PROJECTNAME&lt;/code&gt; - same as your application name but all of the dashes are replaced with underscores.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

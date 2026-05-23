@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Getting Help on CYF Courses</title>
+    <link>https://curriculum.codeyourfuture.io/guides/getting-help/</link>
+    <description>Recent content in Getting Help on CYF Courses</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="https://curriculum.codeyourfuture.io/guides/getting-help/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Asking Questions</title>
+      <link>https://curriculum.codeyourfuture.io/guides/getting-help/asking-questions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://curriculum.codeyourfuture.io/guides/getting-help/asking-questions/</guid>
+      <description>&lt;p&gt;Often trainees at Code Your Future find it difficult to get help. This is because we are dealing with complicated questions that people need lots of details about to be able to answer.&lt;/p&gt;&#xA;&lt;section class=&#34;c-note c-note--activity&#34;&gt;&#xD;&#xA;  &lt;h4 class=&#34;c-note__title e-heading__4&#34;&gt;🕹️Asking Questions workshop&lt;/span&gt;&#xD;&#xA;  &lt;/h4&gt;&#xD;&#xA;  &lt;div class=&#34;c-note__text &#34;&gt;&lt;p&gt;If you have not completed the &lt;a&#xA;  href=&#34;https://workshops.codeyourfuture.io/#asking-questions&#34;&gt;Asking Questions workshop&lt;/a&gt;, find a small group of people to do that together before reading further.&lt;/p&gt;&#xA;&lt;p&gt;It is important to understand how your current mental model helps you to ask a good question.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

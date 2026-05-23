@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Demo Day on CYF Courses</title>
+    <link>https://curriculum.codeyourfuture.io/launch/demo-day/</link>
+    <description>Recent content in Demo Day on CYF Courses</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="https://curriculum.codeyourfuture.io/launch/demo-day/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>prep</title>
+      <link>https://curriculum.codeyourfuture.io/launch/demo-day/prep/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://curriculum.codeyourfuture.io/launch/demo-day/prep/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Day Plan</title>
+      <link>https://curriculum.codeyourfuture.io/launch/demo-day/day-plan/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://curriculum.codeyourfuture.io/launch/demo-day/day-plan/</guid>
+      <description>&lt;p&gt;You will receive instructions about your demo day on Slack.&lt;/p&gt;&#xA;&lt;p&gt;Remember your goals:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Show off what you&amp;rsquo;ve been working on&lt;/li&gt;&#xA;&lt;li&gt;Make potential employers interested in hiring you&lt;/li&gt;&#xA;&lt;li&gt;Inspiring trainees who will do The Launch in the future&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+  </channel>
+</rss>

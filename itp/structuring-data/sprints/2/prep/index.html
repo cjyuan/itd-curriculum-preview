@@ -1,0 +1,3575 @@
+<!DOCTYPE html>
+
+
+
+
+<html lang="en" class="p-prep"><head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  <title data-pagefind-meta="title">
+    
+      Intro to Programming 
+    
+      Structuring and Testing Data 
+    
+      Sprint 2 
+    
+    Prep
+  </title>
+  
+    <meta name="description" content="A free and open source software development programme." />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+  <style>
+    body,
+    html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      animation: fade-in 300ms;
+    }
+    @keyframes fade-in {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  </style>
+  
+  
+  <link
+    rel="stylesheet"
+    href="/bundled.min.b6a4520237559385268d63a9daa81d96.css"
+    media="print"
+    onload="this.media='all'" />
+
+  
+  
+    
+    
+    <link
+      rel="stylesheet"
+      href="/custom.min.8ded6a1a88bc7cc98bdef8dc33d15f3a.css"
+      media="print"
+      onload="this.media='all'" />
+  
+
+
+  <noscript>
+    <link rel="stylesheet" href="/bundled.min.b6a4520237559385268d63a9daa81d96.css" />
+  </noscript>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&amp;display=swap"
+    rel="stylesheet"
+    media="print"
+    onload="this.media='all'" />
+
+  <link rel="shortcut icon" href="https://curriculum.codeyourfuture.io/favicon.ico" />
+  <meta name="theme-color" content="#e3ddeef2" />
+  <link rel="manifest" href="https://curriculum.codeyourfuture.io/manifest.json" />
+</head>
+<body>
+    <a class="c-skip-link e-button" id="skip-link" href="#main">Skip to main</a>
+    <div class="l-layout">
+      <header class="l-layout__header l-header">
+  <div class="l-header__container">
+    <h1 class="l-header__heading e-heading__6" data-pagefind-ignore>
+      <a class="l-header__home" href="/"
+        ><span class="is-invisible"
+          >itp prep CYF Courses</span
+        >
+        <span class="is-none--lt-container">
+          <svg
+          xmlns="http://www.w3.org/2000/svg"
+          title="Code Your Future."
+          viewBox="0 0 621.64 155.81"
+          width="140px"
+          focusable="false"
+          role="img">
+          <path
+            fill="var(--theme-color--brand)"
+            d="M103.37 56.51C96.91 63.64 87.03 69.9 74.6 69.9c-20.14 0-33.52-12.91-33.52-34.09C41.08 13.97 57.5.87 69.94.87c9.5 0 13.77 5.32 14.63 6.46l2.18-5.27h14.91v27h-17c-.28-6.18-3.32-12-10.06-12s-11.3 8.45-11.3 18.8c0 9.4 4.84 17.86 13.86 17.86 8 0 14.24-8.36 15.1-9.31Zm2.88-21.85C106.25 14.15 119.92 0 139.58 0c23.26 0 34.09 14 34.09 35.32s-12 34.57-33.43 34.57c-19.88 0-33.99-11.49-33.99-35.23Zm43.68.66c0-11.49-3.13-20.7-10.45-20.7-5.79-.09-9.78 8.26-9.78 20 0 12.44 4.47 20.32 10.54 20.32s9.65-7.88 9.65-19.62Zm27.49 20.23h5.89V14.34h-5.89V1.8h29c23 0 36.09 14.15 36.09 32.29 0 21.65-13.11 34.09-36.47 34.09h-28.62Zm29 0c10.03-.19 14.21-9.59 14.21-21.49 0-10.16-4.18-19.75-14.25-19.75h-3.61v41.24ZM303.04 1.8v21h-16.43v-8.46h-15.19v13.1h18v12.62h-18v15.49h15.19v-8.83h16.43v21.46h-57.26V55.55h6V14.34h-6V1.8Z" />
+          <path
+            fill="var(--theme-color--ink)"
+            d="M274.42 87.82v21h-16.8v-8.45h-14.37v16.52h18v12.63h-18v12.04h9.68v12.63h-35.29v-12.63h5.89v-41.21h-5.89V87.82Zm33.04 0v12.24h-5.12v20.51c0 15.28 3.41 18.51 9.49 18.51 5.79 0 9.59-2.28 9.59-18.61v-20.12h-5.17V87.82h28.11v12.24h-5.11v23.07c0 22.51-9.4 32.67-27.25 32.67-19.18-.57-29.43-10.64-29.43-32.19v-23.45h-5.32V87.82Zm103.5 24.69h-14v-12.16h-8v41.21h7.88v12.63h-35.26v-12.63h7.79v-41.21h-8.12v12.16h-14V87.82h63.71ZM444 87.82v12.24h-5.13v20.51c0 15.28 3.42 18.51 9.5 18.51 5.79 0 9.59-2.28 9.59-18.61v-20.12h-5.13V87.82h28.11v12.24h-5.13v23.07c0 22.51-9.4 32.67-27.25 32.67-19.18-.57-29.44-10.64-29.44-32.19v-23.45h-5.32V87.82Zm71.59 0c22 0 26.3 8.73 26.3 19.56 0 7.4-5.88 12.63-13.76 13.77 6.55.95 12.44 6.64 12.44 13.48 0 4.08.57 6.46 2.27 6.46 1.43 0 2.19-1.14 2.19-3v-3.13h6.36v5.22c0 7.88-3.32 15.19-13.86 15.19-12.44 0-18.42-6.55-18.42-17.66 0-8.64-1.05-10.73-9.5-10.73v14.68h5.79v12.53h-30.67v-12.53h5.32v-41.4h-5.32V87.82Zm-6 28.48h4.27c5.51 0 9.12-2.65 9.12-7.69 0-5.6-3.13-8.45-8.64-8.45h-4.75Zm102.38-28.48v21h-16.43v-8.45h-15.19v13.09h18v12.6h-18v15.5h15.19v-8.83h16.43v21.46h-57.26v-12.63h6v-41.21h-6V87.82Zm-227.72-56.1c.38-1.9 2.47-5.89 3.51-8.17l5.22-9.59h-5.22V1.8h25.54v12.16h-5.05l-17.62 30.86v11h5.32v12.36h-30.39V55.83h5.41v-11.2l-18.42-30.67h-4.65V1.8h32.47v12.16h-4.93l5.5 10.1c.57 1.81 2.57 6.08 2.95 7.7Zm29.54 2.94C413.79 14.15 427.47 0 447.12 0c23.27 0 34.09 14 34.09 35.32s-12 34.57-33.42 34.57c-19.85 0-34-11.49-34-35.23Zm43.68.66c0-11.49-3.13-20.7-10.44-20.7-5.79-.09-9.78 8.26-9.78 20 0 12.44 4.46 20.32 10.54 20.32s9.68-7.88 9.68-19.62ZM514.25 1.8v12.26h-5.13v20.5c0 15.29 3.42 18.52 9.5 18.52 5.79 0 9.59-2.28 9.59-18.61V14.34h-5.13V1.8h28.11v12.26h-5.13v23.07c0 22.5-9.4 32.66-27.25 32.66-19.18-.57-29.44-10.63-29.44-32.19V14.15h-5.32V1.8Zm71.59 0c22 0 26.31 8.74 26.31 19.57 0 7.4-5.89 12.62-13.77 13.76 6.55 1 12.44 6.65 12.44 13.49 0 4.08.57 6.46 2.27 6.46 1.43 0 2.19-1.14 2.19-3V48.9h6.36v5.23c0 7.88-3.32 15.19-13.86 15.19-12.44 0-18.42-6.55-18.42-17.66 0-8.64-1.05-10.73-9.5-10.73v14.71h5.79v12.54h-30.67V55.64h5.32v-41.4h-5.32V1.8Zm-6 28.49h4.27c5.51 0 9.12-2.66 9.12-7.69 0-5.6-3.13-8.45-8.64-8.45h-4.75ZM28.39 14.7l5.8 10.64-23.46 10.72 23.46 10.55-3.61 9.87L0 42.24v-13.3Zm318.7 14.24v13.3l-30.58 14.24-3.61-9.87 23.46-10.55-23.46-10.72 5.8-10.64Z" />
+        </svg>
+        </span>
+        <span class="is-none--gt-container">
+          <svg
+          xmlns="http://www.w3.org/2000/svg"
+          version="1.0"
+          viewBox="0 0 512 512"
+          width="48px">
+          <path
+            fill="currentcolor"
+            stroke="currentcolor"
+            d="M225.5 1c-1.1.5-3.5.9-5.3.9-4.1.1-22.9 4.5-30.7 7.2-63.1 22-114.7 72.3-142.7 139.4-6.4 15.2-11.8 33.8-16.7 57-4.1 19.7-5.4 64.5-2.6 90.8C33 346.2 49.8 390.1 76.8 425c6.2 7.9 23.9 26.4 30.7 32 8.1 6.7 26.1 18.7 35.1 23.6 28.1 15.1 58 24.3 91.9 28.3 5.5.7 13.6 1.7 18 2.2 8.8 1.2 33.9.7 48-.9 11-1.3 31.7-4.8 36.5-6.2 1.9-.5 8-2.3 13.5-3.9 21.3-6.1 47.2-17.8 67.5-30.5 8.8-5.4 23.7-15.8 28.5-19.7 10.2-8.4 24.5-21.3 31.4-28.2l8.4-8.5-2.2-2.9c-1.3-1.5-4.6-5.3-7.4-8.3-6.2-6.7-14.5-15.7-21.2-23.1-2.7-3-7.5-8.2-10.5-11.4-3-3.3-9.8-10.8-15.1-16.5-21.5-23.6-24.2-26.5-24.9-26.8-.3-.1-2 1.2-3.6 3-1.6 1.9-6.3 7.1-10.4 11.7-8.6 9.7-25.6 24.6-35.9 31.4-21.4 14.4-42.5 21.7-62.6 21.7-15.3-.1-29.3-3.3-42.5-10-22.8-11.5-41.9-35.5-51.5-64.7-4.2-12.8-4.3-13.4-5.9-22.8-3.8-22.9-4.6-39.2-2.6-55.6 2.7-22.7 3.3-26.5 5-33.2 7.9-30.9 16.7-48.6 32.4-65.6 16.8-17.9 41.1-24.9 65.1-18.6 30 7.8 50.7 36.3 55.5 76.3.5 4.6 1.2 8.7 1.5 9.3.4.5 25.1.9 62.6.9H474V9H364.2L357 26.7c-4 9.8-7.9 18.5-8.7 19.3-1.3 1.3-2.1.8-6.6-4.3-6-6.9-18.3-16.7-28.2-22.5-7.4-4.3-22.6-10.9-28.5-12.4-9.2-2.2-18.1-4.1-24-5-9-1.3-33.1-1.9-35.5-.8z" />
+        </svg>
+        </span>
+      </a>
+    </h1>
+    <link
+  href="/pagefind/pagefind-ui.css"
+  rel="stylesheet"
+  media="print"
+  onload="this.media='all'" />
+<style>
+  :root {
+    --pagefind-ui-primary: var(--theme-color--ink);
+    --pagefind-ui-text: var(--theme-color--ink);
+    --pagefind-ui-background: var(--theme-color--paper);
+    --pagefind-ui-border: var(--theme-color--outline);
+    --pagefind-ui-tag: var(--theme-color--block);
+    --pagefind-ui-border-radius: 2em;
+    --pagefind-ui-image-border-radius: var(--theme-border-radius);
+    --pagefind-ui-font: var(--theme-font--copy);
+  }
+  .pagefind-ui--reset {
+    position: absolute;
+  }
+  #search .pagefind-ui__search-input {
+    box-shadow: var(--theme-box-shadow--inset);
+    margin-bottom: var(--theme-spacing--1);
+  }
+  #search .pagefind-ui__search-clear {
+    background-color: transparent;
+  }
+  #search .pagefind-ui__drawer {
+    background-color: var(--theme-color--paper);
+    box-shadow: var(--theme-box-shadow--slim);
+    transform: translateY(-1.5px);
+    padding: 0 var(--theme-spacing--2);
+    max-height: calc(100vh - 4rem);
+    overflow-y: auto;
+  }
+  #search .pagefind-ui__result {
+    padding: var(--theme-spacing--1) 0 var(--theme-spacing--2) 0;
+  }
+  #search .pagefind-ui__result:focus-within,
+  #search .pagefind-ui__button:focus {
+    background-color: var(--theme-color--block);
+  }
+  #search .pagefind-ui__button {
+    border: none;
+  }
+</style>
+<script src="/pagefind/pagefind-ui.js" type="text/javascript" defer></script>
+<div id="search" class="l-header__search"></div>
+<script>
+  window.addEventListener("DOMContentLoaded", (event) => {
+    new PagefindUI({
+      element: "#search",
+      showSubResults: true,
+      pageSize: 3,
+      showImages: false,
+      showTags: true,
+    });
+  });
+</script>
+
+    <button
+      class="l-header__action e-button e-button--icon js-menu-toggle e-heading__3">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+        <path
+          stroke="var(--theme-color--ink)"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M13 5a1 1 0 1 0-2 0 1 1 0 0 0 2 0Zm0 7a1 1 0 1 0-2 0 1 1 0 0 0 2 0Zm0 7a1 1 0 1 0-2 0 1 1 0 0 0 2 0Z" />
+      </svg>
+      <span class="is-invisible">Open Menu.</span>
+    </button>
+  </div>
+</header>
+
+      <nav
+  class="l-layout__menu l-menu"
+  aria-label="Main Site Links."
+  id="site-menu"
+  hidden
+  tabindex="0">
+  <div class="l-menu__container">
+    <h2 class="l-menu__heading e-heading__2">
+      <a href="/" class="l-menu__home is-invisible">Menu</a>
+    </h2>
+    <button
+      class="l-menu__action e-button e-button--icon js-menu-toggle e-heading__2"
+      id="close-menu">
+      ❎
+      <span class="is-invisible">Close Menu.</span>
+    </button>
+    <ul class="l-menu__primary">
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/guides/">
+            Guides
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/sdc/tools/">
+            Tools
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/sdc/logic/">
+            Logic
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/sdc/decomposition/">
+            Decomposition
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/sdc/legacy/">
+            Legacy code
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/sdc/complexity/">
+            Complexity
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/tracks/servers/">
+            Servers
+          </a>
+        </li>
+    </ul>
+    <ul class="l-menu__secondary">
+        <li class="l-menu__item">
+          <a class="e-heading__3 l-menu__link" href="https://codeyourfuture.io">
+            CYF 👈🏾
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__3 l-menu__link" href="https://codeyourfuture.io/volunteers/">
+            Join Us 👋🏿
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__3 l-menu__link" href="https://codeyourfuture.io/donate/">
+            Support 🫶🏼
+          </a>
+        </li>
+    </ul>
+  </div>
+</nav>
+
+      <main
+        id="main"
+        class="l-layout__main l-main"
+        tabindex="0"
+        data-pagefind-body>
+        
+  
+    <solo-view tabindex="0">
+      
+
+
+      <div slot="header">
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+<header
+  class="c-page-header 
+    c-page-header--solo
+   c-page-header--toc">
+  
+  <div class="c-page-header__container">
+    <div class="c-page-header__breadcrumbs">
+      
+  <nav class="c-breadcrumbs">
+    <ol class="c-breadcrumbs__list">
+      
+        
+        
+          <li class="c-breadcrumbs__item">
+            <a
+              class="c-breadcrumbs__link"
+              href="/itp/"data-pagefind-filter="module"><span class="c-breadcrumbs__text">Intro to Programming</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                width="24px"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="c-breadcrumbs__icon">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+              </svg>
+            </a>
+          </li>
+        
+        
+          <li class="c-breadcrumbs__item">
+            <a
+              class="c-breadcrumbs__link"
+              href="/itp/structuring-data/"><span class="c-breadcrumbs__text">Structuring and testing data</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                width="24px"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="c-breadcrumbs__icon">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+              </svg>
+            </a>
+          </li>
+      
+        <li class="c-breadcrumbs__item">
+          <a
+            class="c-breadcrumbs__link"
+            href="/itp/structuring-data/sprints/2/"data-pagefind-filter="sprint">Sprint 2</a
+          >
+        </li>
+      
+    </ol>
+  </nav>
+  
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Our Courses",
+      "item":"https://curriculum.codeyourfuture.io/"},
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Intro to Programming",
+      "item":"https://curriculum.codeyourfuture.io/itp/"},
+    {
+      "@type": "ListItem",
+      "position":  3 ,
+      "name": "Structuring and testing data",
+      "item":"https://curriculum.codeyourfuture.io/itp/structuring-data/"},{
+      "@type": "ListItem",
+      "position":  5 ,
+      "name": "Sprint 2",
+      "item":"https://curriculum.codeyourfuture.io/itp/structuring-data/sprints/2/"},
+    {
+      "@type": "ListItem",
+      "position":  6 ,
+      "name": "prep",
+      "item":"https://curriculum.codeyourfuture.io/itp/structuring-data/sprints/2/"}
+  ]
+}
+</script>
+
+
+    </div>
+    <h1 class="c-page-header__title e-heading__1"data-pagefind-filter="view"
+        
+      data-pagefind-weight="10">
+      <span class="c-emoji">
+        
+        
+           
+            <time-total class="c-page-header__time"></time-total>
+      
+         
+        </span>
+        <span class="c-page-header__title-text">prep</span>
+               
+    </h1>
+    
+      
+    
+    
+    
+    
+      <div class="c-page-header__toc " id="toc">
+        <section class="c-toc" aria-label="Table of contents.">
+          <a id="top" class="c-toc__top e-button e-button--icon" href="#toc"
+            >🔖 <span class="is-invisible">back to top</span></a
+          >
+          
+            <nav id="TableOfContents"></nav>
+          
+          
+            <ol>
+              
+                <li>
+                  <a href="#clocks" data-pagefind-weight="5"
+                    >Clocks</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#comparison" data-pagefind-weight="5"
+                    >Comparison</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#assertions" data-pagefind-weight="5"
+                    >Assertions</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#interpreting-errors" data-pagefind-weight="5"
+                    >Interpreting errors</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#interpreting-this-error" data-pagefind-weight="5"
+                    >Interpreting this error</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#reusing-variable-names" data-pagefind-weight="5"
+                    >Reusing variable names</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#strategy" data-pagefind-weight="5"
+                    >Strategy</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#conditionality" data-pagefind-weight="5"
+                    >Conditionality</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#sub-goal" data-pagefind-weight="5"
+                    >Sub-goal</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#strings" data-pagefind-weight="5"
+                    >Strings</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#testing-a-sub-goal" data-pagefind-weight="5"
+                    >Testing a sub-goal</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#sub-goal-%232" data-pagefind-weight="5"
+                    >Sub-goal #2</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#refactoring-repetition" data-pagefind-weight="5"
+                    >Refactoring repetition</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#identifying-missing-tests" data-pagefind-weight="5"
+                    >Identifying missing tests</a
+                  >
+                  
+                </li>
+              
+            </ol>
+          
+          
+        </section>
+      </div>
+    
+
+  </div>
+</header>
+</div>
+      <div slot="blocks">
+        
+        
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="clocks">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="clocks">
+        12 vs 24 hour clock
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="10 minutes countdown" datetime="P10M">10&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Identify a pattern between a set of inputs and outputs produced by a given function</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <p>We usually write <a
+  href="https://www.bbc.co.uk/bitesize/topics/zkfycdm/articles/z44mqfr">the time</a> in one of two ways: the analogue 12 hour clock or the digital 24 hour clock. The 12 hour clock counts up to 12: it resets at midday. The 24 hour clock counts up to 24: it resets at midnight.</p>
+
+<tool-tip-container tabindex="0"><strong class="tooltip__trigger" id="trigger__Conversion from 24 hour to 12 hour">Conversion from 24 hour to 12 hour</strong><span class="tooltip__emoji">🧶</span><tool-tip role="tooltip" aria-labelledby="Conversion from 24 hour to 12 hour"><span class="tooltip__title e-heading__2"><span class="tooltip__emoji">🧶</span> Conversion from 24 hour to 12 hour</span><span class="tooltip__content"><table>
+  <thead>
+      <tr>
+          <th>2️⃣4️⃣ hour time</th>
+          <th>🕛 12 hour time</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>09:00</td>
+          <td>09:00 am</td>
+      </tr>
+      <tr>
+          <td>10:00</td>
+          <td>10:00 am</td>
+      </tr>
+      <tr>
+          <td>11:30</td>
+          <td>11:30 am</td>
+      </tr>
+      <tr>
+          <td>12:00</td>
+          <td>12:00 <strong>pm</strong></td>
+      </tr>
+      <tr>
+          <td>13:43</td>
+          <td>1:43 <strong>pm</strong></td>
+      </tr>
+      <tr>
+          <td>14:00</td>
+          <td>2:00 <strong>pm</strong></td>
+      </tr>
+  </tbody>
+</table>
+</span></tool-tip></tool-tip-container>
+
+<p>We use the notation &ldquo;HH:MM&rdquo;. HH is our stand-in for the hours value. MM is our stand-in for the minutes value.</p>
+<h2 id="-stating-the-problem">🧩 Stating the problem</h2>
+<p>Let&rsquo;s pose a problem: given any time in 24 hour clock, we want to format it as a 12 hour clock time. To achieve this goal, we&rsquo;re going to implement a function <code>formatAs12HourClock</code>.</p>
+<p><em>Given</em> a time in 24 hour clock<br>
+<em>When</em> we call <code>formatAs12HourClock</code><br>
+<em>Then</em> we get back a string representing the same time in 12 hour clock.</p>
+<h3 id="-our-tests">🧪 Our tests:</h3>
+<p>I expect <code>formatAs12HourClock(&quot;09:00&quot;)</code> to be <code>&quot;09:00 am&quot;</code><br>
+I expect <code>formatAs12HourClock(&quot;14:19&quot;)</code> to be <code>&quot;2:19 pm&quot;</code></p>
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="comparison">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="comparison">
+        Comparing current and target output
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="40 minutes countdown" datetime="P40M">40&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Evaluate an expression that uses a comparison operator</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Explain when to use the === operator in a program</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />List the values of the boolean type</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      
+
+
+<tab-panels class="c-tabs">
+  <div class="c-tabs__list" id="current" role="tablist"><button
+          data-toggle="tab"
+          id="tab-label-current-0"
+          class="c-tabs__tab e-heading__5 space 
+            is-active"
+          role="tab"
+          aria-controls="current-0"
+          aria-selected="true">
+          Define current and target
+        </button><button
+          data-toggle="tab"
+          id="tab-label-current-1"
+          class="c-tabs__tab e-heading__5 space "
+          role="tab"
+          aria-controls="current-1"
+          aria-selected="false">
+          Exercise 1
+        </button><button
+          data-toggle="tab"
+          id="tab-label-current-2"
+          class="c-tabs__tab e-heading__5 space "
+          role="tab"
+          aria-controls="current-2"
+          aria-selected="false">
+          Exercise 2
+        </button></div>
+  <div class="c-tabs__group" id="current">
+        <div
+          id="current-0"
+          class="c-tabs__panel is-active"
+          role="tabpanel"
+          data-heading="Define current and target"
+          aria-labelledby="tab-label-current-0"><p>Let&rsquo;s start with a function declaration of <code>formatAs12HourClock</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">formatAs12HourClock</span>() {}</span></span></code></pre></div><p>Whenever we call <code>formatAs12HourClock</code> we expect it to return a particular value, which we call the 🎯 <strong>target output</strong>. For example, we expect <code>formatAs12HourClock(&quot;08:00&quot;)</code> to return <code>&quot;08:00 am&quot;</code>. <code>&quot;08:00 am&quot;</code> is the 🎯 <strong>target output</strong>.</p>
+<p>However, the <strong>current output</strong> is what the function <em>actually</em> returns right now.</p>
+<p>👉🏼 <a
+  href="#current-1">Work through the exercises</a></p>
+</div>
+        <div
+          id="current-1"
+          class="c-tabs__panel "
+          role="tabpanel"
+          data-heading="Exercise 1"
+          aria-labelledby="tab-label-current-1"><p>Let&rsquo;s start with <code>formatAs12HourClock</code> defined like this:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">formatAs12HourClock</span>() {}</span></span></code></pre></div><p>Suppose we now call the function like this:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">formatAs12HourClock</span>(<span style="color:#e6db74">&#34;05:30&#34;</span>);</span></span></code></pre></div>  <multiple-choice data-correct="0" class="c-quiz">
+    <form slot="quiz">
+      <fieldset class="c-quiz__fieldset" tabindex="0">
+        <legend class="c-quiz__legend">🤔 When calling formatAs12HourClock(&lsquo;05:30&rsquo;), what is the 🎯 target output?</legend>
+        <ol class="c-quiz__list"><li class="c-quiz__answer">
+            <label
+              class="c-quiz__label"
+              ><input
+              class="c-quiz__input"
+              type="radio"
+              name="answer"
+              value="0" />
+            <code>'05:30 am'</code></label
+            >
+          </li><li class="c-quiz__answer">
+            <label
+              class="c-quiz__label"
+              ><input
+              class="c-quiz__input"
+              type="radio"
+              name="answer"
+              value="1" />
+            <code>'05:30 AM'</code></label
+            >
+          </li><li class="c-quiz__answer">
+            <label
+              class="c-quiz__label"
+              ><input
+              class="c-quiz__input"
+              type="radio"
+              name="answer"
+              value="2" />
+            <code>'5:30 am'</code></label
+            >
+          </li><li class="c-quiz__answer">
+            <label
+              class="c-quiz__label"
+              ><input
+              class="c-quiz__input"
+              type="radio"
+              name="answer"
+              value="3" />
+            <code>'17:30'</code></label
+            >
+          </li></ol>
+      </fieldset>
+    </form>
+    <section class="c-quiz__feedback" slot="feedback" aria-live="polite"><p class="c-quiz__remark" data-index="0" >💬 Correct! The target output should append &lsquo;am&rsquo; to maintain the 12-hour clock format.</p><p class="c-quiz__remark" data-index="1" >💬 Not quite - based on the examples, we use lowercase &lsquo;am&rsquo;.</p><p class="c-quiz__remark" data-index="2" >💬 No - we want to preserve the leading zero.</p><p class="c-quiz__remark" data-index="3" >💬 No - we want 12-hour format, not 24-hour format.</p></section>
+  </multiple-choice>
+  <script src="/scripts/multiple-choice.min.js" defer></script>
+<p>👉🏼 <a
+  href="#current-2">Keep going</a></p>
+</div>
+        <div
+          id="current-2"
+          class="c-tabs__panel "
+          role="tabpanel"
+          data-heading="Exercise 2"
+          aria-labelledby="tab-label-current-2"><p>Let&rsquo;s continue with <code>formatAs12HourClock</code> defined like this:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">formatAs12HourClock</span>() {}</span></span></code></pre></div><p>Suppose we call the function like this:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">formatAs12HourClock</span>(<span style="color:#e6db74">&#34;20:10&#34;</span>);</span></span></code></pre></div>  <multiple-choice data-correct="0" class="c-quiz">
+    <form slot="quiz">
+      <fieldset class="c-quiz__fieldset" tabindex="0">
+        <legend class="c-quiz__legend">🤔 When calling formatAs12HourClock(&lsquo;05:30&rsquo;), what is the current output?</legend>
+        <ol class="c-quiz__list"><li class="c-quiz__answer">
+            <label
+              class="c-quiz__label"
+              ><input
+              class="c-quiz__input"
+              type="radio"
+              name="answer"
+              value="0" />
+            undefined</label
+            >
+          </li><li class="c-quiz__answer">
+            <label
+              class="c-quiz__label"
+              ><input
+              class="c-quiz__input"
+              type="radio"
+              name="answer"
+              value="1" />
+            &lsquo;05:30 am&rsquo;</label
+            >
+          </li><li class="c-quiz__answer">
+            <label
+              class="c-quiz__label"
+              ><input
+              class="c-quiz__input"
+              type="radio"
+              name="answer"
+              value="2" />
+            null</label
+            >
+          </li><li class="c-quiz__answer">
+            <label
+              class="c-quiz__label"
+              ><input
+              class="c-quiz__input"
+              type="radio"
+              name="answer"
+              value="3" />
+            An error is thrown</label
+            >
+          </li></ol>
+      </fieldset>
+    </form>
+    <section class="c-quiz__feedback" slot="feedback" aria-live="polite"><p class="c-quiz__remark" data-index="0" >💬 Correct! Since the function is empty and has no return statement, it returns undefined by default.</p><p class="c-quiz__remark" data-index="1" >💬 Not quite - remember that the function is currently empty with no implementation.</p><p class="c-quiz__remark" data-index="2" >💬 No - an empty function returns undefined, not null.</p><p class="c-quiz__remark" data-index="3" >💬 No - an empty function executes successfully but returns undefined.</p></section>
+  </multiple-choice>
+  <script src="/scripts/multiple-choice.min.js" defer></script>
+</div></div>
+</tab-panels>
+
+<h2 id="-comparing-values">🧩 Comparing values</h2>
+<p>We have learned how to log values to the console. We can also <strong>compare</strong> two values. We check that a function produces some target output with a comparison.</p>
+<p>We compare the current output of <code>formatAs12HourClock(&quot;08:00&quot;)</code> with the target output of <code>&quot;08:00 am&quot;</code> and ask: <strong>are these two values the same?</strong> We use a comparison operator to compare two expressions and check if they evaluate to the same value. We use the strict equality operator <code>===</code> to check if two values are the same.</p>
+<h3 id="left-equals-right">Left equals Right</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">formatAs12HourClock</span>(<span style="color:#e6db74">&#34;08:00&#34;</span>) <span style="color:#f92672">===</span> <span style="color:#e6db74">&#34;8:00 am&#34;</span>;</span></span></code></pre></div><p><code>===</code> checks if the values on the left and right of the operator are the same. We can think of <code>formatAs12HourClock(&quot;08:00&quot;) === &quot;8:00 am&quot;</code> as the question: &ldquo;Is the return value of <code>formatAs12HourClock(&quot;08:00&quot;)</code> equal to <code>&quot;8:00 am&quot;</code> ?&rdquo; This leads to the question:</p>
+<blockquote><p>What will the expression <code>formatAs12HourClock(&quot;08:00&quot;) === &quot;8:00 am&quot;</code> evaluate to?</p>
+</blockquote><h2 id="--boolean-values">✅ ❌ Boolean values</h2>
+
+
+
+<tab-panels class="c-tabs">
+  <div class="c-tabs__list" id="booleans" role="tablist"><button
+          data-toggle="tab"
+          id="tab-label-booleans-0"
+          class="c-tabs__tab e-heading__5 space 
+            is-active"
+          role="tab"
+          aria-controls="booleans-0"
+          aria-selected="true">
+          Define Boolean
+        </button><button
+          data-toggle="tab"
+          id="tab-label-booleans-1"
+          class="c-tabs__tab e-heading__5 space "
+          role="tab"
+          aria-controls="booleans-1"
+          aria-selected="false">
+          Exercise 1
+        </button><button
+          data-toggle="tab"
+          id="tab-label-booleans-2"
+          class="c-tabs__tab e-heading__5 space "
+          role="tab"
+          aria-controls="booleans-2"
+          aria-selected="false">
+          Exercise 2
+        </button><button
+          data-toggle="tab"
+          id="tab-label-booleans-3"
+          class="c-tabs__tab e-heading__5 space "
+          role="tab"
+          aria-controls="booleans-3"
+          aria-selected="false">
+          Exercise 3
+        </button></div>
+  <div class="c-tabs__group" id="booleans">
+        <div
+          id="booleans-0"
+          class="c-tabs__panel is-active"
+          role="tabpanel"
+          data-heading="Define Boolean"
+          aria-labelledby="tab-label-booleans-0"><h3 id="does-1-equal-0-yes-or-no-true-or-false">Does 1 equal 0? Yes or No? True or False?</h3>
+<p>Some values are best represented as strings: any piece of text, a name, address, etc will most likely be stored using the string data type. The number data type can store numbers we use in calculations.</p>
+<p>If we&rsquo;re comparing two things, there are only two different states: <strong>true</strong> or <strong>false</strong>. This leads us to the <strong>boolean</strong> datatype, which only has true or false values. Whenever we compare two values with a comparison operator, we end up with a boolean value: <code>true</code> or <code>false</code>. It&rsquo;s one or the other. It&rsquo;s boolean.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#75715e">// using the strict equality comparison expression
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#ae81ff">42</span> <span style="color:#f92672">===</span> <span style="color:#ae81ff">10</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">32</span>);
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// logs true
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#ae81ff">10</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">5</span> <span style="color:#f92672">===</span> <span style="color:#ae81ff">60</span>);
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// logs false
+</span></span></span></code></pre></div><p>👉🏾 <a
+  href="#booleans-1">Now work through the exercises</a></p>
+</div>
+        <div
+          id="booleans-1"
+          class="c-tabs__panel "
+          role="tabpanel"
+          data-heading="Exercise 1"
+          aria-labelledby="tab-label-booleans-1"><p>Look at the code below and predict what each expression will evaluate to. Write your prediction down. Use the Node REPL to check your answers. Check out <a
+  href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Strict_equality">some relevant documentation</a> if you&rsquo;ve not seen a particular operator before.</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">true</span> <span style="color:#f92672">===</span> <span style="color:#66d9ef">false</span>;
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">5</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">4</span>;
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">4</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">5</span> <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;20&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">3</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">===</span> <span style="color:#ae81ff">6</span>;
+</span></span><span style="display:flex;"><span>Math.<span style="color:#a6e22e">min</span>(<span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span>) <span style="color:#f92672">===</span> <span style="color:#ae81ff">4</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">mhairiName</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Mhairi&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">typeof</span> <span style="color:#a6e22e">mhairiName</span> <span style="color:#f92672">===</span> <span style="color:#e6db74">&#34;string&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">mhairiAge</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">28</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">isMhairiOldEnoughToDrive</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">true</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">kilometersMhairiDrivesToWork</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">9.4</span>;</span></span></code></pre></td></tr></table>
+</div>
+</div><p>👉🏿 <a
+  href="#booleans-2">Keep Going</a></p>
+</div>
+        <div
+          id="booleans-2"
+          class="c-tabs__panel "
+          role="tabpanel"
+          data-heading="Exercise 2"
+          aria-labelledby="tab-label-booleans-2"><p>Look at the code below and predict what each expression will evaluate to. Write your prediction down. Use the Node REPL to check your answers. Check out <a
+  href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Strict_equality">some relevant documentation</a> if you&rsquo;ve not seen a particular operator before</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#e6db74">&#34;hello Mhairi&#34;</span> <span style="color:#f92672">===</span> <span style="color:#e6db74">`hello </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">mhairiName</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>;
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;${mhairiName} is 28&#34;</span> <span style="color:#f92672">===</span> <span style="color:#e6db74">`Mhairi is </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">mhairiAge</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>;
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">isMhairiOldEnoughToDrive</span>;
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">isMhairiOldEnoughToDrive</span> <span style="color:#f92672">===</span> <span style="color:#66d9ef">true</span>;
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">mhairiAge</span> <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">18</span>;
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">29</span> <span style="color:#f92672">&lt;=</span> <span style="color:#a6e22e">mhairiAge</span>;
+</span></span><span style="display:flex;"><span>Math.<span style="color:#a6e22e">round</span>(<span style="color:#a6e22e">kilometersMhairiDrivesToWork</span>) <span style="color:#f92672">===</span> <span style="color:#ae81ff">9</span>;</span></span></code></pre></td></tr></table>
+</div>
+</div><p>👉🏿 <a
+  href="#booleans-3">Keep Going</a></p>
+</div>
+        <div
+          id="booleans-3"
+          class="c-tabs__panel "
+          role="tabpanel"
+          data-heading="Exercise 3"
+          aria-labelledby="tab-label-booleans-3"><h3 id="checking-misconceptions-">Checking misconceptions 🤔</h3>
+<p>Look at the code below and then predict what the expression will evaluate to. Be sure to explain your answer too. Use the Node Repl to check your answer. Does the REPL output make sense?</p>
+<p>Try using the Node Repl to check your answer. Does the REPL output make sense?</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#ae81ff">10</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">32</span>) <span style="color:#f92672">===</span> <span style="color:#ae81ff">42</span>;</span></span></code></pre></td></tr></table>
+</div>
+</div></div></div>
+</tab-panels>
+
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="assertions">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="assertions">
+        Writing an assertion
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="45 minutes countdown" datetime="P45M">45&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Describe the difference between console.log and console.assert</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Write an assertion to check for some behaviour of a given function</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Implement a piece of functionality specified in an assertion</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Given an assertion and a function declaration, identify and explain whether the assertion will succeed or fail</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Write an assertion for a function that implements a solution to a given problem</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      
+
+
+<tab-panels class="c-tabs">
+  <div class="c-tabs__list" id="predict-explain-check" role="tablist"><button
+          data-toggle="tab"
+          id="tab-label-predict-explain-check-0"
+          class="c-tabs__tab e-heading__5 space 
+            is-active"
+          role="tab"
+          aria-controls="predict-explain-check-0"
+          aria-selected="true">
+          Define assertion
+        </button><button
+          data-toggle="tab"
+          id="tab-label-predict-explain-check-1"
+          class="c-tabs__tab e-heading__5 space "
+          role="tab"
+          aria-controls="predict-explain-check-1"
+          aria-selected="false">
+          Exercise 1
+        </button><button
+          data-toggle="tab"
+          id="tab-label-predict-explain-check-2"
+          class="c-tabs__tab e-heading__5 space "
+          role="tab"
+          aria-controls="predict-explain-check-2"
+          aria-selected="false">
+          Exercise 2
+        </button></div>
+  <div class="c-tabs__group" id="predict-explain-check">
+        <div
+          id="predict-explain-check-0"
+          class="c-tabs__panel is-active"
+          role="tabpanel"
+          data-heading="Define assertion"
+          aria-labelledby="tab-label-predict-explain-check-0"><p>We now have 2 new concepts: <strong>booleans</strong> and <strong>comparisons</strong>. From these concepts, we can now write an assertion about the function <code>formatAs12HourClock</code>.</p>
+<blockquote><p>🔑 An assertion is a <em>check</em> that our code behaves in a particular way: this check can either succeed or fail.</p>
+</blockquote><p>So far we&rsquo;ve used the log function <code>console.log</code>. We can write assertions using another function: <a
+  href="https://developer.mozilla.org/en-US/docs/Web/API/console/assert"><code>console.assert</code></a>. The documentation says that <code>console.assert</code> writes an error message to the console if the assertion is false. If the assertion is true, nothing happens. As <code>10 + 32 === 42</code> evaluates to true, no message will be written to the console.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">calculation</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">32</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">result</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">42</span>;
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">assert</span>(<span style="color:#a6e22e">calculation</span> <span style="color:#f92672">===</span> <span style="color:#a6e22e">result</span>);</span></span></code></pre></div><p>🎮 <a
+  href="#predict-explain-check-1">Work through the exercises</a></p>
+</div>
+        <div
+          id="predict-explain-check-1"
+          class="c-tabs__panel "
+          role="tabpanel"
+          data-heading="Exercise 1"
+          aria-labelledby="tab-label-predict-explain-check-1"><h3 id="experiment-with-assertions">Experiment with assertions</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">calculation</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">32</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">result</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">42</span>;
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">assert</span>(<span style="color:#a6e22e">calculation</span> <span style="color:#f92672">===</span> <span style="color:#a6e22e">result</span>);</span></span></code></pre></div><p>Change the value assigned to the <code>result</code> variable to make the assertion fail. Check the output you get in the console.</p>
+<p>👉🏿 <a
+  href="#predict-explain-check-2">Keep Going</a></p>
+</div>
+        <div
+          id="predict-explain-check-2"
+          class="c-tabs__panel "
+          role="tabpanel"
+          data-heading="Exercise 2"
+          aria-labelledby="tab-label-predict-explain-check-2"><p>Let&rsquo;s look at an example using <code>formatAs12HourClock</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">formatAs12HourClock</span>() {}
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">assert</span>(<span style="color:#a6e22e">formatAs12HourClock</span>(<span style="color:#e6db74">&#34;08:00&#34;</span>) <span style="color:#f92672">===</span> <span style="color:#e6db74">&#34;08:00 am&#34;</span>);</span></span></code></pre></div><p>Predict and explain if the assertion will succeed or fail. Pay particular attention to the return value of <code>formatAs12HourClock</code>.</p>
+</div></div>
+</tab-panels>
+
+<h3 id="clarity-with-arguments">Clarity with arguments</h3>
+<p>It would be useful to have more information as to why this assertion failed. We can pass an additional argument to <code>console.assert</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">formatAs12HourClock</span>() {}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">assert</span>(
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">formatAs12HourClock</span>(<span style="color:#e6db74">&#34;08:00&#34;</span>) <span style="color:#f92672">===</span> <span style="color:#e6db74">&#34;08:00 am&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">`current output: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">formatAs12HourClock</span>(<span style="color:#e6db74">&#34;08:00&#34;</span>)<span style="color:#e6db74">}</span><span style="color:#e6db74">, target output: 08:00 am`</span>
+</span></span><span style="display:flex;"><span>);</span></span></code></pre></div><p>Let&rsquo;s break down these arguments to make sense of what&rsquo;s going on:</p>
+<ol>
+<li><strong>first argument</strong> - <code>formatAs12HourClock(&quot;08:00&quot;) === &quot;08:00 am&quot;</code> - the condition we&rsquo;re checking</li>
+<li><strong>second argument</strong> - <code>`current output: ${formatAs12HourClock(&quot;08:00&quot;)}, target output: 08:00 am`</code> - a message string that will be logged to the console if the condition is false.</li>
+</ol>
+<h4 id="-refactor">🧹 Refactor</h4>
+<p>We can tidy up the assertion even further. As we’re reusing the same expressions, we can store their result in variables with meaningful names so we can reuse them:</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">formatAs12HourClock</span>() {}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">currentOutput</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">formatAs12HourClock</span>(<span style="color:#e6db74">&#34;08:00&#34;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">targetOutput</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;08:00 am&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">assert</span>(
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">currentOutput</span> <span style="color:#f92672">===</span> <span style="color:#a6e22e">targetOutput</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">`current output: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">currentOutput</span><span style="color:#e6db74">}</span><span style="color:#e6db74">, target output: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">targetOutput</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>
+</span></span><span style="display:flex;"><span>);</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Execute this code; we now get a log in the console:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Assertion failed: current output: undefined, target output: 08:00 am</span></span></code></pre></div><h2 id="-implementing-the-functionality">🧰 Implementing the functionality</h2>
+<p>On line 3, the function is being passed a single argument <code>&quot;08:00&quot;</code>. But our function ignores it: it doesn&rsquo;t declare any parameters. We can parameterise the function and label the input as <code>time</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">formatAs12HourClock</span>(<span style="color:#a6e22e">time</span>) {}</span></span></code></pre></div><p>According to our assertion, when we call our function with an input of <code>&quot;08:00&quot;</code> we need to create an output of <code>&quot;08:00 am&quot;</code>. If we add <code>&quot;am&quot;</code> to the <code>time</code>, we&rsquo;ll get the target output. We can update our function with a template literal, set the return value and then <em>re-run</em> our code including our assertion to check the function is returning the correct value.</p>
+<p>📓 We can and should continually check our assertions to see if our function’s current output meets our target output.</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">formatAs12HourClock</span>(<span style="color:#a6e22e">time</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#e6db74">`</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">time</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> am`</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">currentOutput</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">formatAs12HourClock</span>(<span style="color:#e6db74">&#34;08:00&#34;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">targetOutput</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;08:00 am&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">assert</span>(
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">currentOutput</span> <span style="color:#f92672">===</span> <span style="color:#a6e22e">targetOutput</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">`current output: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">currentOutput</span><span style="color:#e6db74">}</span><span style="color:#e6db74">, target output: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">targetOutput</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>
+</span></span><span style="display:flex;"><span>);</span></span></code></pre></td></tr></table>
+</div>
+</div><p>✅ Nothing is printed to the console, so this assertion is passing 😎</p>
+<section class="c-note c-note--activity">
+  <h4 class="c-note__title e-heading__4">🕹️Try yourself</span>
+  </h4>
+  <div class="c-note__text ">Create a javascript file on your local machine and execute the code above. Double check you are seeing the same output in your terminal.</div>
+</section>
+
+
+<h2 id="-checking-different-cases">💼 Checking different cases</h2>
+<p>So far we’ve only created assertions that check the function’s behaviour for times <em>between midnight and midday</em>. In these cases, there is a pattern: take the current time and add <code>&quot; am&quot;</code> to the end.</p>
+<p>But this isn&rsquo;t the pattern we need to follow for <em>all</em> times. To make sure our function works for all times, we need to write more assertions.</p>
+<p>We need to assert that the function behaves correctly when the time is later than midday.</p>
+<p>Before we think about any code, we should think about our problem. Separating <em>problem</em> and <em>code</em> lets us focus better. First we can focus on the data. Then we can focus on the code.</p>
+<p>First, let&rsquo;s think of an example time in 24 hour clock - we&rsquo;ll pick <code>23:00</code>.</p>
+<p>Next, let&rsquo;s work out what we expect our example time to be in 12 hour clock: <code>11:00 pm</code>.</p>
+<p>Now that we&rsquo;ve thought about the problem, we can write the code. Let&rsquo;s create an assertion for our function when passed an input of <code>&quot;23:00&quot;</code>:</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">formatAs12HourClock</span>(<span style="color:#a6e22e">time</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#e6db74">`</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">time</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> am`</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">currentOutput</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">formatAs12HourClock</span>(<span style="color:#e6db74">&#34;08:00&#34;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">targetOutput</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;08:00 am&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">assert</span>(
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">currentOutput</span> <span style="color:#f92672">===</span> <span style="color:#a6e22e">targetOutput</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">`current output: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">currentOutput</span><span style="color:#e6db74">}</span><span style="color:#e6db74">, target output: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">targetOutput</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>
+</span></span><span style="display:flex;"><span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">currentOutput</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">formatAs12HourClock</span>(<span style="color:#e6db74">&#34;23:00&#34;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">targetOutput</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;11:00 pm&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">assert</span>(
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">currentOutput</span> <span style="color:#f92672">===</span> <span style="color:#a6e22e">targetOutput</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">`current output: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">currentOutput</span><span style="color:#e6db74">}</span><span style="color:#e6db74">, target output: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">targetOutput</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>
+</span></span><span style="display:flex;"><span>);</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Save this code to a file. Before you run it in Node, write down what you think will happen. Then run it with Node - compare what you saw with what you predicted.</p>
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="interpreting-errors">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="interpreting-errors">
+        Interpreting errors
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="20 minutes countdown" datetime="P20M">20&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Interpret an error trace to identify which line in which file caused the error</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Identify an error message from an error trace</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <h2 id="an-error-is-thrown">An error is thrown</h2>
+<p>When we run the file with Node, we get an error in the console:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-console" data-lang="console"><span style="display:flex;"><span>% node clock-example.js
+</span></span><span style="display:flex;"><span>/Users/dwh/CYF/clock-example.js:12
+</span></span><span style="display:flex;"><span>const currentOutput = formatAs12HourClock(&#34;23:00&#34;);
+</span></span><span style="display:flex;"><span>      ^
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>SyntaxError: Identifier &#39;currentOutput&#39; has already been declared
+</span></span><span style="display:flex;"><span>    at wrapSafe (node:internal/modules/cjs/loader:1383:18)
+</span></span><span style="display:flex;"><span>    at Module._compile (node:internal/modules/cjs/loader:1412:20)
+</span></span><span style="display:flex;"><span>    at Module._extensions..js (node:internal/modules/cjs/loader:1551:10)
+</span></span><span style="display:flex;"><span>    at Module.load (node:internal/modules/cjs/loader:1282:32)
+</span></span><span style="display:flex;"><span>    at Module._load (node:internal/modules/cjs/loader:1098:12)
+</span></span><span style="display:flex;"><span>    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+</span></span><span style="display:flex;"><span>    at wrapModuleLoad (node:internal/modules/cjs/loader:215:24)
+</span></span><span style="display:flex;"><span>    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:158:5)
+</span></span><span style="display:flex;"><span>    at node:internal/main/run_main_module:30:49
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>Node.js v22.4.1
+</span></span></code></pre></div><p>When an error is thrown, the program stops and an error report is sent to the user.</p>
+<p>As programmers, we will see a lot of errors. It&rsquo;s useful for us to be able to read them.</p>
+<h3 id="interpreting-the-output">Interpreting the output</h3>
+<p>Each line of output here tells us something useful.</p>
+<p>The first line is:</p>
+<pre tabindex="0"><code>/Users/dwh/CYF/clock-example.js:12</code></pre><p>Your output was probably different. But it will have the same parts. Some text, then a colon (<code>:</code>), then a number.</p>
+<section class="c-note c-note--exercise">
+  <h4 class="c-note__title e-heading__4">✍️Exercise</span>
+  </h4>
+  <div class="c-note__text "><ol>
+<li>
+<p>Work out what the parts of this line mean.</p>
+</li>
+<li>
+<p>Why are they different on my computer than yours?</p>
+</li>
+<li>
+<p>How can we use both pieces of information?</p>
+</li>
+</ol>
+</div>
+</section>
+
+
+<p>Often, looking at one line of a file is enough to understand what&rsquo;s wrong. So the message also shows us a copy of the line that caused the problem:</p>
+<pre tabindex="0"><code>const currentOutput = formatAs12HourClock(&#34;23:00&#34;);</code></pre><p>Then the output tells us the error message:</p>
+<pre tabindex="0"><code>SyntaxError: Identifier &#39;currentOutput&#39; has already been declared</code></pre><p>We may not know what this means yet, but it&rsquo;s something we can learn about.</p>
+<section class="c-note c-note--exercise">
+  <h4 class="c-note__title e-heading__4">✍️Exercise</span>
+  </h4>
+  <div class="c-note__text ">Write down three ways you could find out what this means.</div>
+</section>
+
+
+<p>Each line starting with &ldquo;at&rdquo; is showing us a &ldquo;Stack trace&rdquo;. We&rsquo;ll skip over this for now. In the future we&rsquo;ll see how it can be useful to us.</p>
+<p>Finally, we have this line:</p>
+<pre tabindex="0"><code>Node.js v22.4.1</code></pre><section class="c-note c-note--exercise">
+  <h4 class="c-note__title e-heading__4">✍️Exercise</span>
+  </h4>
+  <div class="c-note__text "><p>What does this line mean? Why might it be useful to know this information?</p>
+<p>Add your answer to your spaced repetition calendar. Your understanding of this will grow over time. Answer the question again in the future, and compare it to your previous answer.</p>
+</div>
+</section>
+
+
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="interpreting-this-error">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="interpreting-this-error">
+        Interpreting this error
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="20 minutes countdown" datetime="P20M">20&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Interpret an error message</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Break down an error message and look up unfamiliar parts</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Rephrase an error message</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <p>We saw this error - let&rsquo;s try to understand it:</p>
+<pre tabindex="0"><code>SyntaxError: Identifier &#39;currentOutput&#39; has already been declared</code></pre><h3 id="knowing-what-we-changed">Knowing what we changed</h3>
+<p>It can be useful to remember when our code last worked, and what we changed since then.</p>
+<section class="c-note c-note--tip">
+  <h4 class="c-note__title e-heading__4">💡tip</span>
+  </h4>
+  <div class="c-note__text "><p>Source control can help here.</p>
+<p>If you commit your code every time you make something work, you can use git to easily see what changed since your last commit.</p>
+</div>
+</section>
+
+
+<p>When we just had the first 10 lines of code here, everything worked. When we added the rest, we got this error:</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span></span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span></span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span></span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span></span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span></span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">formatAs12HourClock</span>(<span style="color:#a6e22e">time</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#e6db74">`</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">time</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> am`</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">currentOutput</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">formatAs12HourClock</span>(<span style="color:#e6db74">&#34;08:00&#34;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">targetOutput</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;08:00 am&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">assert</span>(
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">currentOutput</span> <span style="color:#f92672">===</span> <span style="color:#a6e22e">targetOutput</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">`current output: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">currentOutput</span><span style="color:#e6db74">}</span><span style="color:#e6db74">, target output: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">targetOutput</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>
+</span></span><span style="display:flex;"><span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex; background-color:#3c3d38"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">currentOutput</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">formatAs12HourClock</span>(<span style="color:#e6db74">&#34;23:00&#34;</span>);
+</span></span><span style="display:flex; background-color:#3c3d38"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">targetOutput</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;11:00 pm&#34;</span>;
+</span></span><span style="display:flex; background-color:#3c3d38"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">assert</span>(
+</span></span><span style="display:flex; background-color:#3c3d38"><span>  <span style="color:#a6e22e">currentOutput</span> <span style="color:#f92672">===</span> <span style="color:#a6e22e">targetOutput</span>,
+</span></span><span style="display:flex; background-color:#3c3d38"><span>  <span style="color:#e6db74">`current output: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">currentOutput</span><span style="color:#e6db74">}</span><span style="color:#e6db74">, target output: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">targetOutput</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>
+</span></span><span style="display:flex; background-color:#3c3d38"><span>);</span></span></code></pre></td></tr></table>
+</div>
+</div><section class="c-note c-note--tip">
+  <h4 class="c-note__title e-heading__4">💡Tip</span>
+  </h4>
+  <div class="c-note__text "><p>Run your code very often.</p>
+<p>If we changed one thing since our code last worked, we know what change is the problem. If we have written 100 lines of code since we last saw it work, we have 100 possible problems.</p>
+</div>
+</section>
+
+
+<h3 id="interpreting-the-error-message">Interpreting the error message</h3>
+<p>The error message tries to tell us useful information:</p>
+<pre tabindex="0"><code>SyntaxError: Identifier &#39;currentOutput&#39; has already been declared</code></pre><p>When we get an error, we should make sure we understand all of the words in the error message. If we don&rsquo;t, we should look them up or ask someone.</p>
+<section class="c-note c-note--exercise">
+  <h4 class="c-note__title e-heading__4">✍️Exercise</span>
+  </h4>
+  <div class="c-note__text "><p>For each word in this error message, write down what it means.</p>
+<p>If you don&rsquo;t know a word, look it up.</p>
+<p>Make sure you <em>understand</em> each word. Make sure you could explain the word to someone <em>without reading the answer to them</em>.</p>
+</div>
+</section>
+
+
+<details>
+<summary>
+Expand for example definitions - only expand this after you have written yours down. Compare your answers with these.
+</summary>
+<ul>
+<li><strong>SyntaxError</strong> - If we Google &ldquo;JavaScript SyntaxError&rdquo;, <a
+  href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SyntaxError">MDN tells us</a> this is &ldquo;an error when trying to interpret syntactically invalid code&rdquo;. So - we wrote some code which isn&rsquo;t allowed.</li>
+<li><strong>Identifier</strong> - If we Google &ldquo;JavaScript Identifier&rdquo;, <a
+  href="https://developer.mozilla.org/en-US/docs/Glossary/Identifier">MDN tells us</a>: this is &ldquo;a sequence of characters in the code that identifies a variable, function, or property&rdquo;. On line 12, the identifier is the variable name: <code>currentOutput</code>.</li>
+<li><strong>currentOutput</strong> - This is the variable name we used in our code. This is the <strong>identifier</strong> that the error is about.</li>
+<li><strong>has</strong>, <strong>already</strong>, and <strong>been</strong> are all standard English words with no special meaning.</li>
+<li><strong>declared</strong> - We learnt about this already in this course - a <strong>declaration</strong> is where we make a new name (e.g. a new variable) in JavaScript.</li>
+</ul>
+<p>Reading that back, we can rephrase this error message:</p>
+<p>We wrote some code which isn&rsquo;t allowed. We tried to declare a new variable named <code>currentOutput</code>. But we had already declared something named <code>currentOutput</code>.</p>
+</details>
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="reusing-variable-names">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="reusing-variable-names">
+        Reusing variable names
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="30 minutes countdown" datetime="P30M">30&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Fix code which declares the same identifier more than once</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <p>We saw this error:</p>
+<pre tabindex="0"><code>SyntaxError: Identifier &#39;currentOutput&#39; has already been declared</code></pre><p>Now that we understand it, let&rsquo;s fix it.</p>
+<p>We&rsquo;re not allowed to declare a new variable with the same name as an old one. Both lines 5 and 12 here try to declare a new variable named <code>currentOutput</code>:</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span></span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span></span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">formatAs12HourClock</span>(<span style="color:#a6e22e">time</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#e6db74">`</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">time</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> am`</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex; background-color:#3c3d38"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">currentOutput</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">formatAs12HourClock</span>(<span style="color:#e6db74">&#34;08:00&#34;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">targetOutput</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;08:00 am&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">assert</span>(
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">currentOutput</span> <span style="color:#f92672">===</span> <span style="color:#a6e22e">targetOutput</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">`current output: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">currentOutput</span><span style="color:#e6db74">}</span><span style="color:#e6db74">, target output: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">targetOutput</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>
+</span></span><span style="display:flex;"><span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex; background-color:#3c3d38"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">currentOutput</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">formatAs12HourClock</span>(<span style="color:#e6db74">&#34;23:00&#34;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">targetOutput</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;11:00 pm&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">assert</span>(
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">currentOutput</span> <span style="color:#f92672">===</span> <span style="color:#a6e22e">targetOutput</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">`current output: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">currentOutput</span><span style="color:#e6db74">}</span><span style="color:#e6db74">, target output: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">targetOutput</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>
+</span></span><span style="display:flex;"><span>);</span></span></code></pre></td></tr></table>
+</div>
+</div><section class="c-note c-note--remember">
+  <h4 class="c-note__title e-heading__4">remember</span>
+  </h4>
+  <div class="c-note__text "><p>Make sure you understand the error message before you try to fix the code.</p>
+<p>If you don&rsquo;t understand what&rsquo;s wrong, you probably won&rsquo;t be able to fix it!</p>
+</div>
+</section>
+
+
+<h3 id="fixing-the-error">Fixing the error</h3>
+<p>We want to do multiple assertions. And we&rsquo;re using variables in our assertions. But we&rsquo;re not allowed to use the same name twice. The simplest way we can fix this problem is by changing the name of the second variable. Remember to also change where we <em>use</em> the variable, not just where we declare it!</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span></span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span></span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span></span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">formatAs12HourClock</span>(<span style="color:#a6e22e">time</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#e6db74">`</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">time</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> am`</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">currentOutput</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">formatAs12HourClock</span>(<span style="color:#e6db74">&#34;08:00&#34;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">targetOutput</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;08:00 am&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">assert</span>(
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">currentOutput</span> <span style="color:#f92672">===</span> <span style="color:#a6e22e">targetOutput</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">`current output: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">currentOutput</span><span style="color:#e6db74">}</span><span style="color:#e6db74">, target output: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">targetOutput</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>
+</span></span><span style="display:flex;"><span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex; background-color:#3c3d38"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">currentOutput2</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">formatAs12HourClock</span>(<span style="color:#e6db74">&#34;23:00&#34;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">targetOutput</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;11:00 pm&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">assert</span>(
+</span></span><span style="display:flex; background-color:#3c3d38"><span>  <span style="color:#a6e22e">currentOutput2</span> <span style="color:#f92672">===</span> <span style="color:#a6e22e">targetOutput</span>,
+</span></span><span style="display:flex; background-color:#3c3d38"><span>  <span style="color:#e6db74">`current output: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">currentOutput2</span><span style="color:#e6db74">}</span><span style="color:#e6db74">, target output: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">targetOutput</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>
+</span></span><span style="display:flex;"><span>);</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="trying-again">Trying again</h3>
+<p>After making this change, let&rsquo;s try running our code again. We get this output:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-console" data-lang="console"><span style="display:flex;"><span>% node clock-example.js
+</span></span><span style="display:flex;"><span>/Users/dwh/CYF/clock-example.js:13
+</span></span><span style="display:flex;"><span>const targetOutput = &#34;11:00 pm&#34;;
+</span></span><span style="display:flex;"><span>      ^
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>SyntaxError: Identifier &#39;targetOutput&#39; has already been declared
+</span></span><span style="display:flex;"><span>    at wrapSafe (node:internal/modules/cjs/loader:1383:18)
+</span></span><span style="display:flex;"><span>    at Module._compile (node:internal/modules/cjs/loader:1412:20)
+</span></span><span style="display:flex;"><span>    at Module._extensions..js (node:internal/modules/cjs/loader:1551:10)
+</span></span><span style="display:flex;"><span>    at Module.load (node:internal/modules/cjs/loader:1282:32)
+</span></span><span style="display:flex;"><span>    at Module._load (node:internal/modules/cjs/loader:1098:12)
+</span></span><span style="display:flex;"><span>    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+</span></span><span style="display:flex;"><span>    at wrapModuleLoad (node:internal/modules/cjs/loader:215:24)
+</span></span><span style="display:flex;"><span>    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:158:5)
+</span></span><span style="display:flex;"><span>    at node:internal/main/run_main_module:30:49
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>Node.js v22.4.1
+</span></span></code></pre></div><p>Fortunately, we&rsquo;ve seen this kind of error before. It&rsquo;s exactly the same as the last one, but about the <code>targetOutput</code> variable on line 13, instead of the <code>currentOutput</code> variable on line 12.</p>
+<section class="c-note c-note--exercise">
+  <h4 class="c-note__title e-heading__4">✍️exercise</span>
+  </h4>
+  <div class="c-note__text ">Fix this error, and try running your code again.</div>
+</section>
+
+
+<p>Now the second assertion fails with the following message:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-console" data-lang="console"><span style="display:flex;"><span>% node clock-example.js
+</span></span><span style="display:flex;"><span>Assertion failed: current output: 23:00 am, target output: 11:00 pm
+</span></span></code></pre></div><p>We expect this. Our function just adds &quot; am&quot; to the end of the time, which only works for times in the morning. We have proven our code isn&rsquo;t complete yet. Next we can fix it so that this test passes.</p>
+<section class="c-note c-note--exercise">
+  <h4 class="c-note__title e-heading__4">✍️Exercise 1</span>
+  </h4>
+  <div class="c-note__text ">✏️ Write another assertion that checks <code>formatAs12HourClock</code> returns the target output when passed another <em>time input in the afternoon.</em></div>
+</section>
+
+
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="strategy">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="strategy">
+        Making a choice
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="10 minutes countdown" datetime="P10M">10&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Propose a strategy for solving a problem</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Identify sub-problems within a larger problem</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <p>Our function works for morning inputs like <code>&quot;08:00&quot;</code>. In this case, the function returns the target output of <code>&quot;08:00 am&quot;</code> as required. However, at the moment, the output of <code>formatAs12HourClock(&quot;23:00&quot;)</code> is <code>&quot;23:00 am&quot;</code>.</p>
+<blockquote><p>💡 We need to execute some different logic when the time is beyond midday</p>
+</blockquote><p>We can interpret this behaviour as a question:</p>
+<style>
+  .mermaid svg {
+    height: initial;
+  }
+  .mermaid {
+    margin-bottom: var(--theme-spacing--gutter);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .mermaid[data-processed] {
+    opacity: 1;
+  }
+</style>
+<div class="mermaid">
+flowchart LR
+
+A{Is the time before midday?} -- true --> B[Add am to time string]
+A -- false --> C[???]</div>
+
+<script type="module" src="/scripts/mermaid-observer.min.js" defer></script>
+<p>We need to make two changes to our code.</p>
+<ol>
+<li>We need to do something different depending on whether the time is before midday. This is called running code <strong>conditionally</strong>.</li>
+<li>And then we need to know what we do if the time is after midday.</li>
+</ol>
+<p>We don&rsquo;t need to solve the whole problem at once. First let&rsquo;s work out how to do something different depending on the time. We can worry about what we need to do differently once we&rsquo;ve solved this problem.</p>
+<section class="c-note c-note--tip">
+  <h4 class="c-note__title e-heading__4">💡tip</span>
+  </h4>
+  <div class="c-note__text "><p>It&rsquo;s easier to search for the solutions to smaller parts of problems than the whole problem.</p>
+<p>Programming is all about breaking down problems into smaller pieces which we can solve.</p>
+</div>
+</section>
+
+
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="conditionality">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="conditionality">
+        Conditionally executing code
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="30 minutes countdown" datetime="P30M">30&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Construct a flow diagram that describes how to produce an output from a given input</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Explain when it is necessary to use a conditional statement</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Identify the syntactic features of an if statement</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Analyse a conditional statement to determine whether or not the statement will be executed</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Determine the output of a program that uses a conditional statement</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <blockquote><p>Recall: JavaScript programs are built up from sequences of <strong>declarations</strong> and <strong>statements</strong>.</p>
+</blockquote><p>In programming, we can use an <strong><code>if</code> statement</strong> to execute some code when a given condition is <code>true</code>. In JavaScript, we can write an <code>if</code> statement as follows:</p>
+<div class="code-block-filename">main.js</div><div class="highlight" title="main.js"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">condition</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// do some code in here
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>}</span></span></code></pre></div><p>The <code>if</code> statement consists of:</p>
+<ol>
+<li><code>if</code> keyword: this is the start of the <code>if</code> statement</li>
+<li><code>condition</code>: condition is an expression that evaluates to true or false. The condition must be in a pair of parentheses: <code>()</code></li>
+<li><code>{}</code>: a block statement: any code we want to execute if the condition is true goes inside the curly braces here</li>
+</ol>
+<p>We can represent this with a diagram too:</p>
+<style>
+  .mermaid svg {
+    height: initial;
+  }
+  .mermaid {
+    margin-bottom: var(--theme-spacing--gutter);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .mermaid[data-processed] {
+    opacity: 1;
+  }
+</style>
+<div class="mermaid">
+flowchart LR
+    IC{condition}
+    IB[Execute code in body]
+    EXIT([End of if statement])
+    IC --> |true| IB
+    IC -.-> |false| EXIT
+    IB --> EXIT</div>
+
+<script type="module" src="/scripts/mermaid-observer.min.js" defer></script>
+
+
+
+<tab-panels class="c-tabs">
+  <div class="c-tabs__list" id="tabset--14014259559041193373-13753189171-56582048" role="tablist"><button
+          data-toggle="tab"
+          id="tab-label-tabset--14014259559041193373-13753189171-56582048-0"
+          class="c-tabs__tab e-heading__5 space 
+            is-active"
+          role="tab"
+          aria-controls="tabset--14014259559041193373-13753189171-56582048-0"
+          aria-selected="true">
+          Exercise 1
+        </button><button
+          data-toggle="tab"
+          id="tab-label-tabset--14014259559041193373-13753189171-56582048-1"
+          class="c-tabs__tab e-heading__5 space "
+          role="tab"
+          aria-controls="tabset--14014259559041193373-13753189171-56582048-1"
+          aria-selected="false">
+          Exercise 2
+        </button></div>
+  <div class="c-tabs__group" id="tabset--14014259559041193373-13753189171-56582048">
+        <div
+          id="tabset--14014259559041193373-13753189171-56582048-0"
+          class="c-tabs__panel is-active"
+          role="tabpanel"
+          data-heading="Exercise 1"
+          aria-labelledby="tab-label-tabset--14014259559041193373-13753189171-56582048-0"><h3 id="-playing-computer">🕹️ Playing computer</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">checkDivisibility</span>(<span style="color:#a6e22e">a</span>, <span style="color:#a6e22e">b</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">a</span> <span style="color:#f92672">%</span> <span style="color:#a6e22e">b</span> <span style="color:#f92672">===</span> <span style="color:#ae81ff">0</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#e6db74">`</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">a</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> is divisible by </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">b</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>;
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#e6db74">`</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">a</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> is not divisible by </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">b</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">checkDivisibility</span>(<span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">2</span>));
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">checkDivisibility</span>(<span style="color:#ae81ff">50</span>, <span style="color:#ae81ff">3</span>));</span></span></code></pre></div><p>Play computer with the example above, step through each line in the code and work out happens each time the function is called.</p>
+<ul>
+<li>What is the <strong>return value</strong> each time the function is called?</li>
+<li>What value is assigned to the <strong>parameters</strong> <code>a</code> and <code>b</code> each time the function is called?</li>
+</ul>
+<p>If you&rsquo;ve not encountered any syntax before, remember to look it up in some documentation.</p>
+</div>
+        <div
+          id="tabset--14014259559041193373-13753189171-56582048-1"
+          class="c-tabs__panel "
+          role="tabpanel"
+          data-heading="Exercise 2"
+          aria-labelledby="tab-label-tabset--14014259559041193373-13753189171-56582048-1"><h3 id="-playing-computer">🎮 Playing computer</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">getCountryCode</span>(<span style="color:#a6e22e">phoneNumber</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">phoneNumber</span>.<span style="color:#a6e22e">startsWith</span>(<span style="color:#e6db74">&#34;+44&#34;</span>)) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;UK&#34;</span>;
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">getCountryCode</span>(<span style="color:#e6db74">&#34;+447831620328&#34;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">getCountryCode</span>(<span style="color:#e6db74">&#34;+989871783972&#34;</span>);</span></span></code></pre></div><p>Play computer with the example above, step through each line in the code and work out happens each time the function is called.</p>
+<ul>
+<li>What is the <strong>return value</strong> each time the function is called?</li>
+<li>What value is assigned to the <code>phoneNumber</code> parameter each time the function is called?</li>
+<li>Try describing the purpose of this function - what should it do?</li>
+</ul></div></div>
+</tab-panels>
+
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="sub-goal">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="sub-goal">
+        Forming sub-goals
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="20 minutes countdown" datetime="P20M">20&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Define a sub-goal</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Explain why we use sub-goals</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <p>For <code>formatAs12HourClock</code> our strategy for inputs like <code>&quot;23:00&quot;</code> involves checking if the <code>hours</code> value is less than 12. For this purpose, we can use the <a
+  href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Greater_than"><strong>greater than</strong> comparison operator <code>&gt;</code></a>.</p>
+<p><code>&gt;</code> will check if the value on the operator&rsquo;s left side is less than the value on the operator&rsquo;s right side.</p>
+<p>So <code>3 &gt; 12</code> evaluates to <code>false</code>, as <code>3</code> is not greater than <code>12</code>.</p>
+<p>So provided we have an expression for hours, we can write an <code>if</code> statement as follows:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">if</span> (<span style="color:#75715e">/* here goes an expression here that evaluates to the hours */</span> <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">12</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// do code to format the 12 hours
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>}</span></span></code></pre></div><p>To complete the logic, we can form a 
+<tool-tip-container tabindex="0"><strong class="tooltip__trigger" id="trigger__sub-goal">sub-goal</strong><span class="tooltip__emoji">🧶</span><tool-tip role="tooltip" aria-labelledby="sub-goal"><span class="tooltip__title e-heading__2"><span class="tooltip__emoji">🧶</span> sub-goal</span><span class="tooltip__content">A sub-goal is a goal for a smaller problem that makes up some bigger problem</span></tool-tip></tool-tip-container>
+.</p>
+<p>Any time we&rsquo;re solving a problem, we can define a goal - a thing we need to achieve to consider the problem solved.
+We can break a problem into smaller problems, each with its own sub-goal. The problem-solving process involves continually breaking down problems into smaller manageable problems, each with its own sub-goal.</p>
+<p>For the implementation of <code>formatAs12HourClock</code>, we can form a sub-goal as follows:</p>
+<blockquote><p>🎯 Sub-goal: Find the hours value from the <code>time</code> input</p>
+</blockquote>
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="strings">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="strings">
+        Accessing strings
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="20 minutes countdown" datetime="P20M">20&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Define zero-indexing</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Given a short program, determine the return value of a call to slice on a string before execution</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Describe how to convert a string into a number in JavaScript</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <p>Given a <code>time</code> string we need to access the <em>first 2 characters</em> of the string which represent the hours.</p>
+<p>Strings are <strong>zero-indexed</strong>.
+<strong>Index</strong> means <strong>position</strong>, so <strong>zero-indexed</strong> means we start counting character positions from <code>0</code> onwards.</p>
+<p>Here are the positions/indexes for <code>&quot;23:00&quot;</code></p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: center">index</th>
+          <th style="text-align: center">0</th>
+          <th style="text-align: center">1</th>
+          <th>2</th>
+          <th>3</th>
+          <th>4</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">character</td>
+          <td style="text-align: center"><code>&quot;2&quot;</code></td>
+          <td style="text-align: center"><code>&quot;3&quot;</code></td>
+          <td><code>&quot;:&quot;</code></td>
+          <td><code>&quot;0&quot;</code></td>
+          <td><code>&quot;0&quot;</code></td>
+      </tr>
+  </tbody>
+</table>
+<p>In JavaScript, we can use square bracket notation to access specific characters in the string using the index.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">time</span>[<span style="color:#ae81ff">0</span>]; <span style="color:#75715e">// evaluates to &#34;2&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">time</span>[<span style="color:#ae81ff">1</span>]; <span style="color:#75715e">// evaluates to &#34;3&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">time</span>[<span style="color:#ae81ff">2</span>]; <span style="color:#75715e">// evaluates to &#34;:&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// etc
+</span></span></span></code></pre></div><p>Square bracket access will only give a single character. We must use another method to extract <em>multiple</em> characters from the given string.</p>
+<h2 id="-extracting-a-slice">✂️ Extracting a slice</h2>
+<p>To extract 1 or more characters from a string, we can use a function called 
+<tool-tip-container tabindex="0"><strong class="tooltip__trigger" id="trigger__slice ">slice </strong><span class="tooltip__emoji">🧶</span><tool-tip role="tooltip" aria-labelledby="slice "><span class="tooltip__title e-heading__2"><span class="tooltip__emoji">🧶</span> slice </span><span class="tooltip__content"><a
+  href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/slice"><code>slice</code></a> is a function that can take 2 arguments: a start index and an end index. <code>slice</code> will return a section of the string from the start index up to but not including the end index.</span></tool-tip></tool-tip-container>
+</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">time</span>; <span style="color:#75715e">// holds the value &#34;23:00&#34;
+</span></span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">time</span>.<span style="color:#a6e22e">slice</span>(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">2</span>); <span style="color:#75715e">// will access the characters below
+</span></span></span></code></pre></div><table>
+  <thead>
+      <tr>
+          <th style="text-align: center">index</th>
+          <th style="text-align: center">0</th>
+          <th style="text-align: center">1</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">character</td>
+          <td style="text-align: center"><code>&quot;2&quot;</code></td>
+          <td style="text-align: center"><code>&quot;3&quot;</code></td>
+      </tr>
+  </tbody>
+</table>
+<p>So <code>time.slice(0,2)</code> will evaluate to <code>&quot;23&quot;</code> when the <code>time</code> is <code>&quot;23:00&quot;</code>.</p>
+<p>Finally we must convert <code>&quot;23&quot;</code> to the number <code>23</code>, otherwise we can&rsquo;t compare this value properly.</p>
+<section class="c-note c-note--exercise">
+  <h4 class="c-note__title e-heading__4">✍️exercise</span>
+  </h4>
+  <div class="c-note__text "><p>Think about the numbers 100 and 23. Which one is bigger?</p>
+<p>Write code which compares the strings <code>&quot;100&quot;</code> and <code>&quot;23&quot;</code> and tells you which one is bigger.</p>
+<p>Does this match your expectation? If not, what do you think is happening?</p>
+</div>
+</section>
+
+
+<p>JavaScript uses different ways to <a
+  href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness">compare values</a> depending on their types. If you compare two strings (which may contain numbers), it will do something different than if you compare two numbers.</p>
+<p>We can use the <code>Number</code> function to convert the string into a number.</p>
+<section class="c-note c-note--exercise">
+  <h4 class="c-note__title e-heading__4">✍️exercise</span>
+  </h4>
+  <div class="c-note__text "><p>Work out how you can convert the strings &ldquo;100&rdquo; and &ldquo;23&rdquo; to numbers.</p>
+<p>Write code which compares the numbers <code>100</code> and <code>23</code> and tells you which one is bigger.</p>
+</div>
+</section>
+
+
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="testing-a-sub-goal">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="testing-a-sub-goal">
+        Testing a sub-goal
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="15 minutes countdown" datetime="P15M">15&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Test a solution to a sub-goal before solving the whole problem</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <p>Earlier we defined a sub-goal to find a value for the hours from the <code>time</code> input. We&rsquo;ve found that <code>Number(time.slice(0,2))</code> is an expression that evaluates to the hours from <code>time</code>. So we can write an <code>if</code> statement using this expression:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">if</span> (Number(<span style="color:#a6e22e">time</span>.<span style="color:#a6e22e">slice</span>(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">2</span>)) <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">12</span>) {
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div><p>If the time is <code>&quot;23:00&quot;</code> then the expression <code>Number(time.slice(0, 2)) &gt; 12</code> will evaluate to <code>true</code> and the body of the <code>if</code> statement will be executed.</p>
+<p>This <code>if</code> statement is implementing the following part of the diagram from earlier:</p>
+<style>
+  .mermaid svg {
+    height: initial;
+  }
+  .mermaid {
+    margin-bottom: var(--theme-spacing--gutter);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .mermaid[data-processed] {
+    opacity: 1;
+  }
+</style>
+<div class="mermaid">
+flowchart TD
+
+A{Check: Are the hours greater than 12?}</div>
+
+<script type="module" src="/scripts/mermaid-observer.min.js" defer></script>
+<p>Before we worry about how we handle times in the afternoon, we can check that we&rsquo;ve solved this sub-goal.</p>
+<p>We can check that we are correctly identifying times in the afternoon by adding in our <code>if</code> statement (which we think is correct), with a placeholder body:</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span></span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span></span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span></span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">formatAs12HourClock</span>(<span style="color:#a6e22e">time</span>) {
+</span></span><span style="display:flex; background-color:#3c3d38"><span>  <span style="color:#66d9ef">if</span> (Number(<span style="color:#a6e22e">time</span>.<span style="color:#a6e22e">slice</span>(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">2</span>)) <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">12</span>) {
+</span></span><span style="display:flex; background-color:#3c3d38"><span>    <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;Don&#39;t know how to handle times in the afternoon yet&#34;</span>;
+</span></span><span style="display:flex; background-color:#3c3d38"><span>  }
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#e6db74">`</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">time</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> am`</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">currentOutput</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">formatAs12HourClock</span>(<span style="color:#e6db74">&#34;08:00&#34;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">targetOutput</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;08:00 am&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">assert</span>(
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">currentOutput</span> <span style="color:#f92672">===</span> <span style="color:#a6e22e">targetOutput</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">`current output: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">currentOutput</span><span style="color:#e6db74">}</span><span style="color:#e6db74">, target output: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">targetOutput</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>
+</span></span><span style="display:flex;"><span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">currentOutput2</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">formatAs12HourClock</span>(<span style="color:#e6db74">&#34;23:00&#34;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">targetOutput2</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;11:00 pm&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">assert</span>(
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">currentOutput2</span> <span style="color:#f92672">===</span> <span style="color:#a6e22e">targetOutput2</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">`current output: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">currentOutput2</span><span style="color:#e6db74">}</span><span style="color:#e6db74">, target output: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">targetOutput2</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>
+</span></span><span style="display:flex;"><span>);</span></span></code></pre></td></tr></table>
+</div>
+</div><p>If we run our code, we expect the current output of the <code>23:00</code> test-case to have changed. It won&rsquo;t be correct - the assertion will still fail. But if it hasn&rsquo;t changed, we know our <code>if</code> statement is wrong.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-console" data-lang="console"><span style="display:flex;"><span>% node clock-example.js
+</span></span><span style="display:flex;"><span>Assertion failed: current output: Don&#39;t know how to handle times in the afternoon yet, target output: 11:00 pm
+</span></span></code></pre></div><p>Even though we <em>know</em> the code on line 3 is incorrect, this was a useful step. It allowed us to run our code more often, and check that we&rsquo;re on the right track.</p>
+<section class="c-note c-note--remember">
+  <h4 class="c-note__title e-heading__4">remember</span>
+  </h4>
+  <div class="c-note__text "><p>Run your code as often as you can.</p>
+<p>Make small changes and run your code.</p>
+<p>Sometimes we write code we know we will delete because it lets us get feedback sooner.</p>
+</div>
+</section>
+
+
+<p>Now we can focus on just one problem: how to handle times after midday (i.e. fixing line 3). We don&rsquo;t need to worry about both detecting the time <em>and</em> handling it.</p>
+<p>If the output of this assert still printed <code>&quot;23:00 am&quot;</code> we would have stopped here and debugged that. Again, we could focus on just one problem.</p>
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="sub-goal-#2">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="sub-goal-#2">
+        Sub-goal #2
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="10 minutes countdown" datetime="P10M">10&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Explain how different concepts are combined to solve a goal</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <p>Now we can think about what we do when we&rsquo;ve identified a time is after midday.</p>
+<p>Earlier, we observed what to do when the time goes beyond midday: <strong>subtract 12 from the hours time to get the new hours for the 12 hour clock time</strong>.</p>
+<p><em>Before</em> writing code, we can define our approach in steps:</p>
+<p>Starting with an input like <code>&quot;23:00&quot;</code>:</p>
+<style>
+  .mermaid svg {
+    height: initial;
+  }
+  .mermaid {
+    margin-bottom: var(--theme-spacing--gutter);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .mermaid[data-processed] {
+    opacity: 1;
+  }
+</style>
+<div class="mermaid">
+flowchart LR
+
+A[extract the hours, '23', from the time '23:00'] --> B[convert '23' to a number, 23]
+B --> C{check: Are the hours greater than 12?}
+C -- false --> D[add am to time string]
+  C -- true --> E[subtract 12 from the hours, to get 11]
+subgraph "Time after midday"
+  E --> F[add 'pm' to the rest of the time, to get '11:00 pm']
+  F --> G[return the new time]
+end</div>
+
+<script type="module" src="/scripts/mermaid-observer.min.js" defer></script>
+<p>Now we can format the string using our approach from earlier:
+we’ll need to append <code>&quot;pm&quot;</code> to the string expression and subtract 12 from the hours. So we get the following:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">if</span> (Number(<span style="color:#a6e22e">time</span>.<span style="color:#a6e22e">slice</span>(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">2</span>)) <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">12</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#e6db74">`</span><span style="color:#e6db74">${</span>Number(<span style="color:#a6e22e">time</span>.<span style="color:#a6e22e">slice</span>(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">2</span>)) <span style="color:#f92672">-</span> <span style="color:#ae81ff">12</span><span style="color:#e6db74">}</span><span style="color:#e6db74">:00 pm`</span>;
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div><p>The <code>return</code> statement above implements the following steps we set out earlier:</p>
+<style>
+  .mermaid svg {
+    height: initial;
+  }
+  .mermaid {
+    margin-bottom: var(--theme-spacing--gutter);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .mermaid[data-processed] {
+    opacity: 1;
+  }
+</style>
+<div class="mermaid">
+flowchart LR
+
+D[subtract 12 from the hours]
+D --> E[add 'pm' to the rest of the time]
+E --> F[return the new time]</div>
+
+<script type="module" src="/scripts/mermaid-observer.min.js" defer></script>
+<p>Now we can <strong>re-run</strong> our assertions from earlier to check our function behaves as target.</p>
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="refactoring-repetition">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="refactoring-repetition">
+        Refactoring repetition
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="30 minutes countdown" datetime="P30M">30&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Refactor code to remove duplication</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Explain why duplicated code can cause problems</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <p>Let&rsquo;s look at our code, which passes all of the tests we&rsquo;ve written:</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span></span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span></span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">formatAs12HourClock</span>(<span style="color:#a6e22e">time</span>) {
+</span></span><span style="display:flex; background-color:#3c3d38"><span>  <span style="color:#66d9ef">if</span> (Number(<span style="color:#a6e22e">time</span>.<span style="color:#a6e22e">slice</span>(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">2</span>)) <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">12</span>) {
+</span></span><span style="display:flex; background-color:#3c3d38"><span>    <span style="color:#66d9ef">return</span> <span style="color:#e6db74">`</span><span style="color:#e6db74">${</span>Number(<span style="color:#a6e22e">time</span>.<span style="color:#a6e22e">slice</span>(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">2</span>)) <span style="color:#f92672">-</span> <span style="color:#ae81ff">12</span><span style="color:#e6db74">}</span><span style="color:#e6db74">:00 pm`</span>;
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#e6db74">`</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">time</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> am`</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">currentOutput</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">formatAs12HourClock</span>(<span style="color:#e6db74">&#34;08:00&#34;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">targetOutput</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;08:00 am&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">assert</span>(
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">currentOutput</span> <span style="color:#f92672">===</span> <span style="color:#a6e22e">targetOutput</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">`current output: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">currentOutput</span><span style="color:#e6db74">}</span><span style="color:#e6db74">, target output: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">targetOutput</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>
+</span></span><span style="display:flex;"><span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">currentOutput2</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">formatAs12HourClock</span>(<span style="color:#e6db74">&#34;23:00&#34;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">targetOutput2</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;11:00 pm&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">assert</span>(
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">currentOutput2</span> <span style="color:#f92672">===</span> <span style="color:#a6e22e">targetOutput2</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">`current output: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">currentOutput2</span><span style="color:#e6db74">}</span><span style="color:#e6db74">, target output: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">targetOutput2</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>
+</span></span><span style="display:flex;"><span>);</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Inside the <code>formatAs12HourClock</code> function we do exactly the same thing twice.</p>
+<section class="c-note c-note--activity">
+  <h4 class="c-note__title e-heading__4">🕹️Exercise</span>
+  </h4>
+  <div class="c-note__text ">Identify the two bits of code inside <code>formatAs12HourClock</code> that do exactly the same thing.</div>
+</section>
+
+
+<p>There are a few reasons this isn&rsquo;t ideal.</p>
+<ol>
+<li>It&rsquo;s not clear what this value represents. You can read it and work it out, but that takes some time.</li>
+<li>Doing the same thing twice is slower than doing it once.</li>
+<li>In the future if we need to change this code&rsquo;s implementation, we would need to change it <strong>twice</strong>.<br>
+Right now our code assumes the hours in a time are always two digits (like <code>05:00</code>). What if we wanted to support single-digit hours, like <code>5:00</code>? We would need to make the same change to both lines. It would be easy to change one line and forget the other, which would lead to a bug.</li>
+</ol>
+<h3 id="refactor">Refactor</h3>
+<p>Once your code passes your test, look for ways you could make your code better. This doesn&rsquo;t mean changing <em>what</em> it does - the code works. It means changing how it&rsquo;s written.</p>
+<p>This is called 
+<tool-tip-container tabindex="0"><strong class="tooltip__trigger" id="trigger__refactoring">refactoring</strong><span class="tooltip__emoji">🧶</span><tool-tip role="tooltip" aria-labelledby="refactoring"><span class="tooltip__title e-heading__2"><span class="tooltip__emoji">🧶</span> refactoring</span><span class="tooltip__content">To refactor means to update our code <em>quality</em> without changing the <em>implementation</em>. Changing <em>how</em> it does something, not changing <em>what</em> it does.</span></tool-tip></tool-tip-container>
+.</p>
+<p>We can refactor our code to remove this duplication by introducing a variable:</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span></span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span></span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span></span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">formatAs12HourClock</span>(<span style="color:#a6e22e">time</span>) {
+</span></span><span style="display:flex; background-color:#3c3d38"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">hours</span> <span style="color:#f92672">=</span> Number(<span style="color:#a6e22e">time</span>.<span style="color:#a6e22e">slice</span>(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">2</span>));
+</span></span><span style="display:flex; background-color:#3c3d38"><span>  <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">hours</span> <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">12</span>) {
+</span></span><span style="display:flex; background-color:#3c3d38"><span>    <span style="color:#66d9ef">return</span> <span style="color:#e6db74">`</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">hours</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">12</span><span style="color:#e6db74">}</span><span style="color:#e6db74">:00 pm`</span>;
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#e6db74">`</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">time</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> am`</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">currentOutput</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">formatAs12HourClock</span>(<span style="color:#e6db74">&#34;08:00&#34;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">targetOutput</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;08:00 am&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">assert</span>(
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">currentOutput</span> <span style="color:#f92672">===</span> <span style="color:#a6e22e">targetOutput</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">`current output: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">currentOutput</span><span style="color:#e6db74">}</span><span style="color:#e6db74">, target output: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">targetOutput</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>
+</span></span><span style="display:flex;"><span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">currentOutput2</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">formatAs12HourClock</span>(<span style="color:#e6db74">&#34;23:00&#34;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">targetOutput2</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;11:00 pm&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">assert</span>(
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">currentOutput2</span> <span style="color:#f92672">===</span> <span style="color:#a6e22e">targetOutput2</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">`current output: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">currentOutput2</span><span style="color:#e6db74">}</span><span style="color:#e6db74">, target output: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">targetOutput2</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>
+</span></span><span style="display:flex;"><span>);</span></span></code></pre></td></tr></table>
+</div>
+</div><p>This code does exactly the same thing as the previous code. But it is better in a few ways:</p>
+<ol>
+<li>We can now tell more easily what this expression represents. The variable name conveys: it&rsquo;s the hours from the time.</li>
+<li>We only compute the hours once, not twice, which will be a little bit faster.</li>
+<li>If we need to change how we identify the hours (e.g. to support single-digit hours), we only need to update one bit of code. Both lines 3 and 4 will automatically use the same value, because they&rsquo;re referring to the same variable.</li>
+</ol>
+<section class="c-note c-note--tip">
+  <h4 class="c-note__title e-heading__4">💡Code Quality</span>
+  </h4>
+  <div class="c-note__text "><p>Whenever you finish implementing a sub-goal, or a goal, read your code and look for ways to refactor it.</p>
+<p>This will make your code easier to continue working on.</p>
+</div>
+</section>
+
+
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="identifying-missing-tests">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="identifying-missing-tests">
+        Identifying missing tests
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="30 minutes countdown" datetime="P30M">30&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Define groups of input</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Define edge cases</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Identify groups of input for a function</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Identify edge cases for a function</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <p>We started off writing one test for our code - checking that it correctly handled the input <code>08:00</code>. We wrote an implementation that passed all our (1) tests!</p>
+<p>Then we realised there was a bug - it didn&rsquo;t handle times after midday correctly. So we wrote another test - for the input <code>23:00</code>. We saw our implementation failed that test. And we fixed it. And we had an implementation that passed all our (2) tests!</p>
+<blockquote><p>When will we be happy that our implementation works for all possible inputs? When do we have enough tests?</p>
+</blockquote><h3 id="groups-of-input">Groups of input</h3>
+<p>One way to approach this is to think about what <em>groups</em> of input our problem may have.</p>
+<p>We&rsquo;ve already identified two examples of groups of input to the problem of converting 24 hour clocks to 12 hour clocks: Times before midday and times after midday.</p>
+<p>One way to find extra cases to consider (and extra tests to write) is to try to think of different groups of input.</p>
+<p>For example, some times are exactly on the hour (end in <code>:00</code>) and other times have a non-zero number of minutes.</p>
+<section class="c-note c-note--exercise">
+  <h4 class="c-note__title e-heading__4">✍️exercise</span>
+  </h4>
+  <div class="c-note__text "><p>Set a timer for 5 minutes. Write down as many groups of input to this problem as you can. Write an example assertion for each one.</p>
+<p>If you find any bugs in the implementation, go fix them!</p>
+</div>
+</section>
+
+
+<h3 id="edge-cases">Edge cases</h3>
+<p>Another way to consider this question is to think about what <em>edge cases</em> there are in the problem.</p>
+<section class="c-note c-note--definition">
+  <h4 class="c-note__title e-heading__4">📖Definition: edge case</span>
+  </h4>
+  <div class="c-note__text "><p>An edge case is an unusual value which may need special treatment.</p>
+<p>Some examples are: the minimum value, the maximum value, and the boundary between two groups of input.</p>
+</div>
+</section>
+
+
+<dl>
+<dt>Some example edge cases for this problem are:</dt>
+<dt><code>00:00</code></dt>
+<dd>The minimum time, which is <code>12:00 am</code> in 12 hour clock.<br>
+This is also the only hour that is <em>bigger</em> in 12 hour clock than 24 hour clock.</dd>
+<dt><code>24:00</code></dt>
+<dd>The maximum time.</dd>
+<dt><code>12:00</code></dt>
+<dd>Where time changes from am to pm. The edge between morning times and afternoon times.</dd>
+</dl>
+<p>Often these edge cases are where bugs happen.</p>
+<section class="c-note c-note--exercise">
+  <h4 class="c-note__title e-heading__4">✍️exercise</span>
+  </h4>
+  <div class="c-note__text "><p>Set a timer for 5 minutes. Write down as many edge cases of input to this problem as you can. Write an example assertion for each one.</p>
+<p>If you find any bugs in the implementation, go fix them!</p>
+</div>
+</section>
+
+
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+      </div>
+      <nav slot="nav">
+        <a href="#" class="e-button c-solo-view__back">&larr; Back</a>
+        <a href="#" class="e-button c-solo-view__next">Next &rarr;</a>
+      </nav>
+    </solo-view>
+    
+    <script src="/scripts/solo-view.min.js" defer></script>
+    
+    <script src="/scripts/time-total.min.js" defer></script>
+  
+
+
+        
+
+  <footer class="c-page-footer">
+    <nav class="c-page-footer__nav">
+      
+      
+      <span class="c-page-footer__this">prep</span>
+      
+        →<a
+          class="c-page-footer__next c-page-footer__link e-link"
+          href="/itp/structuring-data/sprints/2/backlog/"
+          >backlog</a
+        >
+      
+    </nav>
+  </footer>
+
+
+      </main><footer class="l-layout__footer l-footer">
+  <a
+    class="l-footer__github e-button e-button--icon"
+    href="https://github.com/CodeYourFuture/curriculum/">
+    <svg
+  focusable="false"
+  class="e-button__icon"
+  role="presentation"
+  width="96"
+  viewbox="0 0 98 96"
+  xmlns="http://www.w3.org/2000/svg">
+  <path
+    fill-rule="evenodd"
+    clip-rule="evenodd"
+    d="M48.854 0C21.839 0 0 22 0 49.217c0 21.756 13.993 40.172 33.405 46.69 2.427.49 3.316-1.059 3.316-2.362 0-1.141-.08-5.052-.08-9.127-13.59 2.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015 4.934.326 7.523 5.052 7.523 5.052 4.367 7.496 11.404 5.378 14.235 4.074.404-3.178 1.699-5.378 3.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283 0-5.378 1.94-9.778 5.014-13.2-.485-1.222-2.184-6.275.486-13.038 0 0 4.125-1.304 13.426 5.052a46.97 46.97 0 0 1 12.214-1.63c4.125 0 8.33.571 12.213 1.63 9.302-6.356 13.427-5.052 13.427-5.052 2.67 6.763.97 11.816.485 13.038 3.155 3.422 5.015 7.822 5.015 13.2 0 18.905-11.404 23.06-22.324 24.283 1.78 1.548 3.316 4.481 3.316 9.126 0 6.6-.08 11.897-.08 13.526 0 1.304.89 2.853 3.316 2.364 19.412-6.52 33.405-24.935 33.405-46.691C97.707 22 75.788 0 48.854 0z"
+    fill="currentColor" />
+</svg>
+
+    <span class="is-invisible">Find us on GitHub</span>
+  </a>
+  <p class="l-footer__impressum e-heading__6">
+    This
+    <a href="https://github.com/CodeYourFuture/curriculum/">free and open source programme</a>
+    is a project of
+    <a href="https://codeyourfuture.io/">Code Your Future</a>
+    <br />
+    Creative Commons Attribution-ShareAlike 4.0
+  </p>
+  <dark-mode class="l-footer__mode"
+    ><button
+      slot="button"
+      id="mode-toggle"
+      type="button"
+      class="e-button e__button--toggle e-button--icon">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="e-icon e__button__icon e-icon--moon">
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
+      </svg>
+      <span class="is-invisible">Toggle between light and dark mode</span>
+    </button></dark-mode
+  >
+</footer>
+
+
+
+<script src="/scripts/app.min.js" defer></script>
+
+<script src="/scripts/youtube-player.min.js" defer></script>
+
+<script src="/scripts/tab-panels.min.js" type="module" defer></script>
+
+<script src="/scripts/dark-mode.min.js"></script>
+
+<script src="/scripts/alert-message.min.js" defer></script>
+
+
+
+
+
+
+
+</div>
+  </body>
+</html>

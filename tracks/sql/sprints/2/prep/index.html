@@ -1,0 +1,1680 @@
+<!DOCTYPE html>
+
+
+
+
+<html lang="en" class="p-prep"><head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  <title data-pagefind-meta="title">
+    
+      Tracks 
+    
+      SQL 
+    
+      Sprint 2 
+    
+    Prep
+  </title>
+  
+    <meta
+      name="description"
+      content=" CYF Courses: 🐘 More SQL! SQL 4eva!" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+  <style>
+    body,
+    html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      animation: fade-in 300ms;
+    }
+    @keyframes fade-in {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  </style>
+  
+  
+  <link
+    rel="stylesheet"
+    href="/bundled.min.b6a4520237559385268d63a9daa81d96.css"
+    media="print"
+    onload="this.media='all'" />
+
+  
+  
+    
+    
+    <link
+      rel="stylesheet"
+      href="/custom.min.8ded6a1a88bc7cc98bdef8dc33d15f3a.css"
+      media="print"
+      onload="this.media='all'" />
+  
+
+
+  <noscript>
+    <link rel="stylesheet" href="/bundled.min.b6a4520237559385268d63a9daa81d96.css" />
+  </noscript>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&amp;display=swap"
+    rel="stylesheet"
+    media="print"
+    onload="this.media='all'" />
+
+  <link rel="shortcut icon" href="https://curriculum.codeyourfuture.io/favicon.ico" />
+  <meta name="theme-color" content="#e3ddeef2" />
+  <link rel="manifest" href="https://curriculum.codeyourfuture.io/manifest.json" />
+</head>
+<body>
+    <a class="c-skip-link e-button" id="skip-link" href="#main">Skip to main</a>
+    <div class="l-layout">
+      <header class="l-layout__header l-header">
+  <div class="l-header__container">
+    <h1 class="l-header__heading e-heading__6" data-pagefind-ignore>
+      <a class="l-header__home" href="/"
+        ><span class="is-invisible"
+          >tracks prep CYF Courses</span
+        >
+        <span class="is-none--lt-container">
+          <svg
+          xmlns="http://www.w3.org/2000/svg"
+          title="Code Your Future."
+          viewBox="0 0 621.64 155.81"
+          width="140px"
+          focusable="false"
+          role="img">
+          <path
+            fill="var(--theme-color--brand)"
+            d="M103.37 56.51C96.91 63.64 87.03 69.9 74.6 69.9c-20.14 0-33.52-12.91-33.52-34.09C41.08 13.97 57.5.87 69.94.87c9.5 0 13.77 5.32 14.63 6.46l2.18-5.27h14.91v27h-17c-.28-6.18-3.32-12-10.06-12s-11.3 8.45-11.3 18.8c0 9.4 4.84 17.86 13.86 17.86 8 0 14.24-8.36 15.1-9.31Zm2.88-21.85C106.25 14.15 119.92 0 139.58 0c23.26 0 34.09 14 34.09 35.32s-12 34.57-33.43 34.57c-19.88 0-33.99-11.49-33.99-35.23Zm43.68.66c0-11.49-3.13-20.7-10.45-20.7-5.79-.09-9.78 8.26-9.78 20 0 12.44 4.47 20.32 10.54 20.32s9.65-7.88 9.65-19.62Zm27.49 20.23h5.89V14.34h-5.89V1.8h29c23 0 36.09 14.15 36.09 32.29 0 21.65-13.11 34.09-36.47 34.09h-28.62Zm29 0c10.03-.19 14.21-9.59 14.21-21.49 0-10.16-4.18-19.75-14.25-19.75h-3.61v41.24ZM303.04 1.8v21h-16.43v-8.46h-15.19v13.1h18v12.62h-18v15.49h15.19v-8.83h16.43v21.46h-57.26V55.55h6V14.34h-6V1.8Z" />
+          <path
+            fill="var(--theme-color--ink)"
+            d="M274.42 87.82v21h-16.8v-8.45h-14.37v16.52h18v12.63h-18v12.04h9.68v12.63h-35.29v-12.63h5.89v-41.21h-5.89V87.82Zm33.04 0v12.24h-5.12v20.51c0 15.28 3.41 18.51 9.49 18.51 5.79 0 9.59-2.28 9.59-18.61v-20.12h-5.17V87.82h28.11v12.24h-5.11v23.07c0 22.51-9.4 32.67-27.25 32.67-19.18-.57-29.43-10.64-29.43-32.19v-23.45h-5.32V87.82Zm103.5 24.69h-14v-12.16h-8v41.21h7.88v12.63h-35.26v-12.63h7.79v-41.21h-8.12v12.16h-14V87.82h63.71ZM444 87.82v12.24h-5.13v20.51c0 15.28 3.42 18.51 9.5 18.51 5.79 0 9.59-2.28 9.59-18.61v-20.12h-5.13V87.82h28.11v12.24h-5.13v23.07c0 22.51-9.4 32.67-27.25 32.67-19.18-.57-29.44-10.64-29.44-32.19v-23.45h-5.32V87.82Zm71.59 0c22 0 26.3 8.73 26.3 19.56 0 7.4-5.88 12.63-13.76 13.77 6.55.95 12.44 6.64 12.44 13.48 0 4.08.57 6.46 2.27 6.46 1.43 0 2.19-1.14 2.19-3v-3.13h6.36v5.22c0 7.88-3.32 15.19-13.86 15.19-12.44 0-18.42-6.55-18.42-17.66 0-8.64-1.05-10.73-9.5-10.73v14.68h5.79v12.53h-30.67v-12.53h5.32v-41.4h-5.32V87.82Zm-6 28.48h4.27c5.51 0 9.12-2.65 9.12-7.69 0-5.6-3.13-8.45-8.64-8.45h-4.75Zm102.38-28.48v21h-16.43v-8.45h-15.19v13.09h18v12.6h-18v15.5h15.19v-8.83h16.43v21.46h-57.26v-12.63h6v-41.21h-6V87.82Zm-227.72-56.1c.38-1.9 2.47-5.89 3.51-8.17l5.22-9.59h-5.22V1.8h25.54v12.16h-5.05l-17.62 30.86v11h5.32v12.36h-30.39V55.83h5.41v-11.2l-18.42-30.67h-4.65V1.8h32.47v12.16h-4.93l5.5 10.1c.57 1.81 2.57 6.08 2.95 7.7Zm29.54 2.94C413.79 14.15 427.47 0 447.12 0c23.27 0 34.09 14 34.09 35.32s-12 34.57-33.42 34.57c-19.85 0-34-11.49-34-35.23Zm43.68.66c0-11.49-3.13-20.7-10.44-20.7-5.79-.09-9.78 8.26-9.78 20 0 12.44 4.46 20.32 10.54 20.32s9.68-7.88 9.68-19.62ZM514.25 1.8v12.26h-5.13v20.5c0 15.29 3.42 18.52 9.5 18.52 5.79 0 9.59-2.28 9.59-18.61V14.34h-5.13V1.8h28.11v12.26h-5.13v23.07c0 22.5-9.4 32.66-27.25 32.66-19.18-.57-29.44-10.63-29.44-32.19V14.15h-5.32V1.8Zm71.59 0c22 0 26.31 8.74 26.31 19.57 0 7.4-5.89 12.62-13.77 13.76 6.55 1 12.44 6.65 12.44 13.49 0 4.08.57 6.46 2.27 6.46 1.43 0 2.19-1.14 2.19-3V48.9h6.36v5.23c0 7.88-3.32 15.19-13.86 15.19-12.44 0-18.42-6.55-18.42-17.66 0-8.64-1.05-10.73-9.5-10.73v14.71h5.79v12.54h-30.67V55.64h5.32v-41.4h-5.32V1.8Zm-6 28.49h4.27c5.51 0 9.12-2.66 9.12-7.69 0-5.6-3.13-8.45-8.64-8.45h-4.75ZM28.39 14.7l5.8 10.64-23.46 10.72 23.46 10.55-3.61 9.87L0 42.24v-13.3Zm318.7 14.24v13.3l-30.58 14.24-3.61-9.87 23.46-10.55-23.46-10.72 5.8-10.64Z" />
+        </svg>
+        </span>
+        <span class="is-none--gt-container">
+          <svg
+          xmlns="http://www.w3.org/2000/svg"
+          version="1.0"
+          viewBox="0 0 512 512"
+          width="48px">
+          <path
+            fill="currentcolor"
+            stroke="currentcolor"
+            d="M225.5 1c-1.1.5-3.5.9-5.3.9-4.1.1-22.9 4.5-30.7 7.2-63.1 22-114.7 72.3-142.7 139.4-6.4 15.2-11.8 33.8-16.7 57-4.1 19.7-5.4 64.5-2.6 90.8C33 346.2 49.8 390.1 76.8 425c6.2 7.9 23.9 26.4 30.7 32 8.1 6.7 26.1 18.7 35.1 23.6 28.1 15.1 58 24.3 91.9 28.3 5.5.7 13.6 1.7 18 2.2 8.8 1.2 33.9.7 48-.9 11-1.3 31.7-4.8 36.5-6.2 1.9-.5 8-2.3 13.5-3.9 21.3-6.1 47.2-17.8 67.5-30.5 8.8-5.4 23.7-15.8 28.5-19.7 10.2-8.4 24.5-21.3 31.4-28.2l8.4-8.5-2.2-2.9c-1.3-1.5-4.6-5.3-7.4-8.3-6.2-6.7-14.5-15.7-21.2-23.1-2.7-3-7.5-8.2-10.5-11.4-3-3.3-9.8-10.8-15.1-16.5-21.5-23.6-24.2-26.5-24.9-26.8-.3-.1-2 1.2-3.6 3-1.6 1.9-6.3 7.1-10.4 11.7-8.6 9.7-25.6 24.6-35.9 31.4-21.4 14.4-42.5 21.7-62.6 21.7-15.3-.1-29.3-3.3-42.5-10-22.8-11.5-41.9-35.5-51.5-64.7-4.2-12.8-4.3-13.4-5.9-22.8-3.8-22.9-4.6-39.2-2.6-55.6 2.7-22.7 3.3-26.5 5-33.2 7.9-30.9 16.7-48.6 32.4-65.6 16.8-17.9 41.1-24.9 65.1-18.6 30 7.8 50.7 36.3 55.5 76.3.5 4.6 1.2 8.7 1.5 9.3.4.5 25.1.9 62.6.9H474V9H364.2L357 26.7c-4 9.8-7.9 18.5-8.7 19.3-1.3 1.3-2.1.8-6.6-4.3-6-6.9-18.3-16.7-28.2-22.5-7.4-4.3-22.6-10.9-28.5-12.4-9.2-2.2-18.1-4.1-24-5-9-1.3-33.1-1.9-35.5-.8z" />
+        </svg>
+        </span>
+      </a>
+    </h1>
+    <link
+  href="/pagefind/pagefind-ui.css"
+  rel="stylesheet"
+  media="print"
+  onload="this.media='all'" />
+<style>
+  :root {
+    --pagefind-ui-primary: var(--theme-color--ink);
+    --pagefind-ui-text: var(--theme-color--ink);
+    --pagefind-ui-background: var(--theme-color--paper);
+    --pagefind-ui-border: var(--theme-color--outline);
+    --pagefind-ui-tag: var(--theme-color--block);
+    --pagefind-ui-border-radius: 2em;
+    --pagefind-ui-image-border-radius: var(--theme-border-radius);
+    --pagefind-ui-font: var(--theme-font--copy);
+  }
+  .pagefind-ui--reset {
+    position: absolute;
+  }
+  #search .pagefind-ui__search-input {
+    box-shadow: var(--theme-box-shadow--inset);
+    margin-bottom: var(--theme-spacing--1);
+  }
+  #search .pagefind-ui__search-clear {
+    background-color: transparent;
+  }
+  #search .pagefind-ui__drawer {
+    background-color: var(--theme-color--paper);
+    box-shadow: var(--theme-box-shadow--slim);
+    transform: translateY(-1.5px);
+    padding: 0 var(--theme-spacing--2);
+    max-height: calc(100vh - 4rem);
+    overflow-y: auto;
+  }
+  #search .pagefind-ui__result {
+    padding: var(--theme-spacing--1) 0 var(--theme-spacing--2) 0;
+  }
+  #search .pagefind-ui__result:focus-within,
+  #search .pagefind-ui__button:focus {
+    background-color: var(--theme-color--block);
+  }
+  #search .pagefind-ui__button {
+    border: none;
+  }
+</style>
+<script src="/pagefind/pagefind-ui.js" type="text/javascript" defer></script>
+<div id="search" class="l-header__search"></div>
+<script>
+  window.addEventListener("DOMContentLoaded", (event) => {
+    new PagefindUI({
+      element: "#search",
+      showSubResults: true,
+      pageSize: 3,
+      showImages: false,
+      showTags: true,
+    });
+  });
+</script>
+
+    <button
+      class="l-header__action e-button e-button--icon js-menu-toggle e-heading__3">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+        <path
+          stroke="var(--theme-color--ink)"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M13 5a1 1 0 1 0-2 0 1 1 0 0 0 2 0Zm0 7a1 1 0 1 0-2 0 1 1 0 0 0 2 0Zm0 7a1 1 0 1 0-2 0 1 1 0 0 0 2 0Z" />
+      </svg>
+      <span class="is-invisible">Open Menu.</span>
+    </button>
+  </div>
+</header>
+
+      <nav
+  class="l-layout__menu l-menu"
+  aria-label="Main Site Links."
+  id="site-menu"
+  hidden
+  tabindex="0">
+  <div class="l-menu__container">
+    <h2 class="l-menu__heading e-heading__2">
+      <a href="/" class="l-menu__home is-invisible">Menu</a>
+    </h2>
+    <button
+      class="l-menu__action e-button e-button--icon js-menu-toggle e-heading__2"
+      id="close-menu">
+      ❎
+      <span class="is-invisible">Close Menu.</span>
+    </button>
+    <ul class="l-menu__primary">
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/guides/">
+            Guides
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/sdc/tools/">
+            Tools
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/sdc/logic/">
+            Logic
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/sdc/decomposition/">
+            Decomposition
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/sdc/legacy/">
+            Legacy code
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/sdc/complexity/">
+            Complexity
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/tracks/servers/">
+            Servers
+          </a>
+        </li>
+    </ul>
+    <ul class="l-menu__secondary">
+        <li class="l-menu__item">
+          <a class="e-heading__3 l-menu__link" href="https://codeyourfuture.io">
+            CYF 👈🏾
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__3 l-menu__link" href="https://codeyourfuture.io/volunteers/">
+            Join Us 👋🏿
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__3 l-menu__link" href="https://codeyourfuture.io/donate/">
+            Support 🫶🏼
+          </a>
+        </li>
+    </ul>
+  </div>
+</nav>
+
+      <main
+        id="main"
+        class="l-layout__main l-main"
+        tabindex="0"
+        data-pagefind-body>
+        
+  
+    <solo-view tabindex="0">
+      
+
+
+      <div slot="header">
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+<header
+  class="c-page-header 
+    c-page-header--solo
+   c-page-header--toc">
+  
+  <div class="c-page-header__container">
+    <div class="c-page-header__breadcrumbs">
+      
+  <nav class="c-breadcrumbs">
+    <ol class="c-breadcrumbs__list">
+      
+        
+        
+          <li class="c-breadcrumbs__item">
+            <a
+              class="c-breadcrumbs__link"
+              href="/tracks/"data-pagefind-filter="module"><span class="c-breadcrumbs__text">Tracks</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                width="24px"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="c-breadcrumbs__icon">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+              </svg>
+            </a>
+          </li>
+        
+        
+          <li class="c-breadcrumbs__item">
+            <a
+              class="c-breadcrumbs__link"
+              href="/tracks/sql/"><span class="c-breadcrumbs__text">SQL</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                width="24px"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="c-breadcrumbs__icon">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+              </svg>
+            </a>
+          </li>
+      
+        <li class="c-breadcrumbs__item">
+          <a
+            class="c-breadcrumbs__link"
+            href="/tracks/sql/sprints/2/"data-pagefind-filter="sprint">Sprint 2</a
+          >
+        </li>
+      
+    </ol>
+  </nav>
+  
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Our Courses",
+      "item":"https://curriculum.codeyourfuture.io/"},
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Tracks",
+      "item":"https://curriculum.codeyourfuture.io/tracks/"},
+    {
+      "@type": "ListItem",
+      "position":  3 ,
+      "name": "SQL",
+      "item":"https://curriculum.codeyourfuture.io/tracks/sql/"},{
+      "@type": "ListItem",
+      "position":  5 ,
+      "name": "Sprint 2",
+      "item":"https://curriculum.codeyourfuture.io/tracks/sql/sprints/2/"},
+    {
+      "@type": "ListItem",
+      "position":  6 ,
+      "name": "prep",
+      "item":"https://curriculum.codeyourfuture.io/tracks/sql/sprints/2/"}
+  ]
+}
+</script>
+
+
+    </div>
+    <h1 class="c-page-header__title e-heading__1"data-pagefind-filter="view"
+        
+      data-pagefind-weight="10">
+      <span class="c-emoji">
+        
+        
+           
+            <time-total class="c-page-header__time"></time-total>
+      
+         
+        </span>
+        <span class="c-page-header__title-text">prep</span>
+               
+    </h1>
+    
+      
+        <h2 class="c-page-header__description e-heading__3">
+          🐘 More SQL! SQL 4eva!
+        </h2>
+      
+    
+    
+    
+    
+      <div class="c-page-header__toc " id="toc">
+        <section class="c-toc" aria-label="Table of contents.">
+          <a id="top" class="c-toc__top e-button e-button--icon" href="#toc"
+            >🔖 <span class="is-invisible">back to top</span></a
+          >
+          
+            <nav id="TableOfContents"></nav>
+          
+          
+            <ol>
+              
+                <li>
+                  <a href="#using-aggregate-functions" data-pagefind-weight="5"
+                    >Using Aggregate Functions</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#inserting-updating-and-deleting-rows" data-pagefind-weight="5"
+                    >Inserting, Updating and Deleting Rows</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#joining-tables" data-pagefind-weight="5"
+                    >Joining Tables</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#creating-tables" data-pagefind-weight="5"
+                    >Creating Tables</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#defining-primary-and-foreign-keys" data-pagefind-weight="5"
+                    >Defining Primary and Foreign Keys</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#integration-with-node" data-pagefind-weight="5"
+                    >Integration with Node</a
+                  >
+                  
+                </li>
+              
+            </ol>
+          
+          
+        </section>
+      </div>
+    
+
+  </div>
+</header>
+</div>
+      <div slot="blocks">
+        
+        
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="using-aggregate-functions">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="using-aggregate-functions">
+        Using Aggregate Functions
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="45 minutes countdown" datetime="P45M">45&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Aggregate data over multiple rows and use aggregate values to restrict the results</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <h3 id="basic-aggregate-functions">Basic Aggregate Functions</h3>
+<p>How to calculate totals, averages, etc. over multiple rows.</p>
+<p>You frequently need to get a single piece of information that is derived from multiple rows in a table. For example, when you need to know the total of all invoices for August 2018:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span> <span style="color:#66d9ef">sum</span>(total)
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">FROM</span> invoices
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">WHERE</span> invoice_date <span style="color:#66d9ef">BETWEEN</span>
+</span></span><span style="display:flex;"><span>         <span style="color:#e6db74">&#39;2018-08-01&#39;</span> <span style="color:#66d9ef">AND</span> <span style="color:#e6db74">&#39;2018-08-31&#39;</span>;</span></span></code></pre></div><p>The aggregate functions are:</p>
+<ul>
+<li>sum : Calculate the total of the values in a column</li>
+<li>avg : Calculate the average (mean) of the values in a column</li>
+<li>min : Determine the minimum value of a column</li>
+<li>max : Determine the maximum value of a column</li>
+<li>count : Count the number of values (non-null) in a column</li>
+</ul>
+<p>All the above are in the SQL standard, most implementations provide others. SUM and AVG can only apply to numeric data, the others can apply to any datatype.</p>
+<p>Further examples:</p>
+<p>&ldquo;What is the average length of stay at our hotel?&rdquo; :</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span> <span style="color:#66d9ef">avg</span>(checkout_date <span style="color:#f92672">-</span> checkin_date)
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">FROM</span> reservations;</span></span></code></pre></div><p>&ldquo;What are the lowest and highest room rates we charge?&rdquo; :</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span> <span style="color:#66d9ef">min</span>(rate) <span style="color:#66d9ef">AS</span> lowest,
+</span></span><span style="display:flex;"><span>       <span style="color:#66d9ef">max</span>(rate) <span style="color:#66d9ef">AS</span> highest
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">FROM</span> rooms;</span></span></code></pre></div><p>You can use the count(x) function to count non-null values:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span> <span style="color:#66d9ef">count</span>(id) <span style="color:#66d9ef">AS</span> id_ct, <span style="color:#66d9ef">count</span>(postcode) <span style="color:#66d9ef">AS</span> post_ct
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">FROM</span> customers;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>   id_ct <span style="color:#f92672">|</span> post_ct
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">-------+---------
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>     <span style="color:#ae81ff">133</span> <span style="color:#f92672">|</span>     <span style="color:#ae81ff">126</span>
+</span></span><span style="display:flex;"><span>  (<span style="color:#ae81ff">1</span> <span style="color:#66d9ef">row</span>)</span></span></code></pre></div><p>Notice that these two results show different values - there are NULL values for postcode but id is mandatory for all rows.</p>
+<p>If you just want to count the number of rows, use <code>count(*)</code>. This is often used to find how many rows match a <code>WHERE</code> clause:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span> <span style="color:#66d9ef">count</span>(<span style="color:#f92672">*</span>) <span style="color:#66d9ef">FROM</span> customers <span style="color:#66d9ef">WHERE</span> country <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Belgium&#39;</span>;</span></span></code></pre></div><section class="c-note c-note--exercise">
+  <h4 class="c-note__title e-heading__4">✍️Hotel Exercise 1</span>
+  </h4>
+  <div class="c-note__text "><ol>
+<li>Get the numbers of rows in each of the tables: rooms, room_types, customers and reservations.</li>
+<li>How many reservations do we have for next month?</li>
+<li>How many invoices are still unpaid from over a month ago and what is the total owed?</li>
+<li>What is the maximum gap in days between a customer booking a room and the checkin date for that booking?</li>
+</ol>
+</div>
+</section>
+
+
+<h3 id="grouping-rows-for-aggregation">Grouping Rows for Aggregation</h3>
+<p>You can calculate aggregates over subsets of rows using the <code>GROUP BY</code> clause:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span> <span style="color:#66d9ef">count</span>(<span style="color:#f92672">*</span>) <span style="color:#66d9ef">FROM</span> rooms
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">GROUP</span> <span style="color:#66d9ef">BY</span> room_type;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">count</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">-------
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>      <span style="color:#ae81ff">14</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#ae81ff">14</span>
+</span></span><span style="display:flex;"><span>       <span style="color:#ae81ff">8</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#ae81ff">10</span>
+</span></span><span style="display:flex;"><span>       <span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span>  (<span style="color:#ae81ff">5</span> <span style="color:#66d9ef">rows</span>)</span></span></code></pre></div><p>What do you notice?</p>
+<p>The query calculated the counts correctly but we have no idea which room type each value represents. To solve this we are allowed to include the <code>GROUP BY</code> expressions in the list of selected values, as below:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span> room_type, <span style="color:#66d9ef">count</span>(<span style="color:#f92672">*</span>) <span style="color:#66d9ef">FROM</span> rooms
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">GROUP</span> <span style="color:#66d9ef">BY</span> room_type;
+</span></span><span style="display:flex;"><span> room_type    <span style="color:#f92672">|</span> <span style="color:#66d9ef">count</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">--------------+-------
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span> PREMIUM      <span style="color:#f92672">|</span>    <span style="color:#ae81ff">14</span>
+</span></span><span style="display:flex;"><span> PREMIER      <span style="color:#f92672">|</span>    <span style="color:#ae81ff">14</span>
+</span></span><span style="display:flex;"><span> PREMIER PLUS <span style="color:#f92672">|</span>     <span style="color:#ae81ff">8</span>
+</span></span><span style="display:flex;"><span> PREMIUM PLUS <span style="color:#f92672">|</span>    <span style="color:#ae81ff">10</span>
+</span></span><span style="display:flex;"><span> FAMILY       <span style="color:#f92672">|</span>     <span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span>(<span style="color:#ae81ff">5</span> <span style="color:#66d9ef">rows</span>)</span></span></code></pre></div><p>Notice the <code>room_type</code> used for <code>GROUP BY</code> is also included in the <code>SELECT</code> list of values.</p>
+<p>We can group by multiple expressions, for example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span> trunc(room_no<span style="color:#f92672">/</span><span style="color:#ae81ff">100</span>) <span style="color:#66d9ef">AS</span> floor,
+</span></span><span style="display:flex;"><span>       to_char(checkin_date, <span style="color:#e6db74">&#39;YYYY-MM&#39;</span>) <span style="color:#66d9ef">AS</span> <span style="color:#66d9ef">month</span>,
+</span></span><span style="display:flex;"><span>       <span style="color:#66d9ef">count</span>(<span style="color:#f92672">*</span>), <span style="color:#66d9ef">sum</span>(no_guests), <span style="color:#66d9ef">avg</span>(no_guests)
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">FROM</span> reservations
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">GROUP</span> <span style="color:#66d9ef">BY</span> floor, <span style="color:#66d9ef">month</span>;</span></span></code></pre></div><p>Notice that the <code>GROUP BY</code> is using the column aliases <code>floor</code> and <code>month</code> that have been defined in the select list. This works in many, but not all, SQL implementations. (In those that don&rsquo;t allow aliases you must use the full expression, for example: <code>trunc(room_no/100)</code> instead of <code>floor</code>)</p>
+<p>You can use a <code>WHERE</code> clause to restrict the rows that are included in the aggregate function. For example, if we need the above query for only the 2nd and 3rd floors:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span> trunc(room_no<span style="color:#f92672">/</span><span style="color:#ae81ff">100</span>) <span style="color:#66d9ef">AS</span> floor,
+</span></span><span style="display:flex;"><span>       to_char(checkin_date, <span style="color:#e6db74">&#39;YYYY-MM&#39;</span>) <span style="color:#66d9ef">AS</span> <span style="color:#66d9ef">month</span>,
+</span></span><span style="display:flex;"><span>       <span style="color:#66d9ef">count</span>(<span style="color:#f92672">*</span>), <span style="color:#66d9ef">sum</span>(no_guests), <span style="color:#66d9ef">avg</span>(no_guests)
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">FROM</span> reservations
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">WHERE</span> room_no <span style="color:#66d9ef">BETWEEN</span> <span style="color:#ae81ff">200</span> <span style="color:#66d9ef">AND</span> <span style="color:#ae81ff">399</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">GROUP</span> <span style="color:#66d9ef">BY</span> floor, <span style="color:#66d9ef">month</span>;</span></span></code></pre></div><p>Note that it is NOT usually possible to use column aliases in the where condition.</p>
+<p>A <code>WHERE</code> clause is applied before any aggregation, if you need to restrict results using an aggregate function you can&rsquo;t do that using the <code>WHERE</code> clause.</p>
+<p>In the above, to return only results with the number of reservations greater than, say, 4 we use the <code>HAVING</code> clause:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span> trunc(room_no<span style="color:#f92672">/</span><span style="color:#ae81ff">100</span>) <span style="color:#66d9ef">AS</span> floor,
+</span></span><span style="display:flex;"><span>       to_char(checkin_date, <span style="color:#e6db74">&#39;YYYY-MM&#39;</span>) <span style="color:#66d9ef">AS</span> <span style="color:#66d9ef">month</span>,
+</span></span><span style="display:flex;"><span>       <span style="color:#66d9ef">count</span>(<span style="color:#f92672">*</span>), <span style="color:#66d9ef">sum</span>(no_guests), <span style="color:#66d9ef">avg</span>(no_guests)
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">FROM</span> reservations
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">GROUP</span> <span style="color:#66d9ef">BY</span> floor, <span style="color:#66d9ef">month</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">HAVING</span> <span style="color:#66d9ef">count</span>(<span style="color:#f92672">*</span>) <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">4</span>;    <span style="color:#75715e">--&lt;&lt; Note the HAVING keyword</span></span></span></code></pre></div><p>The order of clauses in the <code>SELECT</code> statement is:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span> ...
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">FROM</span> ...
+</span></span><span style="display:flex;"><span>   [<span style="color:#66d9ef">WHERE</span> ...]
+</span></span><span style="display:flex;"><span>   [<span style="color:#66d9ef">GROUP</span> <span style="color:#66d9ef">BY</span> ...
+</span></span><span style="display:flex;"><span>   [<span style="color:#66d9ef">HAVING</span> ...] ]
+</span></span><span style="display:flex;"><span>   [<span style="color:#66d9ef">ORDER</span> <span style="color:#66d9ef">BY</span> ...]</span></span></code></pre></div><p>The square brackets indicate optional clauses. Note that <code>HAVING</code> is only relevant when you have a <code>GROUP BY</code> and must follow it in the <code>SELECT</code> statement.</p>
+<p>It can be confusing at first knowing whether to use a <code>WHERE</code> clause or a <code>HAVING</code> clause with <code>GROUP BY</code>.</p>
+<ul>
+<li>
+<p>Use the <code>WHERE</code> clause when values you want to test are available without having to use any aggregate functions (e.g. plain column values).</p>
+</li>
+<li>
+<p>Use <code>HAVING</code> when the values you want to test are the results of aggregate functions (e.g. <code>count(*)</code>, <code>sum(amount)</code>, <code>min(x)</code>, etc&hellip;).</p>
+</li>
+</ul>
+<hr>
+<section class="c-note c-note--exercise">
+  <h4 class="c-note__title e-heading__4">✍️Hotel Exercise 2</span>
+  </h4>
+  <div class="c-note__text "><ol>
+<li>What is the grand total of all invoices for each month?</li>
+<li>How many guests could be accommodated at one time on each floor?</li>
+<li>Which rooms have been occupied for less than 10 nights and for how many nights have they been occupied?</li>
+</ol>
+</div>
+</section>
+
+
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="inserting-updating-and-deleting-rows">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="inserting-updating-and-deleting-rows">
+        Inserting, Updating and Deleting Rows
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="45 minutes countdown" datetime="P45M">45&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Insert, Update and Delete rows in a pre-existing table using INSERT, UPDATE and DELETE</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <h2 id="inserting-data">Inserting data</h2>
+<p>To add new data to a table use the INSERT command that has the following format:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">INSERT</span> <span style="color:#66d9ef">INTO</span> <span style="color:#66d9ef">table_name</span> (<span style="color:#66d9ef">column_name</span>, ...)
+</span></span><span style="display:flex;"><span>       <span style="color:#66d9ef">VALUES</span> (value, ...)</span></span></code></pre></div><p>For example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">INSERT</span> <span style="color:#66d9ef">INTO</span> customers (name, email, address, city, postcode, country)
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">VALUES</span> (<span style="color:#e6db74">&#39;John Smith&#39;</span>,<span style="color:#e6db74">&#39;j.smith@johnsmith.org&#39;</span>,
+</span></span><span style="display:flex;"><span>          <span style="color:#e6db74">&#39;11 New Road&#39;</span>,<span style="color:#e6db74">&#39;Liverpool&#39;</span>,<span style="color:#e6db74">&#39;L10 2AB&#39;</span>,<span style="color:#e6db74">&#39;UK&#39;</span>);</span></span></code></pre></div><p>Note:</p>
+<ol>
+<li>You do not need to supply the value for the automatically generated <code>id</code> column, it is populated from a sequence generator object.</li>
+<li>The order of values in the <code>VALUES (...)</code> clause must correspond to the columns in the column name list. The first value is stored in the first named column, the second value in the second named column and so forth.</li>
+</ol>
+<section class="c-note c-note--exercise">
+  <h4 class="c-note__title e-heading__4">✍️Hotel 3</span>
+  </h4>
+  <div class="c-note__text "><ol>
+<li>Insert yourself in the <code>customers</code> table. Query the table to check your new data.</li>
+<li>Insert a new room type of PENTHOUSE with a default rate of 185.00.</li>
+</ol>
+</div>
+</section>
+
+
+<h3 id="updating-existing-data">Updating Existing Data</h3>
+<p>When you need to change values in a table, use the <code>UPDATE</code> command. The general construction to update a row is:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">UPDATE</span> <span style="color:#66d9ef">table</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">SET</span> column1 <span style="color:#f92672">=</span> value1,
+</span></span><span style="display:flex;"><span>      column2 <span style="color:#f92672">=</span> value2
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">WHERE</span> condition;</span></span></code></pre></div><p>Note that <code>UPDATE</code> usually requires a <code>WHERE</code> clause to specify the row or rows to be updated. As with <code>SELECT</code>, if you don&rsquo;t specify a condition to restrict the rows, the command applies to all the rows in the table.</p>
+<p>For example, to update the name and country of the customer with ID 3:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">UPDATE</span> customers
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">SET</span> name<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;Bob Marley&#39;</span>,
+</span></span><span style="display:flex;"><span>      country<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;Jamaica&#39;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">WHERE</span> id<span style="color:#f92672">=</span><span style="color:#ae81ff">3</span>;</span></span></code></pre></div><section class="c-note c-note--exercise">
+  <h4 class="c-note__title e-heading__4">✍️Hotel 4</span>
+  </h4>
+  <div class="c-note__text "><ol>
+<li>Update the postcode of the customer named <code>Alice Evans</code> to <code>M21 8UP</code></li>
+<li>Update room 107 to allow up to 3 guests</li>
+<li>For the customer named <code>Nadia Sethuraman</code>, update her address to <code>2 Blue Street</code>, her city to <code>Glasgow</code> and her postcode to <code>G12 1AB</code> in one query</li>
+<li>Update all the future bookings of customer with ID 96 to 3 nights (starting on the same check-in date) in one query</li>
+</ol>
+</div>
+</section>
+
+
+<h3 id="deleting-a-row">Deleting a row</h3>
+<p>The syntax to delete a row is:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">DELETE</span> <span style="color:#66d9ef">FROM</span> <span style="color:#66d9ef">table</span> <span style="color:#66d9ef">WHERE</span> condition;</span></span></code></pre></div><p>For example, to delete the booking with ID 4:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">DELETE</span> <span style="color:#66d9ef">FROM</span> reservations <span style="color:#66d9ef">WHERE</span> id<span style="color:#f92672">=</span><span style="color:#ae81ff">4</span>;</span></span></code></pre></div><section class="c-note c-note--tip">
+  <h4 class="c-note__title e-heading__4">💡NOTE</span>
+  </h4>
+  <div class="c-note__text ">If you don&rsquo;t supply a <code>WHERE</code> clause with <code>DELETE</code> or <code>UPDATE</code> the command will be applied to <strong>all</strong> the rows in the table which is rarely what you want.</div>
+</section>
+
+
+<section class="c-note c-note--exercise">
+  <h4 class="c-note__title e-heading__4">✍️Hotel 5</span>
+  </h4>
+  <div class="c-note__text "><ol>
+<li>Delete the bookings of customer ID <code>108</code> that do not have a room number assigned</li>
+<li>Delete all the bookings of customer Juri Yoshido (customer id 96)</li>
+<li>Delete the customer details for Juri Yoshido</li>
+</ol>
+</div>
+</section>
+
+
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="joining-tables">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="joining-tables">
+        Joining Tables
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="45 minutes countdown" datetime="P45M">45&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Combine tables together using <code>INNER JOIN</code></label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <h3 id="introduction">Introduction</h3>
+<p>So far we&rsquo;ve only looked at one table in any query. Many problems require data from several tables - how do we do that?</p>
+<p>For example, if I want to phone or email customers who have not yet paid their invoices, which tables do I need to look at?</p>
+<p>Use joins to combine data from more than one table. Joins use column values to match rows in one table to rows in another.</p>
+<p>The join columns are usually referred to as foreign keys and primary keys.</p>
+<p>
+
+  <div
+      title="broken image link fromer-diagram.png"
+      style="font-size: 48px; text-align: center;">
+      🖼️
+    </div></p>
+<p>
+
+  <figure>
+      <img
+        loading="lazy"
+        src="/module/databases/joining-tables/join-diagram.png"alt="Join Diagram" data-pagefind-index-attrs="Join Diagram"/></figure></p>
+<h3 id="foreign-and-primary-keys">Foreign and Primary Keys</h3>
+<p>Each table should have a <strong>Primary Key</strong>. This is one or more columns whose values, which cannot be NULL, are combined to provide a unique identifying value for each row. Natural primary keys are often difficult to find so many tables use an arbitrary integer whose value is automatically generated when the row is created. When joining tables we need to match a single row to one or more other rows, usually in another table - for example, matching a customer to her/his reservations. The single row (customer) is usually identified by its primary key value.</p>
+<p><strong>Foreign Keys</strong> are the columns in a table that reference corresponding columns in another table (although self-referencing foreign keys can reference the same table). For example, the <code>res_id</code> column in the invoices table references the <code>id</code> column in the reservations table (see diagram above).</p>
+<p>The referenced column is almost always the primary key of the referenced table because a foreign key must always reference exactly one row in the referenced table (primary keys guarantee that).</p>
+<h3 id="using-join-in-sql">Using JOIN in SQL</h3>
+<p>To join reservations and invoices in SQL:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span> r.cust_id, r.room_no, i.invoice_date, i.total
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">FROM</span> reservations r <span style="color:#66d9ef">JOIN</span>
+</span></span><span style="display:flex;"><span>       invoices i <span style="color:#66d9ef">ON</span> (r.id <span style="color:#f92672">=</span> i.res_id);</span></span></code></pre></div><p><strong><em>Notice:</em></strong></p>
+<ul>
+<li>The keyword &lsquo;JOIN with ON&rsquo; defines how the two tables are matched.</li>
+<li><code>r</code> and <code>i</code> are aliases - short, temporary names that make queries easier to read.</li>
+<li>You can use any alias you want, as long as you define it in the <code>FROM / JOIN</code> clause and use it consistently in the query.</li>
+</ul>
+<p>The new syntax follows the following pattern:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span> ...
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">FROM</span> ... [<span style="color:#66d9ef">JOIN</span> ... <span style="color:#66d9ef">ON</span> (...)]...
+</span></span><span style="display:flex;"><span>  [<span style="color:#66d9ef">WHERE</span> ...]
+</span></span><span style="display:flex;"><span>  [<span style="color:#66d9ef">GROUP</span> <span style="color:#66d9ef">BY</span> ... [<span style="color:#66d9ef">HAVING</span> ...] ]
+</span></span><span style="display:flex;"><span>  [<span style="color:#66d9ef">ORDER</span> <span style="color:#66d9ef">BY</span> ...]</span></span></code></pre></div><p>Use the JOIN to define the combined row source then you can use WHERE, DISTINCT, GROUP BY, ORDER BY, etc&hellip; as with single-table queries. For example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span>    <span style="color:#66d9ef">SELECT</span> r.cust_id, r.room_no, i.invoice_date, i.total
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">FROM</span> reservations r <span style="color:#66d9ef">JOIN</span>
+</span></span><span style="display:flex;"><span>           invoices i <span style="color:#66d9ef">ON</span> (i.res_id <span style="color:#f92672">=</span> r.id)
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">WHERE</span> r.checkin_date <span style="color:#f92672">&gt;</span> <span style="color:#e6db74">&#39;2018-07-01&#39;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">AND</span> i.total <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">500</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">ORDER</span> <span style="color:#66d9ef">BY</span> i.invoice_date <span style="color:#66d9ef">DESC</span>, r.cust_id;</span></span></code></pre></div><p>There is no theoretical limit to the number of tables that can be joined in a query, although practical considerations like
+complexity and performance must be considered. It is quite common, though, to find up to seven or eight tables joined in a query.</p>
+<p>Multi-table joins just extend the syntax to add more tables, as below:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span> <span style="color:#66d9ef">c</span>.name, <span style="color:#66d9ef">c</span>.phone, <span style="color:#66d9ef">c</span>.email, i.invoice_date, i.total
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">FROM</span> customers <span style="color:#66d9ef">c</span> <span style="color:#66d9ef">JOIN</span>
+</span></span><span style="display:flex;"><span>       reservations r <span style="color:#66d9ef">ON</span> (r.cust_id <span style="color:#f92672">=</span> <span style="color:#66d9ef">c</span>.id) <span style="color:#66d9ef">JOIN</span>
+</span></span><span style="display:flex;"><span>       invoices i <span style="color:#66d9ef">ON</span> (r.id <span style="color:#f92672">=</span> i.res_id)
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">WHERE</span> i.invoice_date <span style="color:#f92672">&lt;</span> <span style="color:#66d9ef">current_date</span> <span style="color:#f92672">-</span> interval <span style="color:#e6db74">&#39;1 month&#39;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">AND</span> i.paid <span style="color:#f92672">=</span> <span style="color:#66d9ef">FALSE</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">ORDER</span> <span style="color:#66d9ef">BY</span> i.invoice_date <span style="color:#66d9ef">DESC</span>, <span style="color:#66d9ef">c</span>.id;</span></span></code></pre></div><p><strong><em>Note</em></strong>
+You have just learned about what is called the INNER JOIN, which is the most common kind of join. Indeed, you can use the keyword INNER in the JOIN syntax, as follows:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span> <span style="color:#66d9ef">c</span>.name, <span style="color:#66d9ef">c</span>.phone, <span style="color:#66d9ef">c</span>.email, i.invoice_date, i.total
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">FROM</span> customers <span style="color:#66d9ef">c</span> <span style="color:#66d9ef">INNER</span> <span style="color:#66d9ef">JOIN</span>
+</span></span><span style="display:flex;"><span>       reservations r <span style="color:#66d9ef">ON</span> (r.cust_id <span style="color:#f92672">=</span> <span style="color:#66d9ef">c</span>.id) <span style="color:#66d9ef">INNER</span> <span style="color:#66d9ef">JOIN</span>
+</span></span><span style="display:flex;"><span>       invoices i <span style="color:#66d9ef">ON</span> (r.id <span style="color:#f92672">=</span> i.res_id)
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">WHERE</span> i.invoice_date <span style="color:#f92672">&lt;</span> <span style="color:#66d9ef">current_date</span> <span style="color:#f92672">-</span> interval <span style="color:#e6db74">&#39;1 month&#39;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">AND</span> i.paid <span style="color:#f92672">=</span> <span style="color:#66d9ef">FALSE</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">ORDER</span> <span style="color:#66d9ef">BY</span> i.invoice_date <span style="color:#66d9ef">DESC</span>, <span style="color:#66d9ef">c</span>.id;</span></span></code></pre></div><p>The INNER keyword is not required (it&rsquo;s the default) but some organisations might require it for the sake of coding standards.</p>
+<p>There are other kinds of JOIN, specifically the OUTER JOIN and the CROSS JOIN but these are less frequently used in applications.
+If you want to find out about these kinds of JOIN refer to the <a
+  href="https://www.postgresql.org/docs/12/queries-table-expressions.html">PostgreSQL documentation</a>.</p>
+<hr>
+<h3 id="exercise-5">Exercise 5</h3>
+<ol>
+<li>Try and understand each of the queries above in your <code>psql</code> prompt</li>
+<li>Which customers occupied room 111 and what are their details?</li>
+<li>List the customer name, room details (room number, type and rate), nights stay and departure dates for all UK customers.</li>
+<li>List name, phone and email along with all reservations and invoices for customer Mary Saveley.</li>
+</ol>
+<hr>
+<h2 id="the-vexing-question-of-null">The Vexing Question of NULL</h2>
+<p>A column can be assigned a NULL value to indicate it has no value. This can happen when the data for this column is unknown at the time the row is created, for example, employee leaving date, order shipment date, etc&hellip; It can also be used when the data is optional.</p>
+<p>Be careful with expressions - any expression that includes a NULL value results in NULL as the expression value.</p>
+<p>Because NULL is &rsquo;no value&rsquo; it cannot be compared to anything else. For example, you will never get any results from:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span> <span style="color:#f92672">*</span> <span style="color:#66d9ef">FROM</span> customers <span style="color:#66d9ef">WHERE</span> postcode <span style="color:#f92672">=</span> <span style="color:#66d9ef">NULL</span>;</span></span></code></pre></div><p>nor will you get any from:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span> <span style="color:#f92672">*</span> <span style="color:#66d9ef">FROM</span> customers <span style="color:#66d9ef">WHERE</span> postcode <span style="color:#f92672">!=</span> <span style="color:#66d9ef">NULL</span>;</span></span></code></pre></div><p>Instead you must use:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span>  ... <span style="color:#66d9ef">WHERE</span> postcode <span style="color:#66d9ef">IS</span> <span style="color:#66d9ef">NULL</span></span></span></code></pre></div><p>or</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span>  ... <span style="color:#66d9ef">WHERE</span> postcode <span style="color:#66d9ef">IS</span> <span style="color:#66d9ef">NOT</span> <span style="color:#66d9ef">NULL</span></span></span></code></pre></div><p>This behaviour has some impacts on operations like JOIN, where NULL values won&rsquo;t match. You could work around this, but see the warning below, by using:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span>  ... <span style="color:#66d9ef">ON</span> (a.col <span style="color:#f92672">=</span> b.col <span style="color:#66d9ef">OR</span>
+</span></span><span style="display:flex;"><span>          a.col <span style="color:#66d9ef">IS</span> <span style="color:#66d9ef">NULL</span> <span style="color:#66d9ef">AND</span> b.col <span style="color:#66d9ef">IS</span> <span style="color:#66d9ef">NULL</span>)</span></span></code></pre></div><p><strong><em>WARNING:</em></strong>
+<em>However, be aware that this is not a sensible situation - join columns containing NULL should be expected to not match or should be disallowed (see Primary Keys above)</em></p>
+<p>You can explicitly provide NULL as a value in INSERT and UPDATE statements, for example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span>    <span style="color:#66d9ef">INSERT</span> <span style="color:#66d9ef">INTO</span> rooms (room_no, rate, room_type, no_guests)
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">VALUES</span> (<span style="color:#ae81ff">213</span>, <span style="color:#ae81ff">95</span>.<span style="color:#ae81ff">00</span>, <span style="color:#66d9ef">NULL</span>, <span style="color:#ae81ff">2</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">UPDATE</span> rooms <span style="color:#66d9ef">SET</span> room_type <span style="color:#f92672">=</span> <span style="color:#66d9ef">NULL</span>, no_guests <span style="color:#f92672">=</span> <span style="color:#66d9ef">NULL</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">WHERE</span> room_no <span style="color:#f92672">=</span> <span style="color:#ae81ff">204</span>;</span></span></code></pre></div><p>In INSERT statements if you omit a column from the column list (following the table name) then that column will be given either:</p>
+<ul>
+<li>an autogenerated value (if it has datatype SERIAL)</li>
+<li>a default value if one has been specified in the CREATE TABLE command</li>
+<li>NULL if neither of the above apply</li>
+</ul>
+<h3 id="functions-to-handle-null">Functions to Handle NULL</h3>
+<p>There are some functions that can operate on NULL values, especially the <code>coalesce(x, y)</code> function. This function looks at the first argument <code>x</code> and if it is NULL returns the value of the second argument <code>y</code> otherwise it returns the value of <code>x</code>. For example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span> room_no, rate, coalesce(room_type, <span style="color:#e6db74">&#39;None&#39;</span>) <span style="color:#66d9ef">type</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">FROM</span> rooms
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">WHERE</span> no_guests <span style="color:#66d9ef">IS</span> <span style="color:#66d9ef">NULL</span>;</span></span></code></pre></div><p>Notes:</p>
+<ul>
+<li>The coalesce function can take more than two arguments and returns the first of these (from left to right) that is not null.</li>
+<li>This feature is provided by most SQL vendors but goes by different names, e.g. ifnull(x, y) in MySQL, nvl(x, y) in Oracle, etc&hellip;</li>
+</ul>
+<hr>
+<h3 id="exercise-6">Exercise 6</h3>
+<ol>
+<li>Which customers have not yet provided a phone number?</li>
+<li>Update room 304 such that it does not have a room_type.</li>
+<li>List customers (name and city) qand their reservations replacing the room number with &lsquo;Not Assigned&rsquo; if it is NULL.</li>
+</ol>
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="creating-tables">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="creating-tables">
+        Creating a table
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="45 minutes countdown" datetime="P45M">45&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Aggregate data over multiple rows and use aggregate values to restrict the results</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <p>Use the CREATE TABLE command, which in the simplest case has the general form:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">CREATE</span> <span style="color:#66d9ef">TABLE</span> <span style="color:#f92672">&lt;</span>tablename<span style="color:#f92672">&gt;</span> <span style="color:#f92672">&lt;</span><span style="color:#66d9ef">column</span> definition<span style="color:#f92672">&gt;</span>, <span style="color:#f92672">&lt;</span><span style="color:#66d9ef">column</span> definition<span style="color:#f92672">&gt;</span>, ...);</span></span></code></pre></div><p>To create an <code>inventory</code> table for our hotel we might need:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">CREATE</span> <span style="color:#66d9ef">TABLE</span> inventory (
+</span></span><span style="display:flex;"><span>  id            SERIAL <span style="color:#66d9ef">PRIMARY</span> <span style="color:#66d9ef">KEY</span>,
+</span></span><span style="display:flex;"><span>  description   VARCHAR(<span style="color:#ae81ff">30</span>) <span style="color:#66d9ef">NOT</span> <span style="color:#66d9ef">NULL</span>,
+</span></span><span style="display:flex;"><span>  cost          NUMERIC(<span style="color:#ae81ff">6</span>,<span style="color:#ae81ff">2</span>)
+</span></span><span style="display:flex;"><span>);</span></span></code></pre></div><p><strong><em>Note: you may never need to do this. Database design is a task that requires specialist skills and considerable experience.</em></strong></p>
+<h3 id="naming-tables-and-columns">Naming Tables and Columns</h3>
+<p>In the <code>CREATE TABLE</code> command you must give the name of the table (e.g. <code>inventory</code>) and the names of each of the columns (in the parenthesised column definitions) (e.g. <code>id</code>, <code>description</code>, <code>cost</code>).</p>
+<p>Names of tables and columns (and any other objects in the database) must start with a letter, can contain letters, digits and the underscore symbol (_) up to 64 bytes (in PostgreSQL). Names are not case-sensitive so that NAME, name and NaMe are all the same.</p>
+<h3 id="data-types-of-columns">Data Types of Columns</h3>
+<p>In the above example:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Column</th>
+          <th>Data Type</th>
+          <th>Other</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>id</code></td>
+          <td>SERIAL</td>
+          <td>PRIMARY KEY</td>
+      </tr>
+      <tr>
+          <td><code>description</code></td>
+          <td>VARCHAR(30)</td>
+          <td>NOT NULL</td>
+      </tr>
+      <tr>
+          <td><code>cost</code></td>
+          <td>NUMERIC(6,2)</td>
+          <td></td>
+      </tr>
+  </tbody>
+</table>
+<p>The <code>id</code> column uses SERIAL as its data type, making it an autoincrementing integer that increments by 1, starting from 1, for each time a new row is inserted into the table. For this to work, the <code>id</code> column must be omitted from the INSERT command. <code>id</code> is also designated as the PRIMARY KEY of the table (note that SERIAL doesn&rsquo;t make the column the primary key). PRIMARY KEY also implies that the column cannot be set to NULL.</p>
+<p>The <code>description</code> column is a variable length character value (VARCHAR) that can hold up to a maximum of 30 characters. The NOT NULL constraint means the value cannot be left empty, each row must have a description.</p>
+<p>The <code>cost</code> column is NUMERIC(6,2), a number that can accurately store up to 6 digits, two of which are the fractional part. For example, it can hold 1234.56, -23.45 or 0.01. Note that the NUMERIC data type stores and computes values using decimal values and does not lose accuracy in the same was as, say, floating point values. NUMERIC values take longer in calculations because they don&rsquo;t use simple binary values - user either integer or floating point for speed with compute-heavy numbers.</p>
+<p><strong>NEVER</strong> use floating point for financial values.</p>
+<h3 id="other-common-data-types"><strong>Other Common Data Types</strong></h3>
+<p>There are several more standard data types (plus a few non-standard ones), including:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Type</th>
+          <th>Notes</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>INTEGER</td>
+          <td>binary integer with 32 bits (range approx -2 x 10<sup>9</sup> – +2 x 10<sup>9</sup>)</td>
+      </tr>
+      <tr>
+          <td>DATE</td>
+          <td>dates with no time component</td>
+      </tr>
+      <tr>
+          <td>TIMESTAMP</td>
+          <td>date and time (accurate to milliseconds)</td>
+      </tr>
+      <tr>
+          <td>BOOLEAN</td>
+          <td>TRUE, FALSE or NULL</td>
+      </tr>
+      <tr>
+          <td>TEXT</td>
+          <td>variable length text with no length limit (up to max allowed for the RDBMS - about 1Gb in PostgreSQL)</td>
+      </tr>
+  </tbody>
+</table>
+<p>You can read more about data types in the PostgreSQL documentation. Refer to <a
+  href="https://www.postgresql.org/docs/12/datatype.html">https://www.postgresql.org/docs/12/datatype.html</a>
+for more information.</p>
+<h3 id="changing-a-table-definition">Changing a Table Definition</h3>
+<p>Using the ALTER TABLE command to add and remove columns:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">ALTER</span> <span style="color:#66d9ef">TABLE</span> inventory <span style="color:#66d9ef">ADD</span> <span style="color:#66d9ef">COLUMN</span> room_no INTEGER;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">ALTER</span> <span style="color:#66d9ef">TABLE</span> customers <span style="color:#66d9ef">DROP</span> <span style="color:#66d9ef">COLUMN</span> phone;</span></span></code></pre></div><p>There are some constraints on adding and removing columns, for example, you cannot add a NOT NULL column to a table that already contains some rows.</p>
+<hr>
+<h3 id="exercise-7">Exercise 7</h3>
+<ol>
+<li>Create a table for charge points. This must record the hotel shops, bars, cafes and restaurants that a customer can use during their stay.</li>
+<li>Include an auto-incrementing primary key</li>
+<li>Include the charge point name, a description and maximum customer credit value</li>
+<li>Insert charge points for &lsquo;Shop&rsquo;, &lsquo;Pool Bar&rsquo;, &lsquo;Elysium Restaurant&rsquo; and &lsquo;Room Service&rsquo; with credit limits of £1000 for each.</li>
+<li>Create a table for charge items that records amounts charged to rooms by customers using our shop, bars, restaurants, etc. This must include the room number of the room charged, the charge point used, the amount, the date and time of the charge and any customer comments.</li>
+</ol>
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="defining-primary-and-foreign-keys">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="defining-primary-and-foreign-keys">
+        Defining Primary and Foreign Keys
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="45 minutes countdown" datetime="P45M">45&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Aggregate data over multiple rows and use aggregate values to restrict the results</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <h2 id="defining-primary-and-foreign-keys">Defining Primary and Foreign Keys</h2>
+<h3 id="defining-primary-keys">Defining Primary Keys</h3>
+<p>Use the following templates to define a Primary Key.</p>
+<p>For a single-column PK use:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">CREATE</span> <span style="color:#66d9ef">TABLE</span> <span style="color:#f92672">&lt;</span><span style="color:#66d9ef">table</span> name<span style="color:#f92672">&gt;</span> (
+</span></span><span style="display:flex;"><span>  ...
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;</span><span style="color:#66d9ef">column</span> name<span style="color:#f92672">&gt;</span>   <span style="color:#f92672">&lt;</span><span style="color:#66d9ef">data</span> <span style="color:#66d9ef">type</span><span style="color:#f92672">&gt;</span>   <span style="color:#66d9ef">PRIMARY</span> <span style="color:#66d9ef">KEY</span>,
+</span></span><span style="display:flex;"><span>  ...
+</span></span><span style="display:flex;"><span>)</span></span></code></pre></div><p>For example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">CREATE</span> <span style="color:#66d9ef">TABLE</span> rooms (
+</span></span><span style="display:flex;"><span>  room_no       INTEGER   <span style="color:#66d9ef">PRIMARY</span> <span style="color:#66d9ef">KEY</span>,
+</span></span><span style="display:flex;"><span>  ...
+</span></span><span style="display:flex;"><span>);</span></span></code></pre></div><p>To define a multi-column primary key you must define a constraint separate from the column definitions, as below:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">CREATE</span> <span style="color:#66d9ef">TABLE</span> <span style="color:#f92672">&lt;</span><span style="color:#66d9ef">table</span> name<span style="color:#f92672">&gt;</span> (
+</span></span><span style="display:flex;"><span>  ...
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;</span>pk col <span style="color:#ae81ff">1</span><span style="color:#f92672">&gt;</span>     <span style="color:#f92672">&lt;</span><span style="color:#66d9ef">data</span> <span style="color:#66d9ef">type</span><span style="color:#f92672">&gt;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;</span>pk col <span style="color:#ae81ff">2</span><span style="color:#f92672">&gt;</span>     <span style="color:#f92672">&lt;</span><span style="color:#66d9ef">data</span> <span style="color:#66d9ef">type</span><span style="color:#f92672">&gt;</span>,
+</span></span><span style="display:flex;"><span>  ... ,
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">PRIMARY</span> <span style="color:#66d9ef">KEY</span> (<span style="color:#f92672">&lt;</span>pk col <span style="color:#ae81ff">1</span><span style="color:#f92672">&gt;</span>, <span style="color:#f92672">&lt;</span>pk col <span style="color:#ae81ff">2</span><span style="color:#f92672">&gt;</span>),
+</span></span><span style="display:flex;"><span>  ...
+</span></span><span style="display:flex;"><span>);</span></span></code></pre></div><p>For example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">CREATE</span> <span style="color:#66d9ef">TABLE</span> invoice_items (
+</span></span><span style="display:flex;"><span>  inv_id        INTEGER <span style="color:#66d9ef">REFERENCES</span> invoices(id),
+</span></span><span style="display:flex;"><span>  item_no       INTEGER,
+</span></span><span style="display:flex;"><span>  ... ,
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">PRIMARY</span> <span style="color:#66d9ef">KEY</span> (inv_id, item_no),
+</span></span><span style="display:flex;"><span>  ...
+</span></span><span style="display:flex;"><span>);</span></span></code></pre></div><p>There can be only one primary key in a table definition. The <code>PRIMARY KEY</code> definition implies NOT NULL so no column in a table&rsquo;s PK can be set to NULL.</p>
+<p><strong>Note: a partial primary key can be a foreign key as well.</strong></p>
+<h3 id="defining-foreign-keys">Defining Foreign Keys</h3>
+<p>To define foreign keys use either:</p>
+<p>For a single-column foreign key:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span>  <span style="color:#f92672">&lt;</span><span style="color:#66d9ef">column</span> name<span style="color:#f92672">&gt;</span>   <span style="color:#f92672">&lt;</span><span style="color:#66d9ef">data</span> <span style="color:#66d9ef">type</span><span style="color:#f92672">&gt;</span>   <span style="color:#66d9ef">REFERENCES</span> <span style="color:#f92672">&lt;</span><span style="color:#66d9ef">table</span> name<span style="color:#f92672">&gt;</span> (<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">column</span> name<span style="color:#f92672">&gt;</span>);</span></span></code></pre></div><p>where the &lt;column name&gt; in the REFERENCES clause is the column name in the referenced table, not the one being defined at this point. For example, in the <code>reservations</code> table:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span>  ...
+</span></span><span style="display:flex;"><span>  cust_id         INTEGER <span style="color:#66d9ef">NOT</span> <span style="color:#66d9ef">NULL</span>   <span style="color:#66d9ef">REFERENCES</span> customers (id),
+</span></span><span style="display:flex;"><span>  ...</span></span></code></pre></div><p>For multi-column foreign keys we must again use a separate constraint definition, as shown:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">CREATE</span> <span style="color:#66d9ef">TABLE</span> customer_challenges (
+</span></span><span style="display:flex;"><span>  id           SERIAL <span style="color:#66d9ef">PRIMARY</span> <span style="color:#66d9ef">KEY</span>,
+</span></span><span style="display:flex;"><span>  inv_id       INTEGER,
+</span></span><span style="display:flex;"><span>  item_no      INTEGER,
+</span></span><span style="display:flex;"><span>  ...
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">FOREIGN</span> <span style="color:#66d9ef">KEY</span> (inv_id, item_no) <span style="color:#66d9ef">REFERENCES</span> invoice_items (inv_id, item_no),
+</span></span><span style="display:flex;"><span>  ...
+</span></span><span style="display:flex;"><span>);</span></span></code></pre></div><hr>
+<h3 id="exercise-8">Exercise 8</h3>
+<ol>
+<li>Try to delete the customer Mary Saveley. What happens and why?</li>
+<li>Insert a new room, number 313 as room type &lsquo;SUPER PREMIER&rsquo;.</li>
+<li>Define primary and foreign keys required by the charge_items table</li>
+<li>Insert some rows into the charge_items table. You can invent the details.</li>
+</ol>
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="integration-with-node">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="integration-with-node">
+        Integration with NodeJS
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="45 minutes countdown" datetime="P45M">45&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Connect a PostgreSQL database to a NodeJS application</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Retrieve data from a PostgreSQL database in a NodeJS application</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <h3 id="introduction-to-node-postgres">Introduction to node-postgres</h3>
+<p><em>&ldquo;node-postgres is a collection of node.js modules for interfacing with your PostgreSQL database.&rdquo;</em> - <a
+  href="https://node-postgres.com/">https://node-postgres.com/</a></p>
+<p>In the following, we will use <em>node-postgres</em> to&hellip;</p>
+<ol>
+<li>Connect to a database</li>
+<li>Send SQL queries to the database and get results</li>
+</ol>
+<h3 id="loading-data-from-a-database-with-a-get-endpoint">Loading data from a database with a GET endpoint</h3>
+<p>Let&rsquo;s build a brand new NodeJS application with a single GET endpoint to load the list of customers that you already have in the <code>customers</code> table of the <code><span class="c-our-name">CYF</span>_hotels</code> database.</p>
+<p>First, create a new NodeJS application that we will call <strong><span class="c-our-name">CYF</span>-hotels-api</strong> (enter <code>server.js</code> when asked for the entry point):</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mkdir <span class="c-our-name">CYF</span>-hotels-api
+</span></span><span style="display:flex;"><span>cd <span class="c-our-name">CYF</span>-hotels-api
+</span></span><span style="display:flex;"><span>npm init</span></span></code></pre></div><p>As before, we will use the Express library to build our API, and the node-postgres library to connect with our database:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>npm install --save express
+</span></span><span style="display:flex;"><span>npm install --save pg</span></span></code></pre></div><p>Create a <code>server.js</code> file, import express, initialise the server and start listening for requests:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">express</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#34;express&#34;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">app</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">express</span>();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">listen</span>(<span style="color:#ae81ff">3000</span>, <span style="color:#66d9ef">function</span> () {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;Server is listening on port 3000. Ready to accept requests!&#34;</span>);
+</span></span><span style="display:flex;"><span>});</span></span></code></pre></div><p>Import pg library and create a new GET endpoint to load the list of customers:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> { <span style="color:#a6e22e">Pool</span> } <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#34;pg&#34;</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">db</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Pool</span>({
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">user</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;keith&#34;</span>, <span style="color:#75715e">// replace with you username
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#a6e22e">host</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;localhost&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">database</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;<span class="c-our-name">CYF</span>_hotels&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">password</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">port</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">5432</span>,
+</span></span><span style="display:flex;"><span>});
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">get</span>(<span style="color:#e6db74">&#34;/customers&#34;</span>, <span style="color:#66d9ef">function</span> (<span style="color:#a6e22e">req</span>, <span style="color:#a6e22e">res</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">db</span>.<span style="color:#a6e22e">query</span>(<span style="color:#e6db74">&#34;SELECT id, name, city, phone FROM customers&#34;</span>)
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">then</span>((<span style="color:#a6e22e">result</span>) =&gt; {
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">json</span>(<span style="color:#a6e22e">result</span>.<span style="color:#a6e22e">rows</span>);
+</span></span><span style="display:flex;"><span>    })
+</span></span><span style="display:flex;"><span>    .<span style="color:#66d9ef">catch</span>((<span style="color:#a6e22e">error</span>) =&gt; {
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">error</span>);
+</span></span><span style="display:flex;"><span>    });
+</span></span><span style="display:flex;"><span>});</span></span></code></pre></div><p>In the code above:</p>
+<ul>
+<li>We first import the <code>Pool</code> class from the pg library, which is used to connect to a database</li>
+<li>We create a new connection (<code>db</code>) where we specify the credentials to connect to the <span class="c-our-name">CYF</span>_hotel database</li>
+<li>We then create a new <code>/customers</code> endpoint where we use the method <code>query()</code> to send a SQL query to load all the customers from the table <code>customers</code> and return the results with <code>result.rows</code>. The <code>query</code> method returns a Promise: so we can access the returned rows using a <code>.then</code> block. You can write any valid SQL query that you learned in the <code>query()</code> method!</li>
+</ul>
+<p><strong><em>Note:</em></strong> There is no semicolon to end the SQL statement.</p>
+<p>Start your server with <code>node server.js</code> and try to reach the <code>/customers</code> endpoint to see the list of customers currently available in your <code><span class="c-our-name">CYF</span>_hotels</code> database. You can try to create/update/delete customers using psql to verify that your API always returns what is stored in your database.</p>
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+      </div>
+      <nav slot="nav">
+        <a href="#" class="e-button c-solo-view__back">&larr; Back</a>
+        <a href="#" class="e-button c-solo-view__next">Next &rarr;</a>
+      </nav>
+    </solo-view>
+    
+    <script src="/scripts/solo-view.min.js" defer></script>
+    
+    <script src="/scripts/time-total.min.js" defer></script>
+  
+
+
+        
+
+  <footer class="c-page-footer">
+    <nav class="c-page-footer__nav">
+      
+      
+      <span class="c-page-footer__this">prep</span>
+      
+        →<a
+          class="c-page-footer__next c-page-footer__link e-link"
+          href="/tracks/sql/sprints/2/backlog/"
+          >backlog</a
+        >
+      
+    </nav>
+  </footer>
+
+
+      </main><footer class="l-layout__footer l-footer">
+  <a
+    class="l-footer__github e-button e-button--icon"
+    href="https://github.com/CodeYourFuture/curriculum/">
+    <svg
+  focusable="false"
+  class="e-button__icon"
+  role="presentation"
+  width="96"
+  viewbox="0 0 98 96"
+  xmlns="http://www.w3.org/2000/svg">
+  <path
+    fill-rule="evenodd"
+    clip-rule="evenodd"
+    d="M48.854 0C21.839 0 0 22 0 49.217c0 21.756 13.993 40.172 33.405 46.69 2.427.49 3.316-1.059 3.316-2.362 0-1.141-.08-5.052-.08-9.127-13.59 2.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015 4.934.326 7.523 5.052 7.523 5.052 4.367 7.496 11.404 5.378 14.235 4.074.404-3.178 1.699-5.378 3.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283 0-5.378 1.94-9.778 5.014-13.2-.485-1.222-2.184-6.275.486-13.038 0 0 4.125-1.304 13.426 5.052a46.97 46.97 0 0 1 12.214-1.63c4.125 0 8.33.571 12.213 1.63 9.302-6.356 13.427-5.052 13.427-5.052 2.67 6.763.97 11.816.485 13.038 3.155 3.422 5.015 7.822 5.015 13.2 0 18.905-11.404 23.06-22.324 24.283 1.78 1.548 3.316 4.481 3.316 9.126 0 6.6-.08 11.897-.08 13.526 0 1.304.89 2.853 3.316 2.364 19.412-6.52 33.405-24.935 33.405-46.691C97.707 22 75.788 0 48.854 0z"
+    fill="currentColor" />
+</svg>
+
+    <span class="is-invisible">Find us on GitHub</span>
+  </a>
+  <p class="l-footer__impressum e-heading__6">
+    This
+    <a href="https://github.com/CodeYourFuture/curriculum/">free and open source programme</a>
+    is a project of
+    <a href="https://codeyourfuture.io/">Code Your Future</a>
+    <br />
+    Creative Commons Attribution-ShareAlike 4.0
+  </p>
+  <dark-mode class="l-footer__mode"
+    ><button
+      slot="button"
+      id="mode-toggle"
+      type="button"
+      class="e-button e__button--toggle e-button--icon">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="e-icon e__button__icon e-icon--moon">
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
+      </svg>
+      <span class="is-invisible">Toggle between light and dark mode</span>
+    </button></dark-mode
+  >
+</footer>
+
+
+
+<script src="/scripts/app.min.js" defer></script>
+
+<script src="/scripts/youtube-player.min.js" defer></script>
+
+<script src="/scripts/tab-panels.min.js" type="module" defer></script>
+
+<script src="/scripts/dark-mode.min.js"></script>
+
+<script src="/scripts/alert-message.min.js" defer></script>
+
+
+
+
+
+
+
+</div>
+  </body>
+</html>

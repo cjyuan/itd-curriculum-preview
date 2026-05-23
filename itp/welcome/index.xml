@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Welcome to Code Your Future on CYF Courses</title>
+    <link>https://curriculum.codeyourfuture.io/itp/welcome/</link>
+    <description>Recent content in Welcome to Code Your Future on CYF Courses</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="https://curriculum.codeyourfuture.io/itp/welcome/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Prep</title>
+      <link>https://curriculum.codeyourfuture.io/itp/welcome/prep/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://curriculum.codeyourfuture.io/itp/welcome/prep/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Backlog</title>
+      <link>https://curriculum.codeyourfuture.io/itp/welcome/backlog/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://curriculum.codeyourfuture.io/itp/welcome/backlog/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Day Plan</title>
+      <link>https://curriculum.codeyourfuture.io/itp/welcome/day-plan/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://curriculum.codeyourfuture.io/itp/welcome/day-plan/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>End of Module Review</title>
+      <link>https://curriculum.codeyourfuture.io/itp/welcome/success/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://curriculum.codeyourfuture.io/itp/welcome/success/</guid>
+      <description>&lt;h3 id=&#34;-youve-achieved-your-learning-objectives-if-you-can&#34;&gt;🎯 You&amp;rsquo;ve achieved your learning objectives if you can:&lt;/h3&gt;</description>
+    </item>
+  </channel>
+</rss>

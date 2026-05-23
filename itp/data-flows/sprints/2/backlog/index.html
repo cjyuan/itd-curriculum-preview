@@ -1,0 +1,2886 @@
+<!DOCTYPE html>
+
+
+
+
+<html lang="en" class="p-backlog"><head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  <title data-pagefind-meta="title">
+    
+      Intro to Programming 
+    
+      Data Flows 
+    
+      Sprint 2 
+    
+    Backlog
+  </title>
+  
+    <meta name="description" content="A free and open source software development programme." />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+  <style>
+    body,
+    html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      animation: fade-in 300ms;
+    }
+    @keyframes fade-in {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  </style>
+  
+  
+  <link
+    rel="stylesheet"
+    href="/bundled.min.b6a4520237559385268d63a9daa81d96.css"
+    media="print"
+    onload="this.media='all'" />
+
+  
+  
+    
+    
+    <link
+      rel="stylesheet"
+      href="/custom.min.8ded6a1a88bc7cc98bdef8dc33d15f3a.css"
+      media="print"
+      onload="this.media='all'" />
+  
+
+
+  <noscript>
+    <link rel="stylesheet" href="/bundled.min.b6a4520237559385268d63a9daa81d96.css" />
+  </noscript>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&amp;display=swap"
+    rel="stylesheet"
+    media="print"
+    onload="this.media='all'" />
+
+  <link rel="shortcut icon" href="https://curriculum.codeyourfuture.io/favicon.ico" />
+  <meta name="theme-color" content="#e3ddeef2" />
+  <link rel="manifest" href="https://curriculum.codeyourfuture.io/manifest.json" />
+</head>
+<body>
+    <a class="c-skip-link e-button" id="skip-link" href="#main">Skip to main</a>
+    <div class="l-layout">
+      <header class="l-layout__header l-header">
+  <div class="l-header__container">
+    <h1 class="l-header__heading e-heading__6" data-pagefind-ignore>
+      <a class="l-header__home" href="/"
+        ><span class="is-invisible"
+          >itp backlog CYF Courses</span
+        >
+        <span class="is-none--lt-container">
+          <svg
+          xmlns="http://www.w3.org/2000/svg"
+          title="Code Your Future."
+          viewBox="0 0 621.64 155.81"
+          width="140px"
+          focusable="false"
+          role="img">
+          <path
+            fill="var(--theme-color--brand)"
+            d="M103.37 56.51C96.91 63.64 87.03 69.9 74.6 69.9c-20.14 0-33.52-12.91-33.52-34.09C41.08 13.97 57.5.87 69.94.87c9.5 0 13.77 5.32 14.63 6.46l2.18-5.27h14.91v27h-17c-.28-6.18-3.32-12-10.06-12s-11.3 8.45-11.3 18.8c0 9.4 4.84 17.86 13.86 17.86 8 0 14.24-8.36 15.1-9.31Zm2.88-21.85C106.25 14.15 119.92 0 139.58 0c23.26 0 34.09 14 34.09 35.32s-12 34.57-33.43 34.57c-19.88 0-33.99-11.49-33.99-35.23Zm43.68.66c0-11.49-3.13-20.7-10.45-20.7-5.79-.09-9.78 8.26-9.78 20 0 12.44 4.47 20.32 10.54 20.32s9.65-7.88 9.65-19.62Zm27.49 20.23h5.89V14.34h-5.89V1.8h29c23 0 36.09 14.15 36.09 32.29 0 21.65-13.11 34.09-36.47 34.09h-28.62Zm29 0c10.03-.19 14.21-9.59 14.21-21.49 0-10.16-4.18-19.75-14.25-19.75h-3.61v41.24ZM303.04 1.8v21h-16.43v-8.46h-15.19v13.1h18v12.62h-18v15.49h15.19v-8.83h16.43v21.46h-57.26V55.55h6V14.34h-6V1.8Z" />
+          <path
+            fill="var(--theme-color--ink)"
+            d="M274.42 87.82v21h-16.8v-8.45h-14.37v16.52h18v12.63h-18v12.04h9.68v12.63h-35.29v-12.63h5.89v-41.21h-5.89V87.82Zm33.04 0v12.24h-5.12v20.51c0 15.28 3.41 18.51 9.49 18.51 5.79 0 9.59-2.28 9.59-18.61v-20.12h-5.17V87.82h28.11v12.24h-5.11v23.07c0 22.51-9.4 32.67-27.25 32.67-19.18-.57-29.43-10.64-29.43-32.19v-23.45h-5.32V87.82Zm103.5 24.69h-14v-12.16h-8v41.21h7.88v12.63h-35.26v-12.63h7.79v-41.21h-8.12v12.16h-14V87.82h63.71ZM444 87.82v12.24h-5.13v20.51c0 15.28 3.42 18.51 9.5 18.51 5.79 0 9.59-2.28 9.59-18.61v-20.12h-5.13V87.82h28.11v12.24h-5.13v23.07c0 22.51-9.4 32.67-27.25 32.67-19.18-.57-29.44-10.64-29.44-32.19v-23.45h-5.32V87.82Zm71.59 0c22 0 26.3 8.73 26.3 19.56 0 7.4-5.88 12.63-13.76 13.77 6.55.95 12.44 6.64 12.44 13.48 0 4.08.57 6.46 2.27 6.46 1.43 0 2.19-1.14 2.19-3v-3.13h6.36v5.22c0 7.88-3.32 15.19-13.86 15.19-12.44 0-18.42-6.55-18.42-17.66 0-8.64-1.05-10.73-9.5-10.73v14.68h5.79v12.53h-30.67v-12.53h5.32v-41.4h-5.32V87.82Zm-6 28.48h4.27c5.51 0 9.12-2.65 9.12-7.69 0-5.6-3.13-8.45-8.64-8.45h-4.75Zm102.38-28.48v21h-16.43v-8.45h-15.19v13.09h18v12.6h-18v15.5h15.19v-8.83h16.43v21.46h-57.26v-12.63h6v-41.21h-6V87.82Zm-227.72-56.1c.38-1.9 2.47-5.89 3.51-8.17l5.22-9.59h-5.22V1.8h25.54v12.16h-5.05l-17.62 30.86v11h5.32v12.36h-30.39V55.83h5.41v-11.2l-18.42-30.67h-4.65V1.8h32.47v12.16h-4.93l5.5 10.1c.57 1.81 2.57 6.08 2.95 7.7Zm29.54 2.94C413.79 14.15 427.47 0 447.12 0c23.27 0 34.09 14 34.09 35.32s-12 34.57-33.42 34.57c-19.85 0-34-11.49-34-35.23Zm43.68.66c0-11.49-3.13-20.7-10.44-20.7-5.79-.09-9.78 8.26-9.78 20 0 12.44 4.46 20.32 10.54 20.32s9.68-7.88 9.68-19.62ZM514.25 1.8v12.26h-5.13v20.5c0 15.29 3.42 18.52 9.5 18.52 5.79 0 9.59-2.28 9.59-18.61V14.34h-5.13V1.8h28.11v12.26h-5.13v23.07c0 22.5-9.4 32.66-27.25 32.66-19.18-.57-29.44-10.63-29.44-32.19V14.15h-5.32V1.8Zm71.59 0c22 0 26.31 8.74 26.31 19.57 0 7.4-5.89 12.62-13.77 13.76 6.55 1 12.44 6.65 12.44 13.49 0 4.08.57 6.46 2.27 6.46 1.43 0 2.19-1.14 2.19-3V48.9h6.36v5.23c0 7.88-3.32 15.19-13.86 15.19-12.44 0-18.42-6.55-18.42-17.66 0-8.64-1.05-10.73-9.5-10.73v14.71h5.79v12.54h-30.67V55.64h5.32v-41.4h-5.32V1.8Zm-6 28.49h4.27c5.51 0 9.12-2.66 9.12-7.69 0-5.6-3.13-8.45-8.64-8.45h-4.75ZM28.39 14.7l5.8 10.64-23.46 10.72 23.46 10.55-3.61 9.87L0 42.24v-13.3Zm318.7 14.24v13.3l-30.58 14.24-3.61-9.87 23.46-10.55-23.46-10.72 5.8-10.64Z" />
+        </svg>
+        </span>
+        <span class="is-none--gt-container">
+          <svg
+          xmlns="http://www.w3.org/2000/svg"
+          version="1.0"
+          viewBox="0 0 512 512"
+          width="48px">
+          <path
+            fill="currentcolor"
+            stroke="currentcolor"
+            d="M225.5 1c-1.1.5-3.5.9-5.3.9-4.1.1-22.9 4.5-30.7 7.2-63.1 22-114.7 72.3-142.7 139.4-6.4 15.2-11.8 33.8-16.7 57-4.1 19.7-5.4 64.5-2.6 90.8C33 346.2 49.8 390.1 76.8 425c6.2 7.9 23.9 26.4 30.7 32 8.1 6.7 26.1 18.7 35.1 23.6 28.1 15.1 58 24.3 91.9 28.3 5.5.7 13.6 1.7 18 2.2 8.8 1.2 33.9.7 48-.9 11-1.3 31.7-4.8 36.5-6.2 1.9-.5 8-2.3 13.5-3.9 21.3-6.1 47.2-17.8 67.5-30.5 8.8-5.4 23.7-15.8 28.5-19.7 10.2-8.4 24.5-21.3 31.4-28.2l8.4-8.5-2.2-2.9c-1.3-1.5-4.6-5.3-7.4-8.3-6.2-6.7-14.5-15.7-21.2-23.1-2.7-3-7.5-8.2-10.5-11.4-3-3.3-9.8-10.8-15.1-16.5-21.5-23.6-24.2-26.5-24.9-26.8-.3-.1-2 1.2-3.6 3-1.6 1.9-6.3 7.1-10.4 11.7-8.6 9.7-25.6 24.6-35.9 31.4-21.4 14.4-42.5 21.7-62.6 21.7-15.3-.1-29.3-3.3-42.5-10-22.8-11.5-41.9-35.5-51.5-64.7-4.2-12.8-4.3-13.4-5.9-22.8-3.8-22.9-4.6-39.2-2.6-55.6 2.7-22.7 3.3-26.5 5-33.2 7.9-30.9 16.7-48.6 32.4-65.6 16.8-17.9 41.1-24.9 65.1-18.6 30 7.8 50.7 36.3 55.5 76.3.5 4.6 1.2 8.7 1.5 9.3.4.5 25.1.9 62.6.9H474V9H364.2L357 26.7c-4 9.8-7.9 18.5-8.7 19.3-1.3 1.3-2.1.8-6.6-4.3-6-6.9-18.3-16.7-28.2-22.5-7.4-4.3-22.6-10.9-28.5-12.4-9.2-2.2-18.1-4.1-24-5-9-1.3-33.1-1.9-35.5-.8z" />
+        </svg>
+        </span>
+      </a>
+    </h1>
+    <link
+  href="/pagefind/pagefind-ui.css"
+  rel="stylesheet"
+  media="print"
+  onload="this.media='all'" />
+<style>
+  :root {
+    --pagefind-ui-primary: var(--theme-color--ink);
+    --pagefind-ui-text: var(--theme-color--ink);
+    --pagefind-ui-background: var(--theme-color--paper);
+    --pagefind-ui-border: var(--theme-color--outline);
+    --pagefind-ui-tag: var(--theme-color--block);
+    --pagefind-ui-border-radius: 2em;
+    --pagefind-ui-image-border-radius: var(--theme-border-radius);
+    --pagefind-ui-font: var(--theme-font--copy);
+  }
+  .pagefind-ui--reset {
+    position: absolute;
+  }
+  #search .pagefind-ui__search-input {
+    box-shadow: var(--theme-box-shadow--inset);
+    margin-bottom: var(--theme-spacing--1);
+  }
+  #search .pagefind-ui__search-clear {
+    background-color: transparent;
+  }
+  #search .pagefind-ui__drawer {
+    background-color: var(--theme-color--paper);
+    box-shadow: var(--theme-box-shadow--slim);
+    transform: translateY(-1.5px);
+    padding: 0 var(--theme-spacing--2);
+    max-height: calc(100vh - 4rem);
+    overflow-y: auto;
+  }
+  #search .pagefind-ui__result {
+    padding: var(--theme-spacing--1) 0 var(--theme-spacing--2) 0;
+  }
+  #search .pagefind-ui__result:focus-within,
+  #search .pagefind-ui__button:focus {
+    background-color: var(--theme-color--block);
+  }
+  #search .pagefind-ui__button {
+    border: none;
+  }
+</style>
+<script src="/pagefind/pagefind-ui.js" type="text/javascript" defer></script>
+<div id="search" class="l-header__search"></div>
+<script>
+  window.addEventListener("DOMContentLoaded", (event) => {
+    new PagefindUI({
+      element: "#search",
+      showSubResults: true,
+      pageSize: 3,
+      showImages: false,
+      showTags: true,
+    });
+  });
+</script>
+
+    <button
+      class="l-header__action e-button e-button--icon js-menu-toggle e-heading__3">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+        <path
+          stroke="var(--theme-color--ink)"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M13 5a1 1 0 1 0-2 0 1 1 0 0 0 2 0Zm0 7a1 1 0 1 0-2 0 1 1 0 0 0 2 0Zm0 7a1 1 0 1 0-2 0 1 1 0 0 0 2 0Z" />
+      </svg>
+      <span class="is-invisible">Open Menu.</span>
+    </button>
+  </div>
+</header>
+
+      <nav
+  class="l-layout__menu l-menu"
+  aria-label="Main Site Links."
+  id="site-menu"
+  hidden
+  tabindex="0">
+  <div class="l-menu__container">
+    <h2 class="l-menu__heading e-heading__2">
+      <a href="/" class="l-menu__home is-invisible">Menu</a>
+    </h2>
+    <button
+      class="l-menu__action e-button e-button--icon js-menu-toggle e-heading__2"
+      id="close-menu">
+      ❎
+      <span class="is-invisible">Close Menu.</span>
+    </button>
+    <ul class="l-menu__primary">
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/guides/">
+            Guides
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/sdc/tools/">
+            Tools
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/sdc/logic/">
+            Logic
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/sdc/decomposition/">
+            Decomposition
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/sdc/legacy/">
+            Legacy code
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/sdc/complexity/">
+            Complexity
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/tracks/servers/">
+            Servers
+          </a>
+        </li>
+    </ul>
+    <ul class="l-menu__secondary">
+        <li class="l-menu__item">
+          <a class="e-heading__3 l-menu__link" href="https://codeyourfuture.io">
+            CYF 👈🏾
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__3 l-menu__link" href="https://codeyourfuture.io/volunteers/">
+            Join Us 👋🏿
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__3 l-menu__link" href="https://codeyourfuture.io/donate/">
+            Support 🫶🏼
+          </a>
+        </li>
+    </ul>
+  </div>
+</nav>
+
+      <main
+        id="main"
+        class="l-layout__main l-main"
+        tabindex="0"
+        data-pagefind-body>
+        
+  
+  
+  
+  
+  
+  <article>
+    
+
+
+
+
+
+
+
+
+
+<header
+  class="c-page-header  ">
+  
+  <div class="c-page-header__container">
+    <div class="c-page-header__breadcrumbs">
+      
+  <nav class="c-breadcrumbs">
+    <ol class="c-breadcrumbs__list">
+      
+        
+        
+          <li class="c-breadcrumbs__item">
+            <a
+              class="c-breadcrumbs__link"
+              href="/itp/"data-pagefind-filter="module"><span class="c-breadcrumbs__text">Intro to Programming</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                width="24px"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="c-breadcrumbs__icon">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+              </svg>
+            </a>
+          </li>
+        
+        
+          <li class="c-breadcrumbs__item">
+            <a
+              class="c-breadcrumbs__link"
+              href="/itp/data-flows/"><span class="c-breadcrumbs__text">Data flows</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                width="24px"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="c-breadcrumbs__icon">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+              </svg>
+            </a>
+          </li>
+      
+        <li class="c-breadcrumbs__item">
+          <a
+            class="c-breadcrumbs__link"
+            href="/itp/data-flows/sprints/2/"data-pagefind-filter="sprint">Sprint 2</a
+          >
+        </li>
+      
+    </ol>
+  </nav>
+  
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Our Courses",
+      "item":"https://curriculum.codeyourfuture.io/"},
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Intro to Programming",
+      "item":"https://curriculum.codeyourfuture.io/itp/"},
+    {
+      "@type": "ListItem",
+      "position":  3 ,
+      "name": "Data flows",
+      "item":"https://curriculum.codeyourfuture.io/itp/data-flows/"},{
+      "@type": "ListItem",
+      "position":  5 ,
+      "name": "Sprint 2",
+      "item":"https://curriculum.codeyourfuture.io/itp/data-flows/sprints/2/"},
+    {
+      "@type": "ListItem",
+      "position":  6 ,
+      "name": "backlog",
+      "item":"https://curriculum.codeyourfuture.io/itp/data-flows/sprints/2/"}
+  ]
+}
+</script>
+
+
+    </div>
+    <h1 class="c-page-header__title e-heading__1"data-pagefind-filter="view"
+        
+      data-pagefind-weight="10">
+      <span class="c-emoji">
+        
+        
+           
+         
+        </span>
+        <span class="c-page-header__title-text">backlog</span>
+               
+    </h1>
+    
+      <h2
+        class="c-page-header__subtitle c-page-header__backlog e-heading__3"
+        data-pagefind-weight="0.5">
+        
+        
+        
+        <a
+          class="c-page-header__link"
+          href="https://github.com/CodeYourFuture/Module-Data-Flows/issues"
+          > Module-Data-Flows
+          🔗 </a
+        >&nbsp; 
+        
+        <a
+          class="c-page-header__link"
+          href="https://github.com/CodeYourFuture/Project-TV-Show/issues"
+          > Project-TV-Show
+          🔗 </a
+        >&nbsp; 
+        
+      </h2>
+    
+    
+    
+    
+
+  </div>
+</header>
+
+    
+
+    <a class="e-button" id="expand-all-button">Expand all</a>
+    <script type="text/javascript">
+    const button = document.querySelector("#expand-all-button");
+    button.addEventListener("click", () => {
+      const expand = button.textContent === "Expand all";
+      button.textContent = expand ? "Collapse all" : "Expand all";
+      document.querySelectorAll("details").forEach((details) => {
+        details.open = expand;
+      })
+    })
+    </script>
+
+    
+    
+    
+    
+
+    
+    
+      
+      
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            
+          
+        
+      
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            
+          
+        
+      
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            
+          
+        
+      
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            
+          
+        
+          
+        
+      
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            
+          
+        
+      
+        
+        
+          
+        
+          
+        
+          
+        
+          
+            
+          
+        
+          
+        
+      
+        
+        
+          
+        
+          
+        
+          
+        
+          
+            
+          
+        
+      
+        
+        
+          
+        
+          
+        
+          
+        
+          
+            
+          
+        
+      
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            
+          
+        
+      
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            
+          
+        
+      
+    
+      
+      
+    
+    
+    
+    
+      <h2>Recurring Tasks</h2>
+      <p>These tasks need to be completed in every sprint.</p>
+      
+        <details class="c-issue">
+    <summary class="c-issue__title e-heading__3">
+        Mentored pair programming
+        <a class="c-issue__link" href="https://github.com/CodeYourFuture/Module-Data-Flows/issues/37">🔗</a>
+        <a href="https://curriculum.codeyourfuture.io/api/clone?state=%7b%22issue%22%3a37%2c%22module%22%3a%22Module-Data-Flows%22%2c%22prevURL%22%3a%22https%3a%2f%2fcurriculum.codeyourfuture.io%2fitp%2fdata-flows%2fsprints%2f2%2fbacklog%2f%22%2c%22sprint%22%3a%22%f0%9f%93%85%20Sprint%202%22%7d" class="e-button"
+            data-props="/itp/data-flows/sprints/2/backlog/">
+            Clone
+        </a>
+    </summary>
+    <div class="c-issue__body">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+    
+    
+
+    
+      
+    
+
+    
+    
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  <section class="c-block c-block--issue">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="mentored-pair-programming">
+        <a href="https://github.com/CodeYourFuture/Module-Data-Flows/issues/37">Mentored pair programming 🔗</a>
+      </h2>
+      
+      
+        
+          
+        
+          
+            <time class="c-block__time" datetime="P60M">🦔 Size Tiny</time>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+
+      
+      
+      
+      
+
+      
+        <details open class="c-block__objectives">
+          <summary>
+            <h3 class="e-heading__4">Learning Objectives</h3>
+          </summary>
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Talk aloud when thinking about a problem.</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Write code in front of someone else.</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Analyse your strategies for solving problems in code.</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        </details>
+      
+    </header>
+
+    <div class="c-block__content c-copy">
+      <!--
+
+
+
+  
+  
+    
+    
+      
+    
+  
+    
+    
+      
+    
+  
+    
+    
+      
+    
+  
+    
+    
+      
+    
+  
+    
+    
+      
+    
+  
+  
+    <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />&ndash;&gt;</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Talk aloud when thinking about a problem.</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Write code in front of someone else.</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Analyse your strategies for solving problems in code.</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" /><!--</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+  
+
+-->
+<h3 id="why-are-we-doing-this">Why are we doing this?</h3>
+<p>Pair programming is an excellent way to develop programming and communication skills. It is often much easier to work through something when working on something 1-to-1. It is also helps you to prepare for technical interviews when you may need to code in front of other people or explain your solution to a problem.</p>
+<p>Pick one piece of programming you&rsquo;re doing (we recommend a codewars kata) and pair up with a volunteer to work on it together.</p>
+<p>See <a
+  href="https://programming.codeyourfuture.io/guides/pair-programming/">the mentored pair programming guide</a> for guidance.</p>
+<p>Book time with a volunteer using one of the Scheduling links in the <a
+  href="https://codeyourfutur-yov6609.slack.com/archives/C07PA66MQMC">#cyf-pair-programming</a> slack channel&rsquo;s <a
+  href="https://codeyourfutur-yov6609.slack.com/canvas/C07PA66MQMC">canvas</a>. If there are no available times, please post in <a
+  href="https://codeyourfutur-yov6609.slack.com/archives/C07PA66MQMC">#cyf-pair-programming</a>.</p>
+<p>Remember, as a learner, you will need to <strong>explain</strong> your thought process, <strong>plan</strong> out what to do, <strong>write</strong> the code and <strong>check</strong> it works</p>
+<h3 id="submission--review">Submission &amp; Review</h3>
+<p>You well get feedback from the volunteer during the session. If there are specific topics you would like to receive feedback on then let them know at the start of the session so they know what to focus on.</p>
+
+    </div>
+  </section>
+
+
+
+
+    </div>
+</details>
+      
+    
+    
+      <h2>Mandatory Tasks</h2>
+      <p>These tasks will help consolidate your learning for this sprint. You should complete as many of these as possible before class on Saturday.</p>
+      
+        <details class="c-issue">
+    <summary class="c-issue__title e-heading__3">
+        Book Library
+        <a class="c-issue__link" href="https://github.com/CodeYourFuture/Module-Data-Flows/issues/31">🔗</a>
+        <a href="https://curriculum.codeyourfuture.io/api/clone?state=%7b%22issue%22%3a31%2c%22module%22%3a%22Module-Data-Flows%22%2c%22prevURL%22%3a%22https%3a%2f%2fcurriculum.codeyourfuture.io%2fitp%2fdata-flows%2fsprints%2f2%2fbacklog%2f%22%2c%22sprint%22%3a%22%f0%9f%93%85%20Sprint%202%22%7d" class="e-button"
+            data-props="/itp/data-flows/sprints/2/backlog/">
+            Clone
+        </a>
+    </summary>
+    <div class="c-issue__body">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+    
+    
+
+    
+      
+    
+
+    
+    
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  <section class="c-block c-block--issue">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="book-library">
+        <a href="https://github.com/CodeYourFuture/Module-Data-Flows/issues/31">Book Library 🔗</a>
+      </h2>
+      
+      
+        
+          
+        
+          
+            <time class="c-block__time" datetime="P60M">🐂 Size Medium</time>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+
+      
+      
+      
+      
+
+      
+        <details open class="c-block__objectives">
+          <summary>
+            <h3 class="e-heading__4">Learning Objectives</h3>
+          </summary>
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Fix known bugs in an application</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Use an application&rsquo;s specification to find any unknown bugs</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        </details>
+      
+    </header>
+
+    <div class="c-block__content c-copy">
+      <!--
+
+
+
+  
+  
+    
+    
+      
+    
+  
+    
+    
+      
+    
+  
+    
+    
+      
+    
+  
+    
+    
+      
+    
+  
+  
+    <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />&ndash;&gt;</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Fix known bugs in an application</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Use an application&rsquo;s specification to find any unknown bugs</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" /><!--</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+  
+
+-->
+<h3 id="link-to-the-coursework">Link to the coursework</h3>
+<p><a
+  href="https://github.com/CodeYourFuture/Module-Data-Flows/tree/main/debugging/book-library">https://github.com/CodeYourFuture/Module-Data-Flows/tree/main/debugging/book-library</a></p>
+<h3 id="why-are-we-doing-this">Why are we doing this?</h3>
+<p>A big part of any development role is identifying and fixing bugs in code. Sometimes you will find these bugs yourself, other times users or colleagues will report them to you.</p>
+<p>In this exercise we have provided some code which doesn&rsquo;t work properly. Start by running the code, then work through the list of bugs and attempt to fix them.</p>
+<h3 id="maximum-time-in-hours">Maximum time in hours</h3>
+<p>3</p>
+<h3 id="how-to-get-help">How to get help</h3>
+<ol>
+<li>
+<p>Share your blockers in your class channel. Use the opportunity to refine your skill in <a
+  href="https://programming.codeyourfuture.io/guides/getting-help/asking-questions/">Asking Questions</a> like a developer.</p>
+</li>
+<li>
+<p>Use the debugger! Write tests! Use the tools you have been learning to help you solve problems methodically.</p>
+</li>
+</ol>
+<h3 id="submission--review">Submission &amp; Review</h3>
+<ol>
+<li>Fork to your Github account.</li>
+<li>Make a branch for this project.</li>
+<li>Make regular small commits in this branch with clear messages.</li>
+<li>When you are ready, open a PR to the CYF repo, following the instructions in the PR template.</li>
+</ol>
+<style>
+  .mermaid svg {
+    height: initial;
+  }
+  .mermaid {
+    margin-bottom: var(--theme-spacing--gutter);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .mermaid[data-processed] {
+    opacity: 1;
+  }
+</style>
+<div class="mermaid">gitGraph
+    commit id: "start"
+    branch feature/book-library
+    commit id: "skeleton page code"
+    commit id: "Fonts and colours"
+    commit id: "mobile layout"
+    commit id: "lighthouse audit revisions mobile"
+    commit id: "desktop layout"
+    commit id: "lighthouse audit revisions desktop"
+    checkout main
+    merge feature/book-library</div>
+
+<script type="module" src="/scripts/mermaid-observer.min.js" defer></script>
+<p>There are several projects in this repo. <a
+  href="https://simpledev.io/lesson/create-branch-gh-desktop-1">Make a new branch</a> based on <code>main</code> for each project.</p>
+<!---
+CHANGE_DIR=^debugging/book-library/
+--->
+    </div>
+  </section>
+
+
+
+
+    </div>
+</details>
+      
+        <details class="c-issue">
+    <summary class="c-issue__title e-heading__3">
+        Linkedin Social Selling Index
+        <a class="c-issue__link" href="https://github.com/CodeYourFuture/Module-Data-Flows/issues/12">🔗</a>
+        <a href="https://curriculum.codeyourfuture.io/api/clone?state=%7b%22issue%22%3a12%2c%22module%22%3a%22Module-Data-Flows%22%2c%22prevURL%22%3a%22https%3a%2f%2fcurriculum.codeyourfuture.io%2fitp%2fdata-flows%2fsprints%2f2%2fbacklog%2f%22%2c%22sprint%22%3a%22%f0%9f%93%85%20Sprint%202%22%7d" class="e-button"
+            data-props="/itp/data-flows/sprints/2/backlog/">
+            Clone
+        </a>
+    </summary>
+    <div class="c-issue__body">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+    
+    
+
+    
+      
+    
+
+    
+    
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  <section class="c-block c-block--issue">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="linkedin-social-selling-index">
+        <a href="https://github.com/CodeYourFuture/Module-Data-Flows/issues/12">Linkedin Social Selling Index 🔗</a>
+      </h2>
+      
+      
+        
+          
+        
+          
+            <time class="c-block__time" datetime="P60M">🦔 Size Tiny</time>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+
+      
+      
+      
+      
+
+      
+        <details open class="c-block__objectives">
+          <summary>
+            <h3 class="e-heading__4">Learning Objectives</h3>
+          </summary>
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Create an active presence on LinkedIn</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        </details>
+      
+    </header>
+
+    <div class="c-block__content c-copy">
+      <!--
+
+
+
+  
+  
+    
+    
+      
+    
+  
+    
+    
+      
+    
+  
+    
+    
+      
+    
+  
+  
+    <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />&ndash;&gt;</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Create an active presence on LinkedIn</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" /><!--</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+  
+
+-->
+<h3 id="why-are-we-doing-this">Why are we doing this?</h3>
+<p>Being on LinkedIn isn’t enough to get noticed. You also need to make sure that you are active on it.</p>
+<p>LinkedIn created a Social Selling Index (<a
+  href="https://www.linkedin.com/sales/ssi">https://www.linkedin.com/sales/ssi</a>.) which shows how you are in relationship to others in your industry or your network. You can use this as a key performance indicator to ensure you are being ranked higher after your actions.</p>
+<p>Think about your strategy to get more active on LinkedIn. Some examples are below, but you can use your creativity. Start with one action and then build upon it.</p>
+<ul>
+<li>Repost interesting articles at least once a week</li>
+<li>React to one of your connections’ posts three times a week</li>
+<li>Share an important Professional Development learning of this week</li>
+<li>Share an important Technical Education learning of this week (not on the same day as the PD one)</li>
+<li>Comment on one of your connections’ posts once a week</li>
+</ul>
+<h3 id="maximum-time-in-hours">Maximum time in hours</h3>
+<p>0.5</p>
+<h3 id="submission--review">Submission &amp; Review</h3>
+<ul>
+<li>Share the screenshot of your LinkedIn Social Selling Index on this issue.</li>
+<li>Add what is the one action you will commit to. Write it using in a SMART way and add it as a comment on this issue.</li>
+</ul>
+
+    </div>
+  </section>
+
+
+
+
+    </div>
+</details>
+      
+        <details class="c-issue">
+    <summary class="c-issue__title e-heading__3">
+        Mandatory Sprint 2 Codewars Katas
+        <a class="c-issue__link" href="https://github.com/CodeYourFuture/Module-Data-Flows/issues/372">🔗</a>
+        <a href="https://curriculum.codeyourfuture.io/api/clone?state=%7b%22issue%22%3a372%2c%22module%22%3a%22Module-Data-Flows%22%2c%22prevURL%22%3a%22https%3a%2f%2fcurriculum.codeyourfuture.io%2fitp%2fdata-flows%2fsprints%2f2%2fbacklog%2f%22%2c%22sprint%22%3a%22%f0%9f%93%85%20Sprint%202%22%7d" class="e-button"
+            data-props="/itp/data-flows/sprints/2/backlog/">
+            Clone
+        </a>
+    </summary>
+    <div class="c-issue__body">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+    
+    
+
+    
+      
+    
+
+    
+    
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  <section class="c-block c-block--issue">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="mandatory-sprint-2-codewars-katas">
+        <a href="https://github.com/CodeYourFuture/Module-Data-Flows/issues/372">Mandatory Sprint 2 Codewars Katas 🔗</a>
+      </h2>
+      
+      
+        
+          
+        
+          
+            <time class="c-block__time" datetime="P60M">🐂 Size Medium</time>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+
+      
+      
+      
+      
+
+      
+        <details open class="c-block__objectives">
+          <summary>
+            <h3 class="e-heading__4">Learning Objectives</h3>
+          </summary>
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Practice applying concepts related to the sprint&rsquo;s prep material in a kata.</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Problem solve a new coding challenge.</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        </details>
+      
+    </header>
+
+    <div class="c-block__content c-copy">
+      <h3 id="link-to-the-coursework">Link to the coursework</h3>
+<p><a
+  href="https://www.codewars.com/collections/cyf-data-flows-sprint-2-mandatory">https://www.codewars.com/collections/cyf-data-flows-sprint-2-mandatory</a></p>
+<!--
+
+
+
+  
+  
+    
+    
+      
+    
+  
+    
+    
+      
+    
+  
+    
+    
+      
+    
+  
+    
+    
+      
+    
+  
+  
+    <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />&ndash;&gt;</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Practice applying concepts related to the sprint&rsquo;s prep material in a kata.</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Problem solve a new coding challenge.</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" /><!--</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+  
+
+-->
+<h3 id="why-are-we-doing-this">Why are we doing this?</h3>
+<p>Every week, you need to complete all of the katas in the collection. If you have extra time, you can do extra katas at random on CodeWars.</p>
+<p>Spend at least 20 minutes per kata, find time at least three times a week to complete this.</p>
+<p>Find the Collection called &ldquo;CYF Data Flows | Sprint 1 | Mandatory&rdquo; on <a
+  href="https://www.codewars.com/users/CodeYourFuture/authored_collections">the CodeYourFuture account</a>.</p>
+<p>Check your Codewars completion status via the <a
+  href="https://codeyourfuture.github.io/Codewars-Progress-Checker/">Codewars Progress Checker</a>.</p>
+<h3 id="maximum-time-in-hours">Maximum time in hours</h3>
+<p>2</p>
+<h3 id="how-to-get-help">How to get help</h3>
+<p>Join the #cyf-codewars Slack channel
+Read the <a
+  href="https://docs.codeyourfuture.io/leaders/running-the-course/codewars">CYF Codewars docs</a>
+Read <a
+  href="https://docs.codeyourfuture.io/leaders/running-the-course/codewars/codewars-advice-from-cyfers">Codewars advice from CYFers</a>
+Read <a
+  href="https://docs.codeyourfuture.io/leaders/running-the-course/codewars/codewars-advice-from-mentors">Codewars advice from mentors</a>
+Book a pair programming slot from the available pairing appointments in the <a
+  href="https://codeyourfutur-yov6609.slack.com/docs/T07MCNDRDHV/F07PAGC9022">CYF Pair Programming Slack Canvas </a></p>
+<h3 id="how-to-submit">How to submit</h3>
+<p>Share a link in the form <a
+  href="https://codeyourfuture.github.io/Codewars-Progress-Checker/#YOUR_CODEWARS_USERNAME">https://codeyourfuture.github.io/Codewars-Progress-Checker/#YOUR_CODEWARS_USERNAME</a>.</p>
+<p>You can obtain the link from the browser location bar after submitting your Codewars username on the <a
+  href="https://codeyourfuture.github.io/Codewars-Progress-Checker/">Codewars Progress Checker</a> page.</p>
+<h3 id="how-to-review">How to review</h3>
+<p>Once you have completed your kata, look at the other solutions in the solutions view. Consider how many different approaches there are.</p>
+
+    </div>
+  </section>
+
+
+
+
+    </div>
+</details>
+      
+        <details class="c-issue">
+    <summary class="c-issue__title e-heading__3">
+        Prepare a demo for Q&amp;A workshop
+        <a class="c-issue__link" href="https://github.com/CodeYourFuture/Module-Data-Flows/issues/484">🔗</a>
+        <a href="https://curriculum.codeyourfuture.io/api/clone?state=%7b%22issue%22%3a484%2c%22module%22%3a%22Module-Data-Flows%22%2c%22prevURL%22%3a%22https%3a%2f%2fcurriculum.codeyourfuture.io%2fitp%2fdata-flows%2fsprints%2f2%2fbacklog%2f%22%2c%22sprint%22%3a%22%f0%9f%93%85%20Sprint%202%22%7d" class="e-button"
+            data-props="/itp/data-flows/sprints/2/backlog/">
+            Clone
+        </a>
+    </summary>
+    <div class="c-issue__body">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+    
+    
+
+    
+      
+    
+
+    
+    
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  <section class="c-block c-block--issue">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="prepare-a-demo-for-qa-workshop">
+        <a href="https://github.com/CodeYourFuture/Module-Data-Flows/issues/484">Prepare a demo for Q&amp;A workshop 🔗</a>
+      </h2>
+      
+      
+        
+          
+        
+          
+            <time class="c-block__time" datetime="P60M">🐇 Size Small</time>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+
+      
+      
+      
+      
+
+      
+        <details open class="c-block__objectives">
+          <summary>
+            <h3 class="e-heading__4">Learning Objectives</h3>
+          </summary>
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Have a demo ready to give at the workshop on Saturday</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        </details>
+      
+    </header>
+
+    <div class="c-block__content c-copy">
+      <!--
+
+
+
+  
+  
+    
+    
+      
+    
+  
+    
+    
+      
+    
+  
+    
+    
+      
+    
+  
+  
+    <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />&ndash;&gt;</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Have a demo ready to give at the workshop on Saturday</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" /><!--</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+  
+
+-->
+<h3 id="why-are-we-doing-this">Why are we doing this?</h3>
+<p>At the next class on Saturday, you will take part in a workshop based on giving questions and answers during a demo.
+In order to do this, you need a short demo ready to use.</p>
+<p>It does <em>not</em> need to be a new demo, you can re-use a demo you have already given. You do not need to spend lots of time preparing this, just make sure you have the materials/presentation/topic needed ready to demo on saturday.</p>
+<p>The purpose of this workshop is to practice giving questions and answers in a professional demo setting, it is not for feedback on the demo itself, so don&rsquo;t worry about having a perfect demo ready.</p>
+<p>You can find out more about the workshop on the day plan.</p>
+<h3 id="maximum-time-in-hours">Maximum time in hours</h3>
+<p>1</p>
+<h3 id="how-to-get-help">How to get help</h3>
+<p>General advice on asking for help can be found on the <a
+  href="https://curriculum.codeyourfuture.io/guides/getting-help/asking-questions/">curriculum pages</a>.</p>
+<p>You can always share your blockers in your class channel and get help from your colleagues.</p>
+<p>If you need a refresher on how to prepare a demo, check out <a
+  href="https://curriculum.codeyourfuture.io/guides/presenting/demoing/">this guide</a>.</p>
+<h3 id="submission--review">Submission &amp; Review</h3>
+<p>There is no submission step, just turn up to class on Saturday and enjoy taking part in the workshop!</p>
+
+    </div>
+  </section>
+
+
+
+
+    </div>
+</details>
+      
+        <details class="c-issue">
+    <summary class="c-issue__title e-heading__3">
+        TV Show Project Level 200: Swap Codebases
+        <a class="c-issue__link" href="https://github.com/CodeYourFuture/Module-Data-Flows/issues/476">🔗</a>
+        <a href="https://curriculum.codeyourfuture.io/api/clone?state=%7b%22issue%22%3a476%2c%22module%22%3a%22Module-Data-Flows%22%2c%22prevURL%22%3a%22https%3a%2f%2fcurriculum.codeyourfuture.io%2fitp%2fdata-flows%2fsprints%2f2%2fbacklog%2f%22%2c%22sprint%22%3a%22%f0%9f%93%85%20Sprint%202%22%7d" class="e-button"
+            data-props="/itp/data-flows/sprints/2/backlog/">
+            Clone
+        </a>
+    </summary>
+    <div class="c-issue__body">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+    
+    
+
+    
+      
+    
+
+    
+    
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  <section class="c-block c-block--issue">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="tv-show-project-level-200-swap-codebases">
+        <a href="https://github.com/CodeYourFuture/Module-Data-Flows/issues/476">TV Show Project Level 200: Swap Codebases 🔗</a>
+      </h2>
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+
+      
+      
+      
+      
+
+      
+    </header>
+
+    <div class="c-block__content c-copy">
+      <h1 id="level-200">Level 200</h1>
+<p>For level 200, you are not allowed to work on the same codebase as you worked on for level 100.</p>
+<p>Swap repos with a random person in your class. You may find it helpful to do this first step together:</p>
+<ol>
+<li>Go to <em>your</em> copy of <code>Project-TV-Show</code> and click on the setting</li>
+<li>Go to the &ldquo;collaborators&rdquo; section</li>
+<li>Next &ldquo;manage access&rdquo;, click &ldquo;add people&rdquo;</li>
+<li>Type the username your partner</li>
+<li>Click the green add button</li>
+<li>Visit the URL for your <em>partner&rsquo;s</em> project and accept the invitation to collaborate / check your email for the invite link</li>
+<li>Clone your <em>partner&rsquo;s</em> repository to your laptop, you will need to give it a different name, such as <code>Project-TV-Show-THEIR_NAME</code></li>
+</ol>
+<p>Now, work individually to complete level 200:</p>
+<p>Look at their level 100 implementation.</p>
+<p>Compare their implementation to yours. Think:</p>
+<ol>
+<li>How is it different?</li>
+<li>What do you prefer about your implementation?</li>
+<li>What do you prefer about their implementation?</li>
+<li>What did you learn that you didn&rsquo;t know before?</li>
+</ol>
+<p>They should do the same with your repository.</p>
+<p>Have a discussion about your answers to these questions. In class, together you should give talk for 5 minutes about your conclusions. (Do this in small groups - we don&rsquo;t want to take all day).</p>
+<h2 id="refactoring">Refactoring</h2>
+<p><strong>Before implementing new features</strong>, take some time to change the codebase you&rsquo;re going to build level 200 in. Change anything you think will make it easier to add more features.</p>
+<p>Some example ideas that you may want to think about:</p>
+<ol>
+<li>Could any variables or functions have more clear names, to help you understand what they do?</li>
+<li>Would <a
+  href="https://code.visualstudio.com/docs/editor/refactoring">extracting functions</a> help make some code easier to understand?</li>
+</ol>
+<p>Work in a new branch on your <em>partner&rsquo;s</em> repo, making any changes you think are useful.
+Then make a pull request to your <em>partner&rsquo;s</em> main branch (take care not to PR to the CYF main branch yet).
+Have them review, and when happy, merge your PR.</p>
+<p>
+
+  <figure>
+      <img
+        loading="lazy"
+        src="/branch-level200_4027119622682256158.png"alt="Git branch diagram for level200" data-pagefind-index-attrs="Git branch diagram for level200"/></figure></p>
+<p>
+
+  <figure>
+      <img
+        loading="lazy"
+        src="/pr-level200_11207859769671410603.png"alt="Select the partner repo in the dropdown when making a PR for level200" data-pagefind-index-attrs="Select the partner repo in the dropdown when making a PR for level200"/></figure></p>
+<h2 id="adding-new-functionality">Adding new functionality</h2>
+<p>Level 200 is all about being able to filter episodes.</p>
+<h3 id="search">Search</h3>
+<p>Add a live search input which meets the following requirements:</p>
+<p>When a user types a search term into the search box:</p>
+<ol>
+<li>Only episodes whose summary <strong>OR</strong> name contains the search term should be displayed</li>
+<li>The search should be case-<strong>in</strong>sensitive</li>
+<li>The display should update <strong>immediately</strong> after each keystroke changes the input</li>
+<li>Display how many episodes match the current search</li>
+<li>If the search box is cleared, <strong>all</strong> episodes should be shown</li>
+</ol>
+<p>Send a pull request to your partner&rsquo;s repo with this functionality. Have them review, and when happy, merge your PR.</p>
+<h4 id="screenshot-of-minimal-version">Screenshot of minimal version</h4>
+<p>Note: Provided your project meets the above requirements, it can <strong>look</strong> however you want.</p>
+<p>Here is one example layout.</p>
+<p>
+
+  <div
+      title="broken image link fromexample-screenshots/example-level-200-search.jpg"
+      style="font-size: 48px; text-align: center;">
+      🖼️
+    </div></p>
+<h3 id="episode-selector">Episode selector</h3>
+<p>Add a <code>select</code> drop-down which lets the user jump quickly to a particular episode, with the following requirements:</p>
+<ol>
+<li>The select input should list all episodes in the format: &ldquo;S01E01 - Winter is Coming&rdquo;</li>
+<li>When the user makes a selection, they should be taken directly to that episode in the list</li>
+<li>Bonus: if you prefer, when the select is used, ONLY show the selected episode. If you do this, be sure to provide a way for the user to see all episodes again.</li>
+</ol>
+<p>Send a pull request to your partner&rsquo;s repo with this functionality. Have them review, and when happy, merge your PR.</p>
+<h4 id="screenshot-of-minimal-version-1">Screenshot of minimal version</h4>
+<p>Note: Provided your project meets the above requirements, it can <strong>look</strong> however you want.</p>
+<p>Here is one example layout.</p>
+<p>
+
+  <figure>
+      <img
+        loading="lazy"
+        src="/example-level-200-selector_10525204389600288944.jpg"alt="Screenshot of a website with a drop-down listing all available episodes" data-pagefind-index-attrs="Screenshot of a website with a drop-down listing all available episodes"/></figure></p>
+
+    </div>
+  </section>
+
+
+
+
+    </div>
+</details>
+      
+        <details class="c-issue">
+    <summary class="c-issue__title e-heading__3">
+        TV Show Project Level 300: Swap back to your old codebase
+        <a class="c-issue__link" href="https://github.com/CodeYourFuture/Module-Data-Flows/issues/477">🔗</a>
+        <a href="https://curriculum.codeyourfuture.io/api/clone?state=%7b%22issue%22%3a477%2c%22module%22%3a%22Module-Data-Flows%22%2c%22prevURL%22%3a%22https%3a%2f%2fcurriculum.codeyourfuture.io%2fitp%2fdata-flows%2fsprints%2f2%2fbacklog%2f%22%2c%22sprint%22%3a%22%f0%9f%93%85%20Sprint%202%22%7d" class="e-button"
+            data-props="/itp/data-flows/sprints/2/backlog/">
+            Clone
+        </a>
+    </summary>
+    <div class="c-issue__body">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+    
+    
+
+    
+      
+    
+
+    
+    
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  <section class="c-block c-block--issue">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="tv-show-project-level-300-swap-back-to-your-old-codebase">
+        <a href="https://github.com/CodeYourFuture/Module-Data-Flows/issues/477">TV Show Project Level 300: Swap back to your old codebase 🔗</a>
+      </h2>
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+
+      
+      
+      
+      
+
+      
+    </header>
+
+    <div class="c-block__content c-copy">
+      <h1 id="level-300">Level 300</h1>
+<p>For level 300, you should switch back to your original codebase.</p>
+<p>You should have reviewed and merged your partner&rsquo;s level 200 changes through a PR to your own repo.</p>
+<p>Remember to pull the latest changes onto your local machine.</p>
+<p>Once again, compare their implementation to yours. Think:</p>
+<ol>
+<li>How is it different?</li>
+<li>What do you prefer about your implementation?</li>
+<li>What do you prefer about their implementation?</li>
+<li>What did you learn that you didn&rsquo;t know before?</li>
+</ol>
+<p>Have a discussion about your answers to these questions. In class, together, give a 3 minute talk about your conclusions.</p>
+<h2 id="refactoring">Refactoring</h2>
+<p>Like with level 200, feel free to change anything in your codebase which you think will make it easier to work with, or to build new features.</p>
+<p>Make a branch and pull request for yourself, and then have your partner review, making sure they understand the changes made.</p>
+<h2 id="adding-new-functionality">Adding new functionality</h2>
+<p>Level 300 is about getting rid of our static data from <code>episodes.js</code>, and instead using an API.</p>
+<h3 id="requirements">Requirements</h3>
+<ol>
+<li>You must delete the <code>episodes.js</code> file from your repository.</li>
+<li>Your website must still work the same, but by using a <code>fetch</code> request to <a
+  href="https://api.tvmaze.com/shows/82/episodes">https://api.tvmaze.com/shows/82/episodes</a>. This URL should serve the exact same content as was returned by <code>getAllEpisodes</code> in <code>episodes.js</code>.</li>
+<li>You must fetch this URL only <em>once</em> per visit to your website. You should not re-fetch when someone searches, scrolls, or selects an episode from the drop-down.</li>
+<li>If you don&rsquo;t have data yet, you should show something to tell the user to wait for the data.</li>
+<li>If an error occurred loading the data, notify the user.</li>
+<li>Note: real users don&rsquo;t look in the console - <code>console.log</code> or <code>console.error</code> are not sufficient for this requirement.</li>
+<li>You will need to simulate an error to test this out yourself.</li>
+</ol>
+<h3 id="documentation">Documentation</h3>
+<p>You can see that this endpoint has been documented here: <a
+  href="https://www.tvmaze.com/api#show-episode-list">https://www.tvmaze.com/api#show-episode-list</a></p>
+
+    </div>
+  </section>
+
+
+
+
+    </div>
+</details>
+      
+        <details class="c-issue">
+    <summary class="c-issue__title e-heading__3">
+        Your LinkedIn tips
+        <a class="c-issue__link" href="https://github.com/CodeYourFuture/Module-Data-Flows/issues/8">🔗</a>
+        <a href="https://curriculum.codeyourfuture.io/api/clone?state=%7b%22issue%22%3a8%2c%22module%22%3a%22Module-Data-Flows%22%2c%22prevURL%22%3a%22https%3a%2f%2fcurriculum.codeyourfuture.io%2fitp%2fdata-flows%2fsprints%2f2%2fbacklog%2f%22%2c%22sprint%22%3a%22%f0%9f%93%85%20Sprint%202%22%7d" class="e-button"
+            data-props="/itp/data-flows/sprints/2/backlog/">
+            Clone
+        </a>
+    </summary>
+    <div class="c-issue__body">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+    
+    
+
+    
+      
+    
+
+    
+    
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  <section class="c-block c-block--issue">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="your-linkedin-tips">
+        <a href="https://github.com/CodeYourFuture/Module-Data-Flows/issues/8">Your LinkedIn tips 🔗</a>
+      </h2>
+      
+      
+        
+          
+        
+          
+            <time class="c-block__time" datetime="P60M">🐇 Size Small</time>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+
+      
+      
+      
+      
+
+      
+        <details open class="c-block__objectives">
+          <summary>
+            <h3 class="e-heading__4">Learning Objectives</h3>
+          </summary>
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Write 100 words explaining three tips for using LinkedIn</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        </details>
+      
+    </header>
+
+    <div class="c-block__content c-copy">
+      <!--
+
+
+
+  
+  
+    
+    
+      
+    
+  
+    
+    
+      
+    
+  
+    
+    
+      
+    
+  
+  
+    <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />&ndash;&gt;</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Write 100 words explaining three tips for using LinkedIn</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" /><!--</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+  
+
+-->
+<h3 id="why-are-we-doing-this">Why are we doing this?</h3>
+<p>In order to use LinkedIn effectively it&rsquo;s important to reflect on what works for you and on what doesn&rsquo;t work so well.</p>
+<p>Write a <strong>100-word text</strong> with the <strong>top 3 tips</strong> you have learnt about <strong>LinkedIn</strong> and how to use it effectively.</p>
+<p>Review the text with an automated grammar tool.</p>
+<h3 id="estimated-time-in-hours-pd-has-max-4-per-week-total">Estimated time in hours (PD has max 4 per week total)</h3>
+<p>0.5</p>
+<h3 id="submission--review">Submission &amp; Review</h3>
+<p>Create the Google Doc in your own Google Drive.
+Ensure the document can be opened and commented on by reviewers - you can find out how to do that <a
+  href="https://support.google.com/a/users/answer/9305685?hl=en">here</a>.
+Share the link to the document in a comment on this issue in your planner.</p>
+
+    </div>
+  </section>
+
+
+
+
+    </div>
+</details>
+      
+        <details class="c-issue">
+    <summary class="c-issue__title e-heading__3">
+        Your SWOT analysis
+        <a class="c-issue__link" href="https://github.com/CodeYourFuture/Module-Data-Flows/issues/13">🔗</a>
+        <a href="https://curriculum.codeyourfuture.io/api/clone?state=%7b%22issue%22%3a13%2c%22module%22%3a%22Module-Data-Flows%22%2c%22prevURL%22%3a%22https%3a%2f%2fcurriculum.codeyourfuture.io%2fitp%2fdata-flows%2fsprints%2f2%2fbacklog%2f%22%2c%22sprint%22%3a%22%f0%9f%93%85%20Sprint%202%22%7d" class="e-button"
+            data-props="/itp/data-flows/sprints/2/backlog/">
+            Clone
+        </a>
+    </summary>
+    <div class="c-issue__body">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+    
+    
+
+    
+      
+    
+
+    
+    
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  <section class="c-block c-block--issue">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="your-swot-analysis">
+        <a href="https://github.com/CodeYourFuture/Module-Data-Flows/issues/13">Your SWOT analysis 🔗</a>
+      </h2>
+      
+      
+        
+          
+        
+          
+            <time class="c-block__time" datetime="P60M">🐇 Size Small</time>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+
+      
+      
+      
+      
+
+      
+        <details open class="c-block__objectives">
+          <summary>
+            <h3 class="e-heading__4">Learning Objectives</h3>
+          </summary>
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Conduct a personal <strong>SWOT</strong> analysis</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        </details>
+      
+    </header>
+
+    <div class="c-block__content c-copy">
+      <!--
+
+
+
+  
+  
+    
+    
+      
+    
+  
+    
+    
+      
+    
+  
+    
+    
+      
+    
+  
+  
+    <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />&ndash;&gt;</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Conduct a personal <strong>SWOT</strong> analysis</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" /><!--</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+  
+
+-->
+<h3 id="why-are-we-doing-this">Why are we doing this?</h3>
+<p>A <strong>SWOT</strong> analysis is a tool used to asses <strong>S</strong>trengths, <strong>W</strong>eaknesses, <strong>O</strong>pportunities and <strong>T</strong>hreats.</p>
+<p>Conduct a personal <strong>SWOT</strong> analysis. By answering the following questions, consider the key areas you want to improve. Remember to refer to the development plan you have already been working on:</p>
+<ul>
+<li><strong>Strengths</strong>: What are you great at? What makes you stand out? What positive comments do people say about your strengths? What are your greatest achievements?</li>
+<li><strong>Weaknesses</strong>: What hard and soft skills do you need to work on? Where do you need to improve? What holds you back? What key habits do you want to overcome? What do others say about your development areas?</li>
+<li><strong>Opportunities</strong>: Who can help you achieve your goals? What can you do differently to become more employable? How can you go the extra mile? How can you create opportunities?</li>
+<li><strong>Threats</strong>: What could stop you from achieving your career goals? What do you need to stop doing now? What&rsquo;s out of your control?</li>
+</ul>
+<p>Write your analysis down.</p>
+<h3 id="maximum-time-in-hours">Maximum time in hours</h3>
+<p>1</p>
+<h3 id="how-to-submit">How to submit</h3>
+<ul>
+<li>Share the link to the doc with your SWOT analysis on your issue. Make sure anyone with this link can comment on it.</li>
+<li>Review your Career Development Plan if it is applicable.</li>
+</ul>
+
+    </div>
+  </section>
+
+
+
+
+    </div>
+</details>
+      
+    
+    
+      <h2>Optional Tasks</h2>
+      <p>These are optional "stretch goals" to attempt when you have finished the mandatory tasks. They may be more challenging or require some additional research.</p>
+      
+        <details class="c-issue">
+    <summary class="c-issue__title e-heading__3">
+        Review your Development Plan
+        <a class="c-issue__link" href="https://github.com/CodeYourFuture/Module-Data-Flows/issues/7">🔗</a>
+        <a href="https://curriculum.codeyourfuture.io/api/clone?state=%7b%22issue%22%3a7%2c%22module%22%3a%22Module-Data-Flows%22%2c%22prevURL%22%3a%22https%3a%2f%2fcurriculum.codeyourfuture.io%2fitp%2fdata-flows%2fsprints%2f2%2fbacklog%2f%22%2c%22sprint%22%3a%22%f0%9f%93%85%20Sprint%202%22%7d" class="e-button"
+            data-props="/itp/data-flows/sprints/2/backlog/">
+            Clone
+        </a>
+    </summary>
+    <div class="c-issue__body">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+    
+    
+
+    
+      
+    
+
+    
+    
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  <section class="c-block c-block--issue">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="review-your-development-plan">
+        <a href="https://github.com/CodeYourFuture/Module-Data-Flows/issues/7">Review your Development Plan 🔗</a>
+      </h2>
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+
+      
+      
+      
+      
+
+      
+        <details open class="c-block__objectives">
+          <summary>
+            <h3 class="e-heading__4">Learning Objectives</h3>
+          </summary>
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Review your development plan</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Identify the format of a SMART goal</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Revise one short, medium, and long term SMART goal in your plan</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        </details>
+      
+    </header>
+
+    <div class="c-block__content c-copy">
+      <!--
+
+
+
+  
+  
+    
+    
+      
+    
+  
+    
+    
+      
+    
+  
+    
+    
+      
+    
+  
+    
+    
+      
+    
+  
+    
+    
+      
+    
+  
+  
+    <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />&ndash;&gt;</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Review your development plan</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Identify the format of a SMART goal</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Revise one short, medium, and long term SMART goal in your plan</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" /><!--</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+  
+
+-->
+<h3 id="why-are-we-doing-this">Why are we doing this?</h3>
+<p>Work on your Career Development plan, so that it reflects your learnings and where you evolved. Your goals might be different now, and writing them down can keep your focus and give you a tool to discuss them with anyone you trust who would like an opinion.</p>
+<p>Remember: 2-3 areas are enough to change in such a short time, so it&rsquo;s better to focus on a few, get them nailed, and then choose another area.</p>
+<p>Technical knowledge is important, but the <strong>skills and processes</strong> are also important so you can get a job in tech. So think about both sides.</p>
+<h4 id="examples-of-goals">Examples of goals</h4>
+<ul>
+<li><strong>Short term</strong>: Practicing coding = Code 1 hour a day on weekdays</li>
+<li><strong>Medium-term</strong>: Enhance my written English = Trying to correct by myself the errors that the automated grammar tool is showing in my text</li>
+<li><strong>Long term</strong>: Get a job in tech = Send 1 tailored CV per day when I have graduated from Code Your Future</li>
+</ul>
+<h3 id="maximum-time-in-hours">Maximum time in hours</h3>
+<p>0.5</p>
+<h3 id="submission--review">Submission &amp; Review</h3>
+<p>Your development plan is your own and so there is no need to submit it for review. If you would like feedback you could share it with a mentor or peer you respect and ask for their advice.</p>
+
+    </div>
+  </section>
+
+
+
+
+    </div>
+</details>
+      
+    
+</article>
+
+
+        
+
+  <footer class="c-page-footer">
+    <nav class="c-page-footer__nav">
+      
+      
+        <a
+          class="c-page-footer__prev c-page-footer__link e-link"
+          href="/itp/data-flows/sprints/2/prep/"
+          >Prep</a
+        >←
+      
+      <span class="c-page-footer__this">backlog</span>
+      
+        →<a
+          class="c-page-footer__next c-page-footer__link e-link"
+          href="/itp/data-flows/sprints/2/day-plan/"
+          >day-plan</a
+        >
+      
+    </nav>
+  </footer>
+
+
+      </main><footer class="l-layout__footer l-footer">
+  <a
+    class="l-footer__github e-button e-button--icon"
+    href="https://github.com/CodeYourFuture/curriculum/">
+    <svg
+  focusable="false"
+  class="e-button__icon"
+  role="presentation"
+  width="96"
+  viewbox="0 0 98 96"
+  xmlns="http://www.w3.org/2000/svg">
+  <path
+    fill-rule="evenodd"
+    clip-rule="evenodd"
+    d="M48.854 0C21.839 0 0 22 0 49.217c0 21.756 13.993 40.172 33.405 46.69 2.427.49 3.316-1.059 3.316-2.362 0-1.141-.08-5.052-.08-9.127-13.59 2.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015 4.934.326 7.523 5.052 7.523 5.052 4.367 7.496 11.404 5.378 14.235 4.074.404-3.178 1.699-5.378 3.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283 0-5.378 1.94-9.778 5.014-13.2-.485-1.222-2.184-6.275.486-13.038 0 0 4.125-1.304 13.426 5.052a46.97 46.97 0 0 1 12.214-1.63c4.125 0 8.33.571 12.213 1.63 9.302-6.356 13.427-5.052 13.427-5.052 2.67 6.763.97 11.816.485 13.038 3.155 3.422 5.015 7.822 5.015 13.2 0 18.905-11.404 23.06-22.324 24.283 1.78 1.548 3.316 4.481 3.316 9.126 0 6.6-.08 11.897-.08 13.526 0 1.304.89 2.853 3.316 2.364 19.412-6.52 33.405-24.935 33.405-46.691C97.707 22 75.788 0 48.854 0z"
+    fill="currentColor" />
+</svg>
+
+    <span class="is-invisible">Find us on GitHub</span>
+  </a>
+  <p class="l-footer__impressum e-heading__6">
+    This
+    <a href="https://github.com/CodeYourFuture/curriculum/">free and open source programme</a>
+    is a project of
+    <a href="https://codeyourfuture.io/">Code Your Future</a>
+    <br />
+    Creative Commons Attribution-ShareAlike 4.0
+  </p>
+  <dark-mode class="l-footer__mode"
+    ><button
+      slot="button"
+      id="mode-toggle"
+      type="button"
+      class="e-button e__button--toggle e-button--icon">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="e-icon e__button__icon e-icon--moon">
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
+      </svg>
+      <span class="is-invisible">Toggle between light and dark mode</span>
+    </button></dark-mode
+  >
+</footer>
+
+
+
+<script src="/scripts/app.min.js" defer></script>
+
+<script src="/scripts/youtube-player.min.js" defer></script>
+
+<script src="/scripts/tab-panels.min.js" type="module" defer></script>
+
+<script src="/scripts/dark-mode.min.js"></script>
+
+<script src="/scripts/alert-message.min.js" defer></script>
+
+
+
+
+
+
+
+</div>
+  </body>
+</html>

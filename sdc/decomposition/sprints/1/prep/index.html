@@ -1,0 +1,4020 @@
+<!DOCTYPE html>
+
+
+
+
+<html lang="en" class="p-prep"><head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  <title data-pagefind-meta="title">
+    
+      Software Development Course 
+    
+      Decomposition 
+    
+      Sprint 1 
+    
+    Prep
+  </title>
+  
+    <meta
+      name="description"
+      content=" CYF Courses: Overview description of the prep work for the sprint" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+  <style>
+    body,
+    html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      animation: fade-in 300ms;
+    }
+    @keyframes fade-in {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  </style>
+  
+  
+  <link
+    rel="stylesheet"
+    href="/bundled.min.b6a4520237559385268d63a9daa81d96.css"
+    media="print"
+    onload="this.media='all'" />
+
+  
+  
+    
+    
+    <link
+      rel="stylesheet"
+      href="/custom.min.8ded6a1a88bc7cc98bdef8dc33d15f3a.css"
+      media="print"
+      onload="this.media='all'" />
+  
+
+
+  <noscript>
+    <link rel="stylesheet" href="/bundled.min.b6a4520237559385268d63a9daa81d96.css" />
+  </noscript>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&amp;display=swap"
+    rel="stylesheet"
+    media="print"
+    onload="this.media='all'" />
+
+  <link rel="shortcut icon" href="https://curriculum.codeyourfuture.io/favicon.ico" />
+  <meta name="theme-color" content="#e3ddeef2" />
+  <link rel="manifest" href="https://curriculum.codeyourfuture.io/manifest.json" />
+</head>
+<body>
+    <a class="c-skip-link e-button" id="skip-link" href="#main">Skip to main</a>
+    <div class="l-layout">
+      <header class="l-layout__header l-header">
+  <div class="l-header__container">
+    <h1 class="l-header__heading e-heading__6" data-pagefind-ignore>
+      <a class="l-header__home" href="/"
+        ><span class="is-invisible"
+          >sdc Prep CYF Courses</span
+        >
+        <span class="is-none--lt-container">
+          <svg
+          xmlns="http://www.w3.org/2000/svg"
+          title="Code Your Future."
+          viewBox="0 0 621.64 155.81"
+          width="140px"
+          focusable="false"
+          role="img">
+          <path
+            fill="var(--theme-color--brand)"
+            d="M103.37 56.51C96.91 63.64 87.03 69.9 74.6 69.9c-20.14 0-33.52-12.91-33.52-34.09C41.08 13.97 57.5.87 69.94.87c9.5 0 13.77 5.32 14.63 6.46l2.18-5.27h14.91v27h-17c-.28-6.18-3.32-12-10.06-12s-11.3 8.45-11.3 18.8c0 9.4 4.84 17.86 13.86 17.86 8 0 14.24-8.36 15.1-9.31Zm2.88-21.85C106.25 14.15 119.92 0 139.58 0c23.26 0 34.09 14 34.09 35.32s-12 34.57-33.43 34.57c-19.88 0-33.99-11.49-33.99-35.23Zm43.68.66c0-11.49-3.13-20.7-10.45-20.7-5.79-.09-9.78 8.26-9.78 20 0 12.44 4.47 20.32 10.54 20.32s9.65-7.88 9.65-19.62Zm27.49 20.23h5.89V14.34h-5.89V1.8h29c23 0 36.09 14.15 36.09 32.29 0 21.65-13.11 34.09-36.47 34.09h-28.62Zm29 0c10.03-.19 14.21-9.59 14.21-21.49 0-10.16-4.18-19.75-14.25-19.75h-3.61v41.24ZM303.04 1.8v21h-16.43v-8.46h-15.19v13.1h18v12.62h-18v15.49h15.19v-8.83h16.43v21.46h-57.26V55.55h6V14.34h-6V1.8Z" />
+          <path
+            fill="var(--theme-color--ink)"
+            d="M274.42 87.82v21h-16.8v-8.45h-14.37v16.52h18v12.63h-18v12.04h9.68v12.63h-35.29v-12.63h5.89v-41.21h-5.89V87.82Zm33.04 0v12.24h-5.12v20.51c0 15.28 3.41 18.51 9.49 18.51 5.79 0 9.59-2.28 9.59-18.61v-20.12h-5.17V87.82h28.11v12.24h-5.11v23.07c0 22.51-9.4 32.67-27.25 32.67-19.18-.57-29.43-10.64-29.43-32.19v-23.45h-5.32V87.82Zm103.5 24.69h-14v-12.16h-8v41.21h7.88v12.63h-35.26v-12.63h7.79v-41.21h-8.12v12.16h-14V87.82h63.71ZM444 87.82v12.24h-5.13v20.51c0 15.28 3.42 18.51 9.5 18.51 5.79 0 9.59-2.28 9.59-18.61v-20.12h-5.13V87.82h28.11v12.24h-5.13v23.07c0 22.51-9.4 32.67-27.25 32.67-19.18-.57-29.44-10.64-29.44-32.19v-23.45h-5.32V87.82Zm71.59 0c22 0 26.3 8.73 26.3 19.56 0 7.4-5.88 12.63-13.76 13.77 6.55.95 12.44 6.64 12.44 13.48 0 4.08.57 6.46 2.27 6.46 1.43 0 2.19-1.14 2.19-3v-3.13h6.36v5.22c0 7.88-3.32 15.19-13.86 15.19-12.44 0-18.42-6.55-18.42-17.66 0-8.64-1.05-10.73-9.5-10.73v14.68h5.79v12.53h-30.67v-12.53h5.32v-41.4h-5.32V87.82Zm-6 28.48h4.27c5.51 0 9.12-2.65 9.12-7.69 0-5.6-3.13-8.45-8.64-8.45h-4.75Zm102.38-28.48v21h-16.43v-8.45h-15.19v13.09h18v12.6h-18v15.5h15.19v-8.83h16.43v21.46h-57.26v-12.63h6v-41.21h-6V87.82Zm-227.72-56.1c.38-1.9 2.47-5.89 3.51-8.17l5.22-9.59h-5.22V1.8h25.54v12.16h-5.05l-17.62 30.86v11h5.32v12.36h-30.39V55.83h5.41v-11.2l-18.42-30.67h-4.65V1.8h32.47v12.16h-4.93l5.5 10.1c.57 1.81 2.57 6.08 2.95 7.7Zm29.54 2.94C413.79 14.15 427.47 0 447.12 0c23.27 0 34.09 14 34.09 35.32s-12 34.57-33.42 34.57c-19.85 0-34-11.49-34-35.23Zm43.68.66c0-11.49-3.13-20.7-10.44-20.7-5.79-.09-9.78 8.26-9.78 20 0 12.44 4.46 20.32 10.54 20.32s9.68-7.88 9.68-19.62ZM514.25 1.8v12.26h-5.13v20.5c0 15.29 3.42 18.52 9.5 18.52 5.79 0 9.59-2.28 9.59-18.61V14.34h-5.13V1.8h28.11v12.26h-5.13v23.07c0 22.5-9.4 32.66-27.25 32.66-19.18-.57-29.44-10.63-29.44-32.19V14.15h-5.32V1.8Zm71.59 0c22 0 26.31 8.74 26.31 19.57 0 7.4-5.89 12.62-13.77 13.76 6.55 1 12.44 6.65 12.44 13.49 0 4.08.57 6.46 2.27 6.46 1.43 0 2.19-1.14 2.19-3V48.9h6.36v5.23c0 7.88-3.32 15.19-13.86 15.19-12.44 0-18.42-6.55-18.42-17.66 0-8.64-1.05-10.73-9.5-10.73v14.71h5.79v12.54h-30.67V55.64h5.32v-41.4h-5.32V1.8Zm-6 28.49h4.27c5.51 0 9.12-2.66 9.12-7.69 0-5.6-3.13-8.45-8.64-8.45h-4.75ZM28.39 14.7l5.8 10.64-23.46 10.72 23.46 10.55-3.61 9.87L0 42.24v-13.3Zm318.7 14.24v13.3l-30.58 14.24-3.61-9.87 23.46-10.55-23.46-10.72 5.8-10.64Z" />
+        </svg>
+        </span>
+        <span class="is-none--gt-container">
+          <svg
+          xmlns="http://www.w3.org/2000/svg"
+          version="1.0"
+          viewBox="0 0 512 512"
+          width="48px">
+          <path
+            fill="currentcolor"
+            stroke="currentcolor"
+            d="M225.5 1c-1.1.5-3.5.9-5.3.9-4.1.1-22.9 4.5-30.7 7.2-63.1 22-114.7 72.3-142.7 139.4-6.4 15.2-11.8 33.8-16.7 57-4.1 19.7-5.4 64.5-2.6 90.8C33 346.2 49.8 390.1 76.8 425c6.2 7.9 23.9 26.4 30.7 32 8.1 6.7 26.1 18.7 35.1 23.6 28.1 15.1 58 24.3 91.9 28.3 5.5.7 13.6 1.7 18 2.2 8.8 1.2 33.9.7 48-.9 11-1.3 31.7-4.8 36.5-6.2 1.9-.5 8-2.3 13.5-3.9 21.3-6.1 47.2-17.8 67.5-30.5 8.8-5.4 23.7-15.8 28.5-19.7 10.2-8.4 24.5-21.3 31.4-28.2l8.4-8.5-2.2-2.9c-1.3-1.5-4.6-5.3-7.4-8.3-6.2-6.7-14.5-15.7-21.2-23.1-2.7-3-7.5-8.2-10.5-11.4-3-3.3-9.8-10.8-15.1-16.5-21.5-23.6-24.2-26.5-24.9-26.8-.3-.1-2 1.2-3.6 3-1.6 1.9-6.3 7.1-10.4 11.7-8.6 9.7-25.6 24.6-35.9 31.4-21.4 14.4-42.5 21.7-62.6 21.7-15.3-.1-29.3-3.3-42.5-10-22.8-11.5-41.9-35.5-51.5-64.7-4.2-12.8-4.3-13.4-5.9-22.8-3.8-22.9-4.6-39.2-2.6-55.6 2.7-22.7 3.3-26.5 5-33.2 7.9-30.9 16.7-48.6 32.4-65.6 16.8-17.9 41.1-24.9 65.1-18.6 30 7.8 50.7 36.3 55.5 76.3.5 4.6 1.2 8.7 1.5 9.3.4.5 25.1.9 62.6.9H474V9H364.2L357 26.7c-4 9.8-7.9 18.5-8.7 19.3-1.3 1.3-2.1.8-6.6-4.3-6-6.9-18.3-16.7-28.2-22.5-7.4-4.3-22.6-10.9-28.5-12.4-9.2-2.2-18.1-4.1-24-5-9-1.3-33.1-1.9-35.5-.8z" />
+        </svg>
+        </span>
+      </a>
+    </h1>
+    <link
+  href="/pagefind/pagefind-ui.css"
+  rel="stylesheet"
+  media="print"
+  onload="this.media='all'" />
+<style>
+  :root {
+    --pagefind-ui-primary: var(--theme-color--ink);
+    --pagefind-ui-text: var(--theme-color--ink);
+    --pagefind-ui-background: var(--theme-color--paper);
+    --pagefind-ui-border: var(--theme-color--outline);
+    --pagefind-ui-tag: var(--theme-color--block);
+    --pagefind-ui-border-radius: 2em;
+    --pagefind-ui-image-border-radius: var(--theme-border-radius);
+    --pagefind-ui-font: var(--theme-font--copy);
+  }
+  .pagefind-ui--reset {
+    position: absolute;
+  }
+  #search .pagefind-ui__search-input {
+    box-shadow: var(--theme-box-shadow--inset);
+    margin-bottom: var(--theme-spacing--1);
+  }
+  #search .pagefind-ui__search-clear {
+    background-color: transparent;
+  }
+  #search .pagefind-ui__drawer {
+    background-color: var(--theme-color--paper);
+    box-shadow: var(--theme-box-shadow--slim);
+    transform: translateY(-1.5px);
+    padding: 0 var(--theme-spacing--2);
+    max-height: calc(100vh - 4rem);
+    overflow-y: auto;
+  }
+  #search .pagefind-ui__result {
+    padding: var(--theme-spacing--1) 0 var(--theme-spacing--2) 0;
+  }
+  #search .pagefind-ui__result:focus-within,
+  #search .pagefind-ui__button:focus {
+    background-color: var(--theme-color--block);
+  }
+  #search .pagefind-ui__button {
+    border: none;
+  }
+</style>
+<script src="/pagefind/pagefind-ui.js" type="text/javascript" defer></script>
+<div id="search" class="l-header__search"></div>
+<script>
+  window.addEventListener("DOMContentLoaded", (event) => {
+    new PagefindUI({
+      element: "#search",
+      showSubResults: true,
+      pageSize: 3,
+      showImages: false,
+      showTags: true,
+    });
+  });
+</script>
+
+    <button
+      class="l-header__action e-button e-button--icon js-menu-toggle e-heading__3">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+        <path
+          stroke="var(--theme-color--ink)"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M13 5a1 1 0 1 0-2 0 1 1 0 0 0 2 0Zm0 7a1 1 0 1 0-2 0 1 1 0 0 0 2 0Zm0 7a1 1 0 1 0-2 0 1 1 0 0 0 2 0Z" />
+      </svg>
+      <span class="is-invisible">Open Menu.</span>
+    </button>
+  </div>
+</header>
+
+      <nav
+  class="l-layout__menu l-menu"
+  aria-label="Main Site Links."
+  id="site-menu"
+  hidden
+  tabindex="0">
+  <div class="l-menu__container">
+    <h2 class="l-menu__heading e-heading__2">
+      <a href="/" class="l-menu__home is-invisible">Menu</a>
+    </h2>
+    <button
+      class="l-menu__action e-button e-button--icon js-menu-toggle e-heading__2"
+      id="close-menu">
+      ❎
+      <span class="is-invisible">Close Menu.</span>
+    </button>
+    <ul class="l-menu__primary">
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/guides/">
+            Guides
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/sdc/tools/">
+            Tools
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/sdc/logic/">
+            Logic
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/sdc/decomposition/">
+            Decomposition
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/sdc/legacy/">
+            Legacy code
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/sdc/complexity/">
+            Complexity
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/tracks/servers/">
+            Servers
+          </a>
+        </li>
+    </ul>
+    <ul class="l-menu__secondary">
+        <li class="l-menu__item">
+          <a class="e-heading__3 l-menu__link" href="https://codeyourfuture.io">
+            CYF 👈🏾
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__3 l-menu__link" href="https://codeyourfuture.io/volunteers/">
+            Join Us 👋🏿
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__3 l-menu__link" href="https://codeyourfuture.io/donate/">
+            Support 🫶🏼
+          </a>
+        </li>
+    </ul>
+  </div>
+</nav>
+
+      <main
+        id="main"
+        class="l-layout__main l-main"
+        tabindex="0"
+        data-pagefind-body>
+        
+  
+    <solo-view tabindex="0">
+      
+
+
+      <div slot="header">
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+<header
+  class="c-page-header 
+    c-page-header--solo
+   c-page-header--toc">
+  
+  <div class="c-page-header__container">
+    <div class="c-page-header__breadcrumbs">
+      
+  <nav class="c-breadcrumbs">
+    <ol class="c-breadcrumbs__list">
+      
+        
+        
+          <li class="c-breadcrumbs__item">
+            <a
+              class="c-breadcrumbs__link"
+              href="/sdc/"data-pagefind-filter="module"><span class="c-breadcrumbs__text">Software Development Course</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                width="24px"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="c-breadcrumbs__icon">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+              </svg>
+            </a>
+          </li>
+        
+        
+          <li class="c-breadcrumbs__item">
+            <a
+              class="c-breadcrumbs__link"
+              href="/sdc/decomposition/"><span class="c-breadcrumbs__text">Decomposition</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                width="24px"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="c-breadcrumbs__icon">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+              </svg>
+            </a>
+          </li>
+      
+        <li class="c-breadcrumbs__item">
+          <a
+            class="c-breadcrumbs__link"
+            href="/sdc/decomposition/sprints/1/"data-pagefind-filter="sprint">Sprint 1</a
+          >
+        </li>
+      
+    </ol>
+  </nav>
+  
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Our Courses",
+      "item":"https://curriculum.codeyourfuture.io/"},
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Software Development Course",
+      "item":"https://curriculum.codeyourfuture.io/sdc/"},
+    {
+      "@type": "ListItem",
+      "position":  3 ,
+      "name": "Decomposition",
+      "item":"https://curriculum.codeyourfuture.io/sdc/decomposition/"},{
+      "@type": "ListItem",
+      "position":  5 ,
+      "name": "Sprint 1",
+      "item":"https://curriculum.codeyourfuture.io/sdc/decomposition/sprints/1/"},
+    {
+      "@type": "ListItem",
+      "position":  6 ,
+      "name": "Prep",
+      "item":"https://curriculum.codeyourfuture.io/sdc/decomposition/sprints/1/"}
+  ]
+}
+</script>
+
+
+    </div>
+    <h1 class="c-page-header__title e-heading__1"data-pagefind-filter="view"
+        
+      data-pagefind-weight="10">
+      <span class="c-emoji">
+        
+        
+           
+            <time-total class="c-page-header__time"></time-total>
+      
+         
+        </span>
+        <span class="c-page-header__title-text">Prep</span>
+               
+    </h1>
+    
+      
+        <h2 class="c-page-header__description e-heading__3">
+          Overview description of the prep work for the sprint
+        </h2>
+      
+    
+    
+    
+    
+      <div class="c-page-header__toc " id="toc">
+        <section class="c-toc" aria-label="Table of contents.">
+          <a id="top" class="c-toc__top e-button e-button--icon" href="#toc"
+            >🔖 <span class="is-invisible">back to top</span></a
+          >
+          
+            <nav id="TableOfContents"></nav>
+          
+          
+            <ol>
+              
+                <li>
+                  <a href="#get-on-the-cyf-hosted-environment" data-pagefind-weight="5"
+                    >Get on the CYF Hosted Environment</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#overview" data-pagefind-weight="5"
+                    >Overview</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#limitations-and-trade-offs" data-pagefind-weight="5"
+                    >Limitations and trade-offs</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#read-about-the-internet" data-pagefind-weight="5"
+                    >Read about the Internet</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#read-about-the-world-wide-web" data-pagefind-weight="5"
+                    >Read about the world-wide web</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#limitations-of-frontends" data-pagefind-weight="5"
+                    >Limitations of frontends</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#limited-information" data-pagefind-weight="5"
+                    >Limited information</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#limited-sharing-across-computers" data-pagefind-weight="5"
+                    >Limited sharing across computers</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#limited-cross-user-interaction" data-pagefind-weight="5"
+                    >Limited cross-user interaction</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#everything-is-public" data-pagefind-weight="5"
+                    >Everything is public</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#what-is-a-backend" data-pagefind-weight="5"
+                    >What is a backend?</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#example-backend" data-pagefind-weight="5"
+                    >Example backend</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#backend-statefulness" data-pagefind-weight="5"
+                    >Backend statefulness</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#limitations-of-backends" data-pagefind-weight="5"
+                    >Limitations of backends</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#responsibilities-of-frontends-backends-and-databases" data-pagefind-weight="5"
+                    >Responsibilities of frontends, backends, and databases</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#design-a-frontend-and-backend" data-pagefind-weight="5"
+                    >Design a frontend and backend</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#write-a-frontend-and-backend" data-pagefind-weight="5"
+                    >Write a frontend and backend</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#deploy-a-frontend-and-backend" data-pagefind-weight="5"
+                    >Deploy a frontend and backend</a
+                  >
+                  
+                </li>
+              
+            </ol>
+          
+          
+        </section>
+      </div>
+    
+
+  </div>
+</header>
+</div>
+      <div slot="blocks">
+        
+        
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="get-on-the-cyf-hosted-environment">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="get-on-the-cyf-hosted-environment">
+        Get on the CYF Hosted Environment
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="30 minutes countdown" datetime="P30M">30&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+    <div class="c-block__content c-copy">
+      <p>In this module you will deploy applications to the CYF hosted environment.</p>
+<p>Make sure you&rsquo;ve been invited to it, and can log in.</p>
+<p>You may want to follow <a
+  href="/guides/deploying/cyf/">the deployment guide</a> with one of your existing projects to make sure everything is working for you.</p>
+
+    </div>
+    
+    
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="overview">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="overview">
+        Overview
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="5 minutes countdown" datetime="P5M">5&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+    <div class="c-block__content c-copy">
+      <p>This sprint we&rsquo;re going to focus on why and how we break up software into different components, such as a frontend and backend.</p>
+<p>We will do this through a worked example. We will build a quote website, which lets people get quotes, or add quotes to a list.</p>
+<p>We will supply most of the code for you. You should read the code and make sure you understand it. Then you should copy it onto your computer, run it, and experiment with it. Later, you will need to deploy it to the internet, and you will need to modify the code yourself.</p>
+<p>Next sprint, you will be building your own website. It will be similar, but not the same. You will build an interactive chat room, where multiple users can chat in real-time. We will not supply the code. You will need to apply all of the skills you&rsquo;re learning this sprint to write and deploy the code yourself.</p>
+
+    </div>
+    
+    
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="limitations-and-trade-offs">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="limitations-and-trade-offs">
+        Limitations and trade-offs
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="10 minutes countdown" datetime="P10M">10&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+    <div class="c-block__content c-copy">
+      <p>A lot of this sprint focuses on 
+<tool-tip-container tabindex="0"><strong class="tooltip__trigger" id="trigger__limitations">limitations</strong><span class="tooltip__emoji">🧶</span><tool-tip role="tooltip" aria-labelledby="limitations"><span class="tooltip__title e-heading__2"><span class="tooltip__emoji">🧶</span> Limitations</span><span class="tooltip__content">A limitation is something we can&rsquo;t do, or which is hard to do.</span></tool-tip></tool-tip-container>
+ and 
+<tool-tip-container tabindex="0"><strong class="tooltip__trigger" id="trigger__trade-offs">trade-offs</strong><span class="tooltip__emoji">🧶</span><tool-tip role="tooltip" aria-labelledby="trade-offs"><span class="tooltip__title e-heading__2"><span class="tooltip__emoji">🧶</span> Trade-offs</span><span class="tooltip__content">A trade-off is when we gain some benefit, but it also has some cost/draw-back.<br /><br />There isn&rsquo;t always a clear correct choice between two approaches - often they have different benefits and draw-backs.</span></tool-tip></tool-tip-container>
+.</p>
+<p>When writing software, we are always thinking about limitations and trade-offs. We always have to make choices. Like whether to use a for-loop or <code>map</code>. Or whether we want users to register a username that only they can use, or whether users can use any name they want.</p>
+<p>Sometimes the choices we make are obvious. But a lot of the time there are advantages and disadvantages to different approaches.</p>
+<p>Let&rsquo;s use that example of user registration.</p>
+<p>What advantages and disadvantages can you think of each option?</p>
+<details>
+<summary>Expand for some examples after you've thought of your own</summary>
+<table>
+  <thead>
+      <tr>
+          <th>Approach</th>
+          <th>Advantages</th>
+          <th>Disadvantages</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Require registration</td>
+          <td>Other users know when messages are from the same person.<br />Requiring an email address may help reduce abuse.</td>
+          <td>May give impression that two names that look similar are the same.<br />Harder to spam.<br />Needs us to store user information.<br />Needs us to protect user data we&rsquo;re storing.</td>
+      </tr>
+      <tr>
+          <td>Allow anonymous</td>
+          <td>Low friction to contribute.<br />Less functionality to implement.</td>
+          <td>Allows impersonating other users.<br />Easier to spam.</td>
+      </tr>
+  </tbody>
+</table>
+</details>
+<p>Neither approach is obviously <em>better</em> - they have different advantages and disadvantages. Sometimes those advantages and disadvantages are not about the same topic.</p>
+<p>Often when thinking about limitations and trade-offs we are sorting requirements by importance, we are finding the places that problems are happen, and we&rsquo;re choosing where things belong. There isn&rsquo;t always one correct answer - we can often build a system many different ways.</p>
+
+    </div>
+    
+    
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="read-about-the-internet">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="read-about-the-internet">
+        Read about the Internet
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="60 minutes countdown" datetime="P60M">60&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Define the terms &lsquo;host&rsquo;, &lsquo;client&rsquo;, and &lsquo;server&rsquo;.</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Define the terms &lsquo;request&rsquo; and &lsquo;response&rsquo;.</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Explain the responsibilities/guarantees of four network layers: Link, Internet, Transport, Application.</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Explain the purpose of a TCP port.</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <h3 id="read-about-the-internet">Read about the Internet</h3>
+<section class="c-note c-note--Reading">
+  <h4 class="c-note__title e-heading__4">Reading</span>
+  </h4>
+  <div class="c-note__text "><p>Read chapter 11 of How Computers Really Work.</p>
+<p>Do every exercise listed in the chapters.</p>
+<p>Do the following projects 29, 30, 31, 32, 34, 35.</p>
+<p>For project 29, note that if you&rsquo;re on macOS, you should use <code>en0</code> not <code>eth0</code>, and you will need to install <code>arp-scan</code> by running <code>brew install arp-scan</code>.</p>
+</div>
+</section>
+
+
+<p>Check you have achieved each learning objective listed on this page.</p>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  <multiple-choice data-correct="2" class="c-quiz">
+    <form slot="quiz">
+      <fieldset class="c-quiz__fieldset" tabindex="0">
+        <legend class="c-quiz__legend">🤔 Which layer is responsible for retrying delivery of messages which didn&rsquo;t make it to a server?</legend>
+        <ol class="c-quiz__list"><li class="c-quiz__answer">
+            <label
+              class="c-quiz__label"
+              ><input
+              class="c-quiz__input"
+              type="radio"
+              name="answer"
+              value="0" />
+            Link</label
+            >
+          </li><li class="c-quiz__answer">
+            <label
+              class="c-quiz__label"
+              ><input
+              class="c-quiz__input"
+              type="radio"
+              name="answer"
+              value="1" />
+            Internet</label
+            >
+          </li><li class="c-quiz__answer">
+            <label
+              class="c-quiz__label"
+              ><input
+              class="c-quiz__input"
+              type="radio"
+              name="answer"
+              value="2" />
+            Transport</label
+            >
+          </li><li class="c-quiz__answer">
+            <label
+              class="c-quiz__label"
+              ><input
+              class="c-quiz__input"
+              type="radio"
+              name="answer"
+              value="3" />
+            Application</label
+            >
+          </li></ol>
+      </fieldset>
+    </form>
+    <section class="c-quiz__feedback" slot="feedback" aria-live="polite"><p class="c-quiz__remark" data-index="0" >💬 No - Link layer protocols may feature some local retries, but generally don&rsquo;t provide reliable delivery.</p><p class="c-quiz__remark" data-index="1" >💬 No - Internet layer protocols are typically responsible for routing, not reliable delivery.</p><p class="c-quiz__remark" data-index="2" >💬 Yes - the Transport layer is typically responsible for retrying delivery of lost messages, but not all Transport layer protocols support this.</p><p class="c-quiz__remark" data-index="3" >💬 Some applications do their own kind of retrying, but this is typically the primary responsibility of another layer.</p></section>
+  </multiple-choice>
+ 
+  
+  <script src="/scripts/multiple-choice.min.js" defer></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  <multiple-choice data-correct="0" class="c-quiz">
+    <form slot="quiz">
+      <fieldset class="c-quiz__fieldset" tabindex="0">
+        <legend class="c-quiz__legend">🤔 Which layer considers MAC addresses?</legend>
+        <ol class="c-quiz__list"><li class="c-quiz__answer">
+            <label
+              class="c-quiz__label"
+              ><input
+              class="c-quiz__input"
+              type="radio"
+              name="answer"
+              value="0" />
+            Link</label
+            >
+          </li><li class="c-quiz__answer">
+            <label
+              class="c-quiz__label"
+              ><input
+              class="c-quiz__input"
+              type="radio"
+              name="answer"
+              value="1" />
+            Internet</label
+            >
+          </li><li class="c-quiz__answer">
+            <label
+              class="c-quiz__label"
+              ><input
+              class="c-quiz__input"
+              type="radio"
+              name="answer"
+              value="2" />
+            Transport</label
+            >
+          </li><li class="c-quiz__answer">
+            <label
+              class="c-quiz__label"
+              ><input
+              class="c-quiz__input"
+              type="radio"
+              name="answer"
+              value="3" />
+            Application</label
+            >
+          </li></ol>
+      </fieldset>
+    </form>
+    <section class="c-quiz__feedback" slot="feedback" aria-live="polite"><p class="c-quiz__remark" data-index="0" >💬 Right - MAC addresses are how messages find their destinations on local networks.</p><p class="c-quiz__remark" data-index="1" >💬 No - the Internet layer typically uses Internet Protocol Addresses to navigate between networks.</p><p class="c-quiz__remark" data-index="2" >💬 No - the Transport layer typically deals with finding the right process on a host, rather than finding the right host.</p><p class="c-quiz__remark" data-index="3" >💬 Some applications may happen to deal with MAC addresses, but most applications do not. One layer (almost) always considers them.</p></section>
+  </multiple-choice>
+ 
+  
+  <script src="/scripts/multiple-choice.min.js" defer></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  <multiple-choice data-correct="2" class="c-quiz">
+    <form slot="quiz">
+      <fieldset class="c-quiz__fieldset" tabindex="0">
+        <legend class="c-quiz__legend">🤔 Which layer is responsible for ensuring that messages arrive at the server in the correct order?</legend>
+        <ol class="c-quiz__list"><li class="c-quiz__answer">
+            <label
+              class="c-quiz__label"
+              ><input
+              class="c-quiz__input"
+              type="radio"
+              name="answer"
+              value="0" />
+            Link</label
+            >
+          </li><li class="c-quiz__answer">
+            <label
+              class="c-quiz__label"
+              ><input
+              class="c-quiz__input"
+              type="radio"
+              name="answer"
+              value="1" />
+            Internet</label
+            >
+          </li><li class="c-quiz__answer">
+            <label
+              class="c-quiz__label"
+              ><input
+              class="c-quiz__input"
+              type="radio"
+              name="answer"
+              value="2" />
+            Transport</label
+            >
+          </li><li class="c-quiz__answer">
+            <label
+              class="c-quiz__label"
+              ><input
+              class="c-quiz__input"
+              type="radio"
+              name="answer"
+              value="3" />
+            Application</label
+            >
+          </li></ol>
+      </fieldset>
+    </form>
+    <section class="c-quiz__feedback" slot="feedback" aria-live="polite"><p class="c-quiz__remark" data-index="0" >💬 No - Link layer protocols typically don&rsquo;t guarantee ordered delivery.</p><p class="c-quiz__remark" data-index="1" >💬 No - Internet layer protocols are typically responsible for routing, not ordering.</p><p class="c-quiz__remark" data-index="2" >💬 Yes - the Transport layer is typically responsible for ordering of messages, but not all Transport layer protocols support this.</p><p class="c-quiz__remark" data-index="3" >💬 Some applications do their own kind of sequencing, but this is typically the primary responsibility of another layer.</p></section>
+  </multiple-choice>
+ 
+  
+  <script src="/scripts/multiple-choice.min.js" defer></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  <multiple-choice data-correct="1" class="c-quiz">
+    <form slot="quiz">
+      <fieldset class="c-quiz__fieldset" tabindex="0">
+        <legend class="c-quiz__legend">🤔 Which layer is used for getting from my home network to Microsoft&rsquo;s network?</legend>
+        <ol class="c-quiz__list"><li class="c-quiz__answer">
+            <label
+              class="c-quiz__label"
+              ><input
+              class="c-quiz__input"
+              type="radio"
+              name="answer"
+              value="0" />
+            Link</label
+            >
+          </li><li class="c-quiz__answer">
+            <label
+              class="c-quiz__label"
+              ><input
+              class="c-quiz__input"
+              type="radio"
+              name="answer"
+              value="1" />
+            Internet</label
+            >
+          </li><li class="c-quiz__answer">
+            <label
+              class="c-quiz__label"
+              ><input
+              class="c-quiz__input"
+              type="radio"
+              name="answer"
+              value="2" />
+            Transport</label
+            >
+          </li><li class="c-quiz__answer">
+            <label
+              class="c-quiz__label"
+              ><input
+              class="c-quiz__input"
+              type="radio"
+              name="answer"
+              value="3" />
+            Application</label
+            >
+          </li></ol>
+      </fieldset>
+    </form>
+    <section class="c-quiz__feedback" slot="feedback" aria-live="polite"><p class="c-quiz__remark" data-index="0" >💬 No - the Link layer is for messaging within local networks.</p><p class="c-quiz__remark" data-index="1" >💬 Yes - the Internet layer is for navigating between networks.</p><p class="c-quiz__remark" data-index="2" >💬 No - the Transport layer typically deals with finding the right process on a host, rather than finding the right host.</p><p class="c-quiz__remark" data-index="3" >💬 Some applications may happen to deal with routing information, but most applications do not. One layer (almost) always considers this.</p></section>
+  </multiple-choice>
+ 
+  
+  <script src="/scripts/multiple-choice.min.js" defer></script>
+
+
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="read-about-the-world-wide-web">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="read-about-the-world-wide-web">
+        Read about the world-wide web
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="75 minutes countdown" datetime="P75M">75&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Identify the components of a URL.</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Manually parse an HTTP request into a method, path, protocol, headers, and body.</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Manually parse an HTTP response into protocol, status code, headers, and body.</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Describe the request-response pattern of a web browser interacting with a server.</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Compare static and dynamic web servers.</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <section class="c-note c-note--Reading">
+  <h4 class="c-note__title e-heading__4">Reading</span>
+  </h4>
+  <div class="c-note__text "><p>Read chapter 12 of How Computers Really Work.</p>
+<p>In the &ldquo;Languages of the Web&rdquo; section, you can skip the following sub-sections if you want because you probably already know what they say:</p>
+<ul>
+<li>Structuring the Web with HTML</li>
+<li>Styling the Web with CSS</li>
+<li>Scripting the Web with JavaScript</li>
+</ul>
+<p>But you should still read the Structuring the Web&rsquo;s Data with JSON and XML sub-section.</p>
+<p>Do every exercise listed in the chapters.</p>
+<p>Do projects 36-40. You can do these on any Unix-based computer.</p>
+</div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  <multiple-choice data-correct="2" class="c-quiz">
+    <form slot="quiz">
+      <fieldset class="c-quiz__fieldset" tabindex="0">
+        <legend class="c-quiz__legend">🤔 What is the scheme of this URL: git+ssh://github.com/CodeYourFuture/curriculum.git</legend>
+        <ol class="c-quiz__list"><li class="c-quiz__answer">
+            <label
+              class="c-quiz__label"
+              ><input
+              class="c-quiz__input"
+              type="radio"
+              name="answer"
+              value="0" />
+            github.com</label
+            >
+          </li><li class="c-quiz__answer">
+            <label
+              class="c-quiz__label"
+              ><input
+              class="c-quiz__input"
+              type="radio"
+              name="answer"
+              value="1" />
+            git</label
+            >
+          </li><li class="c-quiz__answer">
+            <label
+              class="c-quiz__label"
+              ><input
+              class="c-quiz__input"
+              type="radio"
+              name="answer"
+              value="2" />
+            git+ssh</label
+            >
+          </li><li class="c-quiz__answer">
+            <label
+              class="c-quiz__label"
+              ><input
+              class="c-quiz__input"
+              type="radio"
+              name="answer"
+              value="3" />
+            ssh</label
+            >
+          </li></ol>
+      </fieldset>
+    </form>
+    <section class="c-quiz__feedback" slot="feedback" aria-live="polite"><p class="c-quiz__remark" data-index="0" >💬 No - that&rsquo;s the authority/hostname.</p><p class="c-quiz__remark" data-index="1" >💬 No - check the parts of a URL again.</p><p class="c-quiz__remark" data-index="2" >💬 Yes - anything at the start of a URL before the : is the scheme.</p><p class="c-quiz__remark" data-index="3" >💬 No - check the parts of a URL again.</p></section>
+  </multiple-choice>
+ 
+  
+  <script src="/scripts/multiple-choice.min.js" defer></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  <multiple-choice data-correct="2" class="c-quiz">
+    <form slot="quiz">
+      <fieldset class="c-quiz__fieldset" tabindex="0">
+        <legend class="c-quiz__legend">🤔 What is the path of this URL: git+ssh://github.com/CodeYourFuture/curriculum.git</legend>
+        <ol class="c-quiz__list"><li class="c-quiz__answer">
+            <label
+              class="c-quiz__label"
+              ><input
+              class="c-quiz__input"
+              type="radio"
+              name="answer"
+              value="0" />
+            github.com</label
+            >
+          </li><li class="c-quiz__answer">
+            <label
+              class="c-quiz__label"
+              ><input
+              class="c-quiz__input"
+              type="radio"
+              name="answer"
+              value="1" />
+            CodeYourFuture/curriculum.git</label
+            >
+          </li><li class="c-quiz__answer">
+            <label
+              class="c-quiz__label"
+              ><input
+              class="c-quiz__input"
+              type="radio"
+              name="answer"
+              value="2" />
+            /CodeYourFuture/curriculum.git</label
+            >
+          </li><li class="c-quiz__answer">
+            <label
+              class="c-quiz__label"
+              ><input
+              class="c-quiz__input"
+              type="radio"
+              name="answer"
+              value="3" />
+            /CodeYourFuture</label
+            >
+          </li><li class="c-quiz__answer">
+            <label
+              class="c-quiz__label"
+              ><input
+              class="c-quiz__input"
+              type="radio"
+              name="answer"
+              value="4" />
+            /CodeYourFuture/curriculum</label
+            >
+          </li></ol>
+      </fieldset>
+    </form>
+    <section class="c-quiz__feedback" slot="feedback" aria-live="polite"><p class="c-quiz__remark" data-index="0" >💬 No - that&rsquo;s the authority/hostname.</p><p class="c-quiz__remark" data-index="1" >💬 No - check the parts of a URL again.</p><p class="c-quiz__remark" data-index="2" >💬 Yes - anything from the first slash until a ? (or the end, if there isn&rsquo;t one) makes up the path.</p><p class="c-quiz__remark" data-index="3" >💬 No - check the parts of a URL again.</p><p class="c-quiz__remark" data-index="4" >💬 No - check the parts of a URL again.</p></section>
+  </multiple-choice>
+ 
+  
+  <script src="/scripts/multiple-choice.min.js" defer></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+    
+    
+
+    
+    
+      
+    
+  
+
+
+  
+    
+    
+
+    
+    
+      
+    
+  
+
+
+  
+    
+    
+
+    
+    
+      
+    
+  
+
+
+  
+    
+    
+
+    
+    
+      
+    
+  
+
+
+  
+    
+    
+
+    
+    
+      
+    
+  
+
+
+  
+    
+    
+
+    
+    
+      
+    
+  
+
+
+
+
+
+
+<div class="c-block">
+  <label-items>
+    <section slot="labels" class="c-labels" aria-label="Labels">
+      
+        <button class="c-label" data-label="scheme">scheme</button>
+      
+        <button class="c-label" data-label="query">query</button>
+      
+        <button class="c-label" data-label="authority">authority</button>
+      
+        <button class="c-label" data-label="path">path</button>
+      
+        <button class="c-label" data-label="hostname">hostname</button>
+      
+        <button class="c-label" data-label="port">port</button>
+      
+    </section>
+    <h3 slot="heading" class="e-heading__5">Label each part of the URL <code>git+https://github.com:443/pantsbuild/ripgrep.git?rev=0f7e0fd</code></h3>
+    <section slot="content" aria-label="Items to label">
+      
+        <div
+          data-item="1"
+          data-correct="scheme">
+          <code>git+https</code>
+        </div>
+      
+        <div
+          data-item="2"
+          data-correct="authority">
+          <code>github.com:443</code>
+        </div>
+      
+        <div
+          data-item="3"
+          data-correct="hostname">
+          <code>github.com</code>
+        </div>
+      
+        <div
+          data-item="4"
+          data-correct="port">
+          <code>443</code>
+        </div>
+      
+        <div
+          data-item="5"
+          data-correct="path">
+          <code>/pantsbuild/ripgrep.git</code>
+        </div>
+      
+        <div
+          data-item="6"
+          data-correct="query">
+          <code>rev=0f7e0fd</code>.
+        </div>
+      
+    </section>
+    <section aria-label="Feedback" slot="feedback"></section>
+  </label-items>
+</div>
+
+<script src="/scripts/label-items.min.js" defer></script>
+
+<section class="c-note c-note--Exercise">
+  <h4 class="c-note__title e-heading__4">Exercise</span>
+  </h4>
+  <div class="c-note__text "><p>In the following HTTP request, identify the path being requested, and the request headers:</p>
+<pre tabindex="0"><code>GET /id HTTP/1.1
+Host: www.example.com
+User-Agent: curl/8.1.2
+Accept: */*</code></pre></div>
+</section>
+
+
+<section class="c-note c-note--Exercise">
+  <h4 class="c-note__title e-heading__4">Exercise</span>
+  </h4>
+  <div class="c-note__text "><p>In the following HTTP response, identify the status code, the response headers, and the response body:</p>
+<pre tabindex="0"><code>HTTP/1.1 200 OK
+Expires: -1
+Cache-Control: private, max-age=0
+Content-Type: application/json
+Content-Length: 10
+
+{&#34;id&#34;: 17}</code></pre></div>
+</section>
+
+
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="limitations-of-frontends">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="limitations-of-frontends">
+        Limitations of frontends
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="5 minutes countdown" datetime="P5M">5&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Explain what can&rsquo;t be achieved with just a frontend</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <p>You&rsquo;ve made 
+<tool-tip-container tabindex="0"><strong class="tooltip__trigger" id="trigger__static">static</strong><span class="tooltip__emoji">🧶</span><tool-tip role="tooltip" aria-labelledby="static"><span class="tooltip__title e-heading__2"><span class="tooltip__emoji">🧶</span> Static</span><span class="tooltip__content"><em>Static</em> has a lot of different meanings in different contexts.<br /><br />Here we mean: The same files are always served from a server to a browser - no extra processing is done by the server to work out how to respond to a request.</span></tool-tip></tool-tip-container>
+ websites, both as part of the &ldquo;world-wide web&rdquo; reading, and in previous courses/modules.</p>
+<p>These were HTML pages, which perhaps included some JavaScript. The JavaScript made them interactive. But they were still static.</p>
+<p>A static website is one where your web browser requests some files from a server, and all the web server does is hand over the files.</p>
+<p>From that point on, your web browser works on its own. Any event handlers, timers, etc are processed by the web browser.</p>
+<p>The job of the server was just to hand over files. Those files are the same, no matter what user asked for them, or what computer they were using.</p>
+<p>We often call these static files a <strong>frontend</strong>.</p>
+<p>We can build impressive, useful websites with just a frontend. We can include images, videos, and sounds. We can react to user input. We can change what we show on the page. We can even use things like <a
+  href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API">the Web Storage API</a> to store data so that if you leave the page and come back, your data is still there.</p>
+<p>Almost all of this curriculum website, for instance, is a static site. It contains a lot of content. It is interactive (e.g. has quizzes). A few small parts of it are not, e.g. the attendance register in the day plan uses a backend to store data.</p>
+<p>But frontends also have limitations.</p>
+<h3 id="limitations-of-a-frontend">Limitations of a frontend</h3>
+<p>Four major limitations of a website which only has a frontend are:</p>
+<ol>
+<li>We only have access to information we knew when we made the frontend.</li>
+<li>We can&rsquo;t share information across computers.</li>
+<li>We can&rsquo;t interact with other users.</li>
+<li>Everything is public.</li>
+</ol>
+<p>Let&rsquo;s talk about each of these.</p>
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="limited-information">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="limited-information">
+        Limited information
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="20 minutes countdown" datetime="P20M">20&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Identify strategies for updating information in a static website.</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Explain why needing dynamic information may require us to write a backend.</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  <multiple-choice data-correct="1" class="c-quiz">
+    <form slot="quiz">
+      <fieldset class="c-quiz__fieldset" tabindex="0">
+        <legend class="c-quiz__legend">🤔 What is a frontend?</legend>
+        <ol class="c-quiz__list"><li class="c-quiz__answer">
+            <label
+              class="c-quiz__label"
+              ><input
+              class="c-quiz__input"
+              type="radio"
+              name="answer"
+              value="0" />
+            Everything needed to make a website work.</label
+            >
+          </li><li class="c-quiz__answer">
+            <label
+              class="c-quiz__label"
+              ><input
+              class="c-quiz__input"
+              type="radio"
+              name="answer"
+              value="1" />
+            The part of the website the user directly interacts with.</label
+            >
+          </li><li class="c-quiz__answer">
+            <label
+              class="c-quiz__label"
+              ><input
+              class="c-quiz__input"
+              type="radio"
+              name="answer"
+              value="2" />
+            The part of a website that stores data.</label
+            >
+          </li></ol>
+      </fieldset>
+    </form>
+    <section class="c-quiz__feedback" slot="feedback" aria-live="polite"><p class="c-quiz__remark" data-index="0" >💬 No - a frontend is just one part of a website. Some websites only have a frontend, but many of other parts too.</p><p class="c-quiz__remark" data-index="1" >💬 Right!</p><p class="c-quiz__remark" data-index="2" >💬 No - The frontend is generally stateless (doesn&rsquo;t store data).</p></section>
+  </multiple-choice>
+ 
+  
+  <script src="/scripts/multiple-choice.min.js" defer></script>
+
+
+<p>When we ask a server to serve us a static frontend, it can only give us the files it knows about.</p>
+<p>Imagine we wanted to display the current weather in Rome on our website.</p>
+<p>How could the server know that information? How could it give it to the user?</p>
+<p>We know that our static frontend can only serve the files it knows about. So someone will need to save in a file on the server what the weather currently is.</p>
+<p>There are a number of ways we could achieve this, e.g.:</p>
+<ul>
+<li>We could never update our file, and just serve out of date data.</li>
+<li>Someone with access to the server could connect to it and edit the file.</li>
+<li>We could set up some automated process which checks the weather, generates a new file, and uploads the new version to the server.</li>
+</ul>
+<p>If we only host a static frontend, it is possible for us to update the information in it. But it is limiting.</p>
+<p>Another approach, is that our frontend could know how to request information from a backend. That could be a backend we run, or one that someone else runs.</p>
+<p>We have seen this when we have used <code>fetch</code>. <code>fetch</code> allows our static frontend to ask some other server for information.</p>
+<p>We might not know whether the server we&rsquo;re asking for information is static or dynamic:</p>
+<p>It could:</p>
+<ul>
+<li>Only serve information it already knows in its own files (i.e. it is a static frontend itself).</li>
+<li>Look up the information from a database which may change.</li>
+<li>Ask yet another server for information.</li>
+</ul>
+<p>Even if we use <code>fetch</code> from our frontend, it is still a static frontend. We still serve it to users by giving them the same static files.</p>
+<p>If someone else already runs a server we can <code>fetch</code> from, we can probably keep our own website just being a static frontend.</p>
+<p>But if we need more dynamic information, and there isn&rsquo;t a convenient place we can fetch it from, we may need to write/host something we can <code>fetch</code> from ourselves. We call this a backend.</p>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  <multiple-choice data-correct="2" class="c-quiz">
+    <form slot="quiz">
+      <fieldset class="c-quiz__fieldset" tabindex="0">
+        <legend class="c-quiz__legend">🤔 What is a backend?</legend>
+        <ol class="c-quiz__list"><li class="c-quiz__answer">
+            <label
+              class="c-quiz__label"
+              ><input
+              class="c-quiz__input"
+              type="radio"
+              name="answer"
+              value="0" />
+            Everything needed to make a website work.</label
+            >
+          </li><li class="c-quiz__answer">
+            <label
+              class="c-quiz__label"
+              ><input
+              class="c-quiz__input"
+              type="radio"
+              name="answer"
+              value="1" />
+            A part of the website that we didn&rsquo;t write.</label
+            >
+          </li><li class="c-quiz__answer">
+            <label
+              class="c-quiz__label"
+              ><input
+              class="c-quiz__input"
+              type="radio"
+              name="answer"
+              value="2" />
+            A part of the website the user doesn&rsquo;t directly interact with.</label
+            >
+          </li></ol>
+      </fieldset>
+    </form>
+    <section class="c-quiz__feedback" slot="feedback" aria-live="polite"><p class="c-quiz__remark" data-index="0" >💬 No - websites need frontends so that people can actually interact with them.</p><p class="c-quiz__remark" data-index="1" >💬 No - sometimes we may talk to a backend we didn&rsquo;t write, but this isn&rsquo;t always the case.</p><p class="c-quiz__remark" data-index="2" >💬 Right! A backend may supply information to a frontend, which will actually display it to the user.</p></section>
+  </multiple-choice>
+ 
+  
+  <script src="/scripts/multiple-choice.min.js" defer></script>
+
+
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="limited-sharing-across-computers">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="limited-sharing-across-computers">
+        Limited sharing across computers
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="20 minutes countdown" datetime="P20M">20&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Explain why sharing state across computers may require us to write (or use) a backend.</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <p>The <a
+  href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API">Web Storage API</a> allows a website to store data so that if you leave a website, and go back to it, it remembers some things.</p>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  <multiple-choice data-correct="0" class="c-quiz">
+    <form slot="quiz">
+      <fieldset class="c-quiz__fieldset" tabindex="0">
+        <legend class="c-quiz__legend">🤔 Where does the Web Storage API store data?</legend>
+        <ol class="c-quiz__list"><li class="c-quiz__answer">
+            <label
+              class="c-quiz__label"
+              ><input
+              class="c-quiz__input"
+              type="radio"
+              name="answer"
+              value="0" />
+            Locally in the web browser on the computer you&rsquo;re using.</label
+            >
+          </li><li class="c-quiz__answer">
+            <label
+              class="c-quiz__label"
+              ><input
+              class="c-quiz__input"
+              type="radio"
+              name="answer"
+              value="1" />
+            On the website you&rsquo;re using, no matter what computer you&rsquo;re using.</label
+            >
+          </li><li class="c-quiz__answer">
+            <label
+              class="c-quiz__label"
+              ><input
+              class="c-quiz__input"
+              type="radio"
+              name="answer"
+              value="2" />
+            It&rsquo;s synchronised with your email, so as long as you&rsquo;re logged in you can access it.</label
+            >
+          </li></ol>
+      </fieldset>
+    </form>
+    <section class="c-quiz__feedback" slot="feedback" aria-live="polite"><p class="c-quiz__remark" data-index="0" >💬 Right - Web Storage APIs just store information on your computer.</p><p class="c-quiz__remark" data-index="1" >💬 No - Check again.</p><p class="c-quiz__remark" data-index="2" >💬 No - Web Storage doesn&rsquo;t know anything about your email.</p></section>
+  </multiple-choice>
+ 
+  
+  <script src="/scripts/multiple-choice.min.js" defer></script>
+
+
+<p>A frontend has no way of bringing your data with you when you move between different computers.</p>
+<p>Imagine you&rsquo;re using a to do list website on your computer, which only has a frontend. You add an item to the list. We can use the Web Storage API to make sure if you close the tab, and go back to the list, the item is still there.</p>
+<p>But if you open the website on your phone, you won&rsquo;t see that item. Because the Web Storage API only stores the information locally in your web browser - on your computer.</p>
+<p>This is one of the limitations of a static frontend - on its own, it can&rsquo;t share information across devices.</p>
+<p>If we want to share information across devices, we&rsquo;ll need some backend to store that information, and share it.</p>
+<p>One computer needs to tell the backend to store it, so that the other computer can ask the backend for the information.</p>
+<p>We could write our own backend, or we could use an existing service like <a
+  href="https://firebase.google.com/">Firebase</a> which provides backends for things like authentication and data storage without us needing to run a backend ourselves.</p>
+<p>But if we want to share information between devices, we need to use <em>some</em> backend.</p>
+<p>Any website that lets you log in will involve a backend.</p>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  <multiple-choice data-correct="2" class="c-quiz">
+    <form slot="quiz">
+      <fieldset class="c-quiz__fieldset" tabindex="0">
+        <legend class="c-quiz__legend">🤔 If I&rsquo;m using a website, and want to send a link to the page I&rsquo;m viewing to a friend, does the website need a backend?</legend>
+        <ol class="c-quiz__list"><li class="c-quiz__answer">
+            <label
+              class="c-quiz__label"
+              ><input
+              class="c-quiz__input"
+              type="radio"
+              name="answer"
+              value="0" />
+            Yes - to be able to share the information between computers, it needs a backend.</label
+            >
+          </li><li class="c-quiz__answer">
+            <label
+              class="c-quiz__label"
+              ><input
+              class="c-quiz__input"
+              type="radio"
+              name="answer"
+              value="1" />
+            No - a link will always work and show the same content.</label
+            >
+          </li><li class="c-quiz__answer">
+            <label
+              class="c-quiz__label"
+              ><input
+              class="c-quiz__input"
+              type="radio"
+              name="answer"
+              value="2" />
+            It depends - on some websites links can work without a backend, but others need a backend.</label
+            >
+          </li></ol>
+      </fieldset>
+    </form>
+    <section class="c-quiz__feedback" slot="feedback" aria-live="polite"><p class="c-quiz__remark" data-index="0" >💬 Not always - if the website is just static, a link should work fine.</p><p class="c-quiz__remark" data-index="1" >💬 Sometimes! But only if the content it always the same for all users and a user can&rsquo;t change it.</p><p class="c-quiz__remark" data-index="2" >💬 Yes! Some websites are always the same for everyone, and links just work. Other websites, where users can change things (e.g. our to do list example), need some way of storing what things have changed, and this is normally a backend.<br /><br />Hint: If &lsquo;it depends&rsquo; is a possible answer, it&rsquo;s <em>almost</em> always the correct one!</p></section>
+  </multiple-choice>
+ 
+  
+  <script src="/scripts/multiple-choice.min.js" defer></script>
+
+
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="limited-cross-user-interaction">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="limited-cross-user-interaction">
+        Limited cross-user interaction
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="10 minutes countdown" datetime="P10M">10&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Explain why sharing state across users may require us to write (or use) a backend.</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <p>We know if we want to share information between different computers, we need some backend to store that information so that the other computer can ask for it.</p>
+<p>When we have multiple users, we have the same problem.</p>
+<p>Imagine we&rsquo;re building a chat website, where multiple people can visit and talk with each other.</p>
+<p>We couldn&rsquo;t build this if we only had a static frontend. When one user sends a message, other users wouldn&rsquo;t have any way of knowing it was sent. The message doesn&rsquo;t <em>go</em> anywhere, it stays in the sender&rsquo;s browser.</p>
+<p>If we want different users to be able to interact in any way, we need a backend they can interact through.</p>
+<p>There are lots of examples of interaction, e.g.</p>
+<ul>
+<li>Live chat</li>
+<li>Seeing each other&rsquo;s posts</li>
+<li>Liking someone else&rsquo;s picture</li>
+<li>Seeing what someone else wrote in a list</li>
+</ul>
+<p>All of these things require storing information from one user somewhere, so that another user can ask for it.</p>
+<p>On websites, users don&rsquo;t interact directly with each other. They interact with a backend.</p>
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="everything-is-public">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="everything-is-public">
+        Everything is public
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="15 minutes countdown" datetime="P15M">15&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Explain why needing secrets may require backend.</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <p>A frontend is served, completely, to a web browser which then interprets it.</p>
+<p>This causes problems if there is information we don&rsquo;t want to give to the user.</p>
+<p>An example is a password.</p>
+<p>Imagine if we had a website, and wanted users to enter a password in order to access it.</p>
+<p>Somewhere, we&rsquo;ll need to write some logic which compares the password the user entered with the actual password.</p>
+<p>If we <em>only</em> have a frontend, this poses two problems:</p>
+<ol>
+<li>
+<p>We need to give the web browser the actual password, in order for it to be able to compare them. And everything we give to the web browser, a user could also see if they wanted (e.g. by monitoring their network traffic).</p>
+</li>
+<li>
+<p>A website can&rsquo;t trust a web browser. Once a website hands information over to a client, it doesn&rsquo;t know what the client will do with it.</p>
+<p>For instance if a frontend has three pieces of data, but wants you to tick a box before it shows them to you, the user can probably bypass that agreement by running some custom code in the web inspector console.</p>
+<p>If we need to <em>guarantee</em> the user ticked a box before being shown data, we can&rsquo;t include the data in our frontend until <em>after</em> the box has been ticked. Which means we need to ask a backend for it.</p>
+</li>
+</ol>
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="what-is-a-backend">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="what-is-a-backend">
+        What is a backend?
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="20 minutes countdown" datetime="P20M">20&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Define the backend of a website.</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Explain the terms <em>client</em> and <em>server</em>.</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <p>We know that a frontend is a collection of static files that can be handed to a web browser, and which the web browser will evaluate.</p>
+<p>A backend is a program which a frontend can communicate with. The frontend can ask it for (or tell it) information, and the backend can respond.</p>
+<p>A backend can be written in any programming language. It doesn&rsquo;t need to be the same programming language as the frontend is written in (but it can be).</p>
+<p>Most backends are long-running. They are programs that keep running for a long time, waiting for a frontend to communicate with them. This is important - if the program wasn&rsquo;t running, the frontend wouldn&rsquo;t be able to communicate with it.</p>
+<p>Not all websites have a backend. There are lots of websites which are just a frontend. But if we need to overcome any of the limitations we&rsquo;ve explored, our system will need a backend. Sometimes we need to write the backend ourselves. Other times we can use one someone else has written.</p>
+<p>There&rsquo;s nothing special about a backend. It&rsquo;s just a program that can be communicated with. You&rsquo;ve already written plenty of programs.</p>
+<p>A backend is just a program, but it gets its input from an HTTP request over the network, instead of from a command line flag or file. And it writes its output in an HTTP response over the network, instead of to stdout or a file.</p>
+<section class="c-note c-note--note">
+    <h4 class="c-note__title">📝Note</h4>
+    <div class="c-note__text"><p>Backend and Frontend are terms that get used differently in different contexts.</p>
+<p>In this section, we&rsquo;re mostly talking about websites here, but other software systems also have backends and frontends.</p>
+<p>Other similar terms are <strong>client</strong> and <strong>server</strong>. People often talk about a web browser, or a frontend, as being a client, and a backend as being a server.</p>
+<p>In general a &ldquo;server&rdquo; is something waiting to be communicated with, and a &ldquo;client&rdquo; is something that will communicate with it.</p>
+<p>Sometimes one program acts as both a client and a server! A web browser may ask (be a client) a backend (a server) for some information. And that backend may ask (be a client) <em>another</em> backend (a server) for information to help it answer the question.</p></div>
+  </section>
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="example-backend">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="example-backend">
+        Example backend
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="30 minutes countdown" datetime="P30M">30&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Run a backend using Express and NodeJS.</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <p>Here is a small backend written in JavaScript:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">import</span> <span style="color:#a6e22e">express</span> <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#34;express&#34;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">app</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">express</span>();
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">port</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">3000</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">quotes</span> <span style="color:#f92672">=</span> [
+</span></span><span style="display:flex;"><span>  {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">quote</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Either write something worth reading or do something worth writing.&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">author</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Benjamin Franklin&#34;</span>,
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span>  {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">quote</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;I should have been more kind.&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">author</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Clive James&#34;</span>,
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span>];
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">pickRandomQuote</span>() {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">index</span> <span style="color:#f92672">=</span> Math.<span style="color:#a6e22e">floor</span>(Math.<span style="color:#a6e22e">random</span>() <span style="color:#f92672">*</span> <span style="color:#a6e22e">quotes</span>.<span style="color:#a6e22e">length</span>);
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">quotes</span>[<span style="color:#a6e22e">index</span>];
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">get</span>(<span style="color:#e6db74">&#34;/&#34;</span>, (<span style="color:#a6e22e">req</span>, <span style="color:#a6e22e">res</span>) =&gt; {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">error</span>(<span style="color:#e6db74">&#34;Received a request for a quote&#34;</span>);
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">quote</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">pickRandomQuote</span>();
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">send</span>(<span style="color:#e6db74">`&#34;</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">quote</span>.<span style="color:#a6e22e">quote</span><span style="color:#e6db74">}</span><span style="color:#e6db74">&#34; -</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">quote</span>.<span style="color:#a6e22e">author</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>);
+</span></span><span style="display:flex;"><span>});
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">listen</span>(<span style="color:#a6e22e">port</span>, () =&gt; {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">error</span>(<span style="color:#e6db74">`Quote server listening on port </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">port</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>);
+</span></span><span style="display:flex;"><span>});</span></span></code></pre></div><p>If you save it in a file, make sure there&rsquo;s a <code>package.json</code> file in the same directory, <code>npm install express</code>, and run the file, it will start a server listening on TCP port 3000.</p>
+<p>Express is a library which lets you listen for HTTP requests, and describe how you want to respond to them with callback functions.</p>
+<p>Only two things in this file are new to us:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">listen</span>(<span style="color:#a6e22e">port</span>, () =&gt; {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">error</span>(<span style="color:#e6db74">`Quote server listening on port </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">port</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>);
+</span></span><span style="display:flex;"><span>});</span></span></code></pre></div><p>This code tells Express to listen for incoming HTTP requests on the port specified by the <code>port</code> variable (and also to log to stderr saying it&rsquo;s doing so).</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">get</span>(<span style="color:#e6db74">&#34;/&#34;</span>, (<span style="color:#a6e22e">req</span>, <span style="color:#a6e22e">res</span>) =&gt; {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">error</span>(<span style="color:#e6db74">&#34;Received a request for a quote&#34;</span>);
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">quote</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">pickRandomQuote</span>();
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">send</span>(<span style="color:#e6db74">`&#34;</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">quote</span>.<span style="color:#a6e22e">quote</span><span style="color:#e6db74">}</span><span style="color:#e6db74">&#34; -</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">quote</span>.<span style="color:#a6e22e">author</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>);
+</span></span><span style="display:flex;"><span>});</span></span></code></pre></div><p>This code is instructing Express how to handle a request. It says &ldquo;If you get a GET request for the path <code>/</code>, call this callback function&rdquo;.</p>
+<p>What this callback function does is pick a random quote from an array, format it as a string, and send it as the body of an HTTP response. It also logs to stderr when it does this.</p>
+<section class="c-note c-note--Exercise">
+  <h4 class="c-note__title e-heading__4">Exercise</span>
+  </h4>
+  <div class="c-note__text "><p>Run this code on your computer.</p>
+<p>Open your web browser and visit <a
+  href="http://127.0.0.1:3000">http://127.0.0.1:3000</a></p>
+<p>You should see a quote displayed.</p>
+<p>Refresh the page a few times. You should see the quote isn&rsquo;t always the same.</p>
+<p>Look at the stderr of your <code>node</code> process. What do you see?</p>
+<p>Make sure you understand how your web browser is talking to your server, and why you&rsquo;re seeing what you see.</p>
+</div>
+</section>
+
+
+<section class="c-note c-note--Exercise">
+  <h4 class="c-note__title e-heading__4">Exercise</span>
+  </h4>
+  <div class="c-note__text "><p>We can also use the <code>curl</code> command line tool to make an HTTP request from our terminal.</p>
+<p>Try running: <code>curl http://127.0.0.1:3000</code> and see what it outputs.</p>
+<p>Try running: <code>curl -v http://127.0.0.1:3000</code> - try to explain what every line that was printed means.</p>
+</div>
+</section>
+
+
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="backend-statefulness">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="backend-statefulness">
+        Backend statefulness
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="30 minutes countdown" datetime="P30M">30&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Identify whether some program is stateful or stateless.</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <p>Our example backend is 
+<tool-tip-container tabindex="0"><strong class="tooltip__trigger" id="trigger__stateless">stateless</strong><span class="tooltip__emoji">🧶</span><tool-tip role="tooltip" aria-labelledby="stateless"><span class="tooltip__title e-heading__2"><span class="tooltip__emoji">🧶</span> Stateless</span><span class="tooltip__content">Stateless means it doesn&rsquo;t keep state. It doesn&rsquo;t remember things between one request and the next. One request cannot impact another.</span></tool-tip></tool-tip-container>
+. If you make several requests to it, it will always do the same thing (even though doesn&rsquo;t always return exactly the same result!).</p>
+<p>If you made a request from a different computer, or from different country, or on a different day, it would keep doing exactly the same thing. If you restarted the server, it would keep doing exactly the same thing.</p>
+<p>If our backend allowed users to add new quotes, it would start having <em>state</em>. It would need to remember what quotes had been added. It would be <strong>stateful</strong>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">import</span> <span style="color:#a6e22e">express</span> <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#34;express&#34;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">app</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">express</span>();
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">port</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">3000</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">quotes</span> <span style="color:#f92672">=</span> [
+</span></span><span style="display:flex;"><span>  {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">quote</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Either write something worth reading or do something worth writing.&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">author</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Benjamin Franklin&#34;</span>,
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span>  {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">quote</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;I should have been more kind.&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">author</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Clive James&#34;</span>,
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span>];
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">randomQuote</span>() {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">index</span> <span style="color:#f92672">=</span> Math.<span style="color:#a6e22e">floor</span>(Math.<span style="color:#a6e22e">random</span>() <span style="color:#f92672">*</span> <span style="color:#a6e22e">quotes</span>.<span style="color:#a6e22e">length</span>);
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">quotes</span>[<span style="color:#a6e22e">index</span>];
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">get</span>(<span style="color:#e6db74">&#34;/&#34;</span>, (<span style="color:#a6e22e">req</span>, <span style="color:#a6e22e">res</span>) =&gt; {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">quote</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">randomQuote</span>();
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">send</span>(<span style="color:#e6db74">`&#34;</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">quote</span>.<span style="color:#a6e22e">quote</span><span style="color:#e6db74">}</span><span style="color:#e6db74">&#34; -</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">quote</span>.<span style="color:#a6e22e">author</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>);
+</span></span><span style="display:flex;"><span>});
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">post</span>(<span style="color:#e6db74">&#34;/&#34;</span>, (<span style="color:#a6e22e">req</span>, <span style="color:#a6e22e">res</span>) =&gt; {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">bodyBytes</span> <span style="color:#f92672">=</span> [];
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">req</span>.<span style="color:#a6e22e">on</span>(<span style="color:#e6db74">&#34;data&#34;</span>, <span style="color:#a6e22e">chunk</span> =&gt; <span style="color:#a6e22e">bodyBytes</span>.<span style="color:#a6e22e">push</span>(...<span style="color:#a6e22e">chunk</span>));
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">req</span>.<span style="color:#a6e22e">on</span>(<span style="color:#e6db74">&#34;end&#34;</span>, () =&gt; {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">bodyString</span> <span style="color:#f92672">=</span> String.<span style="color:#a6e22e">fromCharCode</span>(...<span style="color:#a6e22e">bodyBytes</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">body</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">try</span> {
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">body</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">JSON</span>.<span style="color:#a6e22e">parse</span>(<span style="color:#a6e22e">bodyString</span>);
+</span></span><span style="display:flex;"><span>    } <span style="color:#66d9ef">catch</span> (<span style="color:#a6e22e">error</span>) {
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">error</span>(<span style="color:#e6db74">`Failed to parse body </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">bodyString</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> as JSON: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">error</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>);
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">status</span>(<span style="color:#ae81ff">400</span>).<span style="color:#a6e22e">send</span>(<span style="color:#e6db74">&#34;Expected body to be JSON.&#34;</span>);
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">return</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (<span style="color:#66d9ef">typeof</span> <span style="color:#a6e22e">body</span> <span style="color:#f92672">!=</span> <span style="color:#e6db74">&#34;object&#34;</span> <span style="color:#f92672">||</span> <span style="color:#f92672">!</span>(<span style="color:#e6db74">&#34;quote&#34;</span> <span style="color:#66d9ef">in</span> <span style="color:#a6e22e">body</span>) <span style="color:#f92672">||</span> <span style="color:#f92672">!</span>(<span style="color:#e6db74">&#34;author&#34;</span> <span style="color:#66d9ef">in</span> <span style="color:#a6e22e">body</span>)) {
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">error</span>(<span style="color:#e6db74">`Failed to extract quote and author from post body: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">bodyString</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>);
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">status</span>(<span style="color:#ae81ff">400</span>).<span style="color:#a6e22e">send</span>(<span style="color:#e6db74">&#34;Expected body to be a JSON object containing keys quote and author.&#34;</span>);
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">return</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">quotes</span>.<span style="color:#a6e22e">push</span>({
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">quote</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">quote</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">author</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">author</span>,
+</span></span><span style="display:flex;"><span>    });
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">send</span>(<span style="color:#e6db74">&#34;ok&#34;</span>);
+</span></span><span style="display:flex;"><span>  });
+</span></span><span style="display:flex;"><span>});
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">listen</span>(<span style="color:#a6e22e">port</span>, () =&gt; {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">error</span>(<span style="color:#e6db74">`Quote server listening on port </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">port</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>);
+</span></span><span style="display:flex;"><span>});</span></span></code></pre></div><p>Here we have added a new request handler. If someone makes a POST request to the path <code>/</code>, we try to interpret the body they posted as a JSON object.</p>
+<p>If we can find a quote and author in it, we will store it in our list of quotes, and start serving it up to future requests.</p>
+<p>If we can&rsquo;t process the request, we return an error describing what went wrong.</p>
+<p>The details of exactly how we understand the request aren&rsquo;t important. The important thing is that we <em>are</em> taking information from the request, and are then modifying the <code>quotes</code> array.</p>
+<section class="c-note c-note--note">
+    <h4 class="c-note__title">📝Note</h4>
+    <div class="c-note__text"><p><strong>State</strong> is a general term that is used for related but different things in different contexts.</p>
+<p>State almost always refers to information that we store, which may change.</p></div>
+  </section><p>Because we&rsquo;re <em>modifying</em> the <code>quotes</code> array, it is now state.</p>
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="limitations-of-backends">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="limitations-of-backends">
+        Limitations of backends
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="30 minutes countdown" datetime="P30M">30&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Explain why a backend on its own doesn&rsquo;t provide reliable data persistence.</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Explain why we may prefer doing work in a frontend rather than backend to avoid latency.</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <p>We&rsquo;ve already explored limitations of frontends.</p>
+<p>We know a backend is just a program that runs for a long time.</p>
+<h3 id="lifetime">Lifetime</h3>
+<p>A major limitation of backends is that &ldquo;a long time&rdquo; probably isn&rsquo;t forever.</p>
+<p>Sometimes we change the code of the backend. Or we need to restart the computer it&rsquo;s running on for an upgrade (computers are real, physical things!). Or its computer loses power and we need to start it again.</p>
+<p>When this happens, the program starts again.</p>
+<p>Think back to our quote server that allows users to POST new quotes. If we had to stop the server and start it again, we would lose all of the quotes users had saved. They&rsquo;re just stored in a variable, and a variable only lasts while the program it&rsquo;s in is running.</p>
+<h3 id="location">Location</h3>
+<p>Another major limitation of a backend is where the code runs.</p>
+<p>A backend&rsquo;s code runs on whatever server it&rsquo;s running on.</p>
+<p>In contrast, a web frontend&rsquo;s code runs in the user&rsquo;s web browser.</p>
+<h4 id="latency">Latency</h4>
+<p>One problem here is latency.</p>
+<p>You&rsquo;ve already seen latency problems when using <code>fetch</code>. We used Promises or <code>async</code>/<code>await</code> to handle a latency problem. And we did things like set placeholder text while waiting for data from a <code>fetch</code>.</p>
+<p>Imagine if you had a &ldquo;dark mode&rdquo; button on a website, but clicking it required making a request to a backend.</p>
+<p>Depending on where the backend and the user are physically located, it may take anywhere between 1ms and 500ms for a request to go between them.</p>
+<p>If every time you clicked on something on a web page you needed to talk to the backend, you may need to wait half a second just for the request to travel to the server and for the response to travel back, ignoring how long it takes to actually process the request. This would be unusably slow for many applications.</p>
+<p>So sometimes we do work in a frontend to avoid needing to talk to a backend.</p>
+<p>For instance, many websites that show you a list of information let you sort or filter the information. We often implement sorting in the frontend, so that we don&rsquo;t need to wait for a round-trip to a backend. Sometimes this even means we implement some functionality twice - once on the backend <em>and</em> once on the frontend, so that on first page load the backend will do some sorting or filtering, but if you interact with the frontend, additional sorting or filtering may be done there.</p>
+<h4 id="context">Context</h4>
+<p>Because web frontends run in the user&rsquo;s own browser, they have easy access to lots of information about the user&rsquo;s computer. For instance, a user&rsquo;s browser knows what language to use, what the user&rsquo;s time zone is, how big the browser window is, etc.</p>
+<p>If our frontend code were instead running in a backend, the browser may need to include all of this information in every request it makes, just in case the backend needs to know it. This has a couple of drawbacks: It makes the requests bigger (which makes them slower, and maybe cost more), and it ends up sharing lots of data with the server that it may not need, which may compromise the user&rsquo;s privacy.</p>
+<p>Imagine you&rsquo;re trying to buy a sofa. There are a few ways we could do this:</p>
+<ol>
+<li>We could take the entire architectural plans for our home to a shop, and for each sofa work out where it could fit.</li>
+<li>We could go to the shop, and for each sofa we may like, go home and see if the sofa would fit into our space.</li>
+<li>We could measure the space we want to put it in, and then go to a shop where you can compare all of the available sofas against those measurements.</li>
+</ol>
+<p>Approach 1 requires transferring a lot of data. Approach 2 requires a lot of traveling back and forth. Approach 3 tries to minimise both of these things.</p>
+<h3 id="pull-not-push">Pull not push</h3>
+<p>A backend lives at a well-known address - we know how to connect to it. A user&rsquo;s web browser does not.</p>
+<p>This means that a backend cannot try to open a connection to a user&rsquo;s web browser. The web browser needs to initiate the request, and then the backend can reply to the request.</p>
+<p>Once a web browser opens a request to a backend, there are some ways to keep a two-way communication channel open. But the very first request needs to come from the web browser.</p>
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="responsibilities-of-frontends-backends-and-databases">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="responsibilities-of-frontends-backends-and-databases">
+        Responsibilities of frontends, backends, and databases
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="15 minutes countdown" datetime="P15M">15&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Categorise functionality into where it should belong</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <p>When trying to decide which components we need, and in which component functionality should live, it&rsquo;s useful to think about the capabilities and limitations of each.</p>
+<p>A few guiding principles:</p>
+<ul>
+<li>If you need multiple users or computers to share some information, you need a backend to coordinate this.</li>
+<li>If you need your data to be reliably persisted, you need a database (or other storage component) to store it.</li>
+<li>If you need things to respond very quickly to a user interaction, you probably want to do this in a frontend.</li>
+</ul>
+<p>Try to identify which components we would need for each of these applications:</p>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  <multiple-choice data-correct="0" class="c-quiz">
+    <form slot="quiz">
+      <fieldset class="c-quiz__fieldset" tabindex="0">
+        <legend class="c-quiz__legend">🤔 A website hosting a book, so that you can read the book through a web browser.</legend>
+        <ol class="c-quiz__list"><li class="c-quiz__answer">
+            <label
+              class="c-quiz__label"
+              ><input
+              class="c-quiz__input"
+              type="radio"
+              name="answer"
+              value="0" />
+            Just a frontend.</label
+            >
+          </li><li class="c-quiz__answer">
+            <label
+              class="c-quiz__label"
+              ><input
+              class="c-quiz__input"
+              type="radio"
+              name="answer"
+              value="1" />
+            A frontend and a backend.</label
+            >
+          </li><li class="c-quiz__answer">
+            <label
+              class="c-quiz__label"
+              ><input
+              class="c-quiz__input"
+              type="radio"
+              name="answer"
+              value="2" />
+            A frontend and a backend and a database.</label
+            >
+          </li></ol>
+      </fieldset>
+    </form>
+    <section class="c-quiz__feedback" slot="feedback" aria-live="polite"><p class="c-quiz__remark" data-index="0" >💬 Right - if we&rsquo;re just serving some static content, and it never changes, we only need a frontend.</p><p class="c-quiz__remark" data-index="1" >💬 Probably not - if we&rsquo;re just hosting the book, we probably don&rsquo;t need a backend. But there are many requirements which may need one (e.g. password-protecting our book).</p><p class="c-quiz__remark" data-index="2" >💬 Probably not - if we&rsquo;re just hosting the book, we probably don&rsquo;t need a backend. But there are many requirements which may need one (e.g. password-protecting our book, counting how many times it&rsquo;s been read, allowing comments, etc).</p></section>
+  </multiple-choice>
+ 
+  
+  <script src="/scripts/multiple-choice.min.js" defer></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  <multiple-choice data-correct="2" class="c-quiz">
+    <form slot="quiz">
+      <fieldset class="c-quiz__fieldset" tabindex="0">
+        <legend class="c-quiz__legend">🤔 A digital whiteboard which multiple users can collaborate on.</legend>
+        <ol class="c-quiz__list"><li class="c-quiz__answer">
+            <label
+              class="c-quiz__label"
+              ><input
+              class="c-quiz__input"
+              type="radio"
+              name="answer"
+              value="0" />
+            Just a frontend.</label
+            >
+          </li><li class="c-quiz__answer">
+            <label
+              class="c-quiz__label"
+              ><input
+              class="c-quiz__input"
+              type="radio"
+              name="answer"
+              value="1" />
+            A frontend and a backend.</label
+            >
+          </li><li class="c-quiz__answer">
+            <label
+              class="c-quiz__label"
+              ><input
+              class="c-quiz__input"
+              type="radio"
+              name="answer"
+              value="2" />
+            A frontend and a backend and a database.</label
+            >
+          </li></ol>
+      </fieldset>
+    </form>
+    <section class="c-quiz__feedback" slot="feedback" aria-live="polite"><p class="c-quiz__remark" data-index="0" >💬 Probably not - for multiple users to be able to see the same view of what&rsquo;s on the whiteboard, there probably needs to be a backend. If it was just a whiteboard you could draw on on your own laptop, a frontend would probably be enough.</p><p class="c-quiz__remark" data-index="1" >💬 Maybe, but the whiteboard probably wouldn&rsquo;t be very resilient (e.g. if we needed to restart the server, we may lose everyone&rsquo;s whiteboards.</p><p class="c-quiz__remark" data-index="2" >💬 Right - we have multiple users so we need a backend, and we almost always want a database so that our data can persist.</p></section>
+  </multiple-choice>
+ 
+  
+  <script src="/scripts/multiple-choice.min.js" defer></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  <multiple-choice data-correct="1" class="c-quiz">
+    <form slot="quiz">
+      <fieldset class="c-quiz__fieldset" tabindex="0">
+        <legend class="c-quiz__legend">🤔 A website which lets you log in to GitHub and shows all of your GitHub contributions.</legend>
+        <ol class="c-quiz__list"><li class="c-quiz__answer">
+            <label
+              class="c-quiz__label"
+              ><input
+              class="c-quiz__input"
+              type="radio"
+              name="answer"
+              value="0" />
+            Just a frontend.</label
+            >
+          </li><li class="c-quiz__answer">
+            <label
+              class="c-quiz__label"
+              ><input
+              class="c-quiz__input"
+              type="radio"
+              name="answer"
+              value="1" />
+            A frontend and a backend.</label
+            >
+          </li><li class="c-quiz__answer">
+            <label
+              class="c-quiz__label"
+              ><input
+              class="c-quiz__input"
+              type="radio"
+              name="answer"
+              value="2" />
+            A frontend and a backend and a database.</label
+            >
+          </li></ol>
+      </fieldset>
+    </form>
+    <section class="c-quiz__feedback" slot="feedback" aria-live="polite"><p class="c-quiz__remark" data-index="0" >💬 Probably not - you need to authenticate to GitHub to find out your username, you probably need a backend.</p><p class="c-quiz__remark" data-index="1" >💬 Right - you need a backend to be able to authenticate to GitHub. You generally can&rsquo;t do authentication without a backend.</p><p class="c-quiz__remark" data-index="2" >💬 Probably not - because GitHub stores the data, you probably don&rsquo;t need to store it yourself. But you may want to, e.g. to cache data, or to store other data useful in your website.</p></section>
+  </multiple-choice>
+ 
+  
+  <script src="/scripts/multiple-choice.min.js" defer></script>
+
+
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="design-a-frontend-and-backend">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="design-a-frontend-and-backend">
+        Design a frontend and backend
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="30 minutes countdown" datetime="P30M">30&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Design a frontend and backend which can communicate with each other</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <p>We&rsquo;re going to take a frontend you&rsquo;ve already made, and overcome one of its limitations by adding a backend.</p>
+<p>You should already have built a quote generator frontend before. The quote generator you already made used a static array of quotes that were 
+<tool-tip-container tabindex="0"><strong class="tooltip__trigger" id="trigger__hard-coded">hard-coded</strong><span class="tooltip__emoji">🧶</span><tool-tip role="tooltip" aria-labelledby="hard-coded"><span class="tooltip__title e-heading__2"><span class="tooltip__emoji">🧶</span> hard-coded</span><span class="tooltip__content">Hard-coding is when we write the exact data in the source code of our programme, rather than fetching it from some data source or generating it.</span></tool-tip></tool-tip-container>
+ in the frontend.</p>
+<p>We will add some extra functionality to our quote generator. Users will be able to add their own quotes, and then other users on other computers will be able to see the quotes that were added.</p>
+<p>Because we want to be able to store data across computers and users, we know we will need a backend.</p>
+<p>Because we want to be able to change what data we&rsquo;re storing, we know our backend will need to be stateful.</p>
+<p>Because we don&rsquo;t want to have to learn about databases right now, we&rsquo;re going to accept the limitation that when we restart our server, we will lose any added quotes.</p>
+<h3 id="communication-protocols">Communication protocols</h3>
+<p>Before we get started, we should agree how our frontend and backend are going to talk to each other.</p>
+<p>The example stateful backend we looked at before exposed this 
+<tool-tip-container tabindex="0"><strong class="tooltip__trigger" id="trigger__API">API</strong><span class="tooltip__emoji">🧶</span><tool-tip role="tooltip" aria-labelledby="API"><span class="tooltip__title e-heading__2"><span class="tooltip__emoji">🧶</span> API</span><span class="tooltip__content">An API - Application Programming Interface - is a description of how one program can interact with another.</span></tool-tip></tool-tip-container>
+:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Path</th>
+          <th>Method</th>
+          <th>Body</th>
+          <th>Example request body</th>
+          <th>Response body</th>
+          <th>Example response body</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>/</code></td>
+          <td><code>GET</code></td>
+          <td></td>
+          <td></td>
+          <td>A string: A quote (in quotation marks), then a dash and the author of the quote.</td>
+          <td><code>&quot;I should have been more kind.&quot; -Clive James</code></td>
+      </tr>
+      <tr>
+          <td><code>/</code></td>
+          <td><code>POST</code></td>
+          <td>JSON-serialised object with two keys: &ldquo;quote&rdquo; and &ldquo;author&rdquo;, both of which contain strings.</td>
+          <td><code>{&quot;author&quot;: &quot;Ibrahim&quot;, &quot;quote&quot;: &quot;Hello&quot;}</code></td>
+          <td>The string &ldquo;ok&rdquo; if successful, or a string describing an error.</td>
+          <td><code>ok</code></td>
+      </tr>
+  </tbody>
+</table>
+<p>This API is asymmetric:</p>
+<p>When you POST information to it, you post structured information - the backend can easily tell which part is the author and which is the quote.</p>
+<p>When you GET information from it, the information is less structured - the server has already formatted the author and quote into a string.</p>
+<p>Pre-formatting the data may be convenient for the frontend if the backend knows exactly how it will be presented. But it takes away some flexibility from the frontend. If the frontend wanted to show the quote in italics, or the author in bold, this would be hard, because it would need to split the formatted string back up into its constituent parts.</p>
+<p>We probably instead want to change our GET endpoint to also return structured information, which the frontend can choose to format how it wants:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Path</th>
+          <th>Method</th>
+          <th>Body</th>
+          <th>Example request body</th>
+          <th>Response body</th>
+          <th>Example response body</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>/</code></td>
+          <td><code>GET</code></td>
+          <td></td>
+          <td></td>
+          <td>JSON-serialised object with two keys, &ldquo;quote&rdquo; and &ldquo;author&rdquo;, both of which contain strings.</td>
+          <td><code>{&quot;author&quot;: &quot;Clive James&quot;, &quot;quote&quot;: &quot;I should have been more kind.&quot;}</code></td>
+      </tr>
+      <tr>
+          <td><code>/</code></td>
+          <td><code>POST</code></td>
+          <td>JSON-serialised object with two keys: &ldquo;quote&rdquo; and &ldquo;author&rdquo;, both of which contain strings.</td>
+          <td><code>{&quot;author&quot;: &quot;Ibrahim&quot;, &quot;quote&quot;: &quot;Hello&quot;}</code></td>
+          <td>The string &ldquo;ok&rdquo; if successful, or a string describing an error.</td>
+          <td><code>ok</code></td>
+      </tr>
+  </tbody>
+</table>
+<p>We could also design different APIs for our frontend and backend to communicate - the important thing is that they agree on what API we will have.</p>
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="write-a-frontend-and-backend">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="write-a-frontend-and-backend">
+        Write a frontend and backend
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="60 minutes countdown" datetime="P60M">60&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Run a frontend and backend which can communicate with each other</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <section class="c-note c-note--Exercise">
+  <h4 class="c-note__title e-heading__4">Exercise</span>
+  </h4>
+  <div class="c-note__text "><p>Take the example stateful backend we already saw, and adapt it so that it serves the API we designed.</p>
+<p>You can test it by running your backend and making the following requests to it:</p>
+<ul>
+<li><code>curl http://127.0.0.1:3000/</code></li>
+<li><code>curl -X POST --data '{&quot;author&quot;: &quot;Ibrahim&quot;, &quot;quote&quot;: &quot;Hello&quot;}' http://127.0.0.1:3000/</code></li>
+</ul>
+<p>Make sure the responses you get match the API specification we designed.</p>
+</div>
+</section>
+
+
+<p>Now that you have a backend which meets the API specification we designed, let&rsquo;s make a frontend that can talk to it.</p>
+<p>You are free to borrow parts of your previous quote generator website, or make one from scratch.</p>
+<section class="c-note c-note--Exercise">
+  <h4 class="c-note__title e-heading__4">Exercise</span>
+  </h4>
+  <div class="c-note__text "><p>Make a quote generator frontend which fetches quotes from your backend.</p>
+<p>Your frontend should not have any quotes hard-coded in it. It should make a <code>fetch</code> request to your backend, and render whatever quote was returned.</p>
+<p>It should have a button to fetch a new quote, which should fetch and render a different quote.</p>
+<p>It can be as ugly as you want, the purpose of this exercise is not to make a beautiful UI, but to see how things connect.</p>
+<p>You don&rsquo;t need to support adding new quotes yet - we&rsquo;ll do that later.</p>
+</div>
+</section>
+
+
+<section class="c-note c-note--tip">
+    <h4 class="c-note__title">💡Tip</h4>
+    <div class="c-note__text"><p>You will probably hit errors when your frontend tries to talk to your backend due to <a
+  href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS">CORS</a>.</p>
+<p>You can work around these by adding the following lines of code to your backend:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">import</span> <span style="color:#a6e22e">cors</span> <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#34;cors&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">use</span>(<span style="color:#a6e22e">cors</span>());</span></span></code></pre></div><p>You will need to <code>npm install cors</code> as well. <a
+  href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS">Read up on CORS</a> to understand why this is.</p></div>
+  </section><p>Because our frontend talks to our backend, it has fewer limitations than the previous quote generator you made.</p>
+<p>We don&rsquo;t currently expose the capability to add new quotes in our frontend. But our backend <em>does</em> allow this. A user who knew where our backend was running, and what API it exposes, could use <code>curl</code> to add quotes, or could even build their own frontend for adding quotes.</p>
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="deploy-a-frontend-and-backend">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="deploy-a-frontend-and-backend">
+        Deploy a frontend and backend
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="60 minutes countdown" datetime="P60M">60&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Deploy a frontend and backend</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Configure a frontend to talk to a specific deployed backend</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <p>Websites tend to only be useful if they&rsquo;re running somewhere that people can access them.</p>
+<p>We need to deploy our frontend and our backend on the internet so that people can use them.</p>
+<p>And they need to know how to talk to each other. In your frontend you probably hard-coded your <code>fetch</code> to fetch from <code>http://127.0.0.1:3000</code>.</p>
+<p>First let&rsquo;s deploy our backend somewhere. Then when we know its address, we can update our frontend to talk to our deployed backend, and then deploy it too.</p>
+<section class="c-note c-note--Exercise">
+  <h4 class="c-note__title e-heading__4">Exercise</span>
+  </h4>
+  <div class="c-note__text "><p>We also need to store our frontend and backend somewhere to deploy them from:</p>
+<ol>
+<li>Make a new Git repository on your GitHub.</li>
+<li>Make a directory called <code>frontend</code> in the repository, and move your frontend files there.</li>
+<li>Make a directory called <code>backend</code> in the repository, and move your backend files there.</li>
+<li>Commit your files, and push them to your GitHub repository.</li>
+</ol></div>
+</section>
+
+
+<section class="c-note c-note--Exercise">
+  <h4 class="c-note__title e-heading__4">Exercise</span>
+  </h4>
+  <div class="c-note__text ">Follow the <a
+  href="/guides/deploying/cyf/">Deploying to CYF&rsquo;s hosted environment guide</a> to deploy your backend.</div>
+</section>
+
+
+<section class="c-note c-note--Exercise">
+  <h4 class="c-note__title e-heading__4">Exercise</span>
+  </h4>
+  <div class="c-note__text "><p>Update your frontend to talk to your deployed backend when it uses <code>fetch</code>.</p>
+<p>Follow the <a
+  href="/guides/deploying/cyf/">Deploying to CYF&rsquo;s hosted environment guide</a> to deploy your frontend.</p>
+</div>
+</section>
+
+
+<p>Make sure you can use your frontend which was deployed to CYF&rsquo;s hosted environment. Try adding a quote, and make sure it shows up in your frontend.</p>
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+      </div>
+      <nav slot="nav">
+        <a href="#" class="e-button c-solo-view__back">&larr; Back</a>
+        <a href="#" class="e-button c-solo-view__next">Next &rarr;</a>
+      </nav>
+    </solo-view>
+    
+    <script src="/scripts/solo-view.min.js" defer></script>
+    
+    <script src="/scripts/time-total.min.js" defer></script>
+  
+
+
+        
+
+  <footer class="c-page-footer">
+    <nav class="c-page-footer__nav">
+      
+      
+      <span class="c-page-footer__this">Prep</span>
+      
+        →<a
+          class="c-page-footer__next c-page-footer__link e-link"
+          href="/sdc/decomposition/sprints/1/backlog/"
+          >Backlog</a
+        >
+      
+    </nav>
+  </footer>
+
+
+      </main><footer class="l-layout__footer l-footer">
+  <a
+    class="l-footer__github e-button e-button--icon"
+    href="https://github.com/CodeYourFuture/curriculum/">
+    <svg
+  focusable="false"
+  class="e-button__icon"
+  role="presentation"
+  width="96"
+  viewbox="0 0 98 96"
+  xmlns="http://www.w3.org/2000/svg">
+  <path
+    fill-rule="evenodd"
+    clip-rule="evenodd"
+    d="M48.854 0C21.839 0 0 22 0 49.217c0 21.756 13.993 40.172 33.405 46.69 2.427.49 3.316-1.059 3.316-2.362 0-1.141-.08-5.052-.08-9.127-13.59 2.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015 4.934.326 7.523 5.052 7.523 5.052 4.367 7.496 11.404 5.378 14.235 4.074.404-3.178 1.699-5.378 3.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283 0-5.378 1.94-9.778 5.014-13.2-.485-1.222-2.184-6.275.486-13.038 0 0 4.125-1.304 13.426 5.052a46.97 46.97 0 0 1 12.214-1.63c4.125 0 8.33.571 12.213 1.63 9.302-6.356 13.427-5.052 13.427-5.052 2.67 6.763.97 11.816.485 13.038 3.155 3.422 5.015 7.822 5.015 13.2 0 18.905-11.404 23.06-22.324 24.283 1.78 1.548 3.316 4.481 3.316 9.126 0 6.6-.08 11.897-.08 13.526 0 1.304.89 2.853 3.316 2.364 19.412-6.52 33.405-24.935 33.405-46.691C97.707 22 75.788 0 48.854 0z"
+    fill="currentColor" />
+</svg>
+
+    <span class="is-invisible">Find us on GitHub</span>
+  </a>
+  <p class="l-footer__impressum e-heading__6">
+    This
+    <a href="https://github.com/CodeYourFuture/curriculum/">free and open source programme</a>
+    is a project of
+    <a href="https://codeyourfuture.io/">Code Your Future</a>
+    <br />
+    Creative Commons Attribution-ShareAlike 4.0
+  </p>
+  <dark-mode class="l-footer__mode"
+    ><button
+      slot="button"
+      id="mode-toggle"
+      type="button"
+      class="e-button e__button--toggle e-button--icon">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="e-icon e__button__icon e-icon--moon">
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
+      </svg>
+      <span class="is-invisible">Toggle between light and dark mode</span>
+    </button></dark-mode
+  >
+</footer>
+
+
+
+<script src="/scripts/app.min.js" defer></script>
+
+<script src="/scripts/youtube-player.min.js" defer></script>
+
+<script src="/scripts/tab-panels.min.js" type="module" defer></script>
+
+<script src="/scripts/dark-mode.min.js"></script>
+
+<script src="/scripts/alert-message.min.js" defer></script>
+
+
+
+
+
+
+
+</div>
+  </body>
+</html>

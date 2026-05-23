@@ -1,0 +1,2374 @@
+<!DOCTYPE html>
+
+
+
+
+<html lang="en" class="p-day-plan"><head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  <title data-pagefind-meta="title">
+    
+      Software Development Course 
+    
+      Tools 
+    
+      Sprint 3 
+    
+    Day Plan
+  </title>
+  
+    <meta name="description" content="A free and open source software development programme." />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+  <style>
+    body,
+    html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      animation: fade-in 300ms;
+    }
+    @keyframes fade-in {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  </style>
+  
+  
+  <link
+    rel="stylesheet"
+    href="/bundled.min.b6a4520237559385268d63a9daa81d96.css"
+    media="print"
+    onload="this.media='all'" />
+
+  
+  
+    
+    
+    <link
+      rel="stylesheet"
+      href="/custom.min.8ded6a1a88bc7cc98bdef8dc33d15f3a.css"
+      media="print"
+      onload="this.media='all'" />
+  
+
+
+  <noscript>
+    <link rel="stylesheet" href="/bundled.min.b6a4520237559385268d63a9daa81d96.css" />
+  </noscript>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&amp;display=swap"
+    rel="stylesheet"
+    media="print"
+    onload="this.media='all'" />
+
+  <link rel="shortcut icon" href="https://curriculum.codeyourfuture.io/favicon.ico" />
+  <meta name="theme-color" content="#e3ddeef2" />
+  <link rel="manifest" href="https://curriculum.codeyourfuture.io/manifest.json" />
+</head>
+<body>
+    <a class="c-skip-link e-button" id="skip-link" href="#main">Skip to main</a>
+    <div class="l-layout">
+      <header class="l-layout__header l-header">
+  <div class="l-header__container">
+    <h1 class="l-header__heading e-heading__6" data-pagefind-ignore>
+      <a class="l-header__home" href="/"
+        ><span class="is-invisible"
+          >sdc Day Plan CYF Courses</span
+        >
+        <span class="is-none--lt-container">
+          <svg
+          xmlns="http://www.w3.org/2000/svg"
+          title="Code Your Future."
+          viewBox="0 0 621.64 155.81"
+          width="140px"
+          focusable="false"
+          role="img">
+          <path
+            fill="var(--theme-color--brand)"
+            d="M103.37 56.51C96.91 63.64 87.03 69.9 74.6 69.9c-20.14 0-33.52-12.91-33.52-34.09C41.08 13.97 57.5.87 69.94.87c9.5 0 13.77 5.32 14.63 6.46l2.18-5.27h14.91v27h-17c-.28-6.18-3.32-12-10.06-12s-11.3 8.45-11.3 18.8c0 9.4 4.84 17.86 13.86 17.86 8 0 14.24-8.36 15.1-9.31Zm2.88-21.85C106.25 14.15 119.92 0 139.58 0c23.26 0 34.09 14 34.09 35.32s-12 34.57-33.43 34.57c-19.88 0-33.99-11.49-33.99-35.23Zm43.68.66c0-11.49-3.13-20.7-10.45-20.7-5.79-.09-9.78 8.26-9.78 20 0 12.44 4.47 20.32 10.54 20.32s9.65-7.88 9.65-19.62Zm27.49 20.23h5.89V14.34h-5.89V1.8h29c23 0 36.09 14.15 36.09 32.29 0 21.65-13.11 34.09-36.47 34.09h-28.62Zm29 0c10.03-.19 14.21-9.59 14.21-21.49 0-10.16-4.18-19.75-14.25-19.75h-3.61v41.24ZM303.04 1.8v21h-16.43v-8.46h-15.19v13.1h18v12.62h-18v15.49h15.19v-8.83h16.43v21.46h-57.26V55.55h6V14.34h-6V1.8Z" />
+          <path
+            fill="var(--theme-color--ink)"
+            d="M274.42 87.82v21h-16.8v-8.45h-14.37v16.52h18v12.63h-18v12.04h9.68v12.63h-35.29v-12.63h5.89v-41.21h-5.89V87.82Zm33.04 0v12.24h-5.12v20.51c0 15.28 3.41 18.51 9.49 18.51 5.79 0 9.59-2.28 9.59-18.61v-20.12h-5.17V87.82h28.11v12.24h-5.11v23.07c0 22.51-9.4 32.67-27.25 32.67-19.18-.57-29.43-10.64-29.43-32.19v-23.45h-5.32V87.82Zm103.5 24.69h-14v-12.16h-8v41.21h7.88v12.63h-35.26v-12.63h7.79v-41.21h-8.12v12.16h-14V87.82h63.71ZM444 87.82v12.24h-5.13v20.51c0 15.28 3.42 18.51 9.5 18.51 5.79 0 9.59-2.28 9.59-18.61v-20.12h-5.13V87.82h28.11v12.24h-5.13v23.07c0 22.51-9.4 32.67-27.25 32.67-19.18-.57-29.44-10.64-29.44-32.19v-23.45h-5.32V87.82Zm71.59 0c22 0 26.3 8.73 26.3 19.56 0 7.4-5.88 12.63-13.76 13.77 6.55.95 12.44 6.64 12.44 13.48 0 4.08.57 6.46 2.27 6.46 1.43 0 2.19-1.14 2.19-3v-3.13h6.36v5.22c0 7.88-3.32 15.19-13.86 15.19-12.44 0-18.42-6.55-18.42-17.66 0-8.64-1.05-10.73-9.5-10.73v14.68h5.79v12.53h-30.67v-12.53h5.32v-41.4h-5.32V87.82Zm-6 28.48h4.27c5.51 0 9.12-2.65 9.12-7.69 0-5.6-3.13-8.45-8.64-8.45h-4.75Zm102.38-28.48v21h-16.43v-8.45h-15.19v13.09h18v12.6h-18v15.5h15.19v-8.83h16.43v21.46h-57.26v-12.63h6v-41.21h-6V87.82Zm-227.72-56.1c.38-1.9 2.47-5.89 3.51-8.17l5.22-9.59h-5.22V1.8h25.54v12.16h-5.05l-17.62 30.86v11h5.32v12.36h-30.39V55.83h5.41v-11.2l-18.42-30.67h-4.65V1.8h32.47v12.16h-4.93l5.5 10.1c.57 1.81 2.57 6.08 2.95 7.7Zm29.54 2.94C413.79 14.15 427.47 0 447.12 0c23.27 0 34.09 14 34.09 35.32s-12 34.57-33.42 34.57c-19.85 0-34-11.49-34-35.23Zm43.68.66c0-11.49-3.13-20.7-10.44-20.7-5.79-.09-9.78 8.26-9.78 20 0 12.44 4.46 20.32 10.54 20.32s9.68-7.88 9.68-19.62ZM514.25 1.8v12.26h-5.13v20.5c0 15.29 3.42 18.52 9.5 18.52 5.79 0 9.59-2.28 9.59-18.61V14.34h-5.13V1.8h28.11v12.26h-5.13v23.07c0 22.5-9.4 32.66-27.25 32.66-19.18-.57-29.44-10.63-29.44-32.19V14.15h-5.32V1.8Zm71.59 0c22 0 26.31 8.74 26.31 19.57 0 7.4-5.89 12.62-13.77 13.76 6.55 1 12.44 6.65 12.44 13.49 0 4.08.57 6.46 2.27 6.46 1.43 0 2.19-1.14 2.19-3V48.9h6.36v5.23c0 7.88-3.32 15.19-13.86 15.19-12.44 0-18.42-6.55-18.42-17.66 0-8.64-1.05-10.73-9.5-10.73v14.71h5.79v12.54h-30.67V55.64h5.32v-41.4h-5.32V1.8Zm-6 28.49h4.27c5.51 0 9.12-2.66 9.12-7.69 0-5.6-3.13-8.45-8.64-8.45h-4.75ZM28.39 14.7l5.8 10.64-23.46 10.72 23.46 10.55-3.61 9.87L0 42.24v-13.3Zm318.7 14.24v13.3l-30.58 14.24-3.61-9.87 23.46-10.55-23.46-10.72 5.8-10.64Z" />
+        </svg>
+        </span>
+        <span class="is-none--gt-container">
+          <svg
+          xmlns="http://www.w3.org/2000/svg"
+          version="1.0"
+          viewBox="0 0 512 512"
+          width="48px">
+          <path
+            fill="currentcolor"
+            stroke="currentcolor"
+            d="M225.5 1c-1.1.5-3.5.9-5.3.9-4.1.1-22.9 4.5-30.7 7.2-63.1 22-114.7 72.3-142.7 139.4-6.4 15.2-11.8 33.8-16.7 57-4.1 19.7-5.4 64.5-2.6 90.8C33 346.2 49.8 390.1 76.8 425c6.2 7.9 23.9 26.4 30.7 32 8.1 6.7 26.1 18.7 35.1 23.6 28.1 15.1 58 24.3 91.9 28.3 5.5.7 13.6 1.7 18 2.2 8.8 1.2 33.9.7 48-.9 11-1.3 31.7-4.8 36.5-6.2 1.9-.5 8-2.3 13.5-3.9 21.3-6.1 47.2-17.8 67.5-30.5 8.8-5.4 23.7-15.8 28.5-19.7 10.2-8.4 24.5-21.3 31.4-28.2l8.4-8.5-2.2-2.9c-1.3-1.5-4.6-5.3-7.4-8.3-6.2-6.7-14.5-15.7-21.2-23.1-2.7-3-7.5-8.2-10.5-11.4-3-3.3-9.8-10.8-15.1-16.5-21.5-23.6-24.2-26.5-24.9-26.8-.3-.1-2 1.2-3.6 3-1.6 1.9-6.3 7.1-10.4 11.7-8.6 9.7-25.6 24.6-35.9 31.4-21.4 14.4-42.5 21.7-62.6 21.7-15.3-.1-29.3-3.3-42.5-10-22.8-11.5-41.9-35.5-51.5-64.7-4.2-12.8-4.3-13.4-5.9-22.8-3.8-22.9-4.6-39.2-2.6-55.6 2.7-22.7 3.3-26.5 5-33.2 7.9-30.9 16.7-48.6 32.4-65.6 16.8-17.9 41.1-24.9 65.1-18.6 30 7.8 50.7 36.3 55.5 76.3.5 4.6 1.2 8.7 1.5 9.3.4.5 25.1.9 62.6.9H474V9H364.2L357 26.7c-4 9.8-7.9 18.5-8.7 19.3-1.3 1.3-2.1.8-6.6-4.3-6-6.9-18.3-16.7-28.2-22.5-7.4-4.3-22.6-10.9-28.5-12.4-9.2-2.2-18.1-4.1-24-5-9-1.3-33.1-1.9-35.5-.8z" />
+        </svg>
+        </span>
+      </a>
+    </h1>
+    <link
+  href="/pagefind/pagefind-ui.css"
+  rel="stylesheet"
+  media="print"
+  onload="this.media='all'" />
+<style>
+  :root {
+    --pagefind-ui-primary: var(--theme-color--ink);
+    --pagefind-ui-text: var(--theme-color--ink);
+    --pagefind-ui-background: var(--theme-color--paper);
+    --pagefind-ui-border: var(--theme-color--outline);
+    --pagefind-ui-tag: var(--theme-color--block);
+    --pagefind-ui-border-radius: 2em;
+    --pagefind-ui-image-border-radius: var(--theme-border-radius);
+    --pagefind-ui-font: var(--theme-font--copy);
+  }
+  .pagefind-ui--reset {
+    position: absolute;
+  }
+  #search .pagefind-ui__search-input {
+    box-shadow: var(--theme-box-shadow--inset);
+    margin-bottom: var(--theme-spacing--1);
+  }
+  #search .pagefind-ui__search-clear {
+    background-color: transparent;
+  }
+  #search .pagefind-ui__drawer {
+    background-color: var(--theme-color--paper);
+    box-shadow: var(--theme-box-shadow--slim);
+    transform: translateY(-1.5px);
+    padding: 0 var(--theme-spacing--2);
+    max-height: calc(100vh - 4rem);
+    overflow-y: auto;
+  }
+  #search .pagefind-ui__result {
+    padding: var(--theme-spacing--1) 0 var(--theme-spacing--2) 0;
+  }
+  #search .pagefind-ui__result:focus-within,
+  #search .pagefind-ui__button:focus {
+    background-color: var(--theme-color--block);
+  }
+  #search .pagefind-ui__button {
+    border: none;
+  }
+</style>
+<script src="/pagefind/pagefind-ui.js" type="text/javascript" defer></script>
+<div id="search" class="l-header__search"></div>
+<script>
+  window.addEventListener("DOMContentLoaded", (event) => {
+    new PagefindUI({
+      element: "#search",
+      showSubResults: true,
+      pageSize: 3,
+      showImages: false,
+      showTags: true,
+    });
+  });
+</script>
+
+    <button
+      class="l-header__action e-button e-button--icon js-menu-toggle e-heading__3">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+        <path
+          stroke="var(--theme-color--ink)"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M13 5a1 1 0 1 0-2 0 1 1 0 0 0 2 0Zm0 7a1 1 0 1 0-2 0 1 1 0 0 0 2 0Zm0 7a1 1 0 1 0-2 0 1 1 0 0 0 2 0Z" />
+      </svg>
+      <span class="is-invisible">Open Menu.</span>
+    </button>
+  </div>
+</header>
+
+      <nav
+  class="l-layout__menu l-menu"
+  aria-label="Main Site Links."
+  id="site-menu"
+  hidden
+  tabindex="0">
+  <div class="l-menu__container">
+    <h2 class="l-menu__heading e-heading__2">
+      <a href="/" class="l-menu__home is-invisible">Menu</a>
+    </h2>
+    <button
+      class="l-menu__action e-button e-button--icon js-menu-toggle e-heading__2"
+      id="close-menu">
+      ❎
+      <span class="is-invisible">Close Menu.</span>
+    </button>
+    <ul class="l-menu__primary">
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/guides/">
+            Guides
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/sdc/tools/">
+            Tools
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/sdc/logic/">
+            Logic
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/sdc/decomposition/">
+            Decomposition
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/sdc/legacy/">
+            Legacy code
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/sdc/complexity/">
+            Complexity
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/tracks/servers/">
+            Servers
+          </a>
+        </li>
+    </ul>
+    <ul class="l-menu__secondary">
+        <li class="l-menu__item">
+          <a class="e-heading__3 l-menu__link" href="https://codeyourfuture.io">
+            CYF 👈🏾
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__3 l-menu__link" href="https://codeyourfuture.io/volunteers/">
+            Join Us 👋🏿
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__3 l-menu__link" href="https://codeyourfuture.io/donate/">
+            Support 🫶🏼
+          </a>
+        </li>
+    </ul>
+  </div>
+</nav>
+
+      <main
+        id="main"
+        class="l-layout__main l-main"
+        tabindex="0"
+        data-pagefind-body>
+        
+  <article>
+    
+    
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+<header
+  class="c-page-header 
+    c-page-header--toc
+   c-page-header--toc">
+  
+  <div class="c-page-header__container">
+    <div class="c-page-header__breadcrumbs">
+      
+  <nav class="c-breadcrumbs">
+    <ol class="c-breadcrumbs__list">
+      
+        
+        
+          <li class="c-breadcrumbs__item">
+            <a
+              class="c-breadcrumbs__link"
+              href="/sdc/"data-pagefind-filter="module"><span class="c-breadcrumbs__text">Software Development Course</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                width="24px"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="c-breadcrumbs__icon">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+              </svg>
+            </a>
+          </li>
+        
+        
+          <li class="c-breadcrumbs__item">
+            <a
+              class="c-breadcrumbs__link"
+              href="/sdc/tools/"><span class="c-breadcrumbs__text">Tools</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                width="24px"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="c-breadcrumbs__icon">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+              </svg>
+            </a>
+          </li>
+      
+        <li class="c-breadcrumbs__item">
+          <a
+            class="c-breadcrumbs__link"
+            href="/sdc/tools/sprints/3/"data-pagefind-filter="sprint">Sprint 3</a
+          >
+        </li>
+      
+    </ol>
+  </nav>
+  
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Our Courses",
+      "item":"https://curriculum.codeyourfuture.io/"},
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Software Development Course",
+      "item":"https://curriculum.codeyourfuture.io/sdc/"},
+    {
+      "@type": "ListItem",
+      "position":  3 ,
+      "name": "Tools",
+      "item":"https://curriculum.codeyourfuture.io/sdc/tools/"},{
+      "@type": "ListItem",
+      "position":  5 ,
+      "name": "Sprint 3",
+      "item":"https://curriculum.codeyourfuture.io/sdc/tools/sprints/3/"},
+    {
+      "@type": "ListItem",
+      "position":  6 ,
+      "name": "Day Plan",
+      "item":"https://curriculum.codeyourfuture.io/sdc/tools/sprints/3/"}
+  ]
+}
+</script>
+
+
+    </div>
+    <h1 class="c-page-header__title e-heading__1"
+      data-pagefind-weight="10">
+      <span class="c-emoji">
+        
+        
+           
+         
+        </span>
+        <span class="c-page-header__title-text">Day Plan</span>
+               
+    </h1>
+    
+      
+    
+    
+    
+    
+      <div class="c-page-header__toc " id="toc">
+        <section class="c-toc" aria-label="Table of contents.">
+          <a id="top" class="c-toc__top e-button e-button--icon" href="#toc"
+            >🔖 <span class="is-invisible">back to top</span></a
+          >
+          
+            <nav id="TableOfContents"></nav>
+          
+          
+            <ol>
+              
+                <li>
+                  <a href="#morning-orientation" data-pagefind-weight="5"
+                    >Morning orientation</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#exploring-processes-workshop" data-pagefind-weight="5"
+                    >Exploring processes workshop</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#morning-break" data-pagefind-weight="5"
+                    >Morning break</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#study-group" data-pagefind-weight="5"
+                    >Study Group</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#lunch" data-pagefind-weight="5"
+                    >Lunch</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#demo" data-pagefind-weight="5"
+                    >Demo</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#study-group" data-pagefind-weight="5"
+                    >Study Group</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#retro" data-pagefind-weight="5"
+                    >Retro</a
+                  >
+                  
+                </li>
+              
+            </ol>
+          
+          
+        </section>
+      </div>
+    
+
+  </div>
+</header>
+
+    
+
+    
+    
+    <time-stamper start-time="10:00">
+      <div class="c-block__series c-block__series--timeline">
+        
+          
+          
+          
+          
+          
+            
+          
+          
+            
+          
+          
+          
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="c-block">
+<header class="c-block__header">
+<h2 class="c-block__title e-heading__2" id="register">
+  Register
+</h2>
+<time
+  class="c-block__time"
+  tabindex="0"
+  role="timer"
+  aria-label="5 minutes countdown"
+  datetime="P5M"
+  >5 minutes ⏱</time>
+</header>
+<form class="c-form c-form--inline" id="sdc"  method="POST" netlify-honeypot="nectar" data-netlify="true">
+  <label class="is-invisible">Nectar<input name="nectar" /></label>
+  <input type="hidden" name="course" value="sdc">
+  <input type="hidden" name="module" value="Tools">
+  <input type="hidden" name="day" value="sprint-3">
+  <input type="hidden" name="buildTime" value="2026-05-23T23:01:43">
+  <div><label for="name" class="is-invisible">Name</label>
+  <input type="text" name="name" id="name" autocomplete="name" placeholder="Name" required>
+  </div>
+  <div><label for="email" class="is-invisible">Email you signed up to CYF with</label>
+  <input type="email" name="email" id="email" autocomplete="email" placeholder="Email you signed up to CYF with" required>
+  </div>
+  
+  <div><label for="location" class="is-invisible">Location</label>
+  <input list="locations" name="location" id="location" autocomplete="location" placeholder="Location" required>
+  <datalist id="locations">
+    <option value="Birmingham"></option><option value="Capetown"></option><option value="Glasgow"></option><option value="London"></option><option value="Manchester"></option><option value="Sheffield"></option>
+  </datalist>
+  </div>
+  
+  <button class="e-button">Register</button>
+</form>
+</section>
+
+<script>
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    const registration = event.target;
+    const formData = new FormData(registration);
+  
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(formData).toString(),
+    })
+    .then(() => register.innerHTML = "<h3>✅ You signed in</h3>")
+    .catch((error) => alert(error));
+};
+const register = document.getElementById("sdc")
+register.addEventListener("submit", handleSubmit);
+</script>
+
+
+        
+        
+
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="morning-orientation">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="morning-orientation">
+        Morning orientation
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="15 minutes countdown" datetime="P15M">15&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Introduce and welcome new volunteers</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Nominate a timekeeper</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Check the morning day plan and group structures</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <section class="c-note c-note--info">
+  <h4 class="c-note__title e-heading__4">Planning during the week</span>
+  </h4>
+  <div class="c-note__text ">🧭 During the week, create a post on Slack and get some people to take on the roles of <strong>facilitator</strong> and <strong>timekeeper</strong>. Nominate new people each time.</div>
+</section>
+
+
+<h1 id="-steps">👣 Steps</h1>
+<p>If you haven&rsquo;t done so already, choose someone (volunteer or trainee) to be the <strong>facilitator</strong> for this morning orientation block. Choose another to be the <strong>timekeeper</strong>.</p>
+<details>
+<summary>
+<h3 id="-the-facilitator-will">🎙️ The Facilitator will:</h3>
+</summary>
+<ol>
+<li>Assemble the entire group (all volunteers &amp; all trainees) in a circle</li>
+<li>Briefly welcome everyone with an announcement, like this:
+<blockquote><p>💬 &ldquo;Morning everyone, Welcome to <span class="c-our-name">CYF</span> {REGION}, this week we are working on {MODULE} {SPRINT} and we&rsquo;re currently working on {SUMMARISE THE TOPICS OF THE WEEK}&rdquo;</p>
+</blockquote></li>
+<li>Ask any newcomers to introduce themselves to the group, and welcome them.</li>
+<li>Now check: is it the <em>start of a new module</em>? Is it sprint 1? If so, read out <a
+  href="../../../success">the success criteria for the new module</a>.</li>
+<li>Next go through the <em>morning day plan only</em> (typically on the curriculum website) - and check the following things:</li>
+</ol>
+<h4 id="facilitator-checklist">Facilitator Checklist</h4>
+<ul>
+<li><input disabled="" type="checkbox"> Check the number of volunteers you have for the morning</li>
+<li><input disabled="" type="checkbox"> Check someone is leading each session</li>
+<li><input disabled="" type="checkbox"> Describe how any new activities works for the group</li>
+<li><input disabled="" type="checkbox"> Decide how best to allocate trainees and volunteers for a given block - most blocks will make this clear</li>
+</ul>
+</details>
+<details>
+<summary>
+<h3 id="-the-timekeeper-will">⏰ The Timekeeper will:</h3>
+</summary>
+<ul>
+<li><input disabled="" type="checkbox"> Announce the start of an activity and how long it will take (check everyone is listening)</li>
+<li><input disabled="" type="checkbox"> Manage any whole class timers that are used in an activity</li>
+<li><input disabled="" type="checkbox"> Give people a 10-minute wrap-up warning before the end of an activity</li>
+<li><input disabled="" type="checkbox"> Announce the end of an activity and what happens next</li>
+</ul>
+</details>
+
+    </div>
+    
+    
+    
+  </div>
+</section>
+
+
+
+
+        
+
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="exploring-processes-workshop">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="exploring-processes-workshop">
+        Workshop: Process Spelunking
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="90 minutes countdown" datetime="P90M">90&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Find the PID of a process, using <code>ps</code>.</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Define a file descriptor.</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />List a process&rsquo;s open file descriptors, using <code>lsof</code>.</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Define a system call.</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />List the system calls performed by a process, using <code>strace</code></label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Interpret the output of <code>strace</code>.</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Interpret return values of syscalls by referencing <code>man 2</code>.</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <h1 id="workshop-process-spelunking">Workshop: Process Spelunking</h1>
+<p>This workshop will teach you about how the programs you write, interact with files.
+And in the process, we&rsquo;ll learn more about the kernel, and how it helps your programs do things.</p>
+<h2 id="preparation">Preparation</h2>
+<h3 id="linux">Linux</h3>
+<p>In order to participate in this workshop, you will need a linux computer.
+If you&rsquo;re in a CYF class, there are laptops you can borrow for this workshop - your volunteers should know how to access them.</p>
+<p>Otherwise, I recommend using an ubuntu VM in AWS (free tier instance), or alternatively a VM inside virtual box.</p>
+<section class="c-note c-note--warning">
+    <h4 class="c-note__title">⚠️Warning</h4>
+    <div class="c-note__text"><p>Docker linux will not work properly for this workshop.
+Don&rsquo;t use it.
+(If you don&rsquo;t know what docker is, you&rsquo;re probably grand.)</p></div>
+  </section><!--
+  Should we warn against WoL-subsystem (linux emulator on windows) too?
+  -->
+<p>For people who run linux on their own laptop, I still recommend an AWS instance,
+so you won&rsquo;t get distracted by all the other programs running under your user account.</p>
+<h3 id="preparing-your-linux">Preparing Your Linux</h3>
+<p>On the linux computer, make sure the following packages are installed:</p>
+<ul>
+<li><code>python3</code></li>
+<li><code>lsof</code></li>
+<li><code>strace</code></li>
+</ul>
+<section class="c-note c-note--tip">
+    <h4 class="c-note__title">💡Tip</h4>
+    <div class="c-note__text"><p>On ubuntu, you can run <code>sudo apt install python3 lsof strace</code> to get these programs installed.</p></div>
+  </section><!--
+  Beyond this point, `sudo` isn't required, but I see no reason to deny it.
+  Everything (except for the package installation) can be done as a normal user.
+  -->
+<h3 id="linux-skills">Linux Skills</h3>
+<p>I recommend you learn how to use the <code>less</code> program.</p>
+<p>Confirm that if you run <code>man ps</code>, you get shown a man-page.
+(It&rsquo;s a lot of text, you can exit it with <code>q</code>.)</p>
+<p>Make sure that you can:</p>
+<ul>
+<li>create a new text file on the linux machine,</li>
+<li>open 2 shells at the same time on the linux machine (we will use 1 to run a small python program, and another to look at the program while it&rsquo;s running).</li>
+</ul>
+<h2 id="programs-processes-and-the-kernel">Programs, Processes, and the Kernel</h2>
+<!-- XXX
+  Maybe remove the kitchen/kernel from this section?
+  It's not used much beyond telling that kernels think of processes by a number...
+  Instead of saying that the kernel needs this to be a number,
+  we can say the computer needs this to be a number instead.
+  -->
+<!--
+  Am comparing a program, process, and kernel, to an analogy of cooking.
+  The analogy is not perfect, but I hope it works sufficiently well to get people an idea.
+  Truth is, kernels are super nebulous to explain, and we kind of don't want to dive in deeply.
+  -->
+<p>You know how a recipe is a series of instructions on how to create a nice meal, and when you do those instructions, it&rsquo;s called cooking?
+The same is true for programming: the code you write is called a program.
+And when you run this program, we call that a process.</p>
+<p>When cooking, you use your kitchen, which has knives to cut vegetables, a stove to boil things, an oven to bake things, etc.
+The kitchen is really important to make a meal, but it can&rsquo;t do any of the cooking on its own.</p>
+<p>The same happens in programming: your process will use a kernel to do things like reading files, talk on the network, and write things on the console.
+The kernel is really important to run a process, but it can&rsquo;t do any of the program on its own.</p>
+<table>
+  <thead>
+      <tr>
+          <th></th>
+          <th>when cooking</th>
+          <th>when programming</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>The instructions are called</td>
+          <td>recipe</td>
+          <td>program</td>
+      </tr>
+      <tr>
+          <td>Executing those instructions</td>
+          <td>cooking</td>
+          <td>running</td>
+      </tr>
+      <tr>
+          <td>Who/What does those instructions</td>
+          <td>a cook</td>
+          <td>a process</td>
+      </tr>
+      <tr>
+          <td>What you use to do this</td>
+          <td>a kitchen</td>
+          <td>a kernel</td>
+      </tr>
+  </tbody>
+</table>
+<p>The kernel makes facilities available, to see what a process is doing.
+In this workshop, we&rsquo;ll use those facilities to look into what&rsquo;s going on inside the process.</p>
+<h3 id="processes">Processes</h3>
+<p>In order to start doing anything, we first need to learn how to find a process.</p>
+<section class="c-note c-note--note">
+  <h4 class="c-note__title e-heading__4">📝Preparation</span>
+  </h4>
+  <div class="c-note__text "><p>Create a file <code>exercise_1.py</code> with this code.</p>
+<pre tabindex="0"><code>input(&#34;Press enter to stop the program...&#34;)</code></pre><p>On your first terminal, run the program: <code>python3 exercise_1.py</code>
+The program should wait for you to press enter.
+We won&rsquo;t press enter yet, instead we&rsquo;ll keep it waiting.</p>
+</div>
+</section>
+
+
+<!--
+  I'm teaching the BSD invocation of ps.
+  Yes, it's older, and doesn't have friendly dashes.
+  But it works also on BSDs and apple 'puters.
+  Also, it's the syntax I'm used to.
+  -->
+<p>We&rsquo;ll use the <code>ps</code> command.
+<code>ps</code> is short for <em>Process Status</em>.</p>
+<!--
+  The linux man-page doesn't tell you this.
+  -->
+
+
+
+<tab-panels class="c-tabs">
+  <div class="c-tabs__list" id="tabset--14014259560728226120-15292738269-56582048" role="tablist"><button
+          data-toggle="tab"
+          id="tab-label-tabset--14014259560728226120-15292738269-56582048-0"
+          class="c-tabs__tab e-heading__5 space 
+            is-active"
+          role="tab"
+          aria-controls="tabset--14014259560728226120-15292738269-56582048-0"
+          aria-selected="true">
+          Exercise
+        </button><button
+          data-toggle="tab"
+          id="tab-label-tabset--14014259560728226120-15292738269-56582048-1"
+          class="c-tabs__tab e-heading__5 space "
+          role="tab"
+          aria-controls="tabset--14014259560728226120-15292738269-56582048-1"
+          aria-selected="false">
+          Answer
+        </button></div>
+  <div class="c-tabs__group" id="tabset--14014259560728226120-15292738269-56582048">
+        <div
+          id="tabset--14014259560728226120-15292738269-56582048-0"
+          class="c-tabs__panel is-active"
+          role="tabpanel"
+          data-heading="Exercise"
+          aria-labelledby="tab-label-tabset--14014259560728226120-15292738269-56582048-0"><p>On your second terminal, type <code>ps aux</code>.
+(There are no dashes.)</p>
+<p>Can you find your process?</p>
+</div>
+        <div
+          id="tabset--14014259560728226120-15292738269-56582048-1"
+          class="c-tabs__panel "
+          role="tabpanel"
+          data-heading="Answer"
+          aria-labelledby="tab-label-tabset--14014259560728226120-15292738269-56582048-1"><p>The <code>ps aux</code> command should show you something like this:</p>
+<pre tabindex="0"><code>ariane@ubuntu2204:~$ ps aux
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.2 166428 11948 ?        Ss   Jan24   0:30 /lib/systemd/systemd --syste
+root           2  0.0  0.0      0     0 ?        S    Jan24   0:00 [kthreadd]
+ariane     62597  0.0  0.1 170608  5156 ?        S    Feb22   0:00 (sd-pam)
+ariane     62702  0.0  0.1  17316  8008 ?        R    Feb22   0:00 sshd: ariane@pts/0
+ariane     62705  0.0  0.1   8972  5812 pts/0    Ss   Feb22   0:00 -bash
+root       62789  0.0  0.2  16924 10760 ?        Ss   Feb22   0:00 sshd: ariane [priv]
+ariane     62848  0.0  0.2  17316  8016 ?        S    Feb22   0:00 sshd: ariane@pts/1
+ariane     62849  0.0  0.1   9000  5944 pts/1    Ss   Feb22   0:00 -bash
+root       63213  0.0  0.0   6896  3108 ?        Ss   Feb22   0:00 /usr/sbin/cron -f -P
+ariane     66392  0.0  0.2  17328  8784 pts/1    S+   20:17   0:00 python3 exercise_1.py
+ariane     66393  0.0  0.0  10072  1604 pts/0    R+   20:17   0:00 ps aux</code></pre><p>(You&rsquo;ll see a lot more than I&rsquo;m showing here.)</p>
+<!--
+  I left out many from this output, so it wouldn't be so long.
+  I hope that won't confuse our students.
+  If I didn't do that, the output would be 123 lines, most of them kernel threads.
+  -->
+<p>In the example output, you can see the program on the second-to-last line:</p>
+<pre tabindex="0"><code>ariane     66392  0.0  0.2  17328  8784 pts/1    S+   20:17   0:00 python3 exercise_1.py</code></pre><p>You can also see that the first column shows the username.
+So now you know my name. :)</p>
+</div></div>
+</tab-panels>
+
+<p>In the <code>ps</code> output, you can see multiple columns.
+The one we&rsquo;re interested in, is the <em>PID</em> column.
+<em>PID</em> is short for <em>Process Identifier</em>.
+(<em>ID</em> is short for Identifier.)</p>
+<p>It turns out, working with text is a lot of work for computers.
+They much prefer working with numbers.
+And that&rsquo;s why the kernel doesn&rsquo;t think about a process as a name, but as a number: the <em>PID</em>.</p>
+<p>By default, <code>ps</code> (without any options) will only show (some of) our own processes, that have a
+
+<tool-tip-container tabindex="0"><strong class="tooltip__trigger" id="trigger__TTY">TTY</strong><span class="tooltip__emoji">🧶</span><tool-tip role="tooltip" aria-labelledby="TTY"><span class="tooltip__title e-heading__2"><span class="tooltip__emoji">🧶</span> TTY</span><span class="tooltip__content"><em>TTY</em> is short for <em>TeleTYpe</em>, it&rsquo;s a kind of really old type-writer that used a phone line, so that what you type appears in some far-away place.</span></tool-tip></tool-tip-container>
+.
+A <em>TTY</em> is used whenever you log in, and is the console used by programs.
+If you&rsquo;ve ever heard of <code>standard in</code> or <code>standard out</code>, those are usually writing to a <em>TTY</em>, which is used by a person.</p>
+<p>The <em>STAT</em> and <em>TIME</em> columns tell us what a process is doing, and how much time it has used.
+We won&rsquo;t care about them today.</p>
+
+
+
+<tab-panels class="c-tabs">
+  <div class="c-tabs__list" id="tabset--14014259560728619808-15293131864-56582048" role="tablist"><button
+          data-toggle="tab"
+          id="tab-label-tabset--14014259560728619808-15293131864-56582048-0"
+          class="c-tabs__tab e-heading__5 space 
+            is-active"
+          role="tab"
+          aria-controls="tabset--14014259560728619808-15293131864-56582048-0"
+          aria-selected="true">
+          Exercise
+        </button><button
+          data-toggle="tab"
+          id="tab-label-tabset--14014259560728619808-15293131864-56582048-1"
+          class="c-tabs__tab e-heading__5 space "
+          role="tab"
+          aria-controls="tabset--14014259560728619808-15293131864-56582048-1"
+          aria-selected="false">
+          Answer
+        </button></div>
+  <div class="c-tabs__group" id="tabset--14014259560728619808-15293131864-56582048">
+        <div
+          id="tabset--14014259560728619808-15293131864-56582048-0"
+          class="c-tabs__panel is-active"
+          role="tabpanel"
+          data-heading="Exercise"
+          aria-labelledby="tab-label-tabset--14014259560728619808-15293131864-56582048-0">There are many more processes, but many don&rsquo;t have a <em>TTY</em>.<br>
+Can you figure out what the <em>TTY</em> of the <code>cron</code> process is?</div>
+        <div
+          id="tabset--14014259560728619808-15293131864-56582048-1"
+          class="c-tabs__panel "
+          role="tabpanel"
+          data-heading="Answer"
+          aria-labelledby="tab-label-tabset--14014259560728619808-15293131864-56582048-1"><p>The <code>cron</code> program is on a line similar like this:</p>
+<pre tabindex="0"><code>USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root       63213  0.0  0.0   6896  3108 ?        Ss   Feb22   0:00 /usr/sbin/cron -f -P</code></pre><p>You can see its <em>TTY</em> column is <code>?</code>.
+This means the process doesn&rsquo;t have a <em>TTY</em>, and doesn&rsquo;t directly interact with a human.
+Many system services, and also programs which only interact with a person using graphics, won&rsquo;t have a <em>TTY</em>.</p>
+</div></div>
+</tab-panels>
+
+<section class="c-note c-note--tip">
+    <h4 class="c-note__title">💡Tip</h4>
+    <div class="c-note__text"><p>Personally, I usually type <code>ps aux | grep exercise_1</code> when I want to find the <em>PID</em> of the exercise.
+So if you only want to remember one thing, remember this. :)</p></div>
+  </section><p>If you want to learn more, you can use <code>man ps</code> to read the documentation.
+It&rsquo;ll also have examples, and explain what the <code>a</code>, <code>u</code>, and <code>x</code> mean.</p>
+<section class="c-note c-note--note">
+  <h4 class="c-note__title e-heading__4">📝Clean up</span>
+  </h4>
+  <div class="c-note__text ">Now that you know how to find a <em>Process Identifier</em>, we no longer need the program that we started on the first terminal.
+You can hit &ldquo;enter&rdquo; to get it to stop.</div>
+</section>
+
+
+<h3 id="what-youve-learned">What You&rsquo;ve Learned</h3>
+<p>You&rsquo;ve learned how you can use <code>ps</code> to find the <em>PID</em> of a process. <br>
+You&rsquo;ve learned the difference between a program and a process.</p>
+<h2 id="files">Files</h2>
+<p>Processes can open files.</p>
+<p>Just as with processes, the computer doesn&rsquo;t like using words to refer to the open file.
+Instead, it uses an <em>File Descriptor</em> (usually shortened to <em>FD</em>).
+A <em>file descriptor</em> is a number.</p>
+<h3 id="running-lsof">Running lsof</h3>
+<p>We can see which files a process has open, and we do this by using <code>lsof</code>.
+<code>lsof</code> stands for <code>List Open Files</code>.</p>
+<!--
+  I've omitted the `sudo lsof | grep /var/log/syslog` style of finding which process has a particular file open.
+  It's very useful, but I think explaining this distracts from the goal (learning how processes and kernel interact).
+  It's also not super easy to explain, without explaining `sudo`, and thus users, permissions, and oh my...
+  -->
+<section class="c-note c-note--note">
+  <h4 class="c-note__title e-heading__4">📝Preparation</span>
+  </h4>
+  <div class="c-note__text "><p>Create a new file: <code>exercise_2_file.txt</code>.
+It&rsquo;s fine to leave it empty.</p>
+<p>Create a file <code>exercise_2.py</code> with this code.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>file_object <span style="color:#f92672">=</span> open(<span style="color:#e6db74">&#34;exercise_2_file.txt&#34;</span>, <span style="color:#e6db74">&#34;r&#34;</span>)
+</span></span><span style="display:flex;"><span>input(<span style="color:#e6db74">&#34;Press enter to stop the program...&#34;</span>)
+</span></span><span style="display:flex;"><span>file_object<span style="color:#f92672">.</span>close()</span></span></code></pre></div><p>On your first terminal, run the program: <code>python3 exercise_2.py</code>
+The program should wait for you to press enter.
+Just like before, we won&rsquo;t press enter yet, instead we&rsquo;ll keep it waiting.</p>
+</div>
+</section>
+
+
+
+
+
+<tab-panels class="c-tabs">
+  <div class="c-tabs__list" id="tabset--14014259560729789555-15294301611-56582048" role="tablist"><button
+          data-toggle="tab"
+          id="tab-label-tabset--14014259560729789555-15294301611-56582048-0"
+          class="c-tabs__tab e-heading__5 space 
+            is-active"
+          role="tab"
+          aria-controls="tabset--14014259560729789555-15294301611-56582048-0"
+          aria-selected="true">
+          Exercise
+        </button><button
+          data-toggle="tab"
+          id="tab-label-tabset--14014259560729789555-15294301611-56582048-1"
+          class="c-tabs__tab e-heading__5 space "
+          role="tab"
+          aria-controls="tabset--14014259560729789555-15294301611-56582048-1"
+          aria-selected="false">
+          Answer
+        </button></div>
+  <div class="c-tabs__group" id="tabset--14014259560729789555-15294301611-56582048">
+        <div
+          id="tabset--14014259560729789555-15294301611-56582048-0"
+          class="c-tabs__panel is-active"
+          role="tabpanel"
+          data-heading="Exercise"
+          aria-labelledby="tab-label-tabset--14014259560729789555-15294301611-56582048-0"><p>Use what you learned in the previous exercise, to find the <em>PID</em> of this program.</p>
+<p>Now run <code>lsof -p 1234</code> (replace 1234 with the <em>PID</em> of the program).
+The <code>-p</code> flag tells <code>lsof</code> that we&rsquo;re only interested in the files opened by that process; without that option <code>lsof</code> will show everything that it can show.</p>
+<p>Can you find the FD of the <code>exercise_2_file.txt</code> file?</p>
+</div>
+        <div
+          id="tabset--14014259560729789555-15294301611-56582048-1"
+          class="c-tabs__panel "
+          role="tabpanel"
+          data-heading="Answer"
+          aria-labelledby="tab-label-tabset--14014259560729789555-15294301611-56582048-1"><p>If I run <code>lsof</code> on the program, I see this.
+You should see something similar.</p>
+<pre tabindex="0"><code>ariane@ubuntu2204:~$ lsof -p 65262
+COMMAND   PID   USER   FD   TYPE DEVICE SIZE/OFF    NODE NAME
+python3 65262 ariane  cwd    DIR  253,0     4096  262145 /home/ariane/programming
+python3 65262 ariane  rtd    DIR  253,0     4096       2 /
+python3 65262 ariane  txt    REG  253,0  5937800 3670306 /usr/bin/python3.10
+python3 65262 ariane  mem    REG  253,0    27002 3691433 /usr/lib/x86_64-linux-gnu/gconv/gconv-modules.cache
+python3 65262 ariane  mem    REG  253,0  3048928 3684223 /usr/lib/locale/locale-archive
+python3 65262 ariane  mem    REG  253,0  2220400 3691022 /usr/lib/x86_64-linux-gnu/libc.so.6
+python3 65262 ariane  mem    REG  253,0   108936 3681429 /usr/lib/x86_64-linux-gnu/libz.so.1.2.11
+python3 65262 ariane  mem    REG  253,0   194872 3704849 /usr/lib/x86_64-linux-gnu/libexpat.so.1.8.7
+python3 65262 ariane  mem    REG  253,0   940560 3691027 /usr/lib/x86_64-linux-gnu/libm.so.6
+python3 65262 ariane  mem    REG  253,0   240936 3691016 /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+python3 65262 ariane    0u   CHR  136,1      0t0       4 /dev/pts/1
+python3 65262 ariane    1u   CHR  136,1      0t0       4 /dev/pts/1
+python3 65262 ariane    2u   CHR  136,1      0t0       4 /dev/pts/1
+python3 65262 ariane    3r   REG  253,0        0  262147 /home/ariane/programming/exercise_2_file.txt</code></pre><p>I can see the file mentioned on the last line:</p>
+<pre tabindex="0"><code>python3 65262 ariane    3r   REG  253,0        0  262147 /home/ariane/programming/exercise_2_file.txt</code></pre><p>The <em>FD</em> column says <code>3r</code>.
+This means the file is on <em>FD</em> 3.
+(The <code>r</code> suffix, means it is opened for reading.)</p>
+<p>Note that the file <code>exercise_2.py</code> does not appear in the list because, by the time lsof is executed, Python has already read its contents into memory and no longer holds an open file descriptor.</p>
+</div></div>
+</tab-panels>
+
+<h3 id="standard-input-output-and-error">Standard Input, Output, and Error</h3>
+<p>Despite our program only opening the <code>exercise_2_file.txt</code> file, it has more files open.
+There are three other <em>file descriptors</em> in use: <code>0</code>, <code>1</code>, and <code>2</code>.</p>
+<table>
+  <thead>
+      <tr>
+          <th>File descriptor</th>
+          <th>How we call it</th>
+          <th>What it&rsquo;s for</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>0</td>
+          <td><code>stdin</code> (standard input)</td>
+          <td>Things you type, show up in your program on this <em>file descriptor</em>.</td>
+      </tr>
+      <tr>
+          <td>1</td>
+          <td><code>stdout</code> (standard output)</td>
+          <td>Your program can write output on this <em>file descriptor</em>.</td>
+      </tr>
+      <tr>
+          <td>2</td>
+          <td><code>stderr</code> (standard error)</td>
+          <td>If things go wrong in your program, you can write errors to this <em>file descriptor</em>.</td>
+      </tr>
+  </tbody>
+</table>
+<p>The <em>standard input</em> is used by our tiny program, to wait for the &ldquo;enter&rdquo; key.
+And the message <code>Press enter to stop the program...</code> is written to standard output.</p>
+<p>These <em>file descriptors</em> (0, 1, and 2) always exist, they&rsquo;re created at the start of the program.
+This is also why the first opened file ends up on <em>file descriptor</em> <code>3</code>: it&rsquo;s the first available number that can be used.</p>
+<h3 id="reg-chr-dir">Reg, Chr, Dir?</h3>
+<p>The <code>TYPE</code> column tells us what kind of file is opened.
+<code>REG</code> means something that is a regular file.
+Because we created a regular file for our program, we can see that <code>exercise_2_file.txt</code> is opened as a <code>REG</code> file.</p>
+<p>All other types are special kinds of files.
+In particular, <code>DIR</code> means directory.
+(Yes, you can open directories. The directory mentioned under <em>FD</em> <code>cwd</code>, is the Current Working Directory, where you program is running.)</p>
+<p>And <code>CHR</code> means character special device.
+These are usually things like the console.
+Which is why you see <em>standard input</em>, <em>standard output</em>, and <em>standard error</em> having those types of file open.</p>
+<p>There are many many more types, but you won&rsquo;t see those quite as often.
+You can read them all in the <code>lsof</code> man-page: <code>man lsof</code>.
+(Most of them I don&rsquo;t know, and have never seen in the wild.)</p>
+<!--
+  XXX `lsof -d 3` will show all processes and their `3` file descriptor.
+  This can be turned into an exercise to show that each process has their own scoped file descriptors.
+  -->
+<section class="c-note c-note--note">
+  <h4 class="c-note__title e-heading__4">📝Clean up</span>
+  </h4>
+  <div class="c-note__text ">Now that you know how to find a <em>File Descriptor</em>, we no longer need the program that we started on the first terminal.
+You can hit &ldquo;enter&rdquo; to get it to stop.</div>
+</section>
+
+
+<h3 id="what-youve-learned-1">What You&rsquo;ve Learned</h3>
+<p>Processes can open files. <br>
+Processes use <em>file descriptors</em> to refer to the files. <br>
+We can inspect which files are opened by a process, using the <code>lsof</code> command.</p>
+<h2 id="system-calls">System Calls</h2>
+<p>So far, we&rsquo;ve seen files getting opened.
+And we&rsquo;ve seen we can use <code>lsof</code> to see those files being opened.</p>
+<p>The reason <code>lsof</code> can see it, is because the process asks the kernel.
+The kernel was asked for a file, thus it knows the file is opened, and can tell you about it.</p>
+<p>This &ldquo;asking the kernel&rdquo; is done by use of <em>system calls</em>.</p>
+<h3 id="running-strace">Running strace</h3>
+<p>We can look at <em>system calls</em> while they happen.
+<code>strace</code> is short for <em>system call trace</em>.</p>
+<section class="c-note c-note--note">
+  <h4 class="c-note__title e-heading__4">📝Preparation</span>
+  </h4>
+  <div class="c-note__text "><p>Create a new file <code>exercise_3_file.txt</code>.
+This time, we want to put something in it.
+You can write what you like, but if you&rsquo;re short on inspiration, write this:</p>
+<pre tabindex="0"><code>Agnes, who is a cat, is sleeping on the sofa.</code></pre><p>Create a file <code>exercise_3.py</code> with this code.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>file_object <span style="color:#f92672">=</span> open(<span style="color:#e6db74">&#34;exercise_3_file.txt&#34;</span>, <span style="color:#e6db74">&#34;r&#34;</span>)</span></span></code></pre></div><p>This time, the program doesn&rsquo;t wait for you to press enter.
+You can test if you&rsquo;ve set everything up correctly, by running <code>python3 exercise_3.py</code> (it should not produce any output).
+After that, if you run <code>echo $?</code>, you should get <code>0</code>, indicating the program ran without errors.</p>
+</div>
+</section>
+
+
+
+
+
+<tab-panels class="c-tabs">
+  <div class="c-tabs__list" id="tabset--14014259560730878862-15295390918-56582048" role="tablist"><button
+          data-toggle="tab"
+          id="tab-label-tabset--14014259560730878862-15295390918-56582048-0"
+          class="c-tabs__tab e-heading__5 space 
+            is-active"
+          role="tab"
+          aria-controls="tabset--14014259560730878862-15295390918-56582048-0"
+          aria-selected="true">
+          Exercise
+        </button><button
+          data-toggle="tab"
+          id="tab-label-tabset--14014259560730878862-15295390918-56582048-1"
+          class="c-tabs__tab e-heading__5 space "
+          role="tab"
+          aria-controls="tabset--14014259560730878862-15295390918-56582048-1"
+          aria-selected="false">
+          Answer
+        </button></div>
+  <div class="c-tabs__group" id="tabset--14014259560730878862-15295390918-56582048">
+        <div
+          id="tabset--14014259560730878862-15295390918-56582048-0"
+          class="c-tabs__panel is-active"
+          role="tabpanel"
+          data-heading="Exercise"
+          aria-labelledby="tab-label-tabset--14014259560730878862-15295390918-56582048-0"><p>Run <code>strace -o strace.output python3 exercise_3.py</code>.
+<code>strace</code> will write each and every <em>system call</em> that the process makes to the <code>strace.output</code> file.</p>
+<p>Look at the <code>strace.output</code> file.
+Each line it shows, is a <em>system call</em>.
+There are a lot.
+The process does a lot of talking to the kernel.</p>
+<p>Can you see where <code>exercise_3_file.txt</code> is opened?</p>
+</div>
+        <div
+          id="tabset--14014259560730878862-15295390918-56582048-1"
+          class="c-tabs__panel "
+          role="tabpanel"
+          data-heading="Answer"
+          aria-labelledby="tab-label-tabset--14014259560730878862-15295390918-56582048-1"><p>You should see something like:</p>
+<pre tabindex="0"><code>read(3, &#34;file_object = open(\&#34;exercise_3_f&#34;..., 4096) = 47
+lseek(3, 0, SEEK_SET)                   = 0
+read(3, &#34;file_object = open(\&#34;exercise_3_f&#34;..., 4096) = 47
+read(3, &#34;&#34;, 4096)                       = 0
+close(3)                                = 0
+openat(AT_FDCWD, &#34;exercise_3_file.txt&#34;, O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, &#34;&#34;, {st_mode=S_IFREG|0664, st_size=46, ...}, AT_EMPTY_PATH) = 0
+ioctl(3, TCGETS, 0x7ffefb757ae0)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+ioctl(3, TCGETS, 0x7ffefb757930)        = -1 ENOTTY (Inappropriate ioctl for device)
+rt_sigaction(SIGINT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER|SA_ONSTACK, sa_restorer=0x7f1f2f25a520}, {sa_handler=0x55dda8389f00, sa_mask=[], sa_flags=SA_RESTORER|SA_ONSTACK, sa_restorer=0x7f1f2f25a520}, 8) = 0
+close(3)                                = 0
+munmap(0x7f1f2ec9f000, 151552)          = 0
+exit_group(0)                           = ?
++++ exited with 0 +++</code></pre><p>(There&rsquo;s a whole lot before this, but I left that out.)</p>
+<p>If you look closely, you can find the name of the file, and it being opened, here:</p>
+<pre tabindex="0"><code>openat(AT_FDCWD, &#34;exercise_3_file.txt&#34;, O_RDONLY|O_CLOEXEC) = 3</code></pre></div></div>
+</tab-panels>
+
+<p>The <code>openat</code> <em>system call</em> opens a file.</p>
+<p>From looking at the <em>system calls</em> that the process makes, we can try to figure out what it&rsquo;s doing.
+We call this tracing.</p>
+
+
+
+<tab-panels class="c-tabs">
+  <div class="c-tabs__list" id="tabset--14014259560731231302-15295743358-56582048" role="tablist"><button
+          data-toggle="tab"
+          id="tab-label-tabset--14014259560731231302-15295743358-56582048-0"
+          class="c-tabs__tab e-heading__5 space 
+            is-active"
+          role="tab"
+          aria-controls="tabset--14014259560731231302-15295743358-56582048-0"
+          aria-selected="true">
+          Exercise
+        </button><button
+          data-toggle="tab"
+          id="tab-label-tabset--14014259560731231302-15295743358-56582048-1"
+          class="c-tabs__tab e-heading__5 space "
+          role="tab"
+          aria-controls="tabset--14014259560731231302-15295743358-56582048-1"
+          aria-selected="false">
+          Answer
+        </button></div>
+  <div class="c-tabs__group" id="tabset--14014259560731231302-15295743358-56582048">
+        <div
+          id="tabset--14014259560731231302-15295743358-56582048-0"
+          class="c-tabs__panel is-active"
+          role="tabpanel"
+          data-heading="Exercise"
+          aria-labelledby="tab-label-tabset--14014259560731231302-15295743358-56582048-0"><p>Change the file <code>exercise_3.py</code> with this code:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>file_object <span style="color:#f92672">=</span> open(<span style="color:#e6db74">&#34;exercise_3_file.txt&#34;</span>, <span style="color:#e6db74">&#34;r&#34;</span>)
+</span></span><span style="display:flex;"><span>input(<span style="color:#e6db74">&#34;Press enter to stop the program...&#34;</span>)</span></span></code></pre></div><p>On your first terminal, type <code>strace -o strace.output python3 exercise_3.py</code>
+On your second terminal, use <code>lsof</code> (from earlier) to find the <em>file descriptor</em> for <code>exercise_3_file.txt</code>.
+Next, find the <code>openat</code> system call where <code>exercise_3_file.txt</code> is opened.</p>
+<p>Can you tell where <code>strace</code> tells you what the file descriptor is?</p>
+</div>
+        <div
+          id="tabset--14014259560731231302-15295743358-56582048-1"
+          class="c-tabs__panel "
+          role="tabpanel"
+          data-heading="Answer"
+          aria-labelledby="tab-label-tabset--14014259560731231302-15295743358-56582048-1"><p>I expect you&rsquo;ll see the same numbers as me.</p>
+<p>I can see <code>lsof</code> telling me that the <em>file descriptor</em> is 3.</p>
+<p>And the <em>trace</em> shows:</p>
+<pre tabindex="0"><code>openat(AT_FDCWD, &#34;exercise_3_file.txt&#34;, O_RDONLY|O_CLOEXEC) = 3</code></pre><p>That last <code>= 3</code> is the <em>file descriptor</em>.</p>
+</div></div>
+</tab-panels>
+
+<p>You can look up the <code>openat</code> system call in the man pages: <code>man 2 openat</code>
+and if you look at the <em>RETURN VALUE</em> section, you can see that the return value of <code>openat</code>
+is the file descriptor:</p>
+<pre tabindex="0"><code>RETURN VALUE
+       open(), openat(), and creat() return the new file descriptor (a nonnegative integer),
+       or -1 if an error occurred (in which case, errno is set appropriately).</code></pre><p>The return value of a system call will always be after the equals sign (<code>=</code>) in the trace output.</p>
+<!--
+  I think getting the students used to specifying the section of the man pages
+  when looking up system calls is important.
+  Because the `write` program exists, and `man` will prioritize that over the `write` system call.
+  -->
+<section class="c-note c-note--tip">
+    <h4 class="c-note__title">💡Tip</h4>
+    <div class="c-note__text"><p>All system calls are documented in <em>man pages</em>.
+The man pages system is divided into sections.
+Section <em>2</em> contains all system calls.</p>
+<p>If you don&rsquo;t tell <code>man</code> which section to look in, it&rsquo;ll make a guess.
+The guess is often right, so you can omit the <em>2</em> in many cases.</p></div>
+  </section><p>Let&rsquo;s make this a little more useful.</p>
+<p>At the preparation step, we made sure the file had something in it.
+That&rsquo;s because we&rsquo;re going to read it.</p>
+<p>And then write it to the output.
+And this time, we&rsquo;re going to do that without &ldquo;Press enter to stop the program&rdquo;.</p>
+<!--
+  XXX I'm thinking of making this print line numbers in front of each line.
+  That way, I can point out that while we can see the effects of the process
+  (opening the file, writing to stdout),
+  we can't see what the process does inside.
+  We can only guess.
+  -->
+
+
+
+<tab-panels class="c-tabs">
+  <div class="c-tabs__list" id="tabset--14014259560732087146-15296599295-56582048" role="tablist"><button
+          data-toggle="tab"
+          id="tab-label-tabset--14014259560732087146-15296599295-56582048-0"
+          class="c-tabs__tab e-heading__5 space 
+            is-active"
+          role="tab"
+          aria-controls="tabset--14014259560732087146-15296599295-56582048-0"
+          aria-selected="true">
+          Exercise
+        </button><button
+          data-toggle="tab"
+          id="tab-label-tabset--14014259560732087146-15296599295-56582048-1"
+          class="c-tabs__tab e-heading__5 space "
+          role="tab"
+          aria-controls="tabset--14014259560732087146-15296599295-56582048-1"
+          aria-selected="false">
+          Answer
+        </button></div>
+  <div class="c-tabs__group" id="tabset--14014259560732087146-15296599295-56582048">
+        <div
+          id="tabset--14014259560732087146-15296599295-56582048-0"
+          class="c-tabs__panel is-active"
+          role="tabpanel"
+          data-heading="Exercise"
+          aria-labelledby="tab-label-tabset--14014259560732087146-15296599295-56582048-0"><p>Change the file <code>exercise_3.py</code> with this code:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>file_object <span style="color:#f92672">=</span> open(<span style="color:#e6db74">&#34;exercise_3_file.txt&#34;</span>, <span style="color:#e6db74">&#34;r&#34;</span>)
+</span></span><span style="display:flex;"><span>lines <span style="color:#f92672">=</span> file_object<span style="color:#f92672">.</span>readlines()
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> line <span style="color:#f92672">in</span> lines:
+</span></span><span style="display:flex;"><span>    print(line, end<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;</span>)
+</span></span><span style="display:flex;"><span>file_object<span style="color:#f92672">.</span>close()</span></span></code></pre></div><p>Can you find all the system calls used to read this file?
+And can you find all the system calls used to write the text to standard out?</p>
+</div>
+        <div
+          id="tabset--14014259560732087146-15296599295-56582048-1"
+          class="c-tabs__panel "
+          role="tabpanel"
+          data-heading="Answer"
+          aria-labelledby="tab-label-tabset--14014259560732087146-15296599295-56582048-1"><p>To read the file, three <em>system calls</em> are used.</p>
+<p>First, the <code>openat</code> <em>system call</em>:</p>
+<pre tabindex="0"><code>openat(AT_FDCWD, &#34;exercise_3_file.txt&#34;, O_RDONLY|O_CLOEXEC) = 3</code></pre><p>Next the <code>read</code> <em>system calls</em>:</p>
+<pre tabindex="0"><code>read(3, &#34;Agnes, who is a cat, is sleeping&#34;..., 8192) = 46
+read(3, &#34;&#34;, 8192)                       = 0</code></pre><p>The <code>3</code> refers to the same file descriptor again.
+And we can see the text we placed in our file.
+(If you put a different text in, you&rsquo;ll see that different text here.)</p>
+<p>There is also a <code>close</code> <em>system call</em>:</p>
+<pre tabindex="0"><code>close(3)                                = 0</code></pre><p>And to write the text, the <code>write</code> <em>system call</em> is used:</p>
+<pre tabindex="0"><code>write(1, &#34;Agnes, who is a cat, is sleeping&#34;..., 46) = 46</code></pre><p>We can see the <code>1</code>, which is the <em>file descriptor</em> to which it is written.
+(In the <code>lsof</code> part, we can have seen that this is <em>standard output</em>.)</p>
+</div></div>
+</tab-panels>
+
+<!--
+  XXX This chapter needs more love.
+  I've written out the exercises that I want, but I want to teach them to look at the man-page
+  to get an idea of what the system call does.
+  (Because guessing based on the name only gets one so far.)
+  -->
+<h3 id="what-youve-learned-2">What You&rsquo;ve Learned</h3>
+<p>You&rsquo;ve learned that the process and the kernel speak with each other using <em>system calls</em>. <br>
+You can <em>trace</em> those <em>system calls</em> using <code>strace</code>.</p>
+<p>You&rsquo;ve also seen how a file is opened, and read, by asking the kernel to do that for us, using <em>system calls</em>.</p>
+
+    </div>
+    
+    
+    
+    
+<h3>Review</h3>
+Look back over the objectives of this activity - check you've met them all. If you haven't, make sure you have a plan for how to achieve them - maybe checking in with a volunteer or a fellow trainee could help?
+
+
+    
+  </div>
+</section>
+
+
+
+
+        
+
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="morning-break">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="morning-break">
+        Morning Break
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="15 minutes countdown" datetime="P15M">15&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+    <div class="c-block__content c-copy">
+      <p>A quick break so we can all concentrate on the next piece of work.</p>
+
+    </div>
+    
+    
+    
+  </div>
+</section>
+
+
+
+
+        
+
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="study-group">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="study-group">
+        Study Group
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="55 minutes countdown" datetime="P55M">55&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Get help with prep or backlog items you&rsquo;re not sure about.</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <h3 id="trainees">Trainees</h3>
+<p>This is time for you to get help with whatever you need help with.</p>
+<p>If you didn&rsquo;t understand something in the prep, ask about it.</p>
+<p>If you were struggling with a backlog exercise, get help with it.</p>
+<p>If you weren&rsquo;t quite sure of something in a workshop, discuss it.</p>
+<p>If you don&rsquo;t have any problems, keep working through the backlog until you need help.</p>
+<p>It can be useful to get into groups with others facing the same problem, or working on the same backlog item.</p>
+<h3 id="volunteers">Volunteers</h3>
+<p>Don&rsquo;t be scared to approach people and ask what they&rsquo;re working on - see if you can help them out, or stretch their understanding.</p>
+<p>If lots of people have the same problems, maybe you can put together a demonstration or a workshop to help them understand.</p>
+<p>If absolutely no one needs help, consider <a
+  href="/prs-needing-review">reviewing some PRs</a> using the process and guidelines in <a
+  href="https://codeyourfutur-yov6609.slack.com/archives/C0A1E83EZRP">the #cyf-code-review-volunteer-team Slack channel</a> canvas.</p>
+<h3 id="breaks">Breaks</h3>
+<p>No one can work solidly forever! Make sure to take breaks when you need.</p>
+<h3 id="finished-everything">Finished everything?</h3>
+<p>If you have finished everything in the backlog you can use this time to practice some other skills which will be useful in your future careers. We have some suggestions below:</p>
+<details>
+<summary>
+<h4 id="pair-programming">Pair programming</h4>
+</summary>
+<p>Pair programming is very common in industry so it&rsquo;s good to practice it now! Find a partner and choose a problem to work on, for example a <a
+  href="https://www.codewars.com">Codewars</a> kata. One person will be the &ldquo;driver&rdquo; and the other will be the &ldquo;navigator&rdquo;. Both of you will use the same laptop to complete the activity.</p>
+<ul>
+<li>The &ldquo;driver&rdquo; is the person typing on the keyboard, just thinking about what needs to be written</li>
+<li>The &ldquo;navigator&rdquo; reviews what the driver is doing and is thinking about to write next</li>
+<li>Switch between driver and navigator roles after <time class="c-block__time" tabindex="0" role="timer" aria-label="10 minutes countdown" datetime="P10M">10&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+</li>
+<li>Don&rsquo;t dominate - this is teamwork</li>
+</ul>
+<p>There are further details in our <a
+  href="/guides/pair-programming/#drivernavigator-pair-programming">Pair Programming Guide</a>.</p>
+</details>
+<details>
+<summary>
+<h4 id="code-review">Code review</h4>
+</summary>
+<p>You will receive regular reviews of your work from volunteers when you submit a PR, but how comfortable are you <em>giving</em> a review? Find a partner and give each other feedback on one of the PRs you submitted this week. After you have given your feedback you should consider:</p>
+<ul>
+<li>How did you understand what the goal of the PR is? Did you read the title and description, look at the coursework exercises, etc.</li>
+<li>How did you use the different tabs in the PR: <code>Conversation</code>, <code>Commits</code>, <code>Files changed</code>.</li>
+<li>What made a PR easy or hard to review:
+<ul>
+<li>Where unrelated files/lines changed?</li>
+<li>Was code consistently formatted? Did indentation help or hurt understanding?</li>
+</ul>
+</li>
+<li>How did you review the code? Did you read top-to-bottom? Did you jump around into and out-of functions? Did you look at tests? Did you clone the code locally and try running it?</li>
+</ul>
+</details>
+<details>
+<summary>
+<h4 id="prepare-for-your-next-demo">Prepare for your next demo</h4>
+</summary>
+<p>You need to give regular demos to complete the course. Use this time to work on your next one. You could:</p>
+<ul>
+<li>Prepare your slides</li>
+<li>Discuss topics</li>
+<li>Practice presenting</li>
+</ul>
+</details>
+<details>
+<summary>
+<h4 id="share-resources-you-have-found">Share resources you have found</h4>
+</summary>
+<p><span class="c-our-name">CYF</span> aren&rsquo;t the only resource available to you! If you have discovered a new book, YouTube channel or anything else you are using to help you learn this is an excellent time to share it with your cohort.</p>
+</details>
+
+    </div>
+    
+    
+    
+  </div>
+</section>
+
+
+
+
+        
+
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="lunch">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="lunch">
+        Community Lunch
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="60 minutes countdown" datetime="P60M">60&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+    <div class="c-block__content c-copy">
+      <p>Every Saturday, we eat together. We share our food and our stories. We learn about each other and the world. We build community.</p>
+<p>This is everyone&rsquo;s responsibility, so let&rsquo;s work together. These are the roles we need help with.</p>
+<ul>
+<li><strong>Food shopping</strong>: ensure enough food is available for all courses running in your region, respecting the dietary requirements and the budget <em>(you might not be the one buying the food, but you should ensure whoever buys or cooks the food knows what should be bought)</em></li>
+<li><strong>Setting up the table</strong>: organise the food so that everyone has access to it and invite people to join lunch</li>
+<li><strong>Washing up &amp; tidying</strong>: your location should be as clean as it was before you all arrived in the morning. This can include washing up, taking the litter outside, hoovering, etc.</li>
+</ul>
+<p>You can do something different every week or every two weeks. You shouldn&rsquo;t have to be constantly responsible for the same task. Agree as a cohort on how you will manage this.</p>
+<p><strong>Questions you can use to help this organisation:</strong></p>
+<ol>
+<li>How long should each person (group of people) be responsible for each goal? 1 week? 2 weeks?</li>
+<li>How will we communicate to our community who is the person responsible right now?</li>
+<li>Is there any role missing?</li>
+</ol>
+
+    </div>
+    
+    
+    
+  </div>
+</section>
+
+
+
+
+        
+
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="demo">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="demo">
+        Demo
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="30 minutes countdown" datetime="P30M">30&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+    <div class="c-block__content c-copy">
+      <p>At <span class="c-our-name">CYF</span> we expect you to demo your work to the class. You must have many opportunities to practice how to clearly and simply <strong>explain your work to others</strong>. This is really important both for interviews and for getting promoted later on.</p>
+<h2 id="-timekeeper">⏰ Timekeeper</h2>
+<p>The timekeeper will keep the groups on track.</p>
+<p>Split randomly into groups of no more than 5 people. Each person will have 2 minutes to demo their work to the group. After the demo, the group will give feedback for 5 minutes. Then the next person will demo their work.</p>
+<h2 id="-trainees">🧑🏼‍🎓 Trainees</h2>
+<h3 id="1-demo">1. Demo</h3>
+<p>You will demo your work to the group. You will have 2 minutes to explain what you did and why. It&rsquo;s ok to show broken code or code that doesn&rsquo;t work yet. Just make sure your demo is interesting.</p>
+<h3 id="2-feedback">2. Feedback</h3>
+<p>After the demo, the group will give you feedback for up to 5 minutes. It&rsquo;s smart to suggest what kind of feedback you want by asking some &ldquo;generative&rdquo; questions. For example:</p>
+<ul>
+<li>I wasn&rsquo;t sure if it makes sense to try X. What do you think?</li>
+<li>I liked the way I did X, but I know there are other approaches, what did you do?</li>
+<li>I found X really confusing, did anyone else have the same problem?</li>
+<li>I wasn&rsquo;t sure if I explained what an X was very clearly, how could I have explained it better?</li>
+</ul>
+<p>More tips: <a
+  href="https://www.gsb.stanford.edu/insights/matt-abrahams-good-question-can-be-key-successful-presentation">A Good Question Can Be the Key to a Successful Presentation</a>.</p>
+<h2 id="-tips">💡 Tips:</h2>
+<ul>
+<li><strong>Practice</strong> your demo before class.</li>
+<li><strong>Keep it simple</strong>. Don&rsquo;t try to show everything you did. Just show <em>one</em> interesting thing.</li>
+<li><strong>Keep it short</strong>. Two minutes is enough.</li>
+<li><strong>Explain</strong> what you did and why.</li>
+<li><strong>Show</strong> your code.</li>
+<li><strong>Ask</strong> for feedback.</li>
+</ul>
+
+    </div>
+    
+    
+    
+  </div>
+</section>
+
+
+
+
+        
+
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="study-group">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="study-group">
+        Study Group
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="130 minutes countdown" datetime="P130M">130&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Get help with prep or backlog items you&rsquo;re not sure about.</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <h3 id="trainees">Trainees</h3>
+<p>This is time for you to get help with whatever you need help with.</p>
+<p>If you didn&rsquo;t understand something in the prep, ask about it.</p>
+<p>If you were struggling with a backlog exercise, get help with it.</p>
+<p>If you weren&rsquo;t quite sure of something in a workshop, discuss it.</p>
+<p>If you don&rsquo;t have any problems, keep working through the backlog until you need help.</p>
+<p>It can be useful to get into groups with others facing the same problem, or working on the same backlog item.</p>
+<h3 id="volunteers">Volunteers</h3>
+<p>Don&rsquo;t be scared to approach people and ask what they&rsquo;re working on - see if you can help them out, or stretch their understanding.</p>
+<p>If lots of people have the same problems, maybe you can put together a demonstration or a workshop to help them understand.</p>
+<p>If absolutely no one needs help, consider <a
+  href="/prs-needing-review">reviewing some PRs</a> using the process and guidelines in <a
+  href="https://codeyourfutur-yov6609.slack.com/archives/C0A1E83EZRP">the #cyf-code-review-volunteer-team Slack channel</a> canvas.</p>
+<h3 id="breaks">Breaks</h3>
+<p>No one can work solidly forever! Make sure to take breaks when you need.</p>
+<h3 id="finished-everything">Finished everything?</h3>
+<p>If you have finished everything in the backlog you can use this time to practice some other skills which will be useful in your future careers. We have some suggestions below:</p>
+<details>
+<summary>
+<h4 id="pair-programming">Pair programming</h4>
+</summary>
+<p>Pair programming is very common in industry so it&rsquo;s good to practice it now! Find a partner and choose a problem to work on, for example a <a
+  href="https://www.codewars.com">Codewars</a> kata. One person will be the &ldquo;driver&rdquo; and the other will be the &ldquo;navigator&rdquo;. Both of you will use the same laptop to complete the activity.</p>
+<ul>
+<li>The &ldquo;driver&rdquo; is the person typing on the keyboard, just thinking about what needs to be written</li>
+<li>The &ldquo;navigator&rdquo; reviews what the driver is doing and is thinking about to write next</li>
+<li>Switch between driver and navigator roles after <time class="c-block__time" tabindex="0" role="timer" aria-label="10 minutes countdown" datetime="P10M">10&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+</li>
+<li>Don&rsquo;t dominate - this is teamwork</li>
+</ul>
+<p>There are further details in our <a
+  href="/guides/pair-programming/#drivernavigator-pair-programming">Pair Programming Guide</a>.</p>
+</details>
+<details>
+<summary>
+<h4 id="code-review">Code review</h4>
+</summary>
+<p>You will receive regular reviews of your work from volunteers when you submit a PR, but how comfortable are you <em>giving</em> a review? Find a partner and give each other feedback on one of the PRs you submitted this week. After you have given your feedback you should consider:</p>
+<ul>
+<li>How did you understand what the goal of the PR is? Did you read the title and description, look at the coursework exercises, etc.</li>
+<li>How did you use the different tabs in the PR: <code>Conversation</code>, <code>Commits</code>, <code>Files changed</code>.</li>
+<li>What made a PR easy or hard to review:
+<ul>
+<li>Where unrelated files/lines changed?</li>
+<li>Was code consistently formatted? Did indentation help or hurt understanding?</li>
+</ul>
+</li>
+<li>How did you review the code? Did you read top-to-bottom? Did you jump around into and out-of functions? Did you look at tests? Did you clone the code locally and try running it?</li>
+</ul>
+</details>
+<details>
+<summary>
+<h4 id="prepare-for-your-next-demo">Prepare for your next demo</h4>
+</summary>
+<p>You need to give regular demos to complete the course. Use this time to work on your next one. You could:</p>
+<ul>
+<li>Prepare your slides</li>
+<li>Discuss topics</li>
+<li>Practice presenting</li>
+</ul>
+</details>
+<details>
+<summary>
+<h4 id="share-resources-you-have-found">Share resources you have found</h4>
+</summary>
+<p><span class="c-our-name">CYF</span> aren&rsquo;t the only resource available to you! If you have discovered a new book, YouTube channel or anything else you are using to help you learn this is an excellent time to share it with your cohort.</p>
+</details>
+
+    </div>
+    
+    
+    
+  </div>
+</section>
+
+
+
+
+        
+
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="retro">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="retro">
+        Retro: Start / Stop / Continue
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="25 minutes countdown" datetime="P25M">25&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+    <div class="c-block__content c-copy">
+      
+
+
+<tab-panels class="c-tabs">
+  <div class="c-tabs__list" id="run-a-retro" role="tablist"><button
+          data-toggle="tab"
+          id="tab-label-run-a-retro-0"
+          class="c-tabs__tab e-heading__5 space 
+            is-active"
+          role="tab"
+          aria-controls="run-a-retro-0"
+          aria-selected="true">
+          Video
+        </button><button
+          data-toggle="tab"
+          id="tab-label-run-a-retro-1"
+          class="c-tabs__tab e-heading__5 space "
+          role="tab"
+          aria-controls="run-a-retro-1"
+          aria-selected="false">
+          Text
+        </button></div>
+  <div class="c-tabs__group" id="run-a-retro">
+        <div
+          id="run-a-retro-0"
+          class="c-tabs__panel is-active"
+          role="tabpanel"
+          data-heading="Video"
+          aria-labelledby="tab-label-run-a-retro-0"><section
+  class="c-block c-block--youtube"
+  aria-labelledby="warning-name-is-empty">
+  <div class="c-block__content">
+    <youtube-player data-src="https://www.youtube.com/watch?v=3rCllHgDl7s"></youtube-player>
+  </div>
+</section>
+</div>
+        <div
+          id="run-a-retro-1"
+          class="c-tabs__panel "
+          role="tabpanel"
+          data-heading="Text"
+          aria-labelledby="tab-label-run-a-retro-1"><section class="c-note c-note--activity">
+  <h4 class="c-note__title e-heading__4">🕹️Retro (20 minutes)</span>
+  </h4>
+  <div class="c-note__text "><p>A retro is a chance to reflect. You can do this on <a
+  href="https://retrotool.io/">RetroTool</a> (create a free anonymous retro and share the link with the class) or on sticky notes on a wall.</p>
+<ol>
+<li>Set a <a
+  href="https://www.google.com/search?q=timer&#43;5&#43;minutes">timer for 5 minutes</a>. There&rsquo;s one on the RetroTool too.</li>
+<li>Write down as many things as you can think of that you&rsquo;d like to <em>start</em>, <em>stop</em>, and <em>continue</em> doing next sprint.</li>
+<li>Write one point per note and keep it short.</li>
+<li>When the timer goes off, one person should set a <a
+  href="https://www.google.com/search?q=timer&#43;1&#43;minute">timer for 1 minute</a> and group the notes into themes.</li>
+<li>Next, set a <a
+  href="https://www.google.com/search?q=timer&#43;2&#43;minutes">timer for 2 minutes</a> and all vote on the most important themes by adding a dot or a +1 to the note.</li>
+<li>Finally, set a <a
+  href="https://www.google.com/search?q=timer&#43;8&#43;minutes">timer for 8 minutes</a> and all discuss the top three themes.</li>
+</ol></div>
+</section></div></div>
+</tab-panels>
+
+
+    </div>
+    
+    
+    
+  </div>
+</section>
+
+
+
+
+        
+      </div>
+    </time-stamper>
+  </article>
+  
+  <script src="/scripts/time-stamper.min.js" type="module" defer></script>
+
+
+        
+
+  <footer class="c-page-footer">
+    <nav class="c-page-footer__nav">
+      
+      
+        <a
+          class="c-page-footer__prev c-page-footer__link e-link"
+          href="/sdc/tools/sprints/3/backlog/"
+          >Backlog</a
+        >←
+      
+      <span class="c-page-footer__this">Day Plan</span>
+      
+        →<a
+          class="c-page-footer__next c-page-footer__link e-link"
+          href="/sdc/tools/sprints/3/success/"
+          >End of Sprint Review</a
+        >
+      
+    </nav>
+  </footer>
+
+
+      </main><footer class="l-layout__footer l-footer">
+  <a
+    class="l-footer__github e-button e-button--icon"
+    href="https://github.com/CodeYourFuture/curriculum/">
+    <svg
+  focusable="false"
+  class="e-button__icon"
+  role="presentation"
+  width="96"
+  viewbox="0 0 98 96"
+  xmlns="http://www.w3.org/2000/svg">
+  <path
+    fill-rule="evenodd"
+    clip-rule="evenodd"
+    d="M48.854 0C21.839 0 0 22 0 49.217c0 21.756 13.993 40.172 33.405 46.69 2.427.49 3.316-1.059 3.316-2.362 0-1.141-.08-5.052-.08-9.127-13.59 2.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015 4.934.326 7.523 5.052 7.523 5.052 4.367 7.496 11.404 5.378 14.235 4.074.404-3.178 1.699-5.378 3.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283 0-5.378 1.94-9.778 5.014-13.2-.485-1.222-2.184-6.275.486-13.038 0 0 4.125-1.304 13.426 5.052a46.97 46.97 0 0 1 12.214-1.63c4.125 0 8.33.571 12.213 1.63 9.302-6.356 13.427-5.052 13.427-5.052 2.67 6.763.97 11.816.485 13.038 3.155 3.422 5.015 7.822 5.015 13.2 0 18.905-11.404 23.06-22.324 24.283 1.78 1.548 3.316 4.481 3.316 9.126 0 6.6-.08 11.897-.08 13.526 0 1.304.89 2.853 3.316 2.364 19.412-6.52 33.405-24.935 33.405-46.691C97.707 22 75.788 0 48.854 0z"
+    fill="currentColor" />
+</svg>
+
+    <span class="is-invisible">Find us on GitHub</span>
+  </a>
+  <p class="l-footer__impressum e-heading__6">
+    This
+    <a href="https://github.com/CodeYourFuture/curriculum/">free and open source programme</a>
+    is a project of
+    <a href="https://codeyourfuture.io/">Code Your Future</a>
+    <br />
+    Creative Commons Attribution-ShareAlike 4.0
+  </p>
+  <dark-mode class="l-footer__mode"
+    ><button
+      slot="button"
+      id="mode-toggle"
+      type="button"
+      class="e-button e__button--toggle e-button--icon">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="e-icon e__button__icon e-icon--moon">
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
+      </svg>
+      <span class="is-invisible">Toggle between light and dark mode</span>
+    </button></dark-mode
+  >
+</footer>
+
+
+
+<script src="/scripts/app.min.js" defer></script>
+
+<script src="/scripts/youtube-player.min.js" defer></script>
+
+<script src="/scripts/tab-panels.min.js" type="module" defer></script>
+
+<script src="/scripts/dark-mode.min.js"></script>
+
+<script src="/scripts/alert-message.min.js" defer></script>
+
+
+
+
+
+
+
+</div>
+  </body>
+</html>

@@ -1,0 +1,2983 @@
+<!DOCTYPE html>
+
+
+
+
+<html lang="en" class="p-prep"><head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  <title data-pagefind-meta="title">
+    
+      Intro to Programming 
+    
+      Data Groups 
+    
+      Sprint 1 
+    
+    Prep
+  </title>
+  
+    <meta name="description" content="A free and open source software development programme." />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+  <style>
+    body,
+    html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      animation: fade-in 300ms;
+    }
+    @keyframes fade-in {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  </style>
+  
+  
+  <link
+    rel="stylesheet"
+    href="/bundled.min.b6a4520237559385268d63a9daa81d96.css"
+    media="print"
+    onload="this.media='all'" />
+
+  
+  
+    
+    
+    <link
+      rel="stylesheet"
+      href="/custom.min.8ded6a1a88bc7cc98bdef8dc33d15f3a.css"
+      media="print"
+      onload="this.media='all'" />
+  
+
+
+  <noscript>
+    <link rel="stylesheet" href="/bundled.min.b6a4520237559385268d63a9daa81d96.css" />
+  </noscript>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&amp;display=swap"
+    rel="stylesheet"
+    media="print"
+    onload="this.media='all'" />
+
+  <link rel="shortcut icon" href="https://curriculum.codeyourfuture.io/favicon.ico" />
+  <meta name="theme-color" content="#e3ddeef2" />
+  <link rel="manifest" href="https://curriculum.codeyourfuture.io/manifest.json" />
+</head>
+<body>
+    <a class="c-skip-link e-button" id="skip-link" href="#main">Skip to main</a>
+    <div class="l-layout">
+      <header class="l-layout__header l-header">
+  <div class="l-header__container">
+    <h1 class="l-header__heading e-heading__6" data-pagefind-ignore>
+      <a class="l-header__home" href="/"
+        ><span class="is-invisible"
+          >itp prep CYF Courses</span
+        >
+        <span class="is-none--lt-container">
+          <svg
+          xmlns="http://www.w3.org/2000/svg"
+          title="Code Your Future."
+          viewBox="0 0 621.64 155.81"
+          width="140px"
+          focusable="false"
+          role="img">
+          <path
+            fill="var(--theme-color--brand)"
+            d="M103.37 56.51C96.91 63.64 87.03 69.9 74.6 69.9c-20.14 0-33.52-12.91-33.52-34.09C41.08 13.97 57.5.87 69.94.87c9.5 0 13.77 5.32 14.63 6.46l2.18-5.27h14.91v27h-17c-.28-6.18-3.32-12-10.06-12s-11.3 8.45-11.3 18.8c0 9.4 4.84 17.86 13.86 17.86 8 0 14.24-8.36 15.1-9.31Zm2.88-21.85C106.25 14.15 119.92 0 139.58 0c23.26 0 34.09 14 34.09 35.32s-12 34.57-33.43 34.57c-19.88 0-33.99-11.49-33.99-35.23Zm43.68.66c0-11.49-3.13-20.7-10.45-20.7-5.79-.09-9.78 8.26-9.78 20 0 12.44 4.47 20.32 10.54 20.32s9.65-7.88 9.65-19.62Zm27.49 20.23h5.89V14.34h-5.89V1.8h29c23 0 36.09 14.15 36.09 32.29 0 21.65-13.11 34.09-36.47 34.09h-28.62Zm29 0c10.03-.19 14.21-9.59 14.21-21.49 0-10.16-4.18-19.75-14.25-19.75h-3.61v41.24ZM303.04 1.8v21h-16.43v-8.46h-15.19v13.1h18v12.62h-18v15.49h15.19v-8.83h16.43v21.46h-57.26V55.55h6V14.34h-6V1.8Z" />
+          <path
+            fill="var(--theme-color--ink)"
+            d="M274.42 87.82v21h-16.8v-8.45h-14.37v16.52h18v12.63h-18v12.04h9.68v12.63h-35.29v-12.63h5.89v-41.21h-5.89V87.82Zm33.04 0v12.24h-5.12v20.51c0 15.28 3.41 18.51 9.49 18.51 5.79 0 9.59-2.28 9.59-18.61v-20.12h-5.17V87.82h28.11v12.24h-5.11v23.07c0 22.51-9.4 32.67-27.25 32.67-19.18-.57-29.43-10.64-29.43-32.19v-23.45h-5.32V87.82Zm103.5 24.69h-14v-12.16h-8v41.21h7.88v12.63h-35.26v-12.63h7.79v-41.21h-8.12v12.16h-14V87.82h63.71ZM444 87.82v12.24h-5.13v20.51c0 15.28 3.42 18.51 9.5 18.51 5.79 0 9.59-2.28 9.59-18.61v-20.12h-5.13V87.82h28.11v12.24h-5.13v23.07c0 22.51-9.4 32.67-27.25 32.67-19.18-.57-29.44-10.64-29.44-32.19v-23.45h-5.32V87.82Zm71.59 0c22 0 26.3 8.73 26.3 19.56 0 7.4-5.88 12.63-13.76 13.77 6.55.95 12.44 6.64 12.44 13.48 0 4.08.57 6.46 2.27 6.46 1.43 0 2.19-1.14 2.19-3v-3.13h6.36v5.22c0 7.88-3.32 15.19-13.86 15.19-12.44 0-18.42-6.55-18.42-17.66 0-8.64-1.05-10.73-9.5-10.73v14.68h5.79v12.53h-30.67v-12.53h5.32v-41.4h-5.32V87.82Zm-6 28.48h4.27c5.51 0 9.12-2.65 9.12-7.69 0-5.6-3.13-8.45-8.64-8.45h-4.75Zm102.38-28.48v21h-16.43v-8.45h-15.19v13.09h18v12.6h-18v15.5h15.19v-8.83h16.43v21.46h-57.26v-12.63h6v-41.21h-6V87.82Zm-227.72-56.1c.38-1.9 2.47-5.89 3.51-8.17l5.22-9.59h-5.22V1.8h25.54v12.16h-5.05l-17.62 30.86v11h5.32v12.36h-30.39V55.83h5.41v-11.2l-18.42-30.67h-4.65V1.8h32.47v12.16h-4.93l5.5 10.1c.57 1.81 2.57 6.08 2.95 7.7Zm29.54 2.94C413.79 14.15 427.47 0 447.12 0c23.27 0 34.09 14 34.09 35.32s-12 34.57-33.42 34.57c-19.85 0-34-11.49-34-35.23Zm43.68.66c0-11.49-3.13-20.7-10.44-20.7-5.79-.09-9.78 8.26-9.78 20 0 12.44 4.46 20.32 10.54 20.32s9.68-7.88 9.68-19.62ZM514.25 1.8v12.26h-5.13v20.5c0 15.29 3.42 18.52 9.5 18.52 5.79 0 9.59-2.28 9.59-18.61V14.34h-5.13V1.8h28.11v12.26h-5.13v23.07c0 22.5-9.4 32.66-27.25 32.66-19.18-.57-29.44-10.63-29.44-32.19V14.15h-5.32V1.8Zm71.59 0c22 0 26.31 8.74 26.31 19.57 0 7.4-5.89 12.62-13.77 13.76 6.55 1 12.44 6.65 12.44 13.49 0 4.08.57 6.46 2.27 6.46 1.43 0 2.19-1.14 2.19-3V48.9h6.36v5.23c0 7.88-3.32 15.19-13.86 15.19-12.44 0-18.42-6.55-18.42-17.66 0-8.64-1.05-10.73-9.5-10.73v14.71h5.79v12.54h-30.67V55.64h5.32v-41.4h-5.32V1.8Zm-6 28.49h4.27c5.51 0 9.12-2.66 9.12-7.69 0-5.6-3.13-8.45-8.64-8.45h-4.75ZM28.39 14.7l5.8 10.64-23.46 10.72 23.46 10.55-3.61 9.87L0 42.24v-13.3Zm318.7 14.24v13.3l-30.58 14.24-3.61-9.87 23.46-10.55-23.46-10.72 5.8-10.64Z" />
+        </svg>
+        </span>
+        <span class="is-none--gt-container">
+          <svg
+          xmlns="http://www.w3.org/2000/svg"
+          version="1.0"
+          viewBox="0 0 512 512"
+          width="48px">
+          <path
+            fill="currentcolor"
+            stroke="currentcolor"
+            d="M225.5 1c-1.1.5-3.5.9-5.3.9-4.1.1-22.9 4.5-30.7 7.2-63.1 22-114.7 72.3-142.7 139.4-6.4 15.2-11.8 33.8-16.7 57-4.1 19.7-5.4 64.5-2.6 90.8C33 346.2 49.8 390.1 76.8 425c6.2 7.9 23.9 26.4 30.7 32 8.1 6.7 26.1 18.7 35.1 23.6 28.1 15.1 58 24.3 91.9 28.3 5.5.7 13.6 1.7 18 2.2 8.8 1.2 33.9.7 48-.9 11-1.3 31.7-4.8 36.5-6.2 1.9-.5 8-2.3 13.5-3.9 21.3-6.1 47.2-17.8 67.5-30.5 8.8-5.4 23.7-15.8 28.5-19.7 10.2-8.4 24.5-21.3 31.4-28.2l8.4-8.5-2.2-2.9c-1.3-1.5-4.6-5.3-7.4-8.3-6.2-6.7-14.5-15.7-21.2-23.1-2.7-3-7.5-8.2-10.5-11.4-3-3.3-9.8-10.8-15.1-16.5-21.5-23.6-24.2-26.5-24.9-26.8-.3-.1-2 1.2-3.6 3-1.6 1.9-6.3 7.1-10.4 11.7-8.6 9.7-25.6 24.6-35.9 31.4-21.4 14.4-42.5 21.7-62.6 21.7-15.3-.1-29.3-3.3-42.5-10-22.8-11.5-41.9-35.5-51.5-64.7-4.2-12.8-4.3-13.4-5.9-22.8-3.8-22.9-4.6-39.2-2.6-55.6 2.7-22.7 3.3-26.5 5-33.2 7.9-30.9 16.7-48.6 32.4-65.6 16.8-17.9 41.1-24.9 65.1-18.6 30 7.8 50.7 36.3 55.5 76.3.5 4.6 1.2 8.7 1.5 9.3.4.5 25.1.9 62.6.9H474V9H364.2L357 26.7c-4 9.8-7.9 18.5-8.7 19.3-1.3 1.3-2.1.8-6.6-4.3-6-6.9-18.3-16.7-28.2-22.5-7.4-4.3-22.6-10.9-28.5-12.4-9.2-2.2-18.1-4.1-24-5-9-1.3-33.1-1.9-35.5-.8z" />
+        </svg>
+        </span>
+      </a>
+    </h1>
+    <link
+  href="/pagefind/pagefind-ui.css"
+  rel="stylesheet"
+  media="print"
+  onload="this.media='all'" />
+<style>
+  :root {
+    --pagefind-ui-primary: var(--theme-color--ink);
+    --pagefind-ui-text: var(--theme-color--ink);
+    --pagefind-ui-background: var(--theme-color--paper);
+    --pagefind-ui-border: var(--theme-color--outline);
+    --pagefind-ui-tag: var(--theme-color--block);
+    --pagefind-ui-border-radius: 2em;
+    --pagefind-ui-image-border-radius: var(--theme-border-radius);
+    --pagefind-ui-font: var(--theme-font--copy);
+  }
+  .pagefind-ui--reset {
+    position: absolute;
+  }
+  #search .pagefind-ui__search-input {
+    box-shadow: var(--theme-box-shadow--inset);
+    margin-bottom: var(--theme-spacing--1);
+  }
+  #search .pagefind-ui__search-clear {
+    background-color: transparent;
+  }
+  #search .pagefind-ui__drawer {
+    background-color: var(--theme-color--paper);
+    box-shadow: var(--theme-box-shadow--slim);
+    transform: translateY(-1.5px);
+    padding: 0 var(--theme-spacing--2);
+    max-height: calc(100vh - 4rem);
+    overflow-y: auto;
+  }
+  #search .pagefind-ui__result {
+    padding: var(--theme-spacing--1) 0 var(--theme-spacing--2) 0;
+  }
+  #search .pagefind-ui__result:focus-within,
+  #search .pagefind-ui__button:focus {
+    background-color: var(--theme-color--block);
+  }
+  #search .pagefind-ui__button {
+    border: none;
+  }
+</style>
+<script src="/pagefind/pagefind-ui.js" type="text/javascript" defer></script>
+<div id="search" class="l-header__search"></div>
+<script>
+  window.addEventListener("DOMContentLoaded", (event) => {
+    new PagefindUI({
+      element: "#search",
+      showSubResults: true,
+      pageSize: 3,
+      showImages: false,
+      showTags: true,
+    });
+  });
+</script>
+
+    <button
+      class="l-header__action e-button e-button--icon js-menu-toggle e-heading__3">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+        <path
+          stroke="var(--theme-color--ink)"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M13 5a1 1 0 1 0-2 0 1 1 0 0 0 2 0Zm0 7a1 1 0 1 0-2 0 1 1 0 0 0 2 0Zm0 7a1 1 0 1 0-2 0 1 1 0 0 0 2 0Z" />
+      </svg>
+      <span class="is-invisible">Open Menu.</span>
+    </button>
+  </div>
+</header>
+
+      <nav
+  class="l-layout__menu l-menu"
+  aria-label="Main Site Links."
+  id="site-menu"
+  hidden
+  tabindex="0">
+  <div class="l-menu__container">
+    <h2 class="l-menu__heading e-heading__2">
+      <a href="/" class="l-menu__home is-invisible">Menu</a>
+    </h2>
+    <button
+      class="l-menu__action e-button e-button--icon js-menu-toggle e-heading__2"
+      id="close-menu">
+      ❎
+      <span class="is-invisible">Close Menu.</span>
+    </button>
+    <ul class="l-menu__primary">
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/guides/">
+            Guides
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/sdc/tools/">
+            Tools
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/sdc/logic/">
+            Logic
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/sdc/decomposition/">
+            Decomposition
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/sdc/legacy/">
+            Legacy code
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/sdc/complexity/">
+            Complexity
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/tracks/servers/">
+            Servers
+          </a>
+        </li>
+    </ul>
+    <ul class="l-menu__secondary">
+        <li class="l-menu__item">
+          <a class="e-heading__3 l-menu__link" href="https://codeyourfuture.io">
+            CYF 👈🏾
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__3 l-menu__link" href="https://codeyourfuture.io/volunteers/">
+            Join Us 👋🏿
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__3 l-menu__link" href="https://codeyourfuture.io/donate/">
+            Support 🫶🏼
+          </a>
+        </li>
+    </ul>
+  </div>
+</nav>
+
+      <main
+        id="main"
+        class="l-layout__main l-main"
+        tabindex="0"
+        data-pagefind-body>
+        
+  
+    <solo-view tabindex="0">
+      
+
+
+      <div slot="header">
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+<header
+  class="c-page-header 
+    c-page-header--solo
+   c-page-header--toc">
+  
+  <div class="c-page-header__container">
+    <div class="c-page-header__breadcrumbs">
+      
+  <nav class="c-breadcrumbs">
+    <ol class="c-breadcrumbs__list">
+      
+        
+        
+          <li class="c-breadcrumbs__item">
+            <a
+              class="c-breadcrumbs__link"
+              href="/itp/"data-pagefind-filter="module"><span class="c-breadcrumbs__text">Intro to Programming</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                width="24px"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="c-breadcrumbs__icon">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+              </svg>
+            </a>
+          </li>
+        
+        
+          <li class="c-breadcrumbs__item">
+            <a
+              class="c-breadcrumbs__link"
+              href="/itp/data-groups/"><span class="c-breadcrumbs__text">Data groups</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                width="24px"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="c-breadcrumbs__icon">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+              </svg>
+            </a>
+          </li>
+      
+        <li class="c-breadcrumbs__item">
+          <a
+            class="c-breadcrumbs__link"
+            href="/itp/data-groups/sprints/1/"data-pagefind-filter="sprint">Sprint 1</a
+          >
+        </li>
+      
+    </ol>
+  </nav>
+  
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Our Courses",
+      "item":"https://curriculum.codeyourfuture.io/"},
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Intro to Programming",
+      "item":"https://curriculum.codeyourfuture.io/itp/"},
+    {
+      "@type": "ListItem",
+      "position":  3 ,
+      "name": "Data groups",
+      "item":"https://curriculum.codeyourfuture.io/itp/data-groups/"},{
+      "@type": "ListItem",
+      "position":  5 ,
+      "name": "Sprint 1",
+      "item":"https://curriculum.codeyourfuture.io/itp/data-groups/sprints/1/"},
+    {
+      "@type": "ListItem",
+      "position":  6 ,
+      "name": "prep",
+      "item":"https://curriculum.codeyourfuture.io/itp/data-groups/sprints/1/"}
+  ]
+}
+</script>
+
+
+    </div>
+    <h1 class="c-page-header__title e-heading__1"data-pagefind-filter="view"
+        
+      data-pagefind-weight="10">
+      <span class="c-emoji">
+        
+        
+           
+            <time-total class="c-page-header__time"></time-total>
+      
+         
+        </span>
+        <span class="c-page-header__title-text">prep</span>
+               
+    </h1>
+    
+      
+    
+    
+    
+    
+      <div class="c-page-header__toc " id="toc">
+        <section class="c-toc" aria-label="Table of contents.">
+          <a id="top" class="c-toc__top e-button e-button--icon" href="#toc"
+            >🔖 <span class="is-invisible">back to top</span></a
+          >
+          
+            <nav id="TableOfContents"></nav>
+          
+          
+            <ol>
+              
+                <li>
+                  <a href="#prep-dir" data-pagefind-weight="5"
+                    >Prep dir</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#creating-test-files" data-pagefind-weight="5"
+                    >Creating test files</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#grouping-data" data-pagefind-weight="5"
+                    >Grouping data</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#arrays" data-pagefind-weight="5"
+                    >arrays</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#calculating-the-mean" data-pagefind-weight="5"
+                    >Calculating the mean</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#summation" data-pagefind-weight="5"
+                    >Summation</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#iteration" data-pagefind-weight="5"
+                    >Iteration</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#calculating-the-median" data-pagefind-weight="5"
+                    >Calculating the median</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#assembling-the-parts" data-pagefind-weight="5"
+                    >Assembling the parts</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#references" data-pagefind-weight="5"
+                    >References</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#mutation" data-pagefind-weight="5"
+                    >mutation</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#side-effects" data-pagefind-weight="5"
+                    >side-effects</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#implementing-all-the-cases" data-pagefind-weight="5"
+                    >Implementing all the cases</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#solving-problems-with-arrays" data-pagefind-weight="5"
+                    >Solving problems with arrays 📼</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#failing-fast" data-pagefind-weight="5"
+                    >Failing Fast</a
+                  >
+                  
+                </li>
+              
+            </ol>
+          
+          
+        </section>
+      </div>
+    
+
+  </div>
+</header>
+</div>
+      <div slot="blocks">
+        
+        
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="prep-dir">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="prep-dir">
+        Prep dir
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="10 minutes countdown" datetime="P10M">10&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Create a working prep directory for the module</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <h3 id="-create-a-working-directory-for-the-module">📂 Create a working directory for the module</h3>
+<ol>
+<li>Fork the coursework module (always linked in every backlog) and open it in VSCode.</li>
+<li>In your VSCode terminal, navigate to the root of your project directory.</li>
+<li>Create a new directory called <code>prep</code> to store all the files you&rsquo;ll be working on for this module.</li>
+</ol>
+<p>As you work through the module, you&rsquo;ll be creating files in this directory to code along with the prep content. You are expected to code along with the prep content.</p>
+<p>For simple one liners, use the terminal REPL to run the code. For more complex problems, create files in the <code>prep</code> directory and write the code there. Make commented notes as you go along explaining why you&rsquo;re doing what you&rsquo;re doing. Your future self will thank you.</p>
+<h3 id="-the-most-important-thing-is-to-secure-your-understanding">🔑 The most important thing is to secure your understanding</h3>
+<p>The prep content is designed to help you understand the concepts you&rsquo;ll be working with in the module. Don&rsquo;t just read it, code along with it. Also take notes, draw diagrams, pose your own questions and try to answer them.</p>
+<p>To really understand programming, you need to write the code yourself, and do the exercises. You must <a
+  href="https://www.pnas.org/doi/10.1073/pnas.1319030111">take active part</a> in your learning to succeed.</p>
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="creating-test-files">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="creating-test-files">
+        Creating test files
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="5 minutes countdown" datetime="P5M">5&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Create files for the first problem</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Open the first problem in your prep directory</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Use the terminal to control VSCode</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <h3 id="-create-files-for-the-first-problem">📄 Create files for the first problem</h3>
+<p>Find the first problem in your prep for this module and create the files you&rsquo;ll need to work on it.</p>
+<ol>
+<li>In your <code>prep</code> directory, create a test file for the problem. For example, if the first problem is about calculating the mean, you would create a file called <code>mean.test.js</code>.</li>
+<li>In your <code>prep</code> directory, create a matching file for the problem. For example, <code>mean.js</code>.</li>
+</ol>
+<p>Do this in your VSCode terminal by running the following commands:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>touch mean.test.js
+</span></span><span style="display:flex;"><span>touch mean.js</span></span></code></pre></div><p>In the same directory, open your test file by running:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>code mean.test.js</span></span></code></pre></div><p>You&rsquo;ll be writing in a &ldquo;test driven development&rdquo; style. This means you will write a test for the problem first, then write the code to make the test pass.</p>
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="grouping-data">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="grouping-data">
+        Grouping data
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="15 minutes countdown" datetime="P15M">15&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Explain why using multiple variable declarations for related data is problematic</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <p>In programming, we often have <strong>related</strong> pieces of data.</p>
+<p>Let&rsquo;s consider a list of prices in a bill:</p>
+<blockquote><p>4.6, 5.03, 7.99, 8.01</p>
+</blockquote><h3 id="limitations-of-many-variables">limitations of many variables</h3>
+<p>We can store this list of prices in a JavaScript program by declaring multiple variables:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">price0</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">4.6</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">price1</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">5.03</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">price2</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">7.99</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">price3</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">8.01</span>;</span></span></code></pre></div><p>Each identifier is the word <code>price</code> with a numerical suffix to indicate its position in the list. However, this is <em>undoubtedly</em> the wrong approach.</p>
+<ul>
+<li>If the number of items in the bill is huge, we must keep declaring new variables.</li>
+<li>If the number of items changes, we must reassign the values of variables so they&rsquo;re in the correct order, and change any place we&rsquo;re using the variables to know about the new one.</li>
+<li>If we do multiple things to all of the values (say we have one loop adding them, and one loop printing them), we will need to change all of the places any time we add new values.</li>
+</ul>
+<p>Instead we have to group the data together using a 
+<tool-tip-container tabindex="0"><strong class="tooltip__trigger" id="trigger__data structure">data structure</strong><span class="tooltip__emoji">🧶</span><tool-tip role="tooltip" aria-labelledby="data structure"><span class="tooltip__title e-heading__2"><span class="tooltip__emoji">🧶</span> data structure</span><span class="tooltip__content">A <strong>data structure</strong> is a collection of data. It may have functions that can be applied to access or manipulate the data.</span></tool-tip></tool-tip-container>
+</p>
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="arrays">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="arrays">
+        Arrays
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="10 minutes countdown" datetime="P10M">10&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Access items in an array using an index</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Identify the benefits of using an array to store information</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <p>In JavaScript, we can store data inside an 
+<tool-tip-container tabindex="0"><strong class="tooltip__trigger" id="trigger__array">array</strong><span class="tooltip__emoji">🧶</span><tool-tip role="tooltip" aria-labelledby="array"><span class="tooltip__title e-heading__2"><span class="tooltip__emoji">🧶</span> array</span><span class="tooltip__content">An <strong>array</strong> is an ordered list of data</span></tool-tip></tool-tip-container>
+</p>
+<p>Instead of writing:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">item0</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">4.6</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">item1</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">5.03</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">item2</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">7.99</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">item3</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">8.01</span>;</span></span></code></pre></div><p>We can declare an <strong>array literal</strong> as follows:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">items</span> <span style="color:#f92672">=</span> [<span style="color:#ae81ff">4.6</span>, <span style="color:#ae81ff">5.03</span>, <span style="color:#ae81ff">7.99</span>, <span style="color:#ae81ff">8.01</span>];</span></span></code></pre></div><p>Notice the identifier for the array is <strong>items</strong>. We chose to use the plural word <code>items</code> instead of the singular <code>item</code>, because arrays can store multiple pieces of information.</p>
+<h3 id="ordered-data">ordered data</h3>
+<p><section class="c-note c-note--tip">
+  <h4 class="c-note__title e-heading__4">💡Recall</span>
+  </h4>
+  <div class="c-note__text ">Zero-indexing means we start counting from 0</div>
+</section>
+
+
+We&rsquo;ve already encountered ordered data before. A string is an <strong>ordered</strong> collection of characters. Let&rsquo;s recall an example of a string:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">volunteer</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Moussab&#34;</span>;</span></span></code></pre></div><p>The character <code>&quot;M&quot;</code> is at <strong>index 0</strong>, <code>&quot;o&quot;</code> is at <strong>index 1</strong>, and so on.</p>
+<p>As with strings, arrays are also <strong>zero-indexed</strong> in a similar way:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">items</span> <span style="color:#f92672">=</span> [<span style="color:#ae81ff">4.6</span>, <span style="color:#ae81ff">5.03</span>, <span style="color:#ae81ff">7.99</span>, <span style="color:#ae81ff">8.01</span>];</span></span></code></pre></div><p>So we can refer to the 
+<tool-tip-container tabindex="0"><strong class="tooltip__trigger" id="trigger__elements">elements</strong><span class="tooltip__emoji">🧶</span><tool-tip role="tooltip" aria-labelledby="elements"><span class="tooltip__title e-heading__2"><span class="tooltip__emoji">🧶</span> elements</span><span class="tooltip__content">An <strong>element</strong> is another name for an item inside an array.</span></tool-tip></tool-tip-container>
+ of the array by an <strong>index</strong>.</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: center">index</th>
+          <th style="text-align: center">0</th>
+          <th style="text-align: center">1</th>
+          <th>2</th>
+          <th>3</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">element</td>
+          <td style="text-align: center">4.6</td>
+          <td style="text-align: center">5.03</td>
+          <td>7.99</td>
+          <td>8.01</td>
+      </tr>
+  </tbody>
+</table>
+<p>In JavaScript, we can use square bracket notation to access specific elements in the array using an index.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">items</span>[<span style="color:#ae81ff">0</span>]; <span style="color:#75715e">// evaluates to 4.6
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">items</span>[<span style="color:#ae81ff">1</span>]; <span style="color:#75715e">// evaluates to 5.03
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">items</span>[<span style="color:#ae81ff">2</span>]; <span style="color:#75715e">// evaluates to 7.99
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// etc
+</span></span></span></code></pre></div>
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="calculating-the-mean">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="calculating-the-mean">
+        Calculating the mean
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="15 minutes countdown" datetime="P15M">15&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Describe how to compute the mean of a data set in JavaScript</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <p>Let&rsquo;s consider a problem where we calculate the <a
+  href="https://www.mathsisfun.com/mean.html">mean of a list of numbers</a>.</p>
+<p><em>Given</em> an array of numbers<br>
+<em>When</em> we call <code>calculateMean</code> with the array of numbers<br>
+<em>Then</em> we get the mean.</p>
+<p>Let&rsquo;s create a test to check its functionality. In your <code>prep</code> dir, <code>touch mean.js &amp;&amp; touch mean.test.js</code>. Write the following test in the <code>mean.test.js</code> file.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">test</span>(<span style="color:#e6db74">&#34;calculates the mean of a list of numbers&#34;</span>, () =&gt; {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">list</span> <span style="color:#f92672">=</span> [<span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">50</span>, <span style="color:#ae81ff">7</span>];
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">currentOutput</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">calculateMean</span>(<span style="color:#a6e22e">list</span>);
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">targetOutput</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">20</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">expect</span>(<span style="color:#a6e22e">currentOutput</span>).<span style="color:#a6e22e">toEqual</span>(<span style="color:#a6e22e">targetOutput</span>); <span style="color:#75715e">// 20 is (3 + 50 + 7) / 3
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>});</span></span></code></pre></div><p>In this test, we&rsquo;re checking we get a value of <code>20</code> by adding together <code>3 + 50 + 7</code> and then dividing by the number of items (<code>3</code>). We calculate the mean of a list of numbers by:</p>
+<ol>
+<li>summing all the numbers in the array</li>
+<li>dividing the sum by the length of the array</li>
+</ol>
+<p>We can define a <strong>🎯 sub-goal</strong> of calculating the sum of all numbers in the list.</p>
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="summation">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="summation">
+        Summation
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="20 minutes countdown" datetime="P20M">20&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Describe how to sum the numbers in a list</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Explain why repeated statements are hard to maintain</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <blockquote><p>🎯 Sub-goal: compute the sum of an array of numbers.</p>
+</blockquote><p>To sum a list we can start by creating a variable <code>total</code> with an initial value of <code>0</code>.</p>
+<p>We then need to <strong>repeatedly</strong> add each value in the list to our <code>total</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">sumValues</span>(<span style="color:#a6e22e">list</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">total</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">total</span> <span style="color:#f92672">+=</span> <span style="color:#a6e22e">list</span>[<span style="color:#ae81ff">0</span>]; <span style="color:#75715e">// access a list element and add to total
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#a6e22e">total</span> <span style="color:#f92672">+=</span> <span style="color:#a6e22e">list</span>[<span style="color:#ae81ff">1</span>];
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">total</span> <span style="color:#f92672">+=</span> <span style="color:#a6e22e">list</span>[<span style="color:#ae81ff">2</span>];
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">total</span> <span style="color:#f92672">+=</span> <span style="color:#a6e22e">list</span>[<span style="color:#ae81ff">3</span>];
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">total</span> <span style="color:#f92672">+=</span> <span style="color:#a6e22e">list</span>[<span style="color:#ae81ff">4</span>];
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">total</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">sumValues</span>([<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span>]);</span></span></code></pre></div><p>However, this approach is flawed.</p>
+<h2 id="-explain">🧠 Explain</h2>
+<p>Explain why the approach above is flawed when it comes to summing the numbers for an array of <em>any</em> length.</p>
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="iteration">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="iteration">
+        Iteration
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="20 minutes countdown" datetime="P20M">20&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Define iteration</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Explain why iteration is relevant in a particular problem</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Understand the <code>for</code> and <code>for...of</code> loops in JavaScript</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <h2 id="what-is-iteration">What is Iteration?</h2>
+<p>In programming, the process of repeating something is called <strong>iteration</strong>.</p>
+<p>Iteration is one of the most fundamental concepts in computer programming. It refers to the process of repeating a set of instructions or operations multiple times.</p>
+<h3 id="iteration-as-a-general-concept">Iteration as a General Concept</h3>
+<p>Iteration exists across all major programming languages - whether you&rsquo;re writing JavaScript, Python, Java, or any other language. The core idea is the same: when you need to perform the same action on multiple items or repeat an operation until a condition is met, you use iteration.</p>
+<p>Some common real-world examples of iteration include:</p>
+<ul>
+<li>Processing each item in a list or array</li>
+<li>Repeating a calculation until a specific condition is reached</li>
+<li>Navigating through database records one by one</li>
+<li>Validating multiple form inputs</li>
+<li>Building complex structures by repeating similar operations</li>
+</ul>
+<p>Without iteration, we&rsquo;d have to write repetitive code manually for each item we wanted to process - which could be impractical or produce more errors.</p>
+<h2 id="the-fundamental-for-loop">The Fundamental <code>for</code> Loop</h2>
+<p>We can <strong>iterate</strong> by using a 
+<tool-tip-container tabindex="0"><strong class="tooltip__trigger" id="trigger__loop">loop</strong><span class="tooltip__emoji">🧶</span><tool-tip role="tooltip" aria-labelledby="loop"><span class="tooltip__title e-heading__2"><span class="tooltip__emoji">🧶</span> loop</span><span class="tooltip__content">A loop is a sequence of instructions that is continually repeated until some condition is reached.</span></tool-tip></tool-tip-container>
+.</p>
+<p>In JavaScript, the most fundamental and widely-used loop construct is <a
+  href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for">the <code>for</code> loop</a>. This is a good loop to learn first.</p>
+<h3 id="understanding-the-for-loop-syntax">Understanding the <code>for</code> Loop Syntax</h3>
+<p>The <code>for</code> loop in JavaScript has four main parts:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> (<span style="color:#a6e22e">initialisation</span>; <span style="color:#a6e22e">condition</span>; <span style="color:#a6e22e">increment</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// loop body
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>}</span></span></code></pre></div><p>Let&rsquo;s break down what each part does:</p>
+<ol>
+<li><code>initialisation</code>: This runs once, before the loop starts. Typically, you initialise a counter variable here. Example: <code>let i = 0</code></li>
+<li><code>condition</code>: This is checked before each iteration. If it&rsquo;s <code>true</code>, the loop continues; if it&rsquo;s <code>false</code>, the loop stops. Example: <code>i &lt; 5</code></li>
+<li><code>increment</code>: This runs after each iteration, usually updating the counter. Example: <code>i++</code></li>
+<li><code>loop body</code>: The code inside the curly braces <code>{}</code> that you want to repeat.</li>
+</ol>
+<h3 id="how-the-for-loop-works">How the <code>for</code> Loop Works</h3>
+<p>Here&rsquo;s what happens step by step:</p>
+<ol>
+<li><code>Initialise</code> the counter variable (happens once)</li>
+<li>Check the <code>condition</code></li>
+<li>If the <code>condition</code> is true, execute the code in the loop body</li>
+<li>Execute the <code>increment</code> statement</li>
+<li>Go back to step 2</li>
+<li>Repeat until the <code>condition</code> becomes false</li>
+</ol>
+<p>For example, if you write:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; <span style="color:#a6e22e">i</span> <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">3</span>; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">i</span>);
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div><p>This will print: <code>0</code>, <code>1</code>, <code>2</code> and then stop (because <code>3 &lt; 3</code> is false).</p>
+<p>Here&rsquo;s the step by step:</p>
+<ol>
+<li>Initialise the counter variable <code>i</code> with the value <code>0</code></li>
+<li>Check that <code>i</code> is less than <code>3</code></li>
+<li>If the condition is true, execute the console log</li>
+<li>Increment <code>i</code> so it&rsquo;s value is now <code>2</code></li>
+<li>Go back to step 2</li>
+<li>Repeat until <code>i</code> equals <code>3</code> (the condition, <code>3 &lt; 3</code>, is false so loop stops)</li>
+</ol>
+<h3 id="using-forof-for-arrays">Using <code>for...of</code> for Arrays</h3>
+<p>When working with arrays (like in our example below), the <code>for...of</code> loop is often simpler and clearer:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">numbers</span> <span style="color:#f92672">=</span> [<span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">20</span>, <span style="color:#ae81ff">30</span>];
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">number</span> <span style="color:#66d9ef">of</span> <span style="color:#a6e22e">numbers</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">number</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// will log 10, 20 and 30
+</span></span></span></code></pre></div><p>This automatically iterates through each element in the array without needing to manage a counter variable.</p>
+<h3 id="summary">Summary</h3>
+<p>Iteration is a universal programming concept that you&rsquo;ll use constantly. Start by mastering the <code>for</code> and <code>for...of</code> loops, as these are the most common and fundamental. As you progress, you&rsquo;ll learn when and how to use the other loop types and array methods, each suited to different situations and coding styles.</p>
+<h2 id="applying-iteration-to-calculatemean">Applying iteration to CalculateMean</h2>
+<p>To solve the sub-goal, we have to repeatedly add each number in the array to the <code>total</code>, one at a time. We can use a <a
+  href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of"><code>for...of</code> statement</a>, as outlined above, to sum the elements of the array.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">calculateMean</span>(<span style="color:#a6e22e">list</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">total</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">item</span> <span style="color:#66d9ef">of</span> <span style="color:#a6e22e">list</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">total</span> <span style="color:#f92672">+=</span> <span style="color:#a6e22e">item</span>;
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div><h3 id="-visualising-iteration-with-debugger">🐛 Visualising iteration with debugger</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+
+  
+
+  
+  
+
+  
+    
+    
+  
+
+
+
+<section
+  class="c-block c-block--youtube"
+  aria-labelledby="warning-name-is-empty">
+  
+  <div class="c-block__content">
+    <youtube-player data-src="https://www.youtube.com/watch?v=YX5jAFJlEqM"></youtube-player>
+  </div>
+</section>
+
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="calculating-the-median">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="calculating-the-median">
+        Calculating the median
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="15 minutes countdown" datetime="P15M">15&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Describe how to calculate the median of a list in JavaScript</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <p>Let&rsquo;s define another problem.</p>
+<p>We want to <em>calculate</em> the <a
+  href="https://www.bbc.co.uk/bitesize/guides/zwhgk2p/revision/2">median</a> value from an array of numbers.</p>
+<p><em>Given</em> an array of numbers in <em>ascending order</em><br>
+<em>When</em> we call <code>calculateMedian</code> with this array<br>
+<em>Then</em> we get the median value.</p>
+<p>We calculate the median of a list of numbers by finding the middle value in the list.</p>
+<p>Let&rsquo;s start with a test to check the <strong>return value</strong> of <code>calculateMedian</code> given an ordered list of numbers. In your <code>prep</code> dir, <code>touch median.js &amp;&amp; touch median.test.js</code>. Write the following test in the <code>median.test.js</code> file.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">test</span>(<span style="color:#e6db74">&#34;calculates the median of a list of odd length&#34;</span>, () =&gt; {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">list</span> <span style="color:#f92672">=</span> [<span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">20</span>, <span style="color:#ae81ff">30</span>, <span style="color:#ae81ff">50</span>, <span style="color:#ae81ff">60</span>];
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">currentOutput</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">calculateMedian</span>(<span style="color:#a6e22e">list</span>);
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">targetOutput</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">30</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">expect</span>(<span style="color:#a6e22e">currentOutput</span>).<span style="color:#a6e22e">toEqual</span>(<span style="color:#a6e22e">targetOutput</span>);
+</span></span><span style="display:flex;"><span>});</span></span></code></pre></div><h3 id="-implementing-calculatemedian">🔨 Implementing <code>calculateMedian</code></h3>
+<p>So we can implement <code>calculateMedian</code>.</p>
+<p>We can summarise our approach as follows.</p>
+<style>
+  .mermaid svg {
+    height: initial;
+  }
+  .mermaid {
+    margin-bottom: var(--theme-spacing--gutter);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .mermaid[data-processed] {
+    opacity: 1;
+  }
+</style>
+<div class="mermaid">flowchart LR
+    A[Step 1: Find the middle index of the array] --> B[Step 2: Get the middle item]
+    B --> C[Step 3: Return the middle item]</div>
+
+<script type="module" src="/scripts/mermaid-observer.min.js" defer></script>
+<p>In code we can we can use <a
+  href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice"><code>splice</code></a> to to get the middle item.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">calculateMedian</span>(<span style="color:#a6e22e">list</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">middleIndex</span> <span style="color:#f92672">=</span> Math.<span style="color:#a6e22e">floor</span>(<span style="color:#a6e22e">list</span>.<span style="color:#a6e22e">length</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">2</span>);
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">median</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">list</span>.<span style="color:#a6e22e">splice</span>(<span style="color:#a6e22e">middleIndex</span>, <span style="color:#ae81ff">1</span>)[<span style="color:#ae81ff">0</span>];
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">median</span>;
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="assembling-the-parts">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="assembling-the-parts">
+        Assembling the parts
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="10 minutes countdown" datetime="P10M">10&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Identify a bug when a function gives an unexpected output</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <p>Now suppose we have a program where we use the functions we implemented earlier:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">salaries</span> <span style="color:#f92672">=</span> [<span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">20</span>, <span style="color:#ae81ff">30</span>, <span style="color:#ae81ff">40</span>, <span style="color:#ae81ff">60</span>, <span style="color:#ae81ff">80</span>, <span style="color:#ae81ff">80</span>];
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">median</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">calculateMedian</span>(<span style="color:#a6e22e">salaries</span>);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">mean</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">calculateMean</span>(<span style="color:#a6e22e">salaries</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">`The median salary is </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">median</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>);
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">`The mean salary is </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">mean</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>);</span></span></code></pre></div><h3 id="--predict-and-explain">🧠 💬 Predict and explain</h3>
+<p>Predict and explain what will get printed to the console when the code above runs.</p>
+<p>Then run the code above on your local machine to check your prediction. Does your initial explanation now make sense?</p>
+<p><em>(Note: you&rsquo;ll have to declare the functions somewhere too)</em></p>
+<h3 id="-finding-the-bug">🐛 Finding the bug</h3>
+<p>In the code above, the <code>median</code> value is correct: however, the <code>mean</code> is <em>incorrect</em>.</p>
+<p>We can add a log to the program to identify the origin of the bug.</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span></span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">salaries</span> <span style="color:#f92672">=</span> [<span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">20</span>, <span style="color:#ae81ff">30</span>, <span style="color:#ae81ff">40</span>, <span style="color:#ae81ff">60</span>, <span style="color:#ae81ff">80</span>, <span style="color:#ae81ff">80</span>];
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">median</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">calculateMedian</span>(<span style="color:#a6e22e">salaries</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex; background-color:#3c3d38"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">salaries</span>, <span style="color:#e6db74">&#34;&lt;--- salaries input before we call calculateMean&#34;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">mean</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">calculateMean</span>(<span style="color:#a6e22e">salaries</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">`The median salary is </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">median</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>);
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">`The mean salary is </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">mean</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>);</span></span></code></pre></td></tr></table>
+</div>
+</div><section class="c-note c-note--activity">
+  <h4 class="c-note__title e-heading__4">🕹️Run it</span>
+  </h4>
+  <div class="c-note__text ">Try re-running the code above with the additional log. What does this tell you?</div>
+</section>
+
+
+<p>To understand why this bug occurs, we need to explore more concepts.</p>
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="references">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="references">
+        References
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="20 minutes countdown" datetime="P20M">20&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Define reference</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Describe some effects of variables being assigned the same array reference</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Identify when 2 variables will share the same array reference</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <p>Arrays are stored by 
+<tool-tip-container tabindex="0"><strong class="tooltip__trigger" id="trigger__reference">reference</strong><span class="tooltip__emoji">🧶</span><tool-tip role="tooltip" aria-labelledby="reference"><span class="tooltip__title e-heading__2"><span class="tooltip__emoji">🧶</span> reference</span><span class="tooltip__content">A reference points to a location in memory.</span></tool-tip></tool-tip-container>
+</p>
+<p>Consider the following example,</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">list</span> <span style="color:#f92672">=</span> [<span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">20</span>, <span style="color:#ae81ff">30</span>];
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">copy</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">list</span>;
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">copy</span>.<span style="color:#a6e22e">push</span>(<span style="color:#ae81ff">60</span>, <span style="color:#ae81ff">70</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">list</span>);
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">copy</span>);</span></span></code></pre></div><p>Let&rsquo;s break down what is happening in this program.</p>
+
+
+
+<tab-panels class="c-tabs">
+  <div class="c-tabs__list" id="references" role="tablist"><button
+          data-toggle="tab"
+          id="tab-label-references-0"
+          class="c-tabs__tab e-heading__5 space 
+            is-active"
+          role="tab"
+          aria-controls="references-0"
+          aria-selected="true">
+          🎮 Playing computer
+        </button><button
+          data-toggle="tab"
+          id="tab-label-references-1"
+          class="c-tabs__tab e-heading__5 space "
+          role="tab"
+          aria-controls="references-1"
+          aria-selected="false">
+          📜 Explanation
+        </button><button
+          data-toggle="tab"
+          id="tab-label-references-2"
+          class="c-tabs__tab e-heading__5 space "
+          role="tab"
+          aria-controls="references-2"
+          aria-selected="false">
+          🧠 Explain
+        </button></div>
+  <div class="c-tabs__group" id="references">
+        <div
+          id="references-0"
+          class="c-tabs__panel is-active"
+          role="tabpanel"
+          data-heading="🎮 Playing computer"
+          aria-labelledby="tab-label-references-0"><p>Play computer with the code above to step through the code and find out what happens when the code is executed.</p>
+<iframe title="playing-computer-reference "width="800" height="500" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=const%20list%20%3D%20%5B10,%2020,%2030%5D%3B%0Aconst%20copy%20%3D%20list%3B%0Acopy.push%2860,%2070%29%3B%0A%0Aconsole.log%28list%29%3B%0Aconsole.log%28copy%29%3B&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=nevernest&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe></div>
+        <div
+          id="references-1"
+          class="c-tabs__panel "
+          role="tabpanel"
+          data-heading="📜 Explanation"
+          aria-labelledby="tab-label-references-1"><p>
+
+  <figure>
+      <img
+        loading="lazy"
+        src="/module/js2/reference/point-to-array.png"alt="point-to-array" data-pagefind-index-attrs="point-to-array"/></figure></p>
+<ul>
+<li>We make an array <code>[10, 20, 30]</code> and store it somewhere in memory.</li>
+<li><code>list</code> is assigned a <strong>reference</strong> to the location in memory containing <code>[10, 20, 30]</code></li>
+<li><code>copy</code> is assigned a <strong>reference</strong> pointing at the same location in memory as <code>list</code></li>
+</ul>
+<p>At this stage in the program, <code>list</code> and <code>copy</code> point to the same location in memory.</p>
+<ul>
+<li><code>push</code> function mutates (changes) the array that <code>copy</code> points to.</li>
+<li>prints out <code>list</code>: <code>[10, 20, 30, 60, 70]</code></li>
+<li>prints out <code>copy</code>: <code>[10, 20, 30, 60, 70]</code></li>
+</ul>
+<p>So as <code>copy</code> and <code>list</code> point to the same array.
+If we mutate <code>list</code> then we&rsquo;re mutating the same list that <code>copy</code> points to.</p>
+<p>So the console output is the same.</p>
+</div>
+        <div
+          id="references-2"
+          class="c-tabs__panel "
+          role="tabpanel"
+          data-heading="🧠 Explain"
+          aria-labelledby="tab-label-references-2"><div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span></span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">salaries</span> <span style="color:#f92672">=</span> [<span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">20</span>, <span style="color:#ae81ff">30</span>, <span style="color:#ae81ff">40</span>, <span style="color:#ae81ff">60</span>, <span style="color:#ae81ff">80</span>, <span style="color:#ae81ff">80</span>];
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">median</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">calculateMedian</span>(<span style="color:#a6e22e">salaries</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex; background-color:#3c3d38"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">salaries</span>, <span style="color:#e6db74">&#34;&lt;--- salaries input before we call calculateMean&#34;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">mean</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">calculateMean</span>(<span style="color:#a6e22e">salaries</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">`The median salary is </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">median</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>);
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">`The mean salary is </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">mean</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>);</span></span></code></pre></td></tr></table>
+</div>
+</div><p>In the example above, <code>salaries</code> is assigned a reference on the first line.
+Explain why <code>calculateMedian</code> and <code>calculateMean</code> both get access to the same array.</p></div></div>
+</tab-panels>
+
+<h3 id="shared-reference">Shared reference</h3>
+<p>We can also check these variables share the same reference.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">list</span> <span style="color:#f92672">=</span> [<span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">20</span>, <span style="color:#ae81ff">30</span>];
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">copy</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">list</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">list</span> <span style="color:#f92672">===</span> <span style="color:#a6e22e">copy</span>); <span style="color:#75715e">// logs true
+</span></span></span></code></pre></div><p>If we&rsquo;re comparing 2 array variables with <code>===</code>, then it will evaluate to <code>true</code> only if they have the <strong>same reference</strong>. <code>===</code> is comparing the references to the arrays, not the contents of arrays.</p>
+<p>If we made two different arrays with the same contents, they would not be <code>===</code> equal:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">list</span> <span style="color:#f92672">=</span> [<span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">20</span>, <span style="color:#ae81ff">30</span>];
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">copy</span> <span style="color:#f92672">=</span> [<span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">20</span>, <span style="color:#ae81ff">30</span>];
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">list</span> <span style="color:#f92672">===</span> <span style="color:#a6e22e">copy</span>); <span style="color:#75715e">// logs false
+</span></span></span></code></pre></div><h3 id="value-vs-reference">Value vs reference</h3>
+<p>In JavaScript, arrays and objects are reference types: everything else is a value type.
+<section class="c-note c-note--note">
+  <h4 class="c-note__title e-heading__4">📝Passing by value</span>
+  </h4>
+  <div class="c-note__text ">As strings are value types, they are <strong>passed by value</strong>. Passed by value means that every time you assign a value to a variable then a copy of that value is made.</div>
+</section>
+
+</p>
+<p>Use the tabs below to compare the effects of <strong>passing by reference</strong> and <strong>passing by value</strong>.
+There are two different but similar implementations of <code>pluralise</code> - a function that appends an <code>s</code> to the end of its input.</p>
+
+
+
+<tab-panels class="c-tabs">
+  <div class="c-tabs__list" id="tabset--14014259558497799714-13209795418-56582048" role="tablist"><button
+          data-toggle="tab"
+          id="tab-label-tabset--14014259558497799714-13209795418-56582048-0"
+          class="c-tabs__tab e-heading__5 space 
+            is-active"
+          role="tab"
+          aria-controls="tabset--14014259558497799714-13209795418-56582048-0"
+          aria-selected="true">
+          pluralise: array
+        </button><button
+          data-toggle="tab"
+          id="tab-label-tabset--14014259558497799714-13209795418-56582048-1"
+          class="c-tabs__tab e-heading__5 space "
+          role="tab"
+          aria-controls="tabset--14014259558497799714-13209795418-56582048-1"
+          aria-selected="false">
+          pluralise: string
+        </button></div>
+  <div class="c-tabs__group" id="tabset--14014259558497799714-13209795418-56582048">
+        <div
+          id="tabset--14014259558497799714-13209795418-56582048-0"
+          class="c-tabs__panel is-active"
+          role="tabpanel"
+          data-heading="pluralise: array"
+          aria-labelledby="tab-label-tabset--14014259558497799714-13209795418-56582048-0"><p>Here <code>pluralise</code> is <strong>passed an array by reference</strong>.</p>
+<p><code>lettersInAnArray</code> is passed by reference. <code>pluralise</code>&rsquo;s modification is visible here, because the same underlying storage was modified.</p>
+<p>Step through the code to observe this behaviour:</p>
+<iframe title="pluralise-array" width="1100" height="500" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=function%20pluralise%28arr%29%20%7B%0A%20%20arr.push%28%22s%22%29%3B%0A%7D%0Aconst%20lettersInAnArray%20%3D%20%5B%22c%22,%22a%22,%22t%22%5D%3B%0Apluralise%28lettersInAnArray%29%3B%0A%0Aconsole.assert%28lettersInAnArray.length%20%3D%3D%3D%204%29%3B%0Aconsole.assert%28lettersInAnArray%5B3%5D%20%3D%3D%3D%20%22s%22%29%3B&codeDivHeight=400&codeDivWidth=600&cumulative=false&curInstr=0&heapPrimitives=nevernest&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
+</div>
+        <div
+          id="tabset--14014259558497799714-13209795418-56582048-1"
+          class="c-tabs__panel "
+          role="tabpanel"
+          data-heading="pluralise: string"
+          aria-labelledby="tab-label-tabset--14014259558497799714-13209795418-56582048-1"><p>Here <code>pluralise</code> is <strong>passed a string by value</strong>.</p>
+<p>This means a copy of <code>string</code>&rsquo;s value is passed to <code>pluralise</code> in the second tab. <code>pluralise</code>&rsquo;s reassignment is not visible here, because a copy was made just for the function before the value was modified.</p>
+<p>Step through the code to observe this behaviour:</p>
+<iframe title="pluralise-string" width="1100" height="500" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=function%20pluralise%28str%29%20%7B%0A%20%20str%20%2B%3D%20%22s%22%3B%0A%7D%0Aconst%20string%20%3D%20%22cat%22%3B%0Apluralise%28string%29%3B%0A%0Aconsole.assert%28string.length%20%3D%3D%3D%203%29%3B%0Aconsole.assert%28string%20%3D%3D%3D%20%22cat%22%29%3B&codeDivHeight=400&codeDivWidth=600&cumulative=false&curInstr=0&heapPrimitives=nevernest&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
+</div></div>
+</tab-panels>
+
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="mutation">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="mutation">
+        Mutation
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="25 minutes countdown" datetime="P25M">25&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Define mutation</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <p>Let&rsquo;s take another look at our earlier implementation of <code>calculateMedian</code>:</p>
+
+
+
+<tab-panels class="c-tabs">
+  <div class="c-tabs__list" id="implementation" role="tablist"><button
+          data-toggle="tab"
+          id="tab-label-implementation-0"
+          class="c-tabs__tab e-heading__5 space 
+            is-active"
+          role="tab"
+          aria-controls="implementation-0"
+          aria-selected="true">
+          calculate median
+        </button><button
+          data-toggle="tab"
+          id="tab-label-implementation-1"
+          class="c-tabs__tab e-heading__5 space "
+          role="tab"
+          aria-controls="implementation-1"
+          aria-selected="false">
+          calculating median and mean
+        </button></div>
+  <div class="c-tabs__group" id="implementation">
+        <div
+          id="implementation-0"
+          class="c-tabs__panel is-active"
+          role="tabpanel"
+          data-heading="calculate median"
+          aria-labelledby="tab-label-implementation-0"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">calculateMedian</span>(<span style="color:#a6e22e">list</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">middleIndex</span> <span style="color:#f92672">=</span> Math.<span style="color:#a6e22e">floor</span>(<span style="color:#a6e22e">list</span>.<span style="color:#a6e22e">length</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">2</span>);
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">median</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">list</span>.<span style="color:#a6e22e">splice</span>(<span style="color:#a6e22e">middleIndex</span>, <span style="color:#ae81ff">1</span>)[<span style="color:#ae81ff">0</span>];
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">median</span>;
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div></div>
+        <div
+          id="implementation-1"
+          class="c-tabs__panel "
+          role="tabpanel"
+          data-heading="calculating median and mean"
+          aria-labelledby="tab-label-implementation-1"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">salaries</span> <span style="color:#f92672">=</span> [<span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">20</span>, <span style="color:#ae81ff">30</span>, <span style="color:#ae81ff">40</span>, <span style="color:#ae81ff">60</span>, <span style="color:#ae81ff">80</span>, <span style="color:#ae81ff">80</span>];
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">median</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">calculateMedian</span>(<span style="color:#a6e22e">salaries</span>);
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// At this point, the array referenced by salaries has been mutated after calculateMedian(salaries), and a reference to the same array is given to calculateMean
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">mean</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">calculateMean</span>(<span style="color:#a6e22e">salaries</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">`The median salary is </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">median</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>);
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">`The mean salary is </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">mean</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>);</span></span></code></pre></div></div></div>
+</tab-panels>
+
+<p><code>calculateMedian</code> gets the middle value by calling <code>splice</code>. However, <code>splice</code> is a 
+<tool-tip-container tabindex="0"><strong class="tooltip__trigger" id="trigger__mutating">mutating</strong><span class="tooltip__emoji">🧶</span><tool-tip role="tooltip" aria-labelledby="mutating"><span class="tooltip__title e-heading__2"><span class="tooltip__emoji">🧶</span> mutating</span><span class="tooltip__content">For arrays, mutation means <strong><em>changing</em></strong> the contents of an array. This could mean changing a value at some index or removing an item altogether.</span></tool-tip></tool-tip-container>
+ array method.</p>
+<p>When we call <code>splice</code> it does 2 things:</p>
+<ul>
+<li>removes the specified item from the list</li>
+<li>returns the removed item</li>
+</ul>
+<p><code>splice</code> modifies the array: however, <code>calculateMean</code> is also passed a reference to the same array too.</p>
+<blockquote><p>In other words, <code>calculateMedian</code> modifies the same array that is passed to <code>calculateMean</code>.</p>
+</blockquote><h3 id="-play-computer">🎮 Play computer</h3>
+<p>Play computer with the example above. Pay careful attention to what happens when <code>salaries</code> is passed to <code>calculateMedian</code></p>
+<iframe width="800" height="500" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=function%20calculateMedian%28list%29%20%7B%0A%20%20const%20middleIndex%20%3D%20Math.floor%28list.length%20/%202%29%3B%0A%20%20const%20median%20%3D%20list.splice%28middleIndex,%201%29%5B0%5D%3B%0A%0A%20%20return%20median%3B%0A%7D%0A%0Aconst%20salaries%20%3D%20%5B10,%2020,%2030,%2040,%2060,%2080,%2080%5D%3B%0Aconst%20median%20%3D%20calculateMedian%28salaries%29%3B%0A%0Aconsole.log%28salaries,%20%22%3C---%20salaries%20input%20before%20we%20call%20calculateMean%22%29%3B&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=nevernest&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="side-effects">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="side-effects">
+        Side effects
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="20 minutes countdown" datetime="P20M">20&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Define a side effect</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Describe how side effects lead to buggy code</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <p>Currently <code>calculateMedian</code> mutates its input - the array of numbers. This mutation is called a 
+<tool-tip-container tabindex="0"><strong class="tooltip__trigger" id="trigger__side effect">side effect</strong><span class="tooltip__emoji">🧶</span><tool-tip role="tooltip" aria-labelledby="side effect"><span class="tooltip__title e-heading__2"><span class="tooltip__emoji">🧶</span> side effect</span><span class="tooltip__content">A function has a side effect if it does something which can be observed from outside of the function (aside from returning a value). Removing an element from an array is a side effect. Logging something to the console is also a side effect.</span></tool-tip></tool-tip-container>
+.</p>
+<p>In this case, the <strong>side effect</strong> has unintended consequences. We have introduced a 
+<tool-tip-container tabindex="0"><strong class="tooltip__trigger" id="trigger__bug">bug</strong><span class="tooltip__emoji">🧶</span><tool-tip role="tooltip" aria-labelledby="bug"><span class="tooltip__title e-heading__2"><span class="tooltip__emoji">🧶</span> bug</span><span class="tooltip__content">Any unintended behaviour or effect from our software is called a <strong>bug</strong>.</span></tool-tip></tool-tip-container>
+ which makes <code>calculateMean</code> return the wrong value. Both <code>calculateMean</code> and <code>calculateMedian</code> need access to the original <code>salaries</code> array. Therefore, we should take make sure we don&rsquo;t mutate the array unless we really mean to.</p>
+<h3 id="testing-no-mutation">Testing no mutation</h3>
+<p>We can add an additional assertion to the tests for <code>calculateMedian</code> to check it isn&rsquo;t modifying the original input:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">test</span>(<span style="color:#e6db74">&#34;doesn&#39;t modify the input&#34;</span>, () =&gt; {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">list</span> <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>];
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">calculateMedian</span>(<span style="color:#a6e22e">list</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">expect</span>(<span style="color:#a6e22e">list</span>).<span style="color:#a6e22e">toEqual</span>([<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>]); <span style="color:#75715e">// Note that the toEqual matcher checks the values inside arrays when comparing them - it doesn&#39;t use `===` on the arrays, we know that would always evaluate to false.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>});</span></span></code></pre></div><p>In this test, we don&rsquo;t check the <strong>return value</strong> of <code>calculateMedian</code>. We assert that the input has the same contents as the original input. We can use the <code>toEqual</code> matcher to check the contents of the array referenced by the variable <code>list</code>.</p>
+<section class="c-note c-note--note">
+  <h4 class="c-note__title e-heading__4">📝🔧 Fix it</span>
+  </h4>
+  <div class="c-note__text "><p>Recall the current buggy implementation of <code>calculateMedian</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">calculateMedian</span>(<span style="color:#a6e22e">list</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">middleIndex</span> <span style="color:#f92672">=</span> Math.<span style="color:#a6e22e">floor</span>(<span style="color:#a6e22e">list</span>.<span style="color:#a6e22e">length</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">2</span>);
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">median</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">list</span>.<span style="color:#a6e22e">splice</span>(<span style="color:#a6e22e">middleIndex</span>, <span style="color:#ae81ff">1</span>)[<span style="color:#ae81ff">0</span>];
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">median</span>;
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div><p>We&rsquo;ve established that we shouldn&rsquo;t use <code>splice</code> to retrieve the median from the input array.
+Fix the implementation of <code>calculateMedian</code> above so it no longer calls <code>splice</code> (which mutates the input), and instead gives the right answer <em>without</em> mutating the input.</p>
+</div>
+</section>
+
+
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="implementing-all-the-cases">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="implementing-all-the-cases">
+        Implementing all the cases
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="15 minutes countdown" datetime="P15M">15&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Translate a requirement into a failing test</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Implement code to fix a failing test</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <p>Try writing a test case to check <code>calculateMedian</code> works in the case when it is passed an <em>array of even length</em>.</p>
+<p>Use <a
+  href="https://www.bbc.co.uk/bitesize/guides/zwhgk2p/revision/2">documentation</a> to check how the median is computed in this case.</p>
+<p>Once you&rsquo;ve written your test case for <code>calculateMedian</code>, hopefully you see this implementation isn&rsquo;t doing the right thing. Try implementing the functionality for this case.</p>
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="solving-problems-with-arrays">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="solving-problems-with-arrays">
+        Arrays Workshop
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="60 minutes countdown" datetime="P60M">60&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Practice solving problems with arrays</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+
+  
+
+  
+  
+
+  
+    
+    
+  
+
+
+
+<section
+  class="c-block c-block--youtube"
+  aria-labelledby="warning-name-is-empty">
+  
+  <div class="c-block__content">
+    <youtube-player data-src="https://youtu.be/a_4gTaNYwTU"></youtube-player>
+  </div>
+</section>
+
+<p>To get the most out of this workshop - don&rsquo;t just watch, code along 💻
+You can use the code samples below as a starting point.</p>
+<h3 id="exercise-1">Exercise 1</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#75715e">// Can you fix this code?
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">doubleAllNumbers</span>() {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">doubledNumbers</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">n</span> <span style="color:#66d9ef">of</span> <span style="color:#a6e22e">numbers</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">doubledNumbers</span>.<span style="color:#a6e22e">push</span>(<span style="color:#a6e22e">n</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">2</span>);
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">doubledNumbers</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">myNums</span> <span style="color:#f92672">=</span> [<span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">20</span>, <span style="color:#ae81ff">30</span>];
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">doubleAllNumbers</span>(<span style="color:#a6e22e">myNums</span>);
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">myNums</span>);</span></span></code></pre></div><h3 id="exercise-2">Exercise 2</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#75715e">// Write a function which takes an array as a parameter
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">//   and swaps the first element with the last element
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">swapFirstAndLast</span>(<span style="color:#a6e22e">arr</span>) {}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">myArray</span> <span style="color:#f92672">=</span> [<span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">1</span>];
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">swapFirstAndLast</span>(<span style="color:#a6e22e">myArray</span>);
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">myArray</span>); <span style="color:#75715e">// what output should we expect?
+</span></span></span></code></pre></div>
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="failing-fast">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="failing-fast">
+        Fail Fast Prep
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="40 minutes countdown" datetime="P40M">40&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Relate the failing fast concept to your life experiences</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      
+
+
+<tab-panels class="c-tabs">
+  <div class="c-tabs__list" id="fail-fast-prep" role="tablist"><button
+          data-toggle="tab"
+          id="tab-label-fail-fast-prep-0"
+          class="c-tabs__tab e-heading__5 space 
+            is-active"
+          role="tab"
+          aria-controls="fail-fast-prep-0"
+          aria-selected="true">
+          👉🏽 PD Session
+        </button><button
+          data-toggle="tab"
+          id="tab-label-fail-fast-prep-1"
+          class="c-tabs__tab e-heading__5 space "
+          role="tab"
+          aria-controls="fail-fast-prep-1"
+          aria-selected="false">
+          🧩 1) Failing fast
+        </button><button
+          data-toggle="tab"
+          id="tab-label-fail-fast-prep-2"
+          class="c-tabs__tab e-heading__5 space "
+          role="tab"
+          aria-controls="fail-fast-prep-2"
+          aria-selected="false">
+          🧩 2) Reflect on your ...
+        </button></div>
+  <div class="c-tabs__group" id="fail-fast-prep">
+        <div
+          id="fail-fast-prep-0"
+          class="c-tabs__panel is-active"
+          role="tabpanel"
+          data-heading="👉🏽 PD Session"
+          aria-labelledby="tab-label-fail-fast-prep-0"><h3 id="introduction">Introduction</h3>
+<p>Failing fast is crucial for identifying flaws and giving you a quick opportunity to change anything that is needed.</p>
+<p>Embracing failure as a learning opportunity accelerates growth and adaptation and is a skill that makes you a more efficient professional.</p>
+</div>
+        <div
+          id="fail-fast-prep-1"
+          class="c-tabs__panel "
+          role="tabpanel"
+          data-heading="🧩 1) Failing fast"
+          aria-labelledby="tab-label-fail-fast-prep-1"><h4 id="failing-fast">Failing fast</h4>
+<p>🎯 <strong>Goal:</strong> Learn about failing fast (20 minutes)</p>
+<p><strong>Instructions</strong></p>
+<ul>
+<li><strong>Read</strong> <a
+  href="https://medium.com/@amitonline/failing-fast-embracing-failure-as-a-pathway-to-agile-success-e12a2f9b72cd">this piece</a> that will introduce you to the concept of failing fast and how this can be put into practice by using the Agile framework.</li>
+<li><strong>Watch</strong> this <a
+  href="https://www.youtube.com/watch?v=wmMgjrqhHrw">video</a> about failure and how you learn and innovate.</li>
+</ul>
+</div>
+        <div
+          id="fail-fast-prep-2"
+          class="c-tabs__panel "
+          role="tabpanel"
+          data-heading="🧩 2) Reflect on your ..."
+          aria-labelledby="tab-label-fail-fast-prep-2"><h4 id="reflection-on-failing-fast-experience">Reflection on failing fast Experience</h4>
+<p>🎯 <strong>Goal:</strong> Reflection on failing fast concept in your life (20 minutes)</p>
+<p><strong>Instructions</strong></p>
+<p>Considering what you have learned regarding Failing Fast, think of an instance when you failed to achieve something you aimed for.</p>
+<p>Write down about this event and reflect on it. You can use the following questions to guide you:</p>
+<ul>
+<li>What did you learn from it?</li>
+<li>Did you try a different approach to achieve the same goal?</li>
+<li>Did you change the objective you were after?</li>
+<li>What would you have done differently?</li>
+</ul>
+</div></div>
+</tab-panels>
+
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+      </div>
+      <nav slot="nav">
+        <a href="#" class="e-button c-solo-view__back">&larr; Back</a>
+        <a href="#" class="e-button c-solo-view__next">Next &rarr;</a>
+      </nav>
+    </solo-view>
+    
+    <script src="/scripts/solo-view.min.js" defer></script>
+    
+    <script src="/scripts/time-total.min.js" defer></script>
+  
+
+
+        
+
+  <footer class="c-page-footer">
+    <nav class="c-page-footer__nav">
+      
+      
+      <span class="c-page-footer__this">prep</span>
+      
+        →<a
+          class="c-page-footer__next c-page-footer__link e-link"
+          href="/itp/data-groups/sprints/1/backlog/"
+          >backlog</a
+        >
+      
+    </nav>
+  </footer>
+
+
+      </main><footer class="l-layout__footer l-footer">
+  <a
+    class="l-footer__github e-button e-button--icon"
+    href="https://github.com/CodeYourFuture/curriculum/">
+    <svg
+  focusable="false"
+  class="e-button__icon"
+  role="presentation"
+  width="96"
+  viewbox="0 0 98 96"
+  xmlns="http://www.w3.org/2000/svg">
+  <path
+    fill-rule="evenodd"
+    clip-rule="evenodd"
+    d="M48.854 0C21.839 0 0 22 0 49.217c0 21.756 13.993 40.172 33.405 46.69 2.427.49 3.316-1.059 3.316-2.362 0-1.141-.08-5.052-.08-9.127-13.59 2.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015 4.934.326 7.523 5.052 7.523 5.052 4.367 7.496 11.404 5.378 14.235 4.074.404-3.178 1.699-5.378 3.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283 0-5.378 1.94-9.778 5.014-13.2-.485-1.222-2.184-6.275.486-13.038 0 0 4.125-1.304 13.426 5.052a46.97 46.97 0 0 1 12.214-1.63c4.125 0 8.33.571 12.213 1.63 9.302-6.356 13.427-5.052 13.427-5.052 2.67 6.763.97 11.816.485 13.038 3.155 3.422 5.015 7.822 5.015 13.2 0 18.905-11.404 23.06-22.324 24.283 1.78 1.548 3.316 4.481 3.316 9.126 0 6.6-.08 11.897-.08 13.526 0 1.304.89 2.853 3.316 2.364 19.412-6.52 33.405-24.935 33.405-46.691C97.707 22 75.788 0 48.854 0z"
+    fill="currentColor" />
+</svg>
+
+    <span class="is-invisible">Find us on GitHub</span>
+  </a>
+  <p class="l-footer__impressum e-heading__6">
+    This
+    <a href="https://github.com/CodeYourFuture/curriculum/">free and open source programme</a>
+    is a project of
+    <a href="https://codeyourfuture.io/">Code Your Future</a>
+    <br />
+    Creative Commons Attribution-ShareAlike 4.0
+  </p>
+  <dark-mode class="l-footer__mode"
+    ><button
+      slot="button"
+      id="mode-toggle"
+      type="button"
+      class="e-button e__button--toggle e-button--icon">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="e-icon e__button__icon e-icon--moon">
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
+      </svg>
+      <span class="is-invisible">Toggle between light and dark mode</span>
+    </button></dark-mode
+  >
+</footer>
+
+
+
+<script src="/scripts/app.min.js" defer></script>
+
+<script src="/scripts/youtube-player.min.js" defer></script>
+
+<script src="/scripts/tab-panels.min.js" type="module" defer></script>
+
+<script src="/scripts/dark-mode.min.js"></script>
+
+<script src="/scripts/alert-message.min.js" defer></script>
+
+
+
+
+
+
+
+</div>
+  </body>
+</html>

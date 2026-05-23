@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Self educate on CYF Courses</title>
+    <link>https://curriculum.codeyourfuture.io/how-this-works/sprints/self-educate/</link>
+    <description>Recent content in Self educate on CYF Courses</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="https://curriculum.codeyourfuture.io/how-this-works/sprints/self-educate/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>prep</title>
+      <link>https://curriculum.codeyourfuture.io/how-this-works/sprints/self-educate/prep/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://curriculum.codeyourfuture.io/how-this-works/sprints/self-educate/prep/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>backlog</title>
+      <link>https://curriculum.codeyourfuture.io/how-this-works/sprints/self-educate/backlog/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://curriculum.codeyourfuture.io/how-this-works/sprints/self-educate/backlog/</guid>
+      <description>&lt;p&gt;This view lists the issues for this sprint. You can think of the issues in this view as &lt;strong&gt;actions&lt;/strong&gt; to guide you in your first interactions with the community.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>End of Sprint Review</title>
+      <link>https://curriculum.codeyourfuture.io/how-this-works/sprints/self-educate/success/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://curriculum.codeyourfuture.io/how-this-works/sprints/self-educate/success/</guid>
+      <description>&lt;p&gt;This view compiles learning objectives from the day plan and prep view into a checkbox list to help trainees check in on their progress.&lt;/p&gt;&#xA;&lt;p&gt;Before you consider yourself to have completed a sprint, make sure you can do everything in the list. If you&amp;rsquo;re not confident in any of them, consider re-doing prep, re-doing exercises, or talking to someone about it.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

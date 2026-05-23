@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>The Launch on CYF Courses</title>
+    <link>https://curriculum.codeyourfuture.io/launch/</link>
+    <description>Recent content in The Launch on CYF Courses</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="https://curriculum.codeyourfuture.io/launch/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Apply</title>
+      <link>https://curriculum.codeyourfuture.io/launch/prep/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://curriculum.codeyourfuture.io/launch/prep/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>End of Module Review</title>
+      <link>https://curriculum.codeyourfuture.io/launch/success/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://curriculum.codeyourfuture.io/launch/success/</guid>
+      <description>&lt;p&gt;To succeed at &lt;span class=&#34;c-our-name&#34;&gt;CYF&lt;/span&gt;, you must successfully deliver a team project, including a “Demo Day” demonstration. Successful delivery includes:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;🧑🏿‍💻 &lt;a&#xA;  href=&#34;#individual&#34;&gt;Individual criteria&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;💼 &lt;a&#xA;  href=&#34;#project&#34;&gt;Project criteria&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;🧑🏾‍🤝‍🧑🏼&lt;a&#xA;  href=&#34;#team&#34;&gt;Team criteria&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;individual&#34;&gt;🧑🏿‍💻 Individual criteria&lt;/h2&gt;&#xA;&lt;p&gt;You must demonstrate the skills description for &lt;a&#xA;  href=&#34;https://curriculum.codeyourfuture.io/prep/#role-description&#34;&gt;your role&lt;/a&gt; during your team project.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;You must write your code yourself&lt;/strong&gt;. 1:1 pairing sessions may happen at any point during your team project or beforehand, but your code is your code and you must understand it. You must be able to explain your code to another developer.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Course overview</title>
+      <link>https://curriculum.codeyourfuture.io/launch/overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://curriculum.codeyourfuture.io/launch/overview/</guid>
+      <description>&lt;p&gt;The Launch is an opportunity to work in a group on a real greenfield project which will have real users when complete.&lt;/p&gt;&#xA;&lt;p&gt;Across four sprints, trainees will work with an advisory tech lead and product manager to build an MVP, from scratch. The goal is to consolidate all of the knowledge build up across the CYF courses and apply them in a real-world setting. At the end of The Launch, trainees should have an impressive product to show off, and real experience to discuss in interviews.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

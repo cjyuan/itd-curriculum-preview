@@ -1,0 +1,2176 @@
+<!DOCTYPE html>
+
+
+
+
+<html lang="en" class="p-prep"><head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  <title data-pagefind-meta="title">
+    
+      Intro to Programming 
+    
+      Data Flows 
+    
+      Sprint 2 
+    
+    Prep
+  </title>
+  
+    <meta
+      name="description"
+      content=" CYF Courses: Take a template and populate it with data; then update the data in response to user interaction" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+  <style>
+    body,
+    html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      animation: fade-in 300ms;
+    }
+    @keyframes fade-in {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  </style>
+  
+  
+  <link
+    rel="stylesheet"
+    href="/bundled.min.b6a4520237559385268d63a9daa81d96.css"
+    media="print"
+    onload="this.media='all'" />
+
+  
+  
+    
+    
+    <link
+      rel="stylesheet"
+      href="/custom.min.8ded6a1a88bc7cc98bdef8dc33d15f3a.css"
+      media="print"
+      onload="this.media='all'" />
+  
+
+
+  <noscript>
+    <link rel="stylesheet" href="/bundled.min.b6a4520237559385268d63a9daa81d96.css" />
+  </noscript>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&amp;display=swap"
+    rel="stylesheet"
+    media="print"
+    onload="this.media='all'" />
+
+  <link rel="shortcut icon" href="https://curriculum.codeyourfuture.io/favicon.ico" />
+  <meta name="theme-color" content="#e3ddeef2" />
+  <link rel="manifest" href="https://curriculum.codeyourfuture.io/manifest.json" />
+</head>
+<body>
+    <a class="c-skip-link e-button" id="skip-link" href="#main">Skip to main</a>
+    <div class="l-layout">
+      <header class="l-layout__header l-header">
+  <div class="l-header__container">
+    <h1 class="l-header__heading e-heading__6" data-pagefind-ignore>
+      <a class="l-header__home" href="/"
+        ><span class="is-invisible"
+          >itp Prep CYF Courses</span
+        >
+        <span class="is-none--lt-container">
+          <svg
+          xmlns="http://www.w3.org/2000/svg"
+          title="Code Your Future."
+          viewBox="0 0 621.64 155.81"
+          width="140px"
+          focusable="false"
+          role="img">
+          <path
+            fill="var(--theme-color--brand)"
+            d="M103.37 56.51C96.91 63.64 87.03 69.9 74.6 69.9c-20.14 0-33.52-12.91-33.52-34.09C41.08 13.97 57.5.87 69.94.87c9.5 0 13.77 5.32 14.63 6.46l2.18-5.27h14.91v27h-17c-.28-6.18-3.32-12-10.06-12s-11.3 8.45-11.3 18.8c0 9.4 4.84 17.86 13.86 17.86 8 0 14.24-8.36 15.1-9.31Zm2.88-21.85C106.25 14.15 119.92 0 139.58 0c23.26 0 34.09 14 34.09 35.32s-12 34.57-33.43 34.57c-19.88 0-33.99-11.49-33.99-35.23Zm43.68.66c0-11.49-3.13-20.7-10.45-20.7-5.79-.09-9.78 8.26-9.78 20 0 12.44 4.47 20.32 10.54 20.32s9.65-7.88 9.65-19.62Zm27.49 20.23h5.89V14.34h-5.89V1.8h29c23 0 36.09 14.15 36.09 32.29 0 21.65-13.11 34.09-36.47 34.09h-28.62Zm29 0c10.03-.19 14.21-9.59 14.21-21.49 0-10.16-4.18-19.75-14.25-19.75h-3.61v41.24ZM303.04 1.8v21h-16.43v-8.46h-15.19v13.1h18v12.62h-18v15.49h15.19v-8.83h16.43v21.46h-57.26V55.55h6V14.34h-6V1.8Z" />
+          <path
+            fill="var(--theme-color--ink)"
+            d="M274.42 87.82v21h-16.8v-8.45h-14.37v16.52h18v12.63h-18v12.04h9.68v12.63h-35.29v-12.63h5.89v-41.21h-5.89V87.82Zm33.04 0v12.24h-5.12v20.51c0 15.28 3.41 18.51 9.49 18.51 5.79 0 9.59-2.28 9.59-18.61v-20.12h-5.17V87.82h28.11v12.24h-5.11v23.07c0 22.51-9.4 32.67-27.25 32.67-19.18-.57-29.43-10.64-29.43-32.19v-23.45h-5.32V87.82Zm103.5 24.69h-14v-12.16h-8v41.21h7.88v12.63h-35.26v-12.63h7.79v-41.21h-8.12v12.16h-14V87.82h63.71ZM444 87.82v12.24h-5.13v20.51c0 15.28 3.42 18.51 9.5 18.51 5.79 0 9.59-2.28 9.59-18.61v-20.12h-5.13V87.82h28.11v12.24h-5.13v23.07c0 22.51-9.4 32.67-27.25 32.67-19.18-.57-29.44-10.64-29.44-32.19v-23.45h-5.32V87.82Zm71.59 0c22 0 26.3 8.73 26.3 19.56 0 7.4-5.88 12.63-13.76 13.77 6.55.95 12.44 6.64 12.44 13.48 0 4.08.57 6.46 2.27 6.46 1.43 0 2.19-1.14 2.19-3v-3.13h6.36v5.22c0 7.88-3.32 15.19-13.86 15.19-12.44 0-18.42-6.55-18.42-17.66 0-8.64-1.05-10.73-9.5-10.73v14.68h5.79v12.53h-30.67v-12.53h5.32v-41.4h-5.32V87.82Zm-6 28.48h4.27c5.51 0 9.12-2.65 9.12-7.69 0-5.6-3.13-8.45-8.64-8.45h-4.75Zm102.38-28.48v21h-16.43v-8.45h-15.19v13.09h18v12.6h-18v15.5h15.19v-8.83h16.43v21.46h-57.26v-12.63h6v-41.21h-6V87.82Zm-227.72-56.1c.38-1.9 2.47-5.89 3.51-8.17l5.22-9.59h-5.22V1.8h25.54v12.16h-5.05l-17.62 30.86v11h5.32v12.36h-30.39V55.83h5.41v-11.2l-18.42-30.67h-4.65V1.8h32.47v12.16h-4.93l5.5 10.1c.57 1.81 2.57 6.08 2.95 7.7Zm29.54 2.94C413.79 14.15 427.47 0 447.12 0c23.27 0 34.09 14 34.09 35.32s-12 34.57-33.42 34.57c-19.85 0-34-11.49-34-35.23Zm43.68.66c0-11.49-3.13-20.7-10.44-20.7-5.79-.09-9.78 8.26-9.78 20 0 12.44 4.46 20.32 10.54 20.32s9.68-7.88 9.68-19.62ZM514.25 1.8v12.26h-5.13v20.5c0 15.29 3.42 18.52 9.5 18.52 5.79 0 9.59-2.28 9.59-18.61V14.34h-5.13V1.8h28.11v12.26h-5.13v23.07c0 22.5-9.4 32.66-27.25 32.66-19.18-.57-29.44-10.63-29.44-32.19V14.15h-5.32V1.8Zm71.59 0c22 0 26.31 8.74 26.31 19.57 0 7.4-5.89 12.62-13.77 13.76 6.55 1 12.44 6.65 12.44 13.49 0 4.08.57 6.46 2.27 6.46 1.43 0 2.19-1.14 2.19-3V48.9h6.36v5.23c0 7.88-3.32 15.19-13.86 15.19-12.44 0-18.42-6.55-18.42-17.66 0-8.64-1.05-10.73-9.5-10.73v14.71h5.79v12.54h-30.67V55.64h5.32v-41.4h-5.32V1.8Zm-6 28.49h4.27c5.51 0 9.12-2.66 9.12-7.69 0-5.6-3.13-8.45-8.64-8.45h-4.75ZM28.39 14.7l5.8 10.64-23.46 10.72 23.46 10.55-3.61 9.87L0 42.24v-13.3Zm318.7 14.24v13.3l-30.58 14.24-3.61-9.87 23.46-10.55-23.46-10.72 5.8-10.64Z" />
+        </svg>
+        </span>
+        <span class="is-none--gt-container">
+          <svg
+          xmlns="http://www.w3.org/2000/svg"
+          version="1.0"
+          viewBox="0 0 512 512"
+          width="48px">
+          <path
+            fill="currentcolor"
+            stroke="currentcolor"
+            d="M225.5 1c-1.1.5-3.5.9-5.3.9-4.1.1-22.9 4.5-30.7 7.2-63.1 22-114.7 72.3-142.7 139.4-6.4 15.2-11.8 33.8-16.7 57-4.1 19.7-5.4 64.5-2.6 90.8C33 346.2 49.8 390.1 76.8 425c6.2 7.9 23.9 26.4 30.7 32 8.1 6.7 26.1 18.7 35.1 23.6 28.1 15.1 58 24.3 91.9 28.3 5.5.7 13.6 1.7 18 2.2 8.8 1.2 33.9.7 48-.9 11-1.3 31.7-4.8 36.5-6.2 1.9-.5 8-2.3 13.5-3.9 21.3-6.1 47.2-17.8 67.5-30.5 8.8-5.4 23.7-15.8 28.5-19.7 10.2-8.4 24.5-21.3 31.4-28.2l8.4-8.5-2.2-2.9c-1.3-1.5-4.6-5.3-7.4-8.3-6.2-6.7-14.5-15.7-21.2-23.1-2.7-3-7.5-8.2-10.5-11.4-3-3.3-9.8-10.8-15.1-16.5-21.5-23.6-24.2-26.5-24.9-26.8-.3-.1-2 1.2-3.6 3-1.6 1.9-6.3 7.1-10.4 11.7-8.6 9.7-25.6 24.6-35.9 31.4-21.4 14.4-42.5 21.7-62.6 21.7-15.3-.1-29.3-3.3-42.5-10-22.8-11.5-41.9-35.5-51.5-64.7-4.2-12.8-4.3-13.4-5.9-22.8-3.8-22.9-4.6-39.2-2.6-55.6 2.7-22.7 3.3-26.5 5-33.2 7.9-30.9 16.7-48.6 32.4-65.6 16.8-17.9 41.1-24.9 65.1-18.6 30 7.8 50.7 36.3 55.5 76.3.5 4.6 1.2 8.7 1.5 9.3.4.5 25.1.9 62.6.9H474V9H364.2L357 26.7c-4 9.8-7.9 18.5-8.7 19.3-1.3 1.3-2.1.8-6.6-4.3-6-6.9-18.3-16.7-28.2-22.5-7.4-4.3-22.6-10.9-28.5-12.4-9.2-2.2-18.1-4.1-24-5-9-1.3-33.1-1.9-35.5-.8z" />
+        </svg>
+        </span>
+      </a>
+    </h1>
+    <link
+  href="/pagefind/pagefind-ui.css"
+  rel="stylesheet"
+  media="print"
+  onload="this.media='all'" />
+<style>
+  :root {
+    --pagefind-ui-primary: var(--theme-color--ink);
+    --pagefind-ui-text: var(--theme-color--ink);
+    --pagefind-ui-background: var(--theme-color--paper);
+    --pagefind-ui-border: var(--theme-color--outline);
+    --pagefind-ui-tag: var(--theme-color--block);
+    --pagefind-ui-border-radius: 2em;
+    --pagefind-ui-image-border-radius: var(--theme-border-radius);
+    --pagefind-ui-font: var(--theme-font--copy);
+  }
+  .pagefind-ui--reset {
+    position: absolute;
+  }
+  #search .pagefind-ui__search-input {
+    box-shadow: var(--theme-box-shadow--inset);
+    margin-bottom: var(--theme-spacing--1);
+  }
+  #search .pagefind-ui__search-clear {
+    background-color: transparent;
+  }
+  #search .pagefind-ui__drawer {
+    background-color: var(--theme-color--paper);
+    box-shadow: var(--theme-box-shadow--slim);
+    transform: translateY(-1.5px);
+    padding: 0 var(--theme-spacing--2);
+    max-height: calc(100vh - 4rem);
+    overflow-y: auto;
+  }
+  #search .pagefind-ui__result {
+    padding: var(--theme-spacing--1) 0 var(--theme-spacing--2) 0;
+  }
+  #search .pagefind-ui__result:focus-within,
+  #search .pagefind-ui__button:focus {
+    background-color: var(--theme-color--block);
+  }
+  #search .pagefind-ui__button {
+    border: none;
+  }
+</style>
+<script src="/pagefind/pagefind-ui.js" type="text/javascript" defer></script>
+<div id="search" class="l-header__search"></div>
+<script>
+  window.addEventListener("DOMContentLoaded", (event) => {
+    new PagefindUI({
+      element: "#search",
+      showSubResults: true,
+      pageSize: 3,
+      showImages: false,
+      showTags: true,
+    });
+  });
+</script>
+
+    <button
+      class="l-header__action e-button e-button--icon js-menu-toggle e-heading__3">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+        <path
+          stroke="var(--theme-color--ink)"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M13 5a1 1 0 1 0-2 0 1 1 0 0 0 2 0Zm0 7a1 1 0 1 0-2 0 1 1 0 0 0 2 0Zm0 7a1 1 0 1 0-2 0 1 1 0 0 0 2 0Z" />
+      </svg>
+      <span class="is-invisible">Open Menu.</span>
+    </button>
+  </div>
+</header>
+
+      <nav
+  class="l-layout__menu l-menu"
+  aria-label="Main Site Links."
+  id="site-menu"
+  hidden
+  tabindex="0">
+  <div class="l-menu__container">
+    <h2 class="l-menu__heading e-heading__2">
+      <a href="/" class="l-menu__home is-invisible">Menu</a>
+    </h2>
+    <button
+      class="l-menu__action e-button e-button--icon js-menu-toggle e-heading__2"
+      id="close-menu">
+      ❎
+      <span class="is-invisible">Close Menu.</span>
+    </button>
+    <ul class="l-menu__primary">
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/guides/">
+            Guides
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/sdc/tools/">
+            Tools
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/sdc/logic/">
+            Logic
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/sdc/decomposition/">
+            Decomposition
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/sdc/legacy/">
+            Legacy code
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/sdc/complexity/">
+            Complexity
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/tracks/servers/">
+            Servers
+          </a>
+        </li>
+    </ul>
+    <ul class="l-menu__secondary">
+        <li class="l-menu__item">
+          <a class="e-heading__3 l-menu__link" href="https://codeyourfuture.io">
+            CYF 👈🏾
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__3 l-menu__link" href="https://codeyourfuture.io/volunteers/">
+            Join Us 👋🏿
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__3 l-menu__link" href="https://codeyourfuture.io/donate/">
+            Support 🫶🏼
+          </a>
+        </li>
+    </ul>
+  </div>
+</nav>
+
+      <main
+        id="main"
+        class="l-layout__main l-main"
+        tabindex="0"
+        data-pagefind-body>
+        
+  
+    <solo-view tabindex="0">
+      
+
+
+      <div slot="header">
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+<header
+  class="c-page-header 
+    c-page-header--solo
+   c-page-header--toc">
+  
+  <div class="c-page-header__container">
+    <div class="c-page-header__breadcrumbs">
+      
+  <nav class="c-breadcrumbs">
+    <ol class="c-breadcrumbs__list">
+      
+        
+        
+          <li class="c-breadcrumbs__item">
+            <a
+              class="c-breadcrumbs__link"
+              href="/itp/"data-pagefind-filter="module"><span class="c-breadcrumbs__text">Intro to Programming</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                width="24px"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="c-breadcrumbs__icon">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+              </svg>
+            </a>
+          </li>
+        
+        
+          <li class="c-breadcrumbs__item">
+            <a
+              class="c-breadcrumbs__link"
+              href="/itp/data-flows/"><span class="c-breadcrumbs__text">Data flows</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                width="24px"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="c-breadcrumbs__icon">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+              </svg>
+            </a>
+          </li>
+      
+        <li class="c-breadcrumbs__item">
+          <a
+            class="c-breadcrumbs__link"
+            href="/itp/data-flows/sprints/2/"data-pagefind-filter="sprint">Sprint 2</a
+          >
+        </li>
+      
+    </ol>
+  </nav>
+  
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Our Courses",
+      "item":"https://curriculum.codeyourfuture.io/"},
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Intro to Programming",
+      "item":"https://curriculum.codeyourfuture.io/itp/"},
+    {
+      "@type": "ListItem",
+      "position":  3 ,
+      "name": "Data flows",
+      "item":"https://curriculum.codeyourfuture.io/itp/data-flows/"},{
+      "@type": "ListItem",
+      "position":  5 ,
+      "name": "Sprint 2",
+      "item":"https://curriculum.codeyourfuture.io/itp/data-flows/sprints/2/"},
+    {
+      "@type": "ListItem",
+      "position":  6 ,
+      "name": "Prep",
+      "item":"https://curriculum.codeyourfuture.io/itp/data-flows/sprints/2/"}
+  ]
+}
+</script>
+
+
+    </div>
+    <h1 class="c-page-header__title e-heading__1"data-pagefind-filter="view"
+        
+      data-pagefind-weight="10">
+      <span class="c-emoji">
+        
+        
+           
+            <time-total class="c-page-header__time"></time-total>
+      
+         
+        </span>
+        <span class="c-page-header__title-text">Prep</span>
+               
+    </h1>
+    
+      
+        <h2 class="c-page-header__description e-heading__3">
+          Take a template and populate it with data; then update the data in response to user interaction
+        </h2>
+      
+    
+    
+    
+    
+      <div class="c-page-header__toc " id="toc">
+        <section class="c-toc" aria-label="Table of contents.">
+          <a id="top" class="c-toc__top e-button e-button--icon" href="#toc"
+            >🔖 <span class="is-invisible">back to top</span></a
+          >
+          
+            <nav id="TableOfContents"></nav>
+          
+          
+            <ol>
+              
+                <li>
+                  <a href="#gathering-requirements" data-pagefind-weight="5"
+                    >Gathering requirements</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#reacting" data-pagefind-weight="5"
+                    >Reacting</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#step-through-prep-workshop" data-pagefind-weight="5"
+                    >Step-through-prep workshop</a
+                  >
+                  📼
+                </li>
+              
+                <li>
+                  <a href="#breaking-down-the-problem" data-pagefind-weight="5"
+                    >Breaking down the problem</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#identifying-state" data-pagefind-weight="5"
+                    >Identifying state</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#refactoring-to-state%2brender" data-pagefind-weight="5"
+                    >Refactoring to state&#43;render</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#introducing-new-state" data-pagefind-weight="5"
+                    >Introducing new state</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#rendering-based-on-state" data-pagefind-weight="5"
+                    >Rendering based on state</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#capturing-events" data-pagefind-weight="5"
+                    >Capturing events</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#re-rendering" data-pagefind-weight="5"
+                    >Re-rendering</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#actually-re-rendering" data-pagefind-weight="5"
+                    >Actually re-rendering</a
+                  >
+                  
+                </li>
+              
+            </ol>
+          
+          
+        </section>
+      </div>
+    
+
+  </div>
+</header>
+</div>
+      <div slot="blocks">
+        
+        
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="gathering-requirements">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="gathering-requirements">
+        Gathering requirements
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="60 minutes countdown" datetime="P60M">60&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Define product, MVP, feature, user story</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <p>Read the following materials and get familiar with “product”, “MVP”, “feature” and “user story” concepts.</p>
+<ul>
+<li><a
+  href="https://medium.com/@escalesolutions/difference-between-product-and-software-abce6a7490">Difference between Product and Software</a></li>
+<li><a
+  href="https://www.productplan.com/glossary/minimum-viable-product/">Minimum Viable Product (MVP)</a></li>
+<li><a
+  href="https://www.productplan.com/glossary/features/">Features</a></li>
+<li><a
+  href="https://www.productplan.com/glossary/user-story/">User Story</a></li>
+</ul>
+<p>Create a simple <a
+  href="https://www.mindmapping.com/mind-map">mind map</a> with your ideas. This content will be discussed in class.</p>
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="reacting">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="reacting">
+        Reacting to user input
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="5 minutes countdown" datetime="P5M">5&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Explain how JavaScript can react to user input from a search input</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <p>As users interact with web applications, they trigger events by doing things like clicking buttons, submitting forms, or typing text. We need to respond to these events. Let&rsquo;s explore a common example: searching.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">label</span>&gt;
+</span></span><span style="display:flex;"><span>  Search &lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;search&#34;</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;q&#34;</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;q&#34;</span> <span style="color:#a6e22e">placeholder</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Search term&#34;</span> /&gt; 🔍
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">label</span>&gt;</span></span></code></pre></div><p>When a user types text into a search box, we want to capture their input and use it to filter and redisplay search results. This means the <strong>state</strong> of the application changes as the user types. We need to <strong>react</strong> to this change by updating the UI.</p>
+<p>We&rsquo;ll explore these ideas today. Code along with the examples in this lesson.</p>
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+
+  
+
+  
+  
+
+  
+    
+    
+  
+
+
+
+
+
+
+
+
+  
+<section
+  class="c-block c-block--youtube"
+  aria-labelledby="step-through-prep-workshop">
+  
+    <h2
+      class="c-block__title e-heading__2 is-invisible"
+      id="step-through-prep-workshop">
+      Youtube:
+      <a href="https://www.youtube.com/watch?v=7kYwo6W89j4">Step-through-prep workshop</a>
+    </h2>
+  
+  <div class="c-block__content">
+    <youtube-player data-src="https://www.youtube.com/watch?v=7kYwo6W89j4"></youtube-player>
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="breaking-down-the-problem">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="breaking-down-the-problem">
+        Break down the problem
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="30 minutes countdown" datetime="P30M">30&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Identify and sequence sub tasks</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <p>We already have a website for displaying film listings.</p>
+<p>Let&rsquo;s think through building this film search interface step-by-step. Write down your sequence of steps to build this interface.</p>
+<blockquote><p><em>Given</em> a view of film cards and search box<br>
+<em>When</em> a user types in the search box<br>
+<em>Then</em> the view should update to show only matching films.</p>
+</blockquote>
+
+
+<tab-panels class="c-tabs">
+  <div class="c-tabs__list" id="decomposition" role="tablist"><button
+          data-toggle="tab"
+          id="tab-label-decomposition-0"
+          class="c-tabs__tab e-heading__5 space 
+            is-active"
+          role="tab"
+          aria-controls="decomposition-0"
+          aria-selected="true">
+          Draw your plan
+        </button><button
+          data-toggle="tab"
+          id="tab-label-decomposition-1"
+          class="c-tabs__tab e-heading__5 space "
+          role="tab"
+          aria-controls="decomposition-1"
+          aria-selected="false">
+          Write your plan
+        </button></div>
+  <div class="c-tabs__group" id="decomposition">
+        <div
+          id="decomposition-0"
+          class="c-tabs__panel is-active"
+          role="tabpanel"
+          data-heading="Draw your plan"
+          aria-labelledby="tab-label-decomposition-0"><style>
+  .mermaid svg {
+    height: initial;
+  }
+  .mermaid {
+    margin-bottom: var(--theme-spacing--gutter);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .mermaid[data-processed] {
+    opacity: 1;
+  }
+</style>
+<div class="mermaid">graph LR
+A[Render UI] --> B[User types]
+B --> C[Capture event]
+C --> D[Filter data]
+D --> E[Update state]
+E --> A</div>
+
+<script type="module" src="/scripts/mermaid-observer.min.js" defer></script>
+</div>
+        <div
+          id="decomposition-1"
+          class="c-tabs__panel "
+          role="tabpanel"
+          data-heading="Write your plan"
+          aria-labelledby="tab-label-decomposition-1"><ol>
+<li>🔍 Display search box and initial list of films</li>
+<li>🦻🏽 Listen for user typing in search box</li>
+<li>🎞️ Capture latest string when user types</li>
+<li>🎬 Filter films list based on search text</li>
+<li>📺 Update UI with filtered list</li>
+</ol>
+</div></div>
+</tab-panels>
+
+<p>The key aspects we need to handle are capturing input and updating UI.</p>
+<h3 id="-capturing-input">👂🏿 Capturing Input</h3>
+<p>We need to listen for the <a
+  href="https://developer.mozilla.org/en-US/docs/Web/API/Element/input_event"><code>input</code></a> event on the search box to react as the user types. When the event fires, we can read the updated string value from the search box input element.</p>
+<h3 id="-filtering-data">🎬 Filtering Data</h3>
+<p>Once we have the latest search text, we can filter the list of films. We can use JavaScript array methods like <a
+  href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter"><code>.filter()</code></a> to return films that match our search string.</p>
+<h3 id="-updating-ui">🆕 Updating UI</h3>
+<p>With the latest filtered list of films in hand, we re-render these films to display the updated search results. We can clear the current film list and map over the filtered films to add updated DOM elements.</p>
+<p>Thinking through these aspects separately helps frame the overall task. Next we can focus on each piece:</p>
+<ol>
+<li>👂🏿 Listening for input</li>
+<li>🎬 Filtering data</li>
+<li>🆕 Re-rendering UI with the films example.</li>
+</ol>
+<section class="c-note c-note--tip">
+  <h4 class="c-note__title e-heading__4">💡Tip</span>
+  </h4>
+  <div class="c-note__text ">We clear the current film list and then add elements based on our new list.</div>
+</section>
+
+
+<h3 id="-why-clear-out-the-list-and-make-new-elements">💭 Why clear out the list and make new elements?</h3>
+<p>We could go through the existing elements, and <em>change</em> them. We could add a <code>hidden</code> CSS class to ones we want to hide, and remove a <code>hidden</code> CSS class from those we want to show.</p>
+<p>But we prefer to clear out the list and make <em>new</em> elements. We do not want to change existing ones.</p>
+<h4 id="-do-the-simplest-thing">🧘🏽‍♂️ Do the simplest thing</h4>
+<p>It is <strong>simpler</strong> because we have fewer things to think about. With either approach, we need to solve the problem &ldquo;which films do we want to show&rdquo;. By clearing out elements, we then only have to solve the problem &ldquo;how do I display a film?&rdquo;. We don&rsquo;t also need to think about &ldquo;how do I hide a film?&rdquo; or &ldquo;how do I show a film that was hidden?&rdquo;.</p>
+<h4 id="-a-place-for-everything">🍱 A place for everything</h4>
+<p>In our pattern we only deal with how we turn data into a card in one place. If we need to worry about <em>changing</em> how a card is displayed, that would have to happen somewhere else.</p>
+<p>By making new cards, we avoid thinking about how cards change.</p>
+<p>We can focus.</p>
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="identifying-state">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="identifying-state">
+        Identifying state
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="20 minutes countdown" datetime="P20M">20&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Identify the state in a given problem</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <blockquote><p>🕞 State: data which may change over time.</p>
+</blockquote><p>We store each piece of state in a variable. When we render in the UI, our code will look at the state in those variables. When the state changes, we render our UI again based on the new state.</p>
+<p>&ldquo;What the state used to be&rdquo; or &ldquo;How the state changed&rdquo; isn&rsquo;t something we pay attention to when we render. We always render based only on the current state.</p>
+<p>We want to have as few pieces of state as possible. We want them to be fundamental.</p>
+<p>Some guidelines for identifying the state for a problem:</p>
+<h4 id="-if-something-can-change-it-should-be-state">✔️ If something can change it should be state.</h4>
+<p>In our film example, the search term can change, so it needs some state associated with it.</p>
+<h4 id="-but-if-something-can-be-_derived_-it-should-_not_-be-state">❌ But if something can be <em>derived</em> it should <em>not</em> be state.</h4>
+<p>In our film example, we would not store &ldquo;is the search term empty&rdquo; and &ldquo;what is the search term&rdquo; as separate pieces of state. We can work this answer out ourselves. This answer can be <strong>derived</strong>. We can answer the question &ldquo;is the search term empty&rdquo; by looking at the search term. We don&rsquo;t need two variables: we can use one.</p>
+<h4 id="-if-two-things-always-change-together-they-should-be-one-piece-of-state">🖇️ If two things always change together, they should be one piece of state.</h4>
+<p>If a website allows log-in, we would not have one state for &ldquo;is a user logged in&rdquo; and one state for &ldquo;what user is logged in&rdquo;. We would have one piece of state: The currently logged in user. We would set that state to <code>null</code> if there is no logged in user. We can answer the question &ldquo;is a user logged in&rdquo; by checking if the currently logged in user is <code>null</code>. We don&rsquo;t need a separate piece of state.</p>
+<h4 id="state-in-our-example">State in our example</h4>
+<p>In our film example, we need two pieces of state:</p>
+<ol>
+<li>Our list of all films</li>
+<li>The search term</li>
+</ol>
+<p>When we introduce filtering films based on the search term <strong>we will not introduce other new state</strong>. We will not store a filtered list of films in state. Our filtered list of films can be <em>derived</em> from our existing state.</p>
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="refactoring-to-state&#43;render">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="refactoring-to-state&#43;render">
+        Refactoring to state&#43;render
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="30 minutes countdown" datetime="P30M">30&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Structure code to use state and render</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Define refactoring</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Refactor code</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <p>We are going to introduce a common pattern in writing UIs, which is to define and use a function called <code>render</code>.</p>
+<p>Up until now, our film website has been <strong>static</strong>: it never changes. By introducing a search input, our website is becoming <strong>dynamic</strong>: it can change. This means that we may need to re-run the code which creates our UI elements.</p>
+<p>So before we add the new functionality to our website, we are going to 
+<tool-tip-container tabindex="0"><strong class="tooltip__trigger" id="trigger__refactor">refactor</strong><span class="tooltip__emoji">🧶</span><tool-tip role="tooltip" aria-labelledby="refactor"><span class="tooltip__title e-heading__2"><span class="tooltip__emoji">🧶</span> refactor</span><span class="tooltip__content"><strong>Refactoring</strong> is when we change <em>how</em> our code is structured, without changing <em>what</em> it does. Even though we have changed our code, it does exactly the same thing it did before.</span></tool-tip></tool-tip-container>
+. Find your code that creates the film cards and adds them to the page. Move your code into a function called <code>render</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">films</span> <span style="color:#f92672">=</span> [
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// You have this array from before.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>];
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">createFilmCard</span>(<span style="color:#a6e22e">filmData</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// You should have an implementation of this function from before.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">render</span>() {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">filmCards</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">films</span>.<span style="color:#a6e22e">map</span>(<span style="color:#a6e22e">createFilmCard</span>);
+</span></span><span style="display:flex;"><span>  document.<span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">append</span>(...<span style="color:#a6e22e">filmCards</span>);
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div><p>We&rsquo;re missing one thing: We&rsquo;re never calling our <code>render</code> function! Call your <code>render</code> function after you define it:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">films</span> <span style="color:#f92672">=</span> [
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// You have this array from last week.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>];
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">createFilmCard</span>(<span style="color:#a6e22e">filmData</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// You should have an implementation of this function from last week.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">render</span>() {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">filmCards</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">films</span>.<span style="color:#a6e22e">map</span>(<span style="color:#a6e22e">createFilmCard</span>);
+</span></span><span style="display:flex;"><span>  document.<span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">append</span>(...<span style="color:#a6e22e">filmCards</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">render</span>();</span></span></code></pre></div><p>Your application should now work exactly the same as it did before. Because we moved our code into a function, this means we can call that function again if we need to, for instance when someone searches for something.</p>
+<p>We saw this same pattern when we made the character limit component. We called the same function on page load, and when someone typed something.</p>
+<h3 id="storing-our-state-somewhere">Storing our state somewhere</h3>
+<p>Up until now, we had a variable called <code>films</code>, and we created some cards based on that variable.</p>
+<p>Let&rsquo;s move this <code>films</code> variable inside an object called <code>state</code>, to make it clear to us what the state is in our application.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">state</span> <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">films</span><span style="color:#f92672">:</span> [
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">title</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Killing of Flower Moon&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">director</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Martin Scorsese&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">times</span><span style="color:#f92672">:</span> [<span style="color:#e6db74">&#34;15:35&#34;</span>],
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">certificate</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;15&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">duration</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">112</span>,
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">title</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Typist Artist Pirate King&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">director</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Carol Morley&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">times</span><span style="color:#f92672">:</span> [<span style="color:#e6db74">&#34;15:00&#34;</span>, <span style="color:#e6db74">&#34;20:00&#34;</span>],
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">certificate</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;12A&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">duration</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">108</span>,
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>  ],
+</span></span><span style="display:flex;"><span>};</span></span></code></pre></div><p>Each time we need to store more information we should think: Is this a piece of state, or is this something we&rsquo;re deriving from existing state? Whenever something in our state changes, we will tell our UI just to show &ldquo;whatever is in the state&rdquo; by calling the <code>render</code> function. In this way, we simplify our UI code by making it a function of the state.</p>
+<section class="c-note c-note--tip">
+  <h4 class="c-note__title e-heading__4">💡Tip</span>
+  </h4>
+  <div class="c-note__text ">We don&rsquo;t <em>need</em> to store our state in a variable called <code>state</code>. It was <em>already</em> state when it was called <code>films</code>. But naming this variable <code>state</code> can help us to think about it more clearly.</div>
+</section>
+
+
+<p>Make sure to update any references to the <code>films</code> variable you may have had before to instead reference <code>state.films</code>.</p>
+<p>This is another refactoring: we didn&rsquo;t change what our application does, we just moved a variable.</p>
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="introducing-new-state">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="introducing-new-state">
+        Introducing new state
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="30 minutes countdown" datetime="P30M">30&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+    <div class="c-block__content c-copy">
+      <p>We are introducing a new feature: being able to search for films. We have identified that this introduces one new element of state: the search term someone has asked for.</p>
+<p>Let&rsquo;s add it to our state object:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">state</span> <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">films</span><span style="color:#f92672">:</span> [
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">title</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Killing of Flower Moon&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">director</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Martin Scorsese&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">times</span><span style="color:#f92672">:</span> [<span style="color:#e6db74">&#34;15:35&#34;</span>],
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">certificate</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;15&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">duration</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">112</span>,
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">title</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Typist Artist Pirate King&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">director</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Carol Morley&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">times</span><span style="color:#f92672">:</span> [<span style="color:#e6db74">&#34;15:00&#34;</span>, <span style="color:#e6db74">&#34;20:00&#34;</span>],
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">certificate</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;12A&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">duration</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">108</span>,
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>  ],
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">searchTerm</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;&#34;</span>,
+</span></span><span style="display:flex;"><span>};</span></span></code></pre></div><p>We needed to pick an initial value for this state. We picked the empty string, because when someone first loads the page, they haven&rsquo;t searched for anything. When someone types in the search box, we will change the value of this state, and re-render the page.</p>
+<p>We could pick <em>any</em> initial value. This actually allows us to finish implementing our render function <em>before we even introduce a search box into the page</em>. In real life, our <code>searchTerm</code> state will be empty at first, but we can use different values to help us with development. We can make the page look like someone searched for &ldquo;Pirate&rdquo;, even before we introduce a search box in the UI.</p>
+<p>This is because we have split up our problem into three parts:</p>
+<ol>
+<li>👩🏾‍🔬 Identify what state we have.</li>
+<li>✍🏿 Define how to render the page based on that state.</li>
+<li>🎱 Change state (perhaps in response to some user action).</li>
+</ol>
+<p>Let&rsquo;s try making our render function work for the search term &ldquo;Pirate&rdquo;. Change the initial value of the <code>searchTerm</code> field of the <code>state</code> object to &ldquo;Pirate&rdquo;:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">state</span> <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">films</span><span style="color:#f92672">:</span> [
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">title</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Killing of Flower Moon&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">director</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Martin Scorsese&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">times</span><span style="color:#f92672">:</span> [<span style="color:#e6db74">&#34;15:35&#34;</span>],
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">certificate</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;15&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">duration</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">112</span>,
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">title</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Typist Artist Pirate King&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">director</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Carol Morley&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">times</span><span style="color:#f92672">:</span> [<span style="color:#e6db74">&#34;15:00&#34;</span>, <span style="color:#e6db74">&#34;20:00&#34;</span>],
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">certificate</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;12A&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">duration</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">108</span>,
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>  ],
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">searchTerm</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Pirate&#34;</span>,
+</span></span><span style="display:flex;"><span>};</span></span></code></pre></div><p>We expect, if someone is searching for &ldquo;Pirate&rdquo;, to only show films whose title contains the word Pirate.</p>
+
+    </div>
+    
+    
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="rendering-based-on-state">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="rendering-based-on-state">
+        Rendering based on state
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="30 minutes countdown" datetime="P30M">30&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Filter films based on search terms</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Render a filtered list</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <p>For now, we have set the initial value of the <code>searchTerm</code> state to &ldquo;Pirate&rdquo;. This means that our render function should only create cards for films which contain the word &ldquo;Pirate&rdquo; in their title. But right now, our render function creates cards for <em>all</em> of the films.</p>
+<p>In our render function, we must filter our list down to the films that match our search term. This does not require us to introduce new state. We can derive a filtered list from our existing state.</p>
+<h3 id="filter-function">Filter function</h3>
+<p>We can use the higher order array function <a
+  href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter"><code>.filter()</code></a> to return a new array of films that include the search term:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">filteredFilms</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">state</span>.<span style="color:#a6e22e">films</span>.<span style="color:#a6e22e">filter</span>((<span style="color:#a6e22e">film</span>) =&gt;
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">film</span>.<span style="color:#a6e22e">title</span>.<span style="color:#a6e22e">includes</span>(<span style="color:#a6e22e">state</span>.<span style="color:#a6e22e">searchTerm</span>)
+</span></span><span style="display:flex;"><span>);</span></span></code></pre></div><p>We can change our render function to <em>always</em> do this. If <code>searchTerm</code> is empty, our filter function will return all the films:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">render</span>() {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">filteredFilms</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">state</span>.<span style="color:#a6e22e">films</span>.<span style="color:#a6e22e">filter</span>((<span style="color:#a6e22e">film</span>) =&gt;
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">film</span>.<span style="color:#a6e22e">title</span>.<span style="color:#a6e22e">includes</span>(<span style="color:#a6e22e">state</span>.<span style="color:#a6e22e">searchTerm</span>)
+</span></span><span style="display:flex;"><span>  );
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">filmCards</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">filteredFilms</span>.<span style="color:#a6e22e">map</span>(<span style="color:#a6e22e">createFilmCard</span>);
+</span></span><span style="display:flex;"><span>  document.<span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">append</span>(...<span style="color:#a6e22e">filmCards</span>);
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
+
+
+<tab-panels class="c-tabs">
+  <div class="c-tabs__list" id="predict-and-explain-state" role="tablist"><button
+          data-toggle="tab"
+          id="tab-label-predict-and-explain-state-0"
+          class="c-tabs__tab e-heading__5 space 
+            is-active"
+          role="tab"
+          aria-controls="predict-and-explain-state-0"
+          aria-selected="true">
+          Predict the state
+        </button><button
+          data-toggle="tab"
+          id="tab-label-predict-and-explain-state-1"
+          class="c-tabs__tab e-heading__5 space "
+          role="tab"
+          aria-controls="predict-and-explain-state-1"
+          aria-selected="false">
+          Check understanding
+        </button></div>
+  <div class="c-tabs__group" id="predict-and-explain-state">
+        <div
+          id="predict-and-explain-state-0"
+          class="c-tabs__panel is-active"
+          role="tabpanel"
+          data-heading="Predict the state"
+          aria-labelledby="tab-label-predict-and-explain-state-0"><ol>
+<li>At this point in our codealong, when we open our page, what will we see?</li>
+<li>If we change the initial value of <code>state.searchTerm</code> back to the empty string and open the page again, what will we see?</li>
+</ol>
+</div>
+        <div
+          id="predict-and-explain-state-1"
+          class="c-tabs__panel "
+          role="tabpanel"
+          data-heading="Check understanding"
+          aria-labelledby="tab-label-predict-and-explain-state-1"><p>If we open our page, we should now only see cards for films containing &ldquo;Pirate&rdquo; in their title.</p>
+<p>If we change the initial value of <code>state.searchTerm</code> back to the empty string and open the page again, we should see cards for all of the films.</p>
+</div></div>
+</tab-panels>
+
+<p>We have now solved two of our three problems:</p>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> Identify what state we have.</li>
+<li><input checked="" disabled="" type="checkbox"> Define how to render the page based on that state.</li>
+<li><input disabled="" type="checkbox"> Change state (perhaps in response to some user action).</li>
+</ul>
+<h3 id="making-our-search-more-user-friendly">Making our search more user friendly</h3>
+<section class="c-note c-note--tip">
+  <h4 class="c-note__title e-heading__4">💡Things to consider</span>
+  </h4>
+  <div class="c-note__text ">Users don&rsquo;t always type perfectly. How will you match their typing to the film titles? What if they type in all caps? What is the simplest thing that could possibly work?</div>
+</section>
+
+
+<p>One of the nice things about breaking down the problem like this is that it allows us to change rendering <em>without</em> needing to interact with the page.</p>
+<p>If we want to improve our search functionality (e.g. to make it work if you searched for PIRATES in all-caps), we can set the initial value of <code>state.searchTerm</code> to <code>&quot;PIRATES&quot;</code> and make changes to our <code>render</code> function. Then every time we open the page, it will be like we searched for &ldquo;PIRATES&rdquo;.</p>
+<p>This can be a lot quicker than having to refresh the page and type in &ldquo;PIRATES&rdquo; in the search box every time we make a change want to see if our search works.</p>
+<section class="c-note c-note--exercise">
+  <h4 class="c-note__title e-heading__4">✍️Exercise: Make search more user friendly</span>
+  </h4>
+  <div class="c-note__text ">Try to make your render function work even if someone searched for &ldquo;pirates&rdquo; or &ldquo;PIRATES&rdquo;.</div>
+</section>
+
+
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="capturing-events">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="capturing-events">
+        Capturing the user event
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="20 minutes countdown" datetime="P20M">20&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Add an event listener to a user input</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <p>We&rsquo;ve introduced our state, and our render works for different values of that state. But users of our website can&rsquo;t change the <code>searchTerm</code> state themselves. We need to introduce a way for them to change the <code>searchTerm</code> state via the UI.</p>
+<p>To listen for the search input event, we can add an 
+<tool-tip-container tabindex="0"><strong class="tooltip__trigger" id="trigger__event listener">event listener</strong><span class="tooltip__emoji">🧶</span><tool-tip role="tooltip" aria-labelledby="event listener"><span class="tooltip__title e-heading__2"><span class="tooltip__emoji">🧶</span> event listener</span><span class="tooltip__content">An event listener waits for a specific <strong>event</strong> to occur. It runs in response to things like clicks, and key presses. We register listeners with <code>addEventListener</code> by passing the event name and a handling function.</span></tool-tip></tool-tip-container>
+</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">searchBox</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#34;search&#34;</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">searchBox</span>.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#34;input&#34;</span>, <span style="color:#a6e22e">handleSearchInput</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">handleSearchInput</span>(<span style="color:#a6e22e">event</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// React to input event
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>}</span></span></code></pre></div><p>These listeners wait for specific events to occur, and when they do, they trigger a callback function we&rsquo;ve defined. This gives us a way to make our code respond to user actions rather than running all at once.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">search</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#34;search&#34;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">search</span>.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#34;input&#34;</span>, <span style="color:#a6e22e">handleInput</span>);</span></span></code></pre></div><p>When we call <code>addEventListener</code>, it doesn&rsquo;t immediately execute the <code>handleInput</code> function. Instead, it sets up a listener that will run this function later. Event listeners are part of the web browser&rsquo;s Event API. But event listeners themselves aren&rsquo;t part of the core JavaScript language! When you create an event listener, you&rsquo;re making a request to a Web API to handle this functionality for you. In this pattern, the callback function (<code>handleInput</code>) only executes when a user types. These callback functions need to execute in response to user interactions. This lets us tell the browser exactly what actions to take once a particular event occurs.</p>
+<p>Callback functions are essential for handling user interactions in web browsers. They allow our code to execute in response to an event. The browser listens for events and executes our callback functions at the right time. It is our job to define what should happen when those events occur.</p>
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="re-rendering">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="re-rendering">
+        Re-rendering
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="10 minutes countdown" datetime="P10M">10&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Re-render a page based on user input</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Debug why a page isn&rsquo;t re-rendering as expected</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <p>When the &ldquo;input&rdquo; event fires, our handler function will run. Inside the handler we can access the updated input value: <code>const searchTerm = event.target.value;</code></p>
+<p>So our key steps are:</p>
+<ol>
+<li>Add an input event listener to the search box.</li>
+<li>In the handler, get the <code>value</code> of input element.</li>
+<li>Set the new state based on this value.</li>
+<li>Call our <code>render</code> function again.</li>
+</ol>
+<section class="c-note c-note--warning">
+  <h4 class="c-note__title e-heading__4">⚠️One thing at a time!</span>
+  </h4>
+  <div class="c-note__text ">But we&rsquo;re not going to do all of these at once! Stop and implement just the first two steps (adding the event listener, and getting the value), and <code>console.log</code> the search term.</div>
+</section>
+
+
+<p>We will make sure this works before we try to change the UI. Why? If we try to add the event listener and something <em>doesn&rsquo;t</em> work, we will only have a little bit of code to debug.</p>
+<p>If we tried to solve the whole problem (updating the UI) and something didn&rsquo;t work, we would have a <em>lot</em> of code to debug, which is harder!</p>
+<p>We&rsquo;ve now demonstrated that we can capture search text on every keystroke:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">searchBox</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#34;search&#34;</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">searchBox</span>.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#34;input&#34;</span>, <span style="color:#a6e22e">handleSearchInput</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">handleSearchInput</span>(<span style="color:#a6e22e">event</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">searchTerm</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">event</span>.<span style="color:#a6e22e">target</span>.<span style="color:#a6e22e">value</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">searchTerm</span>);
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div><p>Now that we&rsquo;ve shown we can log the search text, we can set the new value of the <code>searchTerm</code> state, and re-render the page.</p>
+<p>We should have a page like this:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#75715e">&lt;!DOCTYPE html&gt;</span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">html</span> <span style="color:#a6e22e">lang</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;en&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">head</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">title</span>&gt;Film View&lt;/<span style="color:#f92672">title</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;/<span style="color:#f92672">head</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">body</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">label</span>&gt;Search &lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text&#34;</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;search&#34;</span> /&gt;&lt;/<span style="color:#f92672">label</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">template</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;film-card&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>      &lt;<span style="color:#f92672">section</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">h3</span>&gt;Film title&lt;/<span style="color:#f92672">h3</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">p</span> <span style="color:#a6e22e">data-director</span>&gt;Director&lt;/<span style="color:#f92672">p</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">time</span>&gt;Duration&lt;/<span style="color:#f92672">time</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">data</span> <span style="color:#a6e22e">data-certificate</span>&gt;Certificate&lt;/<span style="color:#f92672">data</span>&gt;
+</span></span><span style="display:flex;"><span>      &lt;/<span style="color:#f92672">section</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#f92672">template</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">script</span>&gt;
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">state</span> <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">films</span><span style="color:#f92672">:</span> [
+</span></span><span style="display:flex;"><span>          {
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">title</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Killing of Flower Moon&#34;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">director</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Martin Scorsese&#34;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">times</span><span style="color:#f92672">:</span> [<span style="color:#e6db74">&#34;15:35&#34;</span>],
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">certificate</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;15&#34;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">duration</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">112</span>,
+</span></span><span style="display:flex;"><span>          },
+</span></span><span style="display:flex;"><span>          {
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">title</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Typist Artist Pirate King&#34;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">director</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Carol Morley&#34;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">times</span><span style="color:#f92672">:</span> [<span style="color:#e6db74">&#34;15:00&#34;</span>, <span style="color:#e6db74">&#34;20:00&#34;</span>],
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">certificate</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;12A&#34;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">duration</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">108</span>,
+</span></span><span style="display:flex;"><span>          },
+</span></span><span style="display:flex;"><span>        ],
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">searchTerm</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;&#34;</span>,
+</span></span><span style="display:flex;"><span>      };
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">template</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#34;film-card&#34;</span>);
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">createFilmCard</span> <span style="color:#f92672">=</span> (<span style="color:#a6e22e">film</span>) =&gt; {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">card</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">template</span>.<span style="color:#a6e22e">content</span>.<span style="color:#a6e22e">cloneNode</span>(<span style="color:#66d9ef">true</span>);
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// Now we are querying our cloned fragment, not the entire page.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#a6e22e">card</span>.<span style="color:#a6e22e">querySelector</span>(<span style="color:#e6db74">&#34;h3&#34;</span>).<span style="color:#a6e22e">textContent</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">film</span>.<span style="color:#a6e22e">title</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">card</span>.<span style="color:#a6e22e">querySelector</span>(
+</span></span><span style="display:flex;"><span>          <span style="color:#e6db74">&#34;[data-director]&#34;</span>
+</span></span><span style="display:flex;"><span>        ).<span style="color:#a6e22e">textContent</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">`Director: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">film</span>.<span style="color:#a6e22e">director</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">card</span>.<span style="color:#a6e22e">querySelector</span>(<span style="color:#e6db74">&#34;time&#34;</span>).<span style="color:#a6e22e">textContent</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">`</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">film</span>.<span style="color:#a6e22e">duration</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> minutes`</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">card</span>.<span style="color:#a6e22e">querySelector</span>(
+</span></span><span style="display:flex;"><span>          <span style="color:#e6db74">&#34;[data-certificate]&#34;</span>
+</span></span><span style="display:flex;"><span>        ).<span style="color:#a6e22e">textContent</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">`Certificate: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">film</span>.<span style="color:#a6e22e">certificate</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// Return the card, rather than directly appending it to the page
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">card</span>;
+</span></span><span style="display:flex;"><span>      };
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">render</span>() {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">filteredFilms</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">state</span>.<span style="color:#a6e22e">films</span>.<span style="color:#a6e22e">filter</span>((<span style="color:#a6e22e">film</span>) =&gt;
+</span></span><span style="display:flex;"><span>          <span style="color:#a6e22e">film</span>.<span style="color:#a6e22e">title</span>.<span style="color:#a6e22e">includes</span>(<span style="color:#a6e22e">state</span>.<span style="color:#a6e22e">searchTerm</span>)
+</span></span><span style="display:flex;"><span>        );
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">filmCards</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">filteredFilms</span>.<span style="color:#a6e22e">map</span>(<span style="color:#a6e22e">createFilmCard</span>);
+</span></span><span style="display:flex;"><span>        document.<span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">append</span>(...<span style="color:#a6e22e">filmCards</span>);
+</span></span><span style="display:flex;"><span>      }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">searchBox</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#34;search&#34;</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">searchBox</span>.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#34;input&#34;</span>, <span style="color:#a6e22e">handleSearchInput</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">handleSearchInput</span>(<span style="color:#a6e22e">event</span>) {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">searchTerm</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">event</span>.<span style="color:#a6e22e">target</span>.<span style="color:#a6e22e">value</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">searchTerm</span>);
+</span></span><span style="display:flex;"><span>      }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">render</span>();
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#f92672">script</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;/<span style="color:#f92672">body</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">html</span>&gt;</span></span></code></pre></div><p>We want to change our search input handler to update <code>state.searchTerm</code> and call <code>render()</code> again.</p>
+<p>Implement this and try searching. What happens? Play computer to work out why what&rsquo;s happening isn&rsquo;t what we expected.</p>
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="actually-re-rendering">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="actually-re-rendering">
+        Actually re-rendering
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="30 minutes countdown" datetime="P30M">30&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Group UI components by whether they need to re-render</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Control which UI components are re-rendered</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <p>We have seen that when we search, we&rsquo;re only <em>adding</em> new elements, and not removing existing elements from the page.</p>
+<p>We previously identified our strategy of clearing old elements before adding new ones. But we are not doing this.</p>
+<p>We can clear out the existing children of an element by setting its <code>textContent</code> property to the empty string:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span>document.<span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">textContent</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span>;</span></span></code></pre></div><p>Add this to your <code>render</code> function before you add new elements. Try using your page. Try searching for a particular film.</p>
+<p>Oh no, our search box is gone!</p>
+<section class="c-note c-note--exercise">
+  <h4 class="c-note__title e-heading__4">✍️exercise</span>
+  </h4>
+  <div class="c-note__text ">Work out why our search box is gone. Remember what we just changed, and what we were trying to do by making that change.</div>
+</section>
+
+
+<p>We removed our search box from the page because we removed everything from the entire document body.</p>
+<p>This was not our intention - we only wanted to remove any films we had previously rendered.</p>
+<p>A way to solve this is to introduce a container element which our <code>render</code> function will re-fill every time it&rsquo;s called.</p>
+<p>We should identify which elements in our page should be re-drawn every time we render, and which should always be present.</p>
+<p>Introduce a new container, and keep any &ldquo;always present&rdquo; UI elements outside of it. Update your <code>render</code> function to clear and append to the container, not the whole body.</p>
+<p>Remember to use semantic HTML. Your container should be an appropriate tag for the contents it will have.</p>
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+      </div>
+      <nav slot="nav">
+        <a href="#" class="e-button c-solo-view__back">&larr; Back</a>
+        <a href="#" class="e-button c-solo-view__next">Next &rarr;</a>
+      </nav>
+    </solo-view>
+    
+    <script src="/scripts/solo-view.min.js" defer></script>
+    
+    <script src="/scripts/time-total.min.js" defer></script>
+  
+
+
+        
+
+  <footer class="c-page-footer">
+    <nav class="c-page-footer__nav">
+      
+      
+      <span class="c-page-footer__this">Prep</span>
+      
+        →<a
+          class="c-page-footer__next c-page-footer__link e-link"
+          href="/itp/data-flows/sprints/2/backlog/"
+          >backlog</a
+        >
+      
+    </nav>
+  </footer>
+
+
+      </main><footer class="l-layout__footer l-footer">
+  <a
+    class="l-footer__github e-button e-button--icon"
+    href="https://github.com/CodeYourFuture/curriculum/">
+    <svg
+  focusable="false"
+  class="e-button__icon"
+  role="presentation"
+  width="96"
+  viewbox="0 0 98 96"
+  xmlns="http://www.w3.org/2000/svg">
+  <path
+    fill-rule="evenodd"
+    clip-rule="evenodd"
+    d="M48.854 0C21.839 0 0 22 0 49.217c0 21.756 13.993 40.172 33.405 46.69 2.427.49 3.316-1.059 3.316-2.362 0-1.141-.08-5.052-.08-9.127-13.59 2.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015 4.934.326 7.523 5.052 7.523 5.052 4.367 7.496 11.404 5.378 14.235 4.074.404-3.178 1.699-5.378 3.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283 0-5.378 1.94-9.778 5.014-13.2-.485-1.222-2.184-6.275.486-13.038 0 0 4.125-1.304 13.426 5.052a46.97 46.97 0 0 1 12.214-1.63c4.125 0 8.33.571 12.213 1.63 9.302-6.356 13.427-5.052 13.427-5.052 2.67 6.763.97 11.816.485 13.038 3.155 3.422 5.015 7.822 5.015 13.2 0 18.905-11.404 23.06-22.324 24.283 1.78 1.548 3.316 4.481 3.316 9.126 0 6.6-.08 11.897-.08 13.526 0 1.304.89 2.853 3.316 2.364 19.412-6.52 33.405-24.935 33.405-46.691C97.707 22 75.788 0 48.854 0z"
+    fill="currentColor" />
+</svg>
+
+    <span class="is-invisible">Find us on GitHub</span>
+  </a>
+  <p class="l-footer__impressum e-heading__6">
+    This
+    <a href="https://github.com/CodeYourFuture/curriculum/">free and open source programme</a>
+    is a project of
+    <a href="https://codeyourfuture.io/">Code Your Future</a>
+    <br />
+    Creative Commons Attribution-ShareAlike 4.0
+  </p>
+  <dark-mode class="l-footer__mode"
+    ><button
+      slot="button"
+      id="mode-toggle"
+      type="button"
+      class="e-button e__button--toggle e-button--icon">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="e-icon e__button__icon e-icon--moon">
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
+      </svg>
+      <span class="is-invisible">Toggle between light and dark mode</span>
+    </button></dark-mode
+  >
+</footer>
+
+
+
+<script src="/scripts/app.min.js" defer></script>
+
+<script src="/scripts/youtube-player.min.js" defer></script>
+
+<script src="/scripts/tab-panels.min.js" type="module" defer></script>
+
+<script src="/scripts/dark-mode.min.js"></script>
+
+<script src="/scripts/alert-message.min.js" defer></script>
+
+
+
+
+
+
+
+</div>
+  </body>
+</html>

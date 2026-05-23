@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Intro to Programming on CYF Courses</title>
+    <link>https://curriculum.codeyourfuture.io/itp/</link>
+    <description>Recent content in Intro to Programming on CYF Courses</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="https://curriculum.codeyourfuture.io/itp/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Timeline </title>
+      <link>https://curriculum.codeyourfuture.io/itp/guides/timeline/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://curriculum.codeyourfuture.io/itp/guides/timeline/</guid>
+      <description>&lt;h2 id=&#34;timeline-of-itp-staying-on-track&#34;&gt;Timeline of ITP, staying on track:&lt;/h2&gt;&#xA;&lt;p&gt;The course starts on the 1st of the month but there may be 7 days until the first Saturday, so we have written this to follow that timeline.&lt;/p&gt;&#xA;&lt;p&gt;There are 12 learning weeks in the curriculum, which you will schedule over a maximum of 16 weeks. This padding will help you account for things like Christmas, or Eid and other movable feasts. The course allows for variance in ability and previous experience. Most people should complete this course in 12 weeks of classes. Some will go faster (and this is encouraged). A few people will have adverse life events and need a couple of weeks to catch up. Once a learner is a full module behind, it&amp;rsquo;s not realistic for them to catch up.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

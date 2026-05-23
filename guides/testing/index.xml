@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Testing on CYF Courses</title>
+    <link>https://curriculum.codeyourfuture.io/guides/testing/</link>
+    <description>Recent content in Testing on CYF Courses</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="https://curriculum.codeyourfuture.io/guides/testing/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Lighthouse Audits</title>
+      <link>https://curriculum.codeyourfuture.io/guides/testing/lighthouse/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://curriculum.codeyourfuture.io/guides/testing/lighthouse/</guid>
+      <description>&lt;p&gt;&lt;a&#xA;  href=&#34;https://developer.chrome.com/docs/lighthouse/overview&#34;&gt;Lighthouse&lt;/a&gt; is an open-source, automated tool for improving the quality of web pages. It has audits for performance, accessibility, progressive web apps, SEO and more. At &lt;span class=&#34;c-our-name&#34;&gt;CYF&lt;/span&gt;, we require all web pages you write to score 100 for Accessibility as a minimum standard.&lt;/p&gt;&#xA;&lt;h2 id=&#34;how-to-run-an-audit&#34;&gt;How to run an audit&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Open a webpage in Chrome.&lt;/li&gt;&#xA;&lt;li&gt;Right-click on the page and select &lt;a&#xA;  href=&#34;https://developer.chrome.com/docs/devtools/open&#34;&gt;&lt;code&gt;Inspect&lt;/code&gt;&lt;/a&gt;.&lt;/li&gt;&#xA;&lt;li&gt;Click on the &lt;a&#xA;  href=&#34;https://developer.chrome.com/docs/lighthouse/overview#devtools&#34;&gt;&lt;code&gt;Lighthouse&lt;/code&gt;&lt;/a&gt; tab.&lt;/li&gt;&#xA;&lt;li&gt;Under &lt;code&gt;Categories&lt;/code&gt;, check &lt;code&gt;Accessibility&lt;/code&gt;. (Uncheck the other categories for now to make your report simpler.)&lt;/li&gt;&#xA;&lt;li&gt;Click the &lt;code&gt;Analyze page load&lt;/code&gt; button.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;how-to-read-and-use-the-report&#34;&gt;How to read and use the report&lt;/h2&gt;&#xA;&lt;p&gt;Lighthouse is your friend! Lighthouse will go through your code and show you how to fix everything. Under the top score, you will see a list of items that need fixing. You must click on the triangle to see the details.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Unit Testing with Jest</title>
+      <link>https://curriculum.codeyourfuture.io/guides/testing/unit-testing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://curriculum.codeyourfuture.io/guides/testing/unit-testing/</guid>
+      <description>&lt;h2 id=&#34;what-does-this-cover&#34;&gt;What does this cover&lt;/h2&gt;&#xA;&lt;p&gt;This introduction is designed to give you a high-level overview of the basics of testing, which you&amp;rsquo;ll need when you&amp;rsquo;re tackling the problems in your coursework at Code Your Future.&#xA;In this introduction to testing we&amp;rsquo;ll cover the following things:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Why test ?&lt;/li&gt;&#xA;&lt;li&gt;Code specification&lt;/li&gt;&#xA;&lt;li&gt;What is a test ?&lt;/li&gt;&#xA;&lt;li&gt;Anatomy of a test ( using Jest )&lt;/li&gt;&#xA;&lt;li&gt;Running tests&lt;/li&gt;&#xA;&lt;li&gt;Understanding test feedback ( using Jest )&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;why-test-&#34;&gt;Why test ?&lt;/h2&gt;&#xA;&lt;p&gt;Throughout the JS Core modules, we&amp;rsquo;ll use tests in your coursework so it&amp;rsquo;s important you understand what a test is and how they work. The tests will:&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

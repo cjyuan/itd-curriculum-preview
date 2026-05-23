@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AI Essentials on CYF Courses</title>
+    <link>https://curriculum.codeyourfuture.io/tracks/ai-essentials/</link>
+    <description>Recent content in AI Essentials on CYF Courses</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="https://curriculum.codeyourfuture.io/tracks/ai-essentials/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Prep</title>
+      <link>https://curriculum.codeyourfuture.io/tracks/ai-essentials/prep/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://curriculum.codeyourfuture.io/tracks/ai-essentials/prep/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>End of Module Review</title>
+      <link>https://curriculum.codeyourfuture.io/tracks/ai-essentials/success/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://curriculum.codeyourfuture.io/tracks/ai-essentials/success/</guid>
+      <description>&lt;p&gt;The learning objectives are listed per sprint. You will know you have completed this module when you have met all the objectives for each sprint and have demonstrated the overall objectives on this page.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

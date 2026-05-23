@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tools on CYF Courses</title>
+    <link>https://curriculum.codeyourfuture.io/sdc/tools/</link>
+    <description>Recent content in Tools on CYF Courses</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="https://curriculum.codeyourfuture.io/sdc/tools/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Prep</title>
+      <link>https://curriculum.codeyourfuture.io/sdc/tools/prep/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://curriculum.codeyourfuture.io/sdc/tools/prep/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>End of Module Review</title>
+      <link>https://curriculum.codeyourfuture.io/sdc/tools/success/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://curriculum.codeyourfuture.io/sdc/tools/success/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

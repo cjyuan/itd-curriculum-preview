@@ -1,0 +1,1455 @@
+<!DOCTYPE html>
+
+
+
+
+<html lang="en" class="p-prep"><head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  <title data-pagefind-meta="title">
+    
+      Tracks 
+    
+      SQL 
+    
+      Sprint 3 
+    
+    Prep
+  </title>
+  
+    <meta name="description" content="A free and open source software development programme." />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+  <style>
+    body,
+    html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      animation: fade-in 300ms;
+    }
+    @keyframes fade-in {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  </style>
+  
+  
+  <link
+    rel="stylesheet"
+    href="/bundled.min.b6a4520237559385268d63a9daa81d96.css"
+    media="print"
+    onload="this.media='all'" />
+
+  
+  
+    
+    
+    <link
+      rel="stylesheet"
+      href="/custom.min.8ded6a1a88bc7cc98bdef8dc33d15f3a.css"
+      media="print"
+      onload="this.media='all'" />
+  
+
+
+  <noscript>
+    <link rel="stylesheet" href="/bundled.min.b6a4520237559385268d63a9daa81d96.css" />
+  </noscript>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&amp;display=swap"
+    rel="stylesheet"
+    media="print"
+    onload="this.media='all'" />
+
+  <link rel="shortcut icon" href="https://curriculum.codeyourfuture.io/favicon.ico" />
+  <meta name="theme-color" content="#e3ddeef2" />
+  <link rel="manifest" href="https://curriculum.codeyourfuture.io/manifest.json" />
+</head>
+<body>
+    <a class="c-skip-link e-button" id="skip-link" href="#main">Skip to main</a>
+    <div class="l-layout">
+      <header class="l-layout__header l-header">
+  <div class="l-header__container">
+    <h1 class="l-header__heading e-heading__6" data-pagefind-ignore>
+      <a class="l-header__home" href="/"
+        ><span class="is-invisible"
+          >tracks prep CYF Courses</span
+        >
+        <span class="is-none--lt-container">
+          <svg
+          xmlns="http://www.w3.org/2000/svg"
+          title="Code Your Future."
+          viewBox="0 0 621.64 155.81"
+          width="140px"
+          focusable="false"
+          role="img">
+          <path
+            fill="var(--theme-color--brand)"
+            d="M103.37 56.51C96.91 63.64 87.03 69.9 74.6 69.9c-20.14 0-33.52-12.91-33.52-34.09C41.08 13.97 57.5.87 69.94.87c9.5 0 13.77 5.32 14.63 6.46l2.18-5.27h14.91v27h-17c-.28-6.18-3.32-12-10.06-12s-11.3 8.45-11.3 18.8c0 9.4 4.84 17.86 13.86 17.86 8 0 14.24-8.36 15.1-9.31Zm2.88-21.85C106.25 14.15 119.92 0 139.58 0c23.26 0 34.09 14 34.09 35.32s-12 34.57-33.43 34.57c-19.88 0-33.99-11.49-33.99-35.23Zm43.68.66c0-11.49-3.13-20.7-10.45-20.7-5.79-.09-9.78 8.26-9.78 20 0 12.44 4.47 20.32 10.54 20.32s9.65-7.88 9.65-19.62Zm27.49 20.23h5.89V14.34h-5.89V1.8h29c23 0 36.09 14.15 36.09 32.29 0 21.65-13.11 34.09-36.47 34.09h-28.62Zm29 0c10.03-.19 14.21-9.59 14.21-21.49 0-10.16-4.18-19.75-14.25-19.75h-3.61v41.24ZM303.04 1.8v21h-16.43v-8.46h-15.19v13.1h18v12.62h-18v15.49h15.19v-8.83h16.43v21.46h-57.26V55.55h6V14.34h-6V1.8Z" />
+          <path
+            fill="var(--theme-color--ink)"
+            d="M274.42 87.82v21h-16.8v-8.45h-14.37v16.52h18v12.63h-18v12.04h9.68v12.63h-35.29v-12.63h5.89v-41.21h-5.89V87.82Zm33.04 0v12.24h-5.12v20.51c0 15.28 3.41 18.51 9.49 18.51 5.79 0 9.59-2.28 9.59-18.61v-20.12h-5.17V87.82h28.11v12.24h-5.11v23.07c0 22.51-9.4 32.67-27.25 32.67-19.18-.57-29.43-10.64-29.43-32.19v-23.45h-5.32V87.82Zm103.5 24.69h-14v-12.16h-8v41.21h7.88v12.63h-35.26v-12.63h7.79v-41.21h-8.12v12.16h-14V87.82h63.71ZM444 87.82v12.24h-5.13v20.51c0 15.28 3.42 18.51 9.5 18.51 5.79 0 9.59-2.28 9.59-18.61v-20.12h-5.13V87.82h28.11v12.24h-5.13v23.07c0 22.51-9.4 32.67-27.25 32.67-19.18-.57-29.44-10.64-29.44-32.19v-23.45h-5.32V87.82Zm71.59 0c22 0 26.3 8.73 26.3 19.56 0 7.4-5.88 12.63-13.76 13.77 6.55.95 12.44 6.64 12.44 13.48 0 4.08.57 6.46 2.27 6.46 1.43 0 2.19-1.14 2.19-3v-3.13h6.36v5.22c0 7.88-3.32 15.19-13.86 15.19-12.44 0-18.42-6.55-18.42-17.66 0-8.64-1.05-10.73-9.5-10.73v14.68h5.79v12.53h-30.67v-12.53h5.32v-41.4h-5.32V87.82Zm-6 28.48h4.27c5.51 0 9.12-2.65 9.12-7.69 0-5.6-3.13-8.45-8.64-8.45h-4.75Zm102.38-28.48v21h-16.43v-8.45h-15.19v13.09h18v12.6h-18v15.5h15.19v-8.83h16.43v21.46h-57.26v-12.63h6v-41.21h-6V87.82Zm-227.72-56.1c.38-1.9 2.47-5.89 3.51-8.17l5.22-9.59h-5.22V1.8h25.54v12.16h-5.05l-17.62 30.86v11h5.32v12.36h-30.39V55.83h5.41v-11.2l-18.42-30.67h-4.65V1.8h32.47v12.16h-4.93l5.5 10.1c.57 1.81 2.57 6.08 2.95 7.7Zm29.54 2.94C413.79 14.15 427.47 0 447.12 0c23.27 0 34.09 14 34.09 35.32s-12 34.57-33.42 34.57c-19.85 0-34-11.49-34-35.23Zm43.68.66c0-11.49-3.13-20.7-10.44-20.7-5.79-.09-9.78 8.26-9.78 20 0 12.44 4.46 20.32 10.54 20.32s9.68-7.88 9.68-19.62ZM514.25 1.8v12.26h-5.13v20.5c0 15.29 3.42 18.52 9.5 18.52 5.79 0 9.59-2.28 9.59-18.61V14.34h-5.13V1.8h28.11v12.26h-5.13v23.07c0 22.5-9.4 32.66-27.25 32.66-19.18-.57-29.44-10.63-29.44-32.19V14.15h-5.32V1.8Zm71.59 0c22 0 26.31 8.74 26.31 19.57 0 7.4-5.89 12.62-13.77 13.76 6.55 1 12.44 6.65 12.44 13.49 0 4.08.57 6.46 2.27 6.46 1.43 0 2.19-1.14 2.19-3V48.9h6.36v5.23c0 7.88-3.32 15.19-13.86 15.19-12.44 0-18.42-6.55-18.42-17.66 0-8.64-1.05-10.73-9.5-10.73v14.71h5.79v12.54h-30.67V55.64h5.32v-41.4h-5.32V1.8Zm-6 28.49h4.27c5.51 0 9.12-2.66 9.12-7.69 0-5.6-3.13-8.45-8.64-8.45h-4.75ZM28.39 14.7l5.8 10.64-23.46 10.72 23.46 10.55-3.61 9.87L0 42.24v-13.3Zm318.7 14.24v13.3l-30.58 14.24-3.61-9.87 23.46-10.55-23.46-10.72 5.8-10.64Z" />
+        </svg>
+        </span>
+        <span class="is-none--gt-container">
+          <svg
+          xmlns="http://www.w3.org/2000/svg"
+          version="1.0"
+          viewBox="0 0 512 512"
+          width="48px">
+          <path
+            fill="currentcolor"
+            stroke="currentcolor"
+            d="M225.5 1c-1.1.5-3.5.9-5.3.9-4.1.1-22.9 4.5-30.7 7.2-63.1 22-114.7 72.3-142.7 139.4-6.4 15.2-11.8 33.8-16.7 57-4.1 19.7-5.4 64.5-2.6 90.8C33 346.2 49.8 390.1 76.8 425c6.2 7.9 23.9 26.4 30.7 32 8.1 6.7 26.1 18.7 35.1 23.6 28.1 15.1 58 24.3 91.9 28.3 5.5.7 13.6 1.7 18 2.2 8.8 1.2 33.9.7 48-.9 11-1.3 31.7-4.8 36.5-6.2 1.9-.5 8-2.3 13.5-3.9 21.3-6.1 47.2-17.8 67.5-30.5 8.8-5.4 23.7-15.8 28.5-19.7 10.2-8.4 24.5-21.3 31.4-28.2l8.4-8.5-2.2-2.9c-1.3-1.5-4.6-5.3-7.4-8.3-6.2-6.7-14.5-15.7-21.2-23.1-2.7-3-7.5-8.2-10.5-11.4-3-3.3-9.8-10.8-15.1-16.5-21.5-23.6-24.2-26.5-24.9-26.8-.3-.1-2 1.2-3.6 3-1.6 1.9-6.3 7.1-10.4 11.7-8.6 9.7-25.6 24.6-35.9 31.4-21.4 14.4-42.5 21.7-62.6 21.7-15.3-.1-29.3-3.3-42.5-10-22.8-11.5-41.9-35.5-51.5-64.7-4.2-12.8-4.3-13.4-5.9-22.8-3.8-22.9-4.6-39.2-2.6-55.6 2.7-22.7 3.3-26.5 5-33.2 7.9-30.9 16.7-48.6 32.4-65.6 16.8-17.9 41.1-24.9 65.1-18.6 30 7.8 50.7 36.3 55.5 76.3.5 4.6 1.2 8.7 1.5 9.3.4.5 25.1.9 62.6.9H474V9H364.2L357 26.7c-4 9.8-7.9 18.5-8.7 19.3-1.3 1.3-2.1.8-6.6-4.3-6-6.9-18.3-16.7-28.2-22.5-7.4-4.3-22.6-10.9-28.5-12.4-9.2-2.2-18.1-4.1-24-5-9-1.3-33.1-1.9-35.5-.8z" />
+        </svg>
+        </span>
+      </a>
+    </h1>
+    <link
+  href="/pagefind/pagefind-ui.css"
+  rel="stylesheet"
+  media="print"
+  onload="this.media='all'" />
+<style>
+  :root {
+    --pagefind-ui-primary: var(--theme-color--ink);
+    --pagefind-ui-text: var(--theme-color--ink);
+    --pagefind-ui-background: var(--theme-color--paper);
+    --pagefind-ui-border: var(--theme-color--outline);
+    --pagefind-ui-tag: var(--theme-color--block);
+    --pagefind-ui-border-radius: 2em;
+    --pagefind-ui-image-border-radius: var(--theme-border-radius);
+    --pagefind-ui-font: var(--theme-font--copy);
+  }
+  .pagefind-ui--reset {
+    position: absolute;
+  }
+  #search .pagefind-ui__search-input {
+    box-shadow: var(--theme-box-shadow--inset);
+    margin-bottom: var(--theme-spacing--1);
+  }
+  #search .pagefind-ui__search-clear {
+    background-color: transparent;
+  }
+  #search .pagefind-ui__drawer {
+    background-color: var(--theme-color--paper);
+    box-shadow: var(--theme-box-shadow--slim);
+    transform: translateY(-1.5px);
+    padding: 0 var(--theme-spacing--2);
+    max-height: calc(100vh - 4rem);
+    overflow-y: auto;
+  }
+  #search .pagefind-ui__result {
+    padding: var(--theme-spacing--1) 0 var(--theme-spacing--2) 0;
+  }
+  #search .pagefind-ui__result:focus-within,
+  #search .pagefind-ui__button:focus {
+    background-color: var(--theme-color--block);
+  }
+  #search .pagefind-ui__button {
+    border: none;
+  }
+</style>
+<script src="/pagefind/pagefind-ui.js" type="text/javascript" defer></script>
+<div id="search" class="l-header__search"></div>
+<script>
+  window.addEventListener("DOMContentLoaded", (event) => {
+    new PagefindUI({
+      element: "#search",
+      showSubResults: true,
+      pageSize: 3,
+      showImages: false,
+      showTags: true,
+    });
+  });
+</script>
+
+    <button
+      class="l-header__action e-button e-button--icon js-menu-toggle e-heading__3">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+        <path
+          stroke="var(--theme-color--ink)"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M13 5a1 1 0 1 0-2 0 1 1 0 0 0 2 0Zm0 7a1 1 0 1 0-2 0 1 1 0 0 0 2 0Zm0 7a1 1 0 1 0-2 0 1 1 0 0 0 2 0Z" />
+      </svg>
+      <span class="is-invisible">Open Menu.</span>
+    </button>
+  </div>
+</header>
+
+      <nav
+  class="l-layout__menu l-menu"
+  aria-label="Main Site Links."
+  id="site-menu"
+  hidden
+  tabindex="0">
+  <div class="l-menu__container">
+    <h2 class="l-menu__heading e-heading__2">
+      <a href="/" class="l-menu__home is-invisible">Menu</a>
+    </h2>
+    <button
+      class="l-menu__action e-button e-button--icon js-menu-toggle e-heading__2"
+      id="close-menu">
+      ❎
+      <span class="is-invisible">Close Menu.</span>
+    </button>
+    <ul class="l-menu__primary">
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/guides/">
+            Guides
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/sdc/tools/">
+            Tools
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/sdc/logic/">
+            Logic
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/sdc/decomposition/">
+            Decomposition
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/sdc/legacy/">
+            Legacy code
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/sdc/complexity/">
+            Complexity
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/tracks/servers/">
+            Servers
+          </a>
+        </li>
+    </ul>
+    <ul class="l-menu__secondary">
+        <li class="l-menu__item">
+          <a class="e-heading__3 l-menu__link" href="https://codeyourfuture.io">
+            CYF 👈🏾
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__3 l-menu__link" href="https://codeyourfuture.io/volunteers/">
+            Join Us 👋🏿
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__3 l-menu__link" href="https://codeyourfuture.io/donate/">
+            Support 🫶🏼
+          </a>
+        </li>
+    </ul>
+  </div>
+</nav>
+
+      <main
+        id="main"
+        class="l-layout__main l-main"
+        tabindex="0"
+        data-pagefind-body>
+        
+  
+    <solo-view tabindex="0">
+      
+
+
+      <div slot="header">
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+<header
+  class="c-page-header 
+    c-page-header--solo
+   c-page-header--toc">
+  
+  <div class="c-page-header__container">
+    <div class="c-page-header__breadcrumbs">
+      
+  <nav class="c-breadcrumbs">
+    <ol class="c-breadcrumbs__list">
+      
+        
+        
+          <li class="c-breadcrumbs__item">
+            <a
+              class="c-breadcrumbs__link"
+              href="/tracks/"data-pagefind-filter="module"><span class="c-breadcrumbs__text">Tracks</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                width="24px"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="c-breadcrumbs__icon">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+              </svg>
+            </a>
+          </li>
+        
+        
+          <li class="c-breadcrumbs__item">
+            <a
+              class="c-breadcrumbs__link"
+              href="/tracks/sql/"><span class="c-breadcrumbs__text">SQL</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                width="24px"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="c-breadcrumbs__icon">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+              </svg>
+            </a>
+          </li>
+      
+        <li class="c-breadcrumbs__item">
+          <a
+            class="c-breadcrumbs__link"
+            href="/tracks/sql/sprints/3/"data-pagefind-filter="sprint">Sprint 3</a
+          >
+        </li>
+      
+    </ol>
+  </nav>
+  
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Our Courses",
+      "item":"https://curriculum.codeyourfuture.io/"},
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Tracks",
+      "item":"https://curriculum.codeyourfuture.io/tracks/"},
+    {
+      "@type": "ListItem",
+      "position":  3 ,
+      "name": "SQL",
+      "item":"https://curriculum.codeyourfuture.io/tracks/sql/"},{
+      "@type": "ListItem",
+      "position":  5 ,
+      "name": "Sprint 3",
+      "item":"https://curriculum.codeyourfuture.io/tracks/sql/sprints/3/"},
+    {
+      "@type": "ListItem",
+      "position":  6 ,
+      "name": "prep",
+      "item":"https://curriculum.codeyourfuture.io/tracks/sql/sprints/3/"}
+  ]
+}
+</script>
+
+
+    </div>
+    <h1 class="c-page-header__title e-heading__1"data-pagefind-filter="view"
+        
+      data-pagefind-weight="10">
+      <span class="c-emoji">
+        
+        
+           
+            <time-total class="c-page-header__time"></time-total>
+      
+         
+        </span>
+        <span class="c-page-header__title-text">prep</span>
+               
+    </h1>
+    
+      
+    
+    
+    
+    
+      <div class="c-page-header__toc " id="toc">
+        <section class="c-toc" aria-label="Table of contents.">
+          <a id="top" class="c-toc__top e-button e-button--icon" href="#toc"
+            >🔖 <span class="is-invisible">back to top</span></a
+          >
+          
+            <nav id="TableOfContents"></nav>
+          
+          
+            <ol>
+              
+                <li>
+                  <a href="#recap-node-and-postman" data-pagefind-weight="5"
+                    >Recap Node and Postman</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#being-more-selective" data-pagefind-weight="5"
+                    >Being More Selective</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#crud" data-pagefind-weight="5"
+                    >CRUD</a
+                  >
+                  
+                </li>
+              
+            </ol>
+          
+          
+        </section>
+      </div>
+    
+
+  </div>
+</header>
+</div>
+      <div slot="blocks">
+        
+        
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="recap-node-and-postman">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="recap-node-and-postman">
+        Communicating with the database using SQL
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="30 minutes countdown" datetime="P30M">30&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Check the database connection</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Get query results from the database with Postman</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <p>Use the tables and data from your <code><span class="c-our-name">CYF</span>_hotel</code> database. If you need to start from a clean state for your database, run <code>psql -d <span class="c-our-name">CYF</span>_hotel -f build_hotel.sql</code>.</p>
+<p>Earlier, we created a new NodeJS project called <code><span class="c-our-name">CYF</span>-hotels-api</code> with a single API endpoint <code>/customers</code> to get the list of all customers. Now, we will add other endpoints with more functionalities to interact with the <code><span class="c-our-name">CYF</span>_hotel</code> database.</p>
+<p>You should have a <code>server.js</code> file that looks something like this:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">express</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#34;express&#34;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">app</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">express</span>();
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> { <span style="color:#a6e22e">Pool</span> } <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#34;pg&#34;</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">db</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Pool</span>({
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">user</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;keith&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">host</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;localhost&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">database</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;<span class="c-our-name">CYF</span>_hotel&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">password</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">port</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">5432</span>,
+</span></span><span style="display:flex;"><span>});
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">get</span>(<span style="color:#e6db74">&#34;/customers&#34;</span>, <span style="color:#66d9ef">function</span> (<span style="color:#a6e22e">req</span>, <span style="color:#a6e22e">res</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">db</span>.<span style="color:#a6e22e">query</span>(<span style="color:#e6db74">&#34;SELECT * FROM customers&#34;</span>)
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">then</span>((<span style="color:#a6e22e">result</span>) =&gt; {
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">status</span>(<span style="color:#ae81ff">200</span>).<span style="color:#a6e22e">json</span>({ <span style="color:#a6e22e">customers</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">result</span>.<span style="color:#a6e22e">rows</span> });
+</span></span><span style="display:flex;"><span>    })
+</span></span><span style="display:flex;"><span>    .<span style="color:#66d9ef">catch</span>((<span style="color:#a6e22e">err</span>) =&gt; {
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">err</span>);
+</span></span><span style="display:flex;"><span>    });
+</span></span><span style="display:flex;"><span>});
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">listen</span>(<span style="color:#ae81ff">3000</span>, <span style="color:#66d9ef">function</span> () {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;Server is listening on port 3000. Ready to accept requests!&#34;</span>);
+</span></span><span style="display:flex;"><span>});</span></span></code></pre></div><p>Before we move on, run the <code>server.js</code> file in node and check the endpoint using your browser.</p>
+
+
+
+<tab-panels class="c-tabs">
+  <div class="c-tabs__list" id="communicating-with-db" role="tablist"><button
+          data-toggle="tab"
+          id="tab-label-communicating-with-db-0"
+          class="c-tabs__tab e-heading__5 space 
+            is-active"
+          role="tab"
+          aria-controls="communicating-with-db-0"
+          aria-selected="true">
+          Using Postman
+        </button><button
+          data-toggle="tab"
+          id="tab-label-communicating-with-db-1"
+          class="c-tabs__tab e-heading__5 space "
+          role="tab"
+          aria-controls="communicating-with-db-1"
+          aria-selected="false">
+          👩🏽‍✈️👨🏾‍✈️Code along : Retrieving individual records
+        </button></div>
+  <div class="c-tabs__group" id="communicating-with-db">
+        <div
+          id="communicating-with-db-0"
+          class="c-tabs__panel is-active"
+          role="tabpanel"
+          data-heading="Using Postman"
+          aria-labelledby="tab-label-communicating-with-db-0"><h3 id="using-postman-to-test-an-api">Using Postman to Test an API</h3>
+<p>You should have <a
+  href="https://www.postman.com/">Postman</a> already installed on your system. If not then please install it now.</p>
+<p>Run Postman (it can be slow to start).</p>
+<p>
+
+  <figure>
+      <img
+        loading="lazy"
+        src="/module/databases/recap-node/postman-get-cust-all.png"alt="postman get cust all" data-pagefind-index-attrs="postman get cust all"/></figure></p>
+<p>Check the method is GET, set the URL for your customers endpoint then click Send.</p>
+<p>
+
+  <figure>
+      <img
+        loading="lazy"
+        src="/module/databases/recap-node/postman-get-cust-all-results.png"alt="postman get cust all results" data-pagefind-index-attrs="postman get cust all results"/></figure></p>
+</div>
+        <div
+          id="communicating-with-db-1"
+          class="c-tabs__panel "
+          role="tabpanel"
+          data-heading="👩🏽‍✈️👨🏾‍✈️Code along : Retrieving individual records"
+          aria-labelledby="tab-label-communicating-with-db-1"><section
+  class="c-block c-block--youtube"
+  aria-labelledby="warning-name-is-empty">
+  <div class="c-block__content">
+    <youtube-player data-src="https://www.youtube.com/watch?v=LNfZAI3dp10&amp;list=PLozA7cloMbPhJgWwncnb-N4yI07JpUcs5&amp;index=1"></youtube-player>
+  </div>
+</section>
+</div></div>
+</tab-panels>
+
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="being-more-selective">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="being-more-selective">
+        Being More Selective
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="30 minutes countdown" datetime="P30M">30&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Create an API endpoint that can add data to a database</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Validate data before adding it to a database</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Identify a risk of SQL injection attacks, and define one defence</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Create an API endpoint that retrieves data from a database with multiple parameters</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+
+  
+
+  
+  
+
+  
+    
+    
+  
+
+
+
+<section
+  class="c-block c-block--youtube"
+  aria-labelledby="warning-name-is-empty">
+  
+  <div class="c-block__content">
+    <youtube-player data-src="https://www.youtube.com/watch?v=iFnBgGIpuJQ&amp;list=PLozA7cloMbPhJgWwncnb-N4yI07JpUcs5&amp;index=2"></youtube-player>
+  </div>
+</section>
+
+<p>Returning all the customers is fine for a small table (even the 130+ customers) but if we have a large number of rows, thousands or millions, then that approach is very clumsy.</p>
+<p>If we know the value of the <code>id</code> column for the customer we can retrieve just that one row (we know there is only one row because <code>id</code> is the Primary Key).</p>
+<p>Create a new endpoint to get the customer by using the id value:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">get</span>(<span style="color:#e6db74">&#34;/customers/:id&#34;</span>, <span style="color:#66d9ef">function</span> (<span style="color:#a6e22e">req</span>, <span style="color:#a6e22e">res</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// TODO - add code here
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>});</span></span></code></pre></div><p>Here the endpoint includes <code>:id</code>, which identifies an extra parameter in the URL that will provide the id value, as in <code>http://localhost:3000/customers/3</code>. We just need a way to get the value from the URL.</p>
+<p>Express provides a simple way to get such parameters from the request:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">custId</span> <span style="color:#f92672">=</span> parseInt(<span style="color:#a6e22e">req</span>.<span style="color:#a6e22e">params</span>.<span style="color:#a6e22e">id</span>);</span></span></code></pre></div><p>Note that the <code>id</code> in <code>req.params.id</code> must match the name after the colon in the endpoint <code>&quot;customers/:id&quot;</code>.</p>
+<p>Next we need to query the <code>customers</code> table and provide the value of the id into a <code>WHERE</code> clause so that we retrieve only the one row that matches:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">db</span>.<span style="color:#a6e22e">query</span>(<span style="color:#e6db74">&#34;SELECT * FROM customers WHERE id = $1&#34;</span>, [<span style="color:#a6e22e">custId</span>])
+</span></span><span style="display:flex;"><span>  .<span style="color:#a6e22e">then</span>((<span style="color:#a6e22e">result</span>) =&gt; {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">result</span>);
+</span></span><span style="display:flex;"><span>  })
+</span></span><span style="display:flex;"><span>  .<span style="color:#66d9ef">catch</span>((<span style="color:#a6e22e">err</span>) =&gt; {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">err</span>);
+</span></span><span style="display:flex;"><span>  });</span></span></code></pre></div><p>In the above code notice that:</p>
+<ul>
+<li>The <code>SELECT</code> now uses a <code>WHERE</code> clause</li>
+<li>The value we are wanting to look for appears as <code>$1</code> - this is a placeholder for the &lsquo;id&rsquo; value</li>
+<li>The second parameter is the array <code>[custId]</code> that provides the id value</li>
+</ul>
+<p>Let&rsquo;s complete the endpoint to return the retrieved values:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">get</span>(<span style="color:#e6db74">&#34;/customers/:id&#34;</span>, <span style="color:#66d9ef">function</span> (<span style="color:#a6e22e">req</span>, <span style="color:#a6e22e">res</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">custId</span> <span style="color:#f92672">=</span> parseInt(<span style="color:#a6e22e">req</span>.<span style="color:#a6e22e">params</span>.<span style="color:#a6e22e">id</span>);
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">db</span>.<span style="color:#a6e22e">query</span>(<span style="color:#e6db74">&#34;SELECT * FROM customers WHERE id = $1&#34;</span>, [<span style="color:#a6e22e">custId</span>])
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">then</span>((<span style="color:#a6e22e">result</span>) =&gt; {
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">result</span>.<span style="color:#a6e22e">rows</span>);
+</span></span><span style="display:flex;"><span>    })
+</span></span><span style="display:flex;"><span>    .<span style="color:#66d9ef">catch</span>((<span style="color:#a6e22e">error</span>) =&gt; {
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">error</span>);
+</span></span><span style="display:flex;"><span>    });
+</span></span><span style="display:flex;"><span>});</span></span></code></pre></div><p>In <code>db.query</code> you can use placeholders $1, $2, &hellip; $9, $10, $11, &hellip; etc to mark the place where a parameter value should be used. The parameters to replace the placeholders are supplied in the second argument, the array of values. In this case there is only one value (but it must still be put into an array) so we have <code>[custId]</code> as the replacement value for the first placeholder, <code>$1</code>. If there is more than one placeholder there must be the same number of array elements and they must be in the order of the placeholder numbers.</p>
+<h3 id="string-placeholders">String Placeholders</h3>
+<p>With String placeholders you don&rsquo;t put apostrophes around the placeholder:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">get</span>(<span style="color:#e6db74">&#34;/customers/by_city/:city&#34;</span>, (<span style="color:#a6e22e">req</span>, <span style="color:#a6e22e">res</span>) =&gt; {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">cityName</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">req</span>.<span style="color:#a6e22e">params</span>.<span style="color:#a6e22e">city</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">db</span>.<span style="color:#a6e22e">query</span>(<span style="color:#e6db74">&#34;SELECT * FROM customers WHERE city LIKE $1 || &#39;%&#39;&#34;</span>, [<span style="color:#a6e22e">cityName</span>])
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">then</span>(() =&gt; {})
+</span></span><span style="display:flex;"><span>    .<span style="color:#66d9ef">catch</span>((<span style="color:#a6e22e">err</span>) =&gt; {});
+</span></span><span style="display:flex;"><span>});</span></span></code></pre></div><h3 id="use-placeholders-to-avoid-sql-injection">Use Placeholders to Avoid SQL Injection</h3>
+<h4 id="what-is-sql-injection">What is SQL Injection</h4>
+<p>If an end user can enter unrestricted text into a data field on a form there is the possibility that they could put a nasty SQL command inside the data. For example, if the field is used to enter the customer name the user could type:
+<code>J Doe'; delete from customers; select 'x' from customers</code>
+as the name value. It looks a bit unlikely but any user with a little bit of SQL knowledge could eventually work out the format needed.</p>
+<p>If the code used string concatenation to for the final SQL command it could be something like:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">myQuery</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">`UPDATE customers SET name = &#39;</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">inputName</span><span style="color:#e6db74">}</span><span style="color:#e6db74">&#39; WHERE id =  + </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">ID</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>;</span></span></code></pre></div><p>Then <code>myQuery</code> would become:
+<code>UPDATE customers SET name = 'J Doe'; DELETE FROM customers; SELECT 'x' FROM customers WHERE id = 123</code>
+(Note that semicolon <strong>can</strong> be used between SQL commands in this context)</p>
+<p>By using placeholders instead of string concatenation we can prevent this kind of attack. This is VERY important in web-facing apps that use SQL.</p>
+<section class="c-note c-note--exercise">
+  <h4 class="c-note__title e-heading__4">✍️Define and test endpoints (20m)</span>
+  </h4>
+  <div class="c-note__text "><ol>
+<li>Make sure you have defined the endpoints for:</li>
+<li>Getting all customers</li>
+<li>Getting a single customer by id</li>
+<li>Using a method similar to the one used to get a customer by id, define an endpoint that can get customers by matching part of the name (e.g. /customers/by-name/:name).
+<strong>Remember there may be more than one matching row!</strong></li>
+<li>Test all these endpoints with Postman and ensure the results are as expected.</li>
+</ol>
+</div>
+</section>
+
+
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="crud">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="crud">
+        CRUD operations with NodeJS and PostgreSQL
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="120 minutes countdown" datetime="P120M">120&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Create an API endpoint that can create data in a database</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Create an API endpoint that can delete data from a database</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Create tables with a variety of column types and primary and foreign keys</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Define CRUD operations</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      
+
+
+<tab-panels class="c-tabs">
+  <div class="c-tabs__list" id="crud-operations" role="tablist"><button
+          data-toggle="tab"
+          id="tab-label-crud-operations-0"
+          class="c-tabs__tab e-heading__5 space 
+            is-active"
+          role="tab"
+          aria-controls="crud-operations-0"
+          aria-selected="true">
+          Insert
+        </button><button
+          data-toggle="tab"
+          id="tab-label-crud-operations-1"
+          class="c-tabs__tab e-heading__5 space "
+          role="tab"
+          aria-controls="crud-operations-1"
+          aria-selected="false">
+          Create
+        </button><button
+          data-toggle="tab"
+          id="tab-label-crud-operations-2"
+          class="c-tabs__tab e-heading__5 space "
+          role="tab"
+          aria-controls="crud-operations-2"
+          aria-selected="false">
+          Update and Delete
+        </button></div>
+  <div class="c-tabs__group" id="crud-operations">
+        <div
+          id="crud-operations-0"
+          class="c-tabs__panel is-active"
+          role="tabpanel"
+          data-heading="Insert"
+          aria-labelledby="tab-label-crud-operations-0"><h2 id="code-along-with-video-mentors">👩🏽‍✈️👨🏾‍✈️Code along with video mentors</h2>
+<section
+  class="c-block c-block--youtube"
+  aria-labelledby="warning-name-is-empty">
+  <div class="c-block__content">
+    <youtube-player data-src="https://www.youtube.com/watch?v=g1eHag5BG6o&amp;list=PLozA7cloMbPhJgWwncnb-N4yI07JpUcs5&amp;index=3"></youtube-player>
+  </div>
+</section>
+</div>
+        <div
+          id="crud-operations-1"
+          class="c-tabs__panel "
+          role="tabpanel"
+          data-heading="Create"
+          aria-labelledby="tab-label-crud-operations-1"><section
+  class="c-block c-block--youtube"
+  aria-labelledby="warning-name-is-empty">
+  <div class="c-block__content">
+    <youtube-player data-src="https://www.youtube.com/watch?v=ojLmL6tfj_E&amp;list=PLozA7cloMbPhJgWwncnb-N4yI07JpUcs5&amp;index=4"></youtube-player>
+  </div>
+</section>
+</div>
+        <div
+          id="crud-operations-2"
+          class="c-tabs__panel "
+          role="tabpanel"
+          data-heading="Update and Delete"
+          aria-labelledby="tab-label-crud-operations-2"><section
+  class="c-block c-block--youtube"
+  aria-labelledby="warning-name-is-empty">
+  <div class="c-block__content">
+    <youtube-player data-src="https://www.youtube.com/watch?v=7VXTXjnFtZo&amp;list=PLozA7cloMbPhJgWwncnb-N4yI07JpUcs5&amp;index=5"></youtube-player>
+  </div>
+</section>
+</div></div>
+</tab-panels>
+
+<hr>
+<h3 id="-crud-operations">💾 CRUD operations</h3>
+<p>
+
+  <figure>
+      <img
+        loading="lazy"
+        src="/module/databases/crud/crud.png"alt="table-diagram" data-pagefind-index-attrs="table-diagram"/><figcaption>Create, Read, Update, Delete: 
+<tool-tip-container tabindex="0"><strong class="tooltip__trigger" id="trigger__CRUD">CRUD</strong><span class="tooltip__emoji">🧶</span><tool-tip role="tooltip" aria-labelledby="CRUD"><span class="tooltip__title e-heading__2"><span class="tooltip__emoji">🧶</span> CRUD</span><span class="tooltip__content">&ldquo;The acronym CRUD refers to all of the major functions that are implemented in relational database applications. Each letter in the acronym can map to a standard Structured Query Language (SQL) statement and Hypertext Transfer Protocol (HTTP) method [&hellip;].&rdquo;_ - <a
+  href="https://en.wikipedia.org/wiki/Create,_read,_update_and_delete">Wikipedia</a></span></tool-tip></tool-tip-container>
+</figcaption></figure></p>
+<h3 id="-creating-data">🌱 Creating data</h3>
+<p>In the following, we will add a new API endpoint to create a new customer in the table <code>customers</code> of the <code><span class="c-our-name">CYF</span>_hotel</code> database. As a reminder, here is an example of a SQL insert statement to add a new customer:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">INSERT</span> <span style="color:#66d9ef">INTO</span> customers (name, email, phone, address, city, postcode, country)
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">VALUES</span> (<span style="color:#e6db74">&#39;Fred Bloggs&#39;</span>, <span style="color:#e6db74">&#39;fred@bloggs.org&#39;</span>, <span style="color:#e6db74">&#39;07123456789&#39;</span>, <span style="color:#e6db74">&#39;1 Low Brow&#39;</span>,
+</span></span><span style="display:flex;"><span>          <span style="color:#e6db74">&#39;Ashbottom&#39;</span>, <span style="color:#e6db74">&#39;XY2 3ZA&#39;</span>, <span style="color:#e6db74">&#39;UK&#39;</span>);</span></span></code></pre></div><h3 id="using-body-parser-for-form-data">Using body-parser for Form Data</h3>
+<p>When an endpoint can reasonably expect a large number of data values, for example, when we need to insert a new row into the <code>customers</code> table, then using parameters in the URL is not practical. Instead we can use a &lsquo;middleware&rsquo; package such as <code>body-parser</code>, which can extract data from the body of the request.</p>
+<p>As we create a new record in the database, we will add a new POST endpoint in the <code><span class="c-our-name">CYF</span>-hotels-api</code> project from last class. Moreover, we need to be able to pass data to this API endpoint such as the name, address, postcode, etcetera, so we can use this API to create different customers. The data can be sent in the body of the request. To access the parameters in the body of the request with Express.JS, we need to add the module <code>body-parser</code> to the <code><span class="c-our-name">CYF</span>-hotels-api</code> project:</p>
+<p>At the terminal command line:</p>
+<pre tabindex="0"><code>npm install --save body-parser</code></pre><p>Then include it in the <code>server.js</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">bodyParser</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#34;body-parser&#34;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">use</span>(<span style="color:#a6e22e">bodyParser</span>.<span style="color:#a6e22e">json</span>());</span></span></code></pre></div><h3 id="-inserting-rows-using-nodejs">📩 Inserting Rows Using Node.js</h3>
+<p>We can finally make an endpoint to create a new customer:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">post</span>(<span style="color:#e6db74">&#34;/customers&#34;</span>, <span style="color:#66d9ef">function</span> (<span style="color:#a6e22e">req</span>, <span style="color:#a6e22e">res</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">newName</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">req</span>.<span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">name</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">newEmail</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">req</span>.<span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">email</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">newPhone</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">req</span>.<span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">phone</span>;
+</span></span><span style="display:flex;"><span>  ...
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">newCountry</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">req</span>.<span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">country</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">query</span> <span style="color:#f92672">=</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">`INSERT INTO customers (name, email, phone, address, city, postcode, country)
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    VALUES ($1, $2, $3, $4, $5, $6, $7)`</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">db</span>.<span style="color:#a6e22e">query</span>(<span style="color:#a6e22e">query</span>, [<span style="color:#a6e22e">newName</span>, <span style="color:#a6e22e">newEmail</span>, ..., <span style="color:#a6e22e">newCountry</span>])
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">then</span>(() =&gt; {
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">status</span>(<span style="color:#ae81ff">201</span>).<span style="color:#a6e22e">send</span>(<span style="color:#e6db74">&#34;Created a new customer&#34;</span>);
+</span></span><span style="display:flex;"><span>    })
+</span></span><span style="display:flex;"><span>    .<span style="color:#66d9ef">catch</span>(<span style="color:#a6e22e">err</span> =&gt; {
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">err</span>);
+</span></span><span style="display:flex;"><span>    })
+</span></span><span style="display:flex;"><span>});</span></span></code></pre></div><h3 id="-using-postman-to-test-a-post">📮 Using Postman to Test a POST</h3>
+<p>In Postman:</p>
+<ul>
+<li>Change the method to POST</li>
+<li>Ensure the URL address is your customers endpoint, for example: http://localhost:3000/customers</li>
+<li>Under the address in the Postman window select <strong>Body</strong> then select <strong>raw</strong></li>
+<li>Ensure that JSON is selected at the right hand end</li>
+<li>Enter the data as JSON in the panel below these settings, for example:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{ <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Fred Bloggs&#34;</span>, <span style="color:#f92672">&#34;email&#34;</span>: <span style="color:#e6db74">&#34;fred@bloggs.org&#34;</span>, <span style="color:#f92672">&#34;phone&#34;</span>: <span style="color:#e6db74">&#34;07123456789&#34;</span> }</span></span></code></pre></div><ul>
+<li>Click send</li>
+</ul>
+<p>You should see the response &ldquo;Customer created.&rdquo;</p>
+<section class="c-note c-note--exercise">
+  <h4 class="c-note__title e-heading__4">✍️Exercise 2</span>
+  </h4>
+  <div class="c-note__text "><ol>
+<li>Install body-parser and enable it in your server.js</li>
+<li>Define a new endpoint to create new customer records
+For simplicity, only insert the name, phone &amp; email values. Invent your own values.</li>
+<li>After successfully inserting the row send back a message, &ldquo;New customer added.&rdquo;</li>
+<li>Test your endpoint using Postman</li>
+<li>Check the data has appeared in the table</li>
+</ol>
+</div>
+</section>
+
+
+<h3 id="what-can-we-do-after-an-insert">What Can We Do After an Insert?</h3>
+<ul>
+<li>We must start checking for errors in the execution of the SQL. This applies to all commands, not just INSERT.</li>
+<li>If the table has an auto-incrementing primary key we can obtain the value for the new row and return it to the browser. This is often required for subsequent actions in the use case.</li>
+<li>The new data can be logged to the console (although this is not common practice).</li>
+<li>&hellip; and so forth &hellip;</li>
+</ul>
+<h3 id="-checking-for-errors-in-sql">🧪 Checking for Errors in SQL</h3>
+<p>The catch block in <code>db.query</code> always has an error parameter. If the passed SQL query throws an error then the callback function passed to the <code>catch</code> method is invoked with an error object generated by node postgres.
+A typical situation might be:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span>  <span style="color:#a6e22e">db</span>
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">query</span>(...);
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">then</span>(<span style="color:#75715e">/* do things for success*/</span>);
+</span></span><span style="display:flex;"><span>    .<span style="color:#66d9ef">catch</span>((<span style="color:#a6e22e">err</span>) =&gt; <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">status</span>(<span style="color:#ae81ff">500</span>).<span style="color:#a6e22e">json</span>({<span style="color:#a6e22e">error</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">err</span>}));</span></span></code></pre></div><h3 id="-validating">👩🏽‍🔬 Validating</h3>
+<p>What could go wrong with our code so far? There is no validation of any user inputs which could result in errors, duplications or inconsistent data in the database! Here are few examples of things we can verify before creating the customer in the database:</p>
+<ol>
+<li>Check that the phone number contains only digits, &lsquo;+&rsquo;, &lsquo;-&rsquo;, &lsquo;(&rsquo; or &lsquo;)&rsquo;</li>
+<li>Check that no customer with the same email already exists in the database</li>
+<li>&hellip;</li>
+</ol>
+<p>Let&rsquo;s start by validating that phone number the consists of only digits, +, -, (, ) or space and if it doesn&rsquo;t, return an error. This check uses a regular expression to replace all valid characters with a &lsquo;0&rsquo; (zero) symbol then check the result is made up of only &lsquo;0&rsquo; symbols.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">if</span> (
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">newCustPhone</span>.<span style="color:#a6e22e">replace</span>(<span style="color:#e6db74">/[+\-()0-9 ]/g</span>, <span style="color:#e6db74">&#34;0&#34;</span>) <span style="color:#f92672">!=</span> <span style="color:#75715e">// replace all valid chars with 0
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#e6db74">&#34;0&#34;</span>.<span style="color:#a6e22e">padEnd</span>(<span style="color:#a6e22e">newCustPhone</span>.<span style="color:#a6e22e">length</span>, <span style="color:#e6db74">&#34;0&#34;</span>)
+</span></span><span style="display:flex;"><span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// compare with all zeros same length as phone
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">res</span>
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">status</span>(<span style="color:#ae81ff">400</span>)
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">send</span>(<span style="color:#e6db74">&#34;The phone number must only contain 0-9, +, -, (, ) or space.&#34;</span>);
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div><p>Note: <strong>regular expressions</strong> may be new to you but they are very powerful and also quite complicated. We don&rsquo;t have time to teach you the intricacies of &ldquo;regex&rdquo; here but you can find numerous resources <a
+  href="https://you.com/search?q=regex">on the web</a> and in the <a
+  href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions">MDN documentation</a>.</p>
+<p>As you have already learned, this validation can also be performed in the browser because it doesn&rsquo;t involve any database interaction. This is a faster and less costly (in terms of network traffic) approach and should be used where practical. It makes user correction of mistakes quicker and more natural and can be done on a per item basis.</p>
+<section class="c-note c-note--exercise">
+  <h4 class="c-note__title e-heading__4">✍️Exercise 3</span>
+  </h4>
+  <div class="c-note__text "><ol>
+<li>Modify your endpoint to check for SQL errors. If an error is encountered then console.log it and return it to the browser.</li>
+<li>Add phone number validation to your endpoint to check that only digits, +, -, (, ) or space are present. Any other characters should send a suitable message back to the browser and abort the insert.<br>
+(<em>You may use copy &amp; paste to get the regular expression - it&rsquo;s not easy to get right by hand.</em>)</li>
+<li>Test your endpoint with a variety of data including valid and invalid phone numbers.</li>
+</ol>
+</div>
+</section>
+
+
+<h3 id="-check-the-customers-email">📨 Check the Customer&rsquo;s Email</h3>
+<p>We can also validate the new customer&rsquo;s email doesn&rsquo;t already exist in the database, to prevent duplicate data.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">post</span>(<span style="color:#e6db74">&#34;/customers&#34;</span>, <span style="color:#66d9ef">function</span> (<span style="color:#a6e22e">req</span>, <span style="color:#a6e22e">res</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">newName</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">req</span>.<span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">name</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">newEmail</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">req</span>.<span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">email</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">newPhone</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">req</span>.<span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">phone</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// et cetera ...
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">//
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#75715e">// Validate the new customer&#39;s email address by querying the existing customers table
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#75715e">// to return any rows that contain the same values
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#75715e">//
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">db</span>.<span style="color:#a6e22e">query</span>(<span style="color:#e6db74">&#34;SELECT 1 FROM customers WHERE email=$1&#34;</span>, [<span style="color:#a6e22e">newEmail</span>])
+</span></span><span style="display:flex;"><span>  .<span style="color:#a6e22e">then</span>((<span style="color:#a6e22e">result</span>) =&gt; {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">result</span>.<span style="color:#a6e22e">rowCount</span> <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span>) {      <span style="color:#75715e">// note the use of result.rowCount
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>      <span style="color:#66d9ef">return</span> Promise.<span style="color:#a6e22e">reject</span>({<span style="color:#a6e22e">error</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;Customer already exists&#39;</span>})
+</span></span><span style="display:flex;"><span>    } <span style="color:#66d9ef">else</span> {
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">db</span>.<span style="color:#a6e22e">query</span>(<span style="color:#e6db74">`INSERT INTO customers (name, email, phone, address, city, postcode, country)
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        VALUES ($1, $2, $3, $4, $5, $6, $7)`</span>, [<span style="color:#a6e22e">newName</span>, <span style="color:#a6e22e">newEmail</span>, ..., <span style="color:#a6e22e">newCountry</span>],
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  })
+</span></span><span style="display:flex;"><span>  .<span style="color:#a6e22e">then</span>(() =&gt; {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">status</span>(<span style="color:#ae81ff">201</span>).<span style="color:#a6e22e">send</span>(<span style="color:#e6db74">&#34;Customer created&#34;</span>)
+</span></span><span style="display:flex;"><span>  })
+</span></span><span style="display:flex;"><span>  .<span style="color:#66d9ef">catch</span>((<span style="color:#a6e22e">error</span>) =&gt; {
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// any errors or manual rejections will be intercepted here
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">// handle error here
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  })</span></span></code></pre></div><h4 id="note">Note:</h4>
+<ul>
+<li>The <code>SELECT</code> does not choose any column values, just the literal <code>1</code>. We are only interested in the number of rows found (it must be 0 for success).</li>
+<li>If a row is found, then a customer with this email exists so we call <code>Promise.reject</code>: this will then trigger the first <code>catch</code> block in the promise chain where we can handle the error.</li>
+<li>If a row is not found, then we perform the insertion query, taking care to return the call to <code>db.query</code> so we can access its resolve value in the next <code>.then</code> block</li>
+<li>This validation is NOT suitable for performing in the browser because it interacts with the database.</li>
+</ul>
+<section class="c-note c-note--exercise">
+  <h4 class="c-note__title e-heading__4">✍️Exercise 4</span>
+  </h4>
+  <div class="c-note__text "><ol>
+<li>Before adding a new customer ensure there are none with the same email address in the customers table</li>
+<li>If a duplicate email is found send an appropriate message to the browser</li>
+<li>Use Postman to check that your new code works as expected by trying to insert duplicate emails as well as correct ones</li>
+<li>Check the data has been added to the database (use psql)</li>
+</ol>
+</div>
+</section>
+
+
+<h3 id="-return-the-primary-key-value-for-an-insert">🗝️ Return the Primary Key Value for an Insert</h3>
+<p>If the table uses an auto-incrementing primary key then it is very useful to return the generated value after the <code>INSERT</code>. PostgreSQL provides a very simple mechanism to do this (as do most RDBMS&rsquo;s) by appending the <code>RETURNING</code> clause to the <code>INSERT</code>, as below:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">INSERT</span> <span style="color:#66d9ef">INTO</span> customers (name, email, phone)
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">VALUES</span> (<span style="color:#e6db74">&#39;Fred Bloggs&#39;</span>, <span style="color:#e6db74">&#39;fred@bloggs.org&#39;</span>, <span style="color:#e6db74">&#39;07123456789&#39;</span>)
+</span></span><span style="display:flex;"><span>  RETURNING id;</span></span></code></pre></div><p>The endpoint now uses the query call shown below:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span>  <span style="color:#a6e22e">db</span>.<span style="color:#a6e22e">query</span>(<span style="color:#e6db74">`INSERT INTO customers (name, email, phone, address, city, postcode, country)
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    VALUES ($1, $2, $3, $4, $5, $6, $7)
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    RETURNING id`</span>, [<span style="color:#a6e22e">newName</span>, <span style="color:#a6e22e">newEmail</span>, ..., <span style="color:#a6e22e">newCountry</span>])
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">then</span>(<span style="color:#a6e22e">result</span> =&gt; {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">newId</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">result</span>.<span style="color:#a6e22e">rows</span>[<span style="color:#ae81ff">0</span>].<span style="color:#a6e22e">id</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">`New Customer id = </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">newId</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>);
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">status</span>(<span style="color:#ae81ff">200</span>).<span style="color:#a6e22e">json</span>({<span style="color:#a6e22e">lastId</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">newId</span>});
+</span></span><span style="display:flex;"><span>    })
+</span></span><span style="display:flex;"><span>    .<span style="color:#66d9ef">catch</span>(<span style="color:#a6e22e">err</span> =&gt; {
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">status</span>(<span style="color:#ae81ff">500</span>).<span style="color:#a6e22e">json</span>({<span style="color:#a6e22e">error</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">err</span>});
+</span></span><span style="display:flex;"><span>    })</span></span></code></pre></div><section class="c-note c-note--exercise">
+  <h4 class="c-note__title e-heading__4">✍️Exercise 5</span>
+  </h4>
+  <div class="c-note__text "><ol>
+<li>Further extend your <code>POST</code> endpoint so that it returns the new customer id value to the browser.</li>
+<li>Use Postman to check that the new value is returned.</li>
+</ol>
+</div>
+</section>
+
+
+<h3 id="-updating-data">🆕 Updating data</h3>
+<p>We can now implement an endpoint to update a customer record in the database. For this, we will use a PUT endpoint.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">put</span>(<span style="color:#e6db74">&#34;/customers/:id&#34;</span>, <span style="color:#66d9ef">function</span> (<span style="color:#a6e22e">req</span>, <span style="color:#a6e22e">res</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">custId</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">req</span>.<span style="color:#a6e22e">params</span>.<span style="color:#a6e22e">id</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">newEmail</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">req</span>.<span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">email</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">newPhone</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">req</span>.<span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">phone</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">db</span>.<span style="color:#a6e22e">query</span>(<span style="color:#e6db74">&#34;UPDATE customers SET email=$2, phone = $3 WHERE id=$1&#34;</span>, [
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">custId</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">newEmail</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">newPhone</span>,
+</span></span><span style="display:flex;"><span>  ])
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">then</span>(() =&gt; <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">send</span>(<span style="color:#e6db74">`Customer </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">customerId</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> updated!`</span>))
+</span></span><span style="display:flex;"><span>    .<span style="color:#66d9ef">catch</span>((<span style="color:#a6e22e">err</span>) =&gt; {
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">error</span>(<span style="color:#a6e22e">err</span>);
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">status</span>(<span style="color:#ae81ff">500</span>).<span style="color:#a6e22e">json</span>({ <span style="color:#a6e22e">error</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">err</span> });
+</span></span><span style="display:flex;"><span>    });
+</span></span><span style="display:flex;"><span>});</span></span></code></pre></div><p>Note:</p>
+<ul>
+<li>This endpoint uses both a URL parameter (<code>:id</code>) to supply the customer id and data in the request body to provide the updated column values.</li>
+<li>The order of the placeholders does not have to correspond to their sequence in the SQL. In this case we&rsquo;ve put the <code>custId</code> value first but it appears last in the SQL (in the <code>WHERE</code> clause).</li>
+</ul>
+<p>We used URL parameters to query for a specific customer earlier and we used body data to insert a new customer.</p>
+<p>What can go wrong in the code above? Again, there is no validation! The user could try to set an empty email or even a string which is not following the format of an email. <strong>Remember, validating data is very important to make sure you don&rsquo;t end up with inconsistent data in your database!</strong></p>
+<section class="c-note c-note--exercise">
+  <h4 class="c-note__title e-heading__4">✍️Exercise 6</span>
+  </h4>
+  <div class="c-note__text "><ol>
+<li>Create a new endpoint to update reservations to provide the room number allocated to the guest when they check in. Use the reservation id value to identify the row.</li>
+<li>Use Postman to check that the endpoint works correctly and the row is updated.</li>
+</ol>
+</div>
+</section>
+
+
+<h3 id="-deleting-data">🗑️ Deleting data</h3>
+<p>To delete a record from the database, we will use a <code>DELETE</code> endpoint:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">app</span>.<span style="color:#66d9ef">delete</span>(<span style="color:#e6db74">&#34;/customers/:id&#34;</span>, <span style="color:#66d9ef">function</span> (<span style="color:#a6e22e">req</span>, <span style="color:#a6e22e">res</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">custId</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">req</span>.<span style="color:#a6e22e">params</span>.<span style="color:#a6e22e">id</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">db</span>.<span style="color:#a6e22e">query</span>(<span style="color:#e6db74">&#34;DELETE FROM customers WHERE id=$1&#34;</span>, [<span style="color:#a6e22e">custId</span>])
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">then</span>(() =&gt; <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">send</span>(<span style="color:#e6db74">`Customer </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">custId</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> deleted!`</span>))
+</span></span><span style="display:flex;"><span>    .<span style="color:#66d9ef">catch</span>((<span style="color:#a6e22e">err</span>) =&gt; <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">error</span>(<span style="color:#a6e22e">err</span>));
+</span></span><span style="display:flex;"><span>});</span></span></code></pre></div><p>However, if you try to delete a customer which already has some bookings, the previous endpoint will fail. Do you know why? You cannot delete a customer whose ID is used as a foreign key in another table (in this case, in the <code>reservations</code> table). Let&rsquo;s delete all the customer bookings first:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">app</span>.<span style="color:#66d9ef">delete</span>(<span style="color:#e6db74">&#34;/customers/:customerId&#34;</span>, <span style="color:#66d9ef">function</span> (<span style="color:#a6e22e">req</span>, <span style="color:#a6e22e">res</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">customerId</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">req</span>.<span style="color:#a6e22e">params</span>.<span style="color:#a6e22e">customerId</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">db</span>.<span style="color:#a6e22e">query</span>(<span style="color:#e6db74">&#34;DELETE FROM reservations WHERE cust_id=$1&#34;</span>, [<span style="color:#a6e22e">customerId</span>])
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">then</span>(() =&gt; {
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">db</span>.<span style="color:#a6e22e">query</span>(<span style="color:#e6db74">&#34;DELETE FROM customers WHERE id=$1&#34;</span>, [<span style="color:#a6e22e">customerId</span>]);
+</span></span><span style="display:flex;"><span>    })
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">then</span>(() =&gt; <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">send</span>(<span style="color:#e6db74">`Customer </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">customerId</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> deleted!`</span>))
+</span></span><span style="display:flex;"><span>    .<span style="color:#66d9ef">catch</span>((<span style="color:#a6e22e">e</span>) =&gt; <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">error</span>(<span style="color:#a6e22e">e</span>));
+</span></span><span style="display:flex;"><span>});</span></span></code></pre></div><section class="c-note c-note--exercise">
+  <h4 class="c-note__title e-heading__4">✍️Exercise 7</span>
+  </h4>
+  <div class="c-note__text "><ol>
+<li>Add an endpoint to delete from the reservations table using the value of the id to choose the row to be removed. Only allow deletion of reservations with future checking dates otherwise return an error.</li>
+<li>Check the endpoint works correctly using Postman (use psql to verify the row has been deleted).</li>
+</ol>
+</div>
+</section>
+
+
+<hr>
+<h3 id="-warning">⚠️ Warning!</h3>
+<section class="c-note c-note--warning">
+  <h4 class="c-note__title e-heading__4">⚠️Update &amp; Delete are not Safe</span>
+  </h4>
+  <div class="c-note__text ">This approach we&rsquo;ve used to update and delete rows is not safe in a typical multi-user environment. If more than one user at a time is able to perform updates and deletes there could be unintended data loss using this approach.</div>
+</section>
+
+
+<h4 id="optimistic-locking">Optimistic Locking</h4>
+<p>The solution is known as &ldquo;optimistic locking&rdquo; but we just don&rsquo;t have time in this course to cover it. So long as you are aware of the problem you can use the approach but add plenty of comments to make clear that the code is not yet safe.</p>
+<p>Note also that optimistic locking requires changes not only to the code of your Node endpoints but also to the behaviour of the web pages that use and modify the data.</p>
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+      </div>
+      <nav slot="nav">
+        <a href="#" class="e-button c-solo-view__back">&larr; Back</a>
+        <a href="#" class="e-button c-solo-view__next">Next &rarr;</a>
+      </nav>
+    </solo-view>
+    
+    <script src="/scripts/solo-view.min.js" defer></script>
+    
+    <script src="/scripts/time-total.min.js" defer></script>
+  
+
+
+        
+
+  <footer class="c-page-footer">
+    <nav class="c-page-footer__nav">
+      
+      
+      <span class="c-page-footer__this">prep</span>
+      
+        →<a
+          class="c-page-footer__next c-page-footer__link e-link"
+          href="/tracks/sql/sprints/3/backlog/"
+          >backlog</a
+        >
+      
+    </nav>
+  </footer>
+
+
+      </main><footer class="l-layout__footer l-footer">
+  <a
+    class="l-footer__github e-button e-button--icon"
+    href="https://github.com/CodeYourFuture/curriculum/">
+    <svg
+  focusable="false"
+  class="e-button__icon"
+  role="presentation"
+  width="96"
+  viewbox="0 0 98 96"
+  xmlns="http://www.w3.org/2000/svg">
+  <path
+    fill-rule="evenodd"
+    clip-rule="evenodd"
+    d="M48.854 0C21.839 0 0 22 0 49.217c0 21.756 13.993 40.172 33.405 46.69 2.427.49 3.316-1.059 3.316-2.362 0-1.141-.08-5.052-.08-9.127-13.59 2.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015 4.934.326 7.523 5.052 7.523 5.052 4.367 7.496 11.404 5.378 14.235 4.074.404-3.178 1.699-5.378 3.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283 0-5.378 1.94-9.778 5.014-13.2-.485-1.222-2.184-6.275.486-13.038 0 0 4.125-1.304 13.426 5.052a46.97 46.97 0 0 1 12.214-1.63c4.125 0 8.33.571 12.213 1.63 9.302-6.356 13.427-5.052 13.427-5.052 2.67 6.763.97 11.816.485 13.038 3.155 3.422 5.015 7.822 5.015 13.2 0 18.905-11.404 23.06-22.324 24.283 1.78 1.548 3.316 4.481 3.316 9.126 0 6.6-.08 11.897-.08 13.526 0 1.304.89 2.853 3.316 2.364 19.412-6.52 33.405-24.935 33.405-46.691C97.707 22 75.788 0 48.854 0z"
+    fill="currentColor" />
+</svg>
+
+    <span class="is-invisible">Find us on GitHub</span>
+  </a>
+  <p class="l-footer__impressum e-heading__6">
+    This
+    <a href="https://github.com/CodeYourFuture/curriculum/">free and open source programme</a>
+    is a project of
+    <a href="https://codeyourfuture.io/">Code Your Future</a>
+    <br />
+    Creative Commons Attribution-ShareAlike 4.0
+  </p>
+  <dark-mode class="l-footer__mode"
+    ><button
+      slot="button"
+      id="mode-toggle"
+      type="button"
+      class="e-button e__button--toggle e-button--icon">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="e-icon e__button__icon e-icon--moon">
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
+      </svg>
+      <span class="is-invisible">Toggle between light and dark mode</span>
+    </button></dark-mode
+  >
+</footer>
+
+
+
+<script src="/scripts/app.min.js" defer></script>
+
+<script src="/scripts/youtube-player.min.js" defer></script>
+
+<script src="/scripts/tab-panels.min.js" type="module" defer></script>
+
+<script src="/scripts/dark-mode.min.js"></script>
+
+<script src="/scripts/alert-message.min.js" defer></script>
+
+
+
+
+
+
+
+</div>
+  </body>
+</html>

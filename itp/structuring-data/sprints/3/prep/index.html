@@ -1,0 +1,2775 @@
+<!DOCTYPE html>
+
+
+
+
+<html lang="en" class="p-prep"><head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  <title data-pagefind-meta="title">
+    
+      Intro to Programming 
+    
+      Structuring and Testing Data 
+    
+      Sprint 3 
+    
+    Prep
+  </title>
+  
+    <meta name="description" content="A free and open source software development programme." />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+  <style>
+    body,
+    html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      animation: fade-in 300ms;
+    }
+    @keyframes fade-in {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  </style>
+  
+  
+  <link
+    rel="stylesheet"
+    href="/bundled.min.b6a4520237559385268d63a9daa81d96.css"
+    media="print"
+    onload="this.media='all'" />
+
+  
+  
+    
+    
+    <link
+      rel="stylesheet"
+      href="/custom.min.8ded6a1a88bc7cc98bdef8dc33d15f3a.css"
+      media="print"
+      onload="this.media='all'" />
+  
+
+
+  <noscript>
+    <link rel="stylesheet" href="/bundled.min.b6a4520237559385268d63a9daa81d96.css" />
+  </noscript>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&amp;display=swap"
+    rel="stylesheet"
+    media="print"
+    onload="this.media='all'" />
+
+  <link rel="shortcut icon" href="https://curriculum.codeyourfuture.io/favicon.ico" />
+  <meta name="theme-color" content="#e3ddeef2" />
+  <link rel="manifest" href="https://curriculum.codeyourfuture.io/manifest.json" />
+</head>
+<body>
+    <a class="c-skip-link e-button" id="skip-link" href="#main">Skip to main</a>
+    <div class="l-layout">
+      <header class="l-layout__header l-header">
+  <div class="l-header__container">
+    <h1 class="l-header__heading e-heading__6" data-pagefind-ignore>
+      <a class="l-header__home" href="/"
+        ><span class="is-invisible"
+          >itp prep CYF Courses</span
+        >
+        <span class="is-none--lt-container">
+          <svg
+          xmlns="http://www.w3.org/2000/svg"
+          title="Code Your Future."
+          viewBox="0 0 621.64 155.81"
+          width="140px"
+          focusable="false"
+          role="img">
+          <path
+            fill="var(--theme-color--brand)"
+            d="M103.37 56.51C96.91 63.64 87.03 69.9 74.6 69.9c-20.14 0-33.52-12.91-33.52-34.09C41.08 13.97 57.5.87 69.94.87c9.5 0 13.77 5.32 14.63 6.46l2.18-5.27h14.91v27h-17c-.28-6.18-3.32-12-10.06-12s-11.3 8.45-11.3 18.8c0 9.4 4.84 17.86 13.86 17.86 8 0 14.24-8.36 15.1-9.31Zm2.88-21.85C106.25 14.15 119.92 0 139.58 0c23.26 0 34.09 14 34.09 35.32s-12 34.57-33.43 34.57c-19.88 0-33.99-11.49-33.99-35.23Zm43.68.66c0-11.49-3.13-20.7-10.45-20.7-5.79-.09-9.78 8.26-9.78 20 0 12.44 4.47 20.32 10.54 20.32s9.65-7.88 9.65-19.62Zm27.49 20.23h5.89V14.34h-5.89V1.8h29c23 0 36.09 14.15 36.09 32.29 0 21.65-13.11 34.09-36.47 34.09h-28.62Zm29 0c10.03-.19 14.21-9.59 14.21-21.49 0-10.16-4.18-19.75-14.25-19.75h-3.61v41.24ZM303.04 1.8v21h-16.43v-8.46h-15.19v13.1h18v12.62h-18v15.49h15.19v-8.83h16.43v21.46h-57.26V55.55h6V14.34h-6V1.8Z" />
+          <path
+            fill="var(--theme-color--ink)"
+            d="M274.42 87.82v21h-16.8v-8.45h-14.37v16.52h18v12.63h-18v12.04h9.68v12.63h-35.29v-12.63h5.89v-41.21h-5.89V87.82Zm33.04 0v12.24h-5.12v20.51c0 15.28 3.41 18.51 9.49 18.51 5.79 0 9.59-2.28 9.59-18.61v-20.12h-5.17V87.82h28.11v12.24h-5.11v23.07c0 22.51-9.4 32.67-27.25 32.67-19.18-.57-29.43-10.64-29.43-32.19v-23.45h-5.32V87.82Zm103.5 24.69h-14v-12.16h-8v41.21h7.88v12.63h-35.26v-12.63h7.79v-41.21h-8.12v12.16h-14V87.82h63.71ZM444 87.82v12.24h-5.13v20.51c0 15.28 3.42 18.51 9.5 18.51 5.79 0 9.59-2.28 9.59-18.61v-20.12h-5.13V87.82h28.11v12.24h-5.13v23.07c0 22.51-9.4 32.67-27.25 32.67-19.18-.57-29.44-10.64-29.44-32.19v-23.45h-5.32V87.82Zm71.59 0c22 0 26.3 8.73 26.3 19.56 0 7.4-5.88 12.63-13.76 13.77 6.55.95 12.44 6.64 12.44 13.48 0 4.08.57 6.46 2.27 6.46 1.43 0 2.19-1.14 2.19-3v-3.13h6.36v5.22c0 7.88-3.32 15.19-13.86 15.19-12.44 0-18.42-6.55-18.42-17.66 0-8.64-1.05-10.73-9.5-10.73v14.68h5.79v12.53h-30.67v-12.53h5.32v-41.4h-5.32V87.82Zm-6 28.48h4.27c5.51 0 9.12-2.65 9.12-7.69 0-5.6-3.13-8.45-8.64-8.45h-4.75Zm102.38-28.48v21h-16.43v-8.45h-15.19v13.09h18v12.6h-18v15.5h15.19v-8.83h16.43v21.46h-57.26v-12.63h6v-41.21h-6V87.82Zm-227.72-56.1c.38-1.9 2.47-5.89 3.51-8.17l5.22-9.59h-5.22V1.8h25.54v12.16h-5.05l-17.62 30.86v11h5.32v12.36h-30.39V55.83h5.41v-11.2l-18.42-30.67h-4.65V1.8h32.47v12.16h-4.93l5.5 10.1c.57 1.81 2.57 6.08 2.95 7.7Zm29.54 2.94C413.79 14.15 427.47 0 447.12 0c23.27 0 34.09 14 34.09 35.32s-12 34.57-33.42 34.57c-19.85 0-34-11.49-34-35.23Zm43.68.66c0-11.49-3.13-20.7-10.44-20.7-5.79-.09-9.78 8.26-9.78 20 0 12.44 4.46 20.32 10.54 20.32s9.68-7.88 9.68-19.62ZM514.25 1.8v12.26h-5.13v20.5c0 15.29 3.42 18.52 9.5 18.52 5.79 0 9.59-2.28 9.59-18.61V14.34h-5.13V1.8h28.11v12.26h-5.13v23.07c0 22.5-9.4 32.66-27.25 32.66-19.18-.57-29.44-10.63-29.44-32.19V14.15h-5.32V1.8Zm71.59 0c22 0 26.31 8.74 26.31 19.57 0 7.4-5.89 12.62-13.77 13.76 6.55 1 12.44 6.65 12.44 13.49 0 4.08.57 6.46 2.27 6.46 1.43 0 2.19-1.14 2.19-3V48.9h6.36v5.23c0 7.88-3.32 15.19-13.86 15.19-12.44 0-18.42-6.55-18.42-17.66 0-8.64-1.05-10.73-9.5-10.73v14.71h5.79v12.54h-30.67V55.64h5.32v-41.4h-5.32V1.8Zm-6 28.49h4.27c5.51 0 9.12-2.66 9.12-7.69 0-5.6-3.13-8.45-8.64-8.45h-4.75ZM28.39 14.7l5.8 10.64-23.46 10.72 23.46 10.55-3.61 9.87L0 42.24v-13.3Zm318.7 14.24v13.3l-30.58 14.24-3.61-9.87 23.46-10.55-23.46-10.72 5.8-10.64Z" />
+        </svg>
+        </span>
+        <span class="is-none--gt-container">
+          <svg
+          xmlns="http://www.w3.org/2000/svg"
+          version="1.0"
+          viewBox="0 0 512 512"
+          width="48px">
+          <path
+            fill="currentcolor"
+            stroke="currentcolor"
+            d="M225.5 1c-1.1.5-3.5.9-5.3.9-4.1.1-22.9 4.5-30.7 7.2-63.1 22-114.7 72.3-142.7 139.4-6.4 15.2-11.8 33.8-16.7 57-4.1 19.7-5.4 64.5-2.6 90.8C33 346.2 49.8 390.1 76.8 425c6.2 7.9 23.9 26.4 30.7 32 8.1 6.7 26.1 18.7 35.1 23.6 28.1 15.1 58 24.3 91.9 28.3 5.5.7 13.6 1.7 18 2.2 8.8 1.2 33.9.7 48-.9 11-1.3 31.7-4.8 36.5-6.2 1.9-.5 8-2.3 13.5-3.9 21.3-6.1 47.2-17.8 67.5-30.5 8.8-5.4 23.7-15.8 28.5-19.7 10.2-8.4 24.5-21.3 31.4-28.2l8.4-8.5-2.2-2.9c-1.3-1.5-4.6-5.3-7.4-8.3-6.2-6.7-14.5-15.7-21.2-23.1-2.7-3-7.5-8.2-10.5-11.4-3-3.3-9.8-10.8-15.1-16.5-21.5-23.6-24.2-26.5-24.9-26.8-.3-.1-2 1.2-3.6 3-1.6 1.9-6.3 7.1-10.4 11.7-8.6 9.7-25.6 24.6-35.9 31.4-21.4 14.4-42.5 21.7-62.6 21.7-15.3-.1-29.3-3.3-42.5-10-22.8-11.5-41.9-35.5-51.5-64.7-4.2-12.8-4.3-13.4-5.9-22.8-3.8-22.9-4.6-39.2-2.6-55.6 2.7-22.7 3.3-26.5 5-33.2 7.9-30.9 16.7-48.6 32.4-65.6 16.8-17.9 41.1-24.9 65.1-18.6 30 7.8 50.7 36.3 55.5 76.3.5 4.6 1.2 8.7 1.5 9.3.4.5 25.1.9 62.6.9H474V9H364.2L357 26.7c-4 9.8-7.9 18.5-8.7 19.3-1.3 1.3-2.1.8-6.6-4.3-6-6.9-18.3-16.7-28.2-22.5-7.4-4.3-22.6-10.9-28.5-12.4-9.2-2.2-18.1-4.1-24-5-9-1.3-33.1-1.9-35.5-.8z" />
+        </svg>
+        </span>
+      </a>
+    </h1>
+    <link
+  href="/pagefind/pagefind-ui.css"
+  rel="stylesheet"
+  media="print"
+  onload="this.media='all'" />
+<style>
+  :root {
+    --pagefind-ui-primary: var(--theme-color--ink);
+    --pagefind-ui-text: var(--theme-color--ink);
+    --pagefind-ui-background: var(--theme-color--paper);
+    --pagefind-ui-border: var(--theme-color--outline);
+    --pagefind-ui-tag: var(--theme-color--block);
+    --pagefind-ui-border-radius: 2em;
+    --pagefind-ui-image-border-radius: var(--theme-border-radius);
+    --pagefind-ui-font: var(--theme-font--copy);
+  }
+  .pagefind-ui--reset {
+    position: absolute;
+  }
+  #search .pagefind-ui__search-input {
+    box-shadow: var(--theme-box-shadow--inset);
+    margin-bottom: var(--theme-spacing--1);
+  }
+  #search .pagefind-ui__search-clear {
+    background-color: transparent;
+  }
+  #search .pagefind-ui__drawer {
+    background-color: var(--theme-color--paper);
+    box-shadow: var(--theme-box-shadow--slim);
+    transform: translateY(-1.5px);
+    padding: 0 var(--theme-spacing--2);
+    max-height: calc(100vh - 4rem);
+    overflow-y: auto;
+  }
+  #search .pagefind-ui__result {
+    padding: var(--theme-spacing--1) 0 var(--theme-spacing--2) 0;
+  }
+  #search .pagefind-ui__result:focus-within,
+  #search .pagefind-ui__button:focus {
+    background-color: var(--theme-color--block);
+  }
+  #search .pagefind-ui__button {
+    border: none;
+  }
+</style>
+<script src="/pagefind/pagefind-ui.js" type="text/javascript" defer></script>
+<div id="search" class="l-header__search"></div>
+<script>
+  window.addEventListener("DOMContentLoaded", (event) => {
+    new PagefindUI({
+      element: "#search",
+      showSubResults: true,
+      pageSize: 3,
+      showImages: false,
+      showTags: true,
+    });
+  });
+</script>
+
+    <button
+      class="l-header__action e-button e-button--icon js-menu-toggle e-heading__3">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+        <path
+          stroke="var(--theme-color--ink)"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M13 5a1 1 0 1 0-2 0 1 1 0 0 0 2 0Zm0 7a1 1 0 1 0-2 0 1 1 0 0 0 2 0Zm0 7a1 1 0 1 0-2 0 1 1 0 0 0 2 0Z" />
+      </svg>
+      <span class="is-invisible">Open Menu.</span>
+    </button>
+  </div>
+</header>
+
+      <nav
+  class="l-layout__menu l-menu"
+  aria-label="Main Site Links."
+  id="site-menu"
+  hidden
+  tabindex="0">
+  <div class="l-menu__container">
+    <h2 class="l-menu__heading e-heading__2">
+      <a href="/" class="l-menu__home is-invisible">Menu</a>
+    </h2>
+    <button
+      class="l-menu__action e-button e-button--icon js-menu-toggle e-heading__2"
+      id="close-menu">
+      ❎
+      <span class="is-invisible">Close Menu.</span>
+    </button>
+    <ul class="l-menu__primary">
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/guides/">
+            Guides
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/sdc/tools/">
+            Tools
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/sdc/logic/">
+            Logic
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/sdc/decomposition/">
+            Decomposition
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/sdc/legacy/">
+            Legacy code
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/sdc/complexity/">
+            Complexity
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__2 l-menu__link" href="/tracks/servers/">
+            Servers
+          </a>
+        </li>
+    </ul>
+    <ul class="l-menu__secondary">
+        <li class="l-menu__item">
+          <a class="e-heading__3 l-menu__link" href="https://codeyourfuture.io">
+            CYF 👈🏾
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__3 l-menu__link" href="https://codeyourfuture.io/volunteers/">
+            Join Us 👋🏿
+          </a>
+        </li>
+        <li class="l-menu__item">
+          <a class="e-heading__3 l-menu__link" href="https://codeyourfuture.io/donate/">
+            Support 🫶🏼
+          </a>
+        </li>
+    </ul>
+  </div>
+</nav>
+
+      <main
+        id="main"
+        class="l-layout__main l-main"
+        tabindex="0"
+        data-pagefind-body>
+        
+  
+    <solo-view tabindex="0">
+      
+
+
+      <div slot="header">
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+<header
+  class="c-page-header 
+    c-page-header--solo
+   c-page-header--toc">
+  
+  <div class="c-page-header__container">
+    <div class="c-page-header__breadcrumbs">
+      
+  <nav class="c-breadcrumbs">
+    <ol class="c-breadcrumbs__list">
+      
+        
+        
+          <li class="c-breadcrumbs__item">
+            <a
+              class="c-breadcrumbs__link"
+              href="/itp/"data-pagefind-filter="module"><span class="c-breadcrumbs__text">Intro to Programming</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                width="24px"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="c-breadcrumbs__icon">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+              </svg>
+            </a>
+          </li>
+        
+        
+          <li class="c-breadcrumbs__item">
+            <a
+              class="c-breadcrumbs__link"
+              href="/itp/structuring-data/"><span class="c-breadcrumbs__text">Structuring and testing data</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                width="24px"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="c-breadcrumbs__icon">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+              </svg>
+            </a>
+          </li>
+      
+        <li class="c-breadcrumbs__item">
+          <a
+            class="c-breadcrumbs__link"
+            href="/itp/structuring-data/sprints/3/"data-pagefind-filter="sprint">Sprint 3</a
+          >
+        </li>
+      
+    </ol>
+  </nav>
+  
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Our Courses",
+      "item":"https://curriculum.codeyourfuture.io/"},
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Intro to Programming",
+      "item":"https://curriculum.codeyourfuture.io/itp/"},
+    {
+      "@type": "ListItem",
+      "position":  3 ,
+      "name": "Structuring and testing data",
+      "item":"https://curriculum.codeyourfuture.io/itp/structuring-data/"},{
+      "@type": "ListItem",
+      "position":  5 ,
+      "name": "Sprint 3",
+      "item":"https://curriculum.codeyourfuture.io/itp/structuring-data/sprints/3/"},
+    {
+      "@type": "ListItem",
+      "position":  6 ,
+      "name": "prep",
+      "item":"https://curriculum.codeyourfuture.io/itp/structuring-data/sprints/3/"}
+  ]
+}
+</script>
+
+
+    </div>
+    <h1 class="c-page-header__title e-heading__1"data-pagefind-filter="view"
+        
+      data-pagefind-weight="10">
+      <span class="c-emoji">
+        
+        
+           
+            <time-total class="c-page-header__time"></time-total>
+      
+         
+        </span>
+        <span class="c-page-header__title-text">prep</span>
+               
+    </h1>
+    
+      
+    
+    
+    
+    
+      <div class="c-page-header__toc " id="toc">
+        <section class="c-toc" aria-label="Table of contents.">
+          <a id="top" class="c-toc__top e-button e-button--icon" href="#toc"
+            >🔖 <span class="is-invisible">back to top</span></a
+          >
+          
+            <nav id="TableOfContents"></nav>
+          
+          
+            <ol>
+              
+                <li>
+                  <a href="#ordinal-numbers" data-pagefind-weight="5"
+                    >Ordinal numbers</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#testing-frameworks" data-pagefind-weight="5"
+                    >Testing frameworks</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#starting-a-project" data-pagefind-weight="5"
+                    >Starting a project</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#using-packages" data-pagefind-weight="5"
+                    >Using packages</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#installing-jest" data-pagefind-weight="5"
+                    >Installing Jest</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#jests-api" data-pagefind-weight="5"
+                    >Jest&#39;s API</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#first-test-case" data-pagefind-weight="5"
+                    >First test case</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#interpreting-feedback" data-pagefind-weight="5"
+                    >Interpreting feedback</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#dead-code" data-pagefind-weight="5"
+                    >Dead Code</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#generalising-further" data-pagefind-weight="5"
+                    >Generalising further</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#anonymous-functions" data-pagefind-weight="5"
+                    >Anonymous functions</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#arrow-functions" data-pagefind-weight="5"
+                    >Arrow functions</a
+                  >
+                  
+                </li>
+              
+                <li>
+                  <a href="#solving-problems-while-testing" data-pagefind-weight="5"
+                    >Solving problems while testing 📼</a
+                  >
+                  
+                </li>
+              
+            </ol>
+          
+          
+        </section>
+      </div>
+    
+
+  </div>
+</header>
+</div>
+      <div slot="blocks">
+        
+        
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="ordinal-numbers">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="ordinal-numbers">
+        Ordinal numbers
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="20 minutes countdown" datetime="P20M">20&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Convert positions to ordinal numbers</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <p>🏢 Let&rsquo;s imagine you&rsquo;re working in a 10 storey office building. There are 10 different levels. We need a way to describe each level of the building. We start on the <strong>ground floor</strong> of the building - level with the ground. We use an <strong>ordinal number</strong> to describe the other levels in the building.</p>
+<p>To form the ordinal number we take a number and add the correct 
+<tool-tip-container tabindex="0"><strong class="tooltip__trigger" id="trigger__suffix">suffix</strong><span class="tooltip__emoji">🧶</span><tool-tip role="tooltip" aria-labelledby="suffix"><span class="tooltip__title e-heading__2"><span class="tooltip__emoji">🧶</span> suffix</span><span class="tooltip__content">The suffix comes from the word used to describe each number, like fir<strong>st</strong>, seco<strong>nd</strong>, thi<strong>rd</strong> etc.</span></tool-tip></tool-tip-container>
+</p>
+<p>☝🏿 Up from the ground floor, we are then on the 1<strong>st</strong> floor (fir<strong>st</strong> floor)
+☝🏽 Up from the <strong>1st floor</strong>, we are on the 2<strong>nd</strong> floor (seco<strong>nd</strong> floor)</p>
+
+
+
+<tab-panels class="c-tabs">
+  <div class="c-tabs__list" id="ordinals" role="tablist"><button
+          data-toggle="tab"
+          id="tab-label-ordinals-0"
+          class="c-tabs__tab e-heading__5 space 
+            is-active"
+          role="tab"
+          aria-controls="ordinals-0"
+          aria-selected="true">
+          🙋🏾 Ordinals Exercise 1
+        </button><button
+          data-toggle="tab"
+          id="tab-label-ordinals-1"
+          class="c-tabs__tab e-heading__5 space "
+          role="tab"
+          aria-controls="ordinals-1"
+          aria-selected="false">
+          📆 Days of the month
+        </button><button
+          data-toggle="tab"
+          id="tab-label-ordinals-2"
+          class="c-tabs__tab e-heading__5 space "
+          role="tab"
+          aria-controls="ordinals-2"
+          aria-selected="false">
+          💾 Ordinal Numbers Reference
+        </button></div>
+  <div class="c-tabs__group" id="ordinals">
+        <div
+          id="ordinals-0"
+          class="c-tabs__panel is-active"
+          role="tabpanel"
+          data-heading="🙋🏾 Ordinals Exercise 1"
+          aria-labelledby="tab-label-ordinals-0"><table>
+  <thead>
+      <tr>
+          <th>number</th>
+          <th>+ <strong>suffix</strong></th>
+          <th>= ordinal number</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>1</td>
+          <td><strong>st</strong></td>
+          <td>1<strong>st</strong></td>
+      </tr>
+      <tr>
+          <td>2</td>
+          <td><strong>nd</strong></td>
+          <td>2<strong>nd</strong></td>
+      </tr>
+  </tbody>
+</table>
+<p>What will the <a
+  href="#ordinals-2">ordinal number</a> be for:</p>
+<p>a) 21?
+b) 40?
+c) 49?<br>
+d) 13?</p>
+</div>
+        <div
+          id="ordinals-1"
+          class="c-tabs__panel "
+          role="tabpanel"
+          data-heading="📆 Days of the month"
+          aria-labelledby="tab-label-ordinals-1"><p>Use ordinal numbers to write the days of the month for the following events:</p>
+<p>a) Tomorrow
+b) A week from now
+c) Easter Sunday 2024
+d) When is Eid expected to occur in 2024</p>
+</div>
+        <div
+          id="ordinals-2"
+          class="c-tabs__panel "
+          role="tabpanel"
+          data-heading="💾 Ordinal Numbers Reference"
+          aria-labelledby="tab-label-ordinals-2"><ol>
+<li>1<strong>st</strong></li>
+<li>2<strong>nd</strong></li>
+<li>3<strong>rd</strong></li>
+<li>4<strong>th</strong></li>
+<li>5<strong>th</strong></li>
+<li>6<strong>th</strong></li>
+<li>7<strong>th</strong></li>
+<li>8<strong>th</strong></li>
+<li>9<strong>th</strong></li>
+<li>10<strong>th</strong></li>
+</ol>
+</div></div>
+</tab-panels>
+
+<h3 id="-specification">📋 Specification</h3>
+<p>Let&rsquo;s consider a function called <code>getOrdinalNumber</code> that needs to work like this:</p>
+<ul>
+<li>it takes one argument - a whole number, like 1, 2, 3, etc</li>
+<li>it returns a <em>string</em> that represents the ordinal number</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">getOrdinalNumber</span>(<span style="color:#ae81ff">1</span>); <span style="color:#75715e">// returns &#34;1st&#34;;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">getOrdinalNumber</span>(<span style="color:#ae81ff">2</span>); <span style="color:#75715e">// returns &#34;2nd&#34;;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">getOrdinalNumber</span>(<span style="color:#ae81ff">6</span>); <span style="color:#75715e">// returns &#34;6th&#34;;
+</span></span></span></code></pre></div><p>The requirements above form a 
+<tool-tip-container tabindex="0"><strong class="tooltip__trigger" id="trigger__specification">specification</strong><span class="tooltip__emoji">🧶</span><tool-tip role="tooltip" aria-labelledby="specification"><span class="tooltip__title e-heading__2"><span class="tooltip__emoji">🧶</span> specification</span><span class="tooltip__content">A <strong>specification</strong> is a set of requirements for how a piece of software should behave.</span></tool-tip></tool-tip-container>
+. Now we have a specification for how the function should work we can create many cases showing how we expect the function <code>getOrdinalNumber</code> to behave when it is called with different inputs.</p>
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="testing-frameworks">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="testing-frameworks">
+        Testing frameworks
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="15 minutes countdown" datetime="P15M">15&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Explain why we need to use testing frameworks</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <p>To help us think about the requirements of <code>getOrdinalNumber</code>, let&rsquo;s consider one case:</p>
+<h3 id="-case-1">💼 Case 1</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">input</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">currentOutput</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">getOrdinalNumber</span>(<span style="color:#a6e22e">input</span>);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">targetOutput</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;1st&#34;</span>;</span></span></code></pre></div><p>Case 1 states that when <code>getOrdinalNumber</code> is called with an input of 1, it has a target output of &ldquo;1st&rdquo;. Our first step is to check that <code>getOrdinalNumber</code> works as we have stated.</p>
+<p>We have used <code>console.assert</code> to write assertions to write tests for our code before. <code>console.assert</code> is a useful building block, but it is limited. Now we will write tests using a 
+<tool-tip-container tabindex="0"><strong class="tooltip__trigger" id="trigger__test framework">test framework</strong><span class="tooltip__emoji">🧶</span><tool-tip role="tooltip" aria-labelledby="test framework"><span class="tooltip__title e-heading__2"><span class="tooltip__emoji">🧶</span> test framework</span><span class="tooltip__content">A <strong>test framework</strong> is a set of tools we can use to build tests efficiently.</span></tool-tip></tool-tip-container>
+ to check our code is behaving in a particular way.</p>
+<blockquote><p>🔑 A test is any piece of code that runs an <strong>assertion</strong> on the code we&rsquo;re testing</p>
+</blockquote><h4 id="we-want-our-tests-to">We want our tests to:</h4>
+<ul>
+<li>be easy to write</li>
+<li>be easy to read</li>
+<li>give clear feedback on what the current output is</li>
+<li>give clear feedback on what the target output is</li>
+<li>allows us to easily write multiple test cases</li>
+</ul>
+<p>A test framework will help us build test cases like this.</p>
+<section class="c-note c-note--discussion">
+  <h4 class="c-note__title e-heading__4">🧑🏽🧑🏿 Dialogue</span>
+  </h4>
+  <div class="c-note__text "><p>We can use a short dialogue to think about <em>why</em> we want to use a testing framework:</p>
+<dl>
+<dt>🧑🏽 <strong>Büşra</strong></dt>
+<dd>Ali, looks like I need to implement a function.</dd>
+<dt>🧑🏿 <strong>Ali</strong></dt>
+<dd>Cool. How are you going to check it works?</dd>
+<dt>🧑🏽 <strong>Büşra</strong></dt>
+<dd>I&rsquo;m going to use tests to check that the function gives the target output as described in the specification</dd>
+<dt>🧑🏿 <strong>Ali</strong></dt>
+<dd>Seems wise. How are you going to write a lot of tests efficiently?</dd>
+<dt>🧑🏽 <strong>Büşra</strong></dt>
+<dd>I&rsquo;m going to use a testing framework to write test cases quickly. The framework will make sure that the tests give fast, reliable feedback.</dd>
+</dl></div>
+</section>
+
+
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="starting-a-project">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="starting-a-project">
+        Starting a project
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="10 minutes countdown" datetime="P10M">10&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Identify a package.json</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Explain the purpose of a package.json</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <tab-panels class="c-tabs">
+  <div class="c-tabs__list" id="start-project" role="tablist"><button
+          data-toggle="tab"
+          id="tab-label-start-project-0"
+          class="c-tabs__tab e-heading__5 space 
+            is-active"
+          role="tab"
+          aria-controls="start-project-0"
+          aria-selected="true">
+          🕹️ Follow along
+        </button><button
+          data-toggle="tab"
+          id="tab-label-start-project-1"
+          class="c-tabs__tab e-heading__5 space "
+          role="tab"
+          aria-controls="start-project-1"
+          aria-selected="false">
+          🕹️ Create a package.json
+        </button><button
+          data-toggle="tab"
+          id="tab-label-start-project-2"
+          class="c-tabs__tab e-heading__5 space "
+          role="tab"
+          aria-controls="start-project-2"
+          aria-selected="false">
+          👣 Step by step
+        </button></div>
+  <div class="c-tabs__group" id="start-project">
+        <div
+          id="start-project-0"
+          class="c-tabs__panel is-active"
+          role="tabpanel"
+          data-heading="🕹️ Follow along"
+          aria-labelledby="tab-label-start-project-0"><p>Let&rsquo;s start a brand new project in a directory called <code>ordinal-testing-example</code> and create a file called <code>package.json</code> in our project.</p>
+<ol>
+<li>Open your terminal and ensure you&rsquo;re inside the <code>CYF</code> directory you created earlier in the course.</li>
+<li><a
+  href="https://man7.org/linux/man-pages/man1/mkdir.1.html">Make</a> a new directory on your local machine called <code>ordinal-testing-example</code>.</li>
+<li>Change directory into <code>ordinal-testing-example</code> and double-check your current working directory.</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-console" data-lang="console"><span style="display:flex;"><span>% pwd
+</span></span><span style="display:flex;"><span>.../CYF/ordinal-testing-example
+</span></span></code></pre></div><p>👉🏽 <a
+  href="#start-project-1">Now create a <code>package.json</code> file</a></p>
+</div>
+        <div
+          id="start-project-1"
+          class="c-tabs__panel "
+          role="tabpanel"
+          data-heading="🕹️ Create a package.json"
+          aria-labelledby="tab-label-start-project-1"><section class="c-note c-note--tip">
+  <h4 class="c-note__title e-heading__4">💡Package</span>
+  </h4>
+  <div class="c-note__text ">A <code>package.json</code> stores useful information about our project, like the name, description, and version. It is written in the <a
+  href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON">JSON format</a>.</div>
+</section>
+<ol>
+<li>Create a <code>package.json</code> in <code>ordinal-testing-example</code>.</li>
+<li>Make sure it contains a name and description.</li>
+</ol>
+<p>👉🏽 Need help? <a
+  href="#start-project-2">Follow step by step instructions</a></p></div>
+        <div
+          id="start-project-2"
+          class="c-tabs__panel "
+          role="tabpanel"
+          data-heading="👣 Step by step"
+          aria-labelledby="tab-label-start-project-2"><ol>
+<li>Create a <code>package.json</code> file in your project directory:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-zsh" data-lang="zsh"><span style="display:flex;"><span>touch package.json</span></span></code></pre></div><ol start="2">
+<li>Add a name to it like this:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;ordinal-testing-example&#34;</span>
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div><ol start="3">
+<li>Add a description:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;ordinal-testing-example&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;description&#34;</span>: <span style="color:#e6db74">&#34;An example application showing how to write tests using the jest framework&#34;</span>
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div></div></div>
+</tab-panels>
+<p>We can continue adding more information about our project as the project grows. For now, double-check we only have a <code>package.json</code> in our project:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-console" data-lang="console"><span style="display:flex;"><span>% ls
+</span></span><span style="display:flex;"><span>package.json
+</span></span></code></pre></div>
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="using-packages">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="using-packages">
+        Using packages
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="5 minutes countdown" datetime="P5M">5&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Define a dependency</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Define a package</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Identify some benefits of using a third-party party software library when programming</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Describe why need to use npm when we are building JavaScript applications</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <p>When writing software, we continually make use of software written by other developers. We can call these 
+<tool-tip-container tabindex="0"><strong class="tooltip__trigger" id="trigger__packages">packages</strong><span class="tooltip__emoji">🧶</span><tool-tip role="tooltip" aria-labelledby="packages"><span class="tooltip__title e-heading__2"><span class="tooltip__emoji">🧶</span> packages</span><span class="tooltip__content">A <strong>package</strong> is some code which is grouped together to provide some functionality.</span></tool-tip></tool-tip-container>
+</p>
+<p>We use packages so that we don&rsquo;t have to solve every problem ourselves. Other people have often solved some things we need to do really well. Using other people&rsquo;s solutions to parts of a problem means we can focus our time and effort on what&rsquo;s special about <em>our</em> problem.</p>
+<p>Imagine we wanted to work out what the time is in a user&rsquo;s city. Instead of writing code to work out the time for every city&rsquo;s time zone (and when they change!), we can use a package some &ldquo;city time&rdquo; experts have written, and which they keep up to date.</p>
+<p>Different programming languages give developers different ways of accessing packages for use in their code. We will use 
+<tool-tip-container tabindex="0"><strong class="tooltip__trigger" id="trigger__npm">npm</strong><span class="tooltip__emoji">🧶</span><tool-tip role="tooltip" aria-labelledby="npm"><span class="tooltip__title e-heading__2"><span class="tooltip__emoji">🧶</span> npm</span><span class="tooltip__content">Node Package Manager, or <code>npm</code>, downloads and manages useful packages of code from the <a
+  href="https://www.npmjs.com/">npm registry</a>.</span></tool-tip></tool-tip-container>
+</p>
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="installing-jest">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="installing-jest">
+        Installing Jest
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="20 minutes countdown" datetime="P20M">20&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Outline the effects of running an installation command, e.g. npm install</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Install a dependency with npm</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <p>Jest is a package used to help us to write and run test cases in JavaScript.
+Our next step will be to figure out how to install the Jest package on our machine, so that we can use it in our project.</p>
+<p>We can find out more about the Jest framework from the <a
+  href="https://jestjs.io/docs/getting-started">documentation online</a>.</p>
+<p>In the <strong>Getting started</strong> section of the documentation, Jest gives us the following command:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-console" data-lang="console"><span style="display:flex;"><span>npm install jest --save-dev
+</span></span></code></pre></div><p>Let&rsquo;s break down the different parts of this command.</p>
+<ul>
+<li>
+<p><code>npm</code> - <code>npm</code> is the package management tool we are using, so we need to run it.</p>
+</li>
+<li>
+<p><code>install</code> - <code>npm</code> has a subcommand called <code>install</code>. We use it to download a package from the <a
+  href="https://www.npmjs.com/"><strong>npm</strong> registry</a> onto our machine and install it.</p>
+</li>
+<li>
+<p><code>jest</code> - this is the name of the package we want to install on our machine.</p>
+</li>
+<li>
+<p><code>--save-dev</code> - this means the package is needed for development but <em>not</em> needed in production. Our ordinal app doesn&rsquo;t need <code>jest</code> to run, but we need it to help us develop it.</p>
+</li>
+</ul>
+<p>So overall we can think of this command as saying:
+<em>&ldquo;Please go to the npm database, find the Jest package and install it on my local machine&rdquo;</em></p>
+<p>Let&rsquo;s execute this command in the same directory as the <code>package.json</code>.
+To double check we&rsquo;re in the correct directory, we can run <code>pwd</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-console" data-lang="console"><span style="display:flex;"><span>$ pwd
+</span></span><span style="display:flex;"><span>.../<span class="c-our-name">CYF</span>/ordinal-testing-example
+</span></span></code></pre></div><p><code>pwd</code> is telling us we&rsquo;re in the <code>ordinal-testing-example</code> directory.</p>
+<p>We need to double check the <code>package.json</code> is also there too.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-console" data-lang="console"><span style="display:flex;"><span>$ ls
+</span></span><span style="display:flex;"><span>package.json
+</span></span></code></pre></div><p>Now we can execute the command</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>npm install --save-dev jest</span></span></code></pre></div><p>Our project structure will now look as follows:</p>
+<pre tabindex="0"><code class="language-raw" data-lang="raw">ordinal-testing-example
+├── node_modules
+├── package-lock.json
+└── package.json
+
+1 directory, 3 files</code></pre><p>After running the command, we now have a directory called <code>node_modules</code> in our project too.</p>
+<blockquote><p>The <code>node_modules</code> directory contains all the code from the
+<tool-tip-container tabindex="0"><strong class="tooltip__trigger" id="trigger__dependencies">dependencies</strong><span class="tooltip__emoji">🧶</span><tool-tip role="tooltip" aria-labelledby="dependencies"><span class="tooltip__title e-heading__2"><span class="tooltip__emoji">🧶</span> dependencies</span><span class="tooltip__content">A <strong>dependency</strong> is a package that your project depends upon.</span></tool-tip></tool-tip-container>
+we installed in our project. You won&rsquo;t need to look inside the <code>node_modules</code> directory - you just need to know it contains the code for Jest and any other dependencies we install in our project.</p>
+</blockquote><p>Running the <code>npm</code> command also updated our <code>package.json</code> file for us:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;week-4-test-example&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;description&#34;</span>: <span style="color:#e6db74">&#34;An example application showing how to write tests using the jest framework&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;devDependencies&#34;</span>: {
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;jest&#34;</span>: <span style="color:#e6db74">&#34;^29.5.0&#34;</span>
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div><p>We&rsquo;ve now got some additional information inside the <code>package.json</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#e6db74">&#34;devDependencies&#34;</span><span style="color:#960050;background-color:#1e0010">:</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;jest&#34;</span>:  <span style="color:#e6db74">&#34;^29.5.0&#34;</span>
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div><section class="c-note c-note--exercise">
+  <h4 class="c-note__title e-heading__4">✍️🕹️ Follow along</span>
+  </h4>
+  <div class="c-note__text "><h3 id="heading"></h3>
+<p>Install Jest on your local machine. Double check you&rsquo;ve got the correct files and folders written to your local machine.</p></div>
+</section>
+
+
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="jests-api">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="jests-api">
+        Jest&#39;s Application Programming Interface
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="15 minutes countdown" datetime="P15M">15&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Explain why we use APIs in programming</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Identify some commonly used APIs</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <p>With Jest installed, we need to figure out <em>how to use the Jest framework</em> to write tests.
+This means we need to look at 
+<tool-tip-container tabindex="0"><strong class="tooltip__trigger" id="trigger__APIs">APIs</strong><span class="tooltip__emoji">🧶</span><tool-tip role="tooltip" aria-labelledby="APIs"><span class="tooltip__title e-heading__2"><span class="tooltip__emoji">🧶</span> APIs</span><span class="tooltip__content">An <strong>API</strong> is a boundary between a programmer and an application, enabling a programmer to use an application’s functionality without being concerned with how the application was built.</span></tool-tip></tool-tip-container>
+ again.</p>
+<p>API stands for</p>
+<ul>
+<li><strong>Application</strong></li>
+<li><strong>Programming</strong></li>
+<li><strong>Interface</strong>.</li>
+</ul>
+<p>We&rsquo;ve encountered the word <strong>interface</strong> already.</p>
+<p>But we can break down each word in this acronym to understand it altogether.</p>
+<ul>
+<li>
+<p>An <strong>application</strong> is a program or piece of software designed to serve some purpose.</p>
+</li>
+<li>
+<p><strong>Programming</strong> refers to the process of writing code or software.</p>
+</li>
+<li>
+<p>An 🕹️<strong>interface</strong> is a shared boundary between two or more systems.</p>
+</li>
+</ul>
+<p>We&rsquo;ve encountered several functions like <code>console.log</code> and <code>Math.round</code> already.
+<code>console.log</code> and <code>Math.round</code> are <strong>API</strong>s.</p>
+<p><code>console.log</code> is actually implemented in a different language (C++), but that doesn&rsquo;t matter - its functionality is exposed to us when we write JavaScript, and we don&rsquo;t need to care how it&rsquo;s actually implemented or how it works.</p>
+<p>Jest provides an <strong>API</strong> so we can write tests.
+So we have to find out about the Jest API to start writing tests with Jest.</p>
+<section class="c-note c-note--note">
+    <h4 class="c-note__title">📝Note</h4>
+    <div class="c-note__text"><h2 id="-other-apis">🧐 Other APIs</h2>
+<p>Try and list other examples of APIs you&rsquo;ve used since the start of the course.
+Start a thread in Slack to discuss with your class.</p></div>
+  </section>
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="first-test-case">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="first-test-case">
+        First test case
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="40 minutes countdown" datetime="P40M">40&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Outline the effect of running npm test</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Interpret documentation to determine how part of a third-party API behaves</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Describe what toEqual checks in the Jest library</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />State the current return value of a function and the target output for a given test</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Implement a test case to describe the behaviour of a function</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <blockquote><p>🎯 Goal: Write a test for the case below, using Jest:</p>
+</blockquote><h4 id="case-1-">Case 1 💼</h4>
+<p>Our first case is that the ordinal number for <code>1</code> should equal <code>&quot;1st&quot;</code>.</p>
+<p>We can create a file called <code>get-ordinal-number.test.js</code> and write our first test there.
+We can use <a
+  href="https://jestjs.io/docs/getting-started">documentation</a> to work out how to write our first test using Jest.</p>
+<p><code>get-ordinal-number.test.js</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">test</span>(<span style="color:#e6db74">&#34;converts 1 to an ordinal number&#34;</span>, <span style="color:#66d9ef">function</span> () {});</span></span></code></pre></div><p>Let&rsquo;s break down this syntax.</p>
+<p>The <code>test</code> function is part of the Jest API, a function we use to perform a particular task.
+In particular, we&rsquo;re using <code>test</code> to create a test case.
+Before, we could use <code>Math.round</code> and <code>console.log</code> because <code>Math</code> and <code>console</code> are provided for us by Node.</p>
+<p><code>test</code> isn&rsquo;t provided by Node, but when we ask Jest to run our tests, it will make sure the <code>test</code> function exists and that our code can use it.</p>
+<p>Let&rsquo;s break down the arguments we&rsquo;re passing to <code>test</code>:</p>
+<ul>
+<li>1st argument: <code>&quot;converts 1 to an ordinal number&quot;</code>, a string which describes the behaviour we&rsquo;re testing for</li>
+<li>2nd argument: <code>function() {}</code>, we will write some assertions in this <code>function() {}</code> to check the behaviour</li>
+</ul>
+<h3 id="-creating-assertions">⚖️ Creating assertions</h3>
+<p>We need to write an <strong>assertion</strong> inside the body of <code>function() {}</code> inside <code>get-ordinal-number.test.js</code></p>
+<p><code>get-ordinal-number.test.js</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">test</span>(<span style="color:#e6db74">&#34;converts 1 to an ordinal number&#34;</span>, <span style="color:#66d9ef">function</span> () {});</span></span></code></pre></div><section class="c-note c-note--tip">
+  <h4 class="c-note__title e-heading__4">💡Recall</span>
+  </h4>
+  <div class="c-note__text ">The assertion is the part of the test code that checks if a particular thing is true or not.</div>
+</section>
+
+
+<p>In this example, we want to check that the following is true:</p>
+<p>We expect <code>getOrdinalNumber(1)</code> to be <code>&quot;1st&quot;</code></p>
+<p>An assertion in Jest looks like this:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">expect</span>(<span style="color:#a6e22e">currentOutput</span>).<span style="color:#a6e22e">toEqual</span>(<span style="color:#a6e22e">targetOutput</span>);</span></span></code></pre></div><p>The function <code>toEqual</code> is used to check that the current output of <code>getOrdinalNumber(1)</code> and the target output of <code>&quot;1st&quot;</code> are equal to each other.</p>
+<p><code>toEqual</code> is just one example of a function called a <a
+  href="https://jestjs.io/docs/using-matchers">matcher</a>.
+A matcher is a function we use to compare values in Jest.</p>
+<p>So the whole test looks like this:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">test</span>(<span style="color:#e6db74">&#34;converts 1 to an ordinal number&#34;</span>, <span style="color:#66d9ef">function</span> () {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">expect</span>(<span style="color:#a6e22e">getOrdinalNumber</span>(<span style="color:#ae81ff">1</span>)).<span style="color:#a6e22e">toEqual</span>(<span style="color:#e6db74">&#34;1st&#34;</span>);
+</span></span><span style="display:flex;"><span>});</span></span></code></pre></div><h3 id="-running-tests">👟 Running tests</h3>
+<p>We can try running the file <code>get-ordinal-number.test.js</code> with node in the following way:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>node get-ordinal-number.test.js</span></span></code></pre></div><p>but we get an error:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ReferenceError: test is not defined</span></span></code></pre></div><p>Googling &ldquo;ReferenceError JavaScript&rdquo;, <a
+  href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ReferenceError">MDN tells us this is because we&rsquo;re referring to a variable that doesn&rsquo;t exist</a>. This is because <code>test</code> isn’t defined anywhere in the file.</p>
+<p>We need to execute this file so that the Jest API is available in our file. We can do this by running the test file using Jest: we do this using an npm script.</p>
+<p>The &ldquo;scripts&rdquo; section of the <code>package.json</code> is where we can write useful commands we&rsquo;ll use in our project. We can add a &ldquo;scripts&rdquo; section to the <code>package.json</code> so that it reads as follows:</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span></span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span></span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span></span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;week-4-test-example&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;description&#34;</span>: <span style="color:#e6db74">&#34;An example application showing how to write tests using the jest framework&#34;</span>,
+</span></span><span style="display:flex; background-color:#3c3d38"><span>  <span style="color:#f92672">&#34;scripts&#34;</span>: {
+</span></span><span style="display:flex; background-color:#3c3d38"><span>    <span style="color:#f92672">&#34;test&#34;</span>: <span style="color:#e6db74">&#34;jest&#34;</span>
+</span></span><span style="display:flex; background-color:#3c3d38"><span>  },
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;devDependencies&#34;</span>: {
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;jest&#34;</span>: <span style="color:#e6db74">&#34;^29.5.0&#34;</span>
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Finally, we&rsquo;ll need to run our tests.
+Now we can run the command <code>npm test</code>.</p>
+<p>When we execute the command, <code>npm test</code>, we will run <code>npm</code>, and <code>npm</code> will look inside the &ldquo;scripts&rdquo; section of the <code>package.json</code> and look up the command for &ldquo;test&rdquo; - in this case, &ldquo;jest&rdquo;. <code>npm</code> will then run &ldquo;jest&rdquo;.</p>
+<p>We can&rsquo;t ourselves just run <code>jest</code> on the command line, because it isn&rsquo;t installed in a place our terminal knows about. But when <code>npm</code> runs a script, it will make sure all dependencies installed for the project are available.</p>
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="interpreting-feedback">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="interpreting-feedback">
+        Interpreting feedback
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="25 minutes countdown" datetime="P25M">25&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Identify current output and target output in test feedback</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Determine the line an error occurred from some test feedback</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Give an example of why Jest makes tests easier to write than console.assert</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <p>We currently have a project structure like this:</p>
+<pre tabindex="0"><code class="language-raw" data-lang="raw">week-4-test-example
+├── get-ordinal-number.test.js
+├── package.json
+├── package-lock.json
+└── node_modules
+
+1 directory, 3 files</code></pre><p>And <code>get-ordinal-number.test.js</code>
+looks like this</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">test</span>(<span style="color:#e6db74">&#34;converts 1 to an ordinal number&#34;</span>, <span style="color:#66d9ef">function</span> () {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">expect</span>(<span style="color:#a6e22e">getOrdinalNumber</span>(<span style="color:#ae81ff">1</span>)).<span style="color:#a6e22e">toEqual</span>(<span style="color:#e6db74">&#34;1st&#34;</span>);
+</span></span><span style="display:flex;"><span>});</span></span></code></pre></div><p>After running the test above, we should get feedback indicating whether or not the test has passed.</p>
+<section class="c-note c-note--exercise">
+  <h4 class="c-note__title e-heading__4">✍️Predict and explain</span>
+  </h4>
+  <div class="c-note__text ">Predict and explain what the test feedback will be when the test above is executed.</div>
+</section>
+
+
+<h3 id="-defining-the-function">🚢 Defining the function</h3>
+<p>At the moment, our test feedback gives the following:</p>
+<p>
+
+  <figure>
+      <img
+        loading="lazy"
+        src="/module/js1/feedback/test-reference-error.png"alt="test-reference-error" data-pagefind-index-attrs="test-reference-error"/></figure></p>
+<p>Just like we saw when the <code>test</code> function wasn&rsquo;t defined, the test code is throwing a 
+<tool-tip-container tabindex="0"><strong class="tooltip__trigger" id="trigger__ReferenceError">ReferenceError</strong><span class="tooltip__emoji">🧶</span><tool-tip role="tooltip" aria-labelledby="ReferenceError"><span class="tooltip__title e-heading__2"><span class="tooltip__emoji">🧶</span> ReferenceError</span><span class="tooltip__content">A <strong>ReferenceError</strong> occurs when we try to reference a variable that we&rsquo;ve not defined in our code.</span></tool-tip></tool-tip-container>
+</p>
+<p>This means that we haven&rsquo;t defined a function named <code>getOrdinalNumber</code>, but we&rsquo;re trying to use it.</p>
+<p>To fix this, we can declare <code>getOrdinalNumber</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">getOrdinalNumber</span>() {}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">test</span>(<span style="color:#e6db74">&#34;converts 1 to an ordinal number&#34;</span>, <span style="color:#66d9ef">function</span> () {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">expect</span>(<span style="color:#a6e22e">getOrdinalNumber</span>(<span style="color:#ae81ff">1</span>)).<span style="color:#a6e22e">toEqual</span>(<span style="color:#e6db74">&#34;1st&#34;</span>);
+</span></span><span style="display:flex;"><span>});</span></span></code></pre></div><p>Now we can run the tests again and check the test feedback.</p>
+<h3 id="assertion-errors">Assertion errors</h3>
+<p>We now get the following feedback:</p>
+<p>
+
+  <figure>
+      <img
+        loading="lazy"
+        src="/module/js1/feedback/test-feedback-fail.png"alt="test-feedback-fail" data-pagefind-index-attrs="test-feedback-fail"/></figure></p>
+<p>Jest tells us 3 main things:</p>
+<ol>
+<li>The test case that failed</li>
+<li>The target output and the current output</li>
+<li>The line number where error occurred</li>
+</ol>
+<p>Jest defines <strong>Expected</strong> and <strong>Received</strong> in the test feedback:</p>
+<ul>
+<li>Expected: &ldquo;1st&rdquo;</li>
+<li>Received: <code>undefined</code></li>
+</ul>
+<section class="c-note c-note--exercise">
+  <h4 class="c-note__title e-heading__4">✍️exercise</span>
+  </h4>
+  <div class="c-note__text "><p>What are the values of <strong>Expected</strong> and <strong>Received</strong> in the test output?</p>
+<p>How do <strong>Received</strong> and <strong>Expected</strong> match up with the target output and expected output ?</p>
+<p>What line number did the test case fail on?</p>
+</div>
+</section>
+
+
+<h3 id="avoiding-repetition">Avoiding repetition</h3>
+<p>When we wrote <code>console.assert</code> tests before, we ended up extracting variables because we were re-using values.</p>
+<p>Without Jest, this assertion would probably have looked more like:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">input</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">targetOutput</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;1st&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">currentOutput</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">getOrdinalNumber</span>(<span style="color:#a6e22e">input</span>);
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">assert</span>(
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">targetOutput</span> <span style="color:#f92672">===</span> <span style="color:#a6e22e">currentOutput</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">`Expected </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">targetOutput</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> but got </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">currentOutput</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>
+</span></span><span style="display:flex;"><span>);</span></span></code></pre></div><p>Because Jest makes a useful error message for us telling us what the target and current outputs are, we could write this all in one line. We didn&rsquo;t need a variable so we could pass <code>&quot;1st&quot;</code> both to <code>getOrdinalNumber</code> and into the message.</p>
+<p>Jest helped us to avoid writing more repetitive code.</p>
+<h3 id="passing-getordinalnumber">Passing <code>getOrdinalNumber</code></h3>
+<p>We can now pass the test by implementing functionality for the first test case.
+We could write the following:</p>
+<p><code>get-ordinal-number.test.js</code>:</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">getOrdinalNumber</span>() {
+</span></span><span style="display:flex; background-color:#3c3d38"><span>  <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;1st&#34;</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">test</span>(<span style="color:#e6db74">&#34;converts 1 to an ordinal number&#34;</span>, <span style="color:#66d9ef">function</span> () {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">expect</span>(<span style="color:#a6e22e">getOrdinalNumber</span>(<span style="color:#ae81ff">1</span>)).<span style="color:#a6e22e">toEqual</span>(<span style="color:#e6db74">&#34;1st&#34;</span>);
+</span></span><span style="display:flex;"><span>});</span></span></code></pre></td></tr></table>
+</div>
+</div>
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="dead-code">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="dead-code">
+        Dead Code
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="30 minutes countdown" datetime="P30M">30&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Define what is meant by &lsquo;dead code&rsquo;</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Understand why &lsquo;dead code&rsquo; matters in the context of working as a software engineer</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Demonstrate how we handle &lsquo;dead code&rsquo; in our codebases</label
+      >
+    </li>
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Identify &lsquo;dead code&rsquo; in an existing code base</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <p>As software engineers, we have a responsibility to build code that not only fulfils the required behaviours of the programme but is part of a well-structured and &ldquo;clean&rdquo; codebase.</p>
+<p><strong>What is meant by &ldquo;clean&rdquo;?</strong></p>
+<p>Clean code generally means code that is:</p>
+<ul>
+<li>
+<p><strong>Understandable for other programmers.</strong>
+We achieve this through good variable naming, avoiding chaining too many methods in one line, good choice of syntax depending on the data type being used, etc.</p>
+</li>
+<li>
+<p><strong>Avoids duplication</strong>.
+Not repeating code where it could be a reusable function, making more efficient choices in our conditional logic, using loops where relevant, etc.</p>
+</li>
+<li>
+<p><strong>Passes all tests</strong> (if you have tests in the repository).</p>
+</li>
+<li>
+<p>And importantly, contains a <strong>minimal amount of &ldquo;moving parts&rdquo;</strong>.
+Removing any bulk that isn&rsquo;t contributing to the behaviour we want to achieve. This means watching out for &ldquo;dead code&rdquo;.</p>
+</li>
+</ul>
+<p>Keeping to <strong>clean code</strong> helps us collaborate better, code more efficiently and accurately, and make programmes more readable.</p>
+<p>It means products we build can be maintained in the future without wasting more developer time than necessary trying to work out what the code is doing.</p>
+<p><strong>What is meant by &ldquo;dead&rdquo; code?</strong></p>
+<pre><code>A segment of code that is no longer used.
+</code></pre>
+<p>As a programme evolves there might be many changes, fixes, feature additions made to the code. There is a high probability that when those changes were made to the code, there was no time to &ldquo;clean&rdquo; up the existing or old code. This can lead to <strong>code being left in the repository that no longer has purpose</strong>, whether by accident or on purpose.</p>
+<p>One common way to identify dead code in our programmes is by using a 
+<tool-tip-container tabindex="0"><strong class="tooltip__trigger" id="trigger__IDE">IDE</strong><span class="tooltip__emoji">🧶</span><tool-tip role="tooltip" aria-labelledby="IDE"><span class="tooltip__title e-heading__2"><span class="tooltip__emoji">🧶</span> IDE</span><span class="tooltip__content">A Integrated Development Environment, like VSCode. IDEs are special kinds of text editors which understand programming languages. This means they can add extra functionality, like syntax highlighting, and refactoring support.</span></tool-tip></tool-tip-container>
+. An IDE can often make unusable or unused code obvious to us through its colour scheme.</p>
+<p>When we remove dead code we can reduce the &ldquo;bloat&rdquo; of our code, making it easier to maintain and improving debugging processes. It means we don&rsquo;t need to read and understand code that isn&rsquo;t used.</p>
+<section class="c-note c-note--exercise">
+  <h4 class="c-note__title e-heading__4">✍️Exercise</span>
+  </h4>
+  <div class="c-note__text "><p>📖 Read this more detailed breakdown of dead code from Devopedia: <a
+  href="https://devopedia.org/dead-code">https://devopedia.org/dead-code</a>.</p>
+<p>❓ Answer the following questions:</p>
+<ul>
+<li>What makes a piece of code count as &ldquo;dead code&rdquo;?</li>
+<li>What is the difference between &ldquo;redundant code&rdquo; and &ldquo;unreachable code&rdquo;?</li>
+<li>Why do we want to remove &ldquo;dead code&rdquo; as much as possible? What are the benefits of removing it?</li>
+<li>What tool makes finding &ldquo;dead code&rdquo; in our repositories easiest? (Hint: Do you use this tool already to code?)</li>
+</ul>
+</div>
+</section>
+
+
+<section class="c-note c-note--tip">
+  <h4 class="c-note__title e-heading__4">💡Tip</span>
+  </h4>
+  <div class="c-note__text ">There are also plenty of Reddit threads and Stack Overflow posts asking the question&hellip; <em>&ldquo;What IS dead code?&rdquo;</em>. Look around the internet and see what developers in the world define it as.</div>
+</section>
+
+
+<p>In the related backlog item, you will look for dead code in an existing code base and handle it appropriately. Have fun!</p>
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="generalising-further">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="generalising-further">
+        Generalising further
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="20 minutes countdown" datetime="P20M">20&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Extend an implementation based on more assertions</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <p>In English, ordinal numbers mostly follow the same pattern.</p>
+<blockquote><p>Numbers ending in 1 will generally have an ordinal number ending in &ldquo;st&rdquo;.</p>
+</blockquote><p>Here are some examples of this pattern,</p>
+<p>1st, 11<strong>th</strong>, 21st, 31st, 41st,&hellip;</p>
+<p>All the numbers ending in 1 will continue to end in <code>&quot;st&quot;</code>, with the exception of 11.
+11 is slightly different and ends with a <code>&quot;th&quot;</code>.</p>
+<p>We can now update our test case to check that <code>getOrdinalNumber</code> works for lots of different numbers ending in 1.</p>
+<p><code>get-ordinal-number.test.js</code>:</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span></span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span></span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span></span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+</span></span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">9
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">getOrdinalNumber</span>() {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;1st&#34;</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex; background-color:#3c3d38"><span><span style="color:#a6e22e">test</span>(<span style="color:#e6db74">&#34;works for any number ending in 1&#34;</span>, <span style="color:#66d9ef">function</span> () {
+</span></span><span style="display:flex; background-color:#3c3d38"><span>  <span style="color:#a6e22e">expect</span>(<span style="color:#a6e22e">getOrdinalNumber</span>(<span style="color:#ae81ff">1</span>)).<span style="color:#a6e22e">toEqual</span>(<span style="color:#e6db74">&#34;1st&#34;</span>);
+</span></span><span style="display:flex; background-color:#3c3d38"><span>  <span style="color:#a6e22e">expect</span>(<span style="color:#a6e22e">getOrdinalNumber</span>(<span style="color:#ae81ff">11</span>)).<span style="color:#a6e22e">toEqual</span>(<span style="color:#e6db74">&#34;11th&#34;</span>);
+</span></span><span style="display:flex; background-color:#3c3d38"><span>  <span style="color:#a6e22e">expect</span>(<span style="color:#a6e22e">getOrdinalNumber</span>(<span style="color:#ae81ff">21</span>)).<span style="color:#a6e22e">toEqual</span>(<span style="color:#e6db74">&#34;21st&#34;</span>);
+</span></span><span style="display:flex; background-color:#3c3d38"><span>});</span></span></code></pre></td></tr></table>
+</div>
+</div><p>We&rsquo;ve also updated the test description because we&rsquo;re adding more assertions and checking slightly different functionality.</p>
+<section class="c-note c-note--exercise">
+  <h4 class="c-note__title e-heading__4">✍️🔧 Implement</span>
+  </h4>
+  <div class="c-note__text ">Try implementing <code>getOrdinalNumber</code> so it passes the test case above.</div>
+</section>
+
+
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="anonymous-functions">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="anonymous-functions">
+        Anonymous functions
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="10 minutes countdown" datetime="P10M">10&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Explain the difference between a named function and an anonymous function</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <p>We have seen functions written like this:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">convertToPercentage</span>(<span style="color:#a6e22e">decimalNumber</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#e6db74">`</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">decimalNumber</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">100</span><span style="color:#e6db74">}</span><span style="color:#e6db74">%`</span>;
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div><p>In our Jest test, we wrote a function differently:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">function</span>() {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">expect</span>(<span style="color:#a6e22e">getOrdinalNumber</span>(<span style="color:#ae81ff">1</span>)).<span style="color:#a6e22e">toEqual</span>(<span style="color:#e6db74">&#34;1st&#34;</span>);
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">expect</span>(<span style="color:#a6e22e">getOrdinalNumber</span>(<span style="color:#ae81ff">11</span>)).<span style="color:#a6e22e">toEqual</span>(<span style="color:#e6db74">&#34;11th&#34;</span>);
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">expect</span>(<span style="color:#a6e22e">getOrdinalNumber</span>(<span style="color:#ae81ff">21</span>)).<span style="color:#a6e22e">toEqual</span>(<span style="color:#e6db74">&#34;21st&#34;</span>);
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div><section class="c-note c-note--exercise">
+  <h4 class="c-note__title e-heading__4">✍️👀 Spot the difference</span>
+  </h4>
+  <div class="c-note__text ">Stop and identify the difference in syntax between these two function definitions.</div>
+</section>
+
+
+<p>We didn&rsquo;t give a name to the function in our Jest test.</p>
+<p>This is ok, because we don&rsquo;t need it to have a name. We don&rsquo;t call the function by name. We passed the function as an 
+<tool-tip-container tabindex="0"><strong class="tooltip__trigger" id="trigger__argument">argument</strong><span class="tooltip__emoji">🧶</span><tool-tip role="tooltip" aria-labelledby="argument"><span class="tooltip__title e-heading__2"><span class="tooltip__emoji">🧶</span> argument</span><span class="tooltip__content">Arguments are values given to a function which can be different every time we call the function.</span></tool-tip></tool-tip-container>
+ to the <code>test</code> function. The <code>test</code> function takes the function as a 
+<tool-tip-container tabindex="0"><strong class="tooltip__trigger" id="trigger__parameter">parameter</strong><span class="tooltip__emoji">🧶</span><tool-tip role="tooltip" aria-labelledby="parameter"><span class="tooltip__title e-heading__2"><span class="tooltip__emoji">🧶</span> parameter</span><span class="tooltip__content">A parameter is a named variable inside a function. The variable&rsquo;s value is given by the caller, when the function is called.</span></tool-tip></tool-tip-container>
+. And function parameters get their own names in the 
+<tool-tip-container tabindex="0"><strong class="tooltip__trigger" id="trigger__scope">scope</strong><span class="tooltip__emoji">🧶</span><tool-tip role="tooltip" aria-labelledby="scope"><span class="tooltip__title e-heading__2"><span class="tooltip__emoji">🧶</span> scope</span><span class="tooltip__content">Scope is where a variable can be accessed from. When we define function, its parameters are only available inside the function.</span></tool-tip></tool-tip-container>
+ of the function.</p>
+<p>We can imagine the <code>test</code> function is defined like this:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">test</span>(<span style="color:#a6e22e">name</span>, <span style="color:#a6e22e">testFunction</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// Call the passed test function
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#a6e22e">testFunction</span>();
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div><p>Inside <code>test</code> our function is labelled with the name <code>testFunction</code>. It would be labelled this whatever we named it before. Even if we didn&rsquo;t label it ourselves at all, it is still labelled with the name <code>testFunction</code> inside <code>test</code>.</p>
+<p>Because it doesn&rsquo;t matter what we named the function (because we never call it by name), we didn&rsquo;t give it a name.</p>
+<p>Otherwise, these two functions act the same. The only difference between them is whether we created a variable name for the function in the scope where we defined it.</p>
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="arrow-functions">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="arrow-functions">
+        Arrow functions
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="5 minutes countdown" datetime="P5M">5&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Write an arrow function</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      <p>As we write more code, we are going to write lots and lots of 
+<tool-tip-container tabindex="0"><strong class="tooltip__trigger" id="trigger__anonymous functions">anonymous functions</strong><span class="tooltip__emoji">🧶</span><tool-tip role="tooltip" aria-labelledby="anonymous functions"><span class="tooltip__title e-heading__2"><span class="tooltip__emoji">🧶</span> anonymous functions</span><span class="tooltip__content">An anonymous function is a function which is not bound to a name in the scope where it is defined.</span></tool-tip></tool-tip-container>
+.</p>
+<p>JavaScript has even shorter ways of writing an anonymous function. These four functions all do the same thing:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">convertToPercentage</span>(<span style="color:#a6e22e">decimalNumber</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#e6db74">`</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">decimalNumber</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">100</span><span style="color:#e6db74">}</span><span style="color:#e6db74">%`</span>;
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#75715e">// We can skip the name of the function if we don&#39;t need it to have a name.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">function</span> (<span style="color:#a6e22e">decimalNumber</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#e6db74">`</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">decimalNumber</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">100</span><span style="color:#e6db74">}</span><span style="color:#e6db74">%`</span>;
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#75715e">// We can also skip the keyword &#39;function&#39;.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// If we do this, we need an arrow between our parameters and the function body.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>(<span style="color:#a6e22e">decimalNumber</span>) =&gt; {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#e6db74">`</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">decimalNumber</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">100</span><span style="color:#e6db74">}</span><span style="color:#e6db74">%`</span>;
+</span></span><span style="display:flex;"><span>};</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#75715e">// If our function just returns a single value,
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// without needing any other statements in our function,
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// we can even skip the return keyword.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>(<span style="color:#a6e22e">decimalNumber</span>) =&gt; <span style="color:#e6db74">`</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">decimalNumber</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">100</span><span style="color:#e6db74">}</span><span style="color:#e6db74">%`</span>;</span></span></code></pre></div><p>This can make it easier and quicker to write functions. It also reduces the number of things we need to read in a function.</p>
+<p>Applying all of these techniques, we can rewrite our Jest test with fewer words:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">test</span>(<span style="color:#e6db74">&#34;works for any number ending in 1&#34;</span>, () =&gt; {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">expect</span>(<span style="color:#a6e22e">getOrdinalNumber</span>(<span style="color:#ae81ff">1</span>)).<span style="color:#a6e22e">toEqual</span>(<span style="color:#e6db74">&#34;1st&#34;</span>);
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">expect</span>(<span style="color:#a6e22e">getOrdinalNumber</span>(<span style="color:#ae81ff">11</span>)).<span style="color:#a6e22e">toEqual</span>(<span style="color:#e6db74">&#34;11th&#34;</span>);
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">expect</span>(<span style="color:#a6e22e">getOrdinalNumber</span>(<span style="color:#ae81ff">21</span>)).<span style="color:#a6e22e">toEqual</span>(<span style="color:#e6db74">&#34;21st&#34;</span>);
+</span></span><span style="display:flex;"><span>});</span></span></code></pre></div><p>It doesn&rsquo;t matter whether you use arrow functions or use the <code>function</code> keyword - they work the same.</p>
+<p>Not all arrow functions are anonymous - you can assign them to a variable too:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">convertToPercentage</span> <span style="color:#f92672">=</span> (<span style="color:#a6e22e">decimalNumber</span>) =&gt; <span style="color:#e6db74">`</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">decimalNumber</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">100</span><span style="color:#e6db74">}</span><span style="color:#e6db74">%`</span>;</span></span></code></pre></div><p>Anonymous vs named refers to whether the function is bound to a name, not whether it was defined with the <code>function</code> keyword or an <code>=&gt;</code>.</p>
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<section
+  class="c-block c-block--local"
+  aria-labelledby="solving-problems-while-testing">
+  <div class="c-block__body" tabindex="0">
+    <header class="c-block__header">
+      <h2
+        class="c-block__title e-heading__2"
+        id="solving-problems-while-testing">
+        Testing Workshop
+      </h2>
+      <time class="c-block__time" tabindex="0" role="timer" aria-label="60 minutes countdown" datetime="P60M">60&nbsp;minutes ⏱</time><script type="module" defer>import StopWatch from "\/scripts\/stop-watch.min.js";</script>
+    </header>
+    
+      <details open>
+        <summary><h3 class="e-heading__5">Learning Objectives</h3></summary>
+        
+          <ul class="c-objectives__list">
+  
+    <li class="c-objectives__item">
+      <label
+        ><input
+          type="checkbox" />Practice solving problems while testing</label
+      >
+    </li>
+  
+</ul>
+<div id="announcer" aria-live="polite"></div>
+
+        
+        
+      </details>
+    
+    <div class="c-block__content c-copy">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+
+  
+
+  
+  
+
+  
+    
+    
+  
+
+
+
+<section
+  class="c-block c-block--youtube"
+  aria-labelledby="warning-name-is-empty">
+  
+  <div class="c-block__content">
+    <youtube-player data-src="https://youtu.be/SMy1jWCg8kI"></youtube-player>
+  </div>
+</section>
+
+<p>To get the most out of this workshop - don&rsquo;t just watch, code along 💻
+You can use the code samples below as a starting point.</p>
+<h3 id="exercise-1">Exercise 1</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#75715e">// Create a function that takes three numbers as parameters
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">//   and returns the largest of the three
+</span></span></span></code></pre></div><h3 id="exercise-2">Exercise 2</h3>
+<ul>
+<li>Start with an empty folder</li>
+<li>Create a new NodeJS project: <code>npm init -y</code></li>
+<li>Install Jest as a dependency: <code>npm i jest --save-dev</code></li>
+<li>In package.json, change <code>&quot;test&quot;: &quot;echo \&quot;Error: no test specified\&quot; &amp;&amp; exit 1&quot;</code> to <code>&quot;test&quot;: &quot;jest&quot;</code></li>
+<li>Create a file for our first exercise: <code>example1.test.js</code></li>
+<li>You can run your tests using <code>npm test</code></li>
+</ul>
+
+    </div>
+    
+    
+    
+    
+
+    
+  </div>
+</section>
+
+
+
+        
+      </div>
+      <nav slot="nav">
+        <a href="#" class="e-button c-solo-view__back">&larr; Back</a>
+        <a href="#" class="e-button c-solo-view__next">Next &rarr;</a>
+      </nav>
+    </solo-view>
+    
+    <script src="/scripts/solo-view.min.js" defer></script>
+    
+    <script src="/scripts/time-total.min.js" defer></script>
+  
+
+
+        
+
+  <footer class="c-page-footer">
+    <nav class="c-page-footer__nav">
+      
+      
+      <span class="c-page-footer__this">prep</span>
+      
+        →<a
+          class="c-page-footer__next c-page-footer__link e-link"
+          href="/itp/structuring-data/sprints/3/backlog/"
+          >backlog</a
+        >
+      
+    </nav>
+  </footer>
+
+
+      </main><footer class="l-layout__footer l-footer">
+  <a
+    class="l-footer__github e-button e-button--icon"
+    href="https://github.com/CodeYourFuture/curriculum/">
+    <svg
+  focusable="false"
+  class="e-button__icon"
+  role="presentation"
+  width="96"
+  viewbox="0 0 98 96"
+  xmlns="http://www.w3.org/2000/svg">
+  <path
+    fill-rule="evenodd"
+    clip-rule="evenodd"
+    d="M48.854 0C21.839 0 0 22 0 49.217c0 21.756 13.993 40.172 33.405 46.69 2.427.49 3.316-1.059 3.316-2.362 0-1.141-.08-5.052-.08-9.127-13.59 2.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015 4.934.326 7.523 5.052 7.523 5.052 4.367 7.496 11.404 5.378 14.235 4.074.404-3.178 1.699-5.378 3.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283 0-5.378 1.94-9.778 5.014-13.2-.485-1.222-2.184-6.275.486-13.038 0 0 4.125-1.304 13.426 5.052a46.97 46.97 0 0 1 12.214-1.63c4.125 0 8.33.571 12.213 1.63 9.302-6.356 13.427-5.052 13.427-5.052 2.67 6.763.97 11.816.485 13.038 3.155 3.422 5.015 7.822 5.015 13.2 0 18.905-11.404 23.06-22.324 24.283 1.78 1.548 3.316 4.481 3.316 9.126 0 6.6-.08 11.897-.08 13.526 0 1.304.89 2.853 3.316 2.364 19.412-6.52 33.405-24.935 33.405-46.691C97.707 22 75.788 0 48.854 0z"
+    fill="currentColor" />
+</svg>
+
+    <span class="is-invisible">Find us on GitHub</span>
+  </a>
+  <p class="l-footer__impressum e-heading__6">
+    This
+    <a href="https://github.com/CodeYourFuture/curriculum/">free and open source programme</a>
+    is a project of
+    <a href="https://codeyourfuture.io/">Code Your Future</a>
+    <br />
+    Creative Commons Attribution-ShareAlike 4.0
+  </p>
+  <dark-mode class="l-footer__mode"
+    ><button
+      slot="button"
+      id="mode-toggle"
+      type="button"
+      class="e-button e__button--toggle e-button--icon">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="e-icon e__button__icon e-icon--moon">
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
+      </svg>
+      <span class="is-invisible">Toggle between light and dark mode</span>
+    </button></dark-mode
+  >
+</footer>
+
+
+
+<script src="/scripts/app.min.js" defer></script>
+
+<script src="/scripts/youtube-player.min.js" defer></script>
+
+<script src="/scripts/tab-panels.min.js" type="module" defer></script>
+
+<script src="/scripts/dark-mode.min.js"></script>
+
+<script src="/scripts/alert-message.min.js" defer></script>
+
+
+
+
+
+
+
+</div>
+  </body>
+</html>

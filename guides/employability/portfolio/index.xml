@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Portfolio on CYF Courses</title>
+    <link>https://curriculum.codeyourfuture.io/guides/employability/portfolio/</link>
+    <description>Recent content in Portfolio on CYF Courses</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="https://curriculum.codeyourfuture.io/guides/employability/portfolio/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Creating a portfolio site</title>
+      <link>https://curriculum.codeyourfuture.io/guides/employability/portfolio/creating-a-portfolio-site/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://curriculum.codeyourfuture.io/guides/employability/portfolio/creating-a-portfolio-site/</guid>
+      <description>&lt;p&gt;A personal website allows you to showcase your projects and skills in a personal and attractive way. It is also a fun project that keeps you practicing your skills and demonstrating your creativity.&lt;/p&gt;&#xA;&lt;p&gt;When making a personal website approach it like a final project - make a plan and then do sprints to deliver updates. Remember - you can continue to add features and iterate once it&amp;rsquo;s live so it will continue to improve as you do!&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Technical interviews on CYF Courses</title>
+    <link>https://curriculum.codeyourfuture.io/guides/employability/interview/technical-interview-prep/</link>
+    <description>Recent content in Technical interviews on CYF Courses</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="https://curriculum.codeyourfuture.io/guides/employability/interview/technical-interview-prep/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hacker Rank</title>
+      <link>https://curriculum.codeyourfuture.io/guides/employability/interview/technical-interview-prep/hacker-rank/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://curriculum.codeyourfuture.io/guides/employability/interview/technical-interview-prep/hacker-rank/</guid>
+      <description>&lt;p&gt;HackerRank is a technology hiring platform used to assess developer skills for over 2000+ companies around the world. It&amp;rsquo;s all about finding out how you approach things.&lt;/p&gt;&#xA;&lt;p&gt;Hacker Rank publish an &lt;a&#xA;  href=&#34;https://www.hackerrank.com/interview/interview-preparation-kit&#34;&gt;Interview Preparation Kit&lt;/a&gt;, with exercises grouped around programming topics, and ordered by most to least commonly asked in interview. You should prioritise the most commonly asked topics.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>FreeCodeCamp</title>
+      <link>https://curriculum.codeyourfuture.io/guides/employability/interview/technical-interview-prep/free-code-camp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://curriculum.codeyourfuture.io/guides/employability/interview/technical-interview-prep/free-code-camp/</guid>
+      <description>&lt;p&gt;The &lt;a&#xA;  href=&#34;https://www.freecodecamp.org/learn/coding-interview-prep/&#34;&gt;Coding Interview Prep section&lt;/a&gt; of FreeCodeCamp contains hundreds of coding challenges that test your knowledge of algorithms, data structures, and mathematics. It also has several take-home projects you can use to develop your portfolio.&lt;/p&gt;&#xA;&lt;p&gt;Do &lt;strong&gt;not&lt;/strong&gt; work through everything on this page. Make a learning plan and choose things strategically, according to the roles you are preparing for. Learning to plan your work and use your time efficiently is a key skill for a developer.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Google</title>
+      <link>https://curriculum.codeyourfuture.io/guides/employability/interview/technical-interview-prep/google/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://curriculum.codeyourfuture.io/guides/employability/interview/technical-interview-prep/google/</guid>
+      <description>&lt;p&gt;Use &lt;a&#xA;  href=&#34;https://techdevguide.withgoogle.com/paths/interview/&#34;&gt;Google&amp;rsquo;s Tech Dev Guide&lt;/a&gt; to continue developing your interview skills&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Useful links</title>
+      <link>https://curriculum.codeyourfuture.io/guides/employability/interview/technical-interview-prep/useful-links/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://curriculum.codeyourfuture.io/guides/employability/interview/technical-interview-prep/useful-links/</guid>
+      <description>&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;a&#xA;  href=&#34;https://www.pramp.com/#/&#34;&gt;Pramp interview practice&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;a&#xA;  href=&#34;https://30secondsofinterviews.org/&#34;&gt;30 seconds of interviews&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;a&#xA;  href=&#34;https://github.com/DopplerHQ/awesome-interview-questions#javascript&#34;&gt;Awesome interview questions&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+  </channel>
+</rss>
